@@ -10,6 +10,7 @@ This Obsidian vault is a **shared memory system** for all coding agents. It live
 | Codex | Mac | iCloud direct | Direct |
 | Goose | Mac | iCloud direct | Direct |
 | Kimi | Mac | iCloud direct | Direct |
+| Kiro | Mac | iCloud direct | Direct |
 | Hermes | VPS (Ubuntu) | Git clone | Via GitHub |
 
 ## What This Is
@@ -51,6 +52,7 @@ Mac (iCloud)
 ├── Codex        ←──reads────→ vault/
 ├── Goose        ←──reads────→ vault/
 ├── Kimi         ←──reads────→ vault/
+├── Kiro         ←──reads────→ vault/
       ↕
   launchd (every 15 min)
       ↕
@@ -108,6 +110,23 @@ Point Kimi at this vault. Add to your session or config:
 ```
 Memory vault: /Users/dwayne-primeau/Library/Mobile Documents/com~apple~CloudDocs/Agent Memory/Coding
 Read MEMORY.md first, then follow links. Save new memories to the correct type folder.
+```
+
+Read/write directly — same iCloud files as Claude Code.
+
+## For Kiro (Mac)
+
+Kiro reads instructions from `.kiro/steering/` in each project.
+
+A steering file is already at:
+```
+/Volumes/M2 Media/Coding Dwayne/Claude/.kiro/steering/agent-memory.md
+```
+
+For other projects, create the same file:
+```bash
+mkdir -p <project-root>/.kiro/steering
+cp "/Volumes/M2 Media/Coding Dwayne/Claude/.kiro/steering/agent-memory.md" <project-root>/.kiro/steering/
 ```
 
 Read/write directly — same iCloud files as Claude Code.
