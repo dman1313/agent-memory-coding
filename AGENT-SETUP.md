@@ -2,6 +2,16 @@
 
 This Obsidian vault is a **shared memory system** for all coding agents. It lives on the user's Mac via iCloud and syncs to the VPS through GitHub.
 
+## Agents
+
+| Agent | Platform | Location | Write Access |
+|-------|----------|----------|-------------|
+| Claude Code | Mac | iCloud symlink | Direct |
+| Codex | Mac | iCloud direct | Direct |
+| Goose | Mac | iCloud direct | Direct |
+| Kimi | Mac | iCloud direct | Direct |
+| Hermes | VPS (Ubuntu) | Git clone | Via GitHub |
+
 ## What This Is
 
 A centralized knowledge base that persists across sessions, projects, and agents. All agents read and write to the same vault so they can collaborate and maintain continuity.
@@ -36,7 +46,11 @@ Body content follows with `[[wikilinks]]` to related memories. Obsidian-style li
 ## Sync Architecture
 
 ```
-Mac (iCloud) ←──symlink──→ Claude Code memory/
+Mac (iCloud)
+├── Claude Code  ←──symlink──→ memory/
+├── Codex        ←──reads────→ vault/
+├── Goose        ←──reads────→ vault/
+├── Kimi         ←──reads────→ vault/
       ↕
   launchd (every 15 min)
       ↕
@@ -49,10 +63,9 @@ Mac (iCloud) ←──symlink──→ Claude Code memory/
 
 **GitHub repo:** `https://github.com/dman1313/agent-memory-coding` (private)
 
-- **Mac → GitHub:** `launchd` runs `sync.sh` every 15 min (pull, commit, push)
-- **VPS → GitHub:** Cron pulls and pushes every 15 min
-- **Hermes (VPS):** Only agent with direct GitHub access on the server
-- **Other agents on VPS:** Pull from `/home/ubuntu/agent-memory` (Hermes keeps it current)
+**Mac agents** read/write directly to iCloud. The launchd sync handles pushing to GitHub.
+
+**Hermes (VPS)** reads/writes via git. Cron keeps it in sync.
 
 ## For Claude Code (Mac)
 
@@ -69,7 +82,37 @@ ln -s "/Users/dwayne-primeau/Library/Mobile Documents/com~apple~CloudDocs/Agent 
 
 Read/write directly — the Mac launchd sync handles pushing to GitHub automatically.
 
-## For Hermes (VPS — Primary Agent)
+## For Codex (Mac)
+
+Point Codex at this vault. Add to your `AGENTS.md` or project config:
+```
+Memory vault: /Users/dwayne-primeau/Library/Mobile Documents/com~apple~CloudDocs/Agent Memory/Coding
+Read MEMORY.md first, then follow links. Save new memories to the correct type folder.
+```
+
+Read/write directly — same iCloud files as Claude Code.
+
+## For Goose (Mac)
+
+Point Goose at this vault. Add to your Goose config or session instructions:
+```
+Memory vault: /Users/dwayne-primeau/Library/Mobile Documents/com~apple~CloudDocs/Agent Memory/Coding
+Read MEMORY.md first, then follow links. Save new memories to the correct type folder.
+```
+
+Read/write directly — same iCloud files as Claude Code.
+
+## For Kimi (Mac)
+
+Point Kimi at this vault. Add to your session or config:
+```
+Memory vault: /Users/dwayne-primeau/Library/Mobile Documents/com~apple~CloudDocs/Agent Memory/Coding
+Read MEMORY.md first, then follow links. Save new memories to the correct type folder.
+```
+
+Read/write directly — same iCloud files as Claude Code.
+
+## For Hermes (VPS)
 
 Clone and configure:
 ```bash
@@ -90,12 +133,6 @@ When writing memories:
 3. Update `MEMORY.md` index
 4. Commit and push: `git add -A && git commit -m "memory: <topic>" && git push`
 
-## For Other VPS Agents
-
-Read memory from: `/home/ubuntu/agent-memory`
-
-Do NOT write directly. If you need to save something, send it to Hermes or route it back to Claude Code on the Mac. Hermes is the only agent with GitHub push access on the VPS.
-
 ## Rules
 
 1. **One file per topic**, not per session. Update existing files rather than creating duplicates.
@@ -105,4 +142,4 @@ Do NOT write directly. If you need to save something, send it to Hermes or route
 5. **Link related memories** with `[[wikilinks]]` so the graph stays connected.
 6. **Verify before trusting** — memories are point-in-time. If something seems stale, check current state before acting on it.
 7. **Never delete** another agent's memory without confirming with the user.
-8. **Pull before push** — always `git pull --rebase` before writing on the VPS.
+8. **Pull before push** — Hermes must always `git pull --rebase` before writing.
