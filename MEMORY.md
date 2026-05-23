@@ -20,6 +20,7 @@
 - [[Agents/kimi|Kimi]] — Desktop-focused, browser automation (CDP), group chat/IM, safety policies
 - [[Agents/kiro|Kiro]] — IDE-integrated, lightweight steering-based
 - [[Agents/hermes|Hermes]] — VPS-based, fleet orchestrator, server tasks
+- [[Agents/antigravity|Anti-Gravity]] — Projects workspace: skills, mobile apps, web sites, OpenClaw agents
 
 ## Reference
 - [[Reference/external-systems|External Systems]] — Hermes, Multica, server, Dropbox sync, LLM routing
