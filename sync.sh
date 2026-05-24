@@ -6,6 +6,9 @@ cd "$VAULT" || exit 1
 # Pull remote changes first
 git pull --rebase --autostash 2>/dev/null
 
+# Rebuild CONTEXT.md from source files
+bash "$VAULT/build-context.sh" 2>/dev/null
+
 # Stage and check if there's anything to commit
 git add -A
 if git diff --cached --quiet 2>/dev/null; then
