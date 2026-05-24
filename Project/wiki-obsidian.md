@@ -5,11 +5,11 @@ metadata:
   type: project
 ---
 
-This directory is an Obsidian vault implementing the LLM Wiki pattern (Karpathy, 2026). The vault is the local Dropbox-synced copy; the canonical live version lives on a remote server.
+This directory is an Obsidian vault implementing the LLM Wiki pattern (Karpathy, 2026). The canonical version lives on the VPS; synced via Git.
 
-- **Local path:** `/Volumes/M2 Media/DROPBOX/Dropbox/Obsidian-Wiki`
 - **Server path:** `/home/ubuntu/wiki`
-- **Dropbox sync:** Server wiki syncs to Dropbox `/Obsidian-Wiki` via `wiki-dropbox-sync` cron job (every 15 min)
+- **Remote:** github.com/dman1313/agent-memory-coding
+- **Sync:** Git-only (Dropbox sync removed May 2026)
 - **Raw source for the pattern:** `raw/articles/karpathy-llm-wiki-2026.md` (already ingested 2026-04-18)
 
 **Why:** This is a persistent, compounding knowledge base. The LLM (Claude Code) is the wiki maintainer — it writes, updates, and cross-links pages. The human curates sources and asks questions.
