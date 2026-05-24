@@ -7,6 +7,7 @@
 
 ## Feedback
 - [[Feedback/working-style|Working Style]] — Brevity-first, action-oriented, minimal friction
+- [[Feedback/session-startup|Session Startup]] — Check vault + git log at every session start for recent project activity
 
 ## Project
 - [[Project/hermes-ecosystem|Hermes/OpenClaw Ecosystem]] — Agent fleet: Sherlock, Special Ops, DREAM, Firehose
