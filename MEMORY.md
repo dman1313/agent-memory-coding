@@ -1,5 +1,10 @@
 # Memory Index
 
+> **Quick start:** Read CONTEXT.md — it consolidates everything below into one file.
+> This index links to individual files for detailed reference.
+
+---
+
 ## User
 - [[User/working-directory|Preferred Working Directory]] — Works in `/Volumes/M2 Media/Coding Dwayne/Claude`; alias `cc` launches Claude from there
 - [[User/preferred-language|Preferred Language]] — Rust when possible; TypeScript for frontend, Python/Shell for scripts

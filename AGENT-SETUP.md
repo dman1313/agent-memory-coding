@@ -20,7 +20,8 @@ A centralized knowledge base that persists across sessions, projects, and agents
 ## Folder Structure
 
 ```
-├── MEMORY.md              # Index file — always read this first
+├── CONTEXT.md             # START HERE — consolidated context for agents (one file, full picture)
+├── MEMORY.md              # Index file — links to all individual memory files
 ├── AGENT-SETUP.md         # This file — setup instructions for agents
 ├── AGENT-CHANNEL.md       # Inter-agent message board
 ├── HERMES-SETUP.md        # Hermes-specific VPS setup
