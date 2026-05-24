@@ -13,6 +13,10 @@
 - [[Project/hermes-ecosystem|Hermes/OpenClaw Ecosystem]] — Agent fleet: Sherlock, Special Ops, DREAM, Firehose
 - [[Project/hermes-metaclaw|Hermes MetaClaw]] — MetaClaw proxy integration for Hermes Agent
 - [[Project/wiki-obsidian|Wiki (Obsidian)]] — LLM Wiki vault synced via Dropbox, powered by Karpathy's pattern
+- [[Project/symphony|Symphony]] — Rust multi-agent kanban orchestrator with pluggable backends
+- [[Project/free-claude-code|Free Claude Code]] — Python middleware proxy routing Anthropic API to alt providers
+- [[Project/newsletter-platform|Newsletter Platform]] — Agent-first newsletter from Telegram voice to HTML email
+- [[Project/multica-dashboard|Multica Dashboard]] — React dashboard for AI agent network visualization
 
 ## Agents
 - [[Agents/claude-code|Claude Code]] — Primary agent, most feature-rich, superpowers plugin, NotebookLM

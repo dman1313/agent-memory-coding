@@ -2,7 +2,7 @@
 name: agent-kiro
 description: Amazon Kiro — IDE-integrated agent, lightweight steering-based
 metadata:
-  type: reference
+  type: agents
 ---
 
 # Kiro

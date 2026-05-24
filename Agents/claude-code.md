@@ -2,7 +2,7 @@
 name: agent-claude-code
 description: Claude Code — primary agent, Mac-based, most feature-rich
 metadata:
-  type: reference
+  type: agents
 ---
 
 # Claude Code

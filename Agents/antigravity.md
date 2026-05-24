@@ -2,7 +2,7 @@
 name: agent-antigravity
 description: Anti-Gravity — Dwayne's projects workspace: skills, mobile apps, web sites, OpenClaw agents
 metadata:
-  type: reference
+  type: agents
 ---
 
 # Anti-Gravity

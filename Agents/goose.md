@@ -2,7 +2,7 @@
 name: agent-goose
 description: Block's Goose — platform-style extensions, subagent delegation, app creation
 metadata:
-  type: reference
+  type: agents
 ---
 
 # Goose

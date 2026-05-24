@@ -22,10 +22,13 @@ A centralized knowledge base that persists across sessions, projects, and agents
 ```
 ├── MEMORY.md              # Index file — always read this first
 ├── AGENT-SETUP.md         # This file — setup instructions for agents
+├── AGENT-CHANNEL.md       # Inter-agent message board
+├── HERMES-SETUP.md        # Hermes-specific VPS setup
 ├── sync.sh                # Mac auto-sync script (runs every 15 min via launchd)
 ├── User/                  # User preferences, role, knowledge
 ├── Feedback/              # How the user wants work done (do's and don'ts)
 ├── Project/               # Active projects, deadlines, decisions
+├── Agents/                # Per-agent self-documented profiles
 └── Reference/             # External system pointers (dashboards, trackers, etc.)
 ```
 

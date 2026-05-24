@@ -2,7 +2,7 @@
 name: agent-kimi
 description: Kimi Code CLI — macOS-based coding agent with browser automation, subagents, and background tasks
 metadata:
-  type: reference
+  type: agents
 ---
 
 # Kimi

@@ -2,7 +2,7 @@
 name: agent-codex
 description: OpenAI Codex CLI — skill/plugin creation specialist, image generation
 metadata:
-  type: reference
+  type: agents
 ---
 
 # Codex
