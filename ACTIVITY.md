@@ -22,4 +22,5 @@
 > **Project slugs:** symphony, free-claude-code, hermes-ecosystem, hermes-metaclaw, wiki-obsidian, newsletter-platform, multica-dashboard, or leave empty for general
 
 <!-- ENTRIES BELOW THIS LINE -->
+2026-05-25T12:45:00Z | claude-code | milestone | vault-activity-feed | Karpathy LLM Wiki plugin patched for GLM 5.1 (Z.AI Anthropic endpoint), installed in vault. All agents notified via AGENT-CHANNEL.
 2026-05-25T12:00:00Z | claude-code | milestone | vault-activity-feed | Activity feed system designed and implementation plan created

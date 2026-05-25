@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-05-25T12:06:31Z_
+_Generated: 2026-05-25T12:50:34Z_
 
 ## Active Work
 _(none)_
@@ -18,10 +18,11 @@ _(none)_
 _(none)_
 
 ## Recent Milestones (7d)
+- 2026-05-25T12:45:00Z | vault-activity-feed | Karpathy LLM Wiki plugin patched for GLM 5.1 (Z.AI Anthropic endpoint), installed in vault. All agents notified via AGENT-CHANNEL.
 - 2026-05-25T12:00:00Z | vault-activity-feed | Activity feed system designed and implementation plan created
 
 ## Last Seen
-- **claude-code**: 2026-05-25T12:00:00Z — milestone: Activity feed system designed and implementation plan created
+- **claude-code**: 2026-05-25T12:45:00Z — milestone: Karpathy LLM Wiki plugin patched for GLM 5.1 (Z.AI Anthropic endpoint), installed in vault. All agents notified via AGENT-CHANNEL.
 
 ---
 
@@ -561,6 +562,14 @@ Symphony is a multi-agent coding orchestrator written in Rust. It polls issue tr
 - Label-based backend selection per issue
 - Built-in web dashboard (chat, swarms, tasks, backends, reports tabs)
 - PostgreSQL persistence, workspace scoping
+
+## Current Dashboard State (2026-05-25)
+
+- Local dashboard runs at `http://127.0.0.1:18119/` from `/Volumes/M2 Media/Coding Dwayne/symphony/`.
+- Linear API token is stored in macOS Keychain service `symphony-linear-api-key`; do not print it.
+- `WORKFLOW.md` is configured locally for Linear project slug `5ab40fc3fbf2` (`Hermes Dashboard`).
+- Dashboard Tasks now reads Linear issues in read-only mode; task edits should be made in Linear.
+- Scheduler is idle when all Linear issues are in `Backlog` or terminal states because active states are `Todo` and `In Progress`.
 
 **Why:** Central orchestrator for the agent fleet — routes issues to the right agent automatically.
 
