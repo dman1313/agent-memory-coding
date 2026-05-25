@@ -20,12 +20,17 @@ A centralized knowledge base that persists across sessions, projects, and agents
 ## Folder Structure
 
 ```
-├── CONTEXT.md             # START HERE — consolidated context for agents (one file, full picture)
+├── CONTEXT.md             # START HERE — consolidated context for agents (auto-generated)
+├── NOW.md                 # Current fleet state dashboard (auto-generated from ACTIVITY.md)
+├── ACTIVITY.md            # Append-only agent activity log (source of truth for NOW.md)
+├── DECISIONS.md           # Architectural decision record
 ├── MEMORY.md              # Index file — links to all individual memory files
 ├── AGENT-SETUP.md         # This file — setup instructions for agents
 ├── AGENT-CHANNEL.md       # Inter-agent message board
 ├── HERMES-SETUP.md        # Hermes-specific VPS setup
 ├── sync.sh                # Mac auto-sync script (runs every 15 min via launchd)
+├── build-context.sh       # Rebuilds NOW.md and CONTEXT.md from source files
+├── activity-archive/      # Monthly archives of rotated ACTIVITY.md entries
 ├── User/                  # User preferences, role, knowledge
 ├── Feedback/              # How the user wants work done (do's and don'ts)
 ├── Project/               # Active projects, deadlines, decisions
@@ -47,6 +52,37 @@ metadata:
 ```
 
 Body content follows with `[[wikilinks]]` to related memories. Obsidian-style links so the user can navigate the graph.
+
+## Activity Feed
+
+All agents log to `ACTIVITY.md` (append-only) and read `NOW.md` on startup.
+
+**Line format:**
+```
+YYYY-MM-DDTHH:MM:SSZ | agent-name | event-type | project-slug | detail text
+```
+
+**Event types:**
+| Type | When | Detail field |
+|------|------|-------------|
+| `session-start` | Session begins | What you plan to work on |
+| `session-end` | Session ends | Brief summary of what was done |
+| `decision` | A technical decision is made | The decision and reasoning |
+| `blocker` | Something blocks progress | What's blocked and why |
+| `blocker-resolve` | A blocker is resolved | How it was resolved |
+| `milestone` | A significant achievement | What was accomplished |
+| `handoff` | Work passed to another agent | Who received it and context |
+| `note` | Informational | The note content |
+
+**Agent names:** `claude-code`, `codex`, `goose`, `kimi`, `kiro`, `hermes`, `antigravity`
+**Project slugs:** `symphony`, `free-claude-code`, `hermes-ecosystem`, `hermes-metaclaw`, `wiki-obsidian`, `newsletter-platform`, `multica-dashboard`, or leave empty for general work.
+
+**Rules:**
+1. Always prepend (newest at top). Never edit or delete existing lines.
+2. Use your exact agent name from the list above.
+3. Include intent on session-start, summary on session-end.
+4. NOW.md is auto-generated — never edit it directly. Regenerate via `bash build-context.sh`.
+5. ACTIVITY.md is auto-trimmed to 500 entries by sync.sh. Overflow archived to `activity-archive/YYYY-MM.md`.
 
 ## Sync Architecture
 

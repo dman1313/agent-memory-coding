@@ -21,8 +21,9 @@ Set up bidirectional sync cron (every 15 min):
 ## How to Read Memories
 
 1. `cat /home/ubuntu/agent-memory/MEMORY.md` — read the index first
-2. Follow links to specific files in User/, Feedback/, Project/, Reference/
-3. Read relevant context before starting work
+2. `cat /home/ubuntu/agent-memory/NOW.md` — check current fleet state
+3. Follow links to specific files in User/, Feedback/, Project/, Reference/
+4. Read relevant context before starting work
 
 ## How to Write Memories
 
@@ -39,6 +40,20 @@ Set up bidirectional sync cron (every 15 min):
    ```
 4. Update MEMORY.md with a link to your new/changed file
 5. `git add -A && git commit -m "memory: <topic>" && git push`
+
+## Activity Feed
+
+Log activity to the vault (git-based: pull before write, push after).
+
+**Session start** — prepend to ACTIVITY.md:
+`YYYY-MM-DDTHH:MM:SSZ | hermes | session-start | <project-slug> | Starting: <brief intent>`
+
+**Session end** — prepend to ACTIVITY.md:
+`YYYY-MM-DDTHH:MM:SSZ | hermes | session-end | <project-slug> | Done: <brief summary>`
+
+**During work** — log `decision`, `blocker`, `blocker-resolve`, `milestone`, `handoff` entries.
+
+Always: `git pull --rebase` before writing, then `git add -A && git commit -m "activity: <event>" && git push` after.
 
 ## Rules
 

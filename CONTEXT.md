@@ -4,6 +4,27 @@
 
 ---
 
+# NOW — Current State
+
+_Generated: 2026-05-25T12:06:31Z_
+
+## Active Work
+_(none)_
+
+## Blockers
+_(none)_
+
+## Recent Decisions (7d)
+_(none)_
+
+## Recent Milestones (7d)
+- 2026-05-25T12:00:00Z | vault-activity-feed | Activity feed system designed and implementation plan created
+
+## Last Seen
+- **claude-code**: 2026-05-25T12:00:00Z — milestone: Activity feed system designed and implementation plan created
+
+---
+
 ## User
 
 - 
@@ -732,7 +753,9 @@ sudo swapoff -a && sudo swapon -a
 
 ## Session Startup Checklist
 
-1. Read this file (CONTEXT.md)
-2. Check AGENT-CHANNEL.md for pending messages
-3. Check `git log --oneline -5` for recent vault changes
-4. Pick up where the last session left off
+1. Read NOW.md section at the top for current fleet state
+2. Check ACTIVITY.md for recent entries since your last session
+3. Check AGENT-CHANNEL.md for pending messages
+4. Check `git log --oneline -5` for recent vault changes
+5. Log a `session-start` entry to ACTIVITY.md
+6. Pick up where the last session left off
