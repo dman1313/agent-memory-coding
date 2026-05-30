@@ -9,60 +9,57 @@ cd /home/ubuntu
 git clone https://github.com/dman1313/agent-memory-coding.git agent-memory
 ```
 
-Set up bidirectional sync cron (every 15 min):
-```bash
-(crontab -l 2>/dev/null; echo '*/15 * * * * cd /home/ubuntu/agent-memory && git pull --rebase --autostash && git add -A && git diff --cached --quiet || (git commit -m "auto-sync VPS $(date +\%Y-\%m-\d\ \%H:\%M)" --author="Agent Memory Sync <dman1313@users.noreply.github.com>" && git push)') | crontab -
-```
-
 ## Memory Path
 
 `/home/ubuntu/agent-memory`
 
 ## How to Read Memories
 
-1. `cat /home/ubuntu/agent-memory/MEMORY.md` — read the index first
-2. `cat /home/ubuntu/agent-memory/NOW.md` — check current fleet state
-3. Follow links to specific files in User/, Feedback/, Project/, Reference/
-4. Read relevant context before starting work
+1. Read `NOW.md` first — current fleet state
+2. Check `AGENT-CHANNEL.md` for pending messages
+3. Check `ACTIVITY.md` for recent events
+4. Follow links in `MEMORY.md` index for detailed context
 
 ## How to Write Memories
 
-1. `cd /home/ubuntu/agent-memory && git pull --rebase`
-2. Create or update a file in the correct folder (User/, Feedback/, Project/, Reference/)
-3. Use this frontmatter:
-   ```
-   ---
-   name: short-kebab-case-slug
-   description: One-line summary
-   metadata:
-     type: user | feedback | project | reference
-   ---
-   ```
-4. Update MEMORY.md with a link to your new/changed file
-5. `git add -A && git commit -m "memory: <topic>" && git push`
+1. Edit files directly in `/home/ubuntu/agent-memory/`
+2. Commit and push:
+```bash
+cd /home/ubuntu/agent-memory && git add -A && git commit -m "hermes: <what changed>" && git push
+```
 
-## Activity Feed
+## Session Protocol
 
-Log activity to the vault (git-based: pull before write, push after).
+Every session:
+1. `cd ~/agent-memory && git pull --rebase`
+2. Read `NOW.md` for current state
+3. Check `AGENT-CHANNEL.md` for pending messages
+4. Do work
+5. Update `NOW.md` with active work
+6. Append to `ACTIVITY.md` with milestones/decisions
+7. Record significant decisions in `DECISIONS.md`
+8. `git add -A && git commit -m "hermes: <summary>" && git push`
 
-**Session start** — prepend to ACTIVITY.md:
-`YYYY-MM-DDTHH:MM:SSZ | hermes | session-start | <project-slug> | Starting: <brief intent>`
+## Sync Frequency
 
-**Session end** — prepend to ACTIVITY.md:
-`YYYY-MM-DDTHH:MM:SSZ | hermes | session-end | <project-slug> | Done: <brief summary>`
+Manual sync (preferred for Hermes):
+- Pull at session start
+- Push after significant changes
+- Push at session end
 
-**During work** — log `decision`, `blocker`, `blocker-resolve`, `milestone`, `handoff` entries.
+## Agent Names
 
-Always: `git pull --rebase` before writing, then `git add -A && git commit -m "activity: <event>" && git push` after.
+Use these exact names in ACTIVITY.md:
+- `hermes` — Hermes Agent (VPS)
+- `claude-code` — Claude Code (Mac)
+- `codex` — OpenAI Codex (Mac)
+- `goose` — Block's Goose (Mac)
+- `kimi` — Kimi CLI (Mac)
+- `kiro` — Amazon Kiro (Mac)
+- `antigravity` — Anti-Gravity workspace
 
-## Rules
+## Related Files
 
-- One file per topic — update existing files, don't duplicate
-- Always pull before writing
-- Never delete another agent's memory without asking the user
-- Verify old memories before trusting them
-
-## User Preferences
-
-- Preferred language: Rust when possible
-- Working directory (Mac): /Volumes/M2 Media/Coding Dwayne/Claude
+- `Agents/hermes.md` — Hermes agent profile
+- `Reference/external-systems.md` — Server and service details
+- `Project/hermes-ecosystem.md` — Agent fleet overview

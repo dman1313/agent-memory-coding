@@ -20,16 +20,11 @@
 
 ## Activity Feed
 
-2026-05-31T07:15:00Z | hermes | milestone | ai-trader | Expanded AI-Trader client: strategy, discussion, feed, rebalance commands + Wolf bridge script
-2026-05-31T07:00:00Z | hermes | milestone | study-pipeline | IGCSE Biology pipeline v2 rebuilt — query-based study guides, proper validation, short focus strings
-2026-05-31T06:45:00Z | hermes | decision | study-pipeline | Switched from nlm report create to nlm notebook query for focused study guides
-2026-05-31T06:30:00Z | hermes | milestone | second-brain | Cloned dman1313/second-brain vault, configured OBSIDIAN_VAULT_PATH, set up sync
-2026-05-25T12:45:00Z | claude-code | milestone | vault-activity-feed | Karpathy LLM Wiki plugin patched for GLM 5.1 (Z.AI Anthropic endpoint), installed in vault
-2026-05-25T12:00:00Z | claude-code | milestone | vault-activity-feed | Activity feed system designed and implementation plan created
->
-> **Agent names:** claude-code, codex, goose, kimi, kiro, hermes, antigravity
-> **Project slugs:** symphony, free-claude-code, hermes-ecosystem, hermes-metaclaw, wiki-obsidian, newsletter-platform, multica-dashboard, or leave empty for general
-
-<!-- ENTRIES BELOW THIS LINE -->
+2026-05-31T07:30:00Z | hermes | milestone | second-brain | Wired second-brain vault to Hermes: cloned, set vault path, created sync script, updated agent memory
+2026-05-31T07:15:00Z | hermes | milestone | ai-trader | Expanded AI-Trader client: strategy, discussion, feed, rebalance commands + Wolf bridge script. Portfolio value fix (was $49K, now $98K)
+2026-05-31T07:00:00Z | hermes | milestone | study-pipeline | IGCSE Biology pipeline v2 rebuilt — query-based study guides, proper validation, short focus strings, flashcard fix
+2026-05-31T06:45:00Z | hermes | decision | study-pipeline | Switched from nlm report create to nlm notebook query for focused study guides (reports too generic)
+2026-05-31T06:30:00Z | hermes | decision | ai-trader | Bypassed weekend market hours for simulated trades (price=0)
+2026-05-31T06:00:00Z | hermes | session-start | general | Session: IGCSE pipeline fix, AI-Trader expansion, second brain setup
 2026-05-25T12:45:00Z | claude-code | milestone | vault-activity-feed | Karpathy LLM Wiki plugin patched for GLM 5.1 (Z.AI Anthropic endpoint), installed in vault. All agents notified via AGENT-CHANNEL.
 2026-05-25T12:00:00Z | claude-code | milestone | vault-activity-feed | Activity feed system designed and implementation plan created
