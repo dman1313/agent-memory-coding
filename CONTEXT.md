@@ -6,22 +6,27 @@
 
 # NOW — Current State
 
-_Generated: 2026-05-25T12:50:34Z_
+_Generated: 2026-05-30T23:21:00Z_
 
 ## Active Work
-_(none)_
+- **hermes** (general): Session: IGCSE pipeline fix, AI-Trader expansion, second brain setup
 
 ## Blockers
 _(none)_
 
 ## Recent Decisions (7d)
-_(none)_
+- 2026-05-31T06:45:00Z | hermes/study-pipeline | Switched from nlm report create to nlm notebook query for focused study guides (reports too generic)
+- 2026-05-31T06:30:00Z | hermes/ai-trader | Bypassed weekend market hours for simulated trades (price=0)
 
 ## Recent Milestones (7d)
+- 2026-05-31T07:30:00Z | second-brain | Wired second-brain vault to Hermes: cloned, set vault path, created sync script, updated agent memory
+- 2026-05-31T07:15:00Z | ai-trader | Expanded AI-Trader client: strategy, discussion, feed, rebalance commands + Wolf bridge script. Portfolio value fix (was $49K, now $98K)
+- 2026-05-31T07:00:00Z | study-pipeline | IGCSE Biology pipeline v2 rebuilt — query-based study guides, proper validation, short focus strings, flashcard fix
 - 2026-05-25T12:45:00Z | vault-activity-feed | Karpathy LLM Wiki plugin patched for GLM 5.1 (Z.AI Anthropic endpoint), installed in vault. All agents notified via AGENT-CHANNEL.
 - 2026-05-25T12:00:00Z | vault-activity-feed | Activity feed system designed and implementation plan created
 
 ## Last Seen
+- **hermes**: 2026-05-31T07:30:00Z — milestone: Wired second-brain vault to Hermes: cloned, set vault path, created sync script, updated agent memory
 - **claude-code**: 2026-05-25T12:45:00Z — milestone: Karpathy LLM Wiki plugin patched for GLM 5.1 (Z.AI Anthropic endpoint), installed in vault. All agents notified via AGENT-CHANNEL.
 
 ---
@@ -202,123 +207,89 @@ code-review, security-review, verify, loop, run, init, review, update-config, ke
 
 # Hermes
 
-**Platform:** VPS (Ubuntu 22.04, kernel 6.8.0-117-generic)
+**Platform:** VPS (Ubuntu, kernel 6.8.0-117-generic)
 **Host:** /home/ubuntu
-**Memory:** Git clone at `/home/ubuntu/agent-memory/`
+**Memory:** Git clone at `~/agent-memory/`
 **Config:** `~/.hermes/config.yaml` (default profile)
-**Gateway:** systemd user service (`hermes-gateway.service`), PID managed
+**Gateway:** systemd user service (`hermes-gateway.service`)
+**Telegram:** @betaclawv1_bot ("openclaw"), thread 723 (health), thread 725 (wellness)
 
 ## Model Routing
 
-| Tier      | Model                | Provider   |
-|-----------|----------------------|------------|
-| Light     | MiMo v2.5-pro       | Xiaomi     |
-| Medium    | DeepSeek v4-flash    | DeepSeek   |
-| Heavy     | DeepSeek v4-pro      | DeepSeek   |
-| Code      | GLM 5.1 / Kimi CLI  | Z.AI       |
-| Fallback  | DeepSeek chat        | DeepSeek   |
-| Delegation| DeepSeek chat        | DeepSeek   |
-| Vision    | isaac-0.2-2b-preview | Perceptron |
-| Web extract| auto               | Z.AI       |
+| Tier       | Model              | Provider |
+|------------|--------------------|----------|
+| Light      | MiMo v2.5-pro     | Xiaomi   |
+| Medium     | DeepSeek v4-flash  | DeepSeek |
+| Heavy      | DeepSeek v4-pro    | DeepSeek |
+| Code       | Kimi K2.6          | Moonshot |
+| GLM 5.1    | coding plan only   | Z.AI     |
+| Fallback   | DeepSeek PAYG      | DeepSeek |
 
-## API Keys Configured
+## Skills (300+)
 
-- OpenRouter (sk-o...a095)
-- DeepSeek (sk-2...80e7)
-- Z.AI / GLM (b9ed...e084)
-- Kimi / Moonshot (sk-k...EDAe)
-- Together AI (image generation only)
-- Perceptron (vision auxiliary)
+Organized under `~/.hermes/skills/`. Key categories:
+- **trading/** — ai-trader, wolf-trading-agent, quant-stock-scanner, alpaca-volume-scanner
+- **research/** — sherlock, deep-research, academic-pipeline, perplexity-research
+- **agents/** — hal, dream, coding-officer, qa-agent, shepherd-agent, special-ops
+- **devops/** — kanban-orchestrator, ci-cd-and-automation, cloudflare-tunnel-setup
+- **creative/** — claude-design, popular-web-designs, excalidraw, manim-video
+- **productivity/** — google-workspace, notion, obsidian, powerpoint
 
-## Messaging Platforms
+## Services Running
 
-- **Telegram:** ✓ configured (home: 7824646153)
-- **Discord:** ✓ configured (home: 1493259840133398672)
-- **Others:** not configured (WhatsApp, Signal, Slack, etc.)
+| Service | Port | Purpose |
+|---------|------|---------|
+| 9Router  | 20128 | LLM routing |
+| WeKnora  | 8089  | Knowledge base |
+| FreeLLMAPI | 3002 | Free LLM API |
+| Hermes Office | 3001 | 3D workspace |
+| Agent Ready | 8766 | Middleware |
+| Caddy | 80/443 | Reverse proxy |
 
-## Skills
+## Cron Jobs (16 active)
 
-**260 enabled skills** across categories: agents, creative, data, devops, github, leisure, marketing, mlops, newsletter, productivity, research, sales, social-media, software-development, trading, and more.
+- DREAM nightly reflection (3am)
+- Wolf daily scan (8am M-F)
+- CFTC COT scanner (Fri 21:45)
+- IGCSE Biology pipeline (hourly)
+- HAL daily brief (2pm)
+- Morning/evening Zen reflections
+- System health monitor (every 6h)
+- Shared memory sync (every 6h)
+- GDrive + brain backups
 
-Key skills: coding-officer, sherlock, special-ops, dream, brief, kanban-orchestrator, academic-paper, deep-research, ai-trader, mrclean, shepherd-agent, qa-agent.
+## Current Capabilities (as of 2026-05-31)
 
-## MCP Servers (5 active)
+### AI-Trader (ai4trade.ai)
+- Agent ID: 7729, portfolio ~$98K
+- CLI: status, positions, trade, strategy, discussion, feed, rebalance, heartbeat
+- Wolf→AI-Trader bridge for auto-publishing signals
+- Safety: rate limiting, duplicate detection, circuit breaker, position limits
 
-| Name           | Transport                          | Status  |
-|----------------|------------------------------------|---------|
-| glms-search    | https://api.z.ai/api/mcp/...       | ✓       |
-| glms-reader    | https://api.z.ai/api/mcp/...       | ✓       |
-| glms-vision    | npx @z_ai/mcp-server              | ✓       |
-| glms-zread     | https://api.z.ai/api/mcp/...       | ✓       |
-| together-docs  | https://docs.together.ai/mcp       | ✓       |
+### Study Pipeline
+- IGCSE Biology via NotebookLM (nlm CLI)
+- Per-concept: study guide (query-based), flashcards, slides, video
+- Pipeline script: `~/.hermes/scripts/concept-pipeline.sh`
+- Skill: sherlock-study-boy
 
-## Running Services (systemd)
+### Second Brain Vault
+- Path: `~/Documents/Obsidian Vault/second-brain/`
+- Git: dman1313/second-brain
+- Structure: wiki/, journal/, crm/, raw/
+- Sync: `~/.hermes/scripts/sync-second-brain.sh`
 
-| Service                    | Port   | Description                          |
-|----------------------------|--------|--------------------------------------|
-| hermes-gateway             | —      | Agent gateway, messaging integration |
-| 9router                    | 20128  | AI router & token saver              |
-| agent-ready                | 8766   | LLM website certification (Flask)    |
-| caddy                      | 80/443 | Reverse proxy                        |
-| freellmapi                 | 3002   | OpenAI-compatible proxy, 5 providers |
-| hermes-office              | 3001   | Claw3D / Hermes Office 3D dev server |
-| hermes-office-adapter      | —      | Hermes Office gateway adapter        |
-| open-design                | —      | AI-powered design with local agents  |
-| tat_agent                  | —      | tat agent service                    |
+## Shared Memory
 
-## Scheduled Jobs
-
-16 active cron jobs (18 total). Key jobs:
-- CFTC COT crude oil scanner (Fridays 21:45 Paris)
-- DREAM nightly reflection (03:00 UTC)
-- Daily brief (8am Paris)
-- Various maintenance and monitoring
-
-## Agent Fleet
-
-Orchestrated via Hermes skills and delegation:
-- **HAL** — Lead orchestrator (always active)
-- **Sherlock** — Research investigator
-- **Special Ops** — Mission control & cross-domain router
-- **DREAM** — Nightly reflection & skill evolution
-- **Coding Officer** — Code work coordination pipeline
-- **Clark** — Communications officer
-- **Zen** — Wellness coach
-- **Scotty** — System architect & skill builder
-- **MrClean** — Cleanup & efficiency auditor
-- **QA Agent** — Testing & validation
-- **Shepherd** — Stuck work monitor
-
-## Components
-
-- **kanban.db** — SQLite task/project tracking
-- **gateway_state.json** — Gateway state management
-- **Hermes Dashboard** — hermesdash.humangood.ai (Natural theme)
-- **Hermes Office (3D)** — hd1.humangood.ai
-- **Agent Ready** — agent-ready.humangood.ai
-- **Shared Memory Vault** — /home/ubuntu/agent-memory/ (Git, shared with Mac agents)
-- **Wiki** — /home/ubuntu/wiki (Karpathy LLM Wiki pattern, Git-managed)
-
-## Image Generation
-
-Provider: **Together AI** (direct API, not gateway)
-API key in `image_gen.api_key` config.
-Gateway bypass: `image_gen.use_gateway: false`
-
-## TTS
-
-Provider: OpenAI (gpt-4o-mini-tts, voice: alloy)
-Gateway: managed via Nous subscription
+- `~/agent-memory/` — shared with Mac agents via Git
+- Always read NOW.md at session start
+- Update ACTIVITY.md with milestones/decisions
+- Commit and push after changes
 
 ## Strengths
-
-- Only agent with direct VPS access
-- 260 skills covering research, code, trading, content, devops
-- 5 MCP servers for docs, search, vision, code reading
+- Best for: orchestration, scheduling, research, trading, knowledge management
+- Has 300+ skills covering most domains
+- Cron-based automation (16 active jobs)
 - Multi-platform messaging (Telegram, Discord)
-- Full agent fleet orchestration via delegation
-- Persistent memory across sessions
-- Automated cron jobs for monitoring and maintenance
 
 ### Kimi
 

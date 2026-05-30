@@ -2,7 +2,15 @@
 # Rebuild NOW.md from ACTIVITY.md, then rebuild CONTEXT.md with NOW.md injected
 # Run on sync or when vault files change
 
-VAULT="/Users/dwayne-primeau/Library/Mobile Documents/com~apple~CloudDocs/Agent Memory/Coding"
+# Auto-detect vault path: VPS (git clone) or Mac (iCloud)
+if [ -d "/home/ubuntu/agent-memory" ]; then
+    VAULT="/home/ubuntu/agent-memory"
+elif [ -d "/Users/dwayne-primeau/Library/Mobile Documents/com~apple~CloudDocs/Agent Memory/Coding" ]; then
+    VAULT="/Users/dwayne-primeau/Library/Mobile Documents/com~apple~CloudDocs/Agent Memory/Coding"
+else
+    echo "ERROR: Cannot find agent-memory vault" >&2
+    exit 1
+fi
 cd "$VAULT" || exit 1
 
 # ---------------------------------------------------------------------------

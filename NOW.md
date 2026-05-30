@@ -1,25 +1,24 @@
 # NOW — Current State
 
-_Updated: 2026-05-31T07:15:00Z_
+_Generated: 2026-05-30T23:21:00Z_
 
 ## Active Work
-- **IGCSE Biology Pipeline v2** — Fixed broken pipeline. All 10 concepts need re-generation. Concept 1 (CORMS) in progress: study guide ✅, flashcards ✅ (89 cards), slides ✅ (14MB), video ⏳. Pipeline script: `~/.hermes/scripts/concept-pipeline.sh`. Cron: hourly (6130c2b89680).
-- **AI-Trader Expansion** — Added strategy, discussion, feed, rebalance CLI commands. Wolf→AI-Trader bridge script created. Portfolio: $98,805 (12 positions). TDG and COST over-concentrated.
-- **Second Brain Vault** — Cloned dman1313/second-brain to ~/Documents/Obsidian Vault/second-brain/. Vault path configured. Raw queue empty (all 14 sources processed). Sync script: ~/.hermes/scripts/sync-second-brain.sh.
+- **hermes** (general): Session: IGCSE pipeline fix, AI-Trader expansion, second brain setup
 
 ## Blockers
 _(none)_
 
 ## Recent Decisions (7d)
-- 2026-05-31: Switched study guide generation from `nlm report create` to `nlm notebook query` (reports too generic)
-- 2026-05-31: Flashcards `--difficulty` takes string (medium) not integer (3) — CLI mismatch with quiz command
-- 2026-05-31: Weekend market hours bypassed for simulated trades (price=0) on AI-Trader
+- 2026-05-31T06:45:00Z | hermes/study-pipeline | Switched from nlm report create to nlm notebook query for focused study guides (reports too generic)
+- 2026-05-31T06:30:00Z | hermes/ai-trader | Bypassed weekend market hours for simulated trades (price=0)
 
 ## Recent Milestones (7d)
-- 2026-05-31: AI-Trader client expanded — strategy, discussion, feed, rebalance commands + Wolf bridge
-- 2026-05-31: IGCSE Biology pipeline v2 rebuilt with validation, short focus strings, query-based study guides
-- 2026-05-31: Second Brain vault cloned and wired to Hermes
-- 2026-05-25: Karpathy LLM Wiki plugin patched for GLM 5.1
+- 2026-05-31T07:30:00Z | second-brain | Wired second-brain vault to Hermes: cloned, set vault path, created sync script, updated agent memory
+- 2026-05-31T07:15:00Z | ai-trader | Expanded AI-Trader client: strategy, discussion, feed, rebalance commands + Wolf bridge script. Portfolio value fix (was $49K, now $98K)
+- 2026-05-31T07:00:00Z | study-pipeline | IGCSE Biology pipeline v2 rebuilt — query-based study guides, proper validation, short focus strings, flashcard fix
+- 2026-05-25T12:45:00Z | vault-activity-feed | Karpathy LLM Wiki plugin patched for GLM 5.1 (Z.AI Anthropic endpoint), installed in vault. All agents notified via AGENT-CHANNEL.
+- 2026-05-25T12:00:00Z | vault-activity-feed | Activity feed system designed and implementation plan created
 
 ## Last Seen
-- **hermes**: 2026-05-31T07:15:00Z — session: IGCSE pipeline fix, AI-Trader expansion, second brain setup
+- **hermes**: 2026-05-31T07:30:00Z — milestone: Wired second-brain vault to Hermes: cloned, set vault path, created sync script, updated agent memory
+- **claude-code**: 2026-05-25T12:45:00Z — milestone: Karpathy LLM Wiki plugin patched for GLM 5.1 (Z.AI Anthropic endpoint), installed in vault. All agents notified via AGENT-CHANNEL.

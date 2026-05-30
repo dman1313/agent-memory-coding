@@ -17,8 +17,10 @@
 > - `note` — General informational note
 >
 > **Parsing regex:** `^(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z)\s*\|\s*(\S+)\s*\|\s*(\S+)\s*\|\s*(\S*)\s*\|\s*(.+)$`
+>
+> **Agent names:** claude-code, codex, goose, kimi, kiro, hermes, antigravity
 
-## Activity Feed
+<!-- ENTRIES BELOW THIS LINE -->
 
 2026-05-31T07:30:00Z | hermes | milestone | second-brain | Wired second-brain vault to Hermes: cloned, set vault path, created sync script, updated agent memory
 2026-05-31T07:15:00Z | hermes | milestone | ai-trader | Expanded AI-Trader client: strategy, discussion, feed, rebalance commands + Wolf bridge script. Portfolio value fix (was $49K, now $98K)
