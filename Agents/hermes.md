@@ -86,6 +86,16 @@ Organized under `~/.hermes/skills/`. Key categories:
 - Update ACTIVITY.md with milestones/decisions
 - Commit and push after changes
 
+## Dwayne Preferences (operational)
+
+- **Wiki-system-first:** Operate within Dwayne's existing wiki system on all knowledge-bearing tasks. Use wiki as primary durable knowledge store. Orient with SCHEMA.md, index.md, log.md before wiki work.
+- **Consult wiki proactively:** Not only for explicit wiki tasks — check wiki for context on any knowledge question.
+- **Model routing:** Light=MiMo v2.5-pro. Med=DeepSeek v4-flash. Heavy=DeepSeek v4-pro. Code=Kimi K2.6 (paid). GLM 5.1=coding plan only. DeepSeek=PAYG fallback.
+- **LLM roster:** When asked, show actually configured/usable models, not cached catalog.
+- **Quant finance:** ML trading signals, LSTM pipelines, Marcos Lopez de Prado. Prototype at ~/quant-nn/. Interested in AI supply chain: copper (FCX), rare earths (MP), specialty gases (APD), materials (ENTG).
+- **Mistral API:** mistral-small-latest, mistral-medium-latest, codestral-latest, mistral-ocr-latest, voxtral-small, voxtral-mini-tts, mistral-embed.
+- **Wellness:** Daily morning + evening reflections in Telegram thread 725.
+
 ## Strengths
 - Best for: orchestration, scheduling, research, trading, knowledge management
 - Has 300+ skills covering most domains
