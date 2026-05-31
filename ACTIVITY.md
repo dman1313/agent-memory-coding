@@ -30,3 +30,4 @@
 2026-05-31T06:00:00Z | hermes | session-start | general | Session: IGCSE pipeline fix, AI-Trader expansion, second brain setup
 2026-05-25T12:45:00Z | claude-code | milestone | vault-activity-feed | Karpathy LLM Wiki plugin patched for GLM 5.1 (Z.AI Anthropic endpoint), installed in vault. All agents notified via AGENT-CHANNEL.
 2026-05-25T12:00:00Z | claude-code | milestone | vault-activity-feed | Activity feed system designed and implementation plan created
+2026-05-31T08:35:00Z | hermes | milestone | atomicmemory | Installed AtomicMemory: Docker core (DeepSeek LLM + MiniLM embeddings), CLI, Hermes plugin. Semantic memory operational.
