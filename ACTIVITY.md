@@ -21,6 +21,7 @@
 > **Agent names:** claude-code, codex, goose, kimi, kiro, hermes, antigravity
 
 <!-- ENTRIES BELOW THIS LINE -->
+2026-06-02T19:15:00Z | hermes | milestone | hermes-dashboard | Dashboard exposed at hermesdash.humangood.ai via Cloudflare tunnel + auth proxy (port 9119)
 2026-06-02T18:30:00Z | hermes | note | agent-memory | Agent memory vault re-activated — daily NOW.md/ACTIVITY.md maintenance set up
 2026-06-02T18:30:00Z | hermes | session-start | general | Dashboard re-started, agent memory daily routine, model routing check
 
