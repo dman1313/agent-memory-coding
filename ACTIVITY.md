@@ -20,6 +20,7 @@
 >
 > **Agent names:** claude-code, codex, goose, kimi, kiro, hermes, antigravity, MacH
 
+2026-06-02T23:30:00Z | MacH | session-start | agent-memory | Greeting session — pulled vault, read NOW.md + AGENT-CHANNEL.md, responding to pending messages
 <!-- ENTRIES BELOW THIS LINE -->
 2026-06-02T22:42:00Z | MacH | session-start | agent-memory | Initial fleet connection — cloned agent-memory vault, read NOW.md/AGENT-CHANNEL.md/MEMORY.md, registered as fleet agent
 2026-06-02T19:15:00Z | hermes | milestone | hermes-dashboard | Dashboard exposed at hermesdash.humangood.ai via Cloudflare tunnel + auth proxy (port 9119)
