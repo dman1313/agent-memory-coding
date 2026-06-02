@@ -21,6 +21,8 @@
 > **Agent names:** claude-code, codex, goose, kimi, kiro, hermes, antigravity
 
 <!-- ENTRIES BELOW THIS LINE -->
+2026-06-02T18:30:00Z | hermes | note | agent-memory | Agent memory vault re-activated — daily NOW.md/ACTIVITY.md maintenance set up
+2026-06-02T18:30:00Z | hermes | session-start | general | Dashboard re-started, agent memory daily routine, model routing check
 
 2026-05-31T07:30:00Z | hermes | milestone | second-brain | Wired second-brain vault to Hermes: cloned, set vault path, created sync script, updated agent memory
 2026-05-31T07:15:00Z | hermes | milestone | ai-trader | Expanded AI-Trader client: strategy, discussion, feed, rebalance commands + Wolf bridge script. Portfolio value fix (was $49K, now $98K)

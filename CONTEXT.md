@@ -6,10 +6,10 @@
 
 # NOW — Current State
 
-_Generated: 2026-05-30T23:21:00Z_
+_Generated: 2026-06-02T10:40:07Z_
 
 ## Active Work
-- **hermes** (general): Session: IGCSE pipeline fix, AI-Trader expansion, second brain setup
+- **hermes** (general): Dashboard re-started, agent memory daily routine, model routing check
 
 ## Blockers
 _(none)_
@@ -19,14 +19,13 @@ _(none)_
 - 2026-05-31T06:30:00Z | hermes/ai-trader | Bypassed weekend market hours for simulated trades (price=0)
 
 ## Recent Milestones (7d)
+- 2026-05-31T08:35:00Z | atomicmemory | Installed AtomicMemory: Docker core (DeepSeek LLM + MiniLM embeddings), CLI, Hermes plugin. Semantic memory operational.
 - 2026-05-31T07:30:00Z | second-brain | Wired second-brain vault to Hermes: cloned, set vault path, created sync script, updated agent memory
 - 2026-05-31T07:15:00Z | ai-trader | Expanded AI-Trader client: strategy, discussion, feed, rebalance commands + Wolf bridge script. Portfolio value fix (was $49K, now $98K)
 - 2026-05-31T07:00:00Z | study-pipeline | IGCSE Biology pipeline v2 rebuilt — query-based study guides, proper validation, short focus strings, flashcard fix
-- 2026-05-25T12:45:00Z | vault-activity-feed | Karpathy LLM Wiki plugin patched for GLM 5.1 (Z.AI Anthropic endpoint), installed in vault. All agents notified via AGENT-CHANNEL.
-- 2026-05-25T12:00:00Z | vault-activity-feed | Activity feed system designed and implementation plan created
 
 ## Last Seen
-- **hermes**: 2026-05-31T07:30:00Z — milestone: Wired second-brain vault to Hermes: cloned, set vault path, created sync script, updated agent memory
+- **hermes**: 2026-06-02T18:30:00Z — note: Agent memory vault re-activated — daily NOW.md/ACTIVITY.md maintenance set up
 - **claude-code**: 2026-05-25T12:45:00Z — milestone: Karpathy LLM Wiki plugin patched for GLM 5.1 (Z.AI Anthropic endpoint), installed in vault. All agents notified via AGENT-CHANNEL.
 
 ---
@@ -284,6 +283,16 @@ Organized under `~/.hermes/skills/`. Key categories:
 - Always read NOW.md at session start
 - Update ACTIVITY.md with milestones/decisions
 - Commit and push after changes
+
+## Dwayne Preferences (operational)
+
+- **Wiki-system-first:** Operate within Dwayne's existing wiki system on all knowledge-bearing tasks. Use wiki as primary durable knowledge store. Orient with SCHEMA.md, index.md, log.md before wiki work.
+- **Consult wiki proactively:** Not only for explicit wiki tasks — check wiki for context on any knowledge question.
+- **Model routing:** Light=MiMo v2.5-pro. Med=DeepSeek v4-flash. Heavy=DeepSeek v4-pro. Code=Kimi K2.6 (paid). GLM 5.1=coding plan only. DeepSeek=PAYG fallback.
+- **LLM roster:** When asked, show actually configured/usable models, not cached catalog.
+- **Quant finance:** ML trading signals, LSTM pipelines, Marcos Lopez de Prado. Prototype at ~/quant-nn/. Interested in AI supply chain: copper (FCX), rare earths (MP), specialty gases (APD), materials (ENTG).
+- **Mistral API:** mistral-small-latest, mistral-medium-latest, codestral-latest, mistral-ocr-latest, voxtral-small, voxtral-mini-tts, mistral-embed.
+- **Wellness:** Daily morning + evening reflections in Telegram thread 725.
 
 ## Strengths
 - Best for: orchestration, scheduling, research, trading, knowledge management
