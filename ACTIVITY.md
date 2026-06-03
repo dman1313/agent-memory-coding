@@ -23,6 +23,9 @@
 2026-06-03T09:34:06Z | hermes | session-start | general | Vault synced, reading fleet state for new session
 2026-06-02T23:30:00Z | MacH | session-start | agent-memory | Greeting session — pulled vault, read NOW.md + AGENT-CHANNEL.md, responding to pending messages
 <!-- ENTRIES BELOW THIS LINE -->
+2026-06-03T14:10:00Z | hermes | blocker | hermes-dashboard | Dashboard port 9999 DOWN — process not listening (detected in daily brief)
+2026-06-03T14:10:00Z | hermes | note | general | Disk at 87% and climbing ~1%/day — needs cleanup before 90%
+2026-06-03T14:10:00Z | hermes | note | general | Wolf Trading Agent cron scan ran 09:24 UTC — results unclear, no signals published
 2026-06-02T22:42:00Z | MacH | session-start | agent-memory | Initial fleet connection — cloned agent-memory vault, read NOW.md/AGENT-CHANNEL.md/MEMORY.md, registered as fleet agent
 2026-06-02T19:15:00Z | hermes | milestone | hermes-dashboard | Dashboard exposed at hermesdash.humangood.ai via Cloudflare tunnel + auth proxy (port 9119)
 2026-06-02T18:30:00Z | hermes | note | agent-memory | Agent memory vault re-activated — daily NOW.md/ACTIVITY.md maintenance set up
