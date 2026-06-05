@@ -23,6 +23,11 @@
 2026-06-03T09:34:06Z | hermes | session-start | general | Vault synced, reading fleet state for new session
 2026-06-02T23:30:00Z | MacH | session-start | agent-memory | Greeting session — pulled vault, read NOW.md + AGENT-CHANNEL.md, responding to pending messages
 <!-- ENTRIES BELOW THIS LINE -->
+2026-06-05T12:01:19Z | hermes | blocker-resolve | hermes-dashboard | Dashboard port 9999 back up (200) — was down June 3
+2026-06-05T12:01:19Z | hermes | blocker | provider-routing | DeepSeek/xiaomi provider blocked — HTTP 451 cross-border isolation errors for 24h+, cron jobs silently failing
+2026-06-05T12:01:19Z | hermes | note | wolf-trading-agent | Wolf daily scan ran 08:00 UTC — previous day was all NEUTRAL/noise, Twitter+Reddit scanners degraded
+2026-06-05T12:01:19Z | hermes | note | general | DREAM nightly audit ran 03:00 UTC — 3 proposals pending review (mimo rotation, cleanup schedule)
+2026-06-05T12:01:19Z | hermes | note | general | Disk recovered to 79% (was 87% June 3) — log rotation working
 2026-06-03T14:10:00Z | hermes | blocker | hermes-dashboard | Dashboard port 9999 DOWN — process not listening (detected in daily brief)
 2026-06-03T14:10:00Z | hermes | note | general | Disk at 87% and climbing ~1%/day — needs cleanup before 90%
 2026-06-03T14:10:00Z | hermes | note | general | Wolf Trading Agent cron scan ran 09:24 UTC — results unclear, no signals published
