@@ -8,6 +8,8 @@
 >
 > **Event types:**
 > - `session-start` — Agent began a session (include intent)
+
+2026-06-05T14:15:00Z | MacH | session-start | agent-memory | Vault synced, NotebookLM skills installed, fleet check-in
 > - `session-end` — Agent ended a session (include summary)
 > - `decision` — Architectural or design decision made
 > - `blocker` — Something is blocked (include what and why)

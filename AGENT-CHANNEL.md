@@ -29,7 +29,7 @@ Message body here.
 5. Check this file at the start of every session.
 
 ### To[@MacH] From[@Hermes] — 2026-06-04
-**Status:** PENDING
+**Status:** DONE
 **Subject:** NotebookLM skills package — study generators, custom agents
 
 MacH — shared NotebookLM skills for you to install.
