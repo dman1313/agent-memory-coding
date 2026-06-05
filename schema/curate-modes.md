@@ -1,0 +1,58 @@
+---
+type: schema
+created: 2026-06-05
+governs: .claude/skills/curate
+---
+
+# curate — mode contract
+
+The `curate` skill has one job per mode. All modes obey `schema/AGENTS.md`
+(read order, append-only, immutable raw, safety boundaries) and
+`wiki/schema/config.md` (page format). Read order always:
+`AGENTS.md → wiki/index.md → wiki/log.md → target pages`.
+
+## compile  (default)
+Turn unprocessed `raw/` files into wiki pages.
+1. Find `raw/**` files whose frontmatter lacks `processed: true`. Oldest first
+   (by frontmatter `date`, else mtime). **If > 10, ask before proceeding.**
+2. Extract per `config.md`: entities, concepts, sources — and explicitly
+   **decisions** (date/decider/rationale), **SOPs** (`concept` tag `sop`),
+   and **reusable principles/best-practices** (`concept` tag `principle`).
+   Be selective: a passing mention is not an entity.
+3. Create or **append** (dated heading `## Update YYYY-MM-DD from [[Source]]`).
+   Never overwrite. Cross-link aggressively; a page with zero outbound links
+   is a failure. Add a Mermaid relationship snippet to pages with ≥3 links.
+4. Update `wiki/index.md`; log to `wiki/log.md` (`## [date] ingest | <title>`)
+   and prepend a `milestone` to `ACTIVITY.md`.
+5. Set raw frontmatter `processed: true`, `processed_at`, `wiki_articles_touched`;
+   move the file to `raw/processed/<category>/`. Never delete raw.
+Conflicts: `> CONTRADICTION FLAG: conflicts with [[Page]]` — never silent-merge.
+
+## ask  "<question>"
+Converse with the wiki (read-only).
+1. Read `wiki/index.md`; select relevant pages; follow `[[wikilinks]]`.
+2. Answer with `[[page]]` citations. Multi-turn; end with a follow-up offer.
+3. `--deep` → `graphify query` (requires a prior `analyze`; else fall back to
+   link-following). Never assert beyond what pages support; mark gaps.
+
+## capture
+Fold a conversation's new insight back into `raw/` for the next compile.
+Write ONE `raw/` note (frontmatter unprocessed, `source: conversation`).
+**Capture only:** a decision, a reusable principle/best-practice, a new
+entity/relationship, or a correction/contradiction. **Skip** restatements,
+chatter, unverified speculation (mark `> Uncertain:` if borderline). Pairs
+with the `wrapup` skill at session end.
+
+## scribe
+`compile` tuned for transcripts/meetings: pull participants → entity
+candidates, decisions, action items (owner + due), and verbatim quotes.
+
+## lint
+Health check (no content changes except the log). Report: orphans (no
+inbound links), stale (>90d), unprocessed raw, index drift (pages missing
+from `index.md`), dead `[[links]]`, merge/best-practice-consolidation
+candidates. Write to `wiki/log.md` (`## [date] Lint`) + `ACTIVITY.md`.
+
+## analyze   (optional)
+Run graphify over `wiki/` for god-nodes / community detection / HTML viz.
+A lens only — it does not modify wiki pages.
