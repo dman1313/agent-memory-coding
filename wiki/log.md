@@ -46,3 +46,13 @@
 **Raw archived**：jeff-company-brain_vault-explainer.md, jeff-company-brain_compile-raw-SKILL.md → raw/processed/docs/; Plan-in-the-cloud-with-ultraplan.md (already ingested 2026-06-03) → raw/processed/articles/. All marked `processed: true`.
 
 > CONTRADICTION FLAG: imported compile-raw taxonomy (people/companies/topics) conflicts with this vault's entities/concepts/sources — method adopted, folders not.
+
+
+## [2026-06-05] Lint | post-ingest verification
+
+- **Unprocessed raw:** none — inbox clear ✓
+- **Dead links:** none in the 7 new pages + index; all `[[entities|concepts|sources/...]]` resolve under `wiki/` ✓
+- **Bare `[[wikilinks]]`:** all inside code spans (illustrative, not links) ✓
+- **Index drift:** all 7 new pages listed in `index.md` ✓
+- **Outbound links:** every new page has 5–13 (no orphans-by-outbound) ✓
+- Note: pre-existing wiki pages are still git-untracked locally; they arrive from `origin` at reconcile (not a wiki-integrity issue).
