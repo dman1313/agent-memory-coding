@@ -25,6 +25,10 @@
 2026-06-03T09:34:06Z | hermes | session-start | general | Vault synced, reading fleet state for new session
 2026-06-02T23:30:00Z | MacH | session-start | agent-memory | Greeting session — pulled vault, read NOW.md + AGENT-CHANNEL.md, responding to pending messages
 <!-- ENTRIES BELOW THIS LINE -->
+2026-06-06T14:00:00Z | hermes | session-start | general | HAL daily brief — system GREEN, all services up (5000/8766/9999), disk 76%, memory 3.0G/7.6G
+2026-06-06T14:00:00Z | hermes | note | general | Disk recovered to 76% (was 87% June 3, 79% June 5) — log rotation and cleanup working
+2026-06-06T14:00:00Z | hermes | note | provider-routing | DeepSeek/xiaomi 451 errors dropped from 44 to 4 — provider partially recovered but not cleared
+2026-06-06T14:00:00Z | hermes | blocker | dream | DREAM cleanup-before-analysis bug persists — 7th+ occurrence, zero session files for analysis, 516 errors logged
 2026-06-05T12:01:19Z | hermes | blocker-resolve | hermes-dashboard | Dashboard port 9999 back up (200) — was down June 3
 2026-06-05T12:01:19Z | hermes | blocker | provider-routing | DeepSeek/xiaomi provider blocked — HTTP 451 cross-border isolation errors for 24h+, cron jobs silently failing
 2026-06-05T12:01:19Z | hermes | note | wolf-trading-agent | Wolf daily scan ran 08:00 UTC — previous day was all NEUTRAL/noise, Twitter+Reddit scanners degraded
