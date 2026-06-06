@@ -14,7 +14,9 @@ The `curate` skill has one job per mode. All modes obey `schema/AGENTS.md`
 ## compile  (default)
 Turn unprocessed `raw/` files into wiki pages.
 1. Find `raw/**` files whose frontmatter lacks `processed: true`. Oldest first
-   (by frontmatter `date`, else mtime). **If > 10, ask before proceeding.**
+   (by frontmatter `date`, else mtime). Check the **frontmatter block only** — a
+   body that quotes `processed: true` (e.g. instructional docs) does NOT count.
+   **If > 10, ask before proceeding.**
 2. Extract per `config.md`: entities, concepts, sources — and explicitly
    **decisions** (date/decider/rationale), **SOPs** (`concept` tag `sop`),
    and **reusable principles/best-practices** (`concept` tag `principle`).
