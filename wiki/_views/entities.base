@@ -1,0 +1,38 @@
+filters:
+  and:
+    - 'type != ""'
+    - '!file.path.contains("_views")'
+views:
+  - type: table
+    name: All pages
+    order:
+      - file.name
+      - type
+      - tags
+      - updated
+  - type: table
+    name: Entities
+    filters:
+      and:
+        - 'type == "entity"'
+    order:
+      - file.name
+      - tags
+      - updated
+  - type: table
+    name: Concepts
+    filters:
+      and:
+        - 'type == "concept"'
+    order:
+      - file.name
+      - tags
+      - updated
+  - type: table
+    name: Sources
+    filters:
+      and:
+        - 'type == "source"'
+    order:
+      - file.name
+      - updated

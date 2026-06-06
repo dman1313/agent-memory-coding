@@ -2,3 +2,4 @@
 .DS_Store
 .smart-env/
 *.base
+!wiki/_views/*.base
