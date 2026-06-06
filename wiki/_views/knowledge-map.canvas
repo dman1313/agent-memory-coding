@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    {"id":"index","type":"file","file":"wiki/index.md","x":-200,"y":-140,"width":420,"height":220},
+    {"id":"agents","type":"file","file":"schema/AGENTS.md","x":320,"y":-140,"width":420,"height":220},
+    {"id":"config","type":"file","file":"wiki/schema/config.md","x":320,"y":140,"width":420,"height":220},
+    {"id":"llmwiki","type":"file","file":"wiki/concepts/llm-curated-wiki.md","x":-200,"y":160,"width":420,"height":200},
+    {"id":"note","type":"text","text":"Curated master map. Add entity/concept nodes as the graph grows, or regenerate via `/curate analyze` (graphify).","x":-720,"y":0,"width":460,"height":140}
+  ],
+  "edges": [
+    {"id":"e1","fromNode":"index","toNode":"agents"},
+    {"id":"e2","fromNode":"index","toNode":"config"},
+    {"id":"e3","fromNode":"index","toNode":"llmwiki"},
+    {"id":"e4","fromNode":"note","toNode":"index"}
+  ]
+}
