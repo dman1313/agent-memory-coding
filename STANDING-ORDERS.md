@@ -155,6 +155,7 @@ If you wrote 5+ ACTIVITY.md entries: `bash build-context.sh`
 | [[kimi]] | Mac | Browser automation, desktop tasks |
 | [[kiro]] | Mac | IDE-integrated, lightweight tasks |
 | [[hermes]] | VPS | Fleet orchestrator, 260 skills, multi-platform messaging |
+| [[MacH]] | Mac | Hermes-Mac — lead local agent on the Mac Mini: coding, dev, quick tasks, research |
 | [[antigravity]] | Mac | Projects workspace: skills, mobile, web, OpenClaw agents |
 | [[cursor]] | Mac | IDE-integrated coding, MCP plugins, multi-model |
 
