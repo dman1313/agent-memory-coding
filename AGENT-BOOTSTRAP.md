@@ -56,13 +56,14 @@ Feedback/       → how Dwayne wants work done
 Project/        → active project context
 Agents/         → per-agent profiles (maintain your own)
 Reference/      → infrastructure pointers
+sdd/            → Spec-Driven Development: specs, plans, templates, decisions
 
 ── LLM WIKI (only when working on raw/ or wiki/) ──
 Read order: schema/AGENTS.md → wiki/index.md → wiki/log.md → target pages
 - raw/ = inbox (unprocessed)
 - raw/processed/ = archived raw (immutable, never delete)
 - wiki/ = knowledge graph (append only, cross-link aggressively)
-- schema/ = rules (read-only)
+- schema/ = rules (read-only). Drive it with the curate skill: /curate compile | ask | capture | lint
 
 ── RULES ──
 No ghost sessions. If you worked, it must be in ACTIVITY.md.
