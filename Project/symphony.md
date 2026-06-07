@@ -11,7 +11,7 @@ Symphony is a multi-agent coding orchestrator written in Rust. It polls issue tr
 
 **Location:** `/Volumes/M2 Media/Coding Dwayne/symphony/`
 
-**Status:** Active — last commit 2026-05-23
+**Status:** Active — last commit 2026-05-25
 
 **Plans:** 3 detailed plans in `/Volumes/M2 Media/Coding Dwayne/Claude/plans/`
 - `resilient-launching-patterson.md` — Multi-backend agent runner (fork Symphony crates)
@@ -35,8 +35,11 @@ Symphony is a multi-agent coding orchestrator written in Rust. It polls issue tr
 - Local dashboard runs at `http://127.0.0.1:18119/` from `/Volumes/M2 Media/Coding Dwayne/symphony/`.
 - Linear API token is stored in macOS Keychain service `symphony-linear-api-key`; do not print it.
 - `WORKFLOW.md` is configured locally for Linear project slug `5ab40fc3fbf2` (`Hermes Dashboard`).
-- Dashboard Tasks now reads Linear issues in read-only mode; task edits should be made in Linear.
-- Scheduler is idle when all Linear issues are in `Backlog` or terminal states because active states are `Todo` and `In Progress`.
+- Dashboard Tasks now reads Linear issues and can create or update Linear issues in the configured project; destructive deletes still happen in Linear.
+- Scheduler dispatches Linear issues in active states `Todo` and `In Progress`; moving issues out of those states pauses dispatch.
+- HUM-25 was moved to `Backlog` to pause a failing Claude worker loop. Current stable dashboard state: active count 0, no running agents, no retries.
+- Scheduler releases retry claims immediately when a retried issue is moved out of active states, so paused issues stop appearing as stuck retries.
+- Linear API hit its hourly rate limit on 2026-05-25. Local `WORKFLOW.md` polling was slowed to `600000` ms to avoid hammering Linear during school beta testing. Tasks endpoint now maps Linear rate limits to HTTP 429 with a clear message.
 
 **Why:** Central orchestrator for the agent fleet — routes issues to the right agent automatically.
 

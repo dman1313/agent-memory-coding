@@ -35,3 +35,25 @@ metadata:
 - Best for: quick tasks (runs Haiku by default), app prototyping, code analysis
 - Summon extension enables subagent delegation
 - Multiple providers for routing by task complexity
+
+## Current Work
+
+_(update each session)_
+
+## Projects
+
+| Project | My role | Status | Last touched |
+|---|---|---|---|
+| | | | |
+
+## Recent Decisions
+
+_(log decisions here as you make them — 5 most recent, newest first)_
+
+## Handoff Notes
+
+_(what the next session or another agent needs to know)_
+
+## Memory Log
+
+_(running notes I want to remember across sessions)_

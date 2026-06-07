@@ -12,6 +12,7 @@ This Obsidian vault is a **shared memory system** for all coding agents. It live
 | Kimi | Mac | iCloud direct | Direct |
 | Kiro | Mac | iCloud direct | Direct |
 | Hermes | VPS (Ubuntu) | Git clone | Via GitHub |
+| Cursor | Mac | iCloud direct | Direct |
 
 ## What This Is
 
@@ -25,12 +26,18 @@ A centralized knowledge base that persists across sessions, projects, and agents
 ├── ACTIVITY.md            # Append-only agent activity log (source of truth for NOW.md)
 ├── DECISIONS.md           # Architectural decision record
 ├── MEMORY.md              # Index file — links to all individual memory files
+├── AGENT-BOOTSTRAP.md     # Copy-paste instructions to share with every agent
 ├── AGENT-SETUP.md         # This file — setup instructions for agents
 ├── AGENT-CHANNEL.md       # Inter-agent message board
 ├── HERMES-SETUP.md        # Hermes-specific VPS setup
 ├── sync.sh                # Mac auto-sync script (runs every 15 min via launchd)
 ├── build-context.sh       # Rebuilds NOW.md and CONTEXT.md from source files
 ├── activity-archive/      # Monthly archives of rotated ACTIVITY.md entries
+├── schema/                # LLM Wiki operational rules (read-only)
+│   └── AGENTS.md          # Master rules for Knowledge Curator agents
+├── raw/                   # Unprocessed source inbox
+├── raw/processed/         # Archived raw files (immutable audit trail)
+├── wiki/                  # Knowledge graph (entities, concepts, sources)
 ├── User/                  # User preferences, role, knowledge
 ├── Feedback/              # How the user wants work done (do's and don'ts)
 ├── Project/               # Active projects, deadlines, decisions
@@ -74,15 +81,21 @@ YYYY-MM-DDTHH:MM:SSZ | agent-name | event-type | project-slug | detail text
 | `handoff` | Work passed to another agent | Who received it and context |
 | `note` | Informational | The note content |
 
-**Agent names:** `claude-code`, `codex`, `goose`, `kimi`, `kiro`, `hermes`, `antigravity`
+**Agent names:** `claude-code`, `codex`, `goose`, `kimi`, `kiro`, `hermes`, `antigravity`, `cursor`
 **Project slugs:** `symphony`, `free-claude-code`, `hermes-ecosystem`, `hermes-metaclaw`, `wiki-obsidian`, `newsletter-platform`, `multica-dashboard`, or leave empty for general work.
 
 **Rules:**
 1. Always prepend (newest at top). Never edit or delete existing lines.
 2. Use your exact agent name from the list above.
 3. Include intent on session-start, summary on session-end.
-4. NOW.md is auto-generated — never edit it directly. Regenerate via `bash build-context.sh`.
+4. NOW.md is auto-generated — never edit it directly. Regenerate via `bash build-context.sh` (also runs on `sync.sh`). If the ACTIVITY header is missing, `build-context.sh --repair-only` restores it.
 5. ACTIVITY.md is auto-trimmed to 500 entries by sync.sh. Overflow archived to `activity-archive/YYYY-MM.md`.
+6. **MANDATORY: Log what you're working on.** Every session must:
+   - Write a `session-start` entry to ACTIVITY.md with a clear description of what you plan to work on.
+   - Write a `session-end` entry when done with a summary of what was accomplished.
+   - Log `decision`, `blocker`, `blocker-resolve`, or `milestone` entries as they happen during the session.
+   - If you're in the middle of work (not finished), write a `note` entry with current status so other agents know what's in progress.
+   - **No ghost sessions.** If you started working, there must be a trail in ACTIVITY.md. Other agents rely on this to avoid duplicate work and hand off cleanly.
 
 ## Sync Architecture
 
@@ -171,6 +184,17 @@ cp "/Volumes/M2 Media/Coding Dwayne/Claude/.kiro/steering/agent-memory.md" <proj
 
 Read/write directly — same iCloud files as Claude Code.
 
+## For Cursor (Mac)
+
+Open this vault as the workspace, or add to project rules:
+```
+Memory vault: /Users/dwayne-primeau/Library/Mobile Documents/com~apple~CloudDocs/Agent Memory/Coding
+Read STANDING-ORDERS.md, NOW.md, and Agents/cursor.md at session start. Log to ACTIVITY.md as agent name `cursor`.
+Check Agent Inbox/cursor.md for Dashboard dispatches.
+```
+
+Workspace `CLAUDE.md` carries fleet standing orders when this vault is the active project. Read/write directly — same iCloud files as other Mac agents.
+
 ## For Hermes (VPS)
 
 Clone and configure:
@@ -202,3 +226,4 @@ When writing memories:
 6. **Verify before trusting** — memories are point-in-time. If something seems stale, check current state before acting on it.
 7. **Never delete** another agent's memory without confirming with the user.
 8. **Pull before push** — Hermes must always `git pull --rebase` before writing.
+9. **Log your work — mandatory.** Every agent must write to ACTIVITY.md at session start and end, and log decisions/blockers/milestones mid-session. Other agents and the user rely on this log to know what's happening. Unlogged work is invisible work.

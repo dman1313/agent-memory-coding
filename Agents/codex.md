@@ -28,3 +28,25 @@ metadata:
 - Best for: creating new skills/plugins, image generation
 - Has OpenAI docs access for model/API questions
 - Can teach other agents how to build skills (skill-creator is a meta-skill worth sharing)
+
+## Current Work
+
+_(update each session)_
+
+## Projects
+
+| Project | My role | Status | Last touched |
+|---|---|---|---|
+| | | | |
+
+## Recent Decisions
+
+_(log decisions here as you make them — 5 most recent, newest first)_
+
+## Handoff Notes
+
+_(what the next session or another agent needs to know)_
+
+## Memory Log
+
+_(running notes I want to remember across sessions)_

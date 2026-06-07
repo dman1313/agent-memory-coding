@@ -6,6 +6,9 @@ cd "$VAULT" || exit 1
 # Pull remote changes first
 git pull --rebase --autostash 2>/dev/null
 
+# Ensure ACTIVITY.md header exists before rotation
+bash "$VAULT/build-context.sh" --repair-only 2>/dev/null || true
+
 # Rotate ACTIVITY.md if over 500 entries
 ACTIVITY="$VAULT/ACTIVITY.md"
 if [ -f "$ACTIVITY" ]; then
@@ -17,6 +20,11 @@ if [ -f "$ACTIVITY" ]; then
     grep '^[0-9]\{4\}-' "$ACTIVITY" | head -n "$overflow" >> "$VAULT/activity-archive/$(date -u +%Y-%m).md"
     # Rebuild ACTIVITY.md: header + last 500 entries
     header_end=$(grep -n '<!-- ENTRIES BELOW THIS LINE -->' "$ACTIVITY" | head -1 | cut -d: -f1)
+    if [ -z "$header_end" ]; then
+      bash "$VAULT/build-context.sh" --repair-only 2>/dev/null || true
+      header_end=$(grep -n '<!-- ENTRIES BELOW THIS LINE -->' "$ACTIVITY" | head -1 | cut -d: -f1)
+    fi
+    [ -z "$header_end" ] && exit 1
     head -n "$header_end" "$ACTIVITY" > "$ACTIVITY.tmp"
     grep '^[0-9]\{4\}-' "$ACTIVITY" | tail -n 500 >> "$ACTIVITY.tmp"
     mv "$ACTIVITY.tmp" "$ACTIVITY"

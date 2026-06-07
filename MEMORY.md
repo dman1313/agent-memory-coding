@@ -14,10 +14,17 @@
 - [[Feedback/working-style|Working Style]] — Brevity-first, action-oriented, minimal friction
 - [[Feedback/session-startup|Session Startup]] — Check vault + git log at every session start for recent project activity
 
+## Bootstrap
+- [[AGENT-BOOTSTRAP|Agent Bootstrap]] — Copy-paste instructions to share with every new agent
+
+## Schema (LLM Wiki Rules)
+- [[schema/AGENTS|AGENTS.md]] — Master operational rules for Knowledge Curator agents (read-only)
+
 ## Project
 - [[Project/hermes-ecosystem|Hermes/OpenClaw Ecosystem]] — Agent fleet: Sherlock, Special Ops, DREAM, Firehose
 - [[Project/hermes-metaclaw|Hermes MetaClaw]] — MetaClaw proxy integration for Hermes Agent
 - [[Project/wiki-obsidian|Wiki (Obsidian)]] — LLM Wiki vault synced via Dropbox, powered by Karpathy's pattern
+- [[Project/vault-purpose|Vault Purpose]] — Dwayne's private bank for stock ideas, trade ideas, and everything worth referencing
 - [[Project/symphony|Symphony]] — Rust multi-agent kanban orchestrator with pluggable backends
 - [[Project/free-claude-code|Free Claude Code]] — Python middleware proxy routing Anthropic API to alt providers
 - [[Project/newsletter-platform|Newsletter Platform]] — Agent-first newsletter from Telegram voice to HTML email
@@ -31,6 +38,7 @@
 - [[Agents/kiro|Kiro]] — IDE-integrated, lightweight steering-based
 - [[Agents/hermes|Hermes]] — VPS-based, fleet orchestrator, server tasks
 - [[Agents/antigravity|Anti-Gravity]] — Projects workspace: skills, mobile apps, web sites, OpenClaw agents
+- [[Agents/cursor|Cursor]] — IDE-integrated coding, MCP plugins, multi-model
 
 ## Reference
 - [[Reference/external-systems|External Systems]] — Hermes, Multica, server, Dropbox sync, LLM routing

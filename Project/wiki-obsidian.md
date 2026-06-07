@@ -14,4 +14,4 @@ This directory is an Obsidian vault implementing the LLM Wiki pattern (Karpathy,
 
 **Why:** This is a persistent, compounding knowledge base. The LLM (Claude Code) is the wiki maintainer — it writes, updates, and cross-links pages. The human curates sources and asks questions.
 
-**How to apply:** Always follow the read order in CLAUDE.md (SCHEMA.md → index.md → log.md → pages). The three-layer architecture (raw/ immutable, wiki/ LLM-owned, schema/ config) is non-negotiable. New pages go to index.md, actions go to log.md.
+**How to apply:** Read order: `schema/AGENTS.md` → `wiki/index.md` → `wiki/log.md` → target pages. The four-layer architecture (`raw/` inbox, `raw/processed/` archive, `wiki/` graph, `schema/` rules) is non-negotiable. New pages go to `wiki/index.md`; curator actions go to `wiki/log.md`. Vault-root `schema/` holds master rules; `wiki/schema/` holds wiki-local config.

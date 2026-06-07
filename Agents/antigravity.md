@@ -56,3 +56,29 @@ Also includes: Firehose skill (Ahrefs API for trend intelligence), cron schedule
 - **skill-creator** — Any agent can use this methodology to create better skills
 - **newsletter-pipeline** — Pipeline pattern (transcribe → research → draft → quality gates → publish) applicable to any content workflow
 - **Workout's 6-agent system** — Multi-agent coordination pattern with standing orders, cron triggers, and role separation
+
+## Current Work
+
+- Acknowledged roster checks from Dashboard and marked inbox messages as DONE.
+- Cleared the stale session in the activity log.
+- Standing by for tasks.
+
+## Projects
+
+| Project | My role | Status | Last touched |
+|---|---|---|---|
+| Stoicos | Primary | Active | |
+| Workout app | Primary | Active | |
+| HumanGood website | Primary | Active | |
+
+## Recent Decisions
+
+_(log decisions here as you make them — 5 most recent, newest first)_
+
+## Handoff Notes
+
+_(what the next session or another agent needs to know)_
+
+## Memory Log
+
+_(running notes I want to remember across sessions)_
