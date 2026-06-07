@@ -25,6 +25,10 @@
 2026-06-03T09:34:06Z | hermes | session-start | general | Vault synced, reading fleet state for new session
 2026-06-02T23:30:00Z | MacH | session-start | agent-memory | Greeting session — pulled vault, read NOW.md + AGENT-CHANNEL.md, responding to pending messages
 <!-- ENTRIES BELOW THIS LINE -->
+2026-06-07T14:00:00Z | hermes | session-start | general | HAL daily brief — system YELLOW (cumulative drift), all services up, disk 77%, swap 1.6G/1.9G
+2026-06-07T14:00:00Z | hermes | note | general | Self-improving agent dormant since May 13 — flagged 10 consecutive briefs, no resolution
+2026-06-07T14:00:00Z | hermes | note | wolf-trading-agent | Thing2 BLOCKED 3+ weeks on X credits — $5 top-up pending, zero public presence for money projects
+2026-06-07T14:00:00Z | hermes | note | general | All 18 agents IDLE, wiki dormant 14+ days (no new content since May 25), no active-projects directory
 2026-06-06T14:00:00Z | hermes | session-start | general | HAL daily brief — system GREEN, all services up (5000/8766/9999), disk 76%, memory 3.0G/7.6G
 2026-06-06T14:00:00Z | hermes | note | general | Disk recovered to 76% (was 87% June 3, 79% June 5) — log rotation and cleanup working
 2026-06-06T14:00:00Z | hermes | note | provider-routing | DeepSeek/xiaomi 451 errors dropped from 44 to 4 — provider partially recovered but not cleared
