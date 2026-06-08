@@ -27,6 +27,10 @@
 2026-06-03T09:34:06Z | hermes | session-start | general | Vault synced, reading fleet state for new session
 2026-06-02T23:30:00Z | MacH | session-start | agent-memory | Greeting session — pulled vault, read NOW.md + AGENT-CHANNEL.md, responding to pending messages
 <!-- ENTRIES BELOW THIS LINE -->
+2026-06-08T14:05:00Z | hermes | blocker | hermes-dashboard | Dashboard :9999 DOWN — was UP yesterday, new failure detected in daily brief
+2026-06-08T08:05:00Z | hermes | note | wolf-trading-agent | Wolf Sunday scan: 2 NEUTRAL signals (RDDT, GME), Twitter scanner degraded, low-value weekend run
+2026-06-08T14:05:00Z | hermes | note | general | HAL daily brief: system YELLOW, disk 77%, memory healthy, 7 apt updates pending, self-improving agent dormant day 26
+
 2026-06-08T14:30:00Z | hermes | session-start | general | Vault synced, reading fleet state — last activity June 7, system YELLOW then (drift + provider 451 errors), checking current state
 2026-06-07T14:00:00Z | hermes | session-start | general | HAL daily brief — system YELLOW (cumulative drift), all services up, disk 77%, swap 1.6G/1.9G
 2026-06-07T14:00:00Z | hermes | note | general | Self-improving agent dormant since May 13 — flagged 10 consecutive briefs, no resolution
