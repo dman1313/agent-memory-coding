@@ -80,6 +80,15 @@ _System: VPS (ubuntu@65.109.141.110)_
 |---------|------|-------------|--------|
 | second-brain | ~/Documents/Obsidian Vault/second-brain | 2026-05-31 | ✅ Active — wiki/, journal/, crm/, raw/ |
 
+### MacH-Local Projects (macOS — Dwayne's Mac mini)
+| Project | Path | Last Active | Status |
+|---------|------|-------------|--------|
+| teacher-toolkit | ~/teacher-toolkit | 2026-06-09 | ✅ Active — 13 classroom apps + Graphify map |
+| Obsidian-Wiki | ~/Obsidian-Wiki | 2026-06-05 | 🟡 Knowledge wiki |
+| agent-os | ~/agent-os | — | 🟡 Agent OS infrastructure |
+| hermes-office | ~/hermes-office | 2026-05-20 | ✅ Active — 3D Office (HD1) |
+| ruflo | ~/ruflo | 2026-06-03 | ✅ Active — Ruflo agent framework (local) |
+
 ---
 
 ## Fleet Agents
@@ -201,10 +210,18 @@ _System: VPS (ubuntu@65.109.141.110)_
 
 ## Graphify
 
-Graphify (`gsd-graphify`) is installed at `~/.claude/skills/gsd-graphify/`. It builds project knowledge graphs from codebases. Activate per-project with:
+**Graphify** (`graphifyy` on PyPI) builds project knowledge graphs from codebases — HTML visualizations, markdown reports, JSON queryable graphs. Install with `uv pip install graphifyy` or `pip install graphifyy`.
 
-```
-node $HOME/.claude/get-shit-done/bin/gsd-tools.cjs config-set graphify.enabled true
+**Standalone usage (any agent, any machine):**
+```bash
+cd /path/to/project && graphify .          # generates graphify-out/ directory
+uvx graphifyy .                            # no-install alternative
 ```
 
-Then build with `/gsd:graphify build` or query with `/gsd:graphify query <term>`.
+**Output files:** `graphify-out/graph.html` (browser), `GRAPH_REPORT.md` (highlights), `graph.json` (queryable)
+
+**For agents:** Drop the output into the shared vault at `agent-memory/project-graphs/<project-name>/` so every fleet agent can read the graph without re-running.
+
+**Installed on:** VPS Hermes (`~/.claude/skills/gsd-graphify/`), MacH (`graphifyy` pip package)
+
+To activate per-project: `node $HOME/.claude/get-shit-done/bin/gsd-tools.cjs config-set graphify.enabled true`

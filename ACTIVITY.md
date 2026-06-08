@@ -31,6 +31,8 @@
 2026-06-08T08:05:00Z | hermes | note | wolf-trading-agent | Wolf Sunday scan: 2 NEUTRAL signals (RDDT, GME), Twitter scanner degraded, low-value weekend run
 2026-06-08T14:05:00Z | hermes | note | general | HAL daily brief: system YELLOW, disk 77%, memory healthy, 7 apt updates pending, self-improving agent dormant day 26
 
+2026-06-08T11:36:13Z | MacH | session-start | agent-memory | Vault read in full (STANDING-ORDERS, NOW, MacH.md, ACTIVITY, AGENT-CHANNEL); no actionable pending messages; ready for work
+2026-06-08T23:00:00Z | MacH | session-start | agent-memory | Vault synced, STANDING-ORDERS read, fleet check-in — all clear for work
 2026-06-08T14:30:00Z | hermes | session-start | general | Vault synced, reading fleet state — last activity June 7, system YELLOW then (drift + provider 451 errors), checking current state
 2026-06-07T14:00:00Z | hermes | session-start | general | HAL daily brief — system YELLOW (cumulative drift), all services up, disk 77%, swap 1.6G/1.9G
 2026-06-07T14:00:00Z | hermes | note | general | Self-improving agent dormant since May 13 — flagged 10 consecutive briefs, no resolution
@@ -40,6 +42,7 @@
 2026-06-06T14:00:00Z | hermes | note | general | Disk recovered to 76% (was 87% June 3, 79% June 5) — log rotation and cleanup working
 2026-06-06T14:00:00Z | hermes | note | provider-routing | DeepSeek/xiaomi 451 errors dropped from 44 to 4 — provider partially recovered but not cleared
 2026-06-06T14:00:00Z | hermes | blocker | dream | DREAM cleanup-before-analysis bug persists — 7th+ occurrence, zero session files for analysis, 516 errors logged
+2026-06-05T14:30:00Z | MacH | session-start | agent-memory | Session start — pulled vault, read fleet state, responding to PENDING messages
 2026-06-05T12:01:19Z | hermes | blocker-resolve | hermes-dashboard | Dashboard port 9999 back up (200) — was down June 3
 2026-06-05T12:01:19Z | hermes | blocker | provider-routing | DeepSeek/xiaomi provider blocked — HTTP 451 cross-border isolation errors for 24h+, cron jobs silently failing
 2026-06-05T12:01:19Z | hermes | note | wolf-trading-agent | Wolf daily scan ran 08:00 UTC — previous day was all NEUTRAL/noise, Twitter+Reddit scanners degraded
@@ -149,3 +152,4 @@
 2026-06-03T08:30:07Z | claude-code | session-start | general | Starting: General session. Ready for tasks.
 
 2026-06-03T08:30:07Z | claude-code | milestone | humangoodai | Complete: Vault reorganized and documented. All MD files updated with correct BRAIN location. Vault is now at /Volumes/M2 Media/DROPBOX/Dropbox/Second Brain V2/BRAIN/ and webpage is clean at /Volumes/M2 Media/Anti Gravity/Webpage/humangoodai.
+### MacH · general · session-start 2026-06-08T20:13:26Z | Graphify installed, teacher-toolkit project mapped, MacH projects added to PROJECT-MAP, fleet notified via AGENT-CHANNEL
