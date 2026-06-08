@@ -1,0 +1,160 @@
+{
+  "communities": {
+    "0": [
+      "01_random_picker_app",
+      "02_quick_grader_app",
+      "03_classroom_timer_app",
+      "04_seating_chart_app",
+      "05_parent_contact_log_app",
+      "06_exit_tickets_app",
+      "08_lesson_planner_app",
+      "09_flashcards_app",
+      "10_grade_book_app",
+      "concept_local_storage",
+      "index_app",
+      "readme_main"
+    ],
+    "1": [
+      "concept_body_orientation",
+      "concept_cssa_yolo",
+      "concept_jointbdoe",
+      "concept_pose_landmarks",
+      "concept_privacy_architecture",
+      "concept_studyeyes",
+      "concept_webgl",
+      "concept_yolov8",
+      "research_notebook_main"
+    ],
+    "2": [
+      "11_in_seat_tracker_app",
+      "12_hand_raise_detector_app",
+      "13_on_task_monitor_app",
+      "14_classroom_monitor_app",
+      "concept_get_user_media",
+      "concept_mediapipe_pose"
+    ],
+    "3": [
+      "07_noise_monitor_app",
+      "concept_web_audio_api"
+    ]
+  },
+  "cohesion": {
+    "0": 0.4393939393939394,
+    "1": 0.2222222222222222,
+    "2": 0.5333333333333333,
+    "3": 1.0
+  },
+  "gods": [
+    {
+      "id": "index_app",
+      "label": "Teacher Toolkit",
+      "degree": 16
+    },
+    {
+      "id": "research_notebook_main",
+      "label": "Classroom Computer Vision Research Notebook",
+      "degree": 15
+    },
+    {
+      "id": "readme_main",
+      "label": "README Teacher Toolkit",
+      "degree": 12
+    },
+    {
+      "id": "11_in_seat_tracker_app",
+      "label": "In-Seat Tracker",
+      "degree": 5
+    },
+    {
+      "id": "12_hand_raise_detector_app",
+      "label": "Hand-Raise Detector",
+      "degree": 5
+    },
+    {
+      "id": "13_on_task_monitor_app",
+      "label": "On-Task Monitor",
+      "degree": 5
+    },
+    {
+      "id": "14_classroom_monitor_app",
+      "label": "Classroom Monitor \u2014 Unified",
+      "degree": 5
+    },
+    {
+      "id": "07_noise_monitor_app",
+      "label": "Noise Monitor",
+      "degree": 4
+    },
+    {
+      "id": "01_random_picker_app",
+      "label": "Random Student Picker",
+      "degree": 3
+    },
+    {
+      "id": "02_quick_grader_app",
+      "label": "Quick Grader",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Teacher Toolkit",
+      "target": "Noise Monitor",
+      "source_files": [
+        "index.html",
+        "07-noise-monitor.html"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "README Teacher Toolkit",
+      "target": "Noise Monitor",
+      "source_files": [
+        "README.md",
+        "07-noise-monitor.html"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "Teacher Toolkit",
+      "target": "In-Seat Tracker",
+      "source_files": [
+        "index.html",
+        "11-in-seat-tracker.html"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "Classroom Computer Vision Research Notebook",
+      "target": "In-Seat Tracker",
+      "source_files": [
+        "RESEARCH-NOTEBOOK.md",
+        "11-in-seat-tracker.html"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "Teacher Toolkit",
+      "target": "Hand-Raise Detector",
+      "source_files": [
+        "index.html",
+        "12-hand-raise-detector.html"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    }
+  ],
+  "tokens": {
+    "input": 48148,
+    "output": 9175
+  }
+}
