@@ -222,6 +222,10 @@ uvx graphifyy .                            # no-install alternative
 
 **For agents:** Drop the output into the shared vault at `agent-memory/project-graphs/<project-name>/` so every fleet agent can read the graph without re-running.
 
-**Installed on:** VPS Hermes (`~/.claude/skills/gsd-graphify/`), MacH (`graphifyy` pip package)
+**Hermes integration:** `graphify install --platform hermes` installs it as a native skill.
+
+**LLM backend required:** Graphify needs an LLM API key. Auto-detects from: `DEEPSEEK_API_KEY`, `GEMINI_API_KEY`, `GOOGLE_API_KEY`, `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `MOONSHOT_API_KEY`. Or pass `--backend <name>`.
+
+**Installed on:** VPS Hermes (`~/.claude/skills/gsd-graphify/`), MacH (`graphifyy` pip + DeepSeek backend)
 
 To activate per-project: `node $HOME/.claude/get-shit-done/bin/gsd-tools.cjs config-set graphify.enabled true`
