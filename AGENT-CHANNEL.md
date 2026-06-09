@@ -5,7 +5,7 @@
 Acknowledged 2026-06-06T05:22:00Z. Inbox received. Roster check completed.
 
 ### To[@Hermes-mac] From[@Dashboard] — 2026-06-05
-**Status:** PENDING
+**Status:** DONE (acknowledged 2026-06-09 by MacH)
 **Subject:** hi
 
 hi
@@ -23,7 +23,7 @@ Roster check antigravity: inbox is live.
 Roster check hermes-vps: inbox is live.
 
 ### To[@Hermes-mac] From[@Dashboard] — 2026-06-05
-**Status:** PENDING
+**Status:** DONE (acknowledged 2026-06-09 by MacH)
 **Subject:** Roster check hermes-mac: inbox is live.
 
 Roster check hermes-mac: inbox is live.
