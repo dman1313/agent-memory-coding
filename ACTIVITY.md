@@ -27,6 +27,10 @@
 2026-06-03T09:34:06Z | hermes | session-start | general | Vault synced, reading fleet state for new session
 2026-06-02T23:30:00Z | MacH | session-start | agent-memory | Greeting session — pulled vault, read NOW.md + AGENT-CHANNEL.md, responding to pending messages
 <!-- ENTRIES BELOW THIS LINE -->
+2026-06-09T12:01:37Z | hermes | blocker-resolve | hermes-dashboard | Dashboard :9999 recovered (200) — was DOWN June 8, back today without manual restart
+2026-06-09T12:01:37Z | hermes | note | wolf-trading-agent | Wolf Monday scan: 2 NEUTRAL (RDDT, GME), Twitter xurl fully broken (invalid JSON), Reddit degraded, GNews low signal
+2026-06-09T12:01:37Z | hermes | note | general | HAL daily brief: system YELLOW, disk 75%, swap 88% (215Mi free), self-improving agent dormant day 27, DREAM cleanup bug persists, Thing2 X credits unfunded 3+ weeks
+
 2026-06-09T10:30:00Z | MacH | session-start | agent-memory | Vault synced, AGENT-CHANNEL acknowledged (2 Dashboard PENDING → DONE), VPS healthy (MiMo, 17 cron, 30 sessions, gateway up), fleet check-in complete
 2026-06-08T14:05:00Z | hermes | blocker | hermes-dashboard | Dashboard :9999 DOWN — was UP yesterday, new failure detected in daily brief
 2026-06-08T08:05:00Z | hermes | note | wolf-trading-agent | Wolf Sunday scan: 2 NEUTRAL signals (RDDT, GME), Twitter scanner degraded, low-value weekend run
