@@ -44,6 +44,11 @@ Skip SDD only for trivial fixes (typos, one-liners, config).
 2. Update Agents/{agent-name}.md
 3. If you wrote 5+ activity entries: bash build-context.sh
 
+── CODING FACTORY (MacH → cursor) ──
+MacH orchestrates; cursor implements. Protocol: Reference/coding-factory-routing.md
+MacH: prepend PENDING to Agent Inbox/cursor.md + AGENT-CHANNEL To[@Cursor] + ACTIVITY handoff
+cursor: on session start, execute newest PENDING dispatch before other work; mark DONE with Response
+
 ── WHERE THINGS LIVE ──
 NOW.md          → current fleet state (auto-generated, don't edit)
 CONTEXT.md      → consolidated context (auto-generated)
@@ -122,5 +127,5 @@ git add -A && git commit -m "memory: {topic}" && git push
 
 - [[STANDING-ORDERS]]
 - [[AGENT-SETUP]]
-- [[schema/AGENTS]]
+- [[AGENTS]]
 - [[MEMORY]]

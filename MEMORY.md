@@ -18,9 +18,11 @@
 - [[AGENT-BOOTSTRAP|Agent Bootstrap]] — Copy-paste instructions to share with every new agent
 
 ## Schema (LLM Wiki Rules)
-- [[schema/AGENTS|AGENTS.md]] — Master operational rules for Knowledge Curator agents (read-only)
+- [[AGENTS|AGENTS.md]] — Master operational rules for Knowledge Curator agents (read-only)
 
 ## Project
+- [[Project/classroom-mirror|Classroom Mirror]] — Privacy-first classroom webcam tool (numbers, never video); 14/14 AUTO criteria, awaiting Dwayne's 5 human checks
+- [[Project/agent-ready-coding-loop|Agent-Ready Coding Loop]] — The Loop Generator v2.2: contract-driven starter prompt for non-technical humans; private GitHub repo
 - [[Project/hermes-ecosystem|Hermes/OpenClaw Ecosystem]] — Agent fleet: Sherlock, Special Ops, DREAM, Firehose
 - [[Project/hermes-metaclaw|Hermes MetaClaw]] — MetaClaw proxy integration for Hermes Agent
 - [[Project/wiki-obsidian|Wiki (Obsidian)]] — LLM Wiki vault synced via Dropbox, powered by Karpathy's pattern
@@ -41,10 +43,10 @@
 - [[Agents/cursor|Cursor]] — IDE-integrated coding, MCP plugins, multi-model
 
 ## Reference
-- [[Reference/external-systems|External Systems]] — Hermes, Multica, server, Dropbox sync, LLM routing
-- [[Reference/zeabur-infrastructure|Zeabur Infrastructure]] — Hermes1/Hermestwo8gb servers, K3s fixes, cleanup routine
-- [[Reference/claude-code-glm|Claude Code + GLM]] — Zhipu GLM-5.1 setup, API config, official helper tool
-- [[Reference/notebooklm-brain|NotebookLM Brain]] — Brain notebook setup (not yet created)
+- [[external-systems|External Systems]] — Hermes, Multica, server, Dropbox sync, LLM routing
+- [[zeabur-infrastructure|Zeabur Infrastructure]] — Hermes1/Hermestwo8gb servers, K3s fixes, cleanup routine
+- [[claude-code-glm|Claude Code + GLM]] — Zhipu GLM-5.1 setup, API config, official helper tool
+- [[notebooklm-brain|NotebookLM Brain]] — Brain notebook setup (not yet created)
 
 ## Communication
 - [[AGENT-CHANNEL|Agent Channel]] — Message board for inter-agent communication

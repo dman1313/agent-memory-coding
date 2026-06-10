@@ -27,13 +27,13 @@ No standalone skills. Uses `.kiro/steering/` files for project-level instruction
 
 ## Current Work
 
-_(update each session)_
+2026-06-10: Ingested vault per AGENT-BOOTSTRAP.md. Awaiting Dwayne's instructions.
 
 ## Projects
 
 | Project | My role | Status | Last touched |
 |---|---|---|---|
-| | | | |
+| agent-memory-coding | Vault participant | Active | 2026-06-10 |
 
 ## Recent Decisions
 
@@ -41,8 +41,13 @@ _(log decisions here as you make them — 5 most recent, newest first)_
 
 ## Handoff Notes
 
-_(what the next session or another agent needs to know)_
+Fleet state on 2026-06-10:
+- [[project-classroom-mirror]]: 14/14 AUTO YES, 5 HUMAN checks pending Dwayne. Local only, not pushed.
+- [[project-agent-ready-coding-loop]]: v2.2 shipped, pushed to GitHub.
+- No messages pending for kiro in AGENT-CHANNEL.
 
 ## Memory Log
 
-_(running notes I want to remember across sessions)_
+- Vault path: `/Users/dwayne-primeau/Library/Mobile Documents/com~apple~CloudDocs/Agent Memory/Coding/`
+- My agent name: `kiro` (no dedicated inbox file per roster)
+- Preferred language: Rust when possible. Working dir: `/Volumes/M2 Media/Coding Dwayne/Claude`

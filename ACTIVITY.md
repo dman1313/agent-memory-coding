@@ -8,8 +8,6 @@
 >
 > **Event types:**
 > - `session-start` — Agent began a session (include intent)
-
-2026-06-05T14:15:00Z | MacH | session-start | agent-memory | Vault synced, NotebookLM skills installed, fleet check-in
 > - `session-end` — Agent ended a session (include summary)
 > - `decision` — Architectural or design decision made
 > - `blocker` — Something is blocked (include what and why)
@@ -20,13 +18,20 @@
 >
 > **Parsing regex:** `^(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z)\s*\|\s*(\S+)\s*\|\s*(\S+)\s*\|\s*(\S*)\s*\|\s*(.+)$`
 >
-> **Agent names:** claude-code, codex, goose, kimi, kiro, hermes, antigravity, MacH
-> **Agent names:** claude-code, codex, goose, kimi, kiro, hermes, antigravity, cursor
+> **Agent names:** claude-code, codex, goose, kimi, kiro, hermes, MacH, antigravity, cursor
 > **Project slugs:** symphony, free-claude-code, hermes-ecosystem, hermes-metaclaw, wiki-obsidian, newsletter-platform, multica-dashboard, agent-memory-coding, humangood-ai-webpage, pyp-planner-gen, or leave empty for general
 
-2026-06-03T09:34:06Z | hermes | session-start | general | Vault synced, reading fleet state for new session
-2026-06-02T23:30:00Z | MacH | session-start | agent-memory | Greeting session — pulled vault, read NOW.md + AGENT-CHANNEL.md, responding to pending messages
 <!-- ENTRIES BELOW THIS LINE -->
+2026-06-10T00:25:00Z | claude-code | milestone | classroom-mirror | Built + verified: 14/14 AUTO criteria YES (guardrail 4 caught 'Marie' passing as code — fixed w/ digit rule); UI verified live in browser; 5 HUMAN checks await Dwayne (HUMAN-CHECKS.md). 4 commits, repo local
+2026-06-09T22:05:00Z | claude-code | decision | classroom-mirror | Contract signed (19 criteria): webcam classroom tool redesigned ethically — Mode 1 consented LIMS-coded child via zones, Mode 2 aggregate-only; no faces, no video stored, no emotion inference, local-only Mac. First real run of agent-ready-coding-loop v2.2
+2026-06-09T21:24:00Z | claude-code | note | loop-generator | GitHub repo renamed loop-generator -> agent-ready-coding-loop per Dwayne; remote updated, old URL redirects
+2026-06-09T21:20:00Z | claude-code | session-end | loop-generator | Done: Loop Generator v2.2 shipped + pushed to private repo github.com/dman1313/loop-generator (PROMPT.md + README; v2.1→v2.2 as separate commits; originals untouched)
+2026-06-09T21:18:00Z | claude-code | milestone | loop-generator | v2.2 written: contract persisted to CONTRACT.md w/ resume protocol, [HUMAN] checks in loop exit, stagnation-based retry budget, checkpoint commits, amendment protocol, fake-data rule, cost question
+2026-06-09T21:13:00Z | claude-code | session-start | loop-generator | Starting: Review + improve Loop Generator prompt (v2.1), create repo, push to GitHub
+2026-06-09T14:00:00Z | claude-code | session-start | humangood-ai-webpage | Starting: New session in humangoodai project, awaiting instructions
+2026-06-09T10:22:00Z | claude-code | milestone | ollama-external | Configured Ollama to use external drive: /Volumes/Over\ flow/llm/Ollama (saves internal drive space)
+2026-06-09T00:20:00Z | claude-code | session-end | hermes-desktop | Done: Fixed lint errors, rebuilt app locally with fixes (commit e03d2b4d3)
+2026-06-09T00:00:00Z | claude-code | session-start | hermes-desktop | Starting: Investigate "hermes desktop" to identify and fix issues
 2026-06-09T12:01:37Z | hermes | blocker-resolve | hermes-dashboard | Dashboard :9999 recovered (200) — was DOWN June 8, back today without manual restart
 2026-06-09T12:01:37Z | hermes | note | wolf-trading-agent | Wolf Monday scan: 2 NEUTRAL (RDDT, GME), Twitter xurl fully broken (invalid JSON), Reddit degraded, GNews low signal
 2026-06-09T12:01:37Z | hermes | note | general | HAL daily brief: system YELLOW, disk 75%, swap 88% (215Mi free), self-improving agent dormant day 27, DREAM cleanup bug persists, Thing2 X credits unfunded 3+ weeks
@@ -158,3 +163,7 @@
 
 2026-06-03T08:30:07Z | claude-code | milestone | humangoodai | Complete: Vault reorganized and documented. All MD files updated with correct BRAIN location. Vault is now at /Volumes/M2 Media/DROPBOX/Dropbox/Second Brain V2/BRAIN/ and webpage is clean at /Volumes/M2 Media/Anti Gravity/Webpage/humangoodai.
 ### MacH · general · session-start 2026-06-08T20:13:26Z | Graphify installed, teacher-toolkit project mapped, MacH projects added to PROJECT-MAP, fleet notified via AGENT-CHANNEL
+2026-06-10T01:35:00Z | kiro | session-end | agent-memory-coding | Done: Full wiki compile — 93 raw files → 20 entities, 13 concepts, 19 sources. Raw inbox cleared; files in processed/meetings/ (85), articles/ (3), docs/ (2). index.md + log.md updated.
+2026-06-10T01:35:00Z | kiro | milestone | agent-memory-coding | Wiki compile complete: Domain 2 (Human Good/AI) fully extracted; Domain 1 (school ~75 transcripts) batched into 3 period sources; Domain 3 (misc) 4 sources. raw/ inbox clean — only operational subdirs remain.
+2026-06-10T00:37:30Z | kiro | milestone | agent-memory-coding | Created raw/voicenotes/ folder (+ .gitkeep)
+2026-06-10T00:34:43Z | kiro | session-start | agent-memory-coding | Starting: Ingested vault per AGENT-BOOTSTRAP.md — read STANDING-ORDERS, NOW, Agents/kiro.md, ACTIVITY, AGENT-CHANNEL. No pending inbox. Fleet state: classroom-mirror at 14/14 AUTO awaiting Dwayne's 5 HUMAN sign-offs; loop-generator v2.2 shipped. Awaiting Dwayne's instructions.

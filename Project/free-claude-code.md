@@ -42,4 +42,4 @@ Free Claude Code (FCC) is a middleware proxy that routes Anthropic Messages API 
 **How to apply:** When adding new providers or fixing API routing issues, this is the proxy layer.
 
 ## Links
-- [[Reference/claude-code-glm]]
+- [[claude-code-glm]]

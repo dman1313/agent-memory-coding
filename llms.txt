@@ -1,0 +1,61 @@
+# Agent Memory — Coding Vault
+
+Shared memory system for Dwayne Primeau's AI coding agent fleet. All agents read and write here to maintain continuity across sessions, projects, and agents.
+
+## Start Here
+
+- CONTEXT.md: Consolidated context — read this first. Auto-generated from source files.
+- NOW.md: Current fleet state — active work, blockers, recent decisions, last-seen timestamps.
+- MEMORY.md: Full index with links to all individual memory files.
+- AGENT-SETUP.md: How agents connect, sync architecture, per-agent instructions, rules.
+- ACTIVITY.md: Append-only activity log. All agents write here. Source of truth for NOW.md.
+
+## Vault Owner
+
+- Name: Dwayne Primeau
+- Role: Entrepreneur, school principal, agentic engineer
+- Preferred language: Rust (when possible), TypeScript (frontend), Python/Shell (scripts)
+- Working directory: /Volumes/M2 Media/Coding Dwayne/Claude
+
+## Folder Structure
+
+- User/ — Dwayne's preferences, role, working style
+- Feedback/ — How Dwayne wants work done (do's and don'ts per agent)
+- Project/ — Active projects and context
+- Agents/ — Per-agent profiles and capabilities
+- Reference/ — External systems, dashboards, infrastructure pointers
+- activity-archive/ — Monthly archives of ACTIVITY.md
+
+## Active Agents
+
+- claude-code: Primary agent, Mac, iCloud direct access
+- codex: Skill/plugin creation, Mac, iCloud direct
+- goose: Quick tasks, code analysis, Mac, iCloud direct
+- kimi: Browser automation, desktop, Mac, iCloud direct
+- kiro: IDE-integrated, Mac, iCloud direct
+- hermes: VPS fleet orchestrator, reads/writes via GitHub sync
+- antigravity: Projects workspace (skills, mobile, web, OpenClaw agents)
+
+## Sync
+
+- GitHub repo: https://github.com/dman1313/agent-memory-coding (private — source of truth for VPS agents)
+- Mac agents: Read/write directly to iCloud path. launchd pushes to GitHub every 15min via sync.sh.
+- VPS agents: git clone https://github.com/dman1313/agent-memory-coding.git /home/ubuntu/agent-memory — pull before reading, push after writing. Cron syncs every 15min.
+- Latency: changes visible to all agents within 15 minutes of being written.
+
+## How to Write a Memory
+
+1. Check MEMORY.md — update existing file if topic exists, don't create duplicates
+2. Use correct folder: User/, Feedback/, Project/, Reference/, or Agents/
+3. Frontmatter required: name, description, metadata.type
+4. Use [[wikilinks]] to link related memories
+5. Update MEMORY.md index after writing
+
+## Activity Log Rules
+
+Every agent must log to ACTIVITY.md at session start and end:
+- session-start: YYYY-MM-DDTHH:MM:SSZ | agent-name | session-start | project-slug | Starting: intent
+- session-end: YYYY-MM-DDTHH:MM:SSZ | agent-name | session-end | project-slug | Done: summary
+- Also log: decision, blocker, blocker-resolve, milestone, handoff, note events as they happen
+- Prepend only (newest at top). Never edit or delete existing lines.
+- After 5+ entries, regenerate: bash build-context.sh
