@@ -137,3 +137,12 @@
 - 2025-03-09 "New note" / "Trying something new" — minimal content stubs
 - Operational files (raw/schema/, raw/sdd/, raw/Reference/, raw/skills-for-mac/) excluded from compile — vault infrastructure, not inbox
 - School transcripts batched into 3 period-based source pages (75 files → 3 sources) to avoid index explosion
+
+
+## [2026-06-10] ingest | NotebookLM wiki-architecture research
+
+**Created pages**：[[sources/notebooklm-wiki-research-2026-06-10]]
+
+**Updated pages**：[[concepts/knowledge-vault-best-practices]] (dated update), [[wiki/index]]
+
+**Raw archived**：notebooklm-wiki-research-2026-06-10.md → raw/processed/docs/ (processed: true). Schema changes from this research recorded in sdd/decisions/0002 — schema is authoritative, wiki pages are derived knowledge.

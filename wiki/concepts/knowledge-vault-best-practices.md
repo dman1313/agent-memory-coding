@@ -33,3 +33,13 @@ A set of guiding principles for building and sustaining an [[concepts/llm-curate
 ## Mentions in Source
 - "Raw files are sacred. Never edit them. Mark them processed, nothing else."
 - "Cross-link aggressively. A person article without company links, topic links, and meeting source links is an island."
+
+## Update 2026-06-10 from [[sources/notebooklm-wiki-research-2026-06-10]]
+
+NotebookLM research extended these practices with scale- and fleet-aware rules (adopted via ADR 0002):
+
+- **Align with the schema at ingestion** — check every candidate page against the index and alias lists before creating a node; duplicates are updates, not new pages.
+- **Self-lint before marking processed** — links resolve, quotes verbatim, tags valid, index updated.
+- **Give pages a lifecycle** — `active → stale → contradicted → archived` via frontmatter; archive superseded knowledge out of active retrieval without rewriting history.
+- **One writer for the wiki** — the curator owns `wiki/`; other agents contribute through `raw/` ("Flat File Mutation Danger" otherwise).
+- **Know the retrieval ceiling** — link-based retrieval holds to a few hundred pages; plan hybrid search (BM25 + vector) at ~300 pages.

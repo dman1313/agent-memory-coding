@@ -5,6 +5,11 @@ source: notebooklm
 notebook: "LLM Wiki: A Compounding Personal Knowledge Base Architecture (d68674f5)"
 conversation: 27b4d10e-7c00-4bca-b604-26b327ede7d6
 tags: [research, wiki-obsidian]
+processed: true
+processed_at: 2026-06-10
+wiki_articles_touched:
+  - sources/notebooklm-wiki-research-2026-06-10.md
+  - concepts/knowledge-vault-best-practices.md
 ---
 
 # NotebookLM research — improving the LLM-curated wiki

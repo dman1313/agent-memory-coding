@@ -83,3 +83,4 @@
 - [[sources/arabic-maintenance-transcript|arabic-maintenance-transcript]]
 - [[sources/loop-generator-concept|loop-generator-concept]]
 - [[sources/knowledge-curator-build-capture|knowledge-curator-build-capture]]
+- [[sources/notebooklm-wiki-research-2026-06-10|notebooklm-wiki-research-2026-06-10]] `aliases: NotebookLM Wiki Research`
