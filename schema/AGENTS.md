@@ -54,24 +54,14 @@ wiki/
 - **Spatial contiguity:** tables/diagrams/code sit next to the prose that references them.
 - **Smart tables:** use a Markdown table for any comparison of ≥2 entities/options/metrics.
 
-## 5. Multi-agent write contract
-
-Concurrent flat-file writes corrupt data. Every agent obeys:
-
-1. **Pull before write.** `git pull --rebase --autostash` (or wait for iCloud) before editing any shared file.
-2. **Curator owns `wiki/`.** Only an agent running the `curate` skill writes wiki pages. Others contribute by dropping notes into `raw/` (inbox) — never by editing `wiki/` directly.
-3. **Infrastructure stays at root.** `schema/`, `sdd/`, `Reference/`, `scripts/`, `skills-for-mac/` are NOT raw input. Never move them into `raw/`; never mark them `processed`.
-4. **One writer per file per session.** If another agent's `session-start` in `ACTIVITY.md` shows it mid-flight on a file, propose changes via `AGENT-CHANNEL.md` instead of editing.
-5. **Tier-1 read-only:** `schema/*` and `STANDING-ORDERS.md` — propose via `ACTIVITY.md`/`AGENT-CHANNEL.md`; only Dwayne-approved sessions edit them.
-
-## 6. Schema precedence
+## 5. Schema precedence
 
 1. `schema/AGENTS.md` (this file — process & lifecycle)
 2. `wiki/schema/config.md` (page format)
 3. `schema/curate-modes.md` (`curate` skill modes)
 4. `wiki/concepts/Wiki-*.md` — **derived, NOT authoritative**
 
-## 7. Boundaries
+## 6. Boundaries
 
 - **Never** generate trade or investment recommendations.
 - **Never** delete raw files, another agent's entries, or wiki history. Append-only.
@@ -82,7 +72,7 @@ Tailoring decisions (data types, hierarchy, PII, visual tooling, personas) → `
 
 ---
 
-## 8. Self-annealing skills
+## 7. Self-annealing skills
 
 After any execution error, suboptimal skill run, or repeat failure, **all three** steps before continuing:
 
@@ -95,7 +85,7 @@ After any execution error, suboptimal skill run, or repeat failure, **all three*
 
 **Never surface the same error twice.** If you do, the patch was incomplete — return to step 1.
 
-## 9. Auto research (Karpathy loop)
+## 8. Auto research (Karpathy loop)
 
 When asked to plan, optimize, improve, or compare anything, run an iterative campaign — never a one-shot.
 
@@ -107,7 +97,7 @@ When asked to plan, optimize, improve, or compare anything, run an iterative cam
 
 Run autonomously between iterations. Pause for the user only when a stop condition fires.
 
-## 10. Leverage
+## 9. Leverage
 
 Match the tool to the shape of the work.
 
@@ -128,7 +118,6 @@ Default bias: **delegate** subagent search → **load** matching skill → **pla
 
 - [[STANDING-ORDERS]] — cross-fleet rules (mandatory, every session)
 - [[AGENT-BOOTSTRAP]] — onboarding block for each agent's config
-- [[AGENT-SETUP]] — per-platform write access and setup details
 - [[schema/curate-modes]] — `curate` skill: compile / ask / capture / scribe / lint / analyze
 - [[wiki/schema/config]] — page-format contract
 - [[wiki/index]] — start here for any wiki work
