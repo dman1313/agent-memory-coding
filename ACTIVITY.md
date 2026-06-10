@@ -1,3 +1,5 @@
+2026-06-10T19:40:57Z | MacH | milestone | fleet-sync | VPS agents + skills inventory complete. All 17 VPS agents already present on MacH. Skills diffed: VPS 199 live (212 total w/ .archive); MacH 245 live (258 total). Pulled 13 skills from VPS: data-science/jupyter-live-kernel, github/git-repo-scout, hermes-model-roster, software-development/{code-review-and-quality,code-simplification,system-objective-agent-ready}, trading/quant-stock-scanner, media/{heartmula,songsee}, productivity/{de-bono-six-hats,mailchimp-supabase-newsletter,newsletter,write-a-skill}. MacH now has 0 non-archive skills missing vs VPS; in fact MacH has 46 skills VPS doesn't have.
+2026-06-10T19:35:06Z | MacH | session-start | fleet-sync | VPS agents + skills inventory requested by Dwayne
 # ACTIVITY — Agent Activity Log
 
 > Append-only log for the shared memory vault. One entry per line, newest at top.
