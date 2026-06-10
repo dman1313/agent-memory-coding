@@ -22,6 +22,7 @@
 > **Project slugs:** symphony, free-claude-code, hermes-ecosystem, hermes-metaclaw, wiki-obsidian, newsletter-platform, multica-dashboard, agent-memory-coding, humangood-ai-webpage, pyp-planner-gen, or leave empty for general
 
 <!-- ENTRIES BELOW THIS LINE -->
+2026-06-10T21:45:00Z | hermes | session-start | agent-memory | Starting: Dwayne pointed me to the shared wiki vault — reading instructions, reviewing current state, updating hermes.md
 2026-06-10T12:02:13Z | hermes | note | wolf-trading-agent | Wolf Tuesday scan: all 3 scanners degraded (Reddit DDG broken since May, Twitter xurl JSON errors, GNews 1 stale article), 0 signals. Alpaca options fallback: NFLX P/C 0.11, MU P/C 0.27, MSTR P/C 0.33 bullish skew
 2026-06-10T12:02:13Z | hermes | note | general | HAL daily brief: system YELLOW, disk 76%, swap 94% (128Mi free), 27 apt updates, self-improving agent dormant day 28, DREAM cleanup bug persists, Thing2 X credits unfunded 4+ weeks, all 17 workers IDLE, wiki dormant 28 days
 2026-06-10T12:02:13Z | hermes | note | agent-memory | Resolved merge conflict on Guides/claude-md-rewrite-guide.md (both-added); accepted remote version, rebased successfully
