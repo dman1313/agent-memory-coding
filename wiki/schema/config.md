@@ -86,6 +86,13 @@ Pages in `concepts/` MUST follow this structure:
 - Orphan page: no inbound links from other wiki pages
 - Missing page: referenced by [[link]] but does not exist
 
+## Page Lifecycle
+- Optional frontmatter field `status:` — one of: active (default if absent), stale, contradicted, archived
+- `stale` — set by lint when a page is untouched >90 days; cleared by any substantive update
+- `contradicted` — set by lint when a page carries an unresolved CONTRADICTION FLAG
+- `archived` — human-approved only; page is superseded but history is preserved. `ask` skips archived pages unless explicitly asked to include them
+- Transitions are logged in `wiki/log.md`; the page body is never rewritten by a status change (append-only still holds)
+
 ## Worked patterns
 
 **Stock/trade idea**

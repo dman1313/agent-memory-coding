@@ -150,6 +150,16 @@ This wiki is the shared brain for the whole fleet and Dwayne.
 - Reach the brain via `curate ask "<question>"` (or the read-path above). Dwayne also browses it via Obsidian (`wiki/_views/`, graph, Base).
 - **Boundary:** organize and link research; never generate trade or investment recommendations.
 
+## Multi-agent write contract
+
+Multiple agents share this vault. Concurrent flat-file writes corrupt data, so:
+
+1. **Pull before write.** Sync (`git pull --rebase --autostash` or wait for iCloud) before editing any shared file.
+2. **The curator owns `wiki/`.** Only an agent running the `curate` skill writes wiki pages. Every other agent contributes by dropping notes into `raw/` (the inbox) — never by editing `wiki/` directly.
+3. **Infrastructure stays at root.** `schema/`, `sdd/`, `Reference/`, `scripts/`, `skills-for-mac/` are NOT raw input. Never move them into `raw/`; never mark them `processed`.
+4. **One writer per file per session.** If another agent's session-start in `ACTIVITY.md` shows it mid-flight on a file, propose changes via `AGENT-CHANNEL.md` instead of editing.
+5. **Tier-1 read-only:** `schema/*` and `STANDING-ORDERS.md` — agents propose changes via `ACTIVITY.md`/`AGENT-CHANNEL.md`; only Dwayne-approved sessions edit them.
+
 ## Tailoring decisions (answered 2026-06-05)
 
 | # | Question | Decision |

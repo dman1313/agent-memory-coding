@@ -21,12 +21,20 @@ Turn unprocessed `raw/` files into wiki pages.
    **decisions** (date/decider/rationale), **SOPs** (`concept` tag `sop`),
    and **reusable principles/best-practices** (`concept` tag `principle`).
    Be selective: a passing mention is not an entity.
+   **Schema alignment (mandatory):** before creating ANY new page, check the
+   candidate name against `wiki/index.md` — including alias lists — and against
+   existing subtypes. A name matching an existing page or alias is an UPDATE to
+   that page, never a new node. Reuse existing subtypes; don't invent categories.
 3. Create or **append** (dated heading `## Update YYYY-MM-DD from [[Source]]`).
    Never overwrite. Cross-link aggressively; a page with zero outbound links
    is a failure. Add a Mermaid relationship snippet to pages with ≥3 links.
 4. Update `wiki/index.md`; log to `wiki/log.md` (`## [date] ingest | <title>`)
    and prepend a `milestone` to `ACTIVITY.md`.
-5. Set raw frontmatter `processed: true`, `processed_at`, `wiki_articles_touched`;
+5. **Pre-write self-lint (before marking processed):** every new/updated page
+   has ≥1 resolving outbound `[[link]]`, verbatim "Mentions in Source" quotes,
+   a valid subtype tag, and an `index.md` entry; contradictions carry a
+   CONTRADICTION FLAG. Only then:
+6. Set raw frontmatter `processed: true`, `processed_at`, `wiki_articles_touched`;
    move the file to `raw/processed/<category>/`. Never delete raw.
 Conflicts: `> CONTRADICTION FLAG: conflicts with [[Page]]` — never silent-merge.
 
@@ -50,10 +58,14 @@ with the `wrapup` skill at session end.
 candidates, decisions, action items (owner + due), and verbatim quotes.
 
 ## lint
-Health check (no content changes except the log). Report: orphans (no
-inbound links), stale (>90d), unprocessed raw, index drift (pages missing
-from `index.md`), dead `[[links]]`, merge/best-practice-consolidation
-candidates. Write to `wiki/log.md` (`## [date] Lint`) + `ACTIVITY.md`.
+Health check (no content changes except the log + lifecycle frontmatter).
+Report: orphans (no inbound links), stale (>90d), unprocessed raw, index
+drift (pages missing from `index.md`), dead `[[links]]`, merge/best-practice-
+consolidation candidates. Write to `wiki/log.md` (`## [date] Lint`) + `ACTIVITY.md`.
+**Lifecycle maintenance** (see `config.md › Page Lifecycle`): set
+`status: stale` on pages untouched >90d; `status: contradicted` on unresolved
+CONTRADICTION FLAGs; propose (never auto-apply) `status: archived` for
+superseded pages — `ask` skips archived pages unless explicitly requested.
 
 ## analyze   (optional)
 Run graphify over `wiki/` for god-nodes / community detection / HTML viz.
