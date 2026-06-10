@@ -6,28 +6,80 @@
 
 ## Entities
 
-- [[entities/ultraplan|ultraplan]] `aliases: Ultraplan Tool, ultraplan 云端规划工具` - type: entity
-- [[entities/Claude-Code|Claude-Code]] `aliases: Claude Code CLI, Claude 编程助手` - type: entity
-- [[entities/andrej-karpathy|Andrej Karpathy]] `aliases: Karpathy` - type: entity
-- [[entities/grain|Grain]] `aliases: Grain.com` - type: entity
+- [[entities/ultraplan|ultraplan]] `aliases: Ultraplan Tool` - type: entity
+- [[entities/grain|grain]] `aliases: Grain.com` - type: entity
+- [[entities/andrej-karpathy|andrej-karpathy]] `aliases: Karpathy` - type: entity
+- [[entities/Claude-Code|Claude-Code]] `aliases: Claude Code CLI` - type: entity
+- [[entities/human-good-ai|human-good-ai]] `aliases: Human Good, Human Good AI` - type: entity (organization)
+- [[entities/agent-ready|agent-ready]] `aliases: AgentReady` - type: entity (product)
+- [[entities/dwayne-primeau|dwayne-primeau]] `aliases: Dwayne, Dwayne Primeau` - type: entity (person)
+- [[entities/paul|paul]] `aliases: Paul` - type: entity (person)
+- [[entities/john-schatzky|john-schatzky]] `aliases: John Schatzky, John Shatsky` - type: entity (person)
+- [[entities/demis-hassabis|demis-hassabis]] `aliases: Demis Hassabis` - type: entity (person)
+- [[entities/canadian-academy|canadian-academy]] `aliases: Canadian Academy, CA Osaka` - type: entity (organization)
+- [[entities/ics-paris|ics-paris]] `aliases: ICS Paris, Alpha Boulevard` - type: entity (organization)
+- [[entities/lucy|lucy]] `aliases: Lucy` - type: entity (person)
+- [[entities/malou|malou]] `aliases: Malou` - type: entity (person)
+- [[entities/tato|tato]] `aliases: Tato` - type: entity (person)
+- [[entities/justina|justina]] `aliases: Justina` - type: entity (person)
+- [[entities/sebastian|sebastian]] `aliases: Sebastian` - type: entity (person)
+- [[entities/victoria|victoria]] `aliases: Victoria` - type: entity (person)
+- [[entities/nicole|nicole]] `aliases: Nicole` - type: entity (person)
+- [[entities/gloria|gloria]] `aliases: Gloria` - type: entity (person)
+- [[entities/claudine|claudine]] `aliases: Claudine` - type: entity (person)
+- [[entities/angela|angela]] `aliases: Angela` - type: entity (person)
+- [[entities/kit|kit]] `aliases: Kit` - type: entity (person)
+- [[entities/symposium|symposium]] `aliases: Symposium` - type: entity (project)
 
 ## Concepts
 
-- [[concepts/page-name|page-name]] `aliases: Slugification, URL-friendly naming` - type: concept
-- [[concepts/Wiki-Structure|Wiki-Structure]] `aliases: Wiki 组织结构, Knowledge Base Hierarchy` - type: concept
-- [[concepts/Wiki-Schema|Wiki-Schema]] `aliases: Wiki Schema, Wiki Governance Framework, Wiki 架构方案, Wiki-Schema-Configuration, Wiki 架构配置, Schema Config, Wiki Schema Configuration` - type: concept
-- [[concepts/Hybrid-Planning-Workflow|Hybrid-Planning-Workflow]] `aliases: Cloud-to-Local Planning, 混合规划工作流` - type: concept
-- [[concepts/Naming-Conventions|Naming-Conventions]] `aliases: Naming Standards, 命名规范` - type: concept
-- [[concepts/Entity-Page-Template|Entity-Page-Template]] `aliases: Entity Page Structure, 实体页面模板` - type: concept
-- [[concepts/Classification-Rules|Classification-Rules]] `aliases: Categorization Guidelines, 分类规则` - type: concept
-- [[concepts/Concept-Page-Template|Concept-Page-Template]] `aliases: Concept Page Structure, 概念页面模板` - type: concept
-- [[concepts/llm-curated-wiki|LLM-curated wiki]] `aliases: LLM Wiki Pattern, Structured wiki over embeddings` - type: concept
-- [[concepts/compile-raw|compile-raw]] `aliases: compile raw, raw-to-wiki ingestion` - type: concept · tag: sop
-- [[concepts/knowledge-vault-best-practices|knowledge-vault best practices]] `aliases: Knowledge Vault Best Practices` - type: concept · tag: principle
+- [[concepts/page-name|page-name]] `aliases: Slugification` - type: concept
+- [[concepts/llm-curated-wiki|llm-curated-wiki]] `aliases: LLM Wiki Pattern, Karpathy LLM Wiki` - type: concept
+- [[concepts/knowledge-vault-best-practices|knowledge-vault-best-practices]] `aliases: Knowledge Vault Best Practices` - type: concept
+- [[concepts/Wiki-Structure|Wiki-Structure]] `aliases: Wiki 组织结构` - type: concept
+- [[concepts/compile-raw|compile-raw]] `aliases: compile raw, raw-to-wiki ingestion` - type: concept
+- [[concepts/Wiki-Schema|Wiki-Schema]] `aliases: Wiki Schema, Wiki Governance Framework` - type: concept
+- [[concepts/Naming-Conventions|Naming-Conventions]] `aliases: Naming Standards` - type: concept
+- [[concepts/Hybrid-Planning-Workflow|Hybrid-Planning-Workflow]] `aliases: Cloud-to-Local Planning` - type: concept
+- [[concepts/Concept-Page-Template|Concept-Page-Template]] - type: concept
+- [[concepts/Entity-Page-Template|Entity-Page-Template]] - type: concept
+- [[concepts/Classification-Rules|Classification-Rules]] - type: concept
+- [[concepts/agentic-ai|agentic-ai]] `aliases: Agentic AI, agentic frameworks` - type: concept (technology)
+- [[concepts/ai-back-office|ai-back-office]] `aliases: AI back office, office in a box` - type: concept (method)
+- [[concepts/token-efficiency|token-efficiency]] `aliases: token efficiency, token cost` - type: concept (technology)
+- [[concepts/agent-friendly-web|agent-friendly-web]] `aliases: agent-friendly web, agent-ready format` - type: concept (technology)
+- [[concepts/human-good-principle|human-good-principle]] `aliases: human good, less admin more good` - type: concept (principle)
+- [[concepts/drip-feed-ai-adoption|drip-feed-ai-adoption]] `aliases: drip-feed AI, gradual AI adoption` - type: concept (method)
+- [[concepts/teacher-ai-assistant|teacher-ai-assistant]] `aliases: teacher AI assistant, curriculum AI` - type: concept (method)
+- [[concepts/ib-pyp|ib-pyp]] `aliases: IB PYP, Primary Years Programme` - type: concept (method)
+- [[concepts/deij|deij]] `aliases: DEIJ, DEI` - type: concept (method)
+- [[concepts/guided-reading|guided-reading]] `aliases: guided reading, literacy, running records` - type: concept (method)
+- [[concepts/totl|totl]] `aliases: TOTL, curriculum planner` - type: concept (technology)
+- [[concepts/atls|atls]] `aliases: ATLs, Approaches to Learning` - type: concept (method)
+- [[concepts/essential-agreements|essential-agreements]] `aliases: essential agreements` - type: concept (sop)
 
 ## Sources
 
-- [[sources/Plan-in-the-cloud-with-ultraplan|Plan-in-the-cloud-with-ultraplan]] `aliases: Cloud Planning with ultraplan, 使用 ultraplan 进行云端规划`
-- [[sources/config|config]] `aliases: Wiki Schema Config, Wiki 架构配置`
-- [[sources/jeff-company-brain-vault-explainer|Building a Company Knowledge Vault]] `aliases: Company Brain Explainer`
-- [[sources/jeff-company-brain-compile-raw-skill|compile-raw Skill]] `aliases: compile-raw skill`
+- [[sources/jeff-company-brain-vault-explainer|jeff-company-brain-vault-explainer]]
+- [[sources/jeff-company-brain-compile-raw-skill|jeff-company-brain-compile-raw-skill]]
+- [[sources/config|config]]
+- [[sources/Plan-in-the-cloud-with-ultraplan|Plan-in-the-cloud-with-ultraplan]]
+- [[sources/human-good-origin-story|human-good-origin-story]]
+- [[sources/human-good-agent-ready-back-office|human-good-agent-ready-back-office]]
+- [[sources/agentic-ai-drip-feed|agentic-ai-drip-feed]]
+- [[sources/agent-ready-making-websites-readable|agent-ready-making-websites-readable]]
+- [[sources/agent-ready-html-scan-cost|agent-ready-html-scan-cost]]
+- [[sources/human-good-less-admin-more-good|human-good-less-admin-more-good]]
+- [[sources/agentic-wiki-teacher-assistant|agentic-wiki-teacher-assistant]]
+- [[sources/being-good-kindness|being-good-kindness]]
+- [[sources/symposium-rust-agents|symposium-rust-agents]]
+- [[sources/hiring-pitch-paris-conference|hiring-pitch-paris-conference]]
+- [[sources/building-effective-ai-agents|building-effective-ai-agents]]
+- [[sources/market-data-api-alpaca|market-data-api-alpaca]]
+- [[sources/school-transcripts-nov-2024|school-transcripts-nov-2024]] `~40 voice notes, 2024-11-04 to 2024-12-16`
+- [[sources/school-transcripts-jan-2025|school-transcripts-jan-2025]] `~20 voice notes, 2025-01-08 to 2025-03-14`
+- [[sources/school-transcripts-aug-2025|school-transcripts-aug-2025]] `3 voice notes, 2025-08-19 to 2025-08-25`
+- [[sources/welsh-rights-activity|welsh-rights-activity]]
+- [[sources/arabic-maintenance-transcript|arabic-maintenance-transcript]]
+- [[sources/loop-generator-concept|loop-generator-concept]]
+- [[sources/knowledge-curator-build-capture|knowledge-curator-build-capture]]
