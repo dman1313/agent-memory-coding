@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-06-10T09:45:37Z_
+_Generated: 2026-06-10T10:01:29Z_
 
 ## Active Work
 - **claude-code · claude-md-rewrite**: Starting: rewrite global CLAUDE.md for token efficiency + Self-Annealing + Auto Research capabilities. _(2026-06-10T17:00:00Z)_
