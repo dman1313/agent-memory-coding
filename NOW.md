@@ -1,6 +1,6 @@
 # NOW — Current State
 
-_Generated: 2026-06-10T07:07:00Z_
+_Generated: 2026-06-10T07:22:53Z_
 
 ## Active Work
 - **claude-code · claude-md-rewrite**: Starting: rewrite global CLAUDE.md for token efficiency + Self-Annealing + Auto Research capabilities. _(2026-06-10T17:00:00Z)_
@@ -24,6 +24,8 @@ _(none)_
 - **hermes · provider-routing**: DeepSeek/xiaomi provider blocked — HTTP 451 cross-border isolation errors for 24h+, cron jobs silently failing _(2026-06-05T12:01:19Z)_
 
 ## Recent Activity (48h)
+- 2026-06-10T19:10:00Z | **MacH** · taste-skill · milestone | 
+- 2026-06-10T19:05:00Z | **MacH** · taste-skill · note | 
 - 2026-06-10T18:30:00Z | **MacH** · claude-md-rewrite · session-end | Done: applied canonical rewrite (Guides/claude-md-rewrite-guide) to schema/AGENTS.md on the iCloud path. 1,020→995 words / ~1,326→~1,293 tokens; added §8 Self-annealing skills, §9 Auto research (Karpathy loop), §10 Leverage. Preserved Multi-agent write contract as new §5 (binding). Logged run audit at Guides/claude-md-rewrite-runs/2026-06-10-MacH-schema-AGENTS.md. Note: there are two diverged working trees on the Mac (~/agent-memory/ vs iCloud); this work landed in the iCloud path so launchd sync will push it. Recommend retiring or syncing the local copy.
 - 2026-06-10T18:25:00Z | **MacH** · agent-memory · decision | Confirmed the iCloud vault path is the source of truth for the fleet (launchd sync, all other Mac agents, Hermes pull target). The local ~/agent-memory/ working tree is a stale personal copy that diverged ~24h ago. Will write to iCloud going forward and flag the divergence to Dwayne.
 - 2026-06-10T18:20:00Z | **MacH** · claude-md-rewrite · note | Reading claude-codes 18:00 session-end: that run rewrote the per-agent ~/.claude/CLAUDE.md and produced Guides/claude-md-rewrite-guide.md. My run is a second application of the same canonical meta-prompt, targeting the vaults schema/AGENTS.md (not a per-agent config). Keeping the guide as-is; saving per-run audit under Guides/claude-md-rewrite-runs/.
@@ -34,8 +36,6 @@ _(none)_
 - 2026-06-10T05:27:03Z | **claude-code** · wiki-obsidian · milestone | Restored schema/+sdd/+Reference/+skills to root (accidental move into raw/); reconciled 117 dirty files; found launchd sync job MISSING; queried NotebookLM wiki-research notebook — answers saved to raw/notebooklm-wiki-research-2026-06-10.md (5 CHALLENGEs incl. flat-file mutation danger, hybrid search)
 - 2026-06-10T01:35:00Z | **kiro** · agent-memory-coding · session-end | Done: Full wiki compile — 93 raw files → 20 entities, 13 concepts, 19 sources. Raw inbox cleared; files in processed/meetings/ (85), articles/ (3), docs/ (2). index.md + log.md updated.
 - 2026-06-10T01:35:00Z | **kiro** · agent-memory-coding · milestone | Wiki compile complete: Domain 2 (Human Good/AI) fully extracted; Domain 1 (school ~75 transcripts) batched into 3 period sources; Domain 3 (misc) 4 sources. raw/ inbox clean — only operational subdirs remain.
-- 2026-06-10T00:37:30Z | **kiro** · agent-memory-coding · milestone | Created raw/voicenotes/ folder (+ .gitkeep)
-- 2026-06-10T00:34:43Z | **kiro** · agent-memory-coding · session-start | Starting: Ingested vault per AGENT-BOOTSTRAP.md — read STANDING-ORDERS, NOW, Agents/kiro.md, ACTIVITY, AGENT-CHANNEL. No pending inbox. Fleet state: classroom-mirror at 14/14 AUTO awaiting Dwaynes 5 HUMAN sign-offs; loop-generator v2.2 shipped. Awaiting Dwaynes instructions.
 
 ## Recent Decisions (7d)
 - 2026-06-10T18:25:00Z | **MacH** · agent-memory | Confirmed the iCloud vault path is the source of truth for the fleet (launchd sync, all other Mac agents, Hermes pull target). The local ~/agent-memory/ working tree is a stale personal copy that diverged ~24h ago. Will write to iCloud going forward and flag the divergence to Dwayne.
@@ -45,6 +45,7 @@ _(none)_
 - 2026-06-03T09:34:32Z | **MacH** · vault-maintenance | Agent file Agents/hermes.md updated to document both MacH (macOS) and VPS Hermes instances
 
 ## Recent Milestones (7d)
+- 2026-06-10T19:10:00Z | **MacH** · taste-skill | 
 - 2026-06-10T05:27:03Z | **claude-code** · wiki-obsidian | Restored schema/+sdd/+Reference/+skills to root (accidental move into raw/); reconciled 117 dirty files; found launchd sync job MISSING; queried NotebookLM wiki-research notebook — answers saved to raw/notebooklm-wiki-research-2026-06-10.md (5 CHALLENGEs incl. flat-file mutation danger, hybrid search)
 - 2026-06-10T01:35:00Z | **kiro** · agent-memory-coding | Wiki compile complete: Domain 2 (Human Good/AI) fully extracted; Domain 1 (school ~75 transcripts) batched into 3 period sources; Domain 3 (misc) 4 sources. raw/ inbox clean — only operational subdirs remain.
 - 2026-06-10T00:37:30Z | **kiro** · agent-memory-coding | Created raw/voicenotes/ folder (+ .gitkeep)
@@ -56,10 +57,9 @@ _(none)_
 - 2026-06-05T21:05:00Z | **cursor** · wiki-obsidian | Created schema/AGENTS.md (Knowledge Curator master rules); wired into CLAUDE, STANDING-ORDERS, AGENT-SETUP, MEMORY, vault-purpose, wiki-obsidian.
 - 2026-06-05T20:46:50Z | **claude-code** · wiki-obsidian | Wrote Knowledge Curator design spec (schema/specs/2026-06-05-knowledge-curator-design.md): curate skill w/ 6 modes, conversational ask + capture learning loop, sop/principle subtypes, schema precedence, full visual stack. Approved by Dwayne; next: writing-plans.
 - 2026-06-05T20:45:00Z | **cursor** · agent-memory-coding | Improved build-context.sh: auto-repair ACTIVITY header, stale sessions, pending inboxes, dashboard feed, empty-project TSV fix; updated sync.sh + STANDING-ORDERS.
-- 2026-06-05T20:35:00Z | **cursor** · agent-memory-coding | Restored ACTIVITY.md header; ran build-context.sh — NOW.md and CONTEXT.md regenerated from 60+ entries.
 
 ## Last Seen (fleet)
-- **MacH**: 2026-06-10T18:30:00Z — session-end: Done: applied canonical rewrite (Guides/claude-md-rewrite-guide) to schema/AGENTS.md on the iCloud path. 1,020→995 words / ~1,326→~1,293 tokens; added §8 Self-annealing skills, §9 Auto research (Karpathy loop), §10 Leverage. Preserved Multi-agent write contract as new §5 (binding). Logged run audit at Guides/claude-md-rewrite-runs/2026-06-10-MacH-schema-AGENTS.md. Note: there are two diverged working trees on the Mac (~/agent-memory/ vs iCloud); this work landed in the iCloud path so launchd sync will push it. Recommend retiring or syncing the local copy.
+- **MacH**: 2026-06-10T19:10:00Z — milestone: 
 - **claude-code**: 2026-06-10T17:00:00Z — session-start: Starting: rewrite global CLAUDE.md for token efficiency + Self-Annealing + Auto Research capabilities.
 - **kiro**: 2026-06-10T01:35:00Z — session-end: Done: Full wiki compile — 93 raw files → 20 entities, 13 concepts, 19 sources. Raw inbox cleared; files in processed/meetings/ (85), articles/ (3), docs/ (2). index.md + log.md updated.
 - **hermes**: 2026-06-09T12:01:37Z — blocker-resolve: Dashboard :9999 recovered (200) — was DOWN June 8, back today without manual restart
