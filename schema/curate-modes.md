@@ -38,6 +38,33 @@ Turn unprocessed `raw/` files into wiki pages.
    move the file to `raw/processed/<category>/`. Never delete raw.
 Conflicts: `> CONTRADICTION FLAG: conflicts with [[Page]]` — never silent-merge.
 
+### Ingest workflow (for agents)
+
+When asked to ingest new content:
+
+1. **Check inbox:** `ls raw/` (look for files without `processed: true` in frontmatter)
+2. **Run compile:** `/curate compile` → answers questions if >10 files waiting
+3. **Review:** `git status` → check new/updated wiki pages, raw/processed moves
+4. **Verify (critical):**
+   - New pages appear in `wiki/index.md` ✓
+   - Log entry written to `wiki/log.md` (dated heading `## [date] ingest | <title>`) ✓
+   - Raw files marked `processed: true` and moved to `raw/processed/<category>/` ✓
+   - All new `[[links]]` resolve (no dead links) ✓
+5. **Commit:** (only stage wiki/, raw/processed/ — no raw input files)
+   ```
+   git add wiki/ raw/processed/
+   git commit -m "content(wiki): ingest [source names]" \
+     -m "Co-Authored-By: Claude [Your Name] <noreply@anthropic.com>"
+   ```
+6. **Push:** `git push origin main`
+
+**Do NOT:**
+- Manually edit `wiki/` pages (only compile does that)
+- Create duplicate nodes (alias check prevents these)
+- Invent new subtypes (reuse existing ones from config.md)
+- Delete raw files (they're immutable — just mark processed)
+- Run on files with `processed: true` already set
+
 ## ask  "<question>"
 Converse with the wiki (read-only).
 1. Read `wiki/index.md`; select relevant pages; follow `[[wikilinks]]`.

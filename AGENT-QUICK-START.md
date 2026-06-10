@@ -55,6 +55,20 @@ description: The five-step checklist for every agent session
 
 ---
 
+## Ingest workflow (add new content to wiki)
+
+If you're a curator and asked to ingest new content:
+
+1. Check: `ls raw/` (look for files without `processed: true`)
+2. Run: `/curate compile`
+3. Verify: new pages in index.md, log entry in wiki/log.md, all links resolve
+4. Commit: `git add wiki/ raw/processed/ && git commit -m "content(wiki): ingest [sources]"`
+5. Push: `git push origin main`
+
+**See [[schema/curate-modes.md]] § Ingest workflow for the full checklist.**
+
+---
+
 ## Key files
 
 | File | Purpose |
