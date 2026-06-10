@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-06-10T11:53:04Z_
+_Generated: 2026-06-10T12:10:39Z_
 
 ## Active Work
 - **claude-code · claude-md-rewrite**: Starting: rewrite global CLAUDE.md for token efficiency + Self-Annealing + Auto Research capabilities. _(2026-06-10T17:00:00Z)_
@@ -38,10 +38,10 @@ _(none)_
 - 2026-06-10T18:20:00Z | **MacH** · claude-md-rewrite · note | Reading claude-codes 18:00 session-end: that run rewrote the per-agent ~/.claude/CLAUDE.md and produced Guides/claude-md-rewrite-guide.md. My run is a second application of the same canonical meta-prompt, targeting the vaults schema/AGENTS.md (not a per-agent config). Keeping the guide as-is; saving per-run audit under Guides/claude-md-rewrite-runs/.
 - 2026-06-10T18:10:00Z | **MacH** · claude-md-rewrite · session-start | 
 - 2026-06-10T17:00:00Z | **claude-code** · claude-md-rewrite · session-start | Starting: rewrite global CLAUDE.md for token efficiency + Self-Annealing + Auto Research capabilities.
+- 2026-06-10T12:02:13Z | **hermes** · wolf-trading-agent · note | Wolf Tuesday scan: all 3 scanners degraded (Reddit DDG broken since May, Twitter xurl JSON errors, GNews 1 stale article), 0 signals. Alpaca options fallback: NFLX P/C 0.11, MU P/C 0.27, MSTR P/C 0.33 bullish skew
+- 2026-06-10T12:02:13Z | **hermes** · general · note | HAL daily brief: system YELLOW, disk 76%, swap 94% (128Mi free), 27 apt updates, self-improving agent dormant day 28, DREAM cleanup bug persists, Thing2 X credits unfunded 4+ weeks, all 17 workers IDLE, wiki dormant 28 days
+- 2026-06-10T12:02:13Z | **hermes** · agent-memory · note | Resolved merge conflict on Guides/claude-md-rewrite-guide.md (both-added); accepted remote version, rebased successfully
 - 2026-06-10T06:00:00Z | **claude-code** · general · session-start | Starting: user typed test — standing by for task assignment. Vault read complete (STANDING-ORDERS, NOW, claude-code.md).
-- 2026-06-10T05:34:27Z | **claude-code** · wiki-obsidian · decision | Adopted 4 research recommendations (ADR 0002): multi-agent write contract, schema-alignment at ingest, pre-write self-lint, page lifecycle states. Hybrid search deferred to ~300 pages. Installed com.dwayne.vault-sync launchd job (15 min).
-- 2026-06-10T05:27:03Z | **claude-code** · wiki-obsidian · milestone | Restored schema/+sdd/+Reference/+skills to root (accidental move into raw/); reconciled 117 dirty files; found launchd sync job MISSING; queried NotebookLM wiki-research notebook — answers saved to raw/notebooklm-wiki-research-2026-06-10.md (5 CHALLENGEs incl. flat-file mutation danger, hybrid search)
-- 2026-06-10T01:35:00Z | **kiro** · agent-memory-coding · session-end | Done: Full wiki compile — 93 raw files → 20 entities, 13 concepts, 19 sources. Raw inbox cleared; files in processed/meetings/ (85), articles/ (3), docs/ (2). index.md + log.md updated.
 
 ## Recent Decisions (7d)
 - 2026-06-10T18:25:00Z | **MacH** · agent-memory | Confirmed the iCloud vault path is the source of truth for the fleet (launchd sync, all other Mac agents, Hermes pull target). The local ~/agent-memory/ working tree is a stale personal copy that diverged ~24h ago. Will write to iCloud going forward and flag the divergence to Dwayne.
@@ -66,8 +66,8 @@ _(none)_
 ## Last Seen (fleet)
 - **MacH**: 2026-06-10T19:25:00Z — blocker-resolve: Dwayne challenged my first-pass skip list. Re-evaluated: 6 of 7 skips had weak reasons (called gpt-taste a dup, missed that imagegen-* are prompt direction for any image-gen tool, misread stitch as Stitch-only). Installed all 6 plus updated Guides/taste-skill-availability.md with a correction log. Only taste-skill-v1 stays out (correct reason). Total MacH install: 12 of 13 skills, 6,444 SKILL.md lines. Patched: ~/.hermes/skills/creative/taste-skill/* (6 new subdirs) and the vault pointer.
 - **claude-code**: 2026-06-10T17:00:00Z — session-start: Starting: rewrite global CLAUDE.md for token efficiency + Self-Annealing + Auto Research capabilities.
+- **hermes**: 2026-06-10T12:02:13Z — note: Wolf Tuesday scan: all 3 scanners degraded (Reddit DDG broken since May, Twitter xurl JSON errors, GNews 1 stale article), 0 signals. Alpaca options fallback: NFLX P/C 0.11, MU P/C 0.27, MSTR P/C 0.33 bullish skew
 - **kiro**: 2026-06-10T01:35:00Z — session-end: Done: Full wiki compile — 93 raw files → 20 entities, 13 concepts, 19 sources. Raw inbox cleared; files in processed/meetings/ (85), articles/ (3), docs/ (2). index.md + log.md updated.
-- **hermes**: 2026-06-09T12:01:37Z — blocker-resolve: Dashboard :9999 recovered (200) — was DOWN June 8, back today without manual restart
 - **antigravity**: 2026-06-06T05:23:30Z — session-end: Done: Acknowledged roster checks on Dashboard, cleared pending inbox/messages, closed stale session, and rebuilt vault context.
 - **cursor**: 2026-06-05T21:15:00Z — milestone: Created AGENT-BOOTSTRAP.md — shareable copy-paste instructions for onboarding any fleet agent.
 - **codex**: 2026-06-05T19:10:25Z — milestone: Adjusted result layout so result text and image stay side-by-side on tablet/desktop widths while stacking on mobile.
