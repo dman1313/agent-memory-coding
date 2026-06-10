@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-06-10T09:29:42Z_
+_Generated: 2026-06-10T09:45:37Z_
 
 ## Active Work
 - **claude-code · claude-md-rewrite**: Starting: rewrite global CLAUDE.md for token efficiency + Self-Annealing + Auto Research capabilities. _(2026-06-10T17:00:00Z)_
@@ -48,7 +48,6 @@ _(none)_
 - 2026-06-10T05:34:27Z | **claude-code** · wiki-obsidian | Adopted 4 research recommendations (ADR 0002): multi-agent write contract, schema-alignment at ingest, pre-write self-lint, page lifecycle states. Hybrid search deferred to ~300 pages. Installed com.dwayne.vault-sync launchd job (15 min).
 - 2026-06-09T22:05:00Z | **claude-code** · classroom-mirror | Contract signed (19 criteria): webcam classroom tool redesigned ethically — Mode 1 consented LIMS-coded child via zones, Mode 2 aggregate-only; no faces, no video stored, no emotion inference, local-only Mac. First real run of agent-ready-coding-loop v2.2
 - 2026-06-04T22:49:00Z | **codex** · humangood-ai-webpage | Found repo mismatch: local humangooDAI.2 tracks dman1313/HumanGood at 20c2b94; dman1313/goodhuman is separate at ede9887 and older/divergent. No publish/remote rewrite performed.
-- 2026-06-03T09:34:32Z | **MacH** · vault-maintenance | Agent file Agents/hermes.md updated to document both MacH (macOS) and VPS Hermes instances
 
 ## Recent Milestones (7d)
 - 2026-06-10T19:10:00Z | **MacH** · taste-skill | 
