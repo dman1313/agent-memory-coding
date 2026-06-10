@@ -146,3 +146,54 @@
 **Updated pages**：[[concepts/knowledge-vault-best-practices]] (dated update), [[wiki/index]]
 
 **Raw archived**：notebooklm-wiki-research-2026-06-10.md → raw/processed/docs/ (processed: true). Schema changes from this research recorded in sdd/decisions/0002 — schema is authoritative, wiki pages are derived knowledge.
+
+
+## [2026-06-10 13:01] Wiki lint report
+
+# Wiki lint report
+
+> Wiki status overview: 73 pages total, 0 pages missing aliases, 0 duplicate pages, 23 dead links (0 involve duplicates), 9 orphan pages (0 are duplicates), 0 empty pages
+
+## Dead links (detected)
+
+- [[sources/welsh-rights-activity]] → **raw/2025-04-30 Gweithgareddau ar hawliau a chefnogaeth unigedd plentyn.md** (page does not exist)
+- [[sources/symposium-rust-agents]] → **raw/2026-05-06 Symposium keynote Rust, agents, and community toolchain plus tabular functional models.md** (page does not exist)
+- [[sources/school-transcripts-nov-2024]] → **raw/voicenotes/** (page does not exist)
+- [[sources/school-transcripts-jan-2025]] → **raw/voicenotes/** (page does not exist)
+- [[sources/human-good-less-admin-more-good]] → **raw/2026-05-24 Human-good AI agents to reduce admin work and free time for mission.md** (page does not exist)
+- [[sources/school-transcripts-aug-2025]] → **raw/voicenotes/** (page does not exist)
+- [[sources/human-good-agent-ready-back-office]] → **raw/2026-05-21 Human good AI Agent Ready and AI back office for schoolsnonprofits.md** (page does not exist)
+- [[sources/market-data-api-alpaca]] → **raw/Getting Started with Market Data API.md** (page does not exist)
+- [[sources/knowledge-curator-build-capture]] → **raw/processed/docs/2026-06-06_knowledge-curator-build-capture.md** (page does not exist)
+- [[sources/jeff-company-brain-vault-explainer]] → **wikilinks** (page does not exist)
+- [[sources/jeff-company-brain-compile-raw-skill]] → **wikilinks** (page does not exist)
+- [[sources/human-good-origin-story]] → **raw/2026-06-05 Human Good origin story AI agents to support nonprofits and education.md** (page does not exist)
+- [[sources/hiring-pitch-paris-conference]] → **raw/2026-05-06 Hiring pitch and AI agents ecosystem gaps at Paris conference.md** (page does not exist)
+- [[sources/agentic-wiki-teacher-assistant]] → **raw/2026-06-05 Agentic wiki-based AI assistant for teacher curriculum planning and reminders.md** (page does not exist)
+- [[sources/building-effective-ai-agents]] → **raw/Building Effective AI Agents.md** (page does not exist)
+- [[sources/being-good-kindness]] → **raw/2026-05-12 Being good and kindness repaying kindness through human cooperation.md** (page does not exist)
+- [[sources/Plan-in-the-cloud-with-ultraplan]] → **raw/Plan in the cloud with ultraplan.md** (page does not exist)
+- [[sources/Plan-in-the-cloud-with-ultraplan]] → **raw/Plan in the cloud with ultraplan.md** (page does not exist)
+- [[sources/arabic-maintenance-transcript]] → **raw/processed/meetings/2025-01-22 الصيانة والتغييرات في المدرسة.md** (page does not exist)
+- [[sources/agentic-ai-drip-feed]] → **raw/2026-05-13 Agentic AI is here now — stop waiting, start drip-feeding your team.md** (page does not exist)
+- ... 23 more dead links
+
+## Orphan pages (detected)
+
+- [[sources/welsh-rights-activity]] — no other Wiki pages link here
+- [[sources/school-transcripts-aug-2025]] — no other Wiki pages link here
+- [[sources/market-data-api-alpaca]] — no other Wiki pages link here
+- [[sources/loop-generator-concept]] — no other Wiki pages link here
+- [[sources/knowledge-curator-build-capture]] — no other Wiki pages link here
+- [[sources/hiring-pitch-paris-conference]] — no other Wiki pages link here
+- [[sources/being-good-kindness]] — no other Wiki pages link here
+- [[sources/arabic-maintenance-transcript]] — no other Wiki pages link here
+- [[_views/dashboards]] — no other Wiki pages link here
+
+## LLM analysis
+
+- [Contradictions] No obvious contradictions found; however, the timeline is unusual (sources dated 2025-2026), which may indicate projected dates or a specific simulation context.
+- [Staleness] The `school-transcripts` series spans Nov 2024 to Aug 2025; ensure that any leadership or staffing claims in the Nov 2024 notes are updated by the Aug 2025 context.
+- [Missing] Several concepts mentioned in sources lack dedicated pages: "UN Convention on the Rights of the Child" (mentioned in `welsh-rights-activity`), "Rust toolchain/skills" (mentioned in `symposium-rust-agents`), and "Student writing progress tracking" (mentioned in `school-transcripts-aug-2025`).
+- [Structure] Source pages frequently truncate their "Key Concepts" or "Core Content" sections (e.g., `human-good-less-admin-more-good` cuts off at `[[conce`), indicating an ingestion or formatting error.
+- [Structure] High reliance on the `Wiki Index` for navigation; the internal cross-linking between `sources` and `concepts` appears under-developed despite the existence of templates.
