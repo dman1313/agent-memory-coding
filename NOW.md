@@ -1,12 +1,12 @@
 # NOW — Current State
 
-_Generated: 2026-06-10T14:19:24Z_
+_Generated: 2026-06-10T14:35:17Z_
 
 ## Active Work
 - **claude-code · claude-md-rewrite**: Starting: rewrite global CLAUDE.md for token efficiency + Self-Annealing + Auto Research capabilities. _(2026-06-10T17:00:00Z)_
-- **hermes · general**: Vault synced, reading fleet state — last activity June 7, system YELLOW then (drift + provider 451 errors), checking current state _(2026-06-08T14:30:00Z)_
 
 ## Stale Open Sessions (>48h, no session-end)
+- **hermes · general** _(stale — log session-end)_: Vault synced, reading fleet state — last activity June 7, system YELLOW then (drift + provider 451 errors), checking current state _(2026-06-08T14:30:00Z)_
 - **cursor · agent-memory-coding** _(stale — log session-end)_: Starting: full vault read (NOW, CONTEXT, ACTIVITY); report active work to user. _(2026-06-05T20:30:00Z)_
 - **kimi · pyp-planner-gen** _(stale — log session-end)_: Starting: Returned from pause. User asked to clean up DOCX formatting and update PYP planner code. _(2026-06-04T12:12:18Z)_
 
