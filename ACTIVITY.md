@@ -22,6 +22,7 @@
 > **Project slugs:** symphony, free-claude-code, hermes-ecosystem, hermes-metaclaw, wiki-obsidian, newsletter-platform, multica-dashboard, agent-memory-coding, humangood-ai-webpage, pyp-planner-gen, or leave empty for general
 
 <!-- ENTRIES BELOW THIS LINE -->
+2026-06-10T22:05:00Z | hermes | note | scotty-review | Full architecture review complete: system YELLOW, 5 HIGH findings (HAL brief delivery failed, IGCSE pipeline broken, 4 SOUL.md agents missing skills, Opus tier phantom in SOUL.md, DREAM bug persists 7+ occurrences), 5 MEDIUM (orphaned .archive skills, 4 stale NOW.md sessions, 6x memory.bak cruft, model routing doc drift, git push risk on agent-memory), 5 LOW (72 skills missing version/author, memory shared section stale, trading overlap, swap usage, cron scheduling issues). Report saved to ACTIVITY.md.
 2026-06-10T21:50:00Z | hermes | decision | agent-memory | Added Shared Wiki Vault protocol (section 22b) to SOUL.md — vault is now mandatory at every session start/end. No more ghost sessions.
 2026-06-10T21:45:00Z | hermes | session-start | agent-memory | Starting: Dwayne pointed me to the shared wiki vault — reading instructions, reviewing current state, updating hermes.md
 2026-06-10T12:02:13Z | hermes | note | wolf-trading-agent | Wolf Tuesday scan: all 3 scanners degraded (Reddit DDG broken since May, Twitter xurl JSON errors, GNews 1 stale article), 0 signals. Alpaca options fallback: NFLX P/C 0.11, MU P/C 0.27, MSTR P/C 0.33 bullish skew
