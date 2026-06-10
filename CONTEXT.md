@@ -6,10 +6,10 @@
 
 # NOW — Current State
 
-_Generated: 2026-06-09T12:01:44Z_
+_Generated: 2026-06-10T06:37:44Z_
 
 ## Active Work
-- **MacH · agent-memory**: Vault synced, AGENT-CHANNEL acknowledged (2 Dashboard PENDING → DONE), VPS healthy (MiMo, 17 cron, 30 sessions, gateway up), fleet check-in complete _(2026-06-09T10:30:00Z)_
+- **claude-code · claude-md-rewrite**: Starting: rewrite global CLAUDE.md for token efficiency + Self-Annealing + Auto Research capabilities. _(2026-06-10T17:00:00Z)_
 - **hermes · general**: Vault synced, reading fleet state — last activity June 7, system YELLOW then (drift + provider 451 errors), checking current state _(2026-06-08T14:30:00Z)_
 
 ## Stale Open Sessions (>48h, no session-end)
@@ -17,7 +17,10 @@ _Generated: 2026-06-09T12:01:44Z_
 - **kimi · pyp-planner-gen** _(stale — log session-end)_: Starting: Returned from pause. User asked to clean up DOCX formatting and update PYP planner code. _(2026-06-04T12:12:18Z)_
 
 ## Pending Inboxes
-_(none)_
+- **claude**: Roster check claude: inbox is live.
+- **codex**: Roster check codex: inbox is live.
+- **goose**: (pending message)
+- **hermes-vps**: Roster check hermes-vps: inbox is live.
 
 ## Dashboard Messages (48h)
 _(none)_
@@ -27,41 +30,45 @@ _(none)_
 - **hermes · provider-routing**: DeepSeek/xiaomi provider blocked — HTTP 451 cross-border isolation errors for 24h+, cron jobs silently failing _(2026-06-05T12:01:19Z)_
 
 ## Recent Activity (48h)
-- 2026-06-09T12:01:37Z | **hermes** · wolf-trading-agent · note | Wolf Monday scan: 2 NEUTRAL (RDDT, GME), Twitter xurl fully broken (invalid JSON), Reddit degraded, GNews low signal
-- 2026-06-09T12:01:37Z | **hermes** · general · note | HAL daily brief: system YELLOW, disk 75%, swap 88% (215Mi free), self-improving agent dormant day 27, DREAM cleanup bug persists, Thing2 X credits unfunded 3+ weeks
-- 2026-06-09T12:01:37Z | **hermes** · hermes-dashboard · blocker-resolve | Dashboard :9999 recovered (200) — was DOWN June 8, back today without manual restart
-- 2026-06-09T10:30:00Z | **MacH** · agent-memory · session-start | Vault synced, AGENT-CHANNEL acknowledged (2 Dashboard PENDING → DONE), VPS healthy (MiMo, 17 cron, 30 sessions, gateway up), fleet check-in complete
-- 2026-06-08T23:00:00Z | **MacH** · agent-memory · session-start | Vault synced, STANDING-ORDERS read, fleet check-in — all clear for work
-- 2026-06-08T14:30:00Z | **hermes** · general · session-start | Vault synced, reading fleet state — last activity June 7, system YELLOW then (drift + provider 451 errors), checking current state
-- 2026-06-08T14:05:00Z | **hermes** · general · note | HAL daily brief: system YELLOW, disk 77%, memory healthy, 7 apt updates pending, self-improving agent dormant day 26
-- 2026-06-08T14:05:00Z | **hermes** · hermes-dashboard · blocker | Dashboard :9999 DOWN — was UP yesterday, new failure detected in daily brief
-- 2026-06-08T11:36:13Z | **MacH** · agent-memory · session-start | Vault read in full (STANDING-ORDERS, NOW, MacH.md, ACTIVITY, AGENT-CHANNEL); no actionable pending messages; ready for work
-- 2026-06-08T08:05:00Z | **hermes** · wolf-trading-agent · note | Wolf Sunday scan: 2 NEUTRAL signals (RDDT, GME), Twitter scanner degraded, low-value weekend run
-- 2026-06-07T18:49:32Z | **claude-code** · wiki-obsidian · session-end | Done: built runnable Knowledge Curator wiki (curate skill 6 modes, schema consolidation, sop/principle, 7-page ingest, Dataview/Base/Canvas views, lint clean, capture note). 13 commits local; push pending via sync.sh.
-- 2026-06-07T14:00:00Z | **hermes** · general · session-start | HAL daily brief — system YELLOW (cumulative drift), all services up, disk 77%, swap 1.6G/1.9G
+- 2026-06-10T18:30:00Z | **MacH** · claude-md-rewrite · session-end | Done: applied canonical rewrite (Guides/claude-md-rewrite-guide) to schema/AGENTS.md on the iCloud path. 1,020→995 words / ~1,326→~1,293 tokens; added §8 Self-annealing skills, §9 Auto research (Karpathy loop), §10 Leverage. Preserved Multi-agent write contract as new §5 (binding). Logged run audit at Guides/claude-md-rewrite-runs/2026-06-10-MacH-schema-AGENTS.md. Note: there are two diverged working trees on the Mac (~/agent-memory/ vs iCloud); this work landed in the iCloud path so launchd sync will push it. Recommend retiring or syncing the local copy.
+- 2026-06-10T18:25:00Z | **MacH** · agent-memory · decision | Confirmed the iCloud vault path is the source of truth for the fleet (launchd sync, all other Mac agents, Hermes pull target). The local ~/agent-memory/ working tree is a stale personal copy that diverged ~24h ago. Will write to iCloud going forward and flag the divergence to Dwayne.
+- 2026-06-10T18:20:00Z | **MacH** · claude-md-rewrite · note | Reading claude-codes 18:00 session-end: that run rewrote the per-agent ~/.claude/CLAUDE.md and produced Guides/claude-md-rewrite-guide.md. My run is a second application of the same canonical meta-prompt, targeting the vaults schema/AGENTS.md (not a per-agent config). Keeping the guide as-is; saving per-run audit under Guides/claude-md-rewrite-runs/.
+- 2026-06-10T18:10:00Z | **MacH** · claude-md-rewrite · session-start | 
+- 2026-06-10T17:00:00Z | **claude-code** · claude-md-rewrite · session-start | Starting: rewrite global CLAUDE.md for token efficiency + Self-Annealing + Auto Research capabilities.
+- 2026-06-10T06:00:00Z | **claude-code** · general · session-start | Starting: user typed test — standing by for task assignment. Vault read complete (STANDING-ORDERS, NOW, claude-code.md).
+- 2026-06-10T05:34:27Z | **claude-code** · wiki-obsidian · decision | Adopted 4 research recommendations (ADR 0002): multi-agent write contract, schema-alignment at ingest, pre-write self-lint, page lifecycle states. Hybrid search deferred to ~300 pages. Installed com.dwayne.vault-sync launchd job (15 min).
+- 2026-06-10T05:27:03Z | **claude-code** · wiki-obsidian · milestone | Restored schema/+sdd/+Reference/+skills to root (accidental move into raw/); reconciled 117 dirty files; found launchd sync job MISSING; queried NotebookLM wiki-research notebook — answers saved to raw/notebooklm-wiki-research-2026-06-10.md (5 CHALLENGEs incl. flat-file mutation danger, hybrid search)
+- 2026-06-10T01:35:00Z | **kiro** · agent-memory-coding · session-end | Done: Full wiki compile — 93 raw files → 20 entities, 13 concepts, 19 sources. Raw inbox cleared; files in processed/meetings/ (85), articles/ (3), docs/ (2). index.md + log.md updated.
+- 2026-06-10T01:35:00Z | **kiro** · agent-memory-coding · milestone | Wiki compile complete: Domain 2 (Human Good/AI) fully extracted; Domain 1 (school ~75 transcripts) batched into 3 period sources; Domain 3 (misc) 4 sources. raw/ inbox clean — only operational subdirs remain.
+- 2026-06-10T00:37:30Z | **kiro** · agent-memory-coding · milestone | Created raw/voicenotes/ folder (+ .gitkeep)
+- 2026-06-10T00:34:43Z | **kiro** · agent-memory-coding · session-start | Starting: Ingested vault per AGENT-BOOTSTRAP.md — read STANDING-ORDERS, NOW, Agents/kiro.md, ACTIVITY, AGENT-CHANNEL. No pending inbox. Fleet state: classroom-mirror at 14/14 AUTO awaiting Dwaynes 5 HUMAN sign-offs; loop-generator v2.2 shipped. Awaiting Dwaynes instructions.
 
 ## Recent Decisions (7d)
+- 2026-06-10T18:25:00Z | **MacH** · agent-memory | Confirmed the iCloud vault path is the source of truth for the fleet (launchd sync, all other Mac agents, Hermes pull target). The local ~/agent-memory/ working tree is a stale personal copy that diverged ~24h ago. Will write to iCloud going forward and flag the divergence to Dwayne.
+- 2026-06-10T05:34:27Z | **claude-code** · wiki-obsidian | Adopted 4 research recommendations (ADR 0002): multi-agent write contract, schema-alignment at ingest, pre-write self-lint, page lifecycle states. Hybrid search deferred to ~300 pages. Installed com.dwayne.vault-sync launchd job (15 min).
+- 2026-06-09T22:05:00Z | **claude-code** · classroom-mirror | Contract signed (19 criteria): webcam classroom tool redesigned ethically — Mode 1 consented LIMS-coded child via zones, Mode 2 aggregate-only; no faces, no video stored, no emotion inference, local-only Mac. First real run of agent-ready-coding-loop v2.2
 - 2026-06-04T22:49:00Z | **codex** · humangood-ai-webpage | Found repo mismatch: local humangooDAI.2 tracks dman1313/HumanGood at 20c2b94; dman1313/goodhuman is separate at ede9887 and older/divergent. No publish/remote rewrite performed.
 - 2026-06-03T09:34:32Z | **MacH** · vault-maintenance | Agent file Agents/hermes.md updated to document both MacH (macOS) and VPS Hermes instances
 
 ## Recent Milestones (7d)
+- 2026-06-10T05:27:03Z | **claude-code** · wiki-obsidian | Restored schema/+sdd/+Reference/+skills to root (accidental move into raw/); reconciled 117 dirty files; found launchd sync job MISSING; queried NotebookLM wiki-research notebook — answers saved to raw/notebooklm-wiki-research-2026-06-10.md (5 CHALLENGEs incl. flat-file mutation danger, hybrid search)
+- 2026-06-10T01:35:00Z | **kiro** · agent-memory-coding | Wiki compile complete: Domain 2 (Human Good/AI) fully extracted; Domain 1 (school ~75 transcripts) batched into 3 period sources; Domain 3 (misc) 4 sources. raw/ inbox clean — only operational subdirs remain.
+- 2026-06-10T00:37:30Z | **kiro** · agent-memory-coding | Created raw/voicenotes/ folder (+ .gitkeep)
+- 2026-06-10T00:25:00Z | **claude-code** · classroom-mirror | Built + verified: 14/14 AUTO criteria YES (guardrail 4 caught Marie passing as code — fixed w/ digit rule); UI verified live in browser; 5 HUMAN checks await Dwayne (HUMAN-CHECKS.md). 4 commits, repo local
+- 2026-06-09T21:18:00Z | **claude-code** · loop-generator | v2.2 written: contract persisted to CONTRACT.md w/ resume protocol, [HUMAN] checks in loop exit, stagnation-based retry budget, checkpoint commits, amendment protocol, fake-data rule, cost question
+- 2026-06-09T10:22:00Z | **claude-code** · ollama-external | Configured Ollama to use external drive: /Volumes/Over flow/llm/Ollama (saves internal drive space)
 - 2026-06-06T05:09:47Z | **claude-code** · wiki-obsidian | Knowledge Curator build T1-T9 complete: curate skill (6 modes) + schema consolidation (sop/principle, precedence, consult contract) + 7-page company-brain ingest + Dataview/Base/Canvas views; lint clean. 12 commits local on main; push gated (T10).
 - 2026-06-05T21:15:00Z | **cursor** · agent-memory-coding | Created AGENT-BOOTSTRAP.md — shareable copy-paste instructions for onboarding any fleet agent.
 - 2026-06-05T21:05:00Z | **cursor** · wiki-obsidian | Created schema/AGENTS.md (Knowledge Curator master rules); wired into CLAUDE, STANDING-ORDERS, AGENT-SETUP, MEMORY, vault-purpose, wiki-obsidian.
 - 2026-06-05T20:46:50Z | **claude-code** · wiki-obsidian | Wrote Knowledge Curator design spec (schema/specs/2026-06-05-knowledge-curator-design.md): curate skill w/ 6 modes, conversational ask + capture learning loop, sop/principle subtypes, schema precedence, full visual stack. Approved by Dwayne; next: writing-plans.
 - 2026-06-05T20:45:00Z | **cursor** · agent-memory-coding | Improved build-context.sh: auto-repair ACTIVITY header, stale sessions, pending inboxes, dashboard feed, empty-project TSV fix; updated sync.sh + STANDING-ORDERS.
 - 2026-06-05T20:35:00Z | **cursor** · agent-memory-coding | Restored ACTIVITY.md header; ran build-context.sh — NOW.md and CONTEXT.md regenerated from 60+ entries.
-- 2026-06-05T20:00:00Z | **cursor** · agent-memory-coding | Created Agents/cursor.md; added cursor to roster in STANDING-ORDERS, CLAUDE, AGENT-SETUP, MEMORY.
-- 2026-06-05T19:10:25Z | **codex** · humangood-ai-webpage | Adjusted result layout so result text and image stay side-by-side on tablet/desktop widths while stacking on mobile.
-- 2026-06-05T18:54:25Z | **codex** · humangood-ai-webpage | Added the new visitor/result illustration to the right of the Agent Ready result text and verified responsive layout.
-- 2026-06-05T14:46:00Z | **codex** · humangood-ai-webpage | Added the shield readiness image into the 7 Standards section with responsive desktop/mobile layout.
-- 2026-06-05T14:39:25Z | **codex** · humangood-ai-webpage | Changed final Agent Ready CTA from audit modal button to Send a message link targeting the homepage message form.
-- 2026-06-05T14:31:38Z | **codex** · humangood-ai-webpage | Removed the Verified readiness / Audit, fix, verify section and verified desktop/mobile page flow.
 
 ## Last Seen (fleet)
+- **MacH**: 2026-06-10T18:30:00Z — session-end: Done: applied canonical rewrite (Guides/claude-md-rewrite-guide) to schema/AGENTS.md on the iCloud path. 1,020→995 words / ~1,326→~1,293 tokens; added §8 Self-annealing skills, §9 Auto research (Karpathy loop), §10 Leverage. Preserved Multi-agent write contract as new §5 (binding). Logged run audit at Guides/claude-md-rewrite-runs/2026-06-10-MacH-schema-AGENTS.md. Note: there are two diverged working trees on the Mac (~/agent-memory/ vs iCloud); this work landed in the iCloud path so launchd sync will push it. Recommend retiring or syncing the local copy.
+- **claude-code**: 2026-06-10T17:00:00Z — session-start: Starting: rewrite global CLAUDE.md for token efficiency + Self-Annealing + Auto Research capabilities.
+- **kiro**: 2026-06-10T01:35:00Z — session-end: Done: Full wiki compile — 93 raw files → 20 entities, 13 concepts, 19 sources. Raw inbox cleared; files in processed/meetings/ (85), articles/ (3), docs/ (2). index.md + log.md updated.
 - **hermes**: 2026-06-09T12:01:37Z — blocker-resolve: Dashboard :9999 recovered (200) — was DOWN June 8, back today without manual restart
-- **MacH**: 2026-06-09T10:30:00Z — session-start: Vault synced, AGENT-CHANNEL acknowledged (2 Dashboard PENDING → DONE), VPS healthy (MiMo, 17 cron, 30 sessions, gateway up), fleet check-in complete
-- **claude-code**: 2026-06-07T18:49:32Z — session-end: Done: built runnable Knowledge Curator wiki (curate skill 6 modes, schema consolidation, sop/principle, 7-page ingest, Dataview/Base/Canvas views, lint clean, capture note). 13 commits local; push pending via sync.sh.
 - **antigravity**: 2026-06-06T05:23:30Z — session-end: Done: Acknowledged roster checks on Dashboard, cleared pending inbox/messages, closed stale session, and rebuilt vault context.
 - **cursor**: 2026-06-05T21:15:00Z — milestone: Created AGENT-BOOTSTRAP.md — shareable copy-paste instructions for onboarding any fleet agent.
 - **codex**: 2026-06-05T19:10:25Z — milestone: Adjusted result layout so result text and image stay side-by-side on tablet/desktop widths while stacking on mobile.
@@ -179,7 +186,7 @@ _(running notes I want to remember across sessions)_
 # Claude Code
 
 **Platform:** Mac (local CLI, desktop, web)
-**Model:** Configurable (Opus, Sonnet, Haiku) - Currently set to haiku
+**Model:** Configurable (Fable 5, Opus, Sonnet, Haiku) - Currently set to claude-sonnet-4-6
 **Memory:** Symlinked to vault via `~/.claude/projects/<project>/memory/`
 
 ## Skills
@@ -221,6 +228,12 @@ Format: `YYYY-MM-DDTHH:MM:SSZ | claude-code | event-type | project-slug | detail
 
 ## Current Work
 
+- **claude-md-rewrite (2026-06-10):** Rewrote global `~/.claude/CLAUDE.md` for token efficiency. Removed Deep Research section (per user decision — trust defaults). Added Self-Annealing Skills (self-patches skill files on error, never repeats same failure) and Auto Research (Karpathy-style iterative KPI loop). Compressed coding guidelines ~60%. Token delta: ~1,400 → ~745 tokens (~655 saved per session). Wrote agent instruction manual to vault at `Guides/claude-md-rewrite-guide.md` with canonical section templates + reusable meta-prompt for fleet-wide use.
+
+- **classroom-mirror (2026-06-09/10):** Built the full app via the agent-ready-coding-loop v2.2 process at `/Volumes/M2 Media/Coding Dwayne/Claude/classroom-mirror/`. Ethically-redesigned classroom webcam tool: Mode 1 consented per-child strategy tracking (LIMS codes + zones, no faces), Mode 2 aggregate-only whole-class reflection. Stack: Python/YOLO11n-pose/FastAPI/SQLite, local-only. **14/14 AUTO criteria YES** (CONTRACT.md, `./check` scoreboard); 5 [HUMAN] checks await Dwayne (HUMAN-CHECKS.md): live camera trial, zone setup timing, report readability, double-click start, runs ./check himself. Real-classroom use gated on DPIA + consent + CNIL homework (in SETUP.md). Git local, 4 commits, not pushed to GitHub (not requested).
+- **loop-generator (2026-06-09):** Reviewed Dwayne's Loop Generator prompt (v2.1), shipped v2.2, pushed to GitHub as **private** repo https://github.com/dman1313/agent-ready-coding-loop (renamed from loop-generator at Dwayne's request; local folder still `/Volumes/M2 Media/Coding Dwayne/Claude/loop-generator/`, files: PROMPT.md + README.md; commit 1 = v2.1 original, commit 2 = v2.2). Key v2.2 fixes: contract persisted to CONTRACT.md + resume protocol; [HUMAN] checks wired into loop exit; retry budget = 6 attempts w/o scoreboard improvement; checkpoint commits; mid-build additions = formal amendments; fake-data-only rule; cost question in interview. Originals untouched (`loop-generator-prompt-v2.md` / `-v2_1.md` are identical copies).
+- **hermes-desktop (lint fixes, 2026-06-09):** Fixed 7 ESLint errors blocking clean lint — import order issues, curly braces, padding lines. Ran `npm run fix` to auto-fix, committed changes (e03d2b4d3). Lint now passes with 0 errors. Build succeeds.
+- **humanizer (voice-changer grammar fix, 2026-06-08):** Fixed "grammar is all over the place" in voice rewrites. Added 3-level grammar enforcement — GRAMMAR & CORRECTNESS + FINAL CHECK blocks in buildRewritePrompt, plus a new **Pass 3 proofreading** stage (analyzer.buildGrammarCheckPrompt + api.proofreadGrammar) that copy-edits each variant while preserving voice. Real-API only, fail-safe. Trial 40/40 specs + 10 new assertions green. Shipped e07c1f2, pushed to origin.
 - **wiki-obsidian (Knowledge Curator):** Built the runnable LLM-curated wiki in this vault (2026-06-05/06). brainstorm → spec → plan → executed T1–T9. 13 commits local on `main`; **push pending** (Dwayne runs `sync.sh`; local is 13 ahead / 20 behind origin).
 
 _(update each session)_
@@ -229,12 +242,22 @@ _(update each session)_
 
 | Project | My role | Status | Last touched |
 |---|---|---|---|
+| claude-md-rewrite | Rewrite + new capability sections | Done — CLAUDE.md + vault guide written | 2026-06-10 |
+| classroom-mirror | Full build (loop v2.2 process) | 14/14 AUTO YES; awaiting Dwayne's 5 HUMAN checks | 2026-06-10 |
+| loop-generator | Review + v2.2 + GitHub | Done — pushed (private repo) | 2026-06-09 |
+| hermes-desktop | Lint fixes | Done — committed (e03d2b4d3) | 2026-06-09 |
 | wiki-obsidian | Design + build curator system | T1–T9 done; push gated to user | 2026-06-06 |
-| humanizer | Commit & finalize | Done — committed | 2026-06-03 |
+| humanizer | Grammar fix + ship | Done — pushed (e07c1f2) | 2026-06-08 |
 
 ## Recent Decisions
 
 _(5 most recent, newest first)_
+- 2026-06-10 | claude-md-rewrite | Dropped Deep Research section (adds per-task token cost, user prefers Claude defaults). Added Self-Annealing Skills + Karpathy Auto Research instead. Vault guide written at `Guides/claude-md-rewrite-guide.md` with fleet-reusable templates.
+- 2026-06-09 | loop-generator | Created repo as **private** by default (user said "push to GitHub" without visibility; flip with `gh repo edit dman1313/agent-ready-coding-loop --visibility public`). Two-commit history: v2.1 original → v2.2, so the diff stays inspectable.
+- 2026-06-09 | loop-generator | Skipped SDD spec gate: single-markdown-doc improvement, directly requested, no architecture — treated as doc task; improvements presented to user as retroactive mini-spec.
+- 2026-06-09 | hermes-desktop | Used `npm run fix` to auto-fix lint issues rather than manual edits — clean, consistent, and faster. Committed as single batch.
+- 2026-06-08 | humanizer | Read user's "make sure it's rust" as "robust" — it's a vanilla-JS browser app; a full Rust port isn't sensible to YOLO. Delivered a robust grammar fix (dedicated proofreading pass) instead.
+- 2026-06-08 | humanizer | Pass 3 grammar pass gated to real API only (skipped in simulator) and fail-safe (returns null → caller keeps original rewrite) so it never injects the simulator footer or breaks the pipeline.
 - Engine is the agent itself (AGENTS.md + config.md + curate-modes.md); graphify is an optional viz lens, not the curator.
 - Kept entities/concepts/sources; added `sop` + `principle` concept subtypes (SOPs + best-practice "mindset").
 - One `curate` skill, 6 modes (compile/ask/capture/scribe/lint/analyze) — hybrid persona.
@@ -243,6 +266,8 @@ _(5 most recent, newest first)_
 
 ## Handoff Notes
 
+- **humanizer latent bug (flagged task_9ef8102e):** app.js runVoicePreview() calls `this.apiClient.rewrite(...)` but GeminiClient only has `rewriteText`. "Preview voice" button throws. One-line fix.
+- **humanizer user-config issue (not a code bug):** saved DeepSeek model is `deepseek-v4-pro`, which appears invalid (real: deepseek-chat / deepseek-reasoner). Real-API rewrite hung during trial because of it. User should fix the model in AI Engine Settings to test real rewrites.
 - **Push not done:** 13 local commits on `main`. Run `bash sync.sh` to reconcile 20 incoming + push.
 - **Obsidian:** enable Dataview plugin; open `wiki/_views/entities.base` + `knowledge-map.canvas` to confirm rendering (Base syntax may need a version tweak).
 - **Pending compile:** `raw/2026-06-06_knowledge-curator-build-capture.md` is unprocessed — next `/curate compile` folds it in (curate entity, git-sync principle, updates).
@@ -299,6 +324,86 @@ _(log decisions here as you make them — 5 most recent, newest first)_
 ## Handoff Notes
 
 _(what the next session or another agent needs to know)_
+
+## Memory Log
+
+_(running notes I want to remember across sessions)_
+
+### Cursor
+
+
+# Cursor
+
+**Platform:** Mac (Cursor IDE)
+**Model:** Configurable (Composer, GPT, Claude, etc. — user-selectable per session)
+**Memory:** Reads vault directly from iCloud when workspace is this vault; otherwise via project rules
+**Config:** `.cursor/rules/`, workspace `CLAUDE.md`, `~/.cursor/cli-config.json`
+**Inbox:** `Agent Inbox/cursor.md`
+
+## Skills
+
+### Cursor Skills (`~/.cursor/skills-cursor/`)
+- **babysit** — Keep PR merge-ready: triage comments, resolve conflicts, fix CI
+- **create-hook** — Cursor hooks (`hooks.json`, hook scripts)
+- **create-rule** — Persistent AI guidance (`.cursor/rules/`, `AGENTS.md`)
+- **create-skill** — Author Cursor Agent Skills (`SKILL.md`)
+- **loop** — Recurring prompts in session (`/loop`)
+- **sdk** — Cursor SDK (`@cursor/sdk`, `cursor-sdk`) for programmatic agents
+- **split-to-prs** — Split work into small reviewable PRs
+- **statusline** — Custom CLI status line
+- **update-cli-config** — `~/.cursor/cli-config.json`
+
+### Installed Plugins (MCP + skills)
+- **chrome-devtools-mcp** — Browser automation, a11y, LCP, memory-leak debugging
+- **firebase** — Firebase CLI, Auth, Firestore, Hosting, Genkit, AI Logic
+- **supabase** — Database, Auth, RLS, Postgres best practices
+- **zeabur** — Deploy, domains, databases, object storage, AI Hub
+- **telegram** — Telegram channel access and configuration
+- **qodo-skills** — Coding rules, PR resolver
+
+### User Skills (`~/.claude/skills/`, `~/.agents/skills/`)
+- **graphify** — Codebase knowledge graphs
+- **kimi-webbridge** — Real-browser automation via local daemon
+- **moving-deal-finder** — International moving company research
+- **pyp-planner** — PYP planning workflow
+- **notebooklm** — Full NotebookLM API
+
+## Strengths
+- Best for: IDE-integrated implementation, refactors, debugging with full repo context
+- Rich MCP ecosystem (browser, Firebase, Supabase, Zeabur)
+- Multi-model routing — user picks model per task
+- Strong skills/rules system for repeatable workflows
+- GitHub integration via `gh` for PRs and issues
+
+## Activity Feed
+- Agent name: `cursor`
+- Log to: `ACTIVITY.md` (prepend, newest at top)
+- Read on startup: `STANDING-ORDERS.md` → `NOW.md` → `Agents/cursor.md`
+- Check: `Agent Inbox/cursor.md` for **MacH coding-factory dispatches** and Dashboard messages (execute newest PENDING first)
+- Routing protocol: `Reference/coding-factory-routing.md`
+- Event types: `session-start`, `session-end`, `decision`, `blocker`, `blocker-resolve`, `milestone`, `handoff`, `note`
+
+## Current Work
+
+- Coding factory **implementer** — MacH dispatches via `Agent Inbox/cursor.md`; execute PENDING tasks on session start.
+- Slack MCP connected (ad hoc). AgentReady V1 workspace active.
+
+## Projects
+
+| Project | My role | Status | Last touched |
+|---|---|---|---|
+| agent-memory-coding | Self-document + roster onboarding | In progress | 2026-06-05 |
+
+## Recent Decisions
+
+- **2026-06-07** — MacH → Cursor handoff via vault inbox is the coding factory default (not Slack/Telegram direct).
+- **2026-06-05** — Adopted agent name `cursor` (matches `Agent Inbox/cursor.md` and Dashboard dispatches).
+
+## Handoff Notes
+
+- On session start: after vault read, check `Agent Inbox/cursor.md` for MacH `PENDING` dispatches before other work.
+- Mark DONE + Response block when complete; update AGENT-CHANNEL; log milestone.
+- Dashboard roster-check (2026-06-05) acknowledged; reply posted to AGENT-CHANNEL.
 
 ## Memory Log
 
@@ -556,13 +661,13 @@ No standalone skills. Uses `.kiro/steering/` files for project-level instruction
 
 ## Current Work
 
-_(update each session)_
+2026-06-10: Ingested vault per AGENT-BOOTSTRAP.md. Awaiting Dwayne's instructions.
 
 ## Projects
 
 | Project | My role | Status | Last touched |
 |---|---|---|---|
-| | | | |
+| agent-memory-coding | Vault participant | Active | 2026-06-10 |
 
 ## Recent Decisions
 
@@ -570,11 +675,16 @@ _(log decisions here as you make them — 5 most recent, newest first)_
 
 ## Handoff Notes
 
-_(what the next session or another agent needs to know)_
+Fleet state on 2026-06-10:
+- [[project-classroom-mirror]]: 14/14 AUTO YES, 5 HUMAN checks pending Dwayne. Local only, not pushed.
+- [[project-agent-ready-coding-loop]]: v2.2 shipped, pushed to GitHub.
+- No messages pending for kiro in AGENT-CHANNEL.
 
 ## Memory Log
 
-_(running notes I want to remember across sessions)_
+- Vault path: `/Users/dwayne-primeau/Library/Mobile Documents/com~apple~CloudDocs/Agent Memory/Coding/`
+- My agent name: `kiro` (no dedicated inbox file per roster)
+- Preferred language: Rust when possible. Working dir: `/Volumes/M2 Media/Coding Dwayne/Claude`
 
 ### Mach
 
@@ -583,25 +693,97 @@ _(running notes I want to remember across sessions)_
 
 Mac-based Hermes agent. Runs locally on Dwayne's Mac Mini.
 
+## Current Work
+- Coding factory orchestrator: dispatches implementation work to **cursor** via `Agent Inbox/cursor.md`
+- Protocol: `Reference/coding-factory-routing.md` (2026-06-07)
+
 ## Role
-- Coding and local dev
-- Quick tasks and research
-- Interactive work
+- Coding factory **orchestrator** — triage, scope, dispatch to Cursor for IDE implementation
+- Quick tasks and research (handle locally when trivial)
+- Interactive work with Dwayne
+- Fleet coordination (Mac-side)
 
-## Connection
-- Uses the fleet's shared agent-memory **Vault** — the same one every agent uses.
-- Agent name: MacH
-- Vault (Mac — read/write directly): `/Users/dwayne-primeau/Library/Mobile Documents/com~apple~CloudDocs/Agent Memory/Coding/`
-- GitHub sync (`dman1313/agent-memory-coding`) is automatic via `sync.sh` (launchd, every 15 min) — no manual git.
+## Recent Decisions
+- **2026-06-07** — MacH → Cursor coding factory routing via vault inbox + AGENT-CHANNEL (see `Reference/coding-factory-routing.md`)
+- 2026-06-07: Handled 3 overdue dashboard roster checks (Jun 5) — inbox confirmed live
+- 2026-06-03: Updated Agents/hermes.md to document both MacH + VPS Hermes instances
 
-## Protocol
-Follow `STANDING-ORDERS.md` like every agent. As a Mac agent:
-- **Read/write the iCloud Vault path directly** — the sync handles GitHub. No `git pull/push` by hand.
-- **Session start:** read `NOW.md`, `ACTIVITY.md` (last 10), and this file; log a `session-start` entry to `ACTIVITY.md`.
-- **During work:** log events to `ACTIVITY.md`. For non-trivial builds, follow the SDD protocol (`sdd/README.md`).
-- **Session end:** log `session-end`; update `## Current Work` / `## Handoff Notes` here.
+## Handoff Notes
+
+### Dispatching work to Cursor
+1. Prepend PENDING entry to `Agent Inbox/cursor.md` (task, workspace path, acceptance criteria)
+2. Post `To[@Cursor] From[@MacH]` on AGENT-CHANNEL
+3. Log `handoff` to ACTIVITY.md
+4. Optional: Slack ping `#all-humangoodai`
+
+Cursor picks up on next session. For urgent work, ping Dwayne to open Cursor or use Cursor SDK (phase 2).
+
+- VPS Hermes still has DREAM cleanup bug and DeepSeek 451 block — not my issues to fix
+- Claude-code completed Knowledge Curator wiki build (13 commits)
+
+## Fleet Context
+- VPS Hermes: 24/7 on 43.167.176.156, gateway (Telegram), cron jobs, HAL daily briefs
+- Dashboard: hermesdash.humangood.ai (port 9119, Cloudflare tunnel)
+- Vault syncs via launchd every 15 min (Mac) / cron (VPS) 
 
 ## Active Projects
+
+### Agent Ready Coding Loop
+
+
+## What it is
+
+A reusable starter prompt that turns any coding agent into an interviewer, contract-writer, and loop-driven builder for **non-technical humans**. The human's power = the contract (binary YES/NO criteria, plain English) + the scoreboard (one command, `./check`, runnable forever without the agent).
+
+**Repo:** https://github.com/dman1313/agent-ready-coding-loop (private; renamed from `loop-generator` 2026-06-09; flip public with `gh repo edit dman1313/agent-ready-coding-loop --visibility public`)
+**Local:** `/Volumes/M2 Media/Coding Dwayne/Claude/loop-generator/` (folder kept old name on purpose)
+**Files:** `PROMPT.md` (the artifact) + `README.md`. Git history: commit 1 = Dwayne's v2.1 verbatim, commit 2 = v2.2 — the diff between them IS the review.
+
+## Flow
+
+Phase 1 interview (incl. running-cost question) → Phase 1.5 ethics check (fake-data-only rule when real people's data involved) → Phase 2 contract: 8–20 binary criteria tagged [AUTO]/[HUMAN]/[INSPECT], signed then LOCKED, saved to `CONTRACT.md` with amendment history → Phase 3 loop: build → full suite → scoreboard; checkpoint commit per improvement; budget = 6 consecutive attempts without improvement; Stuck Report → `STUCK.md` → Phase 4 handover (`LATER.md`, setup guide, "if it breaks" recipe).
+
+## v2.2 fixes over Dwayne's v2.1 (the review findings)
+
+1. Contract previously lived only in chat → now on disk + **resume-don't-restart** protocol (finds CONTRACT.md, skips re-interview).
+2. Loop exit was unreachable ([HUMAN] criteria never entered the loop) → all-AUTO-green now triggers ONE bundled human sign-off sitting.
+3. "6 attempts" ambiguity → counts stagnation; a NO→YES resets the budget.
+4. Mid-build additions = formal amendments, never quiet extras.
+
+## Track record
+
+First real run: [[project-classroom-mirror]] (2026-06-09/10) — interview redesigned an illegal idea into a defensible one; a guardrail test caught a real privacy hole ("Marie" passed as a code) on first run. The method works.
+
+### Classroom Mirror
+
+
+## What it is
+
+Classroom Mirror turns classroom moments into **numbers, never video**, for [[Dwayne Primeau]]'s teaching context (France, IB school — GDPR/CNIL/EU-AI-Act constraints are load-bearing).
+
+- **Mode 1 — strategy tracking:** is a support strategy working for ONE designated child? Consent-gated, pseudonymous (LIMS codes with a mandatory digit — names can't pass), zone-based tracking (teacher drags a box; pose detection, no faces). Baseline-vs-strategy sessions → neutral before/after report.
+- **Mode 2 — whole-class reflection:** aggregate-only room patterns (hand-raises, movement level, people in view) as a mirror for the teacher's practice. **No per-child column exists in the schema** — anonymity by construction.
+
+**Location:** `/Volumes/M2 Media/Coding Dwayne/Claude/classroom-mirror/`
+**Status (2026-06-10):** 14/14 AUTO criteria YES; awaiting Dwayne's 5 [HUMAN] sign-offs (`HUMAN-CHECKS.md`). Git local, 4 commits, NOT pushed to GitHub (not requested).
+
+## Origin — the ethics redesign
+
+Dwayne's original ask was "webcam tags kids, times them in seats, counts hand-raises." Redesigned through the [[project-agent-ready-coding-loop|Loop Generator]] interview: face-tagging minors = biometric data (CNIL struck down facial recognition in schools); emotion/attention inference in education = prohibited by EU AI Act since Feb 2025. The legitimate kernel — "is this strategy supporting this child?" — needs no identification tech. Per-child LIMS rows for the whole class were **deliberately rejected** (pseudonymised ≠ anonymous); recorded in LATER.md.
+
+## The contract method
+
+First real run of agent-ready-coding-loop v2.2: `CONTRACT.md` (19 binary criteria, signed via plan approval), `./check` prints a plain-English scoreboard (guardrails first), checkpoint commits per scoreboard improvement, `LATER.md`, `HUMAN-CHECKS.md`. **The loop caught a real bug:** guardrail 4 failed because "Marie" passed a letters-only code pattern → LIMS/class codes now require ≥1 digit.
+
+## Tech
+
+Python 3.11 venv · Ultralytics YOLO11n-pose (AGPL — flagged in LATER.md for any distribution) · OpenCV · FastAPI on 127.0.0.1:8470 · SQLite (schema-locked by test) · vanilla-JS zone editor · `run.command` double-click launcher · `install.sh` (one-time, downloads model; zero network at runtime, proven by socket-block test).
+
+## Open items
+
+- Dwayne's 5 human checks (live trial, zone-setup timing, report readability, double-click start, runs ./check).
+- Real-classroom use gated on homework: DPIA + parental consent (Mode 1) + school sign-off + CNIL check (in SETUP.md).
+- Dev Mac has no camera — live trial must happen on Dwayne's MacBook.
 
 ### Free Claude Code
 
@@ -643,7 +825,7 @@ Free Claude Code (FCC) is a middleware proxy that routes Anthropic Messages API 
 **How to apply:** When adding new providers or fixing API routing issues, this is the proxy layer.
 
 ## Links
-- [[Reference/claude-code-glm]]
+- [[claude-code-glm]]
 
 ### Hermes Ecosystem
 
@@ -749,6 +931,44 @@ Agent-first newsletter production system. Turns Telegram voice notes and photos 
 ## Links
 - [[Project/hermes-ecosystem]]
 
+### Pyp Migration Unit 2026 06 03
+
+
+# Grade 5 PYP Human Migration Unit Package
+
+## Completed Work
+
+1. Full unit package generated (48,475 chars) covering all 20 scaffold sections
+2. 5 custom AI-generated images extracted from Gemini and embedded in Word doc
+3. Word document created: Grade_5_PYP_Human_Migration_Unit_Package.docx (4.5MB)
+4. Google Drive folder: 00- kimi pyp prepared for upload
+5. Reflective process system added (Sections 21-30):
+   - Reflective Process Framework (living curriculum philosophy)
+   - Teacher Reflection Journal (pre-unit, weekly, mid-unit, post-unit)
+   - Student Voice Capture Tools (5 different feedback instruments)
+   - Evidence Collection Planner
+   - Mid-Unit Adjustment Protocol with decision tree
+   - Post-Unit Review Framework (4-part analysis)
+   - Iteration Log & Version History (semantic versioning)
+   - Cross-Year Improvement Tracker
+   - Collaborative Reflection Protocol (grade-level teams)
+   - AI-Assisted Reflection Prompts
+6. Standalone templates created:
+   - Reflective_Process_Quick_Reference.md
+   - Teacher_Reflection_Journal_Template.md
+   - Student_Voice_Tools.md
+
+## Files Location
+
+- /Users/dwayne-primeau/Grade_5_Migration_Unit_Output/
+- Contains: 1 Word doc + 5 PNG images + 3 standalone reflection templates
+
+## Blockers
+
+- Google Doc created earlier appears empty/untitled (text insertion did not persist)
+- Automated upload to Google Drive blocked by macOS security and browser restrictions
+- Manual drag-and-drop from Finder to Drive browser window recommended
+
 ### Symphony
 
 
@@ -795,6 +1015,45 @@ Symphony is a multi-agent coding orchestrator written in Rust. It polls issue tr
 ## Links
 - [[Project/hermes-ecosystem]]
 - [[Project/hermes-metaclaw]]
+
+### Vault Purpose
+
+
+# Vault Purpose
+
+This vault is **Dwayne Primeau's private individual bank** — a personal knowledge graph for:
+
+- **Stock ideas** — research, theses, watchlists, earnings analysis
+- **Trade ideas** — setups, entries, exits, risk management
+- **Everything worth coming back to** — tools, workflows, concepts, people, companies
+
+## Design Principles
+
+1. **Structured wiki over vector embeddings** — Human-readable markdown with `[[wikilinks]]`, per Andrej Karpathy's approach.
+2. **Raw intake → curated wiki → outputs** — Three-layer flow:
+   - `raw/` — intake only, never edited except to mark `processed: true`
+   - `wiki/` — curated knowledge graph (sources, entities, concepts, index)
+   - `projects/` — outputs that reference wiki as context
+3. **Append-only wiki** — Dated sections (`## Update YYYY-MM-DD from [[Source]]`), never overwrite.
+4. **Cross-link aggressively** — Islands are failures. Every article needs outbound links.
+5. **Processed files move to `raw/processed/<category>/`** — Categories: articles, assets, docs, github, meetings, podcasts, twitter, youtube.
+
+## Rules for Agents
+
+Full operational protocol: **`schema/AGENTS.md`** (read-only master rules).
+
+Summary:
+- Read `schema/AGENTS.md` → `wiki/index.md` before producing wiki output.
+- Extract entities (people, companies, tools) and concepts from every source.
+- Append wiki updates under dated headings — never overwrite history.
+- Mark raw files `processed: true` with `processed_at` and `wiki_articles_touched`.
+- Move processed files to the appropriate `raw/processed/<category>/` folder.
+- Surface conflicts between sources — don't silently resolve.
+- Cross-link aggressively; orphan pages are failures.
+
+## Why This Works
+
+The graph value compounds through connections, not individual articles. Opening it in Obsidian shows the visual graph of how everything relates. This is better than RAG because the structure is explicit — links tell you what's related, no guessing.
 
 ### Wiki Obsidian
 
@@ -908,6 +1167,93 @@ Zhipu/Z.ai keys look like: `xxxx.xxxxxxxxxxxxxxxx` (32 hex chars + dot + 16 alph
 ## Links
 - [[Reference/external-systems]]
 - [[Project/hermes-ecosystem]]
+
+### Coding Factory Routing
+
+# Coding Factory Routing — MacH → Cursor
+
+MacH orchestrates. Cursor implements. This doc is the handoff protocol.
+
+## Roles
+
+| Agent | Role in coding factory |
+|---|---|
+| **MacH** | Receives requests (Dashboard, Telegram via Hermes, Slack, Dwayne). Triages, scopes, dispatches implementation work to Cursor. |
+| **cursor** | Picks up dispatches from inbox, implements in the target repo, verifies, reports back. |
+| **hermes** (VPS) | 24/7 gateway; can relay user intent to MacH or post dispatches when MacH is offline. |
+
+## Dispatch flow (MacH → Cursor)
+
+When MacH has a coding task for Cursor:
+
+### 1. Write to Cursor inbox
+
+Prepend to `Agent Inbox/cursor.md`:
+
+```markdown
+## YYYY-MM-DDTHH:MM:SSZ MacH Dispatch
+
+**Status:** PENDING
+**From:** MacH
+**Project:** {project-slug}
+**Workspace:** {absolute path to repo}
+**Priority:** normal | urgent
+
+### Task
+{One clear imperative — what to build, fix, or verify}
+
+### Acceptance
+- {criterion 1}
+- {criterion 2}
+
+### Context
+{Links, file paths, prior decisions, constraints. Keep short.}
+
+### Notify (optional)
+Slack: #all-humangoodai | none
+```
+
+### 2. Post on AGENT-CHANNEL
+
+```markdown
+### To[@Cursor] From[@MacH] — YYYY-MM-DD
+**Status:** PENDING
+**Subject:** Coding factory dispatch — {project-slug}
+
+New PENDING dispatch in Agent Inbox/cursor.md — {one-line task summary}.
+Workspace: {path}
+```
+
+### 3. Log handoff
+
+```
+YYYY-MM-DDTHH:MM:SSZ | MacH | handoff | {project-slug} | Dispatched to cursor: {one-line summary}
+```
+
+### 4. Optional Slack ping
+
+Post to `#all-humangoodai`: `🛠 MacH → Cursor: {task summary}. Inbox pending.`
+## Project slugs (coding factory)
+
+| Slug | Repo / workspace |
+|---|---|
+| `agentready-v1` | `/Volumes/M2 Media/Coding Dwayne/agentready Mark down-v1-sdd-v2style-package` |
+| `agent-memory-coding` | Vault path (iCloud) |
+| `humangood-ai-webpage` | HumanGood / webpage repos (see Project/) |
+| `general` | MacH specifies workspace in dispatch |
+
+MacH: always include **Workspace** as absolute path. Cursor: never guess — use the path in the dispatch.
+## Phase 2 (optional): auto-run without opening Cursor IDE
+
+For fire-and-forget from MacH CLI, use **Cursor SDK** on the Mac Mini:
+
+```bash
+# Requires CURSOR_API_KEY in env — see ~/.cursor/skills-cursor/sdk/SKILL.md
+cursor-sdk prompt "Execute MacH dispatch in Agent Inbox/cursor.md (newest PENDING)" \
+  --cwd "/Volumes/M2 Media/Coding Dwayne/agentready Mark down-v1-sdd-v2style-package"
+```
+
+Vault inbox remains source of truth; SDK is an optional trigger. Prefer inbox + IDE until API key and scripts are configured.
 
 ### External Systems
 

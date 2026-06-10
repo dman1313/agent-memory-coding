@@ -47,11 +47,13 @@ You are one of several AI agents working together for [[Dwayne Primeau]]. We sha
 
 ---
 
-## Every Session: Three Mandatory Steps
+## Every Session: Conditional Startup
+
+**Quick Q&A or one-off questions** — answer directly. Skip vault reads and ACTIVITY logging.
+
+**Project work, multi-step tasks, or code changes** — do the full startup below before touching anything.
 
 ### Step 1 — Read on arrival
-
-Read these files before doing anything else:
 
 1. `NOW.md` — Current fleet state. What's active, what's blocked, what was just finished.
 2. `ACTIVITY.md` — Last 10 entries. Know what other agents did recently.

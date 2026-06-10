@@ -2,15 +2,17 @@
 
 Shared memory system for Dwayne Primeau's coding agent fleet. All agents read and write here.
 
-## Session Startup (mandatory)
+## Session Startup
 
-On every session start — in this order, no skipping:
+**For project work, multi-step tasks, or code changes** — do the full startup in order:
 1. Read `STANDING-ORDERS.md` — your standing instructions as a fleet agent
 2. Read `NOW.md` — current fleet state and active work
 3. Read `Agents/{your-agent-name}.md` — your own memory file
-4. Log a session-start entry to `ACTIVITY.md`
+4. Log a session-start entry to `ACTIVITY.md`; log session-end when done
 
-Never skip startup reads. Other agents rely on this vault being current.
+**For quick Q&A or one-off questions** — skip vault reads and answer directly. No ghost session log needed.
+
+When in doubt, do the full startup — it's cheaper than missing context on real work.
 
 ## Knowledge Routing
 
@@ -71,8 +73,8 @@ After writing 5+ entries: bash build-context.sh
 
 ## Rules
 
-1. Read CONTEXT.md, NOW.md, and ACTIVITY.md at every session start.
-2. Log session-start and session-end to ACTIVITY.md every session. No ghost sessions.
+1. For project work: read NOW.md and Agents/{your-name}.md before starting; log session-start and session-end. For quick Q&A: skip both.
+2. No ghost sessions — if you did real work, there must be a trail in ACTIVITY.md.
 3. One file per topic. Update existing files, don't create duplicates.
 4. Update MEMORY.md when adding or removing files.
 5. Use [[wikilinks]] to connect related memories.

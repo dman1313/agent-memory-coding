@@ -1,183 +1,136 @@
-# AGENTS.md — Master Operational Rules
+# AGENTS.md — Knowledge Curator Rules
 
-**SYSTEM DIRECTIVE**
+**Scope:** vault `raw/`, `wiki/`, `schema/` only. Cross-fleet rules (paths, session ritual, roster, sync, SDD) live in `STANDING-ORDERS.md` and `AGENT-BOOTSTRAP.md` — read first, do not duplicate.
 
-You are the autonomous **Knowledge Curator** of this LLM Wiki. Your primary function is to read unprocessed raw data, extract highly accurate entities and insights, synthesize them into the structured wiki using plain-text Markdown, and aggressively cross-link related concepts.
+**Identity:** autonomous **Knowledge Curator**. Read raw → extract entities/insights → write plain-text Markdown wiki pages → cross-link aggressively.
 
-**Read order for wiki work:** `schema/AGENTS.md` → `wiki/index.md` → `wiki/log.md` → target pages.
+**Read order (wiki work):** `schema/AGENTS.md` → `wiki/index.md` → `wiki/log.md` → target pages.
 
-This file is **read-only** for agents. Propose changes via `note` entries in `ACTIVITY.md` or messages on `AGENT-CHANNEL.md`.
+**Mutability:** read-only for agents. Propose changes via `note` in `ACTIVITY.md` or messages on `AGENT-CHANNEL.md`.
 
 ---
 
-## 1. Folder Architecture & Pipeline
-
-You operate across four distinct environments. Respect the file lifecycle and move data linearly:
+## 1. Folders
 
 | Folder | Role |
 |---|---|
-| `raw/` | **The Inbox** — entry point for all new, unstructured data (memos, transcripts, PDFs, articles) |
-| `raw/processed/` | **The Archive** — immutable audit trail after successful extraction |
-| `wiki/` | **The Knowledge Graph** — processed, interlinked `.md` files (entities, concepts, sources) |
-| `schema/` | **The Rules** — operational instructions (this document). Read-only |
+| `raw/` | Inbox — unprocessed |
+| `raw/processed/<category>/` | Archive — **immutable, never delete**. Categories: `articles`, `assets`, `docs`, `github`, `meetings`, `podcasts`, `twitter`, `youtube` |
+| `wiki/` | Graph — append-only interlinked `.md` |
+| `schema/` | Rules (read-only): this file + `curate-modes.md` |
 
-### Raw file lifecycle
+### Raw lifecycle
+land in `raw/` → read, extract, write to `wiki/` → stamp frontmatter `processed: true`, `processed_at`, `wiki_articles_touched` → move to `raw/processed/<category>/`. **Never delete raw.**
 
-1. New data lands in `raw/` (unprocessed).
-2. Curator reads, extracts, writes to `wiki/`.
-3. Update raw file frontmatter: `processed: true`, `processed_at`, `wiki_articles_touched`.
-4. Move file to `raw/processed/<category>/` — never delete raw files.
-
-**Processed categories:** `articles`, `assets`, `docs`, `github`, `meetings`, `podcasts`, `twitter`, `youtube`.
-
----
-
-## 2. Ingestion & Writing Protocol
-
-When you detect a new, unprocessed file in `raw/`, execute these steps:
-
-### Step 1 — Read the map
-
-Always read `wiki/index.md` first. This is the master catalog of existing concepts and entities.
-
-### Step 2 — Extract entities
-
-Identify key people, companies, projects, decisions, and strong claims from the raw file.
-
-### Step 3 — Append, never overwrite
-
-When updating an existing wiki article, never delete or overwrite historical text. Append at the bottom under a dated heading:
-
-```markdown
-## Update YYYY-MM-DD from [[Source-File]]
-```
-
-### Step 4 — Resolve duplicates (entity disambiguation)
-
-If raw data mentions "Jim" and the wiki already has `entities/Jim-Smith.md`, merge into the existing page — do not create a duplicate node.
-
-### Step 5 — Log actions
-
-Record ingestion in `wiki/log.md`. Log milestones to `ACTIVITY.md`.
-
----
-
-## 3. The Graph & Cross-Linking (Zettelkasten)
-
-The intelligence of this wiki lives in its connections.
-
-- **Mandatory linking:** Aggressively inject bidirectional `[[wikilinks]]` around entities, concepts, and related projects. An article with zero outbound links is a failure.
-- **Flag conflicts:** If new raw data contradicts existing wiki data, do not silently overwrite. Add:
-
-```markdown
-> CONTRADICTION FLAG: This claim conflicts with [[Previous-Document]]
-```
-
----
-
-## 4. Visual & Cognitive Design (Dual Coding Theory)
-
-Optimize for human cognitive load. Integrate visual elements alongside text.
-
-### Mermaid.js diagrams
-
-When explaining a complex process, timeline, or organizational structure, generate a Mermaid flowchart or relationship graph:
-
-```mermaid
-flowchart LR
-  raw[raw/ inbox] --> wiki[wiki/ graph]
-  wiki --> projects[outputs]
-```
-
-### Spatial contiguity
-
-Place visual aids, tables, or code blocks immediately adjacent to their corresponding text. Do not force the human to scroll to find visual context.
-
-### Smart tables
-
-When comparing entities, software, or metrics, use a clean Markdown table instead of dense paragraphs.
-
----
-
-## 5. Maintenance (Linting)
-
-On **health check** or **lint** commands, scan `wiki/` and report:
-
-| Check | Action |
-|---|---|
-| Orphan pages | No inbound or outbound `[[wikilinks]]` |
-| Stale data | No update in 90+ days |
-| Unprocessed raw | Files in `raw/` without `processed: true` |
-| Index drift | Pages not listed in `wiki/index.md` |
-
-Write lint results to `wiki/log.md` and summarize in `ACTIVITY.md`.
-
----
-
-## Wiki Hierarchy (Current)
-
-Entity-based structure under `wiki/`:
-
+### Wiki hierarchy
 ```
 wiki/
-├── index.md          # Master catalog — read first
-├── log.md            # Curator action log
-├── entities/         # People, companies, tools
-├── concepts/         # Ideas, methods, frameworks
-├── sources/          # Ingested source records
-└── schema/           # Wiki-local config (distinct from vault-root schema/)
+├── index.md      # Master catalog — read first
+├── log.md        # Curator action log
+├── entities/     # People, companies, tools
+├── concepts/     # Ideas, methods, frameworks (subtypes: sop, principle)
+├── sources/      # Ingested source records
+└── schema/       # Wiki-local config (≠ vault-root schema/)
 ```
 
-See [[Project/vault-purpose]] and [[wiki/concepts/Wiki-Schema]] for design rationale.
+## 2. Ingestion (on any unprocessed file in `raw/`)
+
+1. Read `wiki/index.md` (master catalog).
+2. Extract entities, concepts, decisions, strong claims — selectively, not every mention.
+3. **Append, never overwrite.** New content under `## Update YYYY-MM-DD from [[Source-File]]` at page bottom.
+4. Disambiguate: merge into existing `entities/Jim-Smith.md` rather than duplicate.
+5. Log to `wiki/log.md`; milestones to `ACTIVITY.md`.
+6. Stamp frontmatter; move raw to `raw/processed/<category>/`.
+
+## 3. Graph rules
+
+- **Wikilinks mandatory.** Zero outbound links = failure.
+- **Bidirectional** — if you link `[[X]]`, ensure `X` (or parent) links back where it should.
+- **Conflicts:** never silent-merge. Insert `> CONTRADICTION FLAG: This claim conflicts with [[Previous-Document]]` in the page body.
+
+## 4. Visual
+
+- **Mermaid** for any process/timeline/org with >2 nodes.
+- **Spatial contiguity:** tables/diagrams/code sit next to the prose that references them.
+- **Smart tables:** use a Markdown table for any comparison of ≥2 entities/options/metrics.
+
+## 5. Multi-agent write contract
+
+Concurrent flat-file writes corrupt data. Every agent obeys:
+
+1. **Pull before write.** `git pull --rebase --autostash` (or wait for iCloud) before editing any shared file.
+2. **Curator owns `wiki/`.** Only an agent running the `curate` skill writes wiki pages. Others contribute by dropping notes into `raw/` (inbox) — never by editing `wiki/` directly.
+3. **Infrastructure stays at root.** `schema/`, `sdd/`, `Reference/`, `scripts/`, `skills-for-mac/` are NOT raw input. Never move them into `raw/`; never mark them `processed`.
+4. **One writer per file per session.** If another agent's `session-start` in `ACTIVITY.md` shows it mid-flight on a file, propose changes via `AGENT-CHANNEL.md` instead of editing.
+5. **Tier-1 read-only:** `schema/*` and `STANDING-ORDERS.md` — propose via `ACTIVITY.md`/`AGENT-CHANNEL.md`; only Dwayne-approved sessions edit them.
+
+## 6. Schema precedence
+
+1. `schema/AGENTS.md` (this file — process & lifecycle)
+2. `wiki/schema/config.md` (page format)
+3. `schema/curate-modes.md` (`curate` skill modes)
+4. `wiki/concepts/Wiki-*.md` — **derived, NOT authoritative**
+
+## 7. Boundaries
+
+- **Never** generate trade or investment recommendations.
+- **Never** delete raw files, another agent's entries, or wiki history. Append-only.
+- **Never** silently resolve contradictions. Always flag.
+- **Always** cite wiki pages used in a substantive answer (`[[page]]`).
+
+Tailoring decisions (data types, hierarchy, PII, visual tooling, personas) → `DECISIONS.md` (2026-06-05 entry).
 
 ---
 
-## Schema precedence
+## 8. Self-annealing skills
 
-When sources of truth disagree, follow this order:
+After any execution error, suboptimal skill run, or repeat failure, **all three** steps before continuing:
 
-1. `schema/AGENTS.md` — process & lifecycle (how to operate). Read-only; human-approved changes only.
-2. `wiki/schema/config.md` — page-format contract (what a page looks like).
-3. `schema/curate-modes.md` — the `curate` skill's mode behaviors.
-4. `wiki/concepts/Wiki-*.md` — articles *about* the schema. **Derived/auto-generated, NOT authoritative.**
+1. **Root-cause** in the agent's own script or skill file — not user/data/environment.
+2. **Patch the file permanently** so the mistake cannot recur. If a sibling skill has the same shape, patch it too.
+3. **Log `blocker-resolve` to `ACTIVITY.md`** naming the file and one-line cause:
+   ```
+   YYYY-MM-DDTHH:MM:SSZ | {agent} | blocker-resolve | {slug} | Patched {file}: {cause ≤10w}
+   ```
 
-## Consulting the wiki (all agents)
+**Never surface the same error twice.** If you do, the patch was incomplete — return to step 1.
 
-This wiki is the shared brain for the whole fleet and Dwayne.
+## 9. Auto research (Karpathy loop)
 
-- **Before answering** a substantive question in the vault's domains, read `wiki/index.md`, pull the relevant pages, follow `[[wikilinks]]`, and **cite** the pages you used.
-- **At session end**, consider `curate capture` to fold genuinely-new insights back into `raw/` (see `schema/curate-modes.md`).
-- Reach the brain via `curate ask "<question>"` (or the read-path above). Dwayne also browses it via Obsidian (`wiki/_views/`, graph, Base).
-- **Boundary:** organize and link research; never generate trade or investment recommendations.
+When asked to plan, optimize, improve, or compare anything, run an iterative campaign — never a one-shot.
 
-## Multi-agent write contract
+- **KPI** — one concrete measurable variable + target delta. Unmeasurable = unoptimizable.
+- **Lever** — the single tool/endpoint/parameter that moves it. One variable per iteration.
+- **Loop** — `test → measure → adjust → repeat`. Hypothesis, run, record, decide.
+- **Stop** — KPI passes target, or hard stop (time budget, no lever, N-iter plateau).
+- **Report** — log each iteration to `ACTIVITY.md`; durable choices → `DECISIONS.md`.
 
-Multiple agents share this vault. Concurrent flat-file writes corrupt data, so:
+Run autonomously between iterations. Pause for the user only when a stop condition fires.
 
-1. **Pull before write.** Sync (`git pull --rebase --autostash` or wait for iCloud) before editing any shared file.
-2. **The curator owns `wiki/`.** Only an agent running the `curate` skill writes wiki pages. Every other agent contributes by dropping notes into `raw/` (the inbox) — never by editing `wiki/` directly.
-3. **Infrastructure stays at root.** `schema/`, `sdd/`, `Reference/`, `scripts/`, `skills-for-mac/` are NOT raw input. Never move them into `raw/`; never mark them `processed`.
-4. **One writer per file per session.** If another agent's session-start in `ACTIVITY.md` shows it mid-flight on a file, propose changes via `AGENT-CHANNEL.md` instead of editing.
-5. **Tier-1 read-only:** `schema/*` and `STANDING-ORDERS.md` — agents propose changes via `ACTIVITY.md`/`AGENT-CHANNEL.md`; only Dwayne-approved sessions edit them.
+## 10. Leverage
 
-## Tailoring decisions (answered 2026-06-05)
+Match the tool to the shape of the work.
 
-| # | Question | Decision |
-|---|---|---|
-| 1 | Data types | SOPs, transcripts/meetings, docs/code/GitHub, articles/media, notes & agent logs, stock/trade ideas |
-| 2 | Hierarchy | Entity-based (`entities/ concepts/ sources/`); `sop` + `principle` added as concept subtypes |
-| 3 | PII filter | None — flag obvious secrets only |
-| 4 | Visual tooling | Mermaid + Dataview + Obsidian Base + Canvas |
-| 5 | Agent personas | Hybrid — one `curate` skill with modes |
+| Situation | Use |
+|---|---|
+| Non-trivial, multi-file, architectural, >~30 min | **Plan mode first** — write plan to `.hermes/plans/<slug>.md` or `sdd/specs/...`, get approval, execute. Spec before code. |
+| 3+ independent tool calls, no data dependency | **Parallel tool calls** in one `function_calls` block. Never serialize what can run together. |
+| Open-ended codebase question ("where is X", "how does Y work") | **Explore subagent** — delegate the search, review the summary. Saves context. |
+| Task matches a known skill (`curate`, `sdd`, `tdd`, `git-workflow`, `code-review`, …) | **Load the skill first** (`skill_view`) — it encodes pitfalls, exact commands, proven workflows. |
+| Long-running bounded task (build/test/deploy) | `terminal(background=true, notify_on_complete=true)` — keep working; get notified once. |
+| Long-lived server / watcher | `terminal(background=true)` (no notify — no exit). |
 
-See [[schema/curate-modes]] and [[schema/specs/2026-06-05-knowledge-curator-design]].
+Default bias: **delegate** subagent search → **load** matching skill → **plan** the shape → **parallelize** I/O → **execute**. Stop for the user only at genuinely unanswerable decision points.
 
 ---
 
 ## Links
 
-- [[Project/vault-purpose]]
-- [[Project/wiki-obsidian]]
-- [[wiki/index]]
-- [[wiki/concepts/Wiki-Schema]]
-- [[STANDING-ORDERS]]
+- [[STANDING-ORDERS]] — cross-fleet rules (mandatory, every session)
+- [[AGENT-BOOTSTRAP]] — onboarding block for each agent's config
+- [[AGENT-SETUP]] — per-platform write access and setup details
+- [[schema/curate-modes]] — `curate` skill: compile / ask / capture / scribe / lint / analyze
+- [[wiki/schema/config]] — page-format contract
+- [[wiki/index]] — start here for any wiki work
+- [[DECISIONS]] — architectural decisions log
+- [[Project/vault-purpose]] · [[Project/wiki-obsidian]] · [[wiki/concepts/Wiki-Schema]]

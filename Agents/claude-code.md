@@ -10,7 +10,7 @@ metadata:
 # Claude Code
 
 **Platform:** Mac (local CLI, desktop, web)
-**Model:** Configurable (Opus, Sonnet, Haiku) - Currently set to haiku
+**Model:** Configurable (Fable 5, Opus, Sonnet, Haiku) - Currently set to claude-sonnet-4-6
 **Memory:** Symlinked to vault via `~/.claude/projects/<project>/memory/`
 
 ## Skills
@@ -52,6 +52,8 @@ Format: `YYYY-MM-DDTHH:MM:SSZ | claude-code | event-type | project-slug | detail
 
 ## Current Work
 
+- **claude-md-rewrite (2026-06-10):** Rewrote global `~/.claude/CLAUDE.md` for token efficiency. Removed Deep Research section (per user decision — trust defaults). Added Self-Annealing Skills (self-patches skill files on error, never repeats same failure) and Auto Research (Karpathy-style iterative KPI loop). Compressed coding guidelines ~60%. Token delta: ~1,400 → ~745 tokens (~655 saved per session). Wrote agent instruction manual to vault at `Guides/claude-md-rewrite-guide.md` with canonical section templates + reusable meta-prompt for fleet-wide use.
+
 - **classroom-mirror (2026-06-09/10):** Built the full app via the agent-ready-coding-loop v2.2 process at `/Volumes/M2 Media/Coding Dwayne/Claude/classroom-mirror/`. Ethically-redesigned classroom webcam tool: Mode 1 consented per-child strategy tracking (LIMS codes + zones, no faces), Mode 2 aggregate-only whole-class reflection. Stack: Python/YOLO11n-pose/FastAPI/SQLite, local-only. **14/14 AUTO criteria YES** (CONTRACT.md, `./check` scoreboard); 5 [HUMAN] checks await Dwayne (HUMAN-CHECKS.md): live camera trial, zone setup timing, report readability, double-click start, runs ./check himself. Real-classroom use gated on DPIA + consent + CNIL homework (in SETUP.md). Git local, 4 commits, not pushed to GitHub (not requested).
 - **loop-generator (2026-06-09):** Reviewed Dwayne's Loop Generator prompt (v2.1), shipped v2.2, pushed to GitHub as **private** repo https://github.com/dman1313/agent-ready-coding-loop (renamed from loop-generator at Dwayne's request; local folder still `/Volumes/M2 Media/Coding Dwayne/Claude/loop-generator/`, files: PROMPT.md + README.md; commit 1 = v2.1 original, commit 2 = v2.2). Key v2.2 fixes: contract persisted to CONTRACT.md + resume protocol; [HUMAN] checks wired into loop exit; retry budget = 6 attempts w/o scoreboard improvement; checkpoint commits; mid-build additions = formal amendments; fake-data-only rule; cost question in interview. Originals untouched (`loop-generator-prompt-v2.md` / `-v2_1.md` are identical copies).
 - **hermes-desktop (lint fixes, 2026-06-09):** Fixed 7 ESLint errors blocking clean lint — import order issues, curly braces, padding lines. Ran `npm run fix` to auto-fix, committed changes (e03d2b4d3). Lint now passes with 0 errors. Build succeeds.
@@ -64,6 +66,7 @@ _(update each session)_
 
 | Project | My role | Status | Last touched |
 |---|---|---|---|
+| claude-md-rewrite | Rewrite + new capability sections | Done — CLAUDE.md + vault guide written | 2026-06-10 |
 | classroom-mirror | Full build (loop v2.2 process) | 14/14 AUTO YES; awaiting Dwayne's 5 HUMAN checks | 2026-06-10 |
 | loop-generator | Review + v2.2 + GitHub | Done — pushed (private repo) | 2026-06-09 |
 | hermes-desktop | Lint fixes | Done — committed (e03d2b4d3) | 2026-06-09 |
@@ -73,6 +76,7 @@ _(update each session)_
 ## Recent Decisions
 
 _(5 most recent, newest first)_
+- 2026-06-10 | claude-md-rewrite | Dropped Deep Research section (adds per-task token cost, user prefers Claude defaults). Added Self-Annealing Skills + Karpathy Auto Research instead. Vault guide written at `Guides/claude-md-rewrite-guide.md` with fleet-reusable templates.
 - 2026-06-09 | loop-generator | Created repo as **private** by default (user said "push to GitHub" without visibility; flip with `gh repo edit dman1313/agent-ready-coding-loop --visibility public`). Two-commit history: v2.1 original → v2.2, so the diff stays inspectable.
 - 2026-06-09 | loop-generator | Skipped SDD spec gate: single-markdown-doc improvement, directly requested, no architecture — treated as doc task; improvements presented to user as retroactive mini-spec.
 - 2026-06-09 | hermes-desktop | Used `npm run fix` to auto-fix lint issues rather than manual edits — clean, consistent, and faster. Committed as single batch.
