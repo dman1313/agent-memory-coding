@@ -17,6 +17,13 @@
 > entry's Status to `superseded` and add a link to the reversing decision.
 
 <!-- DECISIONS BELOW THIS LINE -->
+### 2026-06-11 — Fleet plan board, resume points & self-maintaining state
+- **Context:** No shared planning layer; state decayed between manual regenerations; resuming a project required ACTIVITY archaeology; Dwayne: vault = fleet coordination + second brain, central place for everyone.
+- **Decision:** Plan/ task board (claim protocol, single-writer), Project/<slug>.md resume points (read first, update before stopping), janitor in build-context.sh (auto-close >48h sessions, archive DONE channel >48h, board/resume/raw lints), research-once rule, API-agent write path. Details: sdd/decisions/0004-fleet-plan-board.md
+- **Agents:** hyperagent (design+build), Dwayne (spec approval + amendments)
+- **Project:** agent-memory
+- **Status:** active
+
 
 ### 2026-05-31 — Study guides via nlm query instead of nlm report create
 - **Context:** `nlm report create --prompt "Focus on X"` produces generic content covering all notebook sources. The `--prompt` flag is treated as a style suggestion, not a content filter.
