@@ -17,6 +17,12 @@
 ## Bootstrap
 - [[AGENT-BOOTSTRAP|Agent Bootstrap]] — Copy-paste instructions to share with every new agent
 
+## Guides
+- [[Guides/ingestion-directions|Ingestion Directions]] — paste-ready directions for the wiki curator agent (raw/ → wiki/)
+- [[Guides/digest-workflow|Digest Workflow]] — session-startup digest checklist for agents
+- [[Guides/claude-md-rewrite-guide|CLAUDE.md Rewrite Guide]] — canonical token-efficiency rewrite meta-prompt
+- [[Guides/taste-skill-availability|Taste Skill Availability]] — taste-skill install map (MacH)
+
 ## Schema (LLM Wiki Rules)
 - [[AGENTS|AGENTS.md]] — Master operational rules for Knowledge Curator agents (read-only)
 
