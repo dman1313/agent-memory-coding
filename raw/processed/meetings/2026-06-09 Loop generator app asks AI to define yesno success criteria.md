@@ -4,6 +4,9 @@ duration: 1m29s
 created_at: 2026-06-09
 updated_at: 2026-06-09
 
+processed: true
+processed_at: 2026-06-10T01:35:00Z
+processed_note: retro-stamped 2026-06-11 by hyperagent (T-0007); archived by the 2026-06-10 batch compile — see wiki/log.md
 ---
 # Loop generator app asks AI to define yes/no success criteria
 

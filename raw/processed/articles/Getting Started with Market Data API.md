@@ -7,6 +7,9 @@ created: 2026-06-09
 description: "This is a quick guide on how to start consuming market data via APIs. Starting from beginning to end, this section outlines how to install Alpaca’s software development kit (SDK), create a free alpaca account, locate your API keys, and how to request both historical and real-time data."
 tags:
   - "clippings"
+processed: true
+processed_at: 2026-06-10T01:35:00Z
+processed_note: retro-stamped 2026-06-11 by hyperagent (T-0007); archived by the 2026-06-10 batch compile — see wiki/log.md
 ---
 ## Installing Alpaca’s Client SDK
 

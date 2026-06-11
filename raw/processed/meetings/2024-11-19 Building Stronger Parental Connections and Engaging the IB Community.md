@@ -4,6 +4,9 @@ duration: 4m44s
 created_at: 2024-11-19
 updated_at: 2026-05-21
 
+processed: true
+processed_at: 2026-06-10T01:35:00Z
+processed_note: retro-stamped 2026-06-11 by hyperagent (T-0007); archived by the 2026-06-10 batch compile — see wiki/log.md
 ---
 # Building Stronger Parental Connections and Engaging the IB Community
 

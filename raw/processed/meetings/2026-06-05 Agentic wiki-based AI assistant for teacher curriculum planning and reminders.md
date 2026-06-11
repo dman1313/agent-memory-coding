@@ -4,6 +4,9 @@ duration: 4m42s
 created_at: 2026-06-05
 updated_at: 2026-06-09
 #Meeting
+processed: true
+processed_at: 2026-06-10T01:35:00Z
+processed_note: retro-stamped 2026-06-11 by hyperagent (T-0007); archived by the 2026-06-10 batch compile — see wiki/log.md
 ---
 # Agentic wiki-based AI assistant for teacher curriculum planning and reminders
 

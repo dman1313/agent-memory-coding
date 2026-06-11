@@ -4,6 +4,9 @@ duration: 34s
 created_at: 2026-05-13
 updated_at: 2026-06-05
 
+processed: true
+processed_at: 2026-06-10T01:35:00Z
+processed_note: retro-stamped 2026-06-11 by hyperagent (T-0007); archived by the 2026-06-10 batch compile — see wiki/log.md
 ---
 # Agent-ready HTML reduces scan cost and attracts more AI visitors
 
