@@ -18,7 +18,7 @@ NOW_FILE="NOW.md"
 NOW_TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 
 # Known fleet agents (for Active Work / Last Seen filtering)
-FLEET_AGENTS="claude-code codex goose kimi kiro hermes antigravity cursor MacH"
+FLEET_AGENTS="claude-code codex goose kimi kiro hermes antigravity cursor MacH hyperagent"
 
 # ---------------------------------------------------------------------------
 # Ensure ACTIVITY.md has a valid header (repair if agents prepended past it)
@@ -47,7 +47,7 @@ ensure_activity_header() {
 >
 > **Event types:** session-start, session-end, decision, blocker, blocker-resolve, milestone, handoff, note, message
 >
-> **Agent names:** claude-code, codex, goose, kimi, kiro, hermes, antigravity, cursor
+> **Agent names:** claude-code, codex, goose, kimi, kiro, hermes, antigravity, cursor, MacH, hyperagent
 > **Project slugs:** symphony, free-claude-code, hermes-ecosystem, hermes-metaclaw, wiki-obsidian, newsletter-platform, multica-dashboard, agent-memory-coding, humangood-ai-webpage, pyp-planner-gen, or leave empty for general
 
 <!-- ENTRIES BELOW THIS LINE -->
@@ -225,6 +225,71 @@ done <<< "$AGENTS"
 sort -t$'\t' -k1 -r "$ACTIVEFILE" > "$TMPDIR_NOW/active_sorted.tsv"
 sort -t$'\t' -k1 -r "$STALEFILE" > "$TMPDIR_NOW/stale_sorted.tsv"
 
+# ---------------------------------------------------------------------------
+# Janitor (1/3): auto-close open sessions stale >48h  [spec 2026-06-11 M4]
+# Appends a synthetic session-end below the marker, then re-runs once.
+# Reversible: an agent simply logs a new session-start.
+# ---------------------------------------------------------------------------
+
+AUTOCLOSED=0
+if [ -s "$TMPDIR_NOW/stale_sorted.tsv" ] && [ "${JANITOR_PASS:-1}" != "2" ]; then
+    CLOSURES="$TMPDIR_NOW/closures.txt"
+    > "$CLOSURES"
+    while IFS= read -r row; do
+        [ -z "$row" ] && continue
+        read_tsv_row "$row"
+        printf '%s | %s | session-end | %s | (auto-closed by janitor: open since %s, no session-end >48h)\n' \
+            "$NOW_TIMESTAMP" "$agent" "$project" "$ts" >> "$CLOSURES"
+        AUTOCLOSED=$((AUTOCLOSED + 1))
+    done < "$TMPDIR_NOW/stale_sorted.tsv"
+    if [ "$AUTOCLOSED" -gt 0 ]; then
+        awk -v ins="$CLOSURES" '{ print } /^<!-- ENTRIES BELOW THIS LINE -->$/ && !done { while ((getline l < ins) > 0) print l; close(ins); done=1 }' \
+            "$ACTIVITY_FILE" > "$TMPDIR_NOW/activity.new" && mv "$TMPDIR_NOW/activity.new" "$ACTIVITY_FILE"
+        echo "janitor: auto-closed ${AUTOCLOSED} stale session(s) — re-running"
+        rm -rf "$TMPDIR_NOW"
+        JANITOR_PASS=2 exec bash "$0" "$@"
+    fi
+fi
+
+# ---------------------------------------------------------------------------
+# Janitor (2/3): archive DONE channel messages older than 48h  [spec M4]
+# Only message blocks (### To[...]) below the marker move; archive is
+# append-only at channel-archive/YYYY-MM.md. Nothing is ever deleted.
+# ---------------------------------------------------------------------------
+
+CHANNEL_FILE="AGENT-CHANNEL.md"
+CUTOFF_DAY=$(printf '%s' "$TWO_DAYS_AGO" | cut -dT -f1)
+if [ -f "$CHANNEL_FILE" ] && grep -q '^<!-- MESSAGES BELOW THIS LINE -->$' "$CHANNEL_FILE"; then
+    mkdir -p channel-archive
+    ARCH_FILE="channel-archive/$(date -u +%Y-%m).md"
+    awk -v cutoff="$CUTOFF_DAY" -v arch="$ARCH_FILE" '
+        BEGIN { inmsg = 0; keep = 1; buf = ""; d = "" }
+        function flush() {
+            if (buf == "") return
+            if (keep) printf "%s", buf
+            else printf "%s", buf >> arch
+            buf = ""
+        }
+        /^<!-- MESSAGES BELOW THIS LINE -->$/ { flush(); inmsg = 1; print; next }
+        !inmsg { print; next }
+        /^### To\[/ {
+            flush(); keep = 1; d = ""
+            if (match($0, /[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]/)) d = substr($0, RSTART, RLENGTH)
+            buf = $0 "\n"; next
+        }
+        {
+            buf = buf $0 "\n"
+            if ($0 ~ /^\*\*Status:\*\* DONE/ && d != "" && d <= cutoff) keep = 0
+            next
+        }
+        END { flush() }
+    ' "$CHANNEL_FILE" > "$TMPDIR_NOW/channel.new"
+    if [ "$(wc -c < "$TMPDIR_NOW/channel.new" | tr -d ' ')" != "$(wc -c < "$CHANNEL_FILE" | tr -d ' ')" ]; then
+        mv "$TMPDIR_NOW/channel.new" "$CHANNEL_FILE"
+        echo "janitor: archived DONE channel messages >48h → $ARCH_FILE"
+    fi
+fi
+
 # --- Blockers ---
 
 BLOCKERSFILE="$TMPDIR_NOW/blockers.tsv"
@@ -331,9 +396,75 @@ if [ -d "Agent Inbox" ]; then
             agent_name=$(basename "$inbox" .md)
             subject=$(grep -m1 '^\*\*Subject:\*\*' "$inbox" 2>/dev/null | sed 's/^\*\*Subject:\*\* //')
             [ -z "$subject" ] && subject=$(grep -m1 '^Roster check' "$inbox" 2>/dev/null || echo "(pending message)")
-            echo "- **${agent_name}**: ${subject}" >> "$INBOXFILE"
+            age_flag=""
+            newest_pending=$(grep -B3 '^\*\*Status:\*\* PENDING' "$inbox" 2>/dev/null | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z' | sort | tail -1)
+            if [ -n "$newest_pending" ] && [[ "$newest_pending" < "$SEVEN_DAYS_AGO" ]]; then age_flag=" ⚠ pending >7d"; fi
+            echo "- **${agent_name}**: ${subject}${age_flag}" >> "$INBOXFILE"
         fi
     done
+fi
+
+# ---------------------------------------------------------------------------
+# Plan board: parse Plan/tasks/ frontmatter, prepare board + lints  [spec M1-M3]
+# Janitor (3/3): board lints + raw-inbox backlog visibility       [spec M4/M8]
+# ---------------------------------------------------------------------------
+
+BOARD_TSV="$TMPDIR_NOW/board.tsv"
+BOARD_LINT="$TMPDIR_NOW/boardlint.txt"
+LASTTS_TSV="$TMPDIR_NOW/lastts.tsv"
+> "$BOARD_TSV"; > "$BOARD_LINT"
+awk -F'\t' '{ if ($1 > seen[$2]) seen[$2] = $1 } END { for (a in seen) printf "%s\t%s\n", a, seen[a] }' "$PARSEDFILE" > "$LASTTS_TSV"
+
+fm_get() { printf '%s\n' "$1" | grep -m1 "^$2:" | sed "s/^$2:[[:space:]]*//" | tr -d '[]"' | xargs 2>/dev/null; }
+
+if [ -d "Plan/tasks" ]; then
+    for tf in Plan/tasks/T-*.md; do
+        [ -f "$tf" ] || continue
+        fm=$(awk 'BEGIN{n=0} /^---$/{n++; next} n==1{print} n>=2{exit}' "$tf")
+        tid=$(fm_get "$fm" id); ttitle=$(fm_get "$fm" title); tproj=$(fm_get "$fm" project)
+        tstatus=$(fm_get "$fm" status); towner=$(fm_get "$fm" owner); tprio=$(fm_get "$fm" priority)
+        tupd=$(fm_get "$fm" updated); tdep=$(fm_get "$fm" depends_on); thand=$(fm_get "$fm" handoff_to)
+        if [ -z "$tid" ] || [ -z "$ttitle" ] || [ -z "$tstatus" ]; then
+            echo "- ⚠ ${tf}: missing required frontmatter (id/title/status)" >> "$BOARD_LINT"
+            continue
+        fi
+        printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' \
+            "$tid" "$tstatus" "${tprio:-P3}" "$(tsv_field "$towner")" "$(tsv_field "$tproj")" \
+            "$ttitle" "$(tsv_field "$thand")" "$(tsv_field "$tdep")" "${tupd:--}" >> "$BOARD_TSV"
+        case "$tstatus" in
+            claimed|doing|blocked|review)
+                if [ -n "$towner" ]; then
+                    ots=$(awk -F'\t' -v a="$towner" '$1==a {print $2}' "$LASTTS_TSV")
+                    if [ -z "$ots" ] || [[ "$ots" < "$SEVEN_DAYS_AGO" ]]; then
+                        echo "- ⚠ ${tid} is ${tstatus} by **${towner}** with no ACTIVITY in 7d" >> "$BOARD_LINT"
+                    fi
+                fi ;;
+        esac
+        case "$tstatus" in
+            todo|claimed|doing|blocked|review)
+                if [ -n "$tproj" ]; then
+                    if [ ! -f "Project/${tproj}.md" ] || ! grep -q '^## Status now' "Project/${tproj}.md" 2>/dev/null; then
+                        echo "- ⚠ resume page missing/incomplete for open-task project **${tproj}** (Project/${tproj}.md needs '## Status now')" >> "$BOARD_LINT"
+                    fi
+                fi ;;
+        esac
+    done
+    awk -F'\t' 'seen[$1]++ { printf "- ⚠ duplicate task id %s\n", $1 }' "$BOARD_TSV" >> "$BOARD_LINT"
+    sort -u "$BOARD_LINT" -o "$BOARD_LINT" 2>/dev/null || true
+fi
+
+RAW_INBOX=0; RAW_UNSTAMPED=0
+if [ -d raw ]; then
+    find raw -path raw/processed -prune -o -type f -name '*.md' -print 2>/dev/null > "$TMPDIR_NOW/raw_inbox.list"
+    find raw/processed -type f -name '*.md' -print 2>/dev/null > "$TMPDIR_NOW/raw_arch.list"
+    while IFS= read -r rf; do
+        [ -z "$rf" ] && continue
+        head -20 "$rf" | grep -q '^processed: true' || RAW_INBOX=$((RAW_INBOX + 1))
+    done < "$TMPDIR_NOW/raw_inbox.list"
+    while IFS= read -r rf; do
+        [ -z "$rf" ] && continue
+        head -20 "$rf" | grep -q '^processed: true' || RAW_UNSTAMPED=$((RAW_UNSTAMPED + 1))
+    done < "$TMPDIR_NOW/raw_arch.list"
 fi
 
 # --- Write NOW.md ---
@@ -353,6 +484,29 @@ fi
         done < "$TMPDIR_NOW/active_sorted.tsv"
     else
         echo "_(none)_"
+    fi
+
+    echo ""
+    echo "## Plan Board"
+    if [ -s "$BOARD_TSV" ]; then
+        TODO_N=$(awk -F'\t' '$2=="todo"' "$BOARD_TSV" | wc -l | tr -d ' ')
+        ACTIVE_N=$(awk -F'\t' '$2=="claimed"||$2=="doing"||$2=="review"' "$BOARD_TSV" | wc -l | tr -d ' ')
+        BLOCKED_N=$(awk -F'\t' '$2=="blocked"' "$BOARD_TSV" | wc -l | tr -d ' ')
+        DONE_N=$(awk -F'\t' '$2=="done"' "$BOARD_TSV" | wc -l | tr -d ' ')
+        echo "_${ACTIVE_N} in motion · ${TODO_N} todo · ${BLOCKED_N} blocked · ${DONE_N} done — full board: Plan/board.md · contract: Plan/README.md_"
+        awk -F'\t' '$2=="claimed"||$2=="doing"||$2=="review" { o=$4; if(o=="__EMPTY__")o="?"; printf "- **%s** %s [%s] — %s (%s)\n", $1, $2, o, $6, $3 }' "$BOARD_TSV"
+        awk -F'\t' '$2=="blocked" { d=$8; if(d=="__EMPTY__")d="-"; printf "- **%s** blocked — %s (deps: %s)\n", $1, $6, d }' "$BOARD_TSV"
+        sort -t$'\t' -k3,3 -k1,1 "$BOARD_TSV" | awk -F'\t' '$2=="todo" && n<5 { h=$7; if(h=="__EMPTY__")h="unassigned"; printf "- todo %s **%s** — %s (→ %s)\n", $3, $1, $6, h; n++ }'
+        if [ "$RAW_INBOX" -gt 0 ] || [ "$RAW_UNSTAMPED" -gt 0 ]; then
+            echo "- _Raw inbox: ${RAW_INBOX} unprocessed · archived raw missing processed stamp: ${RAW_UNSTAMPED}_"
+        fi
+        if [ -s "$BOARD_LINT" ]; then
+            echo ""
+            echo "**Board lint:**"
+            cat "$BOARD_LINT"
+        fi
+    else
+        echo "_(no tasks on the board — see Plan/README.md to add one)_"
     fi
 
     echo ""
@@ -479,6 +633,41 @@ fi
 ENTRY_COUNT=$(wc -l < "$PARSEDFILE" | tr -d ' ')
 echo "NOW.md generated from ${ENTRY_COUNT} activity entries"
 
+# --- Write Plan/board.md (generated; script-only — never hand-edit) ---
+
+if [ -d "Plan" ]; then
+    {
+        echo "# Plan Board — generated"
+        echo ""
+        echo "_Generated: ${NOW_TIMESTAMP} by build-context.sh — do not hand-edit. Contract: Plan/README.md_"
+        for st in doing claimed review blocked todo done dropped; do
+            echo ""
+            echo "## ${st}"
+            rows=$(awk -F'\t' -v s="$st" '$2==s' "$BOARD_TSV" 2>/dev/null | sort -t$'\t' -k3,3 -k1,1)
+            if [ -n "$rows" ]; then
+                echo ""
+                echo "| id | priority | title | owner | project | handoff | updated |"
+                echo "|---|---|---|---|---|---|---|"
+                printf '%s\n' "$rows" | awk -F'\t' '{
+                    o=$4; if(o=="__EMPTY__")o="";
+                    p=$5; if(p=="__EMPTY__")p="";
+                    h=$7; if(h=="__EMPTY__")h="";
+                    printf "| %s | %s | %s | %s | %s | %s | %s |\n", $1, $3, $6, o, p, h, $9 }'
+            else
+                echo ""
+                echo "_(none)_"
+            fi
+        done
+        if [ -s "$BOARD_LINT" ]; then
+            echo ""
+            echo "## Lint"
+            echo ""
+            cat "$BOARD_LINT"
+        fi
+    } > "Plan/board.md"
+    echo "Plan/board.md generated from $(wc -l < "$BOARD_TSV" | tr -d ' ') tasks"
+fi
+
 # ---------------------------------------------------------------------------
 # Phase 2: Rebuild CONTEXT.md with NOW.md injected at top
 # ---------------------------------------------------------------------------
@@ -554,13 +743,15 @@ cat >> CONTEXT.md << 'FOOTER'
 
 ## Session Startup Checklist
 
-1. Read NOW.md (or the NOW section above) for current fleet state
+1. Read NOW.md (or the NOW section above) — fleet state including the Plan Board
 2. Check ACTIVITY.md for recent entries since your last session
 3. Check Agent Inbox/{your-agent}.md and AGENT-CHANNEL.md for pending messages
-4. Check `git log --oneline -5` for recent vault changes
-5. Log a `session-start` entry to ACTIVITY.md **below the marker line**
-6. Pick up where the last session left off
-7. Log `session-end` when done — stale open sessions pollute Active Work
+4. Resuming a project? Read Project/<slug>.md FIRST — it is the resume point
+5. Starting non-trivial work? Check Plan/board.md and claim the task (Plan/README.md)
+6. Researching anything? Check the vault first: resume page → wiki/index.md → Reference/ → DECISIONS.md
+7. Check `git log --oneline -5` for recent vault changes
+8. Log a `session-start` entry to ACTIVITY.md **below the marker line**
+9. When you stop: update Project/<slug>.md + your agent file, write back what you learned, log `session-end`
 FOOTER
 
 echo "CONTEXT.md rebuilt from $(ls User/*.md Agents/*.md Project/*.md Feedback/*.md Reference/*.md 2>/dev/null | wc -l | tr -d ' ') source files"
