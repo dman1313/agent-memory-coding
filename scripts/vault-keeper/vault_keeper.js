@@ -81,11 +81,40 @@ function commit(replica, files, head, msg) {
   return c.sha;
 }
 
+function claimNudges(replica) {
+  // L4: P1 todo + handoff_to set + >48h old -> one inbox reminder per 72h, max 2, then escalate flag
+  const inboxMap = { MacH: 'hermes-mac.md', hermes: 'hermes-vps.md', 'claude-code': 'claude.md', cursor: 'cursor.md', codex: 'codex.md', goose: 'goose.md', antigravity: 'antigravity.md' };
+  const sent = []; const dir = replica + '/Plan/tasks';
+  if (!fs.existsSync(dir)) return sent;
+  const now = Date.now();
+  for (const fl of fs.readdirSync(dir)) {
+    if (!fl.endsWith('.md')) continue;
+    const p = dir + '/' + fl; let t = fs.readFileSync(p, 'utf8');
+    const g = (k) => ((t.match(new RegExp('^' + k + ':\\s*(.+)$', 'm')) || [])[1] || '').trim();
+    if (g('status') !== 'todo' || g('priority') !== 'P1') continue;
+    const who = g('handoff_to'); if (!who || !inboxMap[who]) continue;
+    if (now - Date.parse(g('created') || 0) < 48 * 3600e3) continue;
+    const n = (t.match(/claim-nudge sent/g) || []).length;
+    if (n >= 2) { sent.push({ task: g('id'), who, escalate: true }); continue; }
+    const prev = t.match(/claim-nudge sent (\d{4}-\d{2}-\d{2})/g);
+    if (prev && now - Date.parse(prev[prev.length - 1].slice(-10)) < 72 * 3600e3) continue;
+    const day = new Date().toISOString().slice(0, 10);
+    fs.appendFileSync(replica + '/Agent Inbox/' + inboxMap[who],
+      '\n## ' + new Date().toISOString().slice(0, 19) + 'Z Claim Nudge\n\n**Status:** PENDING\n**Agent:** ' + who + '\n**Adapter:** vault-board\n\nReminder: **' + g('id') + '** (' + g('title') + ') is P1 and unclaimed 48h+. Claim per Plan/README.md or hand back with a Log note. (Nudge ' + (n + 1) + '/2 — then escalates to Dwayne.)\n\n---\n');
+    t = t.replace(/## Log\n/, '## Log\n- ' + day + ' hyperagent — claim-nudge sent ' + day + ' to ' + who + ' (#' + (n + 1) + '/2, P1 unclaimed >48h).\n');
+    fs.writeFileSync(p, t);
+    sent.push({ task: g('id'), who, n: n + 1, files: ['Plan/tasks/' + fl, 'Agent Inbox/' + inboxMap[who]] });
+  }
+  return sent;
+}
+
 const mode = process.argv[2] || 'check';
 const head = fetchReplica();
 const ageBefore = nowAge(`${WORK}/repo`);
 const replica = runJanitor();
+const nudges = (mode === 'regen') ? claimNudges(replica) : [];
 const changed = changedFiles(replica);
+for (const nd of nudges) for (const nf of (nd.files || [])) if (!changed.includes(nf)) changed.push(nf);
 const now = fs.readFileSync(`${replica}/NOW.md`, 'utf8');
 const substantive = changed.filter(f => f === 'ACTIVITY.md' || f === 'AGENT-CHANNEL.md' || f.startsWith('channel-archive/'));
 const stale = ageBefore === null || ageBefore > 60;
@@ -100,9 +129,10 @@ const report = {
   blockers: section(now, 'Blockers'),
   committed: null,
 };
-if (mode === 'regen' && changed.length && (stale || substantive.length)) {
+report.claimNudges = nudges;
+if (mode === 'regen' && changed.length && (stale || substantive.length || nudges.some(x => x.files))) {
   report.committed = commit(replica, changed, head,
-    `janitor: scheduled vault-keeper run — dashboards regenerated${substantive.includes('ACTIVITY.md') ? ' + session auto-closures' : ''}${substantive.some(f => f.startsWith('channel-archive/')) ? ' + channel archive' : ''}`
+    `janitor: scheduled vault-keeper run — dashboards regenerated${substantive.includes('ACTIVITY.md') ? ' + session auto-closures' : ''}${substantive.some(f => f.startsWith('channel-archive/')) ? ' + channel archive' : ''}${nudges.some(x=>x.files) ? ' + claim nudges' : ''}`
   ).slice(0, 8);
 }
 console.log(JSON.stringify(report, null, 2));

@@ -27,3 +27,6 @@ Headline findings: only **50% of sessions log a session-end** (janitor compensat
 
 ### Iteration 3 — 2026-06-11 (L3 shipped)
 **Lever L3 — resume coverage: DONE (T-0011).** Definition fixed (real project = ≥3 ACTIVITY entries/14d; sprawl slugs tracked separately — baseline 18). Rollout: 11 evidence-based resume pages + 1 alias stub (agent-memory-coding → agent-memory) generated from each project's ACTIVITY trail, marked for owner refinement at next session-end. **Coverage: 2/14 → 14/14.** Measured next runs: coverage stays 14/14 as definition catches new projects; sprawl count trend; pages refined by owners (not just generated). **Next lever queued: L4 (claim nudges).**
+
+### Iteration 4 — 2026-06-11 (L4 shipped)
+**Lever L4 — claim nudges: DONE (T-0012).** Keeper's hourly regen now reminds the assigned agent (inbox dispatch) when a P1 sits unclaimed 48h+: max 1 per 72h, max 2 total, then escalate to Dwayne. Rate-limit state lives in the task's own Log. Fixture-verified (fires once, suppressed on rerun). Measured next runs: time-to-claim for P1s; nudge counts (target: rarely needed). **Four levers shipped on day one: search (L1), session hygiene (L2), resume coverage (L3), claim nudges (L4). Next: L5 weekly digest — via the weekly cycle.**
