@@ -6,51 +6,67 @@
 
 # NOW — Current State
 
-_Generated: 2026-06-10T15:22:58Z_
+_Generated: 2026-06-11T14:25:31Z_
 
 ## Active Work
+- **hermes · agent-memory**: Starting: Dwayne pointed me to the shared wiki vault — reading instructions, reviewing current state, updating hermes.md _(2026-06-10T21:45:00Z)_
 - **claude-code · claude-md-rewrite**: Starting: rewrite global CLAUDE.md for token efficiency + Self-Annealing + Auto Research capabilities. _(2026-06-10T17:00:00Z)_
 
+## Plan Board
+_0 in motion · 7 todo · 0 blocked · 1 done — full board: Plan/board.md · contract: Plan/README.md_
+- todo P1 **T-0002** — Verify com.dwayne.vault-sync launchd job is actually running (→ MacH)
+- todo P1 **T-0003** — Fix IGCSE Biology concept pipeline (missing concept-progress.json, 353 failed runs) (→ hermes)
+- todo P2 **T-0001** — Retire the diverged ~/agent-memory working tree on the Mac (→ MacH)
+- todo P2 **T-0004** — Fix DREAM cleanup-before-analysis bug (7th+ occurrence) (→ hermes)
+- todo P2 **T-0008** — Curator pass — 8 orphan sources, 5 dead template links, backlink hygiene (→ claude-code)
+- _Raw inbox: 0 unprocessed · archived raw missing processed stamp: 42_
+
 ## Stale Open Sessions (>48h, no session-end)
-- **hermes · general** _(stale — log session-end)_: Vault synced, reading fleet state — last activity June 7, system YELLOW then (drift + provider 451 errors), checking current state _(2026-06-08T14:30:00Z)_
-- **cursor · agent-memory-coding** _(stale — log session-end)_: Starting: full vault read (NOW, CONTEXT, ACTIVITY); report active work to user. _(2026-06-05T20:30:00Z)_
-- **kimi · pyp-planner-gen** _(stale — log session-end)_: Starting: Returned from pause. User asked to clean up DOCX formatting and update PYP planner code. _(2026-06-04T12:12:18Z)_
+_(none)_
 
 ## Pending Inboxes
 - **claude**: Roster check claude: inbox is live.
 - **codex**: Roster check codex: inbox is live.
-- **goose**: (pending message)
+- **goose**: (pending message) ⚠ pending >7d
+- **hermes-mac**: Roster check: please acknowledge that hermes-mac inbox is live.
 - **hermes-vps**: Roster check hermes-vps: inbox is live.
 
 ## Dashboard Messages (48h)
 _(none)_
 
 ## Blockers
-- **hermes · dream**: DREAM cleanup-before-analysis bug persists — 7th+ occurrence, zero session files for analysis, 516 errors logged _(2026-06-06T14:00:00Z)_
 - **hermes · provider-routing**: DeepSeek/xiaomi provider blocked — HTTP 451 cross-border isolation errors for 24h+, cron jobs silently failing _(2026-06-05T12:01:19Z)_
 
 ## Recent Activity (48h)
-- 2026-06-10T19:25:00Z | **MacH** · taste-skill · blocker-resolve | Dwayne challenged my first-pass skip list. Re-evaluated: 6 of 7 skips had weak reasons (called gpt-taste a dup, missed that imagegen-* are prompt direction for any image-gen tool, misread stitch as Stitch-only). Installed all 6 plus updated Guides/taste-skill-availability.md with a correction log. Only taste-skill-v1 stays out (correct reason). Total MacH install: 12 of 13 skills, 6,444 SKILL.md lines. Patched: ~/.hermes/skills/creative/taste-skill/* (6 new subdirs) and the vault pointer.
-- 2026-06-10T19:10:00Z | **MacH** · taste-skill · milestone | 
-- 2026-06-10T19:05:00Z | **MacH** · taste-skill · note | 
-- 2026-06-10T18:30:00Z | **MacH** · claude-md-rewrite · session-end | Done: applied canonical rewrite (Guides/claude-md-rewrite-guide) to schema/AGENTS.md on the iCloud path. 1,020→995 words / ~1,326→~1,293 tokens; added §8 Self-annealing skills, §9 Auto research (Karpathy loop), §10 Leverage. Preserved Multi-agent write contract as new §5 (binding). Logged run audit at Guides/claude-md-rewrite-runs/2026-06-10-MacH-schema-AGENTS.md. Note: there are two diverged working trees on the Mac (~/agent-memory/ vs iCloud); this work landed in the iCloud path so launchd sync will push it. Recommend retiring or syncing the local copy.
-- 2026-06-10T18:25:00Z | **MacH** · agent-memory · decision | Confirmed the iCloud vault path is the source of truth for the fleet (launchd sync, all other Mac agents, Hermes pull target). The local ~/agent-memory/ working tree is a stale personal copy that diverged ~24h ago. Will write to iCloud going forward and flag the divergence to Dwayne.
-- 2026-06-10T18:20:00Z | **MacH** · claude-md-rewrite · note | Reading claude-codes 18:00 session-end: that run rewrote the per-agent ~/.claude/CLAUDE.md and produced Guides/claude-md-rewrite-guide.md. My run is a second application of the same canonical meta-prompt, targeting the vaults schema/AGENTS.md (not a per-agent config). Keeping the guide as-is; saving per-run audit under Guides/claude-md-rewrite-runs/.
-- 2026-06-10T18:10:00Z | **MacH** · claude-md-rewrite · session-start | 
-- 2026-06-10T17:00:00Z | **claude-code** · claude-md-rewrite · session-start | Starting: rewrite global CLAUDE.md for token efficiency + Self-Annealing + Auto Research capabilities.
-- 2026-06-10T12:02:13Z | **hermes** · wolf-trading-agent · note | Wolf Tuesday scan: all 3 scanners degraded (Reddit DDG broken since May, Twitter xurl JSON errors, GNews 1 stale article), 0 signals. Alpaca options fallback: NFLX P/C 0.11, MU P/C 0.27, MSTR P/C 0.33 bullish skew
-- 2026-06-10T12:02:13Z | **hermes** · general · note | HAL daily brief: system YELLOW, disk 76%, swap 94% (128Mi free), 27 apt updates, self-improving agent dormant day 28, DREAM cleanup bug persists, Thing2 X credits unfunded 4+ weeks, all 17 workers IDLE, wiki dormant 28 days
-- 2026-06-10T12:02:13Z | **hermes** · agent-memory · note | Resolved merge conflict on Guides/claude-md-rewrite-guide.md (both-added); accepted remote version, rebased successfully
-- 2026-06-10T06:00:00Z | **claude-code** · general · session-start | Starting: user typed test — standing by for task assignment. Vault read complete (STANDING-ORDERS, NOW, claude-code.md).
+- 2026-06-11T14:45:00Z | **hyperagent** · agent-memory · session-end | Done: Fleet Plan Board shipped (spec sdd/specs/2026-06-11-fleet-plan-board, tasks T1-T12). Board live w/ 8 seeds, janitor in build-context.sh (auto-close, channel archive, lints, raw-backlog), resume points on 5 Project pages, research-once + cloud-agent rules, ADR 0004. T-0007 executed (42 stamps). All script changes verified on a sandbox replica before commit; NOW/CONTEXT/board in this commit are replica-regenerated.
+- 2026-06-11T14:44:00Z | **hyperagent** · agent-memory · milestone | BOARD LIVE: Plan/README.md is the contract; NOW.md now shows the board. At your next session start: read your Project/<slug>.md resume page, check the board, claim before you build, write back what you learn.
+- 2026-06-11T14:43:00Z | **hyperagent** · wiki-obsidian · handoff | T-0008 -> claude-code: curator pass (8 orphan sources, 5 dead template links, backlinks). Dispatch in Agent Inbox/claude.md; context in Project/wiki-obsidian.md.
+- 2026-06-11T14:42:00Z | **hyperagent** · hermes-ecosystem · handoff | T-0003 T-0004 T-0005 T-0006 -> hermes: IGCSE pipeline fix (P1, 353 failed runs), DREAM bug, HAL Telegram delivery, ~4.5GB cache cleanup. Dispatch in Agent Inbox/hermes-vps.md; context in Project/hermes-ecosystem.md + Project/study-pipeline.md.
+- 2026-06-11T14:41:00Z | **hyperagent** · agent-memory · handoff | T-0001 T-0002 -> MacH: retire diverged ~/agent-memory tree; verify com.dwayne.vault-sync launchd (P1 — NOW.md sat ~15h stale; the janitor rides that job). Dispatch in Agent Inbox/hermes-mac.md; context in Project/agent-memory.md.
+- 2026-06-11T14:36:00Z | **hyperagent** · wiki-obsidian · milestone | T-0007 done: retro-stamped 42 archived raw files (processed: true + processed_at + note) — re-digestion landmine closed; janitor stamp-missing count 42 -> 0. First task through the full board lifecycle (todo -> claimed -> doing -> done).
+- 2026-06-11T14:11:28Z | **kimi** · pyp-planner-gen · session-end | (auto-closed by janitor: open since 2026-06-04T12:12:18Z, no session-end >48h)
+- 2026-06-11T14:11:28Z | **cursor** · agent-memory-coding · session-end | (auto-closed by janitor: open since 2026-06-05T20:30:00Z, no session-end >48h)
+- 2026-06-11T13:26:00Z | **hyperagent** · agent-memory · milestone | plan.md + tasks.md written for fleet-plan-board (12 tasks): board renderer + janitor inside build-context.sh (sandbox-verifiable), channel archiver, resume points, rules updates, 6 seeded ops tasks (2 MacH, 4 hermes). Suspicion logged: NOW.md ~15h stale despite sync.sh design — launchd vault-sync job may be down again; seeded as T-0002. Implementation next.
+- 2026-06-11T13:24:00Z | **hyperagent** · agent-memory · decision | Spec amendment 2 per Dwayne: identity-first resume flow (I'm MacH — what was I working on? Read the content, start from there; two file reads: Agents/{name}.md -> Project/<slug>.md) + research-once rule M8 (check vault before researching: resume page -> wiki/index -> Reference/ -> DECISIONS; write findings back; ACTIVITY note names where). The vault is the central place for everyone. Spec updated in place (M2/M7/M8, criteria 8).
+- 2026-06-11T13:08:00Z | **hyperagent** · agent-memory · milestone | Fleet Plan Board spec committed (Status: Approved): Plan/ task board w/ claim protocol + single-writer rule, Project/<slug>.md resume points, NOW.md board section, janitor hygiene riding the existing 15-min sync, API-agent write path, seeded launch tasks. Spec: sdd/specs/2026-06-11-fleet-plan-board/spec.md. Next per SDD: plan.md + tasks.md.
+- 2026-06-11T13:06:00Z | **hyperagent** · agent-memory · decision | Spec approved by Dwayne w/ amendment: this vault is dual-purpose — fleet coordination layer AND Dwaynes second brain. Fleet collects information for/with Dwayne here, and always writes state back keyed by project name: every active project keeps a resume point at Project/<slug>.md (Status now / Next steps / Where things live / Open tasks), updated when an agent stops, read first when an agent resumes. Corrects nuance of my 2026-06-11 audit note re: vault-purpose.md — it wasnt wrong, it was half the story.
 
 ## Recent Decisions (7d)
+- 2026-06-11T13:24:00Z | **hyperagent** · agent-memory | Spec amendment 2 per Dwayne: identity-first resume flow (I'm MacH — what was I working on? Read the content, start from there; two file reads: Agents/{name}.md -> Project/<slug>.md) + research-once rule M8 (check vault before researching: resume page -> wiki/index -> Reference/ -> DECISIONS; write findings back; ACTIVITY note names where). The vault is the central place for everyone. Spec updated in place (M2/M7/M8, criteria 8).
+- 2026-06-11T13:06:00Z | **hyperagent** · agent-memory | Spec approved by Dwayne w/ amendment: this vault is dual-purpose — fleet coordination layer AND Dwaynes second brain. Fleet collects information for/with Dwayne here, and always writes state back keyed by project name: every active project keeps a resume point at Project/<slug>.md (Status now / Next steps / Where things live / Open tasks), updated when an agent stops, read first when an agent resumes. Corrects nuance of my 2026-06-11 audit note re: vault-purpose.md — it wasnt wrong, it was half the story.
+- 2026-06-10T22:55:00Z | **hermes** · dream | Giving DREAM one more night with the session_search fix. If
+- 2026-06-10T21:50:00Z | **hermes** · agent-memory | Added Shared Wiki Vault protocol (section 22b) to SOUL.md — vault is now mandatory at every session start/end. No more ghost sessions.
 - 2026-06-10T18:25:00Z | **MacH** · agent-memory | Confirmed the iCloud vault path is the source of truth for the fleet (launchd sync, all other Mac agents, Hermes pull target). The local ~/agent-memory/ working tree is a stale personal copy that diverged ~24h ago. Will write to iCloud going forward and flag the divergence to Dwayne.
 - 2026-06-10T05:34:27Z | **claude-code** · wiki-obsidian | Adopted 4 research recommendations (ADR 0002): multi-agent write contract, schema-alignment at ingest, pre-write self-lint, page lifecycle states. Hybrid search deferred to ~300 pages. Installed com.dwayne.vault-sync launchd job (15 min).
 - 2026-06-09T22:05:00Z | **claude-code** · classroom-mirror | Contract signed (19 criteria): webcam classroom tool redesigned ethically — Mode 1 consented LIMS-coded child via zones, Mode 2 aggregate-only; no faces, no video stored, no emotion inference, local-only Mac. First real run of agent-ready-coding-loop v2.2
 - 2026-06-04T22:49:00Z | **codex** · humangood-ai-webpage | Found repo mismatch: local humangooDAI.2 tracks dman1313/HumanGood at 20c2b94; dman1313/goodhuman is separate at ede9887 and older/divergent. No publish/remote rewrite performed.
 
 ## Recent Milestones (7d)
-- 2026-06-10T19:10:00Z | **MacH** · taste-skill | 
+- 2026-06-11T14:44:00Z | **hyperagent** · agent-memory | BOARD LIVE: Plan/README.md is the contract; NOW.md now shows the board. At your next session start: read your Project/<slug>.md resume page, check the board, claim before you build, write back what you learn.
+- 2026-06-11T14:36:00Z | **hyperagent** · wiki-obsidian | T-0007 done: retro-stamped 42 archived raw files (processed: true + processed_at + note) — re-digestion landmine closed; janitor stamp-missing count 42 -> 0. First task through the full board lifecycle (todo -> claimed -> doing -> done).
+- 2026-06-11T13:26:00Z | **hyperagent** · agent-memory | plan.md + tasks.md written for fleet-plan-board (12 tasks): board renderer + janitor inside build-context.sh (sandbox-verifiable), channel archiver, resume points, rules updates, 6 seeded ops tasks (2 MacH, 4 hermes). Suspicion logged: NOW.md ~15h stale despite sync.sh design — launchd vault-sync job may be down again; seeded as T-0002. Implementation next.
+- 2026-06-11T13:08:00Z | **hyperagent** · agent-memory | Fleet Plan Board spec committed (Status: Approved): Plan/ task board w/ claim protocol + single-writer rule, Project/<slug>.md resume points, NOW.md board section, janitor hygiene riding the existing 15-min sync, API-agent write path, seeded launch tasks. Spec: sdd/specs/2026-06-11-fleet-plan-board/spec.md. Next per SDD: plan.md + tasks.md.
+- 2026-06-10T19:10:00Z | **MacH** · taste-skill | Installed 6 of 13 taste-skill skills to ~/.hermes/skills/creative/taste-skill/ (default + redesign + soft + minimalist + brutalist + output). Skipped gpt-taste (dup), image-to-code (wrong workflow), imagegen-*/brandkit (we use FAL), stitch (Google only), v1 (default to v2). Noted overlap with frontend-ui-engineering (both will load; taste-skill wins on landing/portfolio tasks) and saas-landing-page-razzle-dazzle (orthogonal). Vault pointer at Guides/taste-skill-availability.md so fleet can see
 - 2026-06-10T05:27:03Z | **claude-code** · wiki-obsidian | Restored schema/+sdd/+Reference/+skills to root (accidental move into raw/); reconciled 117 dirty files; found launchd sync job MISSING; queried NotebookLM wiki-research notebook — answers saved to raw/notebooklm-wiki-research-2026-06-10.md (5 CHALLENGEs incl. flat-file mutation danger, hybrid search)
 - 2026-06-10T01:35:00Z | **kiro** · agent-memory-coding | Wiki compile complete: Domain 2 (Human Good/AI) fully extracted; Domain 1 (school ~75 transcripts) batched into 3 period sources; Domain 3 (misc) 4 sources. raw/ inbox clean — only operational subdirs remain.
 - 2026-06-10T00:37:30Z | **kiro** · agent-memory-coding | Created raw/voicenotes/ folder (+ .gitkeep)
@@ -58,20 +74,17 @@ _(none)_
 - 2026-06-09T21:18:00Z | **claude-code** · loop-generator | v2.2 written: contract persisted to CONTRACT.md w/ resume protocol, [HUMAN] checks in loop exit, stagnation-based retry budget, checkpoint commits, amendment protocol, fake-data rule, cost question
 - 2026-06-09T10:22:00Z | **claude-code** · ollama-external | Configured Ollama to use external drive: /Volumes/Over flow/llm/Ollama (saves internal drive space)
 - 2026-06-06T05:09:47Z | **claude-code** · wiki-obsidian | Knowledge Curator build T1-T9 complete: curate skill (6 modes) + schema consolidation (sop/principle, precedence, consult contract) + 7-page company-brain ingest + Dataview/Base/Canvas views; lint clean. 12 commits local on main; push gated (T10).
-- 2026-06-05T21:15:00Z | **cursor** · agent-memory-coding | Created AGENT-BOOTSTRAP.md — shareable copy-paste instructions for onboarding any fleet agent.
-- 2026-06-05T21:05:00Z | **cursor** · wiki-obsidian | Created schema/AGENTS.md (Knowledge Curator master rules); wired into CLAUDE, STANDING-ORDERS, AGENT-SETUP, MEMORY, vault-purpose, wiki-obsidian.
-- 2026-06-05T20:46:50Z | **claude-code** · wiki-obsidian | Wrote Knowledge Curator design spec (schema/specs/2026-06-05-knowledge-curator-design.md): curate skill w/ 6 modes, conversational ask + capture learning loop, sop/principle subtypes, schema precedence, full visual stack. Approved by Dwayne; next: writing-plans.
-- 2026-06-05T20:45:00Z | **cursor** · agent-memory-coding | Improved build-context.sh: auto-repair ACTIVITY header, stale sessions, pending inboxes, dashboard feed, empty-project TSV fix; updated sync.sh + STANDING-ORDERS.
 
 ## Last Seen (fleet)
+- **hyperagent**: 2026-06-11T14:45:00Z — session-end: Done: Fleet Plan Board shipped (spec sdd/specs/2026-06-11-fleet-plan-board, tasks T1-T12). Board live w/ 8 seeds, janitor in build-context.sh (auto-close, channel archive, lints, raw-backlog), resume points on 5 Project pages, research-once + cloud-agent rules, ADR 0004. T-0007 executed (42 stamps). All script changes verified on a sandbox replica before commit; NOW/CONTEXT/board in this commit are replica-regenerated.
+- **kimi**: 2026-06-11T14:11:28Z — session-end: (auto-closed by janitor: open since 2026-06-04T12:12:18Z, no session-end >48h)
+- **cursor**: 2026-06-11T14:11:28Z — session-end: (auto-closed by janitor: open since 2026-06-05T20:30:00Z, no session-end >48h)
+- **hermes**: 2026-06-10T22:55:00Z — decision: Giving DREAM one more night with the session_search fix. If
 - **MacH**: 2026-06-10T19:25:00Z — blocker-resolve: Dwayne challenged my first-pass skip list. Re-evaluated: 6 of 7 skips had weak reasons (called gpt-taste a dup, missed that imagegen-* are prompt direction for any image-gen tool, misread stitch as Stitch-only). Installed all 6 plus updated Guides/taste-skill-availability.md with a correction log. Only taste-skill-v1 stays out (correct reason). Total MacH install: 12 of 13 skills, 6,444 SKILL.md lines. Patched: ~/.hermes/skills/creative/taste-skill/* (6 new subdirs) and the vault pointer.
 - **claude-code**: 2026-06-10T17:00:00Z — session-start: Starting: rewrite global CLAUDE.md for token efficiency + Self-Annealing + Auto Research capabilities.
-- **hermes**: 2026-06-10T12:02:13Z — note: Wolf Tuesday scan: all 3 scanners degraded (Reddit DDG broken since May, Twitter xurl JSON errors, GNews 1 stale article), 0 signals. Alpaca options fallback: NFLX P/C 0.11, MU P/C 0.27, MSTR P/C 0.33 bullish skew
 - **kiro**: 2026-06-10T01:35:00Z — session-end: Done: Full wiki compile — 93 raw files → 20 entities, 13 concepts, 19 sources. Raw inbox cleared; files in processed/meetings/ (85), articles/ (3), docs/ (2). index.md + log.md updated.
 - **antigravity**: 2026-06-06T05:23:30Z — session-end: Done: Acknowledged roster checks on Dashboard, cleared pending inbox/messages, closed stale session, and rebuilt vault context.
-- **cursor**: 2026-06-05T21:15:00Z — milestone: Created AGENT-BOOTSTRAP.md — shareable copy-paste instructions for onboarding any fleet agent.
 - **codex**: 2026-06-05T19:10:25Z — milestone: Adjusted result layout so result text and image stay side-by-side on tablet/desktop widths while stacking on mobile.
-- **kimi**: 2026-06-04T12:35:00Z — milestone: Updated pyp_planner.py: proper CLI with argparse, auto-detects pipe/tab tables, PYP structure heuristics (sections/engagements/weeks/options), removes AI artifacts. Applied to Grade 5 Human Migration unit.
 
 ---
 
@@ -469,33 +482,36 @@ _(running notes I want to remember across sessions)_
 
 # Hermes
 
-**Platform:** VPS (Ubuntu, kernel 6.8.0-117-generic)
+**Platform:** VPS (Ubuntu, kernel 6.8.0-124-generic)
 **Host:** /home/ubuntu
 **Memory:** Git clone at `~/agent-memory/`
 **Config:** `~/.hermes/config.yaml` (default profile)
 **Gateway:** systemd user service (`hermes-gateway.service`)
 **Telegram:** @betaclawv1_bot ("openclaw"), thread 723 (health), thread 725 (wellness)
+**Dashboard:** hermesdash.humangood.ai (Natural theme), auth proxy on :9121
+**HD1 (3D):** hd1.humangood.ai (Hermes Office 3D), systemd: hermes-office, hermes-office-adapter
 
 ## Model Routing
 
-| Tier       | Model              | Provider |
-|------------|--------------------|----------|
-| Light      | MiMo v2.5-pro     | Xiaomi   |
-| Medium     | DeepSeek v4-flash  | DeepSeek |
-| Heavy      | DeepSeek v4-pro    | DeepSeek |
-| Code       | Kimi K2.6          | Moonshot |
-| GLM 5.1    | coding plan only   | Z.AI     |
-| Fallback   | DeepSeek PAYG      | DeepSeek |
+| Tier       | Model              | Provider   |
+|------------|--------------------|------------|
+| Light      | MiMo v2.5-pro     | Xiaomi     |
+| Medium     | DeepSeek v4-flash  | DeepSeek   |
+| Heavy      | DeepSeek v4-pro    | DeepSeek   |
+| Code       | Coding Officer     | Kimi CLI primary, Claude Code backup |
+| GLM 5.1    | coding plan only   | Z.AI       |
+| Fallback   | DeepSeek PAYG      | DeepSeek   |
 
 ## Skills (300+)
 
 Organized under `~/.hermes/skills/`. Key categories:
-- **trading/** — ai-trader, wolf-trading-agent, quant-stock-scanner, alpaca-volume-scanner
+- **trading/** — ai-trader, wolf-trading-agent, quant-stock-scanner, alpaca-volume-scanner, commodity-market-intelligence
 - **research/** — sherlock, deep-research, academic-pipeline, perplexity-research
-- **agents/** — hal, dream, coding-officer, qa-agent, shepherd-agent, special-ops
+- **agents/** — hal, dream, coding-officer, qa-agent, shepherd-agent, special-ops, mrclean
 - **devops/** — kanban-orchestrator, ci-cd-and-automation, cloudflare-tunnel-setup
-- **creative/** — claude-design, popular-web-designs, excalidraw, manim-video
-- **productivity/** — google-workspace, notion, obsidian, powerpoint
+- **creative/** — claude-design, popular-web-designs, excalidraw, baoyu-*, taste-skill (13 sub-skills)
+- **productivity/** — google-workspace, notion, obsidian, powerpoint, master-newsletter
+- **autonomous-ai-agents/** — claude-code, codex, kimi-cli, opencode, hermes-agent, take-control
 
 ## Services Running
 
@@ -508,60 +524,118 @@ Organized under `~/.hermes/skills/`. Key categories:
 | Agent Ready | 8766 | Middleware |
 | Caddy | 80/443 | Reverse proxy |
 
-## Cron Jobs (16 active)
+## Cron Jobs (16+ active)
 
 - DREAM nightly reflection (3am)
 - Wolf daily scan (8am M-F)
 - CFTC COT scanner (Fri 21:45)
 - IGCSE Biology pipeline (hourly)
-- HAL daily brief (2pm)
+- HAL daily brief (8am Paris)
 - Morning/evening Zen reflections
 - System health monitor (every 6h)
 - Shared memory sync (every 6h)
 - GDrive + brain backups
+- Dashboard agent memory daily (20:00 UTC)
 
-## Current Capabilities (as of 2026-05-31)
+## Current Capabilities (as of 2026-06-10)
 
 ### AI-Trader (ai4trade.ai)
-- Agent ID: 7729, portfolio ~$98K
+- Agent ID: 7729, portfolio ~$100K paper
 - CLI: status, positions, trade, strategy, discussion, feed, rebalance, heartbeat
 - Wolf→AI-Trader bridge for auto-publishing signals
 - Safety: rate limiting, duplicate detection, circuit breaker, position limits
 
+### Quant / Trading
+- Momentum scanner: `~/.hermes/scripts/momentum-scanner.py` (yfinance+Finnhub)
+- Options: bull call spreads (debit), bull put spreads (credit) with real bid/ask
+- Commodity COT: WTI+Brent positioning >2σ flags
+- Quant NN prototype at `~/quant-nn/`
+
 ### Study Pipeline
 - IGCSE Biology via NotebookLM (nlm CLI)
-- Per-concept: study guide (query-based), flashcards, slides, video
-- Pipeline script: `~/.hermes/scripts/concept-pipeline.sh`
-- Skill: sherlock-study-boy
+- Per-concept: study guide, flashcards, slides, video
+- AI in Education notebook: 4cf3cf93 (12 sources)
+- Study Boy: sherlock-study-boy skill
 
-### Second Brain Vault
-- Path: `~/Documents/Obsidian Vault/second-brain/`
-- Git: dman1313/second-brain
-- Structure: wiki/, journal/, crm/, raw/
-- Sync: `~/.hermes/scripts/sync-second-brain.sh`
+### Shared Wiki Vault
+- Path: `~/agent-memory/` (Git: dman1313/agent-memory-coding)
+- This is the shared wiki for the entire agent fleet
+- Always read NOW.md at session start, update ACTIVITY.md
+- Pull before write, commit+push after changes
+- Second Brain (personal): `~/Documents/Obsidian Vault/second-brain/`
 
-## Shared Memory
+### AI Brain
+- NotebookLM "H1 AI Brain" (e0da9697)
+- Summaries pushed via wrapup skill
 
-- `~/agent-memory/` — shared with Mac agents via Git
-- Always read NOW.md at session start
-- Update ACTIVITY.md with milestones/decisions
-- Commit and push after changes
+## External Systems
 
-## Dwayne Preferences (operational)
+- **Google Workspace:** OAuth'd, token at `~/.hermes/google_token.json`
+- **X/Twitter:** @humangoodai via xurl (needs $5 top-up)
+- **Notion:** HumanGood workspace (curl-based, ntn CLI not installed)
+- **Together AI:** image gen provider, MCP server "together-docs"
+- **GitHub:** PAT configured, dman1313 org
 
-- **Wiki-system-first:** Operate within Dwayne's existing wiki system on all knowledge-bearing tasks. Use wiki as primary durable knowledge store. Orient with SCHEMA.md, index.md, log.md before wiki work.
-- **Consult wiki proactively:** Not only for explicit wiki tasks — check wiki for context on any knowledge question.
-- **Model routing:** Light=MiMo v2.5-pro. Med=DeepSeek v4-flash. Heavy=DeepSeek v4-pro. Code=Kimi K2.6 (paid). GLM 5.1=coding plan only. DeepSeek=PAYG fallback.
-- **LLM roster:** When asked, show actually configured/usable models, not cached catalog.
-- **Quant finance:** ML trading signals, LSTM pipelines, Marcos Lopez de Prado. Prototype at ~/quant-nn/. Interested in AI supply chain: copper (FCX), rare earths (MP), specialty gases (APD), materials (ENTG).
-- **Mistral API:** mistral-small-latest, mistral-medium-latest, codestral-latest, mistral-ocr-latest, voxtral-small, voxtral-mini-tts, mistral-embed.
-- **Wellness:** Daily morning + evening reflections in Telegram thread 725.
+## Services (9Router, WeKnora, etc.)
+
+- 9Router :20128, WeKnora :8089, FreeLLMAPI :3002, Hermes Office :3001, Agent Ready :8766, Caddy
 
 ## Strengths
 - Best for: orchestration, scheduling, research, trading, knowledge management
 - Has 300+ skills covering most domains
-- Cron-based automation (16 active jobs)
-- Multi-platform messaging (Telegram, Discord)
+- Cron-based automation (16+ active jobs)
+- Multi-platform messaging (Telegram)
+- Lead orchestrator (HAL) for the agent fleet
+
+### Hyperagent
+
+
+# Hyperagent
+
+**Platform:** Cloud (Hyperagent platform, browser threads)
+**Model:** Claude (Fable 5)
+**Memory:** This vault via GitHub REST API — direct commits to `main`
+**Config:** Hyperagent project "wiki" + thread context docs (no local config file on Dwayne's machines)
+
+## Access Path (differs from every other agent)
+
+- No iCloud path, no VPS clone. Reads `api.github.com` contents, writes via Git Data API (atomic multi-file commits).
+- `git clone`/`push` is blocked in my sandbox (HTTPS proxy); REST API works. Commits land on `main` between the fleet's 15-min syncs.
+- Cannot run `build-context.sh` or `sync.sh` — after I write 5+ ACTIVITY entries, the next Mac/VPS agent should regenerate NOW.md/CONTEXT.md.
+- Runs **on demand** when Dwayne opens a thread — not a daemon. Inbox checked per session, not continuously.
+
+## Strengths
+
+- Best for: deep research (web search + crawling), vault audits, design specs, long-form writing
+- Rich artifacts: webpages, slide decks, tables, documents, images/video/audio
+- Browser automation for dynamic sites; sandboxed code execution (Python/Node)
+
+## Current Work
+
+- Fleet Plan Board SHIPPED 2026-06-11 (spec/plan/tasks + ADR 0004 + 6 commits). Monitoring adoption: waiting on T-0002 (launchd check, MacH) and first organic claims by MacH/hermes/claude-code. Next: mark spec Done when criteria 1/2/6 observed; regenerate wiki graph after next compile on request.
+
+## Projects
+
+| Project | My role | Status | Last touched |
+|---|---|---|---|
+| agent-memory | Designer + builder of the plan board | Shipped; adoption watch | 2026-06-11 |
+
+## Recent Decisions
+
+- 2026-06-11 — Shipped board + janitor; consolidated T3-T6 into one commit (one file, one verified unit); retro-stamped 42 archive files with honest processed_note rather than fabricating per-file wiki_articles_touched.
+
+- 2026-06-11 — Write via GitHub Git Data API (single atomic commits) since git clone is proxy-blocked; append-only, never touch other agents' entries.
+
+## Handoff Notes
+
+- Board live: T-0001/2 → MacH, T-0003..6 → hermes, T-0008 → claude-code (inbox dispatches + ACTIVITY handoffs 2026-06-11). NOW/CONTEXT/board in the launch commit are replica-regenerated — the Mac launchd job should take over regeneration (T-0002 verifies).
+
+- My commits arrive directly on origin/main. Mac agents: launchd pull picks them up; Hermes: `git pull --rebase` as usual.
+- Audit findings live in the 2026-06-11 ACTIVITY note; full upgrade spec will follow SDD (spec → plan → tasks).
+
+## Memory Log
+
+- 2026-06-11 — Joined roster per [[AGENT-BOOTSTRAP]] first-time checklist.
 
 ### Kimi
 
@@ -727,6 +801,33 @@ Cursor picks up on next session. For urgent work, ping Dwayne to open Cursor or 
 
 ## Active Projects
 
+### Agent Memory
+
+
+# Agent Memory (this vault)
+
+The vault is dual-purpose: the fleet's coordination layer AND Dwayne's second brain. Spec: `sdd/specs/2026-06-11-fleet-plan-board/`.
+
+## Status now
+
+Fleet Plan Board + janitor shipped 2026-06-11 (hyperagent): Plan/ board live with 8 seeded tasks, build-context.sh now renders the board into NOW.md, auto-closes stale sessions >48h, archives DONE channel messages >48h, and flags raw-inbox backlog + missing archive stamps. Suspected issue: the Mac launchd vault-sync job may be down (NOW.md sat ~15h stale on 2026-06-11) — T-0002.
+
+## Next steps
+
+- T-0002 (MacH): verify/restore the com.dwayne.vault-sync launchd job — the janitor rides it
+- T-0001 (MacH): retire the diverged ~/agent-memory Mac working tree
+- After a week of board use: review spec success criteria 1/2/6 and mark the spec Done
+
+## Where things live
+
+- Repo: github.com/dman1313/agent-memory-coding (private) · Mac iCloud path + VPS clone per STANDING-ORDERS
+- Board: `Plan/` (contract in Plan/README.md, dashboard in Plan/board.md) · Fleet state: NOW.md
+- Generator/janitor: `build-context.sh` (runs via sync.sh every 15 min on Mac) · Spec/plan/tasks: `sdd/specs/2026-06-11-fleet-plan-board/`
+
+## Open tasks
+
+- [[Plan/tasks/T-0001-retire-diverged-mac-tree|T-0001]] · [[Plan/tasks/T-0002-verify-vault-sync-launchd|T-0002]]
+
 ### Agent Ready Coding Loop
 
 
@@ -834,6 +935,25 @@ Skills in the Anti-Gravity/Skills repo are designed as instructions for AI agent
 **Why:** Changes how skills are authored — they need to be agent-consumable, self-contained workflows with clear handoffs between agents.
 
 **How to apply:** Write skills as step-by-step agent instructions with explicit inputs/outputs, agent handoffs, and escalation paths. Don't assume human-in-the-loop for routine steps.
+
+## Status now
+
+_Section added 2026-06-11 (resume-point rollout, spec M2)._ VPS system YELLOW per HAL briefs: disk 75% w/ swap 94%, DREAM cleanup-before-analysis bug (7th+ occurrence — hermes gave the session_search fix one more night on 2026-06-10, else pausing the cron), HAL Telegram delivery intermittently failing, ~4.5GB reclaimable caches identified by MrClean. 17 agent skills active; full inventory synced to MacH 2026-06-10.
+
+## Next steps
+
+- T-0004 (hermes): DREAM bug — verify the fix or pause the cron with a logged decision
+- T-0005 (hermes): HAL Telegram delivery retry/restart
+- T-0006 (hermes): clear npx/npm/huggingface caches, log df evidence
+
+## Where things live
+
+- VPS: 65.109.141.110 (`~/.hermes/` skills, scripts, cron) · dashboards: hermesdash.humangood.ai (:9119)
+- Audits: `mrclean-audit-2026-06-11.md` · system map: PROJECT-MAP.md
+
+## Open tasks
+
+- [[Plan/tasks/T-0004-dream-cleanup-bug|T-0004]] · [[Plan/tasks/T-0005-hal-telegram-delivery|T-0005]] · [[Plan/tasks/T-0006-vps-cache-cleanup|T-0006]]
 
 ### Hermes Metaclaw
 
@@ -968,6 +1088,31 @@ Agent-first newsletter production system. Turns Telegram voice notes and photos 
 - Automated upload to Google Drive blocked by macOS security and browser restrictions
 - Manual drag-and-drop from Finder to Drive browser window recommended
 
+### Study Pipeline
+
+
+# Study Pipeline (IGCSE Biology)
+
+NotebookLM-driven generation of study packages (flashcards, quizzes, concept deep-dives) for IGCSE Biology, running on the VPS via cron + `concept-pipeline.sh`.
+
+## Status now
+
+BROKEN since the workdir lost `concept-progress.json`: the hourly cron has erred 353+ consecutive runs (FileNotFoundError), failing silently 24x/day. Audit: `mrclean-audit-2026-06-11.md` finding #1 (9/10). Sister skills: sherlock-study-boy + notebooklm (see `skills-for-mac/`); NotebookLM CLI quirks documented in DECISIONS.md (2026-05-31, flashcards difficulty is a string) and `skills-for-mac/sherlock-study-boy/references/nlm-cli-quirks.md`.
+
+## Next steps
+
+- T-0003 (hermes): restore/regenerate concept-progress.json or make the script tolerate absence; confirm 3 clean runs
+- Reduce cadence from hourly to every 3-6h per the audit recommendation
+
+## Where things live
+
+- VPS: `~/.hermes/scripts/concept-pipeline.sh` + its workdir · cron "IGCSE Biology Concept Pipeline" (hourly)
+- Skills: `skills-for-mac/notebooklm/`, `skills-for-mac/sherlock-study-boy/` · study outputs: VPS `study-packages/`
+
+## Open tasks
+
+- [[Plan/tasks/T-0003-fix-igcse-concept-pipeline|T-0003]]
+
 ### Symphony
 
 
@@ -1020,39 +1165,31 @@ Symphony is a multi-agent coding orchestrator written in Rust. It polls issue tr
 
 # Vault Purpose
 
-This vault is **Dwayne Primeau's private individual bank** — a personal knowledge graph for:
+_Rewritten 2026-06-11 per Dwayne (spec amendment, sdd/specs/2026-06-11-fleet-plan-board/): the previous version described only the second-brain half._
 
-- **Stock ideas** — research, theses, watchlists, earnings analysis
-- **Trade ideas** — setups, entries, exits, risk management
-- **Everything worth coming back to** — tools, workflows, concepts, people, companies
+This vault is **two things at once**:
+
+1. **The fleet's coordination layer** — shared memory and operating system for all of Dwayne's coding agents: session ritual, ACTIVITY log, NOW dashboard, Plan board, per-agent profiles, decisions.
+2. **Dwayne's second brain** — the fleet works *with* Dwayne and collects information *for* him here. Knowledge compounds in `wiki/` (Karpathy LLM-wiki pattern); working state lives in `Project/` resume points and `Plan/` tasks.
+
+**The day-one test:** an agent says "I'm MacH — I look at the vault right away: okay, I was working on this program before. I read the content, and I start from there." Two file reads (`Agents/{name}.md` → `Project/<slug>.md`), no re-researching, no archaeology. The vault is the central place for everyone.
 
 ## Design Principles
 
-1. **Structured wiki over vector embeddings** — Human-readable markdown with `[[wikilinks]]`, per Andrej Karpathy's approach.
-2. **Raw intake → curated wiki → outputs** — Three-layer flow:
-   - `raw/` — intake only, never edited except to mark `processed: true`
-   - `wiki/` — curated knowledge graph (sources, entities, concepts, index)
-   - `projects/` — outputs that reference wiki as context
-3. **Append-only wiki** — Dated sections (`## Update YYYY-MM-DD from [[Source]]`), never overwrite.
-4. **Cross-link aggressively** — Islands are failures. Every article needs outbound links.
-5. **Processed files move to `raw/processed/<category>/`** — Categories: articles, assets, docs, github, meetings, podcasts, twitter, youtube.
+1. **Structured wiki over vector embeddings** — human-readable markdown with `[[wikilinks]]` (Karpathy's approach).
+2. **Raw intake → curated wiki → working state** — `raw/` (immutable inbox) → `wiki/` (append-only knowledge graph) → `Project/` + `Plan/` (resume points and work queue) referencing wiki as context.
+3. **Append-only history** — dated sections, never overwrite. Stopping is never losing.
+4. **Cross-link aggressively** — islands are failures; the graph's value compounds through connections.
+5. **Research once** — check the vault before researching (resume page → `wiki/index.md` → `Reference/` → `DECISIONS.md`); write findings back where they belong.
+6. **State keyed by project name** — the same slug names the ACTIVITY entries, the board task `project:` field, and the `Project/<slug>.md` resume page.
 
 ## Rules for Agents
 
-Full operational protocol: **`schema/AGENTS.md`** (read-only master rules).
+Full protocol: `STANDING-ORDERS.md` (fleet) and `schema/AGENTS.md` (wiki, read-only). Board contract: `Plan/README.md`.
 
-Summary:
-- Read `schema/AGENTS.md` → `wiki/index.md` before producing wiki output.
-- Extract entities (people, companies, tools) and concepts from every source.
-- Append wiki updates under dated headings — never overwrite history.
-- Mark raw files `processed: true` with `processed_at` and `wiki_articles_touched`.
-- Move processed files to the appropriate `raw/processed/<category>/` folder.
-- Surface conflicts between sources — don't silently resolve.
-- Cross-link aggressively; orphan pages are failures.
+## Related
 
-## Why This Works
-
-The graph value compounds through connections, not individual articles. Opening it in Obsidian shows the visual graph of how everything relates. This is better than RAG because the structure is explicit — links tell you what's related, no guessing.
+The separate personal trading vault (second-brain repo, stock/trade ideas) follows the same wiki pattern — it is a different vault with its own remote. [[Project/wiki-obsidian]] · [[Project/agent-memory]]
 
 ### Wiki Obsidian
 
@@ -1067,6 +1204,25 @@ This directory is an Obsidian vault implementing the LLM Wiki pattern (Karpathy,
 **Why:** This is a persistent, compounding knowledge base. The LLM (Claude Code) is the wiki maintainer — it writes, updates, and cross-links pages. The human curates sources and asks questions.
 
 **How to apply:** Read order: `schema/AGENTS.md` → `wiki/index.md` → `wiki/log.md` → target pages. The four-layer architecture (`raw/` inbox, `raw/processed/` archive, `wiki/` graph, `schema/` rules) is non-negotiable. New pages go to `wiki/index.md`; curator actions go to `wiki/log.md`. Vault-root `schema/` holds master rules; `wiki/schema/` holds wiki-local config.
+
+## Status now
+
+_Section added 2026-06-11 (resume-point rollout, spec M2)._ Wiki healthy after kiro's 2026-06-10 full compile (93 raw → 20 entities, 13 concepts, 19 sources; 71 pages, 356 links per the 2026-06-11 graph snapshot). Two hygiene items open: 42 archived raw files missing their `processed: true` stamp (re-digestion landmine — T-0007), and 8 orphan sources + 5 dead template links from the lint/graph (T-0008). The janitor now surfaces raw backlog + stamp gaps in NOW.md.
+
+## Next steps
+
+- T-0007 (hyperagent): stamp the 42 archived raw files
+- T-0008 (claude-code): curator pass — orphan sources, dead template links, backlinks
+- Next compile: regenerate the wiki graph snapshot on request
+
+## Where things live
+
+- Wiki: `wiki/` in this vault (rules: `schema/AGENTS.md`, modes: `schema/curate-modes.md`, skill: `.claude/skills/curate/`)
+- Intake: `raw/` → archive `raw/processed/<category>/` · curator log: `wiki/log.md`
+
+## Open tasks
+
+- [[Plan/tasks/T-0007-stamp-archived-raw-files|T-0007]] · [[Plan/tasks/T-0008-wiki-orphans-dead-links|T-0008]]
 
 ## Working Preferences
 
@@ -1254,6 +1410,7 @@ cursor-sdk prompt "Execute MacH dispatch in Agent Inbox/cursor.md (newest PENDIN
 
 Vault inbox remains source of truth; SDK is an optional trigger. Prefer inbox + IDE until API key and scripts are configured.
 
+
 ### External Systems
 
 
@@ -1324,10 +1481,12 @@ sudo swapoff -a && sudo swapon -a
 
 ## Session Startup Checklist
 
-1. Read NOW.md (or the NOW section above) for current fleet state
+1. Read NOW.md (or the NOW section above) — fleet state including the Plan Board
 2. Check ACTIVITY.md for recent entries since your last session
 3. Check Agent Inbox/{your-agent}.md and AGENT-CHANNEL.md for pending messages
-4. Check `git log --oneline -5` for recent vault changes
-5. Log a `session-start` entry to ACTIVITY.md **below the marker line**
-6. Pick up where the last session left off
-7. Log `session-end` when done — stale open sessions pollute Active Work
+4. Resuming a project? Read Project/<slug>.md FIRST — it is the resume point
+5. Starting non-trivial work? Check Plan/board.md and claim the task (Plan/README.md)
+6. Researching anything? Check the vault first: resume page → wiki/index.md → Reference/ → DECISIONS.md
+7. Check `git log --oneline -5` for recent vault changes
+8. Log a `session-start` entry to ACTIVITY.md **below the marker line**
+9. When you stop: update Project/<slug>.md + your agent file, write back what you learned, log `session-end`

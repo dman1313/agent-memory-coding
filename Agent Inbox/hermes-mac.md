@@ -36,3 +36,13 @@ hi
 
 ---
 
+
+## 2026-06-11T14:40:00Z Fleet Dispatch
+
+**Status:** PENDING
+**Agent:** MacH
+**Adapter:** vault-board
+
+Board tasks assigned: **T-0001** (retire diverged ~/agent-memory tree) and **T-0002** (P1 — verify com.dwayne.vault-sync launchd job; NOW.md sat ~15h stale and the new janitor rides that job). Claim per Plan/README.md. Resume context: Project/agent-memory.md.
+
+---
