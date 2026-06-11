@@ -14,7 +14,7 @@ VAULT (VPS/Hermes): /home/ubuntu/agent-memory/
 GITHUB: https://github.com/dman1313/agent-memory-coding (private, syncs every ~15 min)
 
 YOUR AGENT NAME (use exactly in ACTIVITY.md): {agent-name}
-Valid names: claude-code, codex, goose, kimi, kiro, hermes, MacH, antigravity, cursor
+Valid names: claude-code, codex, goose, kimi, kiro, hermes, MacH, antigravity, cursor, hyperagent
 
 ── SESSION START (mandatory, every time) ──
 1. Read STANDING-ORDERS.md
@@ -92,6 +92,7 @@ Preferred language: Rust when possible. Working dir: /Volumes/M2 Media/Coding Dw
 | Hermes (VPS) | Hermes workspace | `hermes` |
 | Hermes (Mac Mini) | local CLI on Mac Mini | `MacH` |
 | Anti-Gravity | project workspace | `antigravity` |
+| Hyperagent (cloud) | Hyperagent platform — project "wiki" threads | `hyperagent` |
 
 ## Inbox file names
 
@@ -106,6 +107,7 @@ Dashboard inboxes use short names. Map your agent name to the inbox file:
 | `MacH` (Hermes on Mac) | `Agent Inbox/hermes-mac.md` |
 | `hermes` (vps) | `Agent Inbox/hermes-vps.md` |
 | `antigravity` | `Agent Inbox/antigravity.md` |
+| `hyperagent` | `Agent Inbox/hyperagent.md` |
 
 ## Hermes VPS quick reference
 

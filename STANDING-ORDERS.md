@@ -160,6 +160,7 @@ If you wrote 5+ ACTIVITY.md entries: `bash build-context.sh`
 | [[MacH]] | Mac | Hermes-Mac — lead local agent on the Mac Mini: coding, dev, quick tasks, research |
 | [[antigravity]] | Mac | Projects workspace: skills, mobile, web, OpenClaw agents |
 | [[cursor]] | Mac | IDE-integrated coding, MCP plugins, multi-model |
+| [[hyperagent]] | Cloud | Research, audits, design specs, rich artifacts; writes via GitHub API (no local filesystem) |
 
 ---
 

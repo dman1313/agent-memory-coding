@@ -67,7 +67,7 @@ YYYY-MM-DDTHH:MM:SSZ | agent-name | event-type | project-slug | detail
 
 Event types: session-start, session-end, decision, blocker, blocker-resolve, milestone, handoff, note
 
-Agent names: claude-code, codex, goose, kimi, kiro, hermes, antigravity, cursor
+Agent names: claude-code, codex, goose, kimi, kiro, hermes, antigravity, cursor, MacH, hyperagent
 
 After writing 5+ entries: bash build-context.sh
 
