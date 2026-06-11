@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-06-11T14:25:31Z_
+_Generated: 2026-06-11T14:27:07Z_
 
 ## Active Work
 - **hermes · agent-memory**: Starting: Dwayne pointed me to the shared wiki vault — reading instructions, reviewing current state, updating hermes.md _(2026-06-10T21:45:00Z)_
@@ -19,7 +19,6 @@ _0 in motion · 7 todo · 0 blocked · 1 done — full board: Plan/board.md · c
 - todo P2 **T-0001** — Retire the diverged ~/agent-memory working tree on the Mac (→ MacH)
 - todo P2 **T-0004** — Fix DREAM cleanup-before-analysis bug (7th+ occurrence) (→ hermes)
 - todo P2 **T-0008** — Curator pass — 8 orphan sources, 5 dead template links, backlink hygiene (→ claude-code)
-- _Raw inbox: 0 unprocessed · archived raw missing processed stamp: 42_
 
 ## Stale Open Sessions (>48h, no session-end)
 _(none)_
