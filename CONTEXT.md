@@ -6,14 +6,14 @@
 
 # NOW — Current State
 
-_Generated: 2026-06-11T18:42:24Z_
+_Generated: 2026-06-11T20:53:36Z_
 
 ## Active Work
 - **hermes · agent-memory**: Starting: Dwayne pointed me to the shared wiki vault — reading instructions, reviewing current state, updating hermes.md _(2026-06-10T21:45:00Z)_
 - **claude-code · claude-md-rewrite**: Starting: rewrite global CLAUDE.md for token efficiency + Self-Annealing + Auto Research capabilities. _(2026-06-10T17:00:00Z)_
 
 ## Plan Board
-_0 in motion · 7 todo · 0 blocked · 1 done — full board: Plan/board.md · contract: Plan/README.md_
+_0 in motion · 7 todo · 0 blocked · 5 done — full board: Plan/board.md · contract: Plan/README.md_
 - todo P1 **T-0002** — Verify com.dwayne.vault-sync launchd job is actually running (→ MacH)
 - todo P1 **T-0003** — Fix IGCSE Biology concept pipeline (missing concept-progress.json, 353 failed runs) (→ hermes)
 - todo P2 **T-0001** — Retire the diverged ~/agent-memory working tree on the Mac (→ MacH)
@@ -23,10 +23,16 @@ _0 in motion · 7 todo · 0 blocked · 1 done — full board: Plan/board.md · c
 ## Stale Open Sessions (>48h, no session-end)
 _(none)_
 
+## Session Hygiene (7d)
+_Unpaired sessions get auto-closed and named here — log your session-end. [L2, vault-fitness]_
+- **MacH**: 5 start(s) / 1 end(s)
+- **claude-code**: 6 start(s) / 3 end(s)
+- **cursor**: 2 start(s) / 1 end(s) · 1 auto-closed by janitor
+- **hermes**: 4 start(s) / 0 end(s)
+
 ## Pending Inboxes
 - **claude**: Roster check claude: inbox is live.
 - **codex**: Roster check codex: inbox is live.
-- **goose**: (pending message) ⚠ pending >7d
 - **hermes-mac**: Roster check: please acknowledge that hermes-mac inbox is live.
 - **hermes-vps**: Roster check hermes-vps: inbox is live.
 
@@ -37,18 +43,18 @@ _(none)_
 - **hermes · provider-routing**: DeepSeek/xiaomi provider blocked — HTTP 451 cross-border isolation errors for 24h+, cron jobs silently failing _(2026-06-05T12:01:19Z)_
 
 ## Recent Activity (48h)
+- 2026-06-11T22:25:00Z | **hyperagent** · agent-memory · milestone | T-0012 done (fitness iteration 4, L4): claim nudges live in vault_keeper.js — P1 unclaimed >48h gets one rate-limited inbox reminder (max 2, then escalate to Dwayne). Fixture-verified. Four levers shipped today: search, session hygiene, resume coverage, claim nudges. Trend: Reference/vault-fitness.md.
+- 2026-06-11T21:55:00Z | **hyperagent** · agent-memory · milestone | T-0011 done (fitness iteration 3, L3): resume coverage 2/14 -> 14/14. Definition fixed (real project = >=3 entries/14d; 18 sprawl slugs tracked); 11 resume pages auto-generated from each
+- 2026-06-11T21:20:00Z | **hyperagent** · agent-memory · milestone | T-0010 done (fitness iteration 2, lever L2): NOW.md gains Session Hygiene (7d) naming agents with unpaired sessions / janitor auto-closes; AGENT-BOOTSTRAP rules updated. Baseline 50% pairing -> target 90%; weekly trend in Reference/vault-fitness.md. Next lever: L3. Replica-verified, all NOW sections regress clean.
+- 2026-06-11T20:46:00Z | **hyperagent** · wiki-obsidian · milestone | T-0009 done: vault search shipped — project-graphs/wiki/search.html, 100 docs indexed (wiki 71 + tasks 9 + projects 13 + decisions 7), self-contained w/ ranked excerpts, paths, type filters. Fitness-loop iteration 1 complete; next lever L2 (session-end compliance). Trend: Reference/vault-fitness.md.
+- 2026-06-11T20:40:00Z | **hyperagent** · wiki-obsidian · note | Claimed T-0009 (todo -> claimed -> doing) per Plan/README.md; Dwayne go-ahead in Vault Keeper thread.
+- 2026-06-11T20:24:00Z | **hyperagent** · wiki-obsidian · note | Committed Guides/ingestion-directions.md (paste-ready curator ingestion block per schema/AGENTS.md + curate-modes.md, requested by Dwayne) and indexed the Guides/ folder in MEMORY.md (was unindexed — 4 guides added).
+- 2026-06-11T19:18:00Z | **hyperagent** · agent-memory · session-end | Done: Vault Fitness Loop launched (spec Approved per Dwayne directive): KPI instrument scripts/vault-keeper/vault_fitness.js, baseline + iteration log at Reference/vault-fitness.md, lever backlog L1-L7, T-0009 seeded (search page, iteration 1). Keeper runs the loop weekly.
+- 2026-06-11T19:16:00Z | **hyperagent** · agent-memory · milestone | Fitness baseline: 71 wiki pages, 7.7 links/page, resume coverage 4/32 (slug sprawl — L3), session ritual 22 starts/11 ends in 7d (50% — L2), board adoption 0 non-keeper claims, raw+stamps clean, NOW 51m. Full table: Reference/vault-fitness.md.
+- 2026-06-11T19:10:00Z | **hyperagent** · agent-memory · session-start | Starting: Vault Fitness Loop — apply schema/AGENTS.md section-8 improvement loop to the vault itself per Dwayne (review whole memory system, keep improving, agents stay on task, searchable growing base).
+- 2026-06-11T19:05:00Z | **hyperagent** · agent-memory · note | Committed the vault-keeper script to scripts/vault-keeper/ (fleet-readable reference of the hourly janitor/regen automation; executable copy runs on Hyperagent w/ secure credentials). Research-once write-back: the machinery committing on this repo is now inspectable by every agent.
+- 2026-06-11T18:50:00Z | **hyperagent** · wiki-obsidian · note | Committed interactive wiki graph to project-graphs/wiki/graph.html (71 pages, 356 links; README has regen instructions) + pointer in Project/wiki-obsidian.md. Also closed gooses >7d pending inbox item (Dashboard delivery test, no action
 - 2026-06-11T14:45:00Z | **hyperagent** · agent-memory · session-end | Done: Fleet Plan Board shipped (spec sdd/specs/2026-06-11-fleet-plan-board, tasks T1-T12). Board live w/ 8 seeds, janitor in build-context.sh (auto-close, channel archive, lints, raw-backlog), resume points on 5 Project pages, research-once + cloud-agent rules, ADR 0004. T-0007 executed (42 stamps). All script changes verified on a sandbox replica before commit; NOW/CONTEXT/board in this commit are replica-regenerated.
-- 2026-06-11T14:44:00Z | **hyperagent** · agent-memory · milestone | BOARD LIVE: Plan/README.md is the contract; NOW.md now shows the board. At your next session start: read your Project/<slug>.md resume page, check the board, claim before you build, write back what you learn.
-- 2026-06-11T14:43:00Z | **hyperagent** · wiki-obsidian · handoff | T-0008 -> claude-code: curator pass (8 orphan sources, 5 dead template links, backlinks). Dispatch in Agent Inbox/claude.md; context in Project/wiki-obsidian.md.
-- 2026-06-11T14:42:00Z | **hyperagent** · hermes-ecosystem · handoff | T-0003 T-0004 T-0005 T-0006 -> hermes: IGCSE pipeline fix (P1, 353 failed runs), DREAM bug, HAL Telegram delivery, ~4.5GB cache cleanup. Dispatch in Agent Inbox/hermes-vps.md; context in Project/hermes-ecosystem.md + Project/study-pipeline.md.
-- 2026-06-11T14:41:00Z | **hyperagent** · agent-memory · handoff | T-0001 T-0002 -> MacH: retire diverged ~/agent-memory tree; verify com.dwayne.vault-sync launchd (P1 — NOW.md sat ~15h stale; the janitor rides that job). Dispatch in Agent Inbox/hermes-mac.md; context in Project/agent-memory.md.
-- 2026-06-11T14:36:00Z | **hyperagent** · wiki-obsidian · milestone | T-0007 done: retro-stamped 42 archived raw files (processed: true + processed_at + note) — re-digestion landmine closed; janitor stamp-missing count 42 -> 0. First task through the full board lifecycle (todo -> claimed -> doing -> done).
-- 2026-06-11T14:11:28Z | **kimi** · pyp-planner-gen · session-end | (auto-closed by janitor: open since 2026-06-04T12:12:18Z, no session-end >48h)
-- 2026-06-11T14:11:28Z | **cursor** · agent-memory-coding · session-end | (auto-closed by janitor: open since 2026-06-05T20:30:00Z, no session-end >48h)
-- 2026-06-11T13:26:00Z | **hyperagent** · agent-memory · milestone | plan.md + tasks.md written for fleet-plan-board (12 tasks): board renderer + janitor inside build-context.sh (sandbox-verifiable), channel archiver, resume points, rules updates, 6 seeded ops tasks (2 MacH, 4 hermes). Suspicion logged: NOW.md ~15h stale despite sync.sh design — launchd vault-sync job may be down again; seeded as T-0002. Implementation next.
-- 2026-06-11T13:24:00Z | **hyperagent** · agent-memory · decision | Spec amendment 2 per Dwayne: identity-first resume flow (I'm MacH — what was I working on? Read the content, start from there; two file reads: Agents/{name}.md -> Project/<slug>.md) + research-once rule M8 (check vault before researching: resume page -> wiki/index -> Reference/ -> DECISIONS; write findings back; ACTIVITY note names where). The vault is the central place for everyone. Spec updated in place (M2/M7/M8, criteria 8).
-- 2026-06-11T13:08:00Z | **hyperagent** · agent-memory · milestone | Fleet Plan Board spec committed (Status: Approved): Plan/ task board w/ claim protocol + single-writer rule, Project/<slug>.md resume points, NOW.md board section, janitor hygiene riding the existing 15-min sync, API-agent write path, seeded launch tasks. Spec: sdd/specs/2026-06-11-fleet-plan-board/spec.md. Next per SDD: plan.md + tasks.md.
-- 2026-06-11T13:06:00Z | **hyperagent** · agent-memory · decision | Spec approved by Dwayne w/ amendment: this vault is dual-purpose — fleet coordination layer AND Dwaynes second brain. Fleet collects information for/with Dwayne here, and always writes state back keyed by project name: every active project keeps a resume point at Project/<slug>.md (Status now / Next steps / Where things live / Open tasks), updated when an agent stops, read first when an agent resumes. Corrects nuance of my 2026-06-11 audit note re: vault-purpose.md — it wasnt wrong, it was half the story.
 
 ## Recent Decisions (7d)
 - 2026-06-11T13:24:00Z | **hyperagent** · agent-memory | Spec amendment 2 per Dwayne: identity-first resume flow (I'm MacH — what was I working on? Read the content, start from there; two file reads: Agents/{name}.md -> Project/<slug>.md) + research-once rule M8 (check vault before researching: resume page -> wiki/index -> Reference/ -> DECISIONS; write findings back; ACTIVITY note names where). The vault is the central place for everyone. Spec updated in place (M2/M7/M8, criteria 8).
@@ -61,6 +67,11 @@ _(none)_
 - 2026-06-04T22:49:00Z | **codex** · humangood-ai-webpage | Found repo mismatch: local humangooDAI.2 tracks dman1313/HumanGood at 20c2b94; dman1313/goodhuman is separate at ede9887 and older/divergent. No publish/remote rewrite performed.
 
 ## Recent Milestones (7d)
+- 2026-06-11T22:25:00Z | **hyperagent** · agent-memory | T-0012 done (fitness iteration 4, L4): claim nudges live in vault_keeper.js — P1 unclaimed >48h gets one rate-limited inbox reminder (max 2, then escalate to Dwayne). Fixture-verified. Four levers shipped today: search, session hygiene, resume coverage, claim nudges. Trend: Reference/vault-fitness.md.
+- 2026-06-11T21:55:00Z | **hyperagent** · agent-memory | T-0011 done (fitness iteration 3, L3): resume coverage 2/14 -> 14/14. Definition fixed (real project = >=3 entries/14d; 18 sprawl slugs tracked); 11 resume pages auto-generated from each
+- 2026-06-11T21:20:00Z | **hyperagent** · agent-memory | T-0010 done (fitness iteration 2, lever L2): NOW.md gains Session Hygiene (7d) naming agents with unpaired sessions / janitor auto-closes; AGENT-BOOTSTRAP rules updated. Baseline 50% pairing -> target 90%; weekly trend in Reference/vault-fitness.md. Next lever: L3. Replica-verified, all NOW sections regress clean.
+- 2026-06-11T20:46:00Z | **hyperagent** · wiki-obsidian | T-0009 done: vault search shipped — project-graphs/wiki/search.html, 100 docs indexed (wiki 71 + tasks 9 + projects 13 + decisions 7), self-contained w/ ranked excerpts, paths, type filters. Fitness-loop iteration 1 complete; next lever L2 (session-end compliance). Trend: Reference/vault-fitness.md.
+- 2026-06-11T19:16:00Z | **hyperagent** · agent-memory | Fitness baseline: 71 wiki pages, 7.7 links/page, resume coverage 4/32 (slug sprawl — L3), session ritual 22 starts/11 ends in 7d (50% — L2), board adoption 0 non-keeper claims, raw+stamps clean, NOW 51m. Full table: Reference/vault-fitness.md.
 - 2026-06-11T14:44:00Z | **hyperagent** · agent-memory | BOARD LIVE: Plan/README.md is the contract; NOW.md now shows the board. At your next session start: read your Project/<slug>.md resume page, check the board, claim before you build, write back what you learn.
 - 2026-06-11T14:36:00Z | **hyperagent** · wiki-obsidian | T-0007 done: retro-stamped 42 archived raw files (processed: true + processed_at + note) — re-digestion landmine closed; janitor stamp-missing count 42 -> 0. First task through the full board lifecycle (todo -> claimed -> doing -> done).
 - 2026-06-11T13:26:00Z | **hyperagent** · agent-memory | plan.md + tasks.md written for fleet-plan-board (12 tasks): board renderer + janitor inside build-context.sh (sandbox-verifiable), channel archiver, resume points, rules updates, 6 seeded ops tasks (2 MacH, 4 hermes). Suspicion logged: NOW.md ~15h stale despite sync.sh design — launchd vault-sync job may be down again; seeded as T-0002. Implementation next.
@@ -68,14 +79,9 @@ _(none)_
 - 2026-06-10T19:10:00Z | **MacH** · taste-skill | Installed 6 of 13 taste-skill skills to ~/.hermes/skills/creative/taste-skill/ (default + redesign + soft + minimalist + brutalist + output). Skipped gpt-taste (dup), image-to-code (wrong workflow), imagegen-*/brandkit (we use FAL), stitch (Google only), v1 (default to v2). Noted overlap with frontend-ui-engineering (both will load; taste-skill wins on landing/portfolio tasks) and saas-landing-page-razzle-dazzle (orthogonal). Vault pointer at Guides/taste-skill-availability.md so fleet can see
 - 2026-06-10T05:27:03Z | **claude-code** · wiki-obsidian | Restored schema/+sdd/+Reference/+skills to root (accidental move into raw/); reconciled 117 dirty files; found launchd sync job MISSING; queried NotebookLM wiki-research notebook — answers saved to raw/notebooklm-wiki-research-2026-06-10.md (5 CHALLENGEs incl. flat-file mutation danger, hybrid search)
 - 2026-06-10T01:35:00Z | **kiro** · agent-memory-coding | Wiki compile complete: Domain 2 (Human Good/AI) fully extracted; Domain 1 (school ~75 transcripts) batched into 3 period sources; Domain 3 (misc) 4 sources. raw/ inbox clean — only operational subdirs remain.
-- 2026-06-10T00:37:30Z | **kiro** · agent-memory-coding | Created raw/voicenotes/ folder (+ .gitkeep)
-- 2026-06-10T00:25:00Z | **claude-code** · classroom-mirror | Built + verified: 14/14 AUTO criteria YES (guardrail 4 caught Marie passing as code — fixed w/ digit rule); UI verified live in browser; 5 HUMAN checks await Dwayne (HUMAN-CHECKS.md). 4 commits, repo local
-- 2026-06-09T21:18:00Z | **claude-code** · loop-generator | v2.2 written: contract persisted to CONTRACT.md w/ resume protocol, [HUMAN] checks in loop exit, stagnation-based retry budget, checkpoint commits, amendment protocol, fake-data rule, cost question
-- 2026-06-09T10:22:00Z | **claude-code** · ollama-external | Configured Ollama to use external drive: /Volumes/Over flow/llm/Ollama (saves internal drive space)
-- 2026-06-06T05:09:47Z | **claude-code** · wiki-obsidian | Knowledge Curator build T1-T9 complete: curate skill (6 modes) + schema consolidation (sop/principle, precedence, consult contract) + 7-page company-brain ingest + Dataview/Base/Canvas views; lint clean. 12 commits local on main; push gated (T10).
 
 ## Last Seen (fleet)
-- **hyperagent**: 2026-06-11T14:45:00Z — session-end: Done: Fleet Plan Board shipped (spec sdd/specs/2026-06-11-fleet-plan-board, tasks T1-T12). Board live w/ 8 seeds, janitor in build-context.sh (auto-close, channel archive, lints, raw-backlog), resume points on 5 Project pages, research-once + cloud-agent rules, ADR 0004. T-0007 executed (42 stamps). All script changes verified on a sandbox replica before commit; NOW/CONTEXT/board in this commit are replica-regenerated.
+- **hyperagent**: 2026-06-11T22:25:00Z — milestone: T-0012 done (fitness iteration 4, L4): claim nudges live in vault_keeper.js — P1 unclaimed >48h gets one rate-limited inbox reminder (max 2, then escalate to Dwayne). Fixture-verified. Four levers shipped today: search, session hygiene, resume coverage, claim nudges. Trend: Reference/vault-fitness.md.
 - **kimi**: 2026-06-11T14:11:28Z — session-end: (auto-closed by janitor: open since 2026-06-04T12:12:18Z, no session-end >48h)
 - **cursor**: 2026-06-11T14:11:28Z — session-end: (auto-closed by janitor: open since 2026-06-05T20:30:00Z, no session-end >48h)
 - **hermes**: 2026-06-10T22:55:00Z — decision: Giving DREAM one more night with the session_search fix. If
@@ -800,6 +806,27 @@ Cursor picks up on next session. For urgent work, ping Dwayne to open Cursor or 
 
 ## Active Projects
 
+### Agent Memory Coding
+
+
+# agent-memory-coding → use `agent-memory`
+
+## Status now
+
+This slug is an alias. The canonical project is [[Project/agent-memory|agent-memory]] — same vault, same work. Log ACTIVITY entries and board tasks under `agent-memory` (one name across ACTIVITY · board · Project/, per STANDING-ORDERS).
+
+## Next steps
+
+- Agents: switch to the `agent-memory` slug.
+
+## Where things live
+
+- [[Project/agent-memory]]
+
+## Open tasks
+
+- See [[Project/agent-memory]]
+
 ### Agent Memory
 
 
@@ -884,6 +911,56 @@ Python 3.11 venv · Ultralytics YOLO11n-pose (AGPL — flagged in LATER.md for a
 - Real-classroom use gated on homework: DPIA + parental consent (Mode 1) + school sign-off + CNIL check (in SETUP.md).
 - Dev Mac has no camera — live trial must happen on Dwayne's MacBook.
 
+### Claude Md Rewrite
+
+
+# claude-md-rewrite
+
+## Status now
+
+_Auto-generated from the project's ACTIVITY trail (L3 resume-point rollout, 2026-06-11, hyperagent). The next agent working this project: refine this page at session-end per the stop rule (Plan/README.md)._
+
+- 2026-06-10 **MacH** (session-end): Done: applied canonical rewrite (Guides/claude-md-rewrite-guide) to schema/AGENTS.md on the iCloud path. 1,020→995 words / ~1,326→~1,293 tokens; added §8 Self-annealing skills, §9 Auto research (Karpathy loop), §10 Leverage. Preserved "Multi-agent write contract" as new §5 (binding). Logged run audi…
+- 2026-06-10 **MacH** (note): Reading claude-code's 18:00 session-end: that run rewrote the per-agent ~/.claude/CLAUDE.md and produced Guides/claude-md-rewrite-guide.md. My run is a second application of the same canonical meta-prompt, targeting the vault's schema/AGENTS.md (not a per-agent config). Keeping the guide as-is; savi…
+- 2026-06-10 **MacH** (session-start): Starting: per Dwayne's request, audit + rewrite schema/AGENTS.md to minimize tokens without losing binding instructions, then add Self-Annealing / Auto Research / Leverage sections and produce a fleet instruction manual.
+
+## Next steps
+
+- (to be set by the owning agent at next session-end — derive from Status above)
+
+## Where things live
+
+- Trail: ACTIVITY.md (project: claude-md-rewrite) · full-text: project-graphs/wiki/search.html · graph: project-graphs/wiki/graph.html
+
+## Open tasks
+
+- (none on the board yet)
+
+### Dream
+
+
+# dream
+
+## Status now
+
+_Auto-generated from the project's ACTIVITY trail (L3 resume-point rollout, 2026-06-11, hyperagent). The next agent working this project: refine this page at session-end per the stop rule (Plan/README.md)._
+
+- 2026-06-10 **hermes** (decision): Giving DREAM one more night with the session_search fix. If tomorrow's output is still garbage, pausing the cron.
+- 2026-06-10 **hermes** (blocker-resolve): Fixed DREAM cleanup-before-analysis bug (11+ consecutive nights). Root cause: sessions.write_json_snapshots=false means session files don't exist, but DREAM skill had 500+ lines of file-based grep/ls commands. Updated skill to use session_search as primary method. Patched Audit Steps, Session Search…
+- 2026-06-06 **hermes** (blocker): DREAM cleanup-before-analysis bug persists — 7th+ occurrence, zero session files for analysis, 516 errors logged
+
+## Next steps
+
+- (to be set by the owning agent at next session-end — derive from Status above)
+
+## Where things live
+
+- Trail: ACTIVITY.md (project: dream) · full-text: project-graphs/wiki/search.html · graph: project-graphs/wiki/graph.html
+
+## Open tasks
+
+- [[Plan/tasks/T-0004-dream-cleanup-bug|T-0004]] (hermes)
+
 ### Free Claude Code
 
 
@@ -926,6 +1003,31 @@ Free Claude Code (FCC) is a middleware proxy that routes Anthropic Messages API 
 ## Links
 - [[claude-code-glm]]
 
+### Hermes Dashboard
+
+
+# hermes-dashboard
+
+## Status now
+
+_Auto-generated from the project's ACTIVITY trail (L3 resume-point rollout, 2026-06-11, hyperagent). The next agent working this project: refine this page at session-end per the stop rule (Plan/README.md)._
+
+- 2026-06-09 **hermes** (blocker-resolve): Dashboard :9999 recovered (200) — was DOWN June 8, back today without manual restart
+- 2026-06-08 **hermes** (blocker): Dashboard :9999 DOWN — was UP yesterday, new failure detected in daily brief
+- 2026-06-05 **hermes** (blocker-resolve): Dashboard port 9999 back up (200) — was down June 3
+
+## Next steps
+
+- (to be set by the owning agent at next session-end — derive from Status above)
+
+## Where things live
+
+- Trail: ACTIVITY.md (project: hermes-dashboard) · full-text: project-graphs/wiki/search.html · graph: project-graphs/wiki/graph.html
+
+## Open tasks
+
+- (none on the board yet)
+
 ### Hermes Ecosystem
 
 
@@ -954,6 +1056,31 @@ _Section added 2026-06-11 (resume-point rollout, spec M2)._ VPS system YELLOW pe
 
 - [[Plan/tasks/T-0004-dream-cleanup-bug|T-0004]] · [[Plan/tasks/T-0005-hal-telegram-delivery|T-0005]] · [[Plan/tasks/T-0006-vps-cache-cleanup|T-0006]]
 
+### Hermes Mac
+
+
+# hermes-mac
+
+## Status now
+
+_Auto-generated from the project's ACTIVITY trail (L3 resume-point rollout, 2026-06-11, hyperagent). The next agent working this project: refine this page at session-end per the stop rule (Plan/README.md)._
+
+- 2026-06-05 **dashboard** (message): hi
+- 2026-06-05 **dashboard** (message): Roster check hermes-mac: inbox is live.
+- 2026-06-05 **dashboard** (message): Roster check: please acknowledge that hermes-mac inbox is live.
+
+## Next steps
+
+- (to be set by the owning agent at next session-end — derive from Status above)
+
+## Where things live
+
+- Trail: ACTIVITY.md (project: hermes-mac) · full-text: project-graphs/wiki/search.html · graph: project-graphs/wiki/graph.html
+
+## Open tasks
+
+- (none on the board yet)
+
 ### Hermes Metaclaw
 
 
@@ -980,6 +1107,82 @@ MetaClaw is a proxy layer that intercepts LLM calls and injects skills/learning 
 3. `metaclaw hermes setup` — patches Hermes config
 4. `metaclaw start` — starts proxy
 5. `hermes` — in another terminal, routes through MetaClaw proxy
+
+### Humangood Ai Webpage
+
+
+# humangood-ai-webpage
+
+## Status now
+
+_Auto-generated from the project's ACTIVITY trail (L3 resume-point rollout, 2026-06-11, hyperagent). The next agent working this project: refine this page at session-end per the stop rule (Plan/README.md)._
+
+- 2026-06-09 **claude-code** (session-start): Starting: New session in humangoodai project, awaiting instructions
+- 2026-06-05 **codex** (milestone): Adjusted result layout so result text and image stay side-by-side on tablet/desktop widths while stacking on mobile.
+- 2026-06-05 **codex** (milestone): Added the new visitor/result illustration to the right of the Agent Ready result text and verified responsive layout.
+
+## Next steps
+
+- (to be set by the owning agent at next session-end — derive from Status above)
+
+## Where things live
+
+- Trail: ACTIVITY.md (project: humangood-ai-webpage) · full-text: project-graphs/wiki/search.html · graph: project-graphs/wiki/graph.html
+
+## Open tasks
+
+- (none on the board yet)
+
+### Humanizer
+
+
+# humanizer
+
+## Status now
+
+_Auto-generated from the project's ACTIVITY trail (L3 resume-point rollout, 2026-06-11, hyperagent). The next agent working this project: refine this page at session-end per the stop rule (Plan/README.md)._
+
+- 2026-06-05 **claude-code** (session-start): Starting: User asked to look at the humanizer app
+- 2026-06-03 **claude-code** (milestone): Tasks 6–8 complete: onboarding modal, privacy badge, footer, meta tags + favicon. Committed 3 files, +191/-3 lines.
+- 2026-06-03 **claude-code** (session-start): Starting: Tasks 6–8 — onboarding modal, privacy badge/footer, meta tags + favicon
+
+## Next steps
+
+- (to be set by the owning agent at next session-end — derive from Status above)
+
+## Where things live
+
+- Trail: ACTIVITY.md (project: humanizer) · full-text: project-graphs/wiki/search.html · graph: project-graphs/wiki/graph.html
+
+## Open tasks
+
+- (none on the board yet)
+
+### Loop Generator
+
+
+# loop-generator
+
+## Status now
+
+_Auto-generated from the project's ACTIVITY trail (L3 resume-point rollout, 2026-06-11, hyperagent). The next agent working this project: refine this page at session-end per the stop rule (Plan/README.md)._
+
+- 2026-06-09 **claude-code** (note): GitHub repo renamed loop-generator -> agent-ready-coding-loop per Dwayne; remote updated, old URL redirects
+- 2026-06-09 **claude-code** (session-end): Done: Loop Generator v2.2 shipped + pushed to private repo github.com/dman1313/loop-generator (PROMPT.md + README; v2.1→v2.2 as separate commits; originals untouched)
+- 2026-06-09 **claude-code** (milestone): v2.2 written: contract persisted to CONTRACT.md w/ resume protocol, [HUMAN] checks in loop exit, stagnation-based retry budget, checkpoint commits, amendment protocol, fake-data rule, cost question
+
+## Next steps
+
+- (to be set by the owning agent at next session-end — derive from Status above)
+- Related page: [[Project/agent-ready-coding-loop]] (the Loop Generator contract project)
+
+## Where things live
+
+- Trail: ACTIVITY.md (project: loop-generator) · full-text: project-graphs/wiki/search.html · graph: project-graphs/wiki/graph.html
+
+## Open tasks
+
+- (none on the board yet)
 
 ### Multica Dashboard
 
@@ -1087,6 +1290,31 @@ Agent-first newsletter production system. Turns Telegram voice notes and photos 
 - Automated upload to Google Drive blocked by macOS security and browser restrictions
 - Manual drag-and-drop from Finder to Drive browser window recommended
 
+### Pyp Planner Gen
+
+
+# pyp-planner-gen
+
+## Status now
+
+_Auto-generated from the project's ACTIVITY trail (L3 resume-point rollout, 2026-06-11, hyperagent). The next agent working this project: refine this page at session-end per the stop rule (Plan/README.md)._
+
+- 2026-06-11 **kimi** (session-end): (auto-closed by janitor: open since 2026-06-04T12:12:18Z, no session-end >48h)
+- 2026-06-04 **kimi** (milestone): Updated pyp_planner.py: proper CLI with argparse, auto-detects pipe/tab tables, PYP structure heuristics (sections/engagements/weeks/options), removes AI artifacts. Applied to Grade 5 Human Migration unit.
+- 2026-06-04 **kimi** (session-start): Starting: Returned from pause. User asked to clean up DOCX formatting and update PYP planner code.
+
+## Next steps
+
+- (to be set by the owning agent at next session-end — derive from Status above)
+
+## Where things live
+
+- Trail: ACTIVITY.md (project: pyp-planner-gen) · full-text: project-graphs/wiki/search.html · graph: project-graphs/wiki/graph.html
+
+## Open tasks
+
+- (none on the board yet)
+
 ### Study Pipeline
 
 
@@ -1159,6 +1387,56 @@ Symphony is a multi-agent coding orchestrator written in Rust. It polls issue tr
 - [[Project/hermes-ecosystem]]
 - [[Project/hermes-metaclaw]]
 
+### Taste Skill
+
+
+# taste-skill
+
+## Status now
+
+_Auto-generated from the project's ACTIVITY trail (L3 resume-point rollout, 2026-06-11, hyperagent). The next agent working this project: refine this page at session-end per the stop rule (Plan/README.md)._
+
+- 2026-06-10 **MacH** (blocker-resolve): Dwayne challenged my first-pass skip list. Re-evaluated: 6 of 7 skips had weak reasons (called gpt-taste a "dup", missed that imagegen-* are prompt direction for any image-gen tool, misread stitch as Stitch-only). Installed all 6 plus updated Guides/taste-skill-availability.md with a correction log.…
+- 2026-06-10 **MacH** (milestone): Installed 6 of 13 taste-skill skills to ~/.hermes/skills/creative/taste-skill/ (default + redesign + soft + minimalist + brutalist + output). Skipped gpt-taste (dup), image-to-code (wrong workflow), imagegen-*/brandkit (we use FAL), stitch (Google only), v1 (default to v2). Noted overlap with fronte…
+- 2026-06-10 **MacH** (note): User asked me to clone https://github.com/leonxlnx/taste-skill and use it for the things I design. It's a frontend anti-slop skill pack (13 skills: implementation + image-gen). Source repo: ~/taste-skill/. After review, decided on subset install (see milestone entry).
+
+## Next steps
+
+- (to be set by the owning agent at next session-end — derive from Status above)
+
+## Where things live
+
+- Trail: ACTIVITY.md (project: taste-skill) · full-text: project-graphs/wiki/search.html · graph: project-graphs/wiki/graph.html
+
+## Open tasks
+
+- (none on the board yet)
+
+### Vault Maintenance
+
+
+# vault-maintenance
+
+## Status now
+
+_Auto-generated from the project's ACTIVITY trail (L3 resume-point rollout, 2026-06-11, hyperagent). The next agent working this project: refine this page at session-end per the stop rule (Plan/README.md)._
+
+- 2026-06-03 **MacH** (handoff): AGENT-CHANNEL message from Claude-Code handled: agent docs updated. VPS Hermes still needs to update its own Current Work section
+- 2026-06-03 **MacH** (decision): Agent file Agents/hermes.md updated to document both MacH (macOS) and VPS Hermes instances
+- 2026-06-03 **MacH** (session-start): Starting: Vault startup read, updating MacH agent file, handling AGENT-CHANNEL messages
+
+## Next steps
+
+- (to be set by the owning agent at next session-end — derive from Status above)
+
+## Where things live
+
+- Trail: ACTIVITY.md (project: vault-maintenance) · full-text: project-graphs/wiki/search.html · graph: project-graphs/wiki/graph.html
+
+## Open tasks
+
+- (none on the board yet)
+
 ### Vault Purpose
 
 
@@ -1218,10 +1496,36 @@ _Section added 2026-06-11 (resume-point rollout, spec M2)._ Wiki healthy after k
 
 - Wiki: `wiki/` in this vault (rules: `schema/AGENTS.md`, modes: `schema/curate-modes.md`, skill: `.claude/skills/curate/`)
 - Intake: `raw/` → archive `raw/processed/<category>/` · curator log: `wiki/log.md`
+- Graph view: `project-graphs/wiki/graph.html` (interactive map of the whole wiki; regenerated by hyperagent on request)
 
 ## Open tasks
 
 - [[Plan/tasks/T-0007-stamp-archived-raw-files|T-0007]] · [[Plan/tasks/T-0008-wiki-orphans-dead-links|T-0008]]
+
+### Wolf Trading Agent
+
+
+# wolf-trading-agent
+
+## Status now
+
+_Auto-generated from the project's ACTIVITY trail (L3 resume-point rollout, 2026-06-11, hyperagent). The next agent working this project: refine this page at session-end per the stop rule (Plan/README.md)._
+
+- 2026-06-10 **hermes** (note): Wolf Tuesday scan: all 3 scanners degraded (Reddit DDG broken since May, Twitter xurl JSON errors, GNews 1 stale article), 0 signals. Alpaca options fallback: NFLX P/C 0.11, MU P/C 0.27, MSTR P/C 0.33 bullish skew
+- 2026-06-09 **hermes** (note): Wolf Monday scan: 2 NEUTRAL (RDDT, GME), Twitter xurl fully broken (invalid JSON), Reddit degraded, GNews low signal
+- 2026-06-08 **hermes** (note): Wolf Sunday scan: 2 NEUTRAL signals (RDDT, GME), Twitter scanner degraded, low-value weekend run
+
+## Next steps
+
+- (to be set by the owning agent at next session-end — derive from Status above)
+
+## Where things live
+
+- Trail: ACTIVITY.md (project: wolf-trading-agent) · full-text: project-graphs/wiki/search.html · graph: project-graphs/wiki/graph.html
+
+## Open tasks
+
+- (none on the board yet)
 
 ## Working Preferences
 
@@ -1441,6 +1745,35 @@ Vault inbox remains source of truth; SDK is an optional trigger. Prefer inbox + 
 
 ## Links
 - [[Agents/claude-code]]
+
+### Vault Fitness
+
+
+# Vault Fitness — trend & iteration log
+
+Loop spec: `sdd/specs/2026-06-11-vault-fitness-loop/spec.md` · instrument: `scripts/vault-keeper/vault_fitness.js`. Append-only: one row + one iteration note per run.
+
+| date | pages | links/pg | resume cov. | sessions 7d | auto-closes | claims (non-keeper) | raw/unstamped | NOW age |
+|---|---|---|---|---|---|---|---|---|
+| 2026-06-11 | 71 | 7.7 | 4/32 | 22s/11e | 2 | 0 | 0/0 | 51m |
+
+## Iterations
+
+### Iteration 0 — 2026-06-11 (baseline)
+Headline findings: only **50% of sessions log a session-end** (janitor compensating); **resume coverage 4/32** (the "32" includes one-off slugs — definition refinement queued as L3); **board adoption 0** non-keeper claims (launch day — dispatches pending pickup). Wiki itself healthy: 71 pages, 7.7 links/page, raw inbox + archive stamps clean.
+**Lever chosen → L1 search page (T-0009):** directly serves Dwayne's "can be searched later on"; zero risk to rules. Measured next run by: search page exists, covers all four content classes, and gets referenced.
+
+### Iteration 1 — 2026-06-11 (L1 shipped)
+**Lever L1 — search page: DONE.** `project-graphs/wiki/search.html` — 100 documents indexed across all four content classes (wiki 71, board tasks 9, projects 13, decisions 7), self-contained (works offline/from Obsidian), ranked results with highlighted excerpts and file paths, type filters. T-0009 todo→claimed→done same day. Measured next run: page referenced/used; doc count tracks vault growth. **Next lever queued: L2 (session-end compliance — 50% pairing rate is the worst KPI).**
+
+### Iteration 2 — 2026-06-11 (L2 shipped)
+**Lever L2 — session-end compliance: DONE (T-0010).** NOW.md now renders "Session Hygiene (7d)" naming each fleet agent with unpaired sessions or janitor auto-closes; AGENT-BOOTSTRAP rules state the consequence. Mechanism: visibility-by-name in the file every agent reads first. Measured next runs: starts/ends pairing rate (baseline 22s/11e = 50%, target ≥90%) and weekly auto-close count trending to 0. **Next lever queued: L3 (resume-coverage definition + rollout).**
+
+### Iteration 3 — 2026-06-11 (L3 shipped)
+**Lever L3 — resume coverage: DONE (T-0011).** Definition fixed (real project = ≥3 ACTIVITY entries/14d; sprawl slugs tracked separately — baseline 18). Rollout: 11 evidence-based resume pages + 1 alias stub (agent-memory-coding → agent-memory) generated from each project's ACTIVITY trail, marked for owner refinement at next session-end. **Coverage: 2/14 → 14/14.** Measured next runs: coverage stays 14/14 as definition catches new projects; sprawl count trend; pages refined by owners (not just generated). **Next lever queued: L4 (claim nudges).**
+
+### Iteration 4 — 2026-06-11 (L4 shipped)
+**Lever L4 — claim nudges: DONE (T-0012).** Keeper's hourly regen now reminds the assigned agent (inbox dispatch) when a P1 sits unclaimed 48h+: max 1 per 72h, max 2 total, then escalate to Dwayne. Rate-limit state lives in the task's own Log. Fixture-verified (fires once, suppressed on rerun). Measured next runs: time-to-claim for P1s; nudge counts (target: rarely needed). **Four levers shipped on day one: search (L1), session hygiene (L2), resume coverage (L3), claim nudges (L4). Next: L5 weekly digest — via the weekly cycle.**
 
 ### Zeabur Infrastructure
 

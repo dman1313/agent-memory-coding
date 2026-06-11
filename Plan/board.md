@@ -1,6 +1,6 @@
 # Plan Board — generated
 
-_Generated: 2026-06-11T18:42:24Z by build-context.sh — do not hand-edit. Contract: Plan/README.md_
+_Generated: 2026-06-11T20:53:36Z by build-context.sh — do not hand-edit. Contract: Plan/README.md_
 
 ## doing
 
@@ -35,6 +35,10 @@ _(none)_
 | id | priority | title | owner | project | handoff | updated |
 |---|---|---|---|---|---|---|
 | T-0007 | P1 | Stamp processed:true on archived raw files (re-digestion landmine) | hyperagent | wiki-obsidian |  | 2026-06-11T14:35:00Z |
+| T-0009 | P2 | Generated search page — full-text over wiki, board, projects, decisions | hyperagent | wiki-obsidian | hyperagent | 2026-06-11T20:45:00Z |
+| T-0010 | P2 | Session-end compliance — janitor names offenders in NOW.md (fitness L2) | hyperagent | agent-memory |  | 2026-06-11T21:20:00Z |
+| T-0011 | P2 | Resume-coverage definition fix + rollout to all real projects (fitness L3) | hyperagent | agent-memory |  | 2026-06-11T21:55:00Z |
+| T-0012 | P2 | Claim nudges — P1 unclaimed >48h gets a rate-limited inbox reminder (fitness L4) | hyperagent | agent-memory |  | 2026-06-11T22:25:00Z |
 
 ## dropped
 
