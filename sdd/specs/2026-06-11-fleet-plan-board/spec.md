@@ -9,6 +9,8 @@ Give the fleet a shared planning layer — a plain-markdown task board plus per-
 
 **Dual purpose, now explicit (Dwayne, 2026-06-11):** this vault is both the fleet's coordination layer **and Dwayne's second brain**. The fleet works *with* Dwayne and collects information *for* him here; the fleet always writes its state back in, keyed by project name, so stopping is never losing.
 
+**The day-one test (Dwayne, 2026-06-11):** *"I'm the MacH agent. I look at the wiki right away — okay, I was working on this program before. I'll read the content, and then I can start the program from there."* No re-researching, no archaeology. The vault is the central place for everyone.
+
 ## Background / context
 
 The vault already solves **memory** (wiki, profiles, [[DECISIONS]]) and **awareness** (ACTIVITY.md → NOW.md). What's missing is **planning and resumability**: there is no shared answer to "what needs doing, who owns it, what's blocked on what, and where do I pick up project X." Coordination today is free-text messages on [[AGENT-CHANNEL]] and `Agent Inbox/` files — fine for FYIs, unstructured for work allocation. The 2026-06-11 vault audit (hyperagent, see ACTIVITY note) found the concrete symptoms:
@@ -48,6 +50,7 @@ flowchart LR
 - Every **active** project keeps one canonical resume page under its project name, with required sections: `## Status now` (one short paragraph), `## Next steps` (short list, referencing `T-NNNN` ids where they exist), `## Where things live` (repos, paths, URLs, services), `## Open tasks` (links into `Plan/tasks/`).
 - **One namespace:** the same project slug is used by the ACTIVITY.md project field, the board task `project:` field, and the `Project/<slug>.md` filename — so log, queue, and resume point all key to the project's name.
 - **The stop rule:** when an agent stops project work (session-end or handoff), it updates the project's resume page *before* leaving. An agent starting project work reads it *first*. "When the agent stops, the next one knows where to start — in the project's name."
+- **Identity-first entry path:** the resume flow starts from who you are — `Agents/{name}.md ## Current Work` names your project slug(s) → `Project/<slug>.md` is the resume point → read it → start. An agent should reach "I know where I left off" in two file reads.
 - Existing `Project/` pages keep their frontmatter format; required sections are added to active projects as they're touched (no big-bang rewrite of all 11 pages).
 - Division of labor: ACTIVITY = chronological trail · `Agents/{name}.md` = per-agent state · `Project/<slug>.md` = per-project state (the resume point) · `Plan/` = the work queue · `wiki/` = curated knowledge.
 
@@ -69,7 +72,14 @@ A hygiene pass inside the existing 15-min sync path (Mac launchd `sync.sh`, VPS 
 The board ships with real tasks, not empty scaffolding — drawn from current blockers and audits: retire the diverged `~/agent-memory` Mac tree (MacH decision 2026-06-10), fix the hourly-erroring IGCSE pipeline + cache cleanup (per `mrclean-audit-2026-06-11.md`), DREAM cleanup bug, HAL Telegram delivery error. Each seeded task's project gets its resume page brought up to M2 standard at the same time.
 
 **M7 — Rules updated in one place each**
-[[AGENT-BOOTSTRAP]] session ritual gains: at start — "check Plan/board.md (via NOW.md) and claim before you build" and "read `Project/<slug>.md` before resuming project work"; at end — "update your project's resume page." [[STANDING-ORDERS]] gets a short "Plan Board & Resume Points" section linking `Plan/README.md`. No other rule files duplicated (per the existing no-duplication scope rule in `schema/AGENTS.md`).
+[[AGENT-BOOTSTRAP]] session ritual gains: at start — "check Plan/board.md (via NOW.md) and claim before you build," "read `Project/<slug>.md` before resuming project work," and "check the vault before you research anything"; at end — "update your project's resume page" and "write back what you learned." [[STANDING-ORDERS]] gets a short "Plan Board & Resume Points" section linking `Plan/README.md`. No other rule files duplicated (per the existing no-duplication scope rule in `schema/AGENTS.md`).
+
+**M8 — Research once (the anti-re-research rule, Dwayne 2026-06-11)**
+The pain this kills: "I keep having to keep researching stuff."
+- **Before** researching any topic (web search, doc reading, trial-and-error), an agent checks the vault first, in order: the project's resume page (`## Where things live`) → `wiki/index.md` → `Reference/` → [[DECISIONS]].
+- **After** any research worth ≥5 minutes of a future agent's time, the agent writes it back where it belongs: durable knowledge → a note in `raw/` for the Knowledge Curator (non-curator agents don't edit `wiki/` directly, per ADR 0002); infrastructure pointers → `Reference/`; project-specific findings → the project's resume page or the task's `## Log`.
+- The write-back is logged as an ACTIVITY `note` naming where it was saved, so the fleet learns the knowledge exists.
+- Not mechanically enforceable — enforced by ritual (M7) and culture; the resume-point structure gives findings an obvious home, which is most of the battle.
 
 ### Should
 
@@ -86,6 +96,7 @@ The board ships with real tasks, not empty scaffolding — drawn from current bl
 5. `AGENT-SETUP.md` documents the API write path; hyperagent's commits (e.g. `c8fc0aef`) match it.
 6. Board launches with ≥5 real tasks; at least one is claimed within the first week of normal fleet operation.
 7. `build-context.sh` passes its own run after changes (no parser regressions on existing ACTIVITY format).
+8. **Re-research test:** an agent needing knowledge the fleet has already gathered (e.g. the NotebookLM CLI quirks, a provider setup) finds it through the vault lookup order (M8) without redoing the research — demonstrated once on a real case.
 
 ## Out of scope
 
@@ -102,6 +113,7 @@ The board ships with real tasks, not empty scaffolding — drawn from current bl
 2. **Janitor auto-close window:** 48h for sessions, matching the existing NOW.md stale threshold. *(Adopted 2026-06-11.)*
 3. **Channel cleanup:** archive to `channel-archive/`, never delete. *(Adopted 2026-06-11.)*
 4. **Second-brain amendment:** vault is dual-purpose; per-project resume points are a Must (M2). *(Dwayne, 2026-06-11.)*
+5. **Central-place amendment:** identity-first resume flow ("I'm MacH — what was I working on? Read it, start from there") and the research-once rule (M8) are in scope; the vault is the central place for everyone. *(Dwayne, 2026-06-11.)*
 
 ## Links
 
