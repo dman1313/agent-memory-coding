@@ -522,6 +522,27 @@ fi
     fi
 
     echo ""
+    echo "## Session Hygiene (7d)"
+    awk -F'\t' -v cutoff="$SEVEN_DAYS_AGO" -v fleet=" $FLEET_AGENTS " '
+        $1 >= cutoff {
+            if ($3 == "session-start") s[$2]++
+            if ($3 == "session-end") { e[$2]++; if (index($5, "(auto-closed by janitor") == 1) a[$2]++ }
+        }
+        END {
+            for (ag in s) {
+                if (index(fleet, " " ag " ") == 0) continue
+                if (s[ag] > e[ag] + 0 || a[ag] + 0 > 0)
+                    printf "- **%s**: %d start(s) / %d end(s)%s\n", ag, s[ag], e[ag] + 0, (a[ag] + 0 > 0 ? " · " a[ag] " auto-closed by janitor" : "")
+            }
+        }' "$PARSEDFILE" > "$TMPDIR_NOW/hygiene.txt"
+    if [ -s "$TMPDIR_NOW/hygiene.txt" ]; then
+        echo "_Unpaired sessions get auto-closed and named here — log your session-end. [L2, vault-fitness]_"
+        sort "$TMPDIR_NOW/hygiene.txt"
+    else
+        echo "_(all fleet agents pairing session-start/end cleanly)_"
+    fi
+
+    echo ""
     echo "## Pending Inboxes"
     if [ -s "$INBOXFILE" ]; then
         cat "$INBOXFILE"

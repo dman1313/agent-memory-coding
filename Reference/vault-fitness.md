@@ -21,3 +21,6 @@ Headline findings: only **50% of sessions log a session-end** (janitor compensat
 
 ### Iteration 1 — 2026-06-11 (L1 shipped)
 **Lever L1 — search page: DONE.** `project-graphs/wiki/search.html` — 100 documents indexed across all four content classes (wiki 71, board tasks 9, projects 13, decisions 7), self-contained (works offline/from Obsidian), ranked results with highlighted excerpts and file paths, type filters. T-0009 todo→claimed→done same day. Measured next run: page referenced/used; doc count tracks vault growth. **Next lever queued: L2 (session-end compliance — 50% pairing rate is the worst KPI).**
+
+### Iteration 2 — 2026-06-11 (L2 shipped)
+**Lever L2 — session-end compliance: DONE (T-0010).** NOW.md now renders "Session Hygiene (7d)" naming each fleet agent with unpaired sessions or janitor auto-closes; AGENT-BOOTSTRAP rules state the consequence. Mechanism: visibility-by-name in the file every agent reads first. Measured next runs: starts/ends pairing rate (baseline 22s/11e = 50%, target ≥90%) and weekly auto-close count trending to 0. **Next lever queued: L3 (resume-coverage definition + rollout).**

@@ -81,6 +81,7 @@ Read order: schema/AGENTS.md → wiki/index.md → wiki/log.md → target pages
 
 ── RULES ──
 No ghost sessions. If you worked, it must be in ACTIVITY.md.
+Close your sessions: session-end is NOT optional — unpaired sessions are auto-closed and named in NOW.md Session Hygiene.
 Verify old memories before acting — they are point-in-time snapshots.
 Dwayne prefers: short commands, minimal preamble, action over explanation.
 Preferred language: Rust when possible. Working dir: /Volumes/M2 Media/Coding Dwayne/Claude
