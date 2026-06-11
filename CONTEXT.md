@@ -6,14 +6,14 @@
 
 # NOW — Current State
 
-_Generated: 2026-06-11T20:53:36Z_
+_Generated: 2026-06-11T21:55:50Z_
 
 ## Active Work
 - **hermes · agent-memory**: Starting: Dwayne pointed me to the shared wiki vault — reading instructions, reviewing current state, updating hermes.md _(2026-06-10T21:45:00Z)_
 - **claude-code · claude-md-rewrite**: Starting: rewrite global CLAUDE.md for token efficiency + Self-Annealing + Auto Research capabilities. _(2026-06-10T17:00:00Z)_
 
 ## Plan Board
-_0 in motion · 7 todo · 0 blocked · 5 done — full board: Plan/board.md · contract: Plan/README.md_
+_0 in motion · 8 todo · 0 blocked · 5 done — full board: Plan/board.md · contract: Plan/README.md_
 - todo P1 **T-0002** — Verify com.dwayne.vault-sync launchd job is actually running (→ MacH)
 - todo P1 **T-0003** — Fix IGCSE Biology concept pipeline (missing concept-progress.json, 353 failed runs) (→ hermes)
 - todo P2 **T-0001** — Retire the diverged ~/agent-memory working tree on the Mac (→ MacH)
@@ -43,6 +43,7 @@ _(none)_
 - **hermes · provider-routing**: DeepSeek/xiaomi provider blocked — HTTP 451 cross-border isolation errors for 24h+, cron jobs silently failing _(2026-06-05T12:01:19Z)_
 
 ## Recent Activity (48h)
+- 2026-06-11T23:10:00Z | **hyperagent** · agent-memory · note | vault_keeper.js fast-path deployed: fresh vault (age<55min) exits in 381ms via single NOW.md API call; stale path uses KEEPER_SKIP_CONTEXT=1 bash replica but still ~58-63s. T-0013 filed for JS-native rewrite. Fast path handles 95% of cases; stale path fallback via session token works when credential timeout hits.
 - 2026-06-11T22:25:00Z | **hyperagent** · agent-memory · milestone | T-0012 done (fitness iteration 4, L4): claim nudges live in vault_keeper.js — P1 unclaimed >48h gets one rate-limited inbox reminder (max 2, then escalate to Dwayne). Fixture-verified. Four levers shipped today: search, session hygiene, resume coverage, claim nudges. Trend: Reference/vault-fitness.md.
 - 2026-06-11T21:55:00Z | **hyperagent** · agent-memory · milestone | T-0011 done (fitness iteration 3, L3): resume coverage 2/14 -> 14/14. Definition fixed (real project = >=3 entries/14d; 18 sprawl slugs tracked); 11 resume pages auto-generated from each
 - 2026-06-11T21:20:00Z | **hyperagent** · agent-memory · milestone | T-0010 done (fitness iteration 2, lever L2): NOW.md gains Session Hygiene (7d) naming agents with unpaired sessions / janitor auto-closes; AGENT-BOOTSTRAP rules updated. Baseline 50% pairing -> target 90%; weekly trend in Reference/vault-fitness.md. Next lever: L3. Replica-verified, all NOW sections regress clean.
@@ -54,7 +55,6 @@ _(none)_
 - 2026-06-11T19:10:00Z | **hyperagent** · agent-memory · session-start | Starting: Vault Fitness Loop — apply schema/AGENTS.md section-8 improvement loop to the vault itself per Dwayne (review whole memory system, keep improving, agents stay on task, searchable growing base).
 - 2026-06-11T19:05:00Z | **hyperagent** · agent-memory · note | Committed the vault-keeper script to scripts/vault-keeper/ (fleet-readable reference of the hourly janitor/regen automation; executable copy runs on Hyperagent w/ secure credentials). Research-once write-back: the machinery committing on this repo is now inspectable by every agent.
 - 2026-06-11T18:50:00Z | **hyperagent** · wiki-obsidian · note | Committed interactive wiki graph to project-graphs/wiki/graph.html (71 pages, 356 links; README has regen instructions) + pointer in Project/wiki-obsidian.md. Also closed gooses >7d pending inbox item (Dashboard delivery test, no action
-- 2026-06-11T14:45:00Z | **hyperagent** · agent-memory · session-end | Done: Fleet Plan Board shipped (spec sdd/specs/2026-06-11-fleet-plan-board, tasks T1-T12). Board live w/ 8 seeds, janitor in build-context.sh (auto-close, channel archive, lints, raw-backlog), resume points on 5 Project pages, research-once + cloud-agent rules, ADR 0004. T-0007 executed (42 stamps). All script changes verified on a sandbox replica before commit; NOW/CONTEXT/board in this commit are replica-regenerated.
 
 ## Recent Decisions (7d)
 - 2026-06-11T13:24:00Z | **hyperagent** · agent-memory | Spec amendment 2 per Dwayne: identity-first resume flow (I'm MacH — what was I working on? Read the content, start from there; two file reads: Agents/{name}.md -> Project/<slug>.md) + research-once rule M8 (check vault before researching: resume page -> wiki/index -> Reference/ -> DECISIONS; write findings back; ACTIVITY note names where). The vault is the central place for everyone. Spec updated in place (M2/M7/M8, criteria 8).
@@ -81,7 +81,7 @@ _(none)_
 - 2026-06-10T01:35:00Z | **kiro** · agent-memory-coding | Wiki compile complete: Domain 2 (Human Good/AI) fully extracted; Domain 1 (school ~75 transcripts) batched into 3 period sources; Domain 3 (misc) 4 sources. raw/ inbox clean — only operational subdirs remain.
 
 ## Last Seen (fleet)
-- **hyperagent**: 2026-06-11T22:25:00Z — milestone: T-0012 done (fitness iteration 4, L4): claim nudges live in vault_keeper.js — P1 unclaimed >48h gets one rate-limited inbox reminder (max 2, then escalate to Dwayne). Fixture-verified. Four levers shipped today: search, session hygiene, resume coverage, claim nudges. Trend: Reference/vault-fitness.md.
+- **hyperagent**: 2026-06-11T23:10:00Z — note: vault_keeper.js fast-path deployed: fresh vault (age<55min) exits in 381ms via single NOW.md API call; stale path uses KEEPER_SKIP_CONTEXT=1 bash replica but still ~58-63s. T-0013 filed for JS-native rewrite. Fast path handles 95% of cases; stale path fallback via session token works when credential timeout hits.
 - **kimi**: 2026-06-11T14:11:28Z — session-end: (auto-closed by janitor: open since 2026-06-04T12:12:18Z, no session-end >48h)
 - **cursor**: 2026-06-11T14:11:28Z — session-end: (auto-closed by janitor: open since 2026-06-05T20:30:00Z, no session-end >48h)
 - **hermes**: 2026-06-10T22:55:00Z — decision: Giving DREAM one more night with the session_search fix. If

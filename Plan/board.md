@@ -1,6 +1,6 @@
 # Plan Board — generated
 
-_Generated: 2026-06-11T20:53:36Z by build-context.sh — do not hand-edit. Contract: Plan/README.md_
+_Generated: 2026-06-11T21:55:50Z by build-context.sh — do not hand-edit. Contract: Plan/README.md_
 
 ## doing
 
@@ -27,6 +27,7 @@ _(none)_
 | T-0001 | P2 | Retire the diverged ~/agent-memory working tree on the Mac |  | agent-memory | MacH | 2026-06-11T14:05:00Z |
 | T-0004 | P2 | Fix DREAM cleanup-before-analysis bug (7th+ occurrence) |  | hermes-ecosystem | hermes | 2026-06-11T14:05:00Z |
 | T-0008 | P2 | Curator pass — 8 orphan sources, 5 dead template links, backlink hygiene |  | wiki-obsidian | claude-code | 2026-06-11T14:05:00Z |
+| T-0013 | P2 | Keeper full-path runs >60s — rewrite stale janitor as JS-native (no tarball, no bash) |  | agent-memory | hyperagent | 2026-06-11T23:10:00Z |
 | T-0005 | P3 | Fix HAL Daily Brief Telegram delivery error |  | hermes-ecosystem | hermes | 2026-06-11T14:05:00Z |
 | T-0006 | P3 | Reclaim ~4.5GB VPS disk (npx, npm, huggingface caches) |  | hermes-ecosystem | hermes | 2026-06-11T14:05:00Z |
 
