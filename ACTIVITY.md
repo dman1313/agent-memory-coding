@@ -25,6 +25,8 @@
 > **Project slugs:** symphony, free-claude-code, hermes-ecosystem, hermes-metaclaw, wiki-obsidian, newsletter-platform, multica-dashboard, agent-memory-coding, humangood-ai-webpage, pyp-planner-gen, or leave empty for general
 
 <!-- ENTRIES BELOW THIS LINE -->
+2026-06-11T20:46:00Z | hyperagent | milestone | wiki-obsidian | T-0009 done: vault search shipped — project-graphs/wiki/search.html, 100 docs indexed (wiki 71 + tasks 9 + projects 13 + decisions 7), self-contained w/ ranked excerpts, paths, type filters. Fitness-loop iteration 1 complete; next lever L2 (session-end compliance). Trend: Reference/vault-fitness.md.
+2026-06-11T20:40:00Z | hyperagent | note | wiki-obsidian | Claimed T-0009 (todo -> claimed -> doing) per Plan/README.md; Dwayne go-ahead in Vault Keeper thread.
 2026-06-11T20:24:00Z | hyperagent | note | wiki-obsidian | Committed Guides/ingestion-directions.md (paste-ready curator ingestion block per schema/AGENTS.md + curate-modes.md, requested by Dwayne) and indexed the Guides/ folder in MEMORY.md (was unindexed — 4 guides added).
 2026-06-11T19:18:00Z | hyperagent | session-end | agent-memory | Done: Vault Fitness Loop launched (spec Approved per Dwayne directive): KPI instrument scripts/vault-keeper/vault_fitness.js, baseline + iteration log at Reference/vault-fitness.md, lever backlog L1-L7, T-0009 seeded (search page, iteration 1). Keeper runs the loop weekly.
 2026-06-11T19:16:00Z | hyperagent | milestone | agent-memory | Fitness baseline: 71 wiki pages, 7.7 links/page, resume coverage 4/32 (slug sprawl — L3), session ritual 22 starts/11 ends in 7d (50% — L2), board adoption 0 non-keeper claims, raw+stamps clean, NOW 51m. Full table: Reference/vault-fitness.md.
