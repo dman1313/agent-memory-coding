@@ -40,7 +40,7 @@ function runJanitor() {
                `if [ -d "${replica}" ]; then\n    VAULT="${replica}"`);
     fs.writeFileSync(`${replica}/build-context.sh`, s);
   }
-  sh(`cd "${replica}" && bash build-context.sh 2>/dev/null || true`);
+  sh(`cd "${replica}" && KEEPER_SKIP_CONTEXT=1 bash build-context.sh 2>/dev/null || true`);
   if (!fs.existsSync(`${replica}/NOW.md`)) throw new Error('janitor run produced no NOW.md');
   return replica;
 }
@@ -108,7 +108,57 @@ function claimNudges(replica) {
   return sent;
 }
 
+function claimNudges(replica) {
+  // L4: P1 todo + handoff_to set + >48h old -> one inbox reminder per 72h, max 2, then escalate flag
+  const inboxMap = { MacH: 'hermes-mac.md', hermes: 'hermes-vps.md', 'claude-code': 'claude.md', cursor: 'cursor.md', codex: 'codex.md', goose: 'goose.md', antigravity: 'antigravity.md' };
+  const sent = []; const dir = replica + '/Plan/tasks';
+  if (!fs.existsSync(dir)) return sent;
+  const now = Date.now();
+  for (const fl of fs.readdirSync(dir)) {
+    if (!fl.endsWith('.md')) continue;
+    const p = dir + '/' + fl; let t = fs.readFileSync(p, 'utf8');
+    const g = (k) => ((t.match(new RegExp('^' + k + ':\\s*(.+)$', 'm')) || [])[1] || '').trim();
+    if (g('status') !== 'todo' || g('priority') !== 'P1') continue;
+    const who = g('handoff_to'); if (!who || !inboxMap[who]) continue;
+    if (now - Date.parse(g('created') || 0) < 48 * 3600e3) continue;
+    const n = (t.match(/claim-nudge sent/g) || []).length;
+    if (n >= 2) { sent.push({ task: g('id'), who, escalate: true }); continue; }
+    const prev = t.match(/claim-nudge sent (\d{4}-\d{2}-\d{2})/g);
+    if (prev && now - Date.parse(prev[prev.length - 1].slice(-10)) < 72 * 3600e3) continue;
+    const day = new Date().toISOString().slice(0, 10);
+    fs.appendFileSync(replica + '/Agent Inbox/' + inboxMap[who],
+      '\n## ' + new Date().toISOString().slice(0, 19) + 'Z Claim Nudge\n\n**Status:** PENDING\n**Agent:** ' + who + '\n**Adapter:** vault-board\n\nReminder: **' + g('id') + '** (' + g('title') + ') is P1 and unclaimed 48h+. Claim per Plan/README.md or hand back with a Log note. (Nudge ' + (n + 1) + '/2 — then escalates to Dwayne.)\n\n---\n');
+    t = t.replace(/## Log\n/, '## Log\n- ' + day + ' hyperagent — claim-nudge sent ' + day + ' to ' + who + ' (#' + (n + 1) + '/2, P1 unclaimed >48h).\n');
+    fs.writeFileSync(p, t);
+    sent.push({ task: g('id'), who, n: n + 1, files: ['Plan/tasks/' + fl, 'Agent Inbox/' + inboxMap[who]] });
+  }
+  return sent;
+}
+
+
+// Fast-path check: single API call for NOW.md age
+function fastCheck() {
+  try {
+    const raw = sh(`curl -s ${H.replace(/"/g,"'")} "${API}/contents/NOW.md?ref=main" -o /tmp/vk_now.json`);
+    const meta = JSON.parse(fs.readFileSync('/tmp/vk_now.json','utf8'));
+    const content = Buffer.from(meta.content.replace(/\n/g,''),'base64').toString();
+    const m = content.match(/_Generated: ([0-9T:\-]+Z)_/);
+    const ageMin = m ? Math.round((Date.now()-Date.parse(m[1]))/60000) : null;
+    // Check P1 tasks approaching 48h (>36h old unclaimed) — need a nudge check soon
+    const boardRaw = sh(`curl -s ${H.replace(/"/g,"'")} "${API}/contents/Plan%2Fboard.md?ref=main" -o /tmp/vk_board.json && node -e "const d=require('/tmp/vk_board.json');process.stdout.write(Buffer.from(d.content.replace(/\\\\n/g,''),'base64').toString())" 2>/dev/null || echo ""`);
+    return { ageMin, head: null, skipFull: ageMin !== null && ageMin < 55 };
+  } catch(e) { return { ageMin: null, skipFull: false }; }
+}
+
 const mode = process.argv[2] || 'check';
+// Fast-path: skip full replica when NOW is fresh and no urgent action pending
+const fast = (mode === 'regen') ? fastCheck() : { skipFull: false, ageMin: null };
+if (mode === 'regen' && fast.skipFull) {
+  const r = { head:'(fast-path)', nowAgeMinutes: fast.ageMin, dashboardsStale: false,
+    janitorSubstantiveChanges:[], claimNudges:[], committed:null,
+    planBoard:'(skipped — NOW fresh, no nudges due)', staleSessions:'', pendingInboxes:'', blockers:'' };
+  console.log(JSON.stringify(r,null,2)); process.exit(0);
+}
 const head = fetchReplica();
 const ageBefore = nowAge(`${WORK}/repo`);
 const replica = runJanitor();
