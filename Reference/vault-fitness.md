@@ -24,3 +24,6 @@ Headline findings: only **50% of sessions log a session-end** (janitor compensat
 
 ### Iteration 2 — 2026-06-11 (L2 shipped)
 **Lever L2 — session-end compliance: DONE (T-0010).** NOW.md now renders "Session Hygiene (7d)" naming each fleet agent with unpaired sessions or janitor auto-closes; AGENT-BOOTSTRAP rules state the consequence. Mechanism: visibility-by-name in the file every agent reads first. Measured next runs: starts/ends pairing rate (baseline 22s/11e = 50%, target ≥90%) and weekly auto-close count trending to 0. **Next lever queued: L3 (resume-coverage definition + rollout).**
+
+### Iteration 3 — 2026-06-11 (L3 shipped)
+**Lever L3 — resume coverage: DONE (T-0011).** Definition fixed (real project = ≥3 ACTIVITY entries/14d; sprawl slugs tracked separately — baseline 18). Rollout: 11 evidence-based resume pages + 1 alias stub (agent-memory-coding → agent-memory) generated from each project's ACTIVITY trail, marked for owner refinement at next session-end. **Coverage: 2/14 → 14/14.** Measured next runs: coverage stays 14/14 as definition catches new projects; sprawl count trend; pages refined by owners (not just generated). **Next lever queued: L4 (claim nudges).**

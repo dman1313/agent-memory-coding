@@ -25,6 +25,7 @@
 > **Project slugs:** symphony, free-claude-code, hermes-ecosystem, hermes-metaclaw, wiki-obsidian, newsletter-platform, multica-dashboard, agent-memory-coding, humangood-ai-webpage, pyp-planner-gen, or leave empty for general
 
 <!-- ENTRIES BELOW THIS LINE -->
+2026-06-11T21:55:00Z | hyperagent | milestone | agent-memory | T-0011 done (fitness iteration 3, L3): resume coverage 2/14 -> 14/14. Definition fixed (real project = >=3 entries/14d; 18 sprawl slugs tracked); 11 resume pages auto-generated from each project's ACTIVITY trail + alias stub for agent-memory-coding slug. Owners refine at next session-end. Next lever: L4 claim nudges.
 2026-06-11T21:20:00Z | hyperagent | milestone | agent-memory | T-0010 done (fitness iteration 2, lever L2): NOW.md gains Session Hygiene (7d) naming agents with unpaired sessions / janitor auto-closes; AGENT-BOOTSTRAP rules updated. Baseline 50% pairing -> target 90%; weekly trend in Reference/vault-fitness.md. Next lever: L3. Replica-verified, all NOW sections regress clean.
 2026-06-11T20:46:00Z | hyperagent | milestone | wiki-obsidian | T-0009 done: vault search shipped — project-graphs/wiki/search.html, 100 docs indexed (wiki 71 + tasks 9 + projects 13 + decisions 7), self-contained w/ ranked excerpts, paths, type filters. Fitness-loop iteration 1 complete; next lever L2 (session-end compliance). Trend: Reference/vault-fitness.md.
 2026-06-11T20:40:00Z | hyperagent | note | wiki-obsidian | Claimed T-0009 (todo -> claimed -> doing) per Plan/README.md; Dwayne go-ahead in Vault Keeper thread.

@@ -25,7 +25,10 @@ const autocloses7 = last7.filter(r => /auto-closed by janitor/.test(act.split('\
 const autoCount = (act.match(/auto-closed by janitor/g)||[]).length;
 
 // resume coverage: projects active in 14d vs resume pages
-const activeProjects = [...new Set(rows.filter(r => r.ts>=D14 && r.proj && r.proj!=='general').map(r=>r.proj))];
+const projCount = {};
+rows.filter(r => r.ts>=D14 && r.proj && r.proj!=='general').forEach(r => projCount[r.proj]=(projCount[r.proj]||0)+1);
+const activeProjects = Object.keys(projCount).filter(p => projCount[p] >= 3);   // L3: real projects = >=3 entries/14d
+const sprawlSlugs = Object.keys(projCount).filter(p => projCount[p] < 3).length; // one-off labels, tracked
 const covered = activeProjects.filter(p => /^## Status now/m.test(read(`Project/${p}.md`)));
 // board
 const tasks = fs.existsSync(`${R}/Plan/tasks`) ? fs.readdirSync(`${R}/Plan/tasks`).filter(f=>f.endsWith('.md')) : [];
@@ -57,11 +60,11 @@ const nowAge = gen ? Math.round((now - Date.parse(gen))/60000) : null;
 const k = {
   date: new Date().toISOString().slice(0,10),
   wikiPages: pages, linksPerPage: +(links/Math.max(pages,1)).toFixed(1),
-  resumeCoverage: `${covered.length}/${activeProjects.length}`,
+  resumeCoverage: `${covered.length}/${activeProjects.length}`, sprawlSlugs,
   sessions7d: `${starts}s/${ends}e`, autoClosesTotal: autoCount,
   board: tstat, nonKeeperClaims,
   rawInbox, archiveUnstamped: unstamped, nowAgeMin: nowAge,
   hybridSearchTrigger: `${pages}/300 pages (ADR 0002)`,
 };
 console.log(JSON.stringify(k, null, 2));
-console.log('\nMD_ROW: | ' + [k.date, pages, k.linksPerPage, k.resumeCoverage, k.sessions7d, autoCount, nonKeeperClaims, rawInbox+'/'+unstamped, (nowAge??'?')+'m'].join(' | ') + ' |');
+console.log('\nMD_ROW: | ' + [k.date, pages, k.linksPerPage, k.resumeCoverage+'(+'+sprawlSlugs+'sp)', k.sessions7d, autoCount, nonKeeperClaims, rawInbox+'/'+unstamped, (nowAge??'?')+'m'].join(' | ') + ' |');
