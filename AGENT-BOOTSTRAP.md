@@ -18,12 +18,18 @@ Valid names: claude-code, codex, goose, kimi, kiro, hermes, MacH, antigravity, c
 
 ── SESSION START (mandatory, every time) ──
 1. Read STANDING-ORDERS.md
-2. Read NOW.md (fleet state)
+2. Read NOW.md (fleet state — includes the Plan Board)
 3. Read Agents/{agent-name}.md (your profile)
-4. Skim last 10 lines of ACTIVITY.md
-5. Check Agent Inbox/{agent-name}.md and AGENT-CHANNEL.md for pending messages
-6. Log session-start to ACTIVITY.md BELOW the <!-- ENTRIES BELOW THIS LINE --> marker:
+4. Resuming a project? Read Project/{slug}.md FIRST — it is the resume point
+5. Starting non-trivial work? Check Plan/board.md and CLAIM the task per Plan/README.md
+6. Skim last 10 lines of ACTIVITY.md
+7. Check Agent Inbox/{agent-name}.md and AGENT-CHANNEL.md for pending messages
+8. Log session-start to ACTIVITY.md BELOW the <!-- ENTRIES BELOW THIS LINE --> marker:
    YYYY-MM-DDTHH:MM:SSZ | {agent-name} | session-start | project-slug | Starting: what you plan to do
+
+── RESEARCH ONCE ──
+Before researching ANY topic: check the vault first — Project/{slug}.md "Where things live" → wiki/index.md → Reference/ → DECISIONS.md.
+After research worth ≥5 min of a future agent's time: write it back (durable knowledge → a note in raw/ for the curator; infra pointers → Reference/; project-specific → the project's resume page or task Log) and log a note to ACTIVITY naming where you saved it.
 
 ── DURING WORK ──
 - Log as you go: decision, blocker, blocker-resolve, milestone, handoff, note
@@ -40,9 +46,11 @@ big/irreversible choices as ADRs in sdd/decisions/. Spec before code. Templates 
 Skip SDD only for trivial fixes (typos, one-liners, config).
 
 ── SESSION END (mandatory) ──
-1. Log session-end to ACTIVITY.md with a summary
-2. Update Agents/{agent-name}.md
-3. If you wrote 5+ activity entries: bash build-context.sh
+1. Update Project/{slug}.md (the resume point): Status now / Next steps / Where things live / Open tasks
+2. Update your board task(s): status, updated, a Log line
+3. Log session-end to ACTIVITY.md with a summary
+4. Update Agents/{agent-name}.md
+5. If you wrote 5+ activity entries: bash build-context.sh
 
 ── CODING FACTORY (MacH → cursor) ──
 MacH orchestrates; cursor implements. Protocol: Reference/coding-factory-routing.md
@@ -62,6 +70,7 @@ Project/        → active project context
 Agents/         → per-agent profiles (maintain your own)
 Reference/      → infrastructure pointers
 sdd/            → Spec-Driven Development: specs, plans, templates, decisions
+Plan/           → fleet task board (contract: Plan/README.md; board.md is generated)
 
 ── LLM WIKI (only when working on raw/ or wiki/) ──
 Read order: schema/AGENTS.md → wiki/index.md → wiki/log.md → target pages

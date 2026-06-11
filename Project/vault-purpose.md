@@ -1,42 +1,34 @@
 ---
 name: vault-purpose
-description: The Second Brain vault is Dwayne's private individual bank for stock ideas, trade ideas, and everything worth referencing.
+description: Dual purpose — the fleet's coordination layer AND Dwayne's second brain; fleet collects information for/with Dwayne, state keyed by project name
 metadata:
   type: project
 ---
 
 # Vault Purpose
 
-This vault is **Dwayne Primeau's private individual bank** — a personal knowledge graph for:
+_Rewritten 2026-06-11 per Dwayne (spec amendment, sdd/specs/2026-06-11-fleet-plan-board/): the previous version described only the second-brain half._
 
-- **Stock ideas** — research, theses, watchlists, earnings analysis
-- **Trade ideas** — setups, entries, exits, risk management
-- **Everything worth coming back to** — tools, workflows, concepts, people, companies
+This vault is **two things at once**:
+
+1. **The fleet's coordination layer** — shared memory and operating system for all of Dwayne's coding agents: session ritual, ACTIVITY log, NOW dashboard, Plan board, per-agent profiles, decisions.
+2. **Dwayne's second brain** — the fleet works *with* Dwayne and collects information *for* him here. Knowledge compounds in `wiki/` (Karpathy LLM-wiki pattern); working state lives in `Project/` resume points and `Plan/` tasks.
+
+**The day-one test:** an agent says "I'm MacH — I look at the vault right away: okay, I was working on this program before. I read the content, and I start from there." Two file reads (`Agents/{name}.md` → `Project/<slug>.md`), no re-researching, no archaeology. The vault is the central place for everyone.
 
 ## Design Principles
 
-1. **Structured wiki over vector embeddings** — Human-readable markdown with `[[wikilinks]]`, per Andrej Karpathy's approach.
-2. **Raw intake → curated wiki → outputs** — Three-layer flow:
-   - `raw/` — intake only, never edited except to mark `processed: true`
-   - `wiki/` — curated knowledge graph (sources, entities, concepts, index)
-   - `projects/` — outputs that reference wiki as context
-3. **Append-only wiki** — Dated sections (`## Update YYYY-MM-DD from [[Source]]`), never overwrite.
-4. **Cross-link aggressively** — Islands are failures. Every article needs outbound links.
-5. **Processed files move to `raw/processed/<category>/`** — Categories: articles, assets, docs, github, meetings, podcasts, twitter, youtube.
+1. **Structured wiki over vector embeddings** — human-readable markdown with `[[wikilinks]]` (Karpathy's approach).
+2. **Raw intake → curated wiki → working state** — `raw/` (immutable inbox) → `wiki/` (append-only knowledge graph) → `Project/` + `Plan/` (resume points and work queue) referencing wiki as context.
+3. **Append-only history** — dated sections, never overwrite. Stopping is never losing.
+4. **Cross-link aggressively** — islands are failures; the graph's value compounds through connections.
+5. **Research once** — check the vault before researching (resume page → `wiki/index.md` → `Reference/` → `DECISIONS.md`); write findings back where they belong.
+6. **State keyed by project name** — the same slug names the ACTIVITY entries, the board task `project:` field, and the `Project/<slug>.md` resume page.
 
 ## Rules for Agents
 
-Full operational protocol: **`schema/AGENTS.md`** (read-only master rules).
+Full protocol: `STANDING-ORDERS.md` (fleet) and `schema/AGENTS.md` (wiki, read-only). Board contract: `Plan/README.md`.
 
-Summary:
-- Read `schema/AGENTS.md` → `wiki/index.md` before producing wiki output.
-- Extract entities (people, companies, tools) and concepts from every source.
-- Append wiki updates under dated headings — never overwrite history.
-- Mark raw files `processed: true` with `processed_at` and `wiki_articles_touched`.
-- Move processed files to the appropriate `raw/processed/<category>/` folder.
-- Surface conflicts between sources — don't silently resolve.
-- Cross-link aggressively; orphan pages are failures.
+## Related
 
-## Why This Works
-
-The graph value compounds through connections, not individual articles. Opening it in Obsidian shows the visual graph of how everything relates. This is better than RAG because the structure is explicit — links tell you what's related, no guessing.
+The separate personal trading vault (second-brain repo, stock/trade ideas) follows the same wiki pattern — it is a different vault with its own remote. [[Project/wiki-obsidian]] · [[Project/agent-memory]]

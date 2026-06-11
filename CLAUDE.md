@@ -23,6 +23,8 @@ When in doubt, do the full startup — it's cheaper than missing context on real
 | Full memory index | MEMORY.md |
 | Agent setup, sync architecture, per-agent instructions | AGENT-SETUP.md |
 | Inter-agent messages | AGENT-CHANNEL.md |
+| Fleet task board (claim before you build) | Plan/ |
+| Per-project resume points | Project/<slug>.md |
 | Activity log (append-only) | ACTIVITY.md |
 | **LLM Wiki operational rules (read-only)** | **schema/AGENTS.md** |
 | Raw inbox (unprocessed sources) | raw/ |

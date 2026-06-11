@@ -136,6 +136,17 @@ If you wrote 5+ ACTIVITY.md entries: `bash build-context.sh`
 
 ---
 
+## Plan Board & Resume Points
+
+The fleet plans together on the board and resumes from project pages. Full contract: `Plan/README.md` · spec: `sdd/specs/2026-06-11-fleet-plan-board/`.
+
+- **Claim before you build.** Non-trivial work starts by checking the Plan Board (NOW.md shows it) and claiming the matching task — owner, status, updated, plus an ACTIVITY line with the task id.
+- **Resume points:** `Project/<slug>.md` answers "where do I pick this up?" Read it FIRST when resuming; update it BEFORE you stop (Status now / Next steps / Where things live / Open tasks). Same slug as ACTIVITY and the board.
+- **Research once:** check the vault before researching (resume page → wiki/index.md → Reference/ → DECISIONS.md); write findings back; log where.
+- **The janitor** (inside build-context.sh, runs with the 15-min sync) auto-closes sessions stale >48h, archives DONE channel messages >48h to `channel-archive/`, and flags board/resume/raw-inbox problems in NOW.md. Fix what it flags.
+
+---
+
 ## Rules
 
 1. No ghost sessions. If you worked, there must be a trail in `ACTIVITY.md`.

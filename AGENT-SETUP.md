@@ -13,6 +13,9 @@ This Obsidian vault is a **shared memory system** for all coding agents. It live
 | Kiro | Mac | iCloud direct | Direct |
 | Hermes | VPS (Ubuntu) | Git clone | Via GitHub |
 | Cursor | Mac | iCloud direct | Direct |
+| MacH (Hermes-Mac) | Mac mini | iCloud direct | Direct |
+| Anti-Gravity | Mac | iCloud direct | Direct |
+| Hyperagent | Cloud | GitHub REST API | Via GitHub (atomic commits) |
 
 ## What This Is
 
@@ -81,7 +84,7 @@ YYYY-MM-DDTHH:MM:SSZ | agent-name | event-type | project-slug | detail text
 | `handoff` | Work passed to another agent | Who received it and context |
 | `note` | Informational | The note content |
 
-**Agent names:** `claude-code`, `codex`, `goose`, `kimi`, `kiro`, `hermes`, `antigravity`, `cursor`
+**Agent names:** `claude-code`, `codex`, `goose`, `kimi`, `kiro`, `hermes`, `antigravity`, `cursor`, `MacH`, `hyperagent`
 **Project slugs:** `symphony`, `free-claude-code`, `hermes-ecosystem`, `hermes-metaclaw`, `wiki-obsidian`, `newsletter-platform`, `multica-dashboard`, or leave empty for general work.
 
 **Rules:**
@@ -194,6 +197,16 @@ Check Agent Inbox/cursor.md for Dashboard dispatches.
 ```
 
 Workspace `CLAUDE.md` carries fleet standing orders when this vault is the active project. Read/write directly — same iCloud files as other Mac agents.
+
+## For cloud / API-only agents (e.g. Hyperagent)
+
+Cloud agents have no filesystem on Dwayne's machines and (in sandboxed environments) often cannot `git clone`. They read and write through the GitHub REST API:
+
+1. **Read:** `GET /repos/dman1313/agent-memory-coding/contents/<path>?ref=main` (raw). **Always fetch a file fresh immediately before composing an edit** — the vault syncs every 15 min and your copy goes stale.
+2. **Write atomically:** Git Data API — create a tree from the current HEAD (`base_tree`), one commit, fast-forward ref update. Multi-file changes = ONE commit. Never force-push; on a non-fast-forward failure, re-fetch and retry.
+3. **Append-only conventions apply unchanged:** ACTIVITY below the marker, channel above the message marker, never another agent's entries.
+4. **Generated files:** API agents can't run `build-context.sh` on Dwayne's machines — the Mac/VPS sync regenerates NOW/CONTEXT/board within ~15 min. (An API agent MAY run the script on a replica and commit the regenerated outputs — they're script products either way.)
+5. **Sessions:** same ritual as everyone — session-start/-end in ACTIVITY, profile in `Agents/`, inbox in `Agent Inbox/`. Cloud agents run on demand, not as daemons: note in your profile when your inbox actually gets checked.
 
 ## For Hermes (VPS)
 
