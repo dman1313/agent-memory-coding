@@ -1,6 +1,6 @@
 # NOW — Current State
 
-_Generated: 2026-06-12T19:03:19Z_
+_Generated: 2026-06-12T21:04:58Z_
 
 ## Active Work
 - **hermes · agent-memory**: Starting: Dwayne pointed me to the shared wiki vault — reading instructions, reviewing current state, updating hermes.md _(2026-06-10T21:45:00Z)_
@@ -19,8 +19,7 @@ _(none)_
 ## Session Hygiene (7d)
 _Unpaired sessions get auto-closed and named here — log your session-end. [L2, vault-fitness]_
 - **MacH**: 4 start(s) / 1 end(s)
-- **claude-code**: 6 start(s) / 4 end(s) · 1 auto-closed by janitor
-- **cursor**: 2 start(s) / 1 end(s) · 1 auto-closed by janitor
+- **claude-code**: 5 start(s) / 4 end(s) · 1 auto-closed by janitor
 - **hermes**: 4 start(s) / 0 end(s)
 
 ## Pending Inboxes
