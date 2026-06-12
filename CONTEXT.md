@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-06-12T04:55:35Z_
+_Generated: 2026-06-12T06:56:30Z_
 
 ## Active Work
 - **hermes · agent-memory**: Starting: Dwayne pointed me to the shared wiki vault — reading instructions, reviewing current state, updating hermes.md _(2026-06-10T21:45:00Z)_
@@ -591,6 +591,10 @@ Organized under `~/.hermes/skills/`. Key categories:
 - Multi-platform messaging (Telegram)
 - Lead orchestrator (HAL) for the agent fleet
 
+## Recent Resolutions (2026-06-12)
+- **Xiaomi provider**: Recovered June 11 — zero HTTP 451 errors. Wolf scan + Night Ignore Reminders running clean.
+- **DREAM cleanup bug (T-0004)**: Fixed — session_search as primary method, June 12 run clean after 11+ nights of failures.
+
 ### Hyperagent
 
 
@@ -890,7 +894,7 @@ Classroom Mirror turns classroom moments into **numbers, never video**, for [[Dw
 - **Mode 2 — whole-class reflection:** aggregate-only room patterns (hand-raises, movement level, people in view) as a mirror for the teacher's practice. **No per-child column exists in the schema** — anonymity by construction.
 
 **Location:** `/Volumes/M2 Media/Coding Dwayne/Claude/classroom-mirror/`
-**Status (2026-06-10):** 14/14 AUTO criteria YES; awaiting Dwayne's 5 [HUMAN] sign-offs (`HUMAN-CHECKS.md`). Git local, 4 commits, NOT pushed to GitHub (not requested).
+**Status (2026-06-12):** 19/19 (14 AUTO + 5 HUMAN) ✅ ALL PASS. Git local, NOT pushed to GitHub (not requested).
 
 ## Origin — the ethics redesign
 
@@ -906,9 +910,7 @@ Python 3.11 venv · Ultralytics YOLO11n-pose (AGPL — flagged in LATER.md for a
 
 ## Open items
 
-- Dwayne's 5 human checks (live trial, zone-setup timing, report readability, double-click start, runs ./check).
 - Real-classroom use gated on homework: DPIA + parental consent (Mode 1) + school sign-off + CNIL check (in SETUP.md).
-- Dev Mac has no camera — live trial must happen on Dwayne's MacBook.
 
 ### Claude Md Rewrite
 
