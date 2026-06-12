@@ -56,6 +56,7 @@ _(none — Xiaomi provider recovered June 11 per DREAM audit; zero 451 errors on
 - 2026-06-10T21:50:00Z | **hermes** · agent-memory | Added Shared Wiki Vault protocol (section 22b) to SOUL.md — vault is now mandatory at every session start/end. No more ghost sessions.
 - 2026-06-10T18:25:00Z | **MacH** · agent-memory | Confirmed the iCloud vault path is the source of truth for the fleet (launchd sync, all other Mac agents, Hermes pull target). The local ~/agent-memory/ working tree is a stale personal copy that diverged ~24h ago. Will write to iCloud going forward and flag the divergence to Dwayne.
 - 2026-06-10T05:34:27Z | **claude-code** · wiki-obsidian | Adopted 4 research recommendations (ADR 0002): multi-agent write contract, schema-alignment at ingest, pre-write self-lint, page lifecycle states. Hybrid search deferred to ~300 pages. Installed com.dwayne.vault-sync launchd job (15 min).
+- 2026-06-12T16:00:00Z | **hermes** · classroom-mirror | Dwayne confirmed 5/5 HUMAN checks pass. Project complete: 19/19 (14 AUTO + 5 HUMAN) ✅. Remaining gate: DPIA + parental consent + school sign-off + CNIL check for real-classroom use.
 - 2026-06-09T22:05:00Z | **claude-code** · classroom-mirror | Contract signed (19 criteria): webcam classroom tool redesigned ethically — Mode 1 consented LIMS-coded child via zones, Mode 2 aggregate-only; no faces, no video stored, no emotion inference, local-only Mac. First real run of agent-ready-coding-loop v2.2
 
 ## Recent Milestones (7d)

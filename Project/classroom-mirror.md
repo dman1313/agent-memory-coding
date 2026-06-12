@@ -13,7 +13,7 @@ Classroom Mirror turns classroom moments into **numbers, never video**, for [[Dw
 - **Mode 2 — whole-class reflection:** aggregate-only room patterns (hand-raises, movement level, people in view) as a mirror for the teacher's practice. **No per-child column exists in the schema** — anonymity by construction.
 
 **Location:** `/Volumes/M2 Media/Coding Dwayne/Claude/classroom-mirror/`
-**Status (2026-06-10):** 14/14 AUTO criteria YES; awaiting Dwayne's 5 [HUMAN] sign-offs (`HUMAN-CHECKS.md`). Git local, 4 commits, NOT pushed to GitHub (not requested).
+**Status (2026-06-12):** 19/19 (14 AUTO + 5 HUMAN) ✅ ALL PASS. Git local, NOT pushed to GitHub (not requested).
 
 ## Origin — the ethics redesign
 
@@ -29,6 +29,4 @@ Python 3.11 venv · Ultralytics YOLO11n-pose (AGPL — flagged in LATER.md for a
 
 ## Open items
 
-- Dwayne's 5 human checks (live trial, zone-setup timing, report readability, double-click start, runs ./check).
 - Real-classroom use gated on homework: DPIA + parental consent (Mode 1) + school sign-off + CNIL check (in SETUP.md).
-- Dev Mac has no camera — live trial must happen on Dwayne's MacBook.

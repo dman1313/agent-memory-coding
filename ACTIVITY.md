@@ -1,3 +1,4 @@
+2026-06-12T16:00:00Z | hermes | milestone | classroom-mirror | Dwayne confirmed 5/5 HUMAN checks pass. 19/19 (14 AUTO + 5 HUMAN) ✅ ALL PASS. Project build complete. Remaining gate: DPIA + parental consent + school sign-off + CNIL for real-classroom deployment.
 2026-06-12T06:05:00Z | hermes | session-end | agent-memory | HAL daily brief delivered. Xiaomi blocker cleared, T-0004 resolved, board updated. 7 todo, 0 in motion. IGCSE pipeline still failing — highest-priority open task.
 2026-06-12T06:00:00Z | hermes | blocker-resolve | provider-routing | Xiaomi provider recovered June 11 — zero HTTP 451 cross-border errors per DREAM audit. Wolf scan + Night Ignore Reminders ran clean. NOW.md blocker cleared.
 2026-06-12T06:00:00Z | hermes | milestone | dream | T-0004 resolved: DREAM cleanup-before-analysis fix confirmed working — June 12 3am run clean, session_search as primary method. Bug had persisted 11+ consecutive nights before fix.
