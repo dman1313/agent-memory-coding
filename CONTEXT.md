@@ -6,11 +6,10 @@
 
 # NOW — Current State
 
-_Generated: 2026-06-12T16:03:13Z_
+_Generated: 2026-06-12T17:03:17Z_
 
 ## Active Work
 - **hermes · agent-memory**: Starting: Dwayne pointed me to the shared wiki vault — reading instructions, reviewing current state, updating hermes.md _(2026-06-10T21:45:00Z)_
-- **claude-code · claude-md-rewrite**: Starting: rewrite global CLAUDE.md for token efficiency + Self-Annealing + Auto Research capabilities. _(2026-06-10T17:00:00Z)_
 
 ## Plan Board
 _0 in motion · 7 todo · 0 blocked · 6 done — full board: Plan/board.md · contract: Plan/README.md_
@@ -26,7 +25,7 @@ _(none)_
 ## Session Hygiene (7d)
 _Unpaired sessions get auto-closed and named here — log your session-end. [L2, vault-fitness]_
 - **MacH**: 4 start(s) / 1 end(s)
-- **claude-code**: 6 start(s) / 3 end(s)
+- **claude-code**: 6 start(s) / 4 end(s) · 1 auto-closed by janitor
 - **cursor**: 2 start(s) / 1 end(s) · 1 auto-closed by janitor
 - **hermes**: 4 start(s) / 0 end(s)
 
@@ -43,6 +42,7 @@ _(none)_
 - **hermes · provider-routing**: DeepSeek/xiaomi provider blocked — HTTP 451 cross-border isolation errors for 24h+, cron jobs silently failing _(2026-06-05T12:01:19Z)_
 
 ## Recent Activity (48h)
+- 2026-06-12T17:02:43Z | **claude-code** · claude-md-rewrite · session-end | (auto-closed by janitor: open since 2026-06-10T17:00:00Z, no session-end >48h)
 - 2026-06-12T07:58:00Z | **hyperagent** · agent-memory · note | Closed T-0004 on the board (hermes resolved DREAM bug at 06:00Z, logged milestone + blocker-resolve to ACTIVITY, said board updated in session-end but did not edit the task card — hyperagent closing from ACTIVITY evidence per vault custodian role).
 - 2026-06-11T23:10:00Z | **hyperagent** · agent-memory · note | vault_keeper.js fast-path deployed: fresh vault (age<55min) exits in 381ms via single NOW.md API call; stale path uses KEEPER_SKIP_CONTEXT=1 bash replica but still ~58-63s. T-0013 filed for JS-native rewrite. Fast path handles 95% of cases; stale path fallback via session token works when credential timeout hits.
 - 2026-06-11T22:25:00Z | **hyperagent** · agent-memory · milestone | T-0012 done (fitness iteration 4, L4): claim nudges live in vault_keeper.js — P1 unclaimed >48h gets one rate-limited inbox reminder (max 2, then escalate to Dwayne). Fixture-verified. Four levers shipped today: search, session hygiene, resume coverage, claim nudges. Trend: Reference/vault-fitness.md.
@@ -54,7 +54,6 @@ _(none)_
 - 2026-06-11T19:18:00Z | **hyperagent** · agent-memory · session-end | Done: Vault Fitness Loop launched (spec Approved per Dwayne directive): KPI instrument scripts/vault-keeper/vault_fitness.js, baseline + iteration log at Reference/vault-fitness.md, lever backlog L1-L7, T-0009 seeded (search page, iteration 1). Keeper runs the loop weekly.
 - 2026-06-11T19:16:00Z | **hyperagent** · agent-memory · milestone | Fitness baseline: 71 wiki pages, 7.7 links/page, resume coverage 4/32 (slug sprawl — L3), session ritual 22 starts/11 ends in 7d (50% — L2), board adoption 0 non-keeper claims, raw+stamps clean, NOW 51m. Full table: Reference/vault-fitness.md.
 - 2026-06-11T19:10:00Z | **hyperagent** · agent-memory · session-start | Starting: Vault Fitness Loop — apply schema/AGENTS.md section-8 improvement loop to the vault itself per Dwayne (review whole memory system, keep improving, agents stay on task, searchable growing base).
-- 2026-06-11T19:05:00Z | **hyperagent** · agent-memory · note | Committed the vault-keeper script to scripts/vault-keeper/ (fleet-readable reference of the hourly janitor/regen automation; executable copy runs on Hyperagent w/ secure credentials). Research-once write-back: the machinery committing on this repo is now inspectable by every agent.
 
 ## Recent Decisions (7d)
 - 2026-06-11T13:24:00Z | **hyperagent** · agent-memory | Spec amendment 2 per Dwayne: identity-first resume flow (I'm MacH — what was I working on? Read the content, start from there; two file reads: Agents/{name}.md -> Project/<slug>.md) + research-once rule M8 (check vault before researching: resume page -> wiki/index -> Reference/ -> DECISIONS; write findings back; ACTIVITY note names where). The vault is the central place for everyone. Spec updated in place (M2/M7/M8, criteria 8).
@@ -80,12 +79,12 @@ _(none)_
 - 2026-06-10T01:35:00Z | **kiro** · agent-memory-coding | Wiki compile complete: Domain 2 (Human Good/AI) fully extracted; Domain 1 (school ~75 transcripts) batched into 3 period sources; Domain 3 (misc) 4 sources. raw/ inbox clean — only operational subdirs remain.
 
 ## Last Seen (fleet)
+- **claude-code**: 2026-06-12T17:02:43Z — session-end: (auto-closed by janitor: open since 2026-06-10T17:00:00Z, no session-end >48h)
 - **hyperagent**: 2026-06-12T07:58:00Z — note: Closed T-0004 on the board (hermes resolved DREAM bug at 06:00Z, logged milestone + blocker-resolve to ACTIVITY, said board updated in session-end but did not edit the task card — hyperagent closing from ACTIVITY evidence per vault custodian role).
 - **kimi**: 2026-06-11T14:11:28Z — session-end: (auto-closed by janitor: open since 2026-06-04T12:12:18Z, no session-end >48h)
 - **cursor**: 2026-06-11T14:11:28Z — session-end: (auto-closed by janitor: open since 2026-06-05T20:30:00Z, no session-end >48h)
 - **hermes**: 2026-06-10T22:55:00Z — decision: Giving DREAM one more night with the session_search fix. If
 - **MacH**: 2026-06-10T19:25:00Z — blocker-resolve: Dwayne challenged my first-pass skip list. Re-evaluated: 6 of 7 skips had weak reasons (called gpt-taste a dup, missed that imagegen-* are prompt direction for any image-gen tool, misread stitch as Stitch-only). Installed all 6 plus updated Guides/taste-skill-availability.md with a correction log. Only taste-skill-v1 stays out (correct reason). Total MacH install: 12 of 13 skills, 6,444 SKILL.md lines. Patched: ~/.hermes/skills/creative/taste-skill/* (6 new subdirs) and the vault pointer.
-- **claude-code**: 2026-06-10T17:00:00Z — session-start: Starting: rewrite global CLAUDE.md for token efficiency + Self-Annealing + Auto Research capabilities.
 - **kiro**: 2026-06-10T01:35:00Z — session-end: Done: Full wiki compile — 93 raw files → 20 entities, 13 concepts, 19 sources. Raw inbox cleared; files in processed/meetings/ (85), articles/ (3), docs/ (2). index.md + log.md updated.
 - **antigravity**: 2026-06-06T05:23:30Z — session-end: Done: Acknowledged roster checks on Dashboard, cleared pending inbox/messages, closed stale session, and rebuilt vault context.
 - **codex**: 2026-06-05T19:10:25Z — milestone: Adjusted result layout so result text and image stay side-by-side on tablet/desktop widths while stacking on mobile.
