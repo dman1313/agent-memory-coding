@@ -7,11 +7,10 @@ _Generated: 2026-06-12T04:55:35Z_
 - **claude-code · claude-md-rewrite**: Starting: rewrite global CLAUDE.md for token efficiency + Self-Annealing + Auto Research capabilities. _(2026-06-10T17:00:00Z)_
 
 ## Plan Board
-_0 in motion · 8 todo · 0 blocked · 5 done — full board: Plan/board.md · contract: Plan/README.md_
+_0 in motion · 7 todo · 0 blocked · 6 done — full board: Plan/board.md · contract: Plan/README.md_
 - todo P1 **T-0002** — Verify com.dwayne.vault-sync launchd job is actually running (→ MacH)
 - todo P1 **T-0003** — Fix IGCSE Biology concept pipeline (missing concept-progress.json, 353 failed runs) (→ hermes)
 - todo P2 **T-0001** — Retire the diverged ~/agent-memory working tree on the Mac (→ MacH)
-- todo P2 **T-0004** — Fix DREAM cleanup-before-analysis bug (7th+ occurrence) (→ hermes)
 - todo P2 **T-0008** — Curator pass — 8 orphan sources, 5 dead template links, backlink hygiene (→ claude-code)
 
 ## Stale Open Sessions (>48h, no session-end)
@@ -34,7 +33,7 @@ _Unpaired sessions get auto-closed and named here — log your session-end. [L2,
 _(none)_
 
 ## Blockers
-- **hermes · provider-routing**: DeepSeek/xiaomi provider blocked — HTTP 451 cross-border isolation errors for 24h+, cron jobs silently failing _(2026-06-05T12:01:19Z)_
+_(none — Xiaomi provider recovered June 11 per DREAM audit; zero 451 errors on June 11, Wolf + Night Ignore ran clean)_
 
 ## Recent Activity (48h)
 - 2026-06-11T23:10:00Z | **hyperagent** · agent-memory · note | vault_keeper.js fast-path deployed: fresh vault (age<55min) exits in 381ms via single NOW.md API call; stale path uses KEEPER_SKIP_CONTEXT=1 bash replica but still ~58-63s. T-0013 filed for JS-native rewrite. Fast path handles 95% of cases; stale path fallback via session token works when credential timeout hits.
@@ -53,7 +52,7 @@ _(none)_
 ## Recent Decisions (7d)
 - 2026-06-11T13:24:00Z | **hyperagent** · agent-memory | Spec amendment 2 per Dwayne: identity-first resume flow (I'm MacH — what was I working on? Read the content, start from there; two file reads: Agents/{name}.md -> Project/<slug>.md) + research-once rule M8 (check vault before researching: resume page -> wiki/index -> Reference/ -> DECISIONS; write findings back; ACTIVITY note names where). The vault is the central place for everyone. Spec updated in place (M2/M7/M8, criteria 8).
 - 2026-06-11T13:06:00Z | **hyperagent** · agent-memory | Spec approved by Dwayne w/ amendment: this vault is dual-purpose — fleet coordination layer AND Dwaynes second brain. Fleet collects information for/with Dwayne here, and always writes state back keyed by project name: every active project keeps a resume point at Project/<slug>.md (Status now / Next steps / Where things live / Open tasks), updated when an agent stops, read first when an agent resumes. Corrects nuance of my 2026-06-11 audit note re: vault-purpose.md — it wasnt wrong, it was half the story.
-- 2026-06-10T22:55:00Z | **hermes** · dream | Giving DREAM one more night with the session_search fix. If
+- 2026-06-10T22:55:00Z | **hermes** · dream | Giving DREAM one more night with the session_search fix. RESOLVED Jun 12: fix confirmed working — DREAM 3am run clean, zero errors.
 - 2026-06-10T21:50:00Z | **hermes** · agent-memory | Added Shared Wiki Vault protocol (section 22b) to SOUL.md — vault is now mandatory at every session start/end. No more ghost sessions.
 - 2026-06-10T18:25:00Z | **MacH** · agent-memory | Confirmed the iCloud vault path is the source of truth for the fleet (launchd sync, all other Mac agents, Hermes pull target). The local ~/agent-memory/ working tree is a stale personal copy that diverged ~24h ago. Will write to iCloud going forward and flag the divergence to Dwayne.
 - 2026-06-10T05:34:27Z | **claude-code** · wiki-obsidian | Adopted 4 research recommendations (ADR 0002): multi-agent write contract, schema-alignment at ingest, pre-write self-lint, page lifecycle states. Hybrid search deferred to ~300 pages. Installed com.dwayne.vault-sync launchd job (15 min).
@@ -77,7 +76,7 @@ _(none)_
 - **hyperagent**: 2026-06-11T23:10:00Z — note: vault_keeper.js fast-path deployed: fresh vault (age<55min) exits in 381ms via single NOW.md API call; stale path uses KEEPER_SKIP_CONTEXT=1 bash replica but still ~58-63s. T-0013 filed for JS-native rewrite. Fast path handles 95% of cases; stale path fallback via session token works when credential timeout hits.
 - **kimi**: 2026-06-11T14:11:28Z — session-end: (auto-closed by janitor: open since 2026-06-04T12:12:18Z, no session-end >48h)
 - **cursor**: 2026-06-11T14:11:28Z — session-end: (auto-closed by janitor: open since 2026-06-05T20:30:00Z, no session-end >48h)
-- **hermes**: 2026-06-10T22:55:00Z — decision: Giving DREAM one more night with the session_search fix. If
+- **hermes**: 2026-06-12T06:00:00Z — daily brief: system YELLOW. Xiaomi provider recovered. T-0004 (DREAM fix) resolved. 7 todo, 0 in motion. IGCSE pipeline still erroring hourly.
 - **MacH**: 2026-06-10T19:25:00Z — blocker-resolve: Dwayne challenged my first-pass skip list. Re-evaluated: 6 of 7 skips had weak reasons (called gpt-taste a dup, missed that imagegen-* are prompt direction for any image-gen tool, misread stitch as Stitch-only). Installed all 6 plus updated Guides/taste-skill-availability.md with a correction log. Only taste-skill-v1 stays out (correct reason). Total MacH install: 12 of 13 skills, 6,444 SKILL.md lines. Patched: ~/.hermes/skills/creative/taste-skill/* (6 new subdirs) and the vault pointer.
 - **claude-code**: 2026-06-10T17:00:00Z — session-start: Starting: rewrite global CLAUDE.md for token efficiency + Self-Annealing + Auto Research capabilities.
 - **kiro**: 2026-06-10T01:35:00Z — session-end: Done: Full wiki compile — 93 raw files → 20 entities, 13 concepts, 19 sources. Raw inbox cleared; files in processed/meetings/ (85), articles/ (3), docs/ (2). index.md + log.md updated.
