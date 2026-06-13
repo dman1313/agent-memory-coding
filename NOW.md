@@ -1,9 +1,9 @@
 # NOW — Current State
 
-_Generated: 2026-06-13T11:20:28Z_
+_Generated: 2026-06-13T13:23:52Z_
 
 ## Active Work
-- **hermes · agent-memory**: HAL daily brief (Saturday). Checking system health, DREAM overnight, fleet state, IGCSE pipeline. _(2026-06-13T06:05:00Z)_
+_(none)_
 
 ## Plan Board
 _0 in motion · 7 todo · 0 blocked · 6 done — full board: Plan/board.md · contract: Plan/README.md_
@@ -20,7 +20,7 @@ _(none)_
 _Unpaired sessions get auto-closed and named here — log your session-end. [L2, vault-fitness]_
 - **MacH**: 4 start(s) / 1 end(s)
 - **claude-code**: 5 start(s) / 4 end(s) · 1 auto-closed by janitor
-- **hermes**: 5 start(s) / 1 end(s) · 1 auto-closed by janitor
+- **hermes**: 5 start(s) / 2 end(s) · 1 auto-closed by janitor
 
 ## Pending Inboxes
 - **claude**: Roster check claude: inbox is live.
@@ -35,6 +35,7 @@ _(none)_
 - **hermes · provider-routing**: DeepSeek/xiaomi provider blocked — HTTP 451 cross-border isolation errors for 24h+, cron jobs silently failing _(2026-06-05T12:01:19Z)_
 
 ## Recent Activity (48h)
+- 2026-06-13T08:05:00Z | **hermes** · agent-memory · session-end | HAL daily brief Jun 13 completed. GREEN health, all services up. IGCSE pipeline (T-0003) still failing 353+ runs. All agents IDLE. api_server retry + scrapling MCP still spamming logs.
 - 2026-06-13T06:05:00Z | **hermes** · agent-memory · session-start | HAL daily brief (Saturday). Checking system health, DREAM overnight, fleet state, IGCSE pipeline.
 - 2026-06-12T22:05:31Z | **hermes** · agent-memory · session-end | (auto-closed by janitor: open since 2026-06-10T21:45:00Z, no session-end >48h)
 - 2026-06-12T17:02:43Z | **claude-code** · claude-md-rewrite · session-end | (auto-closed by janitor: open since 2026-06-10T17:00:00Z, no session-end >48h)
@@ -46,7 +47,6 @@ _(none)_
 - 2026-06-11T20:46:00Z | **hyperagent** · wiki-obsidian · milestone | T-0009 done: vault search shipped — project-graphs/wiki/search.html, 100 docs indexed (wiki 71 + tasks 9 + projects 13 + decisions 7), self-contained w/ ranked excerpts, paths, type filters. Fitness-loop iteration 1 complete; next lever L2 (session-end compliance). Trend: Reference/vault-fitness.md.
 - 2026-06-11T20:40:00Z | **hyperagent** · wiki-obsidian · note | Claimed T-0009 (todo -> claimed -> doing) per Plan/README.md; Dwayne go-ahead in Vault Keeper thread.
 - 2026-06-11T20:24:00Z | **hyperagent** · wiki-obsidian · note | Committed Guides/ingestion-directions.md (paste-ready curator ingestion block per schema/AGENTS.md + curate-modes.md, requested by Dwayne) and indexed the Guides/ folder in MEMORY.md (was unindexed — 4 guides added).
-- 2026-06-11T19:18:00Z | **hyperagent** · agent-memory · session-end | Done: Vault Fitness Loop launched (spec Approved per Dwayne directive): KPI instrument scripts/vault-keeper/vault_fitness.js, baseline + iteration log at Reference/vault-fitness.md, lever backlog L1-L7, T-0009 seeded (search page, iteration 1). Keeper runs the loop weekly.
 
 ## Recent Decisions (7d)
 - 2026-06-11T13:24:00Z | **hyperagent** · agent-memory | Spec amendment 2 per Dwayne: identity-first resume flow (I'm MacH — what was I working on? Read the content, start from there; two file reads: Agents/{name}.md -> Project/<slug>.md) + research-once rule M8 (check vault before researching: resume page -> wiki/index -> Reference/ -> DECISIONS; write findings back; ACTIVITY note names where). The vault is the central place for everyone. Spec updated in place (M2/M7/M8, criteria 8).
@@ -72,7 +72,7 @@ _(none)_
 - 2026-06-10T01:35:00Z | **kiro** · agent-memory-coding | Wiki compile complete: Domain 2 (Human Good/AI) fully extracted; Domain 1 (school ~75 transcripts) batched into 3 period sources; Domain 3 (misc) 4 sources. raw/ inbox clean — only operational subdirs remain.
 
 ## Last Seen (fleet)
-- **hermes**: 2026-06-13T06:05:00Z — session-start: HAL daily brief (Saturday). Checking system health, DREAM overnight, fleet state, IGCSE pipeline.
+- **hermes**: 2026-06-13T08:05:00Z — session-end: HAL daily brief Jun 13 completed. GREEN health, all services up. IGCSE pipeline (T-0003) still failing 353+ runs. All agents IDLE. api_server retry + scrapling MCP still spamming logs.
 - **claude-code**: 2026-06-12T17:02:43Z — session-end: (auto-closed by janitor: open since 2026-06-10T17:00:00Z, no session-end >48h)
 - **hyperagent**: 2026-06-12T07:58:00Z — note: Closed T-0004 on the board (hermes resolved DREAM bug at 06:00Z, logged milestone + blocker-resolve to ACTIVITY, said board updated in session-end but did not edit the task card — hyperagent closing from ACTIVITY evidence per vault custodian role).
 - **kimi**: 2026-06-11T14:11:28Z — session-end: (auto-closed by janitor: open since 2026-06-04T12:12:18Z, no session-end >48h)

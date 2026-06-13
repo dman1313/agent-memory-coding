@@ -6,10 +6,10 @@
 
 # NOW — Current State
 
-_Generated: 2026-06-13T11:20:28Z_
+_Generated: 2026-06-13T13:23:52Z_
 
 ## Active Work
-- **hermes · agent-memory**: HAL daily brief (Saturday). Checking system health, DREAM overnight, fleet state, IGCSE pipeline. _(2026-06-13T06:05:00Z)_
+_(none)_
 
 ## Plan Board
 _0 in motion · 7 todo · 0 blocked · 6 done — full board: Plan/board.md · contract: Plan/README.md_
@@ -26,7 +26,7 @@ _(none)_
 _Unpaired sessions get auto-closed and named here — log your session-end. [L2, vault-fitness]_
 - **MacH**: 4 start(s) / 1 end(s)
 - **claude-code**: 5 start(s) / 4 end(s) · 1 auto-closed by janitor
-- **hermes**: 5 start(s) / 1 end(s) · 1 auto-closed by janitor
+- **hermes**: 5 start(s) / 2 end(s) · 1 auto-closed by janitor
 
 ## Pending Inboxes
 - **claude**: Roster check claude: inbox is live.
@@ -41,6 +41,7 @@ _(none)_
 - **hermes · provider-routing**: DeepSeek/xiaomi provider blocked — HTTP 451 cross-border isolation errors for 24h+, cron jobs silently failing _(2026-06-05T12:01:19Z)_
 
 ## Recent Activity (48h)
+- 2026-06-13T08:05:00Z | **hermes** · agent-memory · session-end | HAL daily brief Jun 13 completed. GREEN health, all services up. IGCSE pipeline (T-0003) still failing 353+ runs. All agents IDLE. api_server retry + scrapling MCP still spamming logs.
 - 2026-06-13T06:05:00Z | **hermes** · agent-memory · session-start | HAL daily brief (Saturday). Checking system health, DREAM overnight, fleet state, IGCSE pipeline.
 - 2026-06-12T22:05:31Z | **hermes** · agent-memory · session-end | (auto-closed by janitor: open since 2026-06-10T21:45:00Z, no session-end >48h)
 - 2026-06-12T17:02:43Z | **claude-code** · claude-md-rewrite · session-end | (auto-closed by janitor: open since 2026-06-10T17:00:00Z, no session-end >48h)
@@ -52,7 +53,6 @@ _(none)_
 - 2026-06-11T20:46:00Z | **hyperagent** · wiki-obsidian · milestone | T-0009 done: vault search shipped — project-graphs/wiki/search.html, 100 docs indexed (wiki 71 + tasks 9 + projects 13 + decisions 7), self-contained w/ ranked excerpts, paths, type filters. Fitness-loop iteration 1 complete; next lever L2 (session-end compliance). Trend: Reference/vault-fitness.md.
 - 2026-06-11T20:40:00Z | **hyperagent** · wiki-obsidian · note | Claimed T-0009 (todo -> claimed -> doing) per Plan/README.md; Dwayne go-ahead in Vault Keeper thread.
 - 2026-06-11T20:24:00Z | **hyperagent** · wiki-obsidian · note | Committed Guides/ingestion-directions.md (paste-ready curator ingestion block per schema/AGENTS.md + curate-modes.md, requested by Dwayne) and indexed the Guides/ folder in MEMORY.md (was unindexed — 4 guides added).
-- 2026-06-11T19:18:00Z | **hyperagent** · agent-memory · session-end | Done: Vault Fitness Loop launched (spec Approved per Dwayne directive): KPI instrument scripts/vault-keeper/vault_fitness.js, baseline + iteration log at Reference/vault-fitness.md, lever backlog L1-L7, T-0009 seeded (search page, iteration 1). Keeper runs the loop weekly.
 
 ## Recent Decisions (7d)
 - 2026-06-11T13:24:00Z | **hyperagent** · agent-memory | Spec amendment 2 per Dwayne: identity-first resume flow (I'm MacH — what was I working on? Read the content, start from there; two file reads: Agents/{name}.md -> Project/<slug>.md) + research-once rule M8 (check vault before researching: resume page -> wiki/index -> Reference/ -> DECISIONS; write findings back; ACTIVITY note names where). The vault is the central place for everyone. Spec updated in place (M2/M7/M8, criteria 8).
@@ -78,7 +78,7 @@ _(none)_
 - 2026-06-10T01:35:00Z | **kiro** · agent-memory-coding | Wiki compile complete: Domain 2 (Human Good/AI) fully extracted; Domain 1 (school ~75 transcripts) batched into 3 period sources; Domain 3 (misc) 4 sources. raw/ inbox clean — only operational subdirs remain.
 
 ## Last Seen (fleet)
-- **hermes**: 2026-06-13T06:05:00Z — session-start: HAL daily brief (Saturday). Checking system health, DREAM overnight, fleet state, IGCSE pipeline.
+- **hermes**: 2026-06-13T08:05:00Z — session-end: HAL daily brief Jun 13 completed. GREEN health, all services up. IGCSE pipeline (T-0003) still failing 353+ runs. All agents IDLE. api_server retry + scrapling MCP still spamming logs.
 - **claude-code**: 2026-06-12T17:02:43Z — session-end: (auto-closed by janitor: open since 2026-06-10T17:00:00Z, no session-end >48h)
 - **hyperagent**: 2026-06-12T07:58:00Z — note: Closed T-0004 on the board (hermes resolved DREAM bug at 06:00Z, logged milestone + blocker-resolve to ACTIVITY, said board updated in session-end but did not edit the task card — hyperagent closing from ACTIVITY evidence per vault custodian role).
 - **kimi**: 2026-06-11T14:11:28Z — session-end: (auto-closed by janitor: open since 2026-06-04T12:12:18Z, no session-end >48h)
@@ -807,6 +807,32 @@ Cursor picks up on next session. For urgent work, ping Dwayne to open Cursor or 
 
 ## Active Projects
 
+### Agent Command Center Plan
+
+# Agent Command Center — Implementation Plan
+**Generated:** June 12, 2026 | **Status:** Concept
+## Phase 1: Cookie Sync (🍪)
+- [ ] Run `agentcookie wizard set-keychain-access`
+- [ ] Configure blocklist (exclude banking, email)
+- [ ] Test: `agentcookie export --domain %github.com`
+- [ ] Wire into Hermes toolchain
+
+## Phase 2: Research Pipeline (📰)
+- [ ] `last30days` for market/tech trend reports
+- [ ] Auto-route findings to vault + Notion
+- [ ] Schedule daily briefings via cron
+
+## Phase 3: Image Generation (🎨)
+- [ ] Map `image_generate` to planning docs
+- [ ] Auto-generate architecture diagrams for each project
+- [ ] Visual status cards for NOW.md
+
+## Phase 4: Agent Arena (🏟️)
+- [ ] Complete tournament UI integration
+- [ ] Add training ground curricula
+- [ ] Export fight results as visual reports
+
+
 ### Agent Memory Coding
 
 
@@ -1296,23 +1322,44 @@ Agent-first newsletter production system. Turns Telegram voice notes and photos 
 
 ## Status now
 
-_Auto-generated from the project's ACTIVITY trail (L3 resume-point rollout, 2026-06-11, hyperagent). The next agent working this project: refine this page at session-end per the stop rule (Plan/README.md)._
+**2026-06-13 — MacH:** Claude skill at `~/.claude/skills/pyp-planner/SKILL.md` overhauled with two-path workflow:
+- **Path A (Primary): HTML → PDF** — works in cloud/Claude. Full pipeline: Pre-Flight R1 (web search) + R2 (NotebookLM teaching resources) → interview choices → image generation (FAL via Hermes gateway) → contract check (18 criteria) → 3-pass humanization → stop-slop audit (≥35/50) → formatting QA → deliver.
+- **Path B (Secondary): DOCX → Pages** — Apple Mac only, flagged as unreliable in cloud.
 
-- 2026-06-11 **kimi** (session-end): (auto-closed by janitor: open since 2026-06-04T12:12:18Z, no session-end >48h)
-- 2026-06-04 **kimi** (milestone): Updated pyp_planner.py: proper CLI with argparse, auto-detects pipe/tab tables, PYP structure heuristics (sections/engagements/weeks/options), removes AI artifacts. Applied to Grade 5 Human Migration unit.
-- 2026-06-04 **kimi** (session-start): Starting: Returned from pause. User asked to clean up DOCX formatting and update PYP planner code.
+First complete unit produced: "From Farm to Table" (Grade 3, How the World Works). In `pyp_planner_generator_phase_a/units/grade-3-farm-to-table/`. 18/18 contract check passed, humanized, 7 images embedded, A4 print-ready.
 
-## Next steps
-
-- (to be set by the owning agent at next session-end — derive from Status above)
+Key additions to skill:
+- Pre-Flight Research: mandatory web search + NotebookLM query before any planner content
+- NotebookLM integration: `~/.claude/skills/notebooklm/` for teaching templates, prompts, workflows
+- Quality gates table: contract check, humanizer, stop-slop, formatting, author-name check
+- Author name removal: no personal names in footers (TpT store name in listing only)
+- Research-only mode: user can ask to research a topic for a future planner
 
 ## Where things live
 
-- Trail: ACTIVITY.md (project: pyp-planner-gen) · full-text: project-graphs/wiki/search.html · graph: project-graphs/wiki/graph.html
+| Resource | Path |
+|----------|------|
+| **Claude skill** | `~/.claude/skills/pyp-planner/SKILL.md` (247 lines) |
+| **Skill reference** | `~/.claude/skills/pyp-planner/REFERENCE.md` (IB descriptors, Pages rules) |
+| **Contract check script** | `/Volumes/M2 Media/Coding Dwayne/IB planner/pyp_planner_generator_phase_a/check` |
+| **Image generator** | `/Volumes/M2 Media/Coding Dwayne/IB planner/pyp_planner_generator_phase_a/scripts/image_gen.py` |
+| **DOCX converter** | `/Volumes/M2 Media/Coding Dwayne/Claude/pyp-planner-gen/pyp_planner.py` |
+| **NotebookLM skill** | `~/.claude/skills/notebooklm/` |
+| **Hermes HTML skill** | `~/.hermes/skills/productivity/pyp-planner/SKILL.md` |
+| **First unit output** | `/Volumes/M2 Media/Coding Dwayne/IB planner/pyp_planner_generator_phase_a/units/grade-3-farm-to-table/From_Farm_to_Table_Complete_Planner.html` |
+
+## Key decisions
+
+- HTML path is primary because DOCX → Pages chain doesn't work in cloud/Claude
+- Image generation uses Hermes `image_generate` (FAL via gateway) — no local API key needed
+- Author names stripped from all planner outputs — TpT store name goes in listing metadata only
+- Pre-Flight research (web + NotebookLM) is mandatory before every new planner
 
 ## Open tasks
 
-- (none on the board yet)
+- Run NotebookLM auth setup (`notebooklm login`) for next planner session
+- Consider initializing git repo for `~/.claude/skills/` to track skill versions
+- Next planner: use full Pre-Flight pipeline with real web search + NotebookLM queries
 
 ### Study Pipeline
 
