@@ -1,6 +1,6 @@
 ---
 name: project-pyp-planner-gen
-description: Resume point for pyp-planner-gen — auto-generated from ACTIVITY (L3 rollout 2026-06-11); owning agent refines at next session-end
+description: IB PYP planner generator — HTML + DOCX pipelines with quality gates, humanization, and TpT distribution
 metadata:
   type: project
 ---
@@ -9,20 +9,41 @@ metadata:
 
 ## Status now
 
-_Auto-generated from the project's ACTIVITY trail (L3 resume-point rollout, 2026-06-11, hyperagent). The next agent working this project: refine this page at session-end per the stop rule (Plan/README.md)._
+**2026-06-13 — MacH:** Claude skill at `~/.claude/skills/pyp-planner/SKILL.md` overhauled with two-path workflow:
+- **Path A (Primary): HTML → PDF** — works in cloud/Claude. Full pipeline: Pre-Flight R1 (web search) + R2 (NotebookLM teaching resources) → interview choices → image generation (FAL via Hermes gateway) → contract check (18 criteria) → 3-pass humanization → stop-slop audit (≥35/50) → formatting QA → deliver.
+- **Path B (Secondary): DOCX → Pages** — Apple Mac only, flagged as unreliable in cloud.
 
-- 2026-06-11 **kimi** (session-end): (auto-closed by janitor: open since 2026-06-04T12:12:18Z, no session-end >48h)
-- 2026-06-04 **kimi** (milestone): Updated pyp_planner.py: proper CLI with argparse, auto-detects pipe/tab tables, PYP structure heuristics (sections/engagements/weeks/options), removes AI artifacts. Applied to Grade 5 Human Migration unit.
-- 2026-06-04 **kimi** (session-start): Starting: Returned from pause. User asked to clean up DOCX formatting and update PYP planner code.
+First complete unit produced: "From Farm to Table" (Grade 3, How the World Works). In `pyp_planner_generator_phase_a/units/grade-3-farm-to-table/`. 18/18 contract check passed, humanized, 7 images embedded, A4 print-ready.
 
-## Next steps
-
-- (to be set by the owning agent at next session-end — derive from Status above)
+Key additions to skill:
+- Pre-Flight Research: mandatory web search + NotebookLM query before any planner content
+- NotebookLM integration: `~/.claude/skills/notebooklm/` for teaching templates, prompts, workflows
+- Quality gates table: contract check, humanizer, stop-slop, formatting, author-name check
+- Author name removal: no personal names in footers (TpT store name in listing only)
+- Research-only mode: user can ask to research a topic for a future planner
 
 ## Where things live
 
-- Trail: ACTIVITY.md (project: pyp-planner-gen) · full-text: project-graphs/wiki/search.html · graph: project-graphs/wiki/graph.html
+| Resource | Path |
+|----------|------|
+| **Claude skill** | `~/.claude/skills/pyp-planner/SKILL.md` (247 lines) |
+| **Skill reference** | `~/.claude/skills/pyp-planner/REFERENCE.md` (IB descriptors, Pages rules) |
+| **Contract check script** | `/Volumes/M2 Media/Coding Dwayne/IB planner/pyp_planner_generator_phase_a/check` |
+| **Image generator** | `/Volumes/M2 Media/Coding Dwayne/IB planner/pyp_planner_generator_phase_a/scripts/image_gen.py` |
+| **DOCX converter** | `/Volumes/M2 Media/Coding Dwayne/Claude/pyp-planner-gen/pyp_planner.py` |
+| **NotebookLM skill** | `~/.claude/skills/notebooklm/` |
+| **Hermes HTML skill** | `~/.hermes/skills/productivity/pyp-planner/SKILL.md` |
+| **First unit output** | `/Volumes/M2 Media/Coding Dwayne/IB planner/pyp_planner_generator_phase_a/units/grade-3-farm-to-table/From_Farm_to_Table_Complete_Planner.html` |
+
+## Key decisions
+
+- HTML path is primary because DOCX → Pages chain doesn't work in cloud/Claude
+- Image generation uses Hermes `image_generate` (FAL via gateway) — no local API key needed
+- Author names stripped from all planner outputs — TpT store name goes in listing metadata only
+- Pre-Flight research (web + NotebookLM) is mandatory before every new planner
 
 ## Open tasks
 
-- (none on the board yet)
+- Run NotebookLM auth setup (`notebooklm login`) for next planner session
+- Consider initializing git repo for `~/.claude/skills/` to track skill versions
+- Next planner: use full Pre-Flight pipeline with real web search + NotebookLM queries
