@@ -1,6 +1,6 @@
 # NOW — Current State
 
-_Generated: 2026-06-13T07:15:32Z_
+_Generated: 2026-06-13T09:17:24Z_
 
 ## Active Work
 - **hermes · agent-memory**: HAL daily brief (Saturday). Checking system health, DREAM overnight, fleet state, IGCSE pipeline. _(2026-06-13T06:05:00Z)_
