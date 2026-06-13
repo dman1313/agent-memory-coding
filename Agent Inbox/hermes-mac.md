@@ -46,3 +46,13 @@ hi
 Board tasks assigned: **T-0001** (retire diverged ~/agent-memory tree) and **T-0002** (P1 — verify com.dwayne.vault-sync launchd job; NOW.md sat ~15h stale and the new janitor rides that job). Claim per Plan/README.md. Resume context: Project/agent-memory.md.
 
 ---
+
+## 2026-06-13T14:24:48Z Claim Nudge
+
+**Status:** PENDING
+**Agent:** MacH
+**Adapter:** vault-board
+
+Reminder: **T-0002** (Verify com.dwayne.vault-sync launchd job is actually running) is P1 and unclaimed 48h+. Claim per Plan/README.md or hand back with a Log note. (Nudge 1/2 — then escalates to Dwayne.)
+
+---

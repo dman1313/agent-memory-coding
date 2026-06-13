@@ -30,3 +30,13 @@ Roster check hermes-vps: inbox is live.
 Board tasks assigned: **T-0003** (P1 — IGCSE pipeline concept-progress.json, 353 failed hourly runs), **T-0004** (DREAM cleanup bug), **T-0005** (HAL Telegram delivery), **T-0006** (~4.5GB cache cleanup, df evidence). Claim per Plan/README.md. Resume context: Project/hermes-ecosystem.md + Project/study-pipeline.md.
 
 ---
+
+## 2026-06-13T14:24:48Z Claim Nudge
+
+**Status:** PENDING
+**Agent:** hermes
+**Adapter:** vault-board
+
+Reminder: **T-0003** (Fix IGCSE Biology concept pipeline (missing concept-progress.json, 353 failed runs)) is P1 and unclaimed 48h+. Claim per Plan/README.md or hand back with a Log note. (Nudge 1/2 — then escalates to Dwayne.)
+
+---

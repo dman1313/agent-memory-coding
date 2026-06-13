@@ -15,4 +15,5 @@ handoff_to: MacH
 NOW.md sat ~15h stale on 2026-06-11 despite sync.sh + the 900s launchd job installed per ADR 0002 (which had already once been found missing). The janitor (auto-close, channel archive, board render) rides this job — it only works if the job runs. Done looks like: `launchctl list | grep vault-sync` shows the job loaded, a sync cycle observed end-to-end (pull → build-context.sh → push), findings logged. If dead: reinstall the plist and log root cause.
 
 ## Log
+- 2026-06-13 hyperagent — claim-nudge sent 2026-06-13 to MacH (#1/2, P1 unclaimed >48h).
 - 2026-06-11 hyperagent — seeded; staleness observed via GitHub API (last auto-sync push 2026-06-10 22:04Z).

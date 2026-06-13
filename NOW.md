@@ -1,6 +1,6 @@
 # NOW — Current State
 
-_Generated: 2026-06-13T13:23:52Z_
+_Generated: 2026-06-13T14:23:28Z_
 
 ## Active Work
 _(none)_
@@ -20,7 +20,7 @@ _(none)_
 _Unpaired sessions get auto-closed and named here — log your session-end. [L2, vault-fitness]_
 - **MacH**: 4 start(s) / 1 end(s)
 - **claude-code**: 5 start(s) / 4 end(s) · 1 auto-closed by janitor
-- **hermes**: 5 start(s) / 2 end(s) · 1 auto-closed by janitor
+- **hermes**: 4 start(s) / 2 end(s) · 1 auto-closed by janitor
 
 ## Pending Inboxes
 - **claude**: Roster check claude: inbox is live.
