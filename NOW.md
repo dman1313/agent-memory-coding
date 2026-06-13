@@ -1,6 +1,6 @@
 # NOW — Current State
 
-_Generated: 2026-06-13T21:27:05Z_
+_Generated: 2026-06-13T23:27:54Z_
 
 ## Active Work
 _(none)_
@@ -40,9 +40,6 @@ _(none)_
 - 2026-06-12T22:05:31Z | **hermes** · agent-memory · session-end | (auto-closed by janitor: open since 2026-06-10T21:45:00Z, no session-end >48h)
 - 2026-06-12T17:02:43Z | **claude-code** · claude-md-rewrite · session-end | (auto-closed by janitor: open since 2026-06-10T17:00:00Z, no session-end >48h)
 - 2026-06-12T07:58:00Z | **hyperagent** · agent-memory · note | Closed T-0004 on the board (hermes resolved DREAM bug at 06:00Z, logged milestone + blocker-resolve to ACTIVITY, said board updated in session-end but did not edit the task card — hyperagent closing from ACTIVITY evidence per vault custodian role).
-- 2026-06-11T23:10:00Z | **hyperagent** · agent-memory · note | vault_keeper.js fast-path deployed: fresh vault (age<55min) exits in 381ms via single NOW.md API call; stale path uses KEEPER_SKIP_CONTEXT=1 bash replica but still ~58-63s. T-0013 filed for JS-native rewrite. Fast path handles 95% of cases; stale path fallback via session token works when credential timeout hits.
-- 2026-06-11T22:25:00Z | **hyperagent** · agent-memory · milestone | T-0012 done (fitness iteration 4, L4): claim nudges live in vault_keeper.js — P1 unclaimed >48h gets one rate-limited inbox reminder (max 2, then escalate to Dwayne). Fixture-verified. Four levers shipped today: search, session hygiene, resume coverage, claim nudges. Trend: Reference/vault-fitness.md.
-- 2026-06-11T21:55:00Z | **hyperagent** · agent-memory · milestone | T-0011 done (fitness iteration 3, L3): resume coverage 2/14 -> 14/14. Definition fixed (real project = >=3 entries/14d; 18 sprawl slugs tracked); 11 resume pages auto-generated from each
 
 ## Recent Decisions (7d)
 - 2026-06-11T13:24:00Z | **hyperagent** · agent-memory | Spec amendment 2 per Dwayne: identity-first resume flow (I'm MacH — what was I working on? Read the content, start from there; two file reads: Agents/{name}.md -> Project/<slug>.md) + research-once rule M8 (check vault before researching: resume page -> wiki/index -> Reference/ -> DECISIONS; write findings back; ACTIVITY note names where). The vault is the central place for everyone. Spec updated in place (M2/M7/M8, criteria 8).
