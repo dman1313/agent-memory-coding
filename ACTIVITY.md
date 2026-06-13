@@ -1,3 +1,5 @@
+2026-06-13T22:40:11Z | hermes | session-start | agent-memory | Dwayne reoriented: primary focus = stocks/trading/making money + newsletters + comms. Cleaned 25GB of non-essential projects from VPS. Now serving as special assistant + shared mind monitor.
+
 2026-06-13T14:20:00Z | MacH | milestone | pyp-planner-gen | Claude skill overhauled: HTML path set as primary (DOCX broken in cloud), added Pre-Flight R1 (web search research) + R2 (NotebookLM teaching resources via ~/.claude/skills/notebooklm/), 3-pass humanization with stop-slop ≥35/50, formatting QA checklist, author-name removal. HTML planner (From_Farm_to_Table_Complete_Planner.html) fixed: full-width A4 layout, 7 images embedded, 18/18 contract check passed, humanized. Author names stripped. Skill now 247 lines, ready for next planner generation.
 
 2026-06-12T16:00:00Z | hermes | milestone | classroom-mirror | Dwayne confirmed 5/5 HUMAN checks pass. 19/19 (14 AUTO + 5 HUMAN) ✅ ALL PASS. Project build complete. Remaining gate: DPIA + parental consent + school sign-off + CNIL for real-classroom deployment.
