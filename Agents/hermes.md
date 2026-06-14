@@ -3,7 +3,7 @@ name: agent-hermes
 description: Hermes Agent — VPS-based, Nous Research, agent fleet orchestrator
 metadata:
   type: agents
-  updated: 2026-06-12
+  updated: 2026-06-14
 ---
 
 # Hermes
