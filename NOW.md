@@ -1,6 +1,6 @@
 # NOW — Current State
 
-_Generated: 2026-06-14T17:41:18Z_
+_Generated: 2026-06-14T19:44:30Z_
 
 ## Active Work
 _(none)_
@@ -19,7 +19,7 @@ _(none)_
 ## Session Hygiene (7d)
 _Unpaired sessions get auto-closed and named here — log your session-end. [L2, vault-fitness]_
 - **MacH**: 4 start(s) / 1 end(s)
-- **claude-code**: 5 start(s) / 4 end(s) · 1 auto-closed by janitor
+- **claude-code**: 5 start(s) / 3 end(s) · 1 auto-closed by janitor
 - **hermes**: 3 start(s) / 2 end(s) · 1 auto-closed by janitor
 
 ## Pending Inboxes
