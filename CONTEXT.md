@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-06-14T16:40:04Z_
+_Generated: 2026-06-14T17:41:18Z_
 
 ## Active Work
 _(none)_
@@ -44,7 +44,6 @@ _(none)_
 - 2026-06-13T08:05:00Z | **hermes** · agent-memory · session-end | HAL daily brief Jun 13 completed. GREEN health, all services up. IGCSE pipeline (T-0003) still failing 353+ runs. All agents IDLE. api_server retry + scrapling MCP still spamming logs.
 - 2026-06-13T06:05:00Z | **hermes** · agent-memory · session-start | HAL daily brief (Saturday). Checking system health, DREAM overnight, fleet state, IGCSE pipeline.
 - 2026-06-12T22:05:31Z | **hermes** · agent-memory · session-end | (auto-closed by janitor: open since 2026-06-10T21:45:00Z, no session-end >48h)
-- 2026-06-12T17:02:43Z | **claude-code** · claude-md-rewrite · session-end | (auto-closed by janitor: open since 2026-06-10T17:00:00Z, no session-end >48h)
 
 ## Recent Decisions (7d)
 - 2026-06-11T13:24:00Z | **hyperagent** · agent-memory | Spec amendment 2 per Dwayne: identity-first resume flow (I'm MacH — what was I working on? Read the content, start from there; two file reads: Agents/{name}.md -> Project/<slug>.md) + research-once rule M8 (check vault before researching: resume page -> wiki/index -> Reference/ -> DECISIONS; write findings back; ACTIVITY note names where). The vault is the central place for everyone. Spec updated in place (M2/M7/M8, criteria 8).
