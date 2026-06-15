@@ -1,4 +1,6 @@
-2026-06-14T06:10:00Z | hermes | session-end | agent-memory | HAL daily brief Jun 14 delivered. System YELLOW (swap 94%). DREAM surfaced critical: Dwayne wants to dump Hermes — PYP Planner session hit 15+ tool failures, especially write_file serialization bug (3x consecutive corruption). IGCSE pipeline T-0003 still failing 353+ runs. 7 todo tasks, all agents IDLE, 3 stale handoffs from June 11 hyperagent dispatch unclaimed. api_server+scrapling still flooding logs (370/day). Wolf scanner cold — no trading activity since Tuesday. Priority items unchanged from Friday: T-0003 (IGCSE), T-0002 (launchd), write_file bug investigation.
+2026-06-15T06:10:00Z | hermes | session-end | agent-memory | HAL daily brief Jun 15 delivered. GREEN health — all services up, disk 56%, mem 64%. Wolf scan degraded (Twitter auth down on all 10 accounts, GNews returning 0 results — zero actionable signals). IGCSE T-0003 still failing 353+ runs. DREAM failed 2 of last 3 nights (stale at 124K tokens each). API_SERVER_KEY retry loop still ~288 errors/day. NOW.md stale blocker cleared. 0 tasks in motion, 7 todo. Second Brain Sync failing (script not found). Primary action: fix Wolf Twitter + GNews before market open Monday.
+
+2026-06-15T06:05:00Z | hermes | session-start | agent-memory | HAL daily brief (Monday). System health, DREAM overnight, Wolf scan, fleet state, IGCSE pipeline.
 
 2026-06-14T06:05:00Z | hermes | session-start | agent-memory | HAL daily brief (Sunday). System health check, DREAM overnight review, fleet state, IGCSE pipeline status.
 
