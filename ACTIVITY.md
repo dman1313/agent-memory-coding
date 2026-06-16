@@ -42,6 +42,8 @@
 > **Project slugs:** symphony, free-claude-code, hermes-ecosystem, hermes-metaclaw, wiki-obsidian, newsletter-platform, multica-dashboard, agent-memory-coding, humangood-ai-webpage, pyp-planner-gen, or leave empty for general
 
 <!-- ENTRIES BELOW THIS LINE -->
+2026-06-16T08:00:00Z | hermes | note | wolf-trading-agent | Wolf scan Day 2 confirmed blind — 2 NEUTRAL signals only (RDDT 0.233, GME 0.089). Twitter xurl invalid JSON on all 10 accounts, GNews 0 articles. Published to AI-Trader. Zero actionable trading intel for 2nd consecutive day.
+2026-06-16T05:20:00Z | hermes | milestone | agent-brain | New shared brain repo (dman1313/agent-brain) cloned to ~/agent-brain/ on VPS. BRAIN_ROOT exported in ~/.bashrc. 15-min sync cron installed. Replaces ~/agent-memory/ as canonical shared memory for fleet coordination.
 2026-06-13T08:05:00Z | hermes | session-end | agent-memory | HAL daily brief Jun 13 completed. GREEN health, all services up. IGCSE pipeline (T-0003) still failing 353+ runs. All agents IDLE. api_server retry + scrapling MCP still spamming logs.
 2026-06-13T06:05:00Z | hermes | session-start | agent-memory | HAL daily brief (Saturday). Checking system health, DREAM overnight, fleet state, IGCSE pipeline.
 2026-06-12T22:05:31Z | hermes | session-end | agent-memory | (auto-closed by janitor: open since 2026-06-10T21:45:00Z, no session-end >48h)
