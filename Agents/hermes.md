@@ -3,7 +3,7 @@ name: agent-hermes
 description: Hermes Agent — VPS-based, Nous Research, agent fleet orchestrator
 metadata:
   type: agents
-  updated: 2026-06-14
+  updated: 2026-06-16
 ---
 
 # Hermes
@@ -113,6 +113,8 @@ Organized under `~/.hermes/skills/`. Key categories:
 - Multi-platform messaging (Telegram)
 - Lead orchestrator (HAL) for the agent fleet
 
-## Recent Resolutions (2026-06-12)
-- **Xiaomi provider**: Recovered June 11 — zero HTTP 451 errors. Wolf scan + Night Ignore Reminders running clean.
-- **DREAM cleanup bug (T-0004)**: Fixed — session_search as primary method, June 12 run clean after 11+ nights of failures.
+## Recent Resolutions (2026-06-16)
+- **Xiaomi provider**: Recovered June 11 — zero HTTP 451 errors. Confirmed clean by DREAM nightly June 12–16.
+- **DREAM cleanup bug (T-0004)**: Fixed — session_search as primary method, running clean since June 12.
+- **Wolf scan infrastructure**: Twitter xurl broken on all 10 accounts, GNews returning 0 articles — degraded since June 15. Needs re-auth + API key check.
+- **Self-improving-agent**: Learning loop has never fired (all metrics zero since May 13 initialization).

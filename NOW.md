@@ -32,7 +32,7 @@ _Unpaired sessions get auto-closed and named here — log your session-end. [L2,
 _(none)_
 
 ## Blockers
-- **hermes · provider-routing**: DeepSeek/xiaomi provider blocked — HTTP 451 cross-border isolation errors for 24h+, cron jobs silently failing _(2026-06-05T12:01:19Z)_
+_(none — DeepSeek/xiaomi 451 resolved 2026-06-12, clean ever since per DREAM nightly audits)_
 
 ## Recent Activity (48h)
 - 2026-06-13T08:05:00Z | **hermes** · agent-memory · session-end | HAL daily brief Jun 13 completed. GREEN health, all services up. IGCSE pipeline (T-0003) still failing 353+ runs. All agents IDLE. api_server retry + scrapling MCP still spamming logs.
