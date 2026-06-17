@@ -113,8 +113,9 @@ Organized under `~/.hermes/skills/`. Key categories:
 - Multi-platform messaging (Telegram)
 - Lead orchestrator (HAL) for the agent fleet
 
-## Recent Resolutions (2026-06-16)
-- **Xiaomi provider**: Recovered June 11 — zero HTTP 451 errors. Confirmed clean by DREAM nightly June 12–16.
+## Recent Resolutions (2026-06-17)
+- **Xiaomi provider**: Recovered June 11 — zero HTTP 451 errors. Confirmed clean by DREAM nightly.
 - **DREAM cleanup bug (T-0004)**: Fixed — session_search as primary method, running clean since June 12.
-- **Wolf scan infrastructure**: Twitter xurl broken on all 10 accounts, GNews returning 0 articles — degraded since June 15. Needs re-auth + API key check.
-- **Self-improving-agent**: Learning loop has never fired (all metrics zero since May 13 initialization).
+- **Wolf scan infrastructure**: Day 3 blind. Twitter xurl broken on all 10 accounts. GNews bug FOUND AND FIXED Jun 17 — parameter was `token` not `apikey` (silent failure since integration). Quota exhausted today, should work tomorrow. Reddit DuckDuckGo backend broken since May.
+- **Self-improving-agent**: Learning loop has never fired (all metrics zero since May 13 — 5+ weeks).
+- **Dwayne interactions**: Zero user sessions June 16–17 (48-hour quiet window per DREAM).
