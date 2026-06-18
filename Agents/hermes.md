@@ -3,7 +3,7 @@ name: agent-hermes
 description: Hermes Agent — VPS-based, Nous Research, agent fleet orchestrator
 metadata:
   type: agents
-  updated: 2026-06-16
+  updated: 2026-06-18
 ---
 
 # Hermes
@@ -113,9 +113,9 @@ Organized under `~/.hermes/skills/`. Key categories:
 - Multi-platform messaging (Telegram)
 - Lead orchestrator (HAL) for the agent fleet
 
-## Recent Resolutions (2026-06-17)
-- **Xiaomi provider**: Recovered June 11 — zero HTTP 451 errors. Confirmed clean by DREAM nightly.
-- **DREAM cleanup bug (T-0004)**: Fixed — session_search as primary method, running clean since June 12.
-- **Wolf scan infrastructure**: Day 3 blind. Twitter xurl broken on all 10 accounts. GNews bug FOUND AND FIXED Jun 17 — parameter was `token` not `apikey` (silent failure since integration). Quota exhausted today, should work tomorrow. Reddit DuckDuckGo backend broken since May.
+## Recent Resolutions (2026-06-18)
+- **Wolf scan**: Day 4 blind. GNews fix applied Jun 17 but still 0 results this morning (quota may not have reset, or fix incomplete). Twitter xurl still dead on all 10 accounts. Reddit DuckDuckGo returns empty content. One false-positive signal (RDDT extracted from Reddit URLs, not real discussion). Zero actionable trading signals this week.
+- **Dwayne interactions**: Zero user sessions June 16–18 (96-hour quiet window — fourth consecutive zero day per DREAM).
 - **Self-improving-agent**: Learning loop has never fired (all metrics zero since May 13 — 5+ weeks).
-- **Dwayne interactions**: Zero user sessions June 16–17 (48-hour quiet window per DREAM).
+- **IGCSE pipeline**: 523 failures as of this morning. concept-progress.json still missing.
+- **Chronic errors**: API_SERVER_KEY ~290/day + scrapling ~100/day — unchanged week 4. Two one-line fixes would delete 87% of error log. Flagged 13+ consecutive DREAM nights.
