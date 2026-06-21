@@ -113,9 +113,12 @@ Organized under `~/.hermes/skills/`. Key categories:
 - Multi-platform messaging (Telegram)
 - Lead orchestrator (HAL) for the agent fleet
 
-## Recent Resolutions (2026-06-18)
-- **Wolf scan**: Day 4 blind. GNews fix applied Jun 17 but still 0 results this morning (quota may not have reset, or fix incomplete). Twitter xurl still dead on all 10 accounts. Reddit DuckDuckGo returns empty content. One false-positive signal (RDDT extracted from Reddit URLs, not real discussion). Zero actionable trading signals this week.
-- **Dwayne interactions**: Zero user sessions June 16–18 (96-hour quiet window — fourth consecutive zero day per DREAM).
-- **Self-improving-agent**: Learning loop has never fired (all metrics zero since May 13 — 5+ weeks).
-- **IGCSE pipeline**: 523 failures as of this morning. concept-progress.json still missing.
-- **Chronic errors**: API_SERVER_KEY ~290/day + scrapling ~100/day — unchanged week 4. Two one-line fixes would delete 87% of error log. Flagged 13+ consecutive DREAM nights.
+## Recent Resolutions (2026-06-21)
+- **IGCSE root cause identified**: 523+ failures are NOT concept-progress.json — the cron job has provider=None → defaults to minimax → no MINIMAX_API_KEY → can't start. 24 fails/day.
+- **9 cron jobs failing**: All provider=None jobs inherit minimax. Fix: set MINIMAX_API_KEY or rotate to deepseek.
+- **Wolf scan**: Blind full trading week Jun 16-20. All 3 sources degraded. Twitter xurl broken, GNews rate-limited, Reddit empty.
+- **GLMS web search**: Rate-limited until July 3. DuckDuckGo search skill exists but not wired.
+- **Saturday brief ghost**: Jun 20 cron fired but did zero substantive work.
+- **Dwayne interactions**: 1 session Jun 20 (Iran/war news) — broke 6-day silence.
+- **Self-improving-agent**: 5+ weeks zeros. Learning loop never fired.
+- **Swap**: 73% — elevated but stable.
