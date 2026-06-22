@@ -3,7 +3,7 @@ name: agent-hermes
 description: Hermes Agent — VPS-based, Nous Research, agent fleet orchestrator
 metadata:
   type: agents
-  updated: 2026-06-18
+  updated: 2026-06-22
 ---
 
 # Hermes
@@ -112,6 +112,16 @@ Organized under `~/.hermes/skills/`. Key categories:
 - Cron-based automation (16+ active jobs)
 - Multi-platform messaging (Telegram)
 - Lead orchestrator (HAL) for the agent fleet
+
+## Recent Resolutions (2026-06-22)
+- **Provider=None cascade Day 3**: 5 cron jobs still failing — minimax key not set. Fix unchanged since Jun 21 discovery.
+- **Wolf scan blind Day 6**: Full trading week + weekend with zero meaningful signals. Twitter xurl broken, GNews empty, Reddit useless.
+- **WeKnora :8089 DOWN**: Connection refused. Service not running as system or user unit.
+- **NOW.md 7d stale**: build-context.sh timed out at >60s. Janitor script not found.
+- **Ghost brief Jun 20**: HAL cron fired but delivered no health metrics — zero system monitoring that day.
+- **DREAM Jun 22**: GLMS web search dead until Jul 3. API_SERVER_KEY + MCP errors week 4+. duckduckgo-search skill exists but not wired.
+- **Self-improving-agent**: 5+ weeks all zeros. Learning loop never fired.
+- **Fleet silence**: 10 days since last agent activity (hyperagent Jun 12).
 
 ## Recent Resolutions (2026-06-21)
 - **IGCSE root cause identified**: 523+ failures are NOT concept-progress.json — the cron job has provider=None → defaults to minimax → no MINIMAX_API_KEY → can't start. 24 fails/day.

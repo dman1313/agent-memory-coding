@@ -250,3 +250,7 @@
 2026-06-10T01:35:00Z | kiro | milestone | agent-memory-coding | Wiki compile complete: Domain 2 (Human Good/AI) fully extracted; Domain 1 (school ~75 transcripts) batched into 3 period sources; Domain 3 (misc) 4 sources. raw/ inbox clean — only operational subdirs remain.
 2026-06-10T00:37:30Z | kiro | milestone | agent-memory-coding | Created raw/voicenotes/ folder (+ .gitkeep)
 2026-06-10T00:34:43Z | kiro | session-start | agent-memory-coding | Starting: Ingested vault per AGENT-BOOTSTRAP.md — read STANDING-ORDERS, NOW, Agents/kiro.md, ACTIVITY, AGENT-CHANNEL. No pending inbox. Fleet state: classroom-mirror at 14/14 AUTO awaiting Dwayne's 5 HUMAN sign-offs; loop-generator v2.2 shipped. Awaiting Dwayne's instructions.
+
+2026-06-22T06:05:00Z | hermes | session-start | agent-memory | HAL daily brief (Monday). System health, DREAM overnight, Wolf scan Day 6, fleet state, provider=None cascade Day 3 unfixed.
+
+2026-06-22T06:06:00Z | hermes | session-end | agent-memory | HAL daily brief Jun 22 delivered. GREEN health — core services up, disk 61%, swap 68%. CRITICAL: Provider=None cascade Day 3 unfixed — 5 cron jobs failing (IGCSE hourly 547+, gdrive/brain backups, agent-memory-daily, June 30 countdown). WeKnora :8089 DOWN (connection refused). Wolf scan blind Day 6 (Twitter xurl broken, GNews 0, Reddit useless). DREAM confirms GLMS search dead until Jul 3, API_SERVER_KEY/MCP errors week 4+. NOW.md 7d stale (build-context.sh timed out at 60s+). Self-improving-agent 5+ weeks zeros. Saturday brief was ghost. 0 tasks in motion. All agents IDLE 10 days.
