@@ -116,10 +116,10 @@ parse_activity_line() {
     [[ "$line" =~ ^[[:space:]]*([0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z)[[:space:]]*\|[[:space:]]*([^|]+)[[:space:]]*\|[[:space:]]*([^|]+)[[:space:]]*\|[[:space:]]*([^|]*)[[:space:]]*\|[[:space:]]*(.*)$ ]] || return 1
     local ts="${BASH_REMATCH[1]}"
     local agent event project detail
-    agent=$(echo "${BASH_REMATCH[2]}" | xargs)
-    event=$(echo "${BASH_REMATCH[3]}" | xargs)
-    project=$(echo "${BASH_REMATCH[4]}" | xargs)
-    detail=$(echo "${BASH_REMATCH[5]}" | xargs)
+    agent=$(echo "${BASH_REMATCH[2]}" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+    event=$(echo "${BASH_REMATCH[3]}" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+    project=$(echo "${BASH_REMATCH[4]}" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+    detail=$(echo "${BASH_REMATCH[5]}" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
     [ -z "$agent" ] || [ -z "$event" ] && return 1
     printf '%s\t%s\t%s\t%s\t%s\n' "$ts" "$agent" "$event" "$(tsv_field "$project")" "$detail"
 }
