@@ -3,7 +3,7 @@ name: agent-hermes
 description: Hermes Agent — VPS-based, Nous Research, agent fleet orchestrator
 metadata:
   type: agents
-  updated: 2026-06-22
+  updated: 2026-06-27
 ---
 
 # Hermes
@@ -112,6 +112,16 @@ Organized under `~/.hermes/skills/`. Key categories:
 - Cron-based automation (16+ active jobs)
 - Multi-platform messaging (Telegram)
 - Lead orchestrator (HAL) for the agent fleet
+
+## Recent Resolutions (2026-06-27)
+- **Provider=None cascade RESOLVED**: MINIMAX_API_KEY set by Dwayne Jun 26. 3 remaining provider=None jobs (IGCSE, CFTC COT, DRAM) can now use default provider (minimax) with working key. IGCSE pipeline revived with bootstrapped concept-progress.json.
+- **Swap 99.98% full**: 1.9/1.9G — was 84% yesterday. k3s biggest resident (388MB). No zombie processes (MCP cleanup held). Trend: 73% → 84% → 99.98% over 7 days. OOM killer risk if swap exhausts.
+- **WeKnora :8089 DOWN Day 6+**: Connection refused. No one has touched it since Jun 22.
+- **NOW.md regenerated**: build-context.sh working again after xargs quoting fix. First regeneration in 12 days.
+- **Ghost briefs Jun 22-25**: Briefs produced real content but vault commits silently failed. Gap logged and closed Jun 26.
+- **Fleet silence**: 15 days since last non-HAL agent activity (hyperagent Jun 12). MacH/claude-code/cursor/kimi all auto-closed by janitor.
+- **Zombie MCP processes resolved**: 20 processes (1.4GB RAM) from broken context7/firecrawl configs killed Jun 26. Servers disabled.
+- **DREAM**: MEMORY.md 2,986 bytes (healthy). GLMS exhausted until Jul 3. No new skill proposals.
 
 ## Recent Resolutions (2026-06-22)
 - **Provider=None cascade Day 3**: 5 cron jobs still failing — minimax key not set. Fix unchanged since Jun 21 discovery.

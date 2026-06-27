@@ -1,6 +1,6 @@
 # NOW — Current State
 
-_Generated: 2026-06-15T07:48:24Z_
+_Generated: 2026-06-27T06:01:38Z_
 
 ## Active Work
 _(none)_
@@ -18,55 +18,44 @@ _(none)_
 
 ## Session Hygiene (7d)
 _Unpaired sessions get auto-closed and named here — log your session-end. [L2, vault-fitness]_
-- **MacH**: 4 start(s) / 1 end(s)
-- **claude-code**: 5 start(s) / 3 end(s) · 1 auto-closed by janitor
-- **hermes**: 3 start(s) / 2 end(s) · 1 auto-closed by janitor
+- **hermes**: 4 start(s) / 3 end(s)
 
 ## Pending Inboxes
-- **claude**: Roster check claude: inbox is live.
+- **claude**: Roster check claude: inbox is live. ⚠ pending >7d
 - **codex**: Roster check codex: inbox is live. ⚠ pending >7d
-- **hermes-mac**: Roster check: please acknowledge that hermes-mac inbox is live.
-- **hermes-vps**: Roster check hermes-vps: inbox is live.
+- **hermes-mac**: Roster check: please acknowledge that hermes-mac inbox is live. ⚠ pending >7d
+- **hermes-vps**: Roster check hermes-vps: inbox is live. ⚠ pending >7d
 
 ## Dashboard Messages (48h)
 _(none)_
 
 ## Blockers
-_(none — DeepSeek/xiaomi 451 resolved 2026-06-12, clean ever since per DREAM nightly audits)_
+- **hermes · igcse-pipeline**: IGCSE concept-progress.json missing from workdir, pipeline couldn't start. Created bootstrap with 10 IGCSE Biology concepts (Cell Structure → Gas Exchange). Pipeline revived after 523+ consecutive failures. _(2026-06-26T17:40:00Z)_
+- **hermes · hermes-dashboard**: Dashboard :9999 DOWN — was UP yesterday, new failure. _(2026-06-08T14:05:00Z)_
 
 ## Recent Activity (48h)
-- 2026-06-13T08:05:00Z | **hermes** · agent-memory · session-end | HAL daily brief Jun 13 completed. GREEN health, all services up. IGCSE pipeline (T-0003) still failing 353+ runs. All agents IDLE. api_server retry + scrapling MCP still spamming logs.
+- 2026-06-26T18:00:00Z | **hermes** · agent-memory · session-end | Daily memory vault update complete. Prepended 16 entries covering Jun 21-26 work including major triage-fix session. NOW.md 11d stale (build-context.sh times out). Triage session resolved zombie MCP processes, fixed 5 cron jobs, rebuilt IGCSE concept-progress.json. MINIMAX_API_KEY received — provider=None cascade fixable.
+- 2026-06-26T17:45:00Z | **hermes** · triage-fix · milestone | Full system triage per Dwayne's voice command: found 20 zombie MCP processes eating 1.4GB RAM (broken YAML args in context7/firecrawl configs), killed all zombies, recovered 1.4GB RAM. Disabled broken MCP servers. Pinned 5 provider=None cron jobs to deepseek-chat. IGCSE concept-progress.json rebuilt.
+- 2026-06-26T17:43:00Z | **hermes** · provider-routing · blocker-resolve | Dwayne provided MINIMAX_API_KEY — minimax provider now configured. Longest-standing cron failure path (provider=None → minimax → no key) resolved. 5 cron jobs unpinned from deepseek-chat can optionally use minimax again.
+- 2026-06-26T17:40:00Z | **hermes** · igcse-pipeline · blocker | IGCSE concept-progress.json missing from workdir, pipeline couldn't start. Created bootstrap with 10 IGCSE Biology concepts (Cell Structure → Gas Exchange). Pipeline revived after 523+ consecutive failures.
+- 2026-06-26T14:02:00Z | **hermes** · agent-memory · session-start | HAL Daily Brief (Friday): system YELLOW — core services up, disk 61%, swap 84%. Vault logging broken 4 days (Jun 22-25 ghost commits, build-context.sh xargs quoting, NOW.md 11d stale). Wolf low-conviction Friday (all 15 NEUTRAL). Provider=None cascade Day 8 unfixed.
+- 2026-06-26T10:39:33Z | **MacH** · fleet-sync · session-end | (auto-closed by janitor: open since 2026-06-10T19:35:06Z, no session-end >48h)
+- 2026-06-26T10:39:33Z | **claude-code** · claude-md-rewrite · session-end | (auto-closed by janitor: open since 2026-06-10T17:00:00Z, no session-end >48h)
+- 2026-06-26T08:04:00Z | **hermes** · wolf-trading-agent · session-start | Wolf Friday scan: 35 Reddit posts, 62 news articles, 15 signals all NEUTRAL. Top ASTS 0.202, Unity 0.200. Published 3 to AI-Trader (AMC bearish, INTC bullish, BB neutral). Twitter offline (CreditsDepleted). Reddit + GNews flowing.
+- 2026-06-26T06:00:00Z | **hermes** · agent-memory · session-start | Agent memory vault daily update — maintained ACTIVITY.md, attempted build-context.sh (times out), committed and pushed. 7 entries prepended covering Jun 22-25 ghost gap. build-context.sh xargs quoting bug fixed (sed trim).
+- 2026-06-25T06:05:00Z | **hermes** · agent-memory · note | Jun 25 HAL brief ran — NOT ghost (full health metrics), but vault commit failed silently. 5th day without git push. build-context.sh broken.
 
 ## Recent Decisions (7d)
-- 2026-06-11T13:24:00Z | **hyperagent** · agent-memory | Spec amendment 2 per Dwayne: identity-first resume flow (I'm MacH — what was I working on? Read the content, start from there; two file reads: Agents/{name}.md -> Project/<slug>.md) + research-once rule M8 (check vault before researching: resume page -> wiki/index -> Reference/ -> DECISIONS; write findings back; ACTIVITY note names where). The vault is the central place for everyone. Spec updated in place (M2/M7/M8, criteria 8).
-- 2026-06-11T13:06:00Z | **hyperagent** · agent-memory | Spec approved by Dwayne w/ amendment: this vault is dual-purpose — fleet coordination layer AND Dwaynes second brain. Fleet collects information for/with Dwayne here, and always writes state back keyed by project name: every active project keeps a resume point at Project/<slug>.md (Status now / Next steps / Where things live / Open tasks), updated when an agent stops, read first when an agent resumes. Corrects nuance of my 2026-06-11 audit note re: vault-purpose.md — it wasnt wrong, it was half the story.
-- 2026-06-10T22:55:00Z | **hermes** · dream | Giving DREAM one more night with the session_search fix. If
-- 2026-06-10T21:50:00Z | **hermes** · agent-memory | Added Shared Wiki Vault protocol (section 22b) to SOUL.md — vault is now mandatory at every session start/end. No more ghost sessions.
-- 2026-06-10T18:25:00Z | **MacH** · agent-memory | Confirmed the iCloud vault path is the source of truth for the fleet (launchd sync, all other Mac agents, Hermes pull target). The local ~/agent-memory/ working tree is a stale personal copy that diverged ~24h ago. Will write to iCloud going forward and flag the divergence to Dwayne.
-- 2026-06-10T05:34:27Z | **claude-code** · wiki-obsidian | Adopted 4 research recommendations (ADR 0002): multi-agent write contract, schema-alignment at ingest, pre-write self-lint, page lifecycle states. Hybrid search deferred to ~300 pages. Installed com.dwayne.vault-sync launchd job (15 min).
-- 2026-06-09T22:05:00Z | **claude-code** · classroom-mirror | Contract signed (19 criteria): webcam classroom tool redesigned ethically — Mode 1 consented LIMS-coded child via zones, Mode 2 aggregate-only; no faces, no video stored, no emotion inference, local-only Mac. First real run of agent-ready-coding-loop v2.2
+_(none)_
 
 ## Recent Milestones (7d)
-- 2026-06-11T22:25:00Z | **hyperagent** · agent-memory | T-0012 done (fitness iteration 4, L4): claim nudges live in vault_keeper.js — P1 unclaimed >48h gets one rate-limited inbox reminder (max 2, then escalate to Dwayne). Fixture-verified. Four levers shipped today: search, session hygiene, resume coverage, claim nudges. Trend: Reference/vault-fitness.md.
-- 2026-06-11T21:55:00Z | **hyperagent** · agent-memory | T-0011 done (fitness iteration 3, L3): resume coverage 2/14 -> 14/14. Definition fixed (real project = >=3 entries/14d; 18 sprawl slugs tracked); 11 resume pages auto-generated from each
-- 2026-06-11T21:20:00Z | **hyperagent** · agent-memory | T-0010 done (fitness iteration 2, lever L2): NOW.md gains Session Hygiene (7d) naming agents with unpaired sessions / janitor auto-closes; AGENT-BOOTSTRAP rules updated. Baseline 50% pairing -> target 90%; weekly trend in Reference/vault-fitness.md. Next lever: L3. Replica-verified, all NOW sections regress clean.
-- 2026-06-11T20:46:00Z | **hyperagent** · wiki-obsidian | T-0009 done: vault search shipped — project-graphs/wiki/search.html, 100 docs indexed (wiki 71 + tasks 9 + projects 13 + decisions 7), self-contained w/ ranked excerpts, paths, type filters. Fitness-loop iteration 1 complete; next lever L2 (session-end compliance). Trend: Reference/vault-fitness.md.
-- 2026-06-11T19:16:00Z | **hyperagent** · agent-memory | Fitness baseline: 71 wiki pages, 7.7 links/page, resume coverage 4/32 (slug sprawl — L3), session ritual 22 starts/11 ends in 7d (50% — L2), board adoption 0 non-keeper claims, raw+stamps clean, NOW 51m. Full table: Reference/vault-fitness.md.
-- 2026-06-11T14:44:00Z | **hyperagent** · agent-memory | BOARD LIVE: Plan/README.md is the contract; NOW.md now shows the board. At your next session start: read your Project/<slug>.md resume page, check the board, claim before you build, write back what you learn.
-- 2026-06-11T14:36:00Z | **hyperagent** · wiki-obsidian | T-0007 done: retro-stamped 42 archived raw files (processed: true + processed_at + note) — re-digestion landmine closed; janitor stamp-missing count 42 -> 0. First task through the full board lifecycle (todo -> claimed -> doing -> done).
-- 2026-06-11T13:26:00Z | **hyperagent** · agent-memory | plan.md + tasks.md written for fleet-plan-board (12 tasks): board renderer + janitor inside build-context.sh (sandbox-verifiable), channel archiver, resume points, rules updates, 6 seeded ops tasks (2 MacH, 4 hermes). Suspicion logged: NOW.md ~15h stale despite sync.sh design — launchd vault-sync job may be down again; seeded as T-0002. Implementation next.
-- 2026-06-11T13:08:00Z | **hyperagent** · agent-memory | Fleet Plan Board spec committed (Status: Approved): Plan/ task board w/ claim protocol + single-writer rule, Project/<slug>.md resume points, NOW.md board section, janitor hygiene riding the existing 15-min sync, API-agent write path, seeded launch tasks. Spec: sdd/specs/2026-06-11-fleet-plan-board/spec.md. Next per SDD: plan.md + tasks.md.
-- 2026-06-10T19:10:00Z | **MacH** · taste-skill | Installed 6 of 13 taste-skill skills to ~/.hermes/skills/creative/taste-skill/ (default + redesign + soft + minimalist + brutalist + output). Skipped gpt-taste (dup), image-to-code (wrong workflow), imagegen-*/brandkit (we use FAL), stitch (Google only), v1 (default to v2). Noted overlap with frontend-ui-engineering (both will load; taste-skill wins on landing/portfolio tasks) and saas-landing-page-razzle-dazzle (orthogonal). Vault pointer at Guides/taste-skill-availability.md so fleet can see
-- 2026-06-10T05:27:03Z | **claude-code** · wiki-obsidian | Restored schema/+sdd/+Reference/+skills to root (accidental move into raw/); reconciled 117 dirty files; found launchd sync job MISSING; queried NotebookLM wiki-research notebook — answers saved to raw/notebooklm-wiki-research-2026-06-10.md (5 CHALLENGEs incl. flat-file mutation danger, hybrid search)
-- 2026-06-10T01:35:00Z | **kiro** · agent-memory-coding | Wiki compile complete: Domain 2 (Human Good/AI) fully extracted; Domain 1 (school ~75 transcripts) batched into 3 period sources; Domain 3 (misc) 4 sources. raw/ inbox clean — only operational subdirs remain.
+- 2026-06-26T17:45:00Z | **hermes** · triage-fix | Full system triage per Dwayne's voice command: found 20 zombie MCP processes eating 1.4GB RAM (broken YAML args in context7/firecrawl configs), killed all zombies, recovered 1.4GB RAM. Disabled broken MCP servers. Pinned 5 provider=None cron jobs to deepseek-chat. IGCSE concept-progress.json rebuilt.
 
 ## Last Seen (fleet)
-- **hermes**: 2026-06-13T08:05:00Z — session-end: HAL daily brief Jun 13 completed. GREEN health, all services up. IGCSE pipeline (T-0003) still failing 353+ runs. All agents IDLE. api_server retry + scrapling MCP still spamming logs.
-- **claude-code**: 2026-06-12T17:02:43Z — session-end: (auto-closed by janitor: open since 2026-06-10T17:00:00Z, no session-end >48h)
-- **hyperagent**: 2026-06-12T07:58:00Z — note: Closed T-0004 on the board (hermes resolved DREAM bug at 06:00Z, logged milestone + blocker-resolve to ACTIVITY, said board updated in session-end but did not edit the task card — hyperagent closing from ACTIVITY evidence per vault custodian role).
-- **kimi**: 2026-06-11T14:11:28Z — session-end: (auto-closed by janitor: open since 2026-06-04T12:12:18Z, no session-end >48h)
-- **cursor**: 2026-06-11T14:11:28Z — session-end: (auto-closed by janitor: open since 2026-06-05T20:30:00Z, no session-end >48h)
-- **MacH**: 2026-06-10T19:25:00Z — blocker-resolve: Dwayne challenged my first-pass skip list. Re-evaluated: 6 of 7 skips had weak reasons (called gpt-taste a dup, missed that imagegen-* are prompt direction for any image-gen tool, misread stitch as Stitch-only). Installed all 6 plus updated Guides/taste-skill-availability.md with a correction log. Only taste-skill-v1 stays out (correct reason). Total MacH install: 12 of 13 skills, 6,444 SKILL.md lines. Patched: ~/.hermes/skills/creative/taste-skill/* (6 new subdirs) and the vault pointer.
-- **kiro**: 2026-06-10T01:35:00Z — session-end: Done: Full wiki compile — 93 raw files → 20 entities, 13 concepts, 19 sources. Raw inbox cleared; files in processed/meetings/ (85), articles/ (3), docs/ (2). index.md + log.md updated.
-- **antigravity**: 2026-06-06T05:23:30Z — session-end: Done: Acknowledged roster checks on Dashboard, cleared pending inbox/messages, closed stale session, and rebuilt vault context.
-- **codex**: 2026-06-05T19:10:25Z — milestone: Adjusted result layout so result text and image stay side-by-side on tablet/desktop widths while stacking on mobile.
+- **hermes**: 2026-06-26T18:00:00Z — session-end: Daily memory vault update complete. Prepended 16 entries covering Jun 21-26 work including major triage-fix session. NOW.md 11d stale (build-context.sh times out). Triage session resolved zombie MCP processes, fixed 5 cron jobs, rebuilt IGCSE concept-progress.json. MINIMAX_API_KEY received — provider=None cascade fixable.
+- **MacH**: 2026-06-26T10:39:33Z — session-end: (auto-closed by janitor: open since 2026-06-10T19:35:06Z, no session-end >48h)
+- **claude-code**: 2026-06-26T10:39:33Z — session-end: (auto-closed by janitor: open since 2026-06-10T17:00:00Z, no session-end >48h)
+- **antigravity**: 2026-06-06T05:23:30Z — session-end: Done: Acknowledged roster checks, updated pending inboxes.
+- **cursor**: 2026-06-05T21:15:00Z — milestone: Created AGENT-BOOTSTRAP.md — shareable copy-paste onboarding.
+- **codex**: 2026-06-04T22:49:00Z — decision: Found repo mismatch: local humangooDAI.2 vs dman1313/goodhuman divergent.
+- **kimi**: 2026-06-04T12:35:00Z — milestone: Updated pyp_planner.py: proper CLI with argparse, auto-detects pipe/tab tables.

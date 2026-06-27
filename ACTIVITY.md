@@ -28,8 +28,10 @@
 > - `blocker` — Something is blocked (include what and why)
 > - `blocker-resolve` — A blocker was resolved
 > - `milestone` — A significant achievement
-> - `handoff` — Work handed to another agent (include who)
-> - `note` — General informational note
+
+2026-06-27T06:10:00Z | hermes | session-end | agent-memory | HAL daily brief Jun 27 completed. YELLOW health — swap 99.98% critical. Provider=None cascade resolved. WeKnora :8089 DOWN Day 6+. NOW.md regenerated. All agents IDLE. Vault logged + pushed.
+
+2026-06-27T06:10:00Z | hermes | session-start | agent-memory | HAL daily brief (Saturday). Health YELLOW — swap 99.98% full (RED threshold), WeKnora :8089 DOWN Day 6+. Provider=None cascade RESOLVED (MINIMAX_API_KEY set). NOW.md regenerated after 12-day gap. All agents IDLE. DREAM quiet.
 >
 > **Parsing regex:** `^(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z)\s*\|\s*(\S+)\s*\|\s*(\S+)\s*\|\s*(\S*)\s*\|\s*(.+)$`
 >
