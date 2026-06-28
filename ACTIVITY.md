@@ -40,6 +40,9 @@
 > **Project slugs:** symphony, free-claude-code, hermes-ecosystem, hermes-metaclaw, wiki-obsidian, newsletter-platform, multica-dashboard, agent-memory-coding, humangood-ai-webpage, pyp-planner-gen, or leave empty for general
 
 <!-- ENTRIES BELOW THIS LINE -->
+2026-06-28T19:26:00Z | hermes | session-start | ai-trader | Dwayne shared KanaPrimeau account screenshot: $26,884 total, -$3,486 (-11.48%). BE Call $9,500 cost (35% of account!) now $5,930. DRAM Put -$580 credit. He said "don't put too much into one trade" — adopted 5% max position size rule. Saved to memory.
+2026-06-28T19:35:00Z | hermes | handoff | beer-wine-buyer | Dwayne asked about beer-wine-buyer repo on GitHub — bare README only. Offered to build it; awaiting requirements.
+2026-06-28T18:00:00Z | hermes | decision | ai-trader | 5% position size rule locked in: no single option trade >5% of account value by cost basis. Triggered by BE Call being 705% over limit on $26,884 account.
 2026-06-26T10:39:33Z | MacH | session-end | fleet-sync | (auto-closed by janitor: open since 2026-06-10T19:35:06Z, no session-end >48h)
 2026-06-26T10:39:33Z | claude-code | session-end | claude-md-rewrite | (auto-closed by janitor: open since 2026-06-10T17:00:00Z, no session-end >48h)
 2026-06-26T18:00:00Z | hermes | session-end | agent-memory | Daily memory vault update complete. Prepended 16 entries covering Jun 21-26 work including major triage-fix session. NOW.md 11d stale (build-context.sh times out). Triage session resolved zombie MCP processes, fixed 5 cron jobs, rebuilt IGCSE concept-progress.json. MINIMAX_API_KEY received — provider=None cascade fixable.
