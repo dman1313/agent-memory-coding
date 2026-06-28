@@ -3,7 +3,7 @@ name: agent-hermes
 description: Hermes Agent — VPS-based, Nous Research, agent fleet orchestrator
 metadata:
   type: agents
-  updated: 2026-06-27
+  updated: 2026-06-28
 ---
 
 # Hermes
@@ -112,6 +112,15 @@ Organized under `~/.hermes/skills/`. Key categories:
 - Cron-based automation (16+ active jobs)
 - Multi-platform messaging (Telegram)
 - Lead orchestrator (HAL) for the agent fleet
+
+## Recent Resolutions (2026-06-28)
+- **Dashboard :9999 back UP**: Returns 200 after 20 days down (since Jun 8). Blocker cleared from NOW.md.
+- **Swap 99.99% Day 7**: 44Ki free. OOM killer risk still present. Gateway 2.1GB RSS, k3s 382MB. Undersized swap file (1.9G) for 7.6G system. Needs 4G swap file or k3s reduction.
+- **Jun 27 ghost brief**: HAL cron produced 1-line response — zero health monitoring, zero vault logging. Gap noted.
+- **IGCSE pipeline still failing**: DREAM confirms "revived" claim was premature. Script errors (FileNotFoundError) continue despite concept-progress.json bootstrap. 777+ total failures since Jun 15.
+- **WeKnora :8089 still DOWN Day 7+**: Connection refused. No one has touched it.
+- **Fleet silence Day 16**: No non-HAL agent activity since hyperagent Jun 12.
+- **MINIMAX_API_KEY active**: Set by Dwayne Jun 26. 3 provider=None jobs now have a working default provider. But IGCSE failures are script-level, not API-key-level.
 
 ## Recent Resolutions (2026-06-27)
 - **Provider=None cascade RESOLVED**: MINIMAX_API_KEY set by Dwayne Jun 26. 3 remaining provider=None jobs (IGCSE, CFTC COT, DRAM) can now use default provider (minimax) with working key. IGCSE pipeline revived with bootstrapped concept-progress.json.

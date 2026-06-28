@@ -31,7 +31,7 @@ _(none)_
 
 ## Blockers
 - **hermes · igcse-pipeline**: IGCSE concept-progress.json missing from workdir, pipeline couldn't start. Created bootstrap with 10 IGCSE Biology concepts (Cell Structure → Gas Exchange). Pipeline revived after 523+ consecutive failures. _(2026-06-26T17:40:00Z)_
-- **hermes · hermes-dashboard**: Dashboard :9999 DOWN — was UP yesterday, new failure. _(2026-06-08T14:05:00Z)_
+- ~~**hermes · hermes-dashboard**: Dashboard :9999 DOWN~~ **RESOLVED Jun 28** — Dashboard :9999 now returns 200. Was down since Jun 8. _(2026-06-28T06:05:00Z)_
 
 ## Recent Activity (48h)
 - 2026-06-26T18:00:00Z | **hermes** · agent-memory · session-end | Daily memory vault update complete. Prepended 16 entries covering Jun 21-26 work including major triage-fix session. NOW.md 11d stale (build-context.sh times out). Triage session resolved zombie MCP processes, fixed 5 cron jobs, rebuilt IGCSE concept-progress.json. MINIMAX_API_KEY received — provider=None cascade fixable.
