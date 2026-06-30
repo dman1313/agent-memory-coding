@@ -40,6 +40,7 @@
 > **Project slugs:** symphony, free-claude-code, hermes-ecosystem, hermes-metaclaw, wiki-obsidian, newsletter-platform, multica-dashboard, agent-memory-coding, humangood-ai-webpage, pyp-planner-gen, or leave empty for general
 
 <!-- ENTRIES BELOW THIS LINE -->
+2026-06-30T14:00:00Z | hermes | note | agent-memory | No significant activity since Jun 29 vault commit — routine DREAM + Wolf + HAL cron runs only. No user sessions, decisions, blockers, or milestones. System RED: swap 99.98% Day 10, 24 zombies, WeKnora down Day 16+.
 2026-06-29T03:00:00Z | hermes | note | fleet-health | DREAM found execute_code blocking Dwayne's Telegram session (misclassified as cron). GLMS search tools dry until Jul 3 (429 exhausted). Swap RED Day 9 — 24 zombie MCPs still consuming ~2GB. 65 total tool errors on Jun 28, mostly Telegram flood control (17) + stream stale (11).
 2026-06-28T19:26:00Z | hermes | session-start | ai-trader | Dwayne shared KanaPrimeau account screenshot: $26,884 total, -$3,486 (-11.48%). BE Call $9,500 cost (35% of account!) now $5,930. DRAM Put -$580 credit. He said "don't put too much into one trade" — adopted 5% max position size rule. Saved to memory.
 2026-06-28T19:35:00Z | hermes | handoff | beer-wine-buyer | Dwayne asked about beer-wine-buyer repo on GitHub — bare README only. Offered to build it; awaiting requirements.
