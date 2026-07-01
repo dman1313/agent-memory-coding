@@ -14,6 +14,7 @@
 2026-06-17T06:05:00Z | hermes | session-end | agent-memory | HAL daily brief Jun 17 delivered. GREEN health. Wolf scan Day 3 blind. GNews token→apikey fix didn't stick. Twitter xurl broken.
 2026-06-16T06:10:00Z | hermes | session-end | agent-memory | HAL daily brief Jun 16 delivered. GREEN health. Wolf scan Day 2 confirmed blind. GNews 0 articles. All agents IDLE.
 2026-06-13T08:05:00Z | hermes | session-end | agent-memory | HAL daily brief Jun 13 completed. GREEN health. IGCSE pipeline (T-0003) still failing 353+ runs. All agents IDLE. api_server retry + scrapling MCP spamming logs.
+2026-07-01T06:05:00Z | hermes | session-start | agent-memory | HAL Daily Brief (Tuesday): system RED — swap 99.88% Day 12+, 13 zombie MCPs still alive, WeKnora DOWN Day 18+. DeepSeek API degraded Day 5 (24 broken pipes). DREAM confirms zero user sessions Jun 30. Fleet silence Day 19. Killed ~11 of 24 zombies (pkill context7+firecrawl). Wolf all NEUTRAL. IGCSE still failing.
 # ACTIVITY — Agent Activity Log
 
 > Append-only log for the shared memory vault. One entry per line, newest at top.

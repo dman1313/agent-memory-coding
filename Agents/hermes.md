@@ -113,6 +113,18 @@ Organized under `~/.hermes/skills/`. Key categories:
 - Multi-platform messaging (Telegram)
 - Lead orchestrator (HAL) for the agent fleet
 
+## Recent Resolutions (2026-07-01)
+- **Swap Day 12+**: 1.9G/1.9G (2.4Mi free). 13 zombie MCPs still alive from Jun 26 — killed ~11 (context7+firecrawl). sudo swapoff requires approval (not available in cron).
+- **WeKnora :8089 DOWN Day 18+**: Still connection refused. No action taken.
+- **Fleet silence Day 19**: No non-HAL agent activity since hyperagent Jun 12.
+- **DeepSeek API degraded Day 5**: 24 broken pipes overnight. DREAM recommends provider rotation for critical cron jobs.
+- **IGCSE pipeline still failing**: Provider=None cascade resolved (MINIMAX_API_KEY set), but script-level errors continue.
+- **Wolf scan Jul 1**: All 16 tickers NEUTRAL. SMCI top bullish (+0.50). Published SMCI/TSLA/RDDT to AI-Trader. Twitter dead (CreditsDepleted).
+- **DREAM Jul 1**: Zero user sessions Jun 30. MEMORY.md healthy at 2,967 bytes. Recommended reducing health monitor from 6x to 4x/day.
+- **NOW.md 4 days stale** (Jun 27). build-context.sh times out.
+- **Plan board**: 0 in motion, 7 todo. No progress in 19 days.
+- **Self-improving-agent**: All zeros since May 13. Learning loop dead for 49 days.
+
 ## Recent Resolutions (2026-06-28)
 - **Dashboard :9999 back UP**: Returns 200 after 20 days down (since Jun 8). Blocker cleared from NOW.md.
 - **Swap 99.99% Day 7**: 44Ki free. OOM killer risk still present. Gateway 2.1GB RSS, k3s 382MB. Undersized swap file (1.9G) for 7.6G system. Needs 4G swap file or k3s reduction.
