@@ -113,6 +113,20 @@ Organized under `~/.hermes/skills/`. Key categories:
 - Multi-platform messaging (Telegram)
 - Lead orchestrator (HAL) for the agent fleet
 
+## Recent Resolutions (2026-07-02)
+- **Swap Day 14**: 1.9G/1.9G (672Ki free). Zero zombies — Jun 26 cleanup held. Swap never recovered despite ~500MB address space freed. sudo swapoff/fallocate needs Dwayne approval.
+- **WeKnora :8089 DOWN Day 19**: Still connection refused. No action taken.
+- **Fleet silence Day 20**: No non-HAL agent activity since hyperagent Jun 12.
+- **DeepSeek API degraded Day 6**: 26 broken pipes overnight (new high). Now affecting 11 different cron jobs. DREAM flagged this 6 nights in a row with no action. Retries working but burning tokens.
+- **IGCSE pipeline still failing**: Provider=None cascade resolved (MINIMAX_API_KEY set), but script-level FileNotFoundError persists. Bootstrap from Jun 26 didn't fix underlying path issue.
+- **Wolf scan Jul 2**: All 17 tickers NEUTRAL. SMCI top bullish (+0.50). Published SMCI/U/RDDT to AI-Trader. Twitter dead (CreditsDepleted). Reddit PRAW + GNews flowing.
+- **DREAM Jul 2**: Zero user sessions Jul 1. MEMORY.md healthy at 3,475 bytes. Two dead cron jobs flagged for disable: June 30 Countdown + IGCSE Pipeline.
+- **NOW.md 5 days stale** (Jun 27). build-context.sh times out.
+- **Plan board**: 0 in motion, 7 todo. No progress in 20 days.
+- **Self-improving-agent**: All zeros since May 13. Learning loop dead for 50 days.
+- **Two dead cron jobs**: June 30 Countdown (target date passed) and IGCSE Pipeline (script missing) — pure noise, recommended disable.
+- **62 apt updates pending**. System uptime 20 days (boot Jun 11).
+
 ## Recent Resolutions (2026-07-01)
 - **Swap Day 12+**: 1.9G/1.9G (2.4Mi free). 13 zombie MCPs still alive from Jun 26 — killed ~11 (context7+firecrawl). sudo swapoff requires approval (not available in cron).
 - **WeKnora :8089 DOWN Day 18+**: Still connection refused. No action taken.
