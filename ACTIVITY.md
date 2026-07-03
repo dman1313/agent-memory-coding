@@ -46,6 +46,10 @@
 > **Project slugs:** symphony, free-claude-code, hermes-ecosystem, hermes-metaclaw, wiki-obsidian, newsletter-platform, multica-dashboard, agent-memory-coding, humangood-ai-webpage, pyp-planner-gen, or leave empty for general
 
 <!-- ENTRIES BELOW THIS LINE -->
+2026-07-03T17:22:00Z | hermes | session-start | fleet-connectivity | Dwayne active on Telegram (5:22 PM MYT) — asked to connect VPS Hermes to Mac Hermes agent (MacH). Explained vault-based inter-agent channel + SSH options via Dwaynes-Mac-mini.local. No follow-up action taken by user.
+
+2026-07-03T06:05:00Z | hermes | note | agent-memory | No significant activity early Jul 3 — routine cron cycles only. System RED: swap 100% (140Ki free) Day 16, DeepSeek broken pipes Day 7 continue (June 30 Countdown failed permanently). Dwayne returned at 17:22 UTC for fleet-connectivity session. Fleet silence Day 21 broken by Telegram session.
+
 2026-07-02T14:00:00Z | hermes | note | agent-memory | No significant activity Jul 2 — routine Wolf + HAL cron runs only. No user sessions (Day 20). System RED: swap 99.97% Day 14, DeepSeek degraded Day 6 (26 broken pipes, new high). WeKnora down Day 19. Zero zombies (cleanup held). Wolf all NEUTRAL. Fleet silence Day 20.
 2026-07-01T12:05:16Z | hermes | session-end | beer-wine-buyer | (auto-closed by janitor: open since 2026-06-28T19:35:00Z, no session-end >48h)
 2026-07-01T14:00:00Z | hermes | note | agent-memory | No significant activity Jul 1 — routine DREAM + Wolf + HAL cron runs only. No user sessions (Day 19). System RED: swap 99.88% Day 12+, 13 zombies remain, DeepSeek degraded Day 5 (24 broken pipes). WeKnora down Day 18+. Killed ~11 zombies in HAL brief, recovered ~500MB. Wolf all NEUTRAL.

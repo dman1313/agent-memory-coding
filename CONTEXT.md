@@ -6,10 +6,10 @@
 
 # NOW — Current State
 
-_Generated: 2026-06-27T06:01:38Z_
+_Generated: 2026-07-03T12:10:09Z_
 
 ## Active Work
-_(none)_
+- **hermes · fleet-connectivity**: Dwayne active on Telegram (5:22 PM MYT) — asked to connect VPS Hermes to Mac Hermes agent (MacH). Explained vault-based inter-agent channel + SSH options via Dwaynes-Mac-mini.local. No follow-up action taken by user. _(2026-07-03T17:22:00Z)_
 
 ## Plan Board
 _0 in motion · 7 todo · 0 blocked · 6 done — full board: Plan/board.md · contract: Plan/README.md_
@@ -24,7 +24,7 @@ _(none)_
 
 ## Session Hygiene (7d)
 _Unpaired sessions get auto-closed and named here — log your session-end. [L2, vault-fitness]_
-- **hermes**: 4 start(s) / 3 end(s)
+- **hermes**: 3 start(s) / 2 end(s) · 1 auto-closed by janitor
 
 ## Pending Inboxes
 - **claude**: Roster check claude: inbox is live. ⚠ pending >7d
@@ -40,25 +40,19 @@ _(none)_
 - **hermes · hermes-dashboard**: Dashboard :9999 DOWN — was UP yesterday, new failure. _(2026-06-08T14:05:00Z)_
 
 ## Recent Activity (48h)
-- 2026-06-26T18:00:00Z | **hermes** · agent-memory · session-end | Daily memory vault update complete. Prepended 16 entries covering Jun 21-26 work including major triage-fix session. NOW.md 11d stale (build-context.sh times out). Triage session resolved zombie MCP processes, fixed 5 cron jobs, rebuilt IGCSE concept-progress.json. MINIMAX_API_KEY received — provider=None cascade fixable.
-- 2026-06-26T17:45:00Z | **hermes** · triage-fix · milestone | Full system triage per Dwayne's voice command: found 20 zombie MCP processes eating 1.4GB RAM (broken YAML args in context7/firecrawl configs), killed all zombies, recovered 1.4GB RAM. Disabled broken MCP servers. Pinned 5 provider=None cron jobs to deepseek-chat. IGCSE concept-progress.json rebuilt.
-- 2026-06-26T17:43:00Z | **hermes** · provider-routing · blocker-resolve | Dwayne provided MINIMAX_API_KEY — minimax provider now configured. Longest-standing cron failure path (provider=None → minimax → no key) resolved. 5 cron jobs unpinned from deepseek-chat can optionally use minimax again.
-- 2026-06-26T17:40:00Z | **hermes** · igcse-pipeline · blocker | IGCSE concept-progress.json missing from workdir, pipeline couldn't start. Created bootstrap with 10 IGCSE Biology concepts (Cell Structure → Gas Exchange). Pipeline revived after 523+ consecutive failures.
-- 2026-06-26T14:02:00Z | **hermes** · agent-memory · session-start | HAL Daily Brief (Friday): system YELLOW — core services up, disk 61%, swap 84%. Vault logging broken 4 days (Jun 22-25 ghost commits, build-context.sh xargs quoting, NOW.md 11d stale). Wolf low-conviction Friday (all 15 NEUTRAL). Provider=None cascade Day 8 unfixed.
-- 2026-06-26T10:39:33Z | **MacH** · fleet-sync · session-end | (auto-closed by janitor: open since 2026-06-10T19:35:06Z, no session-end >48h)
-- 2026-06-26T10:39:33Z | **claude-code** · claude-md-rewrite · session-end | (auto-closed by janitor: open since 2026-06-10T17:00:00Z, no session-end >48h)
-- 2026-06-26T08:04:00Z | **hermes** · wolf-trading-agent · session-start | Wolf Friday scan: 35 Reddit posts, 62 news articles, 15 signals all NEUTRAL. Top ASTS 0.202, Unity 0.200. Published 3 to AI-Trader (AMC bearish, INTC bullish, BB neutral). Twitter offline (CreditsDepleted). Reddit + GNews flowing.
-- 2026-06-26T06:00:00Z | **hermes** · agent-memory · session-start | Agent memory vault daily update — maintained ACTIVITY.md, attempted build-context.sh (times out), committed and pushed. 7 entries prepended covering Jun 22-25 ghost gap. build-context.sh xargs quoting bug fixed (sed trim).
-- 2026-06-25T06:05:00Z | **hermes** · agent-memory · note | Jun 25 HAL brief ran — NOT ghost (full health metrics), but vault commit failed silently. 5th day without git push. build-context.sh broken.
+- 2026-07-03T17:22:00Z | **hermes** · fleet-connectivity · session-start | Dwayne active on Telegram (5:22 PM MYT) — asked to connect VPS Hermes to Mac Hermes agent (MacH). Explained vault-based inter-agent channel + SSH options via Dwaynes-Mac-mini.local. No follow-up action taken by user.
+- 2026-07-03T06:05:00Z | **hermes** · agent-memory · note | No significant activity early Jul 3 — routine cron cycles only. System RED: swap 100% (140Ki free) Day 16, DeepSeek broken pipes Day 7 continue (June 30 Countdown failed permanently). Dwayne returned at 17:22 UTC for fleet-connectivity session. Fleet silence Day 21 broken by Telegram session.
+- 2026-07-02T14:00:00Z | **hermes** · agent-memory · note | No significant activity Jul 2 — routine Wolf + HAL cron runs only. No user sessions (Day 20). System RED: swap 99.97% Day 14, DeepSeek degraded Day 6 (26 broken pipes, new high). WeKnora down Day 19. Zero zombies (cleanup held). Wolf all NEUTRAL. Fleet silence Day 20.
+- 2026-07-01T14:00:00Z | **hermes** · agent-memory · note | No significant activity Jul 1 — routine DREAM + Wolf + HAL cron runs only. No user sessions (Day 19). System RED: swap 99.88% Day 12+, 13 zombies remain, DeepSeek degraded Day 5 (24 broken pipes). WeKnora down Day 18+. Killed ~11 zombies in HAL brief, recovered ~500MB. Wolf all NEUTRAL.
 
 ## Recent Decisions (7d)
-_(none)_
+- 2026-06-28T18:00:00Z | **hermes** · ai-trader | 5% position size rule locked in: no single option trade >5% of account value by cost basis. Triggered by BE Call being 705% over limit on $26,884 account.
 
 ## Recent Milestones (7d)
 - 2026-06-26T17:45:00Z | **hermes** · triage-fix | Full system triage per Dwayne's voice command: found 20 zombie MCP processes eating 1.4GB RAM (broken YAML args in context7/firecrawl configs), killed all zombies, recovered 1.4GB RAM. Disabled broken MCP servers. Pinned 5 provider=None cron jobs to deepseek-chat. IGCSE concept-progress.json rebuilt.
 
 ## Last Seen (fleet)
-- **hermes**: 2026-06-26T18:00:00Z — session-end: Daily memory vault update complete. Prepended 16 entries covering Jun 21-26 work including major triage-fix session. NOW.md 11d stale (build-context.sh times out). Triage session resolved zombie MCP processes, fixed 5 cron jobs, rebuilt IGCSE concept-progress.json. MINIMAX_API_KEY received — provider=None cascade fixable.
+- **hermes**: 2026-07-03T17:22:00Z — session-start: Dwayne active on Telegram (5:22 PM MYT) — asked to connect VPS Hermes to Mac Hermes agent (MacH). Explained vault-based inter-agent channel + SSH options via Dwaynes-Mac-mini.local. No follow-up action taken by user.
 - **MacH**: 2026-06-26T10:39:33Z — session-end: (auto-closed by janitor: open since 2026-06-10T19:35:06Z, no session-end >48h)
 - **claude-code**: 2026-06-26T10:39:33Z — session-end: (auto-closed by janitor: open since 2026-06-10T17:00:00Z, no session-end >48h)
 - **antigravity**: 2026-06-06T05:23:30Z — session-end: Done: Acknowledged roster checks, updated pending inboxes.
@@ -566,6 +560,51 @@ Organized under `~/.hermes/skills/`. Key categories:
 - Cron-based automation (16+ active jobs)
 - Multi-platform messaging (Telegram)
 - Lead orchestrator (HAL) for the agent fleet
+
+## Recent Resolutions (2026-07-02)
+- **Swap Day 14**: 1.9G/1.9G (672Ki free). Zero zombies — Jun 26 cleanup held. Swap never recovered despite ~500MB address space freed. sudo swapoff/fallocate needs Dwayne approval.
+- **WeKnora :8089 DOWN Day 19**: Still connection refused. No action taken.
+- **Fleet silence Day 20**: No non-HAL agent activity since hyperagent Jun 12.
+- **DeepSeek API degraded Day 6**: 26 broken pipes overnight (new high). Now affecting 11 different cron jobs. DREAM flagged this 6 nights in a row with no action. Retries working but burning tokens.
+- **IGCSE pipeline still failing**: Provider=None cascade resolved (MINIMAX_API_KEY set), but script-level FileNotFoundError persists. Bootstrap from Jun 26 didn't fix underlying path issue.
+- **Wolf scan Jul 2**: All 17 tickers NEUTRAL. SMCI top bullish (+0.50). Published SMCI/U/RDDT to AI-Trader. Twitter dead (CreditsDepleted). Reddit PRAW + GNews flowing.
+- **DREAM Jul 2**: Zero user sessions Jul 1. MEMORY.md healthy at 3,475 bytes. Two dead cron jobs flagged for disable: June 30 Countdown + IGCSE Pipeline.
+- **NOW.md 5 days stale** (Jun 27). build-context.sh times out.
+- **Plan board**: 0 in motion, 7 todo. No progress in 20 days.
+- **Self-improving-agent**: All zeros since May 13. Learning loop dead for 50 days.
+- **Two dead cron jobs**: June 30 Countdown (target date passed) and IGCSE Pipeline (script missing) — pure noise, recommended disable.
+- **62 apt updates pending**. System uptime 20 days (boot Jun 11).
+
+## Recent Resolutions (2026-07-01)
+- **Swap Day 12+**: 1.9G/1.9G (2.4Mi free). 13 zombie MCPs still alive from Jun 26 — killed ~11 (context7+firecrawl). sudo swapoff requires approval (not available in cron).
+- **WeKnora :8089 DOWN Day 18+**: Still connection refused. No action taken.
+- **Fleet silence Day 19**: No non-HAL agent activity since hyperagent Jun 12.
+- **DeepSeek API degraded Day 5**: 24 broken pipes overnight. DREAM recommends provider rotation for critical cron jobs.
+- **IGCSE pipeline still failing**: Provider=None cascade resolved (MINIMAX_API_KEY set), but script-level errors continue.
+- **Wolf scan Jul 1**: All 16 tickers NEUTRAL. SMCI top bullish (+0.50). Published SMCI/TSLA/RDDT to AI-Trader. Twitter dead (CreditsDepleted).
+- **DREAM Jul 1**: Zero user sessions Jun 30. MEMORY.md healthy at 2,967 bytes. Recommended reducing health monitor from 6x to 4x/day.
+- **NOW.md 4 days stale** (Jun 27). build-context.sh times out.
+- **Plan board**: 0 in motion, 7 todo. No progress in 19 days.
+- **Self-improving-agent**: All zeros since May 13. Learning loop dead for 49 days.
+
+## Recent Resolutions (2026-06-28)
+- **Dashboard :9999 back UP**: Returns 200 after 20 days down (since Jun 8). Blocker cleared from NOW.md.
+- **Swap 99.99% Day 7**: 44Ki free. OOM killer risk still present. Gateway 2.1GB RSS, k3s 382MB. Undersized swap file (1.9G) for 7.6G system. Needs 4G swap file or k3s reduction.
+- **Jun 27 ghost brief**: HAL cron produced 1-line response — zero health monitoring, zero vault logging. Gap noted.
+- **IGCSE pipeline still failing**: DREAM confirms "revived" claim was premature. Script errors (FileNotFoundError) continue despite concept-progress.json bootstrap. 777+ total failures since Jun 15.
+- **WeKnora :8089 still DOWN Day 7+**: Connection refused. No one has touched it.
+- **Fleet silence Day 16**: No non-HAL agent activity since hyperagent Jun 12.
+- **MINIMAX_API_KEY active**: Set by Dwayne Jun 26. 3 provider=None jobs now have a working default provider. But IGCSE failures are script-level, not API-key-level.
+
+## Recent Resolutions (2026-06-27)
+- **Provider=None cascade RESOLVED**: MINIMAX_API_KEY set by Dwayne Jun 26. 3 remaining provider=None jobs (IGCSE, CFTC COT, DRAM) can now use default provider (minimax) with working key. IGCSE pipeline revived with bootstrapped concept-progress.json.
+- **Swap 99.98% full**: 1.9/1.9G — was 84% yesterday. k3s biggest resident (388MB). No zombie processes (MCP cleanup held). Trend: 73% → 84% → 99.98% over 7 days. OOM killer risk if swap exhausts.
+- **WeKnora :8089 DOWN Day 6+**: Connection refused. No one has touched it since Jun 22.
+- **NOW.md regenerated**: build-context.sh working again after xargs quoting fix. First regeneration in 12 days.
+- **Ghost briefs Jun 22-25**: Briefs produced real content but vault commits silently failed. Gap logged and closed Jun 26.
+- **Fleet silence**: 15 days since last non-HAL agent activity (hyperagent Jun 12). MacH/claude-code/cursor/kimi all auto-closed by janitor.
+- **Zombie MCP processes resolved**: 20 processes (1.4GB RAM) from broken context7/firecrawl configs killed Jun 26. Servers disabled.
+- **DREAM**: MEMORY.md 2,986 bytes (healthy). GLMS exhausted until Jul 3. No new skill proposals.
 
 ## Recent Resolutions (2026-06-22)
 - **Provider=None cascade Day 3**: 5 cron jobs still failing — minimax key not set. Fix unchanged since Jun 21 discovery.
