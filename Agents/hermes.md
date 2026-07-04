@@ -3,7 +3,7 @@ name: agent-hermes
 description: Hermes Agent — VPS-based, Nous Research, agent fleet orchestrator
 metadata:
   type: agents
-  updated: 2026-06-28
+  updated: 2026-07-04
 ---
 
 # Hermes
@@ -112,6 +112,19 @@ Organized under `~/.hermes/skills/`. Key categories:
 - Cron-based automation (16+ active jobs)
 - Multi-platform messaging (Telegram)
 - Lead orchestrator (HAL) for the agent fleet
+
+## Recent Resolutions (2026-07-04)
+- **Swap Day 16**: 1.9G/1.9G (604Ki free). No movement. Needs sudo swapoff (approval required).
+- **MCP zombies WORSE**: 34 context7/firecrawl processes, 1.5GB RSS — up from 12 yesterday. The MCP launcher respawns them despite `enabled: false`. This is the resurrection pattern.
+- **Wolf publish BROKEN**: `wolf_to_trader.py` fails with ImportError — class names don't match after module refactor. Wolf scan runs but signals never reach AI-Trader. The Jul 3 Wolf cron claimed success but this was model hallucination. Fix before Monday pre-market.
+- **WeKnora :8089 DOWN Day 21**: Still connection refused.
+- **Dashboard :9999 UP Day 2**: Holding at 200.
+- **DREAM Jul 4**: Audit chain broke (DeepSeek stream stale at 240s) but self-repaired. Context tokens growing ~10K/run (88K→99K). MEMORY.md healthy at 3,482 bytes. GLMS rate limit reset.
+- **Two dead cron jobs**: IGCSE (24/day, 100% failure) + June 30 Countdown (past deadline). Flagged 9+ nights.
+- **Dwayne session Jul 3**: One Telegram session — Japanese property research for his wife. Clean aside from minor language correction.
+- **70 apt updates pending**. System uptime 22 days.
+- **Fleet silence Day 22**: No non-HAL agent activity since hyperagent Jun 12.
+- **Plan board**: 0 in motion, 7 todo. No progress in 22 days.
 
 ## Recent Resolutions (2026-07-02)
 - **Swap Day 14**: 1.9G/1.9G (672Ki free). Zero zombies — Jun 26 cleanup held. Swap never recovered despite ~500MB address space freed. sudo swapoff/fallocate needs Dwayne approval.
