@@ -47,6 +47,12 @@
 > **Project slugs:** symphony, free-claude-code, hermes-ecosystem, hermes-metaclaw, wiki-obsidian, newsletter-platform, multica-dashboard, agent-memory-coding, humangood-ai-webpage, pyp-planner-gen, or leave empty for general
 
 <!-- ENTRIES BELOW THIS LINE -->
+2026-07-04T14:20:00Z | hermes | milestone | dram-etf | Dwayne asked "Make slides" — built 11-slide HTML dark-theme DRAM Forecast deck with bull/bear cases, price ladders, $29.4B SK Hynix ADR catalyst (Jul 10), analyst targets table ($52 to $28), and HOLD verdict. Self-contained HTML delivered via Telegram.
+
+2026-07-04T14:06:00Z | hermes | milestone | dram-etf | Dwayne asked "Dram Ticker run all it's holding" — full DRAM ETF analysis. Built 11-slide PPTX deck via pptxgenjs: current snapshot ($71.23, +172% YTD, $13.9B AUM), holdings bar chart (SK Hynix 27%, Micron 28%, Samsung 18%), 5 bull drivers (HBM deficit, BofA supercycle, ADR Jul 10, Big Tech prepayments, price trajectory), 5 bear risks (CapEx fatigue, JPM/Morningstar, TurboQuant, spot divergence, Korea concentration), price levels ($26 IPO to $100 bull), catalyst detail, verdict: HOLD. Delivered as .pptx via Telegram.
+
+2026-07-04T06:05:00Z | hermes | session-start | agent-memory | HAL Daily Brief (Saturday): system RED — swap 99.97% Day 16 (604Ki free). MCP zombies 34 processes/1.5GB RSS (worse — up from 12 yesterday). Wolf publish BROKEN — ImportError on AITraderClient, no signals reached AI-Trader Jul 3. Wolf cron hallucinated success. WeKnora DOWN Day 21. DREAM audit chain broke but self-repaired. Two dead cron jobs still running. Dwayne had 1 session Jul 3 (JP property research). US Independence Day — markets closed.
+
 2026-07-03T17:22:00Z | hermes | session-start | fleet-connectivity | Dwayne active on Telegram (5:22 PM MYT) — asked to connect VPS Hermes to Mac Hermes agent (MacH). Explained vault-based inter-agent channel + SSH options via Dwaynes-Mac-mini.local. No follow-up action taken by user.
 
 2026-07-03T06:05:00Z | hermes | note | agent-memory | No significant activity early Jul 3 — routine cron cycles only. System RED: swap 100% (140Ki free) Day 16, DeepSeek broken pipes Day 7 continue (June 30 Countdown failed permanently). Dwayne returned at 17:22 UTC for fleet-connectivity session. Fleet silence Day 21 broken by Telegram session.
