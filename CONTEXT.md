@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-07-04T12:18:09Z_
+_Generated: 2026-07-05T12:46:11Z_
 
 ## Active Work
 - **hermes · agent-memory**: HAL Daily Brief (Saturday): system RED — swap 99.97% Day 16 (604Ki free). MCP zombies 34 processes/1.5GB RSS (worse — up from 12 yesterday). Wolf publish BROKEN — ImportError on AITraderClient, no signals reached AI-Trader Jul 3. Wolf cron hallucinated success. WeKnora DOWN Day 21. DREAM audit chain broke but self-repaired. Two dead cron jobs still running. Dwayne had 1 session Jul 3 (JP property research). US Independence Day — markets closed. _(2026-07-04T06:05:00Z)_
@@ -44,8 +44,6 @@ _(none)_
 - 2026-07-04T14:06:00Z | **hermes** · dram-etf · milestone | Dwayne asked "Dram Ticker run all it's holding" — full DRAM ETF analysis. Built 11-slide PPTX deck via pptxgenjs: current snapshot ($71.23, +172% YTD, $13.9B AUM), holdings bar chart (SK Hynix 27%, Micron 28%, Samsung 18%), 5 bull drivers (HBM deficit, BofA supercycle, ADR Jul 10, Big Tech prepayments, price trajectory), 5 bear risks (CapEx fatigue, JPM/Morningstar, TurboQuant, spot divergence, Korea concentration), price levels ($26 IPO to $100 bull), catalyst detail, verdict: HOLD. Delivered as .pptx via Telegram.
 - 2026-07-04T06:05:00Z | **hermes** · agent-memory · session-start | HAL Daily Brief (Saturday): system RED — swap 99.97% Day 16 (604Ki free). MCP zombies 34 processes/1.5GB RSS (worse — up from 12 yesterday). Wolf publish BROKEN — ImportError on AITraderClient, no signals reached AI-Trader Jul 3. Wolf cron hallucinated success. WeKnora DOWN Day 21. DREAM audit chain broke but self-repaired. Two dead cron jobs still running. Dwayne had 1 session Jul 3 (JP property research). US Independence Day — markets closed.
 - 2026-07-03T17:22:00Z | **hermes** · fleet-connectivity · session-start | Dwayne active on Telegram (5:22 PM MYT) — asked to connect VPS Hermes to Mac Hermes agent (MacH). Explained vault-based inter-agent channel + SSH options via Dwaynes-Mac-mini.local. No follow-up action taken by user.
-- 2026-07-03T06:05:00Z | **hermes** · agent-memory · note | No significant activity early Jul 3 — routine cron cycles only. System RED: swap 100% (140Ki free) Day 16, DeepSeek broken pipes Day 7 continue (June 30 Countdown failed permanently). Dwayne returned at 17:22 UTC for fleet-connectivity session. Fleet silence Day 21 broken by Telegram session.
-- 2026-07-02T14:00:00Z | **hermes** · agent-memory · note | No significant activity Jul 2 — routine Wolf + HAL cron runs only. No user sessions (Day 20). System RED: swap 99.97% Day 14, DeepSeek degraded Day 6 (26 broken pipes, new high). WeKnora down Day 19. Zero zombies (cleanup held). Wolf all NEUTRAL. Fleet silence Day 20.
 
 ## Recent Decisions (7d)
 - 2026-06-28T18:00:00Z | **hermes** · ai-trader | 5% position size rule locked in: no single option trade >5% of account value by cost basis. Triggered by BE Call being 705% over limit on $26,884 account.
@@ -564,18 +562,18 @@ Organized under `~/.hermes/skills/`. Key categories:
 - Multi-platform messaging (Telegram)
 - Lead orchestrator (HAL) for the agent fleet
 
-## Recent Resolutions (2026-07-04)
-- **Swap Day 16**: 1.9G/1.9G (604Ki free). No movement. Needs sudo swapoff (approval required).
-- **MCP zombies WORSE**: 34 context7/firecrawl processes, 1.5GB RSS — up from 12 yesterday. The MCP launcher respawns them despite `enabled: false`. This is the resurrection pattern.
-- **Wolf publish BROKEN**: `wolf_to_trader.py` fails with ImportError — class names don't match after module refactor. Wolf scan runs but signals never reach AI-Trader. The Jul 3 Wolf cron claimed success but this was model hallucination. Fix before Monday pre-market.
-- **WeKnora :8089 DOWN Day 21**: Still connection refused.
-- **Dashboard :9999 UP Day 2**: Holding at 200.
-- **DREAM Jul 4**: Audit chain broke (DeepSeek stream stale at 240s) but self-repaired. Context tokens growing ~10K/run (88K→99K). MEMORY.md healthy at 3,482 bytes. GLMS rate limit reset.
-- **Two dead cron jobs**: IGCSE (24/day, 100% failure) + June 30 Countdown (past deadline). Flagged 9+ nights.
-- **Dwayne session Jul 3**: One Telegram session — Japanese property research for his wife. Clean aside from minor language correction.
-- **70 apt updates pending**. System uptime 22 days.
-- **Fleet silence Day 22**: No non-HAL agent activity since hyperagent Jun 12.
-- **Plan board**: 0 in motion, 7 todo. No progress in 22 days.
+## Recent Resolutions (2026-07-05)
+- **Swap Day 17**: 1.9G/1.9G (24Ki free — WORSE). OOM killer imminent. Needs sudo swapoff/fallocate — Dwayne approval required. 17 days and counting.
+- **MCP zombies slightly down**: 24 context7/firecrawl processes (was 34 yesterday). Still 1.5GB RSS. Resurrection pattern confirmed — they are spawned by MCP launcher despite `enabled: false`. `pkill -f context7-mcp; pkill -f firecrawl-mcp` temporarily frees RAM until launcher respawns them.
+- **Wolf publish BROKEN**: `wolf_to_trader.py` ImportError — AITraderClient class name mismatch. Fix needed before Monday pre-market. Wolf cron hallucinated success Jul 3.
+- **WeKnora :8089 DOWN Day 22**: Connection refused. No action taken in 22 days.
+- **FreeLLMAPI :3002 returning 404**: New finding. Was previously returning 200. Worth investigating.
+- **Dashboard :9999 UP Day 3**: Holding at 200.
+- **DREAM Jul 5**: Audit chain intact. 48 DeepSeek broken pipes Jul 4 (CloudFront CDN, midnight cron cluster). MEMORY.md healthy at 3,482 bytes. DRAM slides workflow got positive feedback. Recommended research-to-slides skill.
+- **Jul 4 HAL cron was GHOST**: 3-line response, no health metrics. System health unchecked that day.
+- **70 apt updates pending**. System uptime 23 days.
+- **Fleet silence Day 23**: No non-HAL agent activity since hyperagent Jun 12.
+- **Plan board**: 0 in motion, 7 todo. No progress in 23 days.
 
 ## Recent Resolutions (2026-07-02)
 - **Swap Day 14**: 1.9G/1.9G (672Ki free). Zero zombies — Jun 26 cleanup held. Swap never recovered despite ~500MB address space freed. sudo swapoff/fallocate needs Dwayne approval.

@@ -1,6 +1,6 @@
 # NOW — Current State
 
-_Generated: 2026-07-04T12:18:09Z_
+_Generated: 2026-07-05T12:46:11Z_
 
 ## Active Work
 - **hermes · agent-memory**: HAL Daily Brief (Saturday): system RED — swap 99.97% Day 16 (604Ki free). MCP zombies 34 processes/1.5GB RSS (worse — up from 12 yesterday). Wolf publish BROKEN — ImportError on AITraderClient, no signals reached AI-Trader Jul 3. Wolf cron hallucinated success. WeKnora DOWN Day 21. DREAM audit chain broke but self-repaired. Two dead cron jobs still running. Dwayne had 1 session Jul 3 (JP property research). US Independence Day — markets closed. _(2026-07-04T06:05:00Z)_
@@ -38,8 +38,6 @@ _(none)_
 - 2026-07-04T14:06:00Z | **hermes** · dram-etf · milestone | Dwayne asked "Dram Ticker run all it's holding" — full DRAM ETF analysis. Built 11-slide PPTX deck via pptxgenjs: current snapshot ($71.23, +172% YTD, $13.9B AUM), holdings bar chart (SK Hynix 27%, Micron 28%, Samsung 18%), 5 bull drivers (HBM deficit, BofA supercycle, ADR Jul 10, Big Tech prepayments, price trajectory), 5 bear risks (CapEx fatigue, JPM/Morningstar, TurboQuant, spot divergence, Korea concentration), price levels ($26 IPO to $100 bull), catalyst detail, verdict: HOLD. Delivered as .pptx via Telegram.
 - 2026-07-04T06:05:00Z | **hermes** · agent-memory · session-start | HAL Daily Brief (Saturday): system RED — swap 99.97% Day 16 (604Ki free). MCP zombies 34 processes/1.5GB RSS (worse — up from 12 yesterday). Wolf publish BROKEN — ImportError on AITraderClient, no signals reached AI-Trader Jul 3. Wolf cron hallucinated success. WeKnora DOWN Day 21. DREAM audit chain broke but self-repaired. Two dead cron jobs still running. Dwayne had 1 session Jul 3 (JP property research). US Independence Day — markets closed.
 - 2026-07-03T17:22:00Z | **hermes** · fleet-connectivity · session-start | Dwayne active on Telegram (5:22 PM MYT) — asked to connect VPS Hermes to Mac Hermes agent (MacH). Explained vault-based inter-agent channel + SSH options via Dwaynes-Mac-mini.local. No follow-up action taken by user.
-- 2026-07-03T06:05:00Z | **hermes** · agent-memory · note | No significant activity early Jul 3 — routine cron cycles only. System RED: swap 100% (140Ki free) Day 16, DeepSeek broken pipes Day 7 continue (June 30 Countdown failed permanently). Dwayne returned at 17:22 UTC for fleet-connectivity session. Fleet silence Day 21 broken by Telegram session.
-- 2026-07-02T14:00:00Z | **hermes** · agent-memory · note | No significant activity Jul 2 — routine Wolf + HAL cron runs only. No user sessions (Day 20). System RED: swap 99.97% Day 14, DeepSeek degraded Day 6 (26 broken pipes, new high). WeKnora down Day 19. Zero zombies (cleanup held). Wolf all NEUTRAL. Fleet silence Day 20.
 
 ## Recent Decisions (7d)
 - 2026-06-28T18:00:00Z | **hermes** · ai-trader | 5% position size rule locked in: no single option trade >5% of account value by cost basis. Triggered by BE Call being 705% over limit on $26,884 account.
