@@ -113,18 +113,18 @@ Organized under `~/.hermes/skills/`. Key categories:
 - Multi-platform messaging (Telegram)
 - Lead orchestrator (HAL) for the agent fleet
 
-## Recent Resolutions (2026-07-04)
-- **Swap Day 16**: 1.9G/1.9G (604Ki free). No movement. Needs sudo swapoff (approval required).
-- **MCP zombies WORSE**: 34 context7/firecrawl processes, 1.5GB RSS — up from 12 yesterday. The MCP launcher respawns them despite `enabled: false`. This is the resurrection pattern.
-- **Wolf publish BROKEN**: `wolf_to_trader.py` fails with ImportError — class names don't match after module refactor. Wolf scan runs but signals never reach AI-Trader. The Jul 3 Wolf cron claimed success but this was model hallucination. Fix before Monday pre-market.
-- **WeKnora :8089 DOWN Day 21**: Still connection refused.
-- **Dashboard :9999 UP Day 2**: Holding at 200.
-- **DREAM Jul 4**: Audit chain broke (DeepSeek stream stale at 240s) but self-repaired. Context tokens growing ~10K/run (88K→99K). MEMORY.md healthy at 3,482 bytes. GLMS rate limit reset.
-- **Two dead cron jobs**: IGCSE (24/day, 100% failure) + June 30 Countdown (past deadline). Flagged 9+ nights.
-- **Dwayne session Jul 3**: One Telegram session — Japanese property research for his wife. Clean aside from minor language correction.
-- **70 apt updates pending**. System uptime 22 days.
-- **Fleet silence Day 22**: No non-HAL agent activity since hyperagent Jun 12.
-- **Plan board**: 0 in motion, 7 todo. No progress in 22 days.
+## Recent Resolutions (2026-07-05)
+- **Swap Day 17**: 1.9G/1.9G (24Ki free — WORSE). OOM killer imminent. Needs sudo swapoff/fallocate — Dwayne approval required. 17 days and counting.
+- **MCP zombies slightly down**: 24 context7/firecrawl processes (was 34 yesterday). Still 1.5GB RSS. Resurrection pattern confirmed — they are spawned by MCP launcher despite `enabled: false`. `pkill -f context7-mcp; pkill -f firecrawl-mcp` temporarily frees RAM until launcher respawns them.
+- **Wolf publish BROKEN**: `wolf_to_trader.py` ImportError — AITraderClient class name mismatch. Fix needed before Monday pre-market. Wolf cron hallucinated success Jul 3.
+- **WeKnora :8089 DOWN Day 22**: Connection refused. No action taken in 22 days.
+- **FreeLLMAPI :3002 returning 404**: New finding. Was previously returning 200. Worth investigating.
+- **Dashboard :9999 UP Day 3**: Holding at 200.
+- **DREAM Jul 5**: Audit chain intact. 48 DeepSeek broken pipes Jul 4 (CloudFront CDN, midnight cron cluster). MEMORY.md healthy at 3,482 bytes. DRAM slides workflow got positive feedback. Recommended research-to-slides skill.
+- **Jul 4 HAL cron was GHOST**: 3-line response, no health metrics. System health unchecked that day.
+- **70 apt updates pending**. System uptime 23 days.
+- **Fleet silence Day 23**: No non-HAL agent activity since hyperagent Jun 12.
+- **Plan board**: 0 in motion, 7 todo. No progress in 23 days.
 
 ## Recent Resolutions (2026-07-02)
 - **Swap Day 14**: 1.9G/1.9G (672Ki free). Zero zombies — Jun 26 cleanup held. Swap never recovered despite ~500MB address space freed. sudo swapoff/fallocate needs Dwayne approval.
