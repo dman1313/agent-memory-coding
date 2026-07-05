@@ -1,3 +1,15 @@
+2026-07-05T00:31:17Z | hermes | session-start | voice-to-newsletter | Dwayne daily maintenance (MYT 00:32). Fixed IGCSE concept-pipeline.sh shell env-var leak (single-quoted PYEOF blocked shell expansion). System: 23d uptime, 65% disk. IGCSE pipeline attempt enabled for next hourly run.
+
+2026-07-05T00:31:17Z | hermes | milestone | igcse-pipeline | IGCSE concept-pipeline.sh bug fixed: missing `export STATE NOTEBOOK CONCDIR PROGRESS` before single-quoted PYEOF heredoc — Python got empty strings, causing FileNotFoundError. Root cause found after weeks of failures.
+
+2026-07-04T14:06:00Z | hermes | milestone | dram-etf | Dwayne asked "Dram Ticker run all it's holding" — full DRAM ETF analysis. Built 11-slide PPTX deck via pptxgenjs: current snapshot ($71.23, +172% YTD, $13.9B AUM), holdings bar chart, 5 bull drivers, 5 bear risks, price levels, SK Hynix ADR catalyst Jul 10, verdict HOLD. Delivered via Telegram.
+
+2026-07-04T14:20:00Z | hermes | milestone | dram-etf | Dwayne said "Make slides" — built 11-slide HTML dark-theme DRAM Forecast deck with same content as PPTX. Positive feedback from Dwayne ("Good presentation").
+
+2026-07-04T13:22:00Z | hermes | session-start | ai-berkshire | Dwayne asked to clone AI-Berkshire repo (xbtlin/ai-berkshire) for Wolf. 18 skills framework based on Buffett/Munger/Duan Yongping/Li Lu methodologies. Cloned and installed.
+
+2026-07-04T13:22:00Z | hermes | milestone | ai-berkshire | Full BE (Bloom Energy) investment research report via AI-Berkshire framework. Four-master scorecard: 2.5/5 composite. Failed mirror test — avoid at $270 (30.8x P/S, negative earnings). Three-scenario: Bull $174, Base $91, Bear $43. English report saved. Dwayne asked about DRAM next.
+
 2026-07-05T06:05:00Z | hermes | session-start | agent-memory | HAL Daily Brief (Sunday): system RED — swap Day 17 (24Ki free). 24 MCP zombies resurrected (down from 34). WeKnora DOWN Day 22. FreeLLMAPI :3002 returning 404. Jul 4 cron was ghost brief (3 lines, no metrics). DREAM Jul 5: 48 DeepSeek broken pipes, DRAM slides got positive feedback. Wolf offline (Sunday). Fleet silence Day 23. No user sessions Jul 4 beyond DRAM work.
 2026-07-04T06:05:19Z | hermes | session-start | agent-memory | HAL Daily Brief (Friday): system RED — swap 99.97% Day 16 (604Ki free). MCP zombies 34 processes/1.5GB RSS (worse — up from 12 yesterday). Wolf publish BROKEN — ImportError on AITraderClient, no signals reached AI-Trader Jul 3. Wolf cron hallucinated success. WeKnora DOWN Day 21. DREAM audit chain broke but self-repaired. Two dead cron jobs still running. Dwayne had 1 session Jul 3 (JP property research). US Independence Day — markets closed.
 2026-07-03T06:05:00Z | hermes | session-start | agent-memory | HAL Daily Brief (Thursday): system RED — swap 99.98% Day 15 (1.9Mi free). 24 zombie MCP processes RESURRECTED despite disabled configs — killed (1.5GB freed). Dwayne active Jul 2 (4 sessions) but vault missed it. Wolf all NEUTRAL pre-July 4th. IGCSE 59% of cron, Countdown past deadline. WeKnora DOWN Day 20. DeepSeek Day 7. Dwayne relocated Paris→KL — timezone note.
