@@ -6,10 +6,10 @@
 
 # NOW — Current State
 
-_Generated: 2026-07-05T12:46:11Z_
+_Generated: 2026-07-06T06:06:34Z_
 
 ## Active Work
-- **hermes · agent-memory**: HAL Daily Brief (Saturday): system RED — swap 99.97% Day 16 (604Ki free). MCP zombies 34 processes/1.5GB RSS (worse — up from 12 yesterday). Wolf publish BROKEN — ImportError on AITraderClient, no signals reached AI-Trader Jul 3. Wolf cron hallucinated success. WeKnora DOWN Day 21. DREAM audit chain broke but self-repaired. Two dead cron jobs still running. Dwayne had 1 session Jul 3 (JP property research). US Independence Day — markets closed. _(2026-07-04T06:05:00Z)_
+_(none)_
 
 ## Plan Board
 _0 in motion · 7 todo · 0 blocked · 6 done — full board: Plan/board.md · contract: Plan/README.md_
@@ -24,7 +24,7 @@ _(none)_
 
 ## Session Hygiene (7d)
 _Unpaired sessions get auto-closed and named here — log your session-end. [L2, vault-fitness]_
-- **hermes**: 3 start(s) / 1 end(s) · 1 auto-closed by janitor
+- **hermes**: 2 start(s) / 2 end(s) · 2 auto-closed by janitor
 
 ## Pending Inboxes
 - **claude**: Roster check claude: inbox is live. ⚠ pending >7d
@@ -40,20 +40,19 @@ _(none)_
 - **hermes · hermes-dashboard**: Dashboard :9999 DOWN — was UP yesterday, new failure. _(2026-06-08T14:05:00Z)_
 
 ## Recent Activity (48h)
+- 2026-07-06T06:06:05Z | **hermes** · agent-memory · session-end | (auto-closed by janitor: open since 2026-07-04T06:05:00Z, no session-end >48h)
 - 2026-07-04T14:20:00Z | **hermes** · dram-etf · milestone | Dwayne asked "Make slides" — built 11-slide HTML dark-theme DRAM Forecast deck with bull/bear cases, price ladders, $29.4B SK Hynix ADR catalyst (Jul 10), analyst targets table ($52 to $28), and HOLD verdict. Self-contained HTML delivered via Telegram.
 - 2026-07-04T14:06:00Z | **hermes** · dram-etf · milestone | Dwayne asked "Dram Ticker run all it's holding" — full DRAM ETF analysis. Built 11-slide PPTX deck via pptxgenjs: current snapshot ($71.23, +172% YTD, $13.9B AUM), holdings bar chart (SK Hynix 27%, Micron 28%, Samsung 18%), 5 bull drivers (HBM deficit, BofA supercycle, ADR Jul 10, Big Tech prepayments, price trajectory), 5 bear risks (CapEx fatigue, JPM/Morningstar, TurboQuant, spot divergence, Korea concentration), price levels ($26 IPO to $100 bull), catalyst detail, verdict: HOLD. Delivered as .pptx via Telegram.
-- 2026-07-04T06:05:00Z | **hermes** · agent-memory · session-start | HAL Daily Brief (Saturday): system RED — swap 99.97% Day 16 (604Ki free). MCP zombies 34 processes/1.5GB RSS (worse — up from 12 yesterday). Wolf publish BROKEN — ImportError on AITraderClient, no signals reached AI-Trader Jul 3. Wolf cron hallucinated success. WeKnora DOWN Day 21. DREAM audit chain broke but self-repaired. Two dead cron jobs still running. Dwayne had 1 session Jul 3 (JP property research). US Independence Day — markets closed.
-- 2026-07-03T17:22:00Z | **hermes** · fleet-connectivity · session-start | Dwayne active on Telegram (5:22 PM MYT) — asked to connect VPS Hermes to Mac Hermes agent (MacH). Explained vault-based inter-agent channel + SSH options via Dwaynes-Mac-mini.local. No follow-up action taken by user.
 
 ## Recent Decisions (7d)
-- 2026-06-28T18:00:00Z | **hermes** · ai-trader | 5% position size rule locked in: no single option trade >5% of account value by cost basis. Triggered by BE Call being 705% over limit on $26,884 account.
+_(none)_
 
 ## Recent Milestones (7d)
 - 2026-07-04T14:20:00Z | **hermes** · dram-etf | Dwayne asked "Make slides" — built 11-slide HTML dark-theme DRAM Forecast deck with bull/bear cases, price ladders, $29.4B SK Hynix ADR catalyst (Jul 10), analyst targets table ($52 to $28), and HOLD verdict. Self-contained HTML delivered via Telegram.
 - 2026-07-04T14:06:00Z | **hermes** · dram-etf | Dwayne asked "Dram Ticker run all it's holding" — full DRAM ETF analysis. Built 11-slide PPTX deck via pptxgenjs: current snapshot ($71.23, +172% YTD, $13.9B AUM), holdings bar chart (SK Hynix 27%, Micron 28%, Samsung 18%), 5 bull drivers (HBM deficit, BofA supercycle, ADR Jul 10, Big Tech prepayments, price trajectory), 5 bear risks (CapEx fatigue, JPM/Morningstar, TurboQuant, spot divergence, Korea concentration), price levels ($26 IPO to $100 bull), catalyst detail, verdict: HOLD. Delivered as .pptx via Telegram.
 
 ## Last Seen (fleet)
-- **hermes**: 2026-07-04T14:20:00Z — milestone: Dwayne asked "Make slides" — built 11-slide HTML dark-theme DRAM Forecast deck with bull/bear cases, price ladders, $29.4B SK Hynix ADR catalyst (Jul 10), analyst targets table ($52 to $28), and HOLD verdict. Self-contained HTML delivered via Telegram.
+- **hermes**: 2026-07-06T06:06:05Z — session-end: (auto-closed by janitor: open since 2026-07-04T06:05:00Z, no session-end >48h)
 - **MacH**: 2026-06-26T10:39:33Z — session-end: (auto-closed by janitor: open since 2026-06-10T19:35:06Z, no session-end >48h)
 - **claude-code**: 2026-06-26T10:39:33Z — session-end: (auto-closed by janitor: open since 2026-06-10T17:00:00Z, no session-end >48h)
 - **antigravity**: 2026-06-06T05:23:30Z — session-end: Done: Acknowledged roster checks, updated pending inboxes.

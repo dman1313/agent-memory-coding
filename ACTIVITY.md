@@ -1,3 +1,5 @@
+2026-07-06T14:04:00Z | hermes | session-start | agent-memory | HAL Daily Brief (Monday): system YELLOW — swap improved to 74% (589Mi free! Down from 99.97%), MCP zombies cleared to zero, Wolf publish FIXED and signals published to AI-Trader. But: provider=None cascade alive — default provider zai has NO API key (3 jobs at risk), WeKnora DOWN Day 23, FreeLLMAPI 404, fleet silence Day 24. DREAM: 16 DeepSeek stale-stream timeouts, Telegram flood control 38 hits, Z.AI base URL bug fixed (gateway restart needed).
+
 2026-07-05T00:31:17Z | hermes | session-start | voice-to-newsletter | Dwayne daily maintenance (MYT 00:32). Fixed IGCSE concept-pipeline.sh shell env-var leak (single-quoted PYEOF blocked shell expansion). System: 23d uptime, 65% disk. IGCSE pipeline attempt enabled for next hourly run.
 
 2026-07-05T00:31:17Z | hermes | milestone | igcse-pipeline | IGCSE concept-pipeline.sh bug fixed: missing `export STATE NOTEBOOK CONCDIR PROGRESS` before single-quoted PYEOF heredoc — Python got empty strings, causing FileNotFoundError. Root cause found after weeks of failures.
@@ -60,6 +62,7 @@
 > **Project slugs:** symphony, free-claude-code, hermes-ecosystem, hermes-metaclaw, wiki-obsidian, newsletter-platform, multica-dashboard, agent-memory-coding, humangood-ai-webpage, pyp-planner-gen, or leave empty for general
 
 <!-- ENTRIES BELOW THIS LINE -->
+2026-07-06T06:06:05Z | hermes | session-end | agent-memory | (auto-closed by janitor: open since 2026-07-04T06:05:00Z, no session-end >48h)
 2026-07-04T14:20:00Z | hermes | milestone | dram-etf | Dwayne asked "Make slides" — built 11-slide HTML dark-theme DRAM Forecast deck with bull/bear cases, price ladders, $29.4B SK Hynix ADR catalyst (Jul 10), analyst targets table ($52 to $28), and HOLD verdict. Self-contained HTML delivered via Telegram.
 
 2026-07-04T14:06:00Z | hermes | milestone | dram-etf | Dwayne asked "Dram Ticker run all it's holding" — full DRAM ETF analysis. Built 11-slide PPTX deck via pptxgenjs: current snapshot ($71.23, +172% YTD, $13.9B AUM), holdings bar chart (SK Hynix 27%, Micron 28%, Samsung 18%), 5 bull drivers (HBM deficit, BofA supercycle, ADR Jul 10, Big Tech prepayments, price trajectory), 5 bear risks (CapEx fatigue, JPM/Morningstar, TurboQuant, spot divergence, Korea concentration), price levels ($26 IPO to $100 bull), catalyst detail, verdict: HOLD. Delivered as .pptx via Telegram.
