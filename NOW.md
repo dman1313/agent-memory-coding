@@ -1,6 +1,6 @@
 # NOW — Current State
 
-_Generated: 2026-07-07T12:16:15Z_
+_Generated: 2026-07-08T12:14:08Z_
 
 ## Active Work
 _(none)_
@@ -32,13 +32,14 @@ _(none)_
 _(none)_
 
 ## Recent Activity (48h)
-_(none)_
+- 2026-07-08T20:00:00Z | **hermes** · agent-memory · note | Daily memory update — no significant new activity today. Cron infrastructure healthy.
+- 2026-07-08T12:14:08Z | **hermes** · agent-memory-coding · session-end | (auto-closed by janitor: open since 2026-06-15T21:22:00Z, no session-end >48h)
 
 ## Recent Decisions (7d)
 _(none)_
 
 ## Recent Milestones (7d)
-_(none)_
+- 2026-07-05T21:17:00Z | **hermes** · quant-scanner | AAPL quant + Berkshire scan completed. 9-slide designed deck with DESIGN.md "Quant Desk" token spec. Delivered via Telegram.
 
 ## Last Seen (fleet)
-_(no activity)_
+- **hermes**: 2026-07-08T20:00:00Z — note: Daily memory update — no significant new activity today. Cron infrastructure healthy.
