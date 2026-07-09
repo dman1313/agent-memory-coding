@@ -3,7 +3,7 @@ name: agent-hermes
 description: Hermes Agent — VPS-based, Nous Research, agent fleet orchestrator
 metadata:
   type: agents
-  updated: 2026-07-04
+  updated: 2026-07-09
 ---
 
 # Hermes
@@ -112,6 +112,16 @@ Organized under `~/.hermes/skills/`. Key categories:
 - Cron-based automation (16+ active jobs)
 - Multi-platform messaging (Telegram)
 - Lead orchestrator (HAL) for the agent fleet
+
+## Recent Resolutions (2026-07-09)
+- **Swap Day 30**: 1.9G/1.9G (308Ki free). Gateway 2.1GB RSS. WeKnora :8089 DOWN Day 30. No OOM yet but imminent risk.
+- **IGCSE pipeline SILENT**: No output since Jul 5. 4 full days. Not failing — stopped running. T-0003 still unclaimed.
+- **Wolf scan Jul 9**: All 17 NEUTRAL. wolf_to_trader.py ImportError persists (flagged Jun 27). 3 published via workaround.
+- **GLMS web tools dead until Aug 3**: 14 rate-limit errors overnight. DREAM drafted pre-flight gate proposal.
+- **Fleet silence Day 27**: No non-HAL activity. Plan board 0/7/0. 4 stale inboxes.
+- **Self-improving agent**: All zeros for 57 days (since May 13). Learning loop never fired.
+- **79 apt updates pending**. System uptime 27 days.
+- **Jul 8 brief was real** (439 lines). Jul 7 was ghost.
 
 ## Recent Resolutions (2026-07-05)
 - **Swap Day 17**: 1.9G/1.9G (24Ki free — WORSE). OOM killer imminent. Needs sudo swapoff/fallocate — Dwayne approval required. 17 days and counting.
