@@ -14,6 +14,8 @@
 2026-07-09T14:08:00Z | hermes | session-end | agent-memory-coding | Daily brief: swap day 30 (99.98%), WeKnora down day 30, Wolf all NEUTRAL, IGCSE silent 4 days, GLMS dead until Aug 3, fleet silence day 27
 2026-07-09T14:04:00Z | hermes | session-start | agent-memory-coding | HAL daily brief — system health + fleet coordination + DREAM review
 <!-- ENTRIES BELOW THIS LINE -->
+2026-07-09T19:52:00Z | hermes | note | school-tool-discovery | Awesome Lists daily scan: Docmost "Community Edition" rebrand signals open-core licensing shift (research before school pilot). 2 dead repos found (humanloop/awesome-llm-agents, ShubhGusain/awesome-llm). 5 priority lists dormant.
+2026-07-09T19:21:00Z | hermes | note | skillopt-sleep | SkillOpt-Sleep nightly ran all 4 benchmarks; 0/9 edits accepted (gate held — skills plateauing at toy-scale tasks)
 2026-07-08T12:14:08Z | hermes | session-end | agent-memory-coding | (auto-closed by janitor: open since 2026-06-15T21:22:00Z, no session-end >48h)
 2026-07-08T20:00:00Z | hermes | note | agent-memory | Daily memory update — no significant new activity today. Cron infrastructure healthy.
 2026-07-05T21:17:00Z | hermes | milestone | quant-scanner | AAPL quant + Berkshire scan completed. 9-slide designed deck with DESIGN.md "Quant Desk" token spec. Delivered via Telegram.

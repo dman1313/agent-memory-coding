@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-07-08T12:14:08Z_
+_Generated: 2026-07-09T12:10:38Z_
 
 ## Active Work
 _(none)_
@@ -38,6 +38,8 @@ _(none)_
 _(none)_
 
 ## Recent Activity (48h)
+- 2026-07-09T19:52:00Z | **hermes** · school-tool-discovery · note | Awesome Lists daily scan: Docmost "Community Edition" rebrand signals open-core licensing shift (research before school pilot). 2 dead repos found (humanloop/awesome-llm-agents, ShubhGusain/awesome-llm). 5 priority lists dormant.
+- 2026-07-09T19:21:00Z | **hermes** · skillopt-sleep · note | SkillOpt-Sleep nightly ran all 4 benchmarks; 0/9 edits accepted (gate held — skills plateauing at toy-scale tasks)
 - 2026-07-08T20:00:00Z | **hermes** · agent-memory · note | Daily memory update — no significant new activity today. Cron infrastructure healthy.
 - 2026-07-08T12:14:08Z | **hermes** · agent-memory-coding · session-end | (auto-closed by janitor: open since 2026-06-15T21:22:00Z, no session-end >48h)
 
@@ -48,7 +50,7 @@ _(none)_
 - 2026-07-05T21:17:00Z | **hermes** · quant-scanner | AAPL quant + Berkshire scan completed. 9-slide designed deck with DESIGN.md "Quant Desk" token spec. Delivered via Telegram.
 
 ## Last Seen (fleet)
-- **hermes**: 2026-07-08T20:00:00Z — note: Daily memory update — no significant new activity today. Cron infrastructure healthy.
+- **hermes**: 2026-07-09T19:52:00Z — note: Awesome Lists daily scan: Docmost "Community Edition" rebrand signals open-core licensing shift (research before school pilot). 2 dead repos found (humanloop/awesome-llm-agents, ShubhGusain/awesome-llm). 5 priority lists dormant.
 
 ---
 
@@ -562,6 +564,16 @@ Organized under `~/.hermes/skills/`. Key categories:
 - Cron-based automation (16+ active jobs)
 - Multi-platform messaging (Telegram)
 - Lead orchestrator (HAL) for the agent fleet
+
+## Recent Resolutions (2026-07-09)
+- **Swap Day 30**: 1.9G/1.9G (308Ki free). Gateway 2.1GB RSS. WeKnora :8089 DOWN Day 30. No OOM yet but imminent risk.
+- **IGCSE pipeline SILENT**: No output since Jul 5. 4 full days. Not failing — stopped running. T-0003 still unclaimed.
+- **Wolf scan Jul 9**: All 17 NEUTRAL. wolf_to_trader.py ImportError persists (flagged Jun 27). 3 published via workaround.
+- **GLMS web tools dead until Aug 3**: 14 rate-limit errors overnight. DREAM drafted pre-flight gate proposal.
+- **Fleet silence Day 27**: No non-HAL activity. Plan board 0/7/0. 4 stale inboxes.
+- **Self-improving agent**: All zeros for 57 days (since May 13). Learning loop never fired.
+- **79 apt updates pending**. System uptime 27 days.
+- **Jul 8 brief was real** (439 lines). Jul 7 was ghost.
 
 ## Recent Resolutions (2026-07-05)
 - **Swap Day 17**: 1.9G/1.9G (24Ki free — WORSE). OOM killer imminent. Needs sudo swapoff/fallocate — Dwayne approval required. 17 days and counting.
