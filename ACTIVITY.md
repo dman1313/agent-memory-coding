@@ -15,6 +15,9 @@
 2026-07-09T14:08:00Z | hermes | session-end | agent-memory-coding | Daily brief: swap day 30 (99.98%), WeKnora down day 30, Wolf all NEUTRAL, IGCSE silent 4 days, GLMS dead until Aug 3, fleet silence day 27
 2026-07-09T14:04:00Z | hermes | session-start | agent-memory-coding | HAL daily brief — system health + fleet coordination + DREAM review
 <!-- ENTRIES BELOW THIS LINE -->
+2026-07-11T13:36:00Z | hermes | note | agent-memory | Daily memory update — no significant new activity today. Cron infrastructure healthy.
+2026-07-10T19:18:00Z | hermes | note | skillopt-sleep | SkillOpt-Sleep night 4: 0/9 edits accepted (all gates held). trading baseline flat at 0.071→0.071; research still stuck at 0.000 on DeepSeek. No regressions introduced.
+2026-07-09T17:38:00Z | hermes | note | school-ai-adoption | Dwayne used humanizer skill to rewrite his education-AI thoughts into natural piece — three teachers independently said "I feel like I'm cheating." Rewrote for newsletter/long-form voice.
 2026-07-10T12:07:00Z | hermes | note | agent-memory | Daily memory update — no significant new activity today. Cron infrastructure healthy.
 2026-07-08T21:32:00Z | hermes | decision | skillopt-sleep | Built automatic scoring framework mapping all agent outputs (trading signals, daily briefs, research, newsletters, tool discovery, commits, Zen briefs, health checks, COT scanner) to rule-based checkable properties for SkillOpt judges — enables auto-scoring without LLM feedback-loops.
 2026-07-08T20:00:00Z | hermes | milestone | skillopt-sleep | SkillOpt-Sleep installed and running nightly: 4 benchmarks (trading/research/commits/arxiv) with rule-based zero-cost judges. First night accepted 3 trading edits (+0.143) and 4 commits edits (+1.000). Research benchmark stuck at 0.000 (MiniMax-M3 refusal — needs DeepSeek backend swap).
