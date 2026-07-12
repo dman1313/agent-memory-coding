@@ -1,6 +1,6 @@
 # Plan Board — generated
 
-_Generated: 2026-07-11T13:36:46Z by build-context.sh — do not hand-edit. Contract: Plan/README.md_
+_Generated: 2026-07-12T12:11:04Z by build-context.sh — do not hand-edit. Contract: Plan/README.md_
 
 ## doing
 

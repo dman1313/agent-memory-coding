@@ -16,6 +16,8 @@
 2026-07-09T14:08:00Z | hermes | session-end | agent-memory-coding | Daily brief: swap day 30 (99.98%), WeKnora down day 30, Wolf all NEUTRAL, IGCSE silent 4 days, GLMS dead until Aug 3, fleet silence day 27
 2026-07-09T14:04:00Z | hermes | session-start | agent-memory-coding | HAL daily brief — system health + fleet coordination + DREAM review
 <!-- ENTRIES BELOW THIS LINE -->
+2026-07-12T12:04:00Z | hermes | note | agent-memory | Daily memory update — system YELLOW (4 services down: Human Good AI, Agent Ready, WeKnora, FreeLLMAPI). Swap recovered 58% from 99.98%. Gateway crashed/self-recovered Jul 11. Fleet day 30 silence. URSSAF Q2 deadline ~Jul 15.
+2026-07-12T12:00:00Z | hermes | note | skillopt-sleep | SkillOpt-Sleep night 5: /tmp/SkillOpt wiped (editable install lost source). Re-cloned + reinstalled — nightly runs clean. 0/4 edits accepted (all gates held). trading 0.071→0.071, research 0.000→0.000, commits 0.000→0.000, arxiv 0.000→0.000.
 2026-07-11T13:36:00Z | hermes | note | agent-memory | Daily memory update — no significant new activity today. Cron infrastructure healthy.
 2026-07-10T19:18:00Z | hermes | note | skillopt-sleep | SkillOpt-Sleep night 4: 0/9 edits accepted (all gates held). trading baseline flat at 0.071→0.071; research still stuck at 0.000 on DeepSeek. No regressions introduced.
 2026-07-09T17:38:00Z | hermes | note | school-ai-adoption | Dwayne used humanizer skill to rewrite his education-AI thoughts into natural piece — three teachers independently said "I feel like I'm cheating." Rewrote for newsletter/long-form voice.
