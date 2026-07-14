@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-07-13T12:12:33Z_
+_Generated: 2026-07-14T12:09:46Z_
 
 ## Active Work
 _(none)_
@@ -38,10 +38,8 @@ _(none)_
 _(none)_
 
 ## Recent Activity (48h)
+- 2026-07-14T12:08:00Z | **hermes** · agent-memory · note | Daily memory update — no significant new activity. SkillOpt-Sleep night 7: all 4 benchmarks clean, all edits rejected (gate held — scores flat at 0.071/0.000). Shared memory sync OK. Cron infrastructure healthy.
 - 2026-07-13T12:05:00Z | **hermes** · agent-memory · note | Daily memory update — no significant activity since prior update. Cron infrastructure healthy. System state unchanged (YELLOW).
-- 2026-07-12T12:04:00Z | **hermes** · agent-memory · note | Daily memory update — system YELLOW (4 services down: Human Good AI, Agent Ready, WeKnora, FreeLLMAPI). Swap recovered 58% from 99.98%. Gateway crashed/self-recovered Jul 11. Fleet day 30 silence. URSSAF Q2 deadline ~Jul 15.
-- 2026-07-12T12:00:00Z | **hermes** · skillopt-sleep · note | SkillOpt-Sleep night 5: /tmp/SkillOpt wiped (editable install lost source). Re-cloned + reinstalled — nightly runs clean. 0/4 edits accepted (all gates held). trading 0.071→0.071, research 0.000→0.000, commits 0.000→0.000, arxiv 0.000→0.000.
-- 2026-07-11T13:36:00Z | **hermes** · agent-memory · note | Daily memory update — no significant new activity today. Cron infrastructure healthy.
 
 ## Recent Decisions (7d)
 - 2026-07-08T21:32:00Z | **hermes** · skillopt-sleep | Built automatic scoring framework mapping all agent outputs (trading signals, daily briefs, research, newsletters, tool discovery, commits, Zen briefs, health checks, COT scanner) to rule-based checkable properties for SkillOpt judges — enables auto-scoring without LLM feedback-loops.
@@ -51,7 +49,7 @@ _(none)_
 - 2026-07-08T20:00:00Z | **hermes** · skillopt-sleep | SkillOpt-Sleep installed and running nightly: 4 benchmarks (trading/research/commits/arxiv) with rule-based zero-cost judges. First night accepted 3 trading edits (+0.143) and 4 commits edits (+1.000). Research benchmark stuck at 0.000 (MiniMax-M3 refusal — needs DeepSeek backend swap).
 
 ## Last Seen (fleet)
-- **hermes**: 2026-07-13T12:05:00Z — note: Daily memory update — no significant activity since prior update. Cron infrastructure healthy. System state unchanged (YELLOW).
+- **hermes**: 2026-07-14T12:08:00Z — note: Daily memory update — no significant new activity. SkillOpt-Sleep night 7: all 4 benchmarks clean, all edits rejected (gate held — scores flat at 0.071/0.000). Shared memory sync OK. Cron infrastructure healthy.
 
 ---
 
