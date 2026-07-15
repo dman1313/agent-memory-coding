@@ -113,6 +113,20 @@ Organized under `~/.hermes/skills/`. Key categories:
 - Multi-platform messaging (Telegram)
 - Lead orchestrator (HAL) for the agent fleet
 
+## Recent Resolutions (2026-07-15)
+- **Swap 90.3%**: 1.8G/1.9G (192Mi free). Gateway 1.5GB RSS (19.2%). Above 90% threshold — YELLOW. Not at OOM-killer risk yet but creeping.
+- **4 services DOWN**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. Dashboard :9999, 9Router :20128, Hermes Office :3001, Dashboard auth :9121 all UP.
+- **Web search dead until Aug 3**: GLMS monthly limit exhausted. Firecrawl has no API key. All agents working blind.
+- **Zen Telegram broken**: Topic 725 "Chat not found" — morning/evening reflections not delivering (3e370a88f365, 1587f2840b6d).
+- **Wolf Jul 15**: All NEUTRAL. U 0.484 (WATCH), CRM 0.220, NFLX 0.176. Published U/CRM/META to AI-Trader. No STRONG BUY. Twitter still dead.
+- **URSSAF Q2 deadline**: Today (Jul 15). Flagged.
+- **Fleet silence Day 33**: No non-HAL agent activity since hyperagent Jun 12.
+- **110 apt updates pending**. System uptime 3 days.
+- **Self-improving-agent**: All zeros for 63 days (since May 13). Learning loop never fired.
+- **Provider=None**: 3 jobs (CFTC COT, IGCSE, DRAM) → openai-codex (OAuth). Should be OK.
+- **NOW.md 26h stale**: build-context.sh regeneration attempted. Plan board: 0/7/0.
+- **Memory utilisation**: 94% (MEMORY.md).
+
 ## Recent Resolutions (2026-07-09)
 - **Swap Day 30**: 1.9G/1.9G (308Ki free). Gateway 2.1GB RSS. WeKnora :8089 DOWN Day 30. No OOM yet but imminent risk.
 - **IGCSE pipeline SILENT**: No output since Jul 5. 4 full days. Not failing — stopped running. T-0003 still unclaimed.
