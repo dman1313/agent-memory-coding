@@ -1,6 +1,6 @@
 # NOW — Current State
 
-_Generated: 2026-07-14T12:09:46Z_
+_Generated: 2026-07-15T12:08:44Z_
 
 ## Active Work
 _(none)_
@@ -32,8 +32,8 @@ _(none)_
 _(none)_
 
 ## Recent Activity (48h)
+- 2026-07-15T12:05:00Z | **hermes** · agent-memory · note | Daily memory update — SkillOpt-Sleep night 8: research broke through 0.167→1.000, first accepted edit in 7 nights (structured Business/Moat/Risk analysis format enforced). Trading flat at 0.429, commits at ceiling 1.000, arxiv stuck at 0.000. HAL daily brief delivered. System YELLOW unchanged.
 - 2026-07-14T12:08:00Z | **hermes** · agent-memory · note | Daily memory update — no significant new activity. SkillOpt-Sleep night 7: all 4 benchmarks clean, all edits rejected (gate held — scores flat at 0.071/0.000). Shared memory sync OK. Cron infrastructure healthy.
-- 2026-07-13T12:05:00Z | **hermes** · agent-memory · note | Daily memory update — no significant activity since prior update. Cron infrastructure healthy. System state unchanged (YELLOW).
 
 ## Recent Decisions (7d)
 - 2026-07-08T21:32:00Z | **hermes** · skillopt-sleep | Built automatic scoring framework mapping all agent outputs (trading signals, daily briefs, research, newsletters, tool discovery, commits, Zen briefs, health checks, COT scanner) to rule-based checkable properties for SkillOpt judges — enables auto-scoring without LLM feedback-loops.
@@ -43,4 +43,4 @@ _(none)_
 - 2026-07-08T20:00:00Z | **hermes** · skillopt-sleep | SkillOpt-Sleep installed and running nightly: 4 benchmarks (trading/research/commits/arxiv) with rule-based zero-cost judges. First night accepted 3 trading edits (+0.143) and 4 commits edits (+1.000). Research benchmark stuck at 0.000 (MiniMax-M3 refusal — needs DeepSeek backend swap).
 
 ## Last Seen (fleet)
-- **hermes**: 2026-07-14T12:08:00Z — note: Daily memory update — no significant new activity. SkillOpt-Sleep night 7: all 4 benchmarks clean, all edits rejected (gate held — scores flat at 0.071/0.000). Shared memory sync OK. Cron infrastructure healthy.
+- **hermes**: 2026-07-15T12:05:00Z — note: Daily memory update — SkillOpt-Sleep night 8: research broke through 0.167→1.000, first accepted edit in 7 nights (structured Business/Moat/Risk analysis format enforced). Trading flat at 0.429, commits at ceiling 1.000, arxiv stuck at 0.000. HAL daily brief delivered. System YELLOW unchanged.
