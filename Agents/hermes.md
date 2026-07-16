@@ -113,6 +113,17 @@ Organized under `~/.hermes/skills/`. Key categories:
 - Multi-platform messaging (Telegram)
 - Lead orchestrator (HAL) for the agent fleet
 
+## Recent Resolutions (2026-07-16)
+- **Swap 99.97% RED**: 704Ki free. Gateway 1.67GB RSS (20.8%). OOM killer imminent — worse than yesterday (90.3%). Dwayne needs to approve swap increase or gateway restart.
+- **Same 4 services DOWN**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. Dashboard :9999, 9Router :20128, Hermes Office :3001, Dashboard auth :9121 all UP.
+- **DREAM Jul 16**: Cleanup-before-analysis Day 8+. Zen Telegram broken 72h+. Web search blind until Aug 3.
+- **Wolf Jul 16**: All NEUTRAL. U 0.200, BRK.B 0.187, VIX 0.142. Published U/BRK.B/VIX to AI-Trader. Low-conviction day.
+- **Fleet silence Day 34**: No non-HAL agent activity since hyperagent Jun 12.
+- **114 apt updates pending**. System uptime 4.5 days.
+- **Provider=None**: 3 jobs (CFTC COT, IGCSE, DRAM) → openai-codex (OAuth). Should be OK.
+- **Self-improving-agent**: All zeros for 64 days (since May 13).
+- **Memory utilisation**: 94% (MEMORY.md).
+
 ## Recent Resolutions (2026-07-15)
 - **Swap 90.3%**: 1.8G/1.9G (192Mi free). Gateway 1.5GB RSS (19.2%). Above 90% threshold — YELLOW. Not at OOM-killer risk yet but creeping.
 - **4 services DOWN**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. Dashboard :9999, 9Router :20128, Hermes Office :3001, Dashboard auth :9121 all UP.
