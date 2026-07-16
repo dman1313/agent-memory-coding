@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-07-15T12:08:44Z_
+_Generated: 2026-07-16T12:06:41Z_
 
 ## Active Work
 _(none)_
@@ -38,18 +38,18 @@ _(none)_
 _(none)_
 
 ## Recent Activity (48h)
+- 2026-07-16T12:04:30Z | **hermes** · agent-memory · note | Daily memory update — no significant activity since prior HAL brief. Vault sync healthy.
 - 2026-07-15T12:05:00Z | **hermes** · agent-memory · note | Daily memory update — SkillOpt-Sleep night 8: research broke through 0.167→1.000, first accepted edit in 7 nights (structured Business/Moat/Risk analysis format enforced). Trading flat at 0.429, commits at ceiling 1.000, arxiv stuck at 0.000. HAL daily brief delivered. System YELLOW unchanged.
 - 2026-07-14T12:08:00Z | **hermes** · agent-memory · note | Daily memory update — no significant new activity. SkillOpt-Sleep night 7: all 4 benchmarks clean, all edits rejected (gate held — scores flat at 0.071/0.000). Shared memory sync OK. Cron infrastructure healthy.
 
 ## Recent Decisions (7d)
-- 2026-07-08T21:32:00Z | **hermes** · skillopt-sleep | Built automatic scoring framework mapping all agent outputs (trading signals, daily briefs, research, newsletters, tool discovery, commits, Zen briefs, health checks, COT scanner) to rule-based checkable properties for SkillOpt judges — enables auto-scoring without LLM feedback-loops.
-- 2026-07-08T19:28:00Z | **hermes** · skillopt-sleep | Backend swapped from MiniMax-M3 to DeepSeek v4-flash for SkillOpt research benchmark after MiniMax-M3 refused the theory-testing task (empty responses). Other benchmarks remain on MiniMax-M3.
+_(none)_
 
 ## Recent Milestones (7d)
-- 2026-07-08T20:00:00Z | **hermes** · skillopt-sleep | SkillOpt-Sleep installed and running nightly: 4 benchmarks (trading/research/commits/arxiv) with rule-based zero-cost judges. First night accepted 3 trading edits (+0.143) and 4 commits edits (+1.000). Research benchmark stuck at 0.000 (MiniMax-M3 refusal — needs DeepSeek backend swap).
+_(none)_
 
 ## Last Seen (fleet)
-- **hermes**: 2026-07-15T12:05:00Z — note: Daily memory update — SkillOpt-Sleep night 8: research broke through 0.167→1.000, first accepted edit in 7 nights (structured Business/Moat/Risk analysis format enforced). Trading flat at 0.429, commits at ceiling 1.000, arxiv stuck at 0.000. HAL daily brief delivered. System YELLOW unchanged.
+- **hermes**: 2026-07-16T12:04:30Z — note: Daily memory update — no significant activity since prior HAL brief. Vault sync healthy.
 
 ---
 
@@ -563,6 +563,17 @@ Organized under `~/.hermes/skills/`. Key categories:
 - Cron-based automation (16+ active jobs)
 - Multi-platform messaging (Telegram)
 - Lead orchestrator (HAL) for the agent fleet
+
+## Recent Resolutions (2026-07-16)
+- **Swap 99.97% RED**: 704Ki free. Gateway 1.67GB RSS (20.8%). OOM killer imminent — worse than yesterday (90.3%). Dwayne needs to approve swap increase or gateway restart.
+- **Same 4 services DOWN**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. Dashboard :9999, 9Router :20128, Hermes Office :3001, Dashboard auth :9121 all UP.
+- **DREAM Jul 16**: Cleanup-before-analysis Day 8+. Zen Telegram broken 72h+. Web search blind until Aug 3.
+- **Wolf Jul 16**: All NEUTRAL. U 0.200, BRK.B 0.187, VIX 0.142. Published U/BRK.B/VIX to AI-Trader. Low-conviction day.
+- **Fleet silence Day 34**: No non-HAL agent activity since hyperagent Jun 12.
+- **114 apt updates pending**. System uptime 4.5 days.
+- **Provider=None**: 3 jobs (CFTC COT, IGCSE, DRAM) → openai-codex (OAuth). Should be OK.
+- **Self-improving-agent**: All zeros for 64 days (since May 13).
+- **Memory utilisation**: 94% (MEMORY.md).
 
 ## Recent Resolutions (2026-07-15)
 - **Swap 90.3%**: 1.8G/1.9G (192Mi free). Gateway 1.5GB RSS (19.2%). Above 90% threshold — YELLOW. Not at OOM-killer risk yet but creeping.
