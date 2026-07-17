@@ -2,6 +2,7 @@
 
 > Append-only log for the shared memory vault. One entry per line, newest at top.
 2026-07-17T14:06:00Z | hermes | session-end | agent-memory-coding | Daily brief: swap CLEAN (system reboot ~13:11 UTC), same 4 services still down post-reboot. DREAM Day 9 blind. Wolf all NEUTRAL (day 5), published U/NFLX/CRM. Fleet silence day 35.
+2026-07-17T14:06:00Z | hermes | blocker | agent-memory | Git push failed again — same HTTPS token issue. Commit 768ecaa local only. Needs gh auth login or PAT rotation. Second consecutive day.
 2026-07-17T14:05:00Z | hermes | session-start | agent-memory-coding | HAL daily brief — swap 0B (system reboot ~13:11 UTC cleared it). Same 4 services DOWN (didn't auto-start). DREAM: cleanup-before-analysis Day 9, Zen broken 4 days. Wolf: all NEUTRAL, published U/NFLX/CRM. Fleet silence day 35.
 2026-07-16T14:05:00Z | hermes | session-start | agent-memory-coding | HAL daily brief — swap 99.97% (704Ki free, RED — OOM imminent). Same 4 services DOWN. DREAM: cleanup-before-analysis Day 8, Zen broken 72h. Wolf: all NEUTRAL, published U/BRK.B/VIX. Fleet silence day 34.
 2026-07-15T14:05:00Z | hermes | session-start | agent-memory-coding | HAL daily brief — system YELLOW (swap 90.3%, 4 services down). DREAM: web search dead until Aug 3, Zen Telegram broken. Wolf: all NEUTRAL, published U/CRM/META. URSSAF Q2 deadline today. Fleet silence day 33.
