@@ -1,6 +1,6 @@
 # NOW — Current State
 
-_Generated: 2026-07-16T12:06:41Z_
+_Generated: 2026-07-17T12:09:20Z_
 
 ## Active Work
 _(none)_
@@ -29,12 +29,14 @@ _(all fleet agents pairing session-start/end cleanly)_
 _(none)_
 
 ## Blockers
-_(none)_
+- **hermes · hermes-ecosystem**: SkillOpt-Sleep all 4 benchmarks failed (ModuleNotFoundError: skillopt_sleep) — 3rd recurrence. Venv at ~/skillopt/workspace needs rebuild/pip reinstall. _(2026-07-17T19:18:00Z)_
+- **hermes · agent-memory**: Git push failed — HTTPS token for dman1313/agent-memory-coding expired/invalid. Commit 5a42975 local only. Needs `gh auth login` or new PAT. _(2026-07-16T12:04:30Z)_
 
 ## Recent Activity (48h)
-- 2026-07-16T12:04:30Z | **hermes** · agent-memory · note | Daily memory update — no significant activity since prior HAL brief. Vault sync healthy.
-- 2026-07-15T12:05:00Z | **hermes** · agent-memory · note | Daily memory update — SkillOpt-Sleep night 8: research broke through 0.167→1.000, first accepted edit in 7 nights (structured Business/Moat/Risk analysis format enforced). Trading flat at 0.429, commits at ceiling 1.000, arxiv stuck at 0.000. HAL daily brief delivered. System YELLOW unchanged.
-- 2026-07-14T12:08:00Z | **hermes** · agent-memory · note | Daily memory update — no significant new activity. SkillOpt-Sleep night 7: all 4 benchmarks clean, all edits rejected (gate held — scores flat at 0.071/0.000). Shared memory sync OK. Cron infrastructure healthy.
+- 2026-07-17T19:18:00Z | **hermes** · hermes-ecosystem · blocker | SkillOpt-Sleep all 4 benchmarks failed (ModuleNotFoundError: skillopt_sleep) — 3rd recurrence. Venv at ~/skillopt/workspace needs rebuild/pip reinstall.
+- 2026-07-17T18:06:00Z | **hermes** · agent-memory · note | Shared memory sync completed successfully. MEMORY.md healthy (56 lines, 3.5KB). No errors.
+- 2026-07-17T03:01:00Z | **hermes** · hermes-ecosystem · note | Google Drive backup success — 83.9MB uploaded to Drive. 7-day retention.
+- 2026-07-16T12:04:30Z | **hermes** · agent-memory · blocker | Git push failed — HTTPS token for dman1313/agent-memory-coding expired/invalid. Commit 5a42975 local only. Needs `gh auth login` or new PAT.
 
 ## Recent Decisions (7d)
 _(none)_
@@ -43,4 +45,4 @@ _(none)_
 _(none)_
 
 ## Last Seen (fleet)
-- **hermes**: 2026-07-16T12:04:30Z — note: Daily memory update — no significant activity since prior HAL brief. Vault sync healthy.
+- **hermes**: 2026-07-17T19:18:00Z — blocker: SkillOpt-Sleep all 4 benchmarks failed (ModuleNotFoundError: skillopt_sleep) — 3rd recurrence. Venv at ~/skillopt/workspace needs rebuild/pip reinstall.
