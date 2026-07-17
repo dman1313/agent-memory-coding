@@ -3,7 +3,7 @@ name: agent-hermes
 description: Hermes Agent — VPS-based, Nous Research, agent fleet orchestrator
 metadata:
   type: agents
-  updated: 2026-07-09
+  updated: 2026-07-17
 ---
 
 # Hermes
@@ -112,6 +112,16 @@ Organized under `~/.hermes/skills/`. Key categories:
 - Cron-based automation (16+ active jobs)
 - Multi-platform messaging (Telegram)
 - Lead orchestrator (HAL) for the agent fleet
+
+## Recent Resolutions (2026-07-17)
+- **Swap CLEAN (0B)**: System reboot ~13:11 UTC cleared swap. Gateway 300MB RSS (down from 1.67GB). OOM threat resolved for now. But 4 services didn't auto-restart.
+- **Same 4 services DOWN**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. Didn't survive reboot — need manual restart.
+- **DREAM Jul 17**: Cleanup-before-analysis Day 9. Zen Telegram broken 4 days. Firecrawl unconfigured week 7. MEMORY.md healthy.
+- **Wolf Jul 17**: All NEUTRAL (day 5). U 0.200, BRK.B 0.184, AMD 0.159. Published U/NFLX/CRM. NFLX flagged as WSB contrarian bounce play.
+- **Fleet silence Day 35**: No non-HAL agent activity since hyperagent Jun 12.
+- **114 apt updates pending**. System uptime 54 min (fresh boot).
+- **Self-improving-agent**: All zeros for 65 days (since May 13).
+- **Previous brief (Jul 16) was real**: 410 lines, full metrics.
 
 ## Recent Resolutions (2026-07-16)
 - **Swap 99.97% RED**: 704Ki free. Gateway 1.67GB RSS (20.8%). OOM killer imminent — worse than yesterday (90.3%). Dwayne needs to approve swap increase or gateway restart.
