@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-07-17T12:09:20Z_
+_Generated: 2026-07-18T12:08:39Z_
 
 ## Active Work
 _(none)_
@@ -36,13 +36,15 @@ _(none)_
 
 ## Blockers
 - **hermes · hermes-ecosystem**: SkillOpt-Sleep all 4 benchmarks failed (ModuleNotFoundError: skillopt_sleep) — 3rd recurrence. Venv at ~/skillopt/workspace needs rebuild/pip reinstall. _(2026-07-17T19:18:00Z)_
+- **hermes · agent-memory**: Git push failed day 3 — HTTPS auth can't read Username for github.com. Commit 2ed0640 local only. Needs `git remote set-url origin git@github.com:dman1313/agent-memory-coding.git` or `gh auth login`. _(2026-07-17T19:18:00Z)_
 - **hermes · agent-memory**: Git push failed — HTTPS token for dman1313/agent-memory-coding expired/invalid. Commit 5a42975 local only. Needs `gh auth login` or new PAT. _(2026-07-16T12:04:30Z)_
 
 ## Recent Activity (48h)
+- 2026-07-18T12:07:00Z | **hermes** · agent-memory · note | No significant Hermes session activity since prior update (07:52 UTC). Git push still blocked day 4 (HTTPS/GH auth invalid). Abandoned commits: 9ab3e31, 2ed0640, 2a67ebb, 1745123 (local only).
 - 2026-07-17T19:18:00Z | **hermes** · hermes-ecosystem · blocker | SkillOpt-Sleep all 4 benchmarks failed (ModuleNotFoundError: skillopt_sleep) — 3rd recurrence. Venv at ~/skillopt/workspace needs rebuild/pip reinstall.
+- 2026-07-17T19:18:00Z | **hermes** · agent-memory · blocker | Git push failed day 3 — HTTPS auth can't read Username for github.com. Commit 2ed0640 local only. Needs `git remote set-url origin git@github.com:dman1313/agent-memory-coding.git` or `gh auth login`.
 - 2026-07-17T18:06:00Z | **hermes** · agent-memory · note | Shared memory sync completed successfully. MEMORY.md healthy (56 lines, 3.5KB). No errors.
 - 2026-07-17T03:01:00Z | **hermes** · hermes-ecosystem · note | Google Drive backup success — 83.9MB uploaded to Drive. 7-day retention.
-- 2026-07-16T12:04:30Z | **hermes** · agent-memory · blocker | Git push failed — HTTPS token for dman1313/agent-memory-coding expired/invalid. Commit 5a42975 local only. Needs `gh auth login` or new PAT.
 
 ## Recent Decisions (7d)
 _(none)_
@@ -51,7 +53,7 @@ _(none)_
 _(none)_
 
 ## Last Seen (fleet)
-- **hermes**: 2026-07-17T19:18:00Z — blocker: SkillOpt-Sleep all 4 benchmarks failed (ModuleNotFoundError: skillopt_sleep) — 3rd recurrence. Venv at ~/skillopt/workspace needs rebuild/pip reinstall.
+- **hermes**: 2026-07-18T12:07:00Z — note: No significant Hermes session activity since prior update (07:52 UTC). Git push still blocked day 4 (HTTPS/GH auth invalid). Abandoned commits: 9ab3e31, 2ed0640, 2a67ebb, 1745123 (local only).
 
 ---
 
@@ -472,14 +474,14 @@ _(running notes I want to remember across sessions)_
 
 ## Model Routing
 
-| Tier       | Model              | Provider   |
-|------------|--------------------|------------|
-| Light      | MiMo v2.5-pro     | Xiaomi     |
-| Medium     | DeepSeek v4-flash  | DeepSeek   |
-| Heavy      | DeepSeek v4-pro    | DeepSeek   |
-| Code       | Coding Officer     | Kimi CLI primary, Claude Code backup |
-| GLM 5.1    | coding plan only   | Z.AI       |
-| Fallback   | DeepSeek PAYG      | DeepSeek   |
+| Lane | Model / Client | Provider | Use |
+|---|---|---|---|
+| Startup/default | MiMo v2.5-pro | Xiaomi | All ordinary intake, conversation, research, planning, admin, and first attempts |
+| Heavy escalation | GPT-5.6 | OpenAI Codex | Only when MiMo is insufficient, uncertainty remains, or stakes are material |
+| Interactive build | Cursor Agent | Cursor CLI | Repository implementation and iterative edit/test/debug cycles |
+| Delegated build | GLM 5.2 | Z.AI | Coding subagents, parallel implementation, bounded substantial code work |
+
+Routing rule: **MiMo starts → GPT-5.6 escalates → Cursor / GLM 5.2 build.**
 
 ## Skills (300+)
 
