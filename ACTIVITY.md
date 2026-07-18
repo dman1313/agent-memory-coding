@@ -1,7 +1,8 @@
 # ACTIVITY — Agent Activity Log
 
 > Append-only log for the shared memory vault. One entry per line, newest at top.
-2026-07-17T14:06:00Z | hermes | session-end | agent-memory-coding | Daily brief: swap CLEAN (system reboot ~13:11 UTC), same 4 services still down post-reboot. DREAM Day 9 blind. Wolf all NEUTRAL (day 5), published U/NFLX/CRM. Fleet silence day 35.
+2026-07-18T06:10:00Z | hermes | session-start | agent-memory-coding | HAL daily brief Sat Jul 18 — system YELLOW (swap 0B clean, 4 services down Day 5, 99 apt updates). DREAM worked (first real audit in days): Zen reflection jobs broken Day 2+ (topic 725 deleted), school tool discovery cron retry storm (13x runs), Cursor CLI integrated Jul 17. Wolf: no scan Saturday; yesterday all NEUTRAL, NFLX WSB contrarian flagged. Git push broken Day 4. Fleet silence Day 36.
+2026-07-18T06:10:00Z | hermes | session-end | agent-memory-coding | Daily brief delivered Sat Jul 18. System YELLOW (swap clean, 4 services down Day 5). DREAM audit worked (first in days): Zen broken Day 2+, school tool discovery retry storm. Wolf: Saturday — no scan. Fleet silence Day 36. Vault commit attempted.
 2026-07-17T14:06:00Z | hermes | blocker | agent-memory | Git push failed again — same HTTPS token issue. Commit 768ecaa local only. Needs gh auth login or PAT rotation. Second consecutive day.
 2026-07-17T14:05:00Z | hermes | session-start | agent-memory-coding | HAL daily brief — swap 0B (system reboot ~13:11 UTC cleared it). Same 4 services DOWN (didn't auto-start). DREAM: cleanup-before-analysis Day 9, Zen broken 4 days. Wolf: all NEUTRAL, published U/NFLX/CRM. Fleet silence day 35.
 2026-07-16T14:05:00Z | hermes | session-start | agent-memory-coding | HAL daily brief — swap 99.97% (704Ki free, RED — OOM imminent). Same 4 services DOWN. DREAM: cleanup-before-analysis Day 8, Zen broken 72h. Wolf: all NEUTRAL, published U/BRK.B/VIX. Fleet silence day 34.
