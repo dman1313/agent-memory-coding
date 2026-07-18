@@ -19,14 +19,14 @@ metadata:
 
 ## Model Routing
 
-| Tier       | Model              | Provider   |
-|------------|--------------------|------------|
-| Light      | MiMo v2.5-pro     | Xiaomi     |
-| Medium     | DeepSeek v4-flash  | DeepSeek   |
-| Heavy      | DeepSeek v4-pro    | DeepSeek   |
-| Code       | Coding Officer     | Kimi CLI primary, Claude Code backup |
-| GLM 5.1    | coding plan only   | Z.AI       |
-| Fallback   | DeepSeek PAYG      | DeepSeek   |
+| Lane | Model / Client | Provider | Use |
+|---|---|---|---|
+| Startup/default | MiMo v2.5-pro | Xiaomi | All ordinary intake, conversation, research, planning, admin, and first attempts |
+| Heavy escalation | GPT-5.6 | OpenAI Codex | Only when MiMo is insufficient, uncertainty remains, or stakes are material |
+| Interactive build | Cursor Agent | Cursor CLI | Repository implementation and iterative edit/test/debug cycles |
+| Delegated build | GLM 5.2 | Z.AI | Coding subagents, parallel implementation, bounded substantial code work |
+
+Routing rule: **MiMo starts → GPT-5.6 escalates → Cursor / GLM 5.2 build.**
 
 ## Skills (300+)
 
