@@ -1,0 +1,1377 @@
+{
+  "build-context.sh": {
+    "mtime": 1782467629.3384318,
+    "ast_hash": "cbef4738af03ade5edbb4e5c29d3459a",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/2026-06-08/.graphify_analysis.json": {
+    "mtime": 1780951502.5916693,
+    "ast_hash": "62627bb4ed2abf0020e7561bd25b9a5a",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/2026-06-08/.graphify_labels.json": {
+    "mtime": 1780951502.5916693,
+    "ast_hash": "ef09ef81c8552c670d36498955eafbe3",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/2026-06-08/graph.json": {
+    "mtime": 1780951502.5926692,
+    "ast_hash": "d4173d68dee58b6faf373b12dff33f6d",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/2026-06-08/manifest.json": {
+    "mtime": 1780951502.5926692,
+    "ast_hash": "99914b932bd37a50b983c5e7c90ae93b",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/cache/semantic/035e015cb303ff14cb85a4040538a93281ef5e9a879507609bc2683ee5bcbec3.json": {
+    "mtime": 1780951502.5926692,
+    "ast_hash": "9b5abfa7043c81e10480a8d94f6960e8",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/cache/semantic/0a583010d2014c62d38728c4734f79e470c0f002ae6cc575860ca571e74df2c8.json": {
+    "mtime": 1780951502.5926692,
+    "ast_hash": "6f05adcbded173fb60e7903c3b366898",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/cache/semantic/17fa3ddd3d546f5d73f013c37699d44d7fa5b56f06bf4e615ecd5b30d6c1317a.json": {
+    "mtime": 1780951502.5926692,
+    "ast_hash": "e34d3513ef326059b2f4990e83b13ca4",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/cache/semantic/2683cff07b7f376e19d4da693b554429b011219db40eaeba771d9737653abb3c.json": {
+    "mtime": 1780951502.5926692,
+    "ast_hash": "030a1828f9236f9d16638c2a10eb29dd",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/cache/semantic/2a344fa4ec8227f13e796e835e6c31aecbe15719be4d69646c6d88f916260cf7.json": {
+    "mtime": 1780951502.5926692,
+    "ast_hash": "4369c18c7fd365cc0e7f165521d43140",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/cache/semantic/307ad0525c905e0986ec0aaf9237d3846d8ffd9611dcbeeedd6f00ac91217f6c.json": {
+    "mtime": 1780951502.5926692,
+    "ast_hash": "8a1bef8fa0fa4f164b900e0fd5bef40c",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/cache/semantic/39369b646b4719ecf43ede336c45b18b453b701212a9247f62a21f88cb4e22eb.json": {
+    "mtime": 1780951502.5926692,
+    "ast_hash": "93a26edf000d8a04943d34a0cc7277aa",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/cache/semantic/3a24531e6583536b938bf232568b87a264ad0442eea8f2bd6cfd59b83f22a91c.json": {
+    "mtime": 1780951502.5926692,
+    "ast_hash": "ba3b2e0ae4c18f9cad8172fbd5d56df0",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/cache/semantic/4e286f6ef678b8986f070cc38c701330db0dfbe926a15f657eed6ede5854e873.json": {
+    "mtime": 1780951502.5926692,
+    "ast_hash": "4a98dd77be76072e65b752d47d1eec5b",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/cache/semantic/59d8a448dddfa915e2ce13d6b2f511d9df3625987b53d6cb7f72de5396b376d8.json": {
+    "mtime": 1780951502.5926692,
+    "ast_hash": "5948ee22b70530b18bb19801467cb236",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/cache/semantic/6557051b8790ffc3e40eb04109811ce5f9f882aeca586ec1dc37dd2678d0bf69.json": {
+    "mtime": 1780951502.5926692,
+    "ast_hash": "80f0d92306c22ec699b73b40acd85bee",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/cache/semantic/683004278e4e0c124e7bda291c5f4672049f68599fcb18c966b72bf082ffca2e.json": {
+    "mtime": 1780951502.5936692,
+    "ast_hash": "d0d9bb01631b447cd59875ee262d5469",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/cache/semantic/68be01153ec4755834b5969d0497270b80a8b9877debb566f4d7bf64b651f4e9.json": {
+    "mtime": 1780951502.5936692,
+    "ast_hash": "7a412fd94f4e848b4976a0002d63eca8",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/cache/semantic/8d08b6b57eec881206ce2a31e2248dfef7359e67beba86540b59ef7b67997473.json": {
+    "mtime": 1780951502.5936692,
+    "ast_hash": "b8284ff46e35bd6e90861bb8fd3dce2a",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/cache/semantic/c940fbd54de413c565a85a5cf732fb207073d0073fa5eb2f9255b69534b3441a.json": {
+    "mtime": 1780951502.5936692,
+    "ast_hash": "6af7c31e0da033a7050df53207e03fc6",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/cache/semantic/d14bdfcb0d12c0b8b6bc0330c18688f683019d5c035e758092b513f89fd5d702.json": {
+    "mtime": 1780951502.5936692,
+    "ast_hash": "5679fb73fd133b10e46b4005a5d687d4",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/cache/semantic/e4aa82af14b987457248f68380453ab8076e403149f13147b340e3e3537a3546.json": {
+    "mtime": 1780951502.5936692,
+    "ast_hash": "57fb9ecc38f415a9a6e82944116bd481",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/cache/stat-index.json": {
+    "mtime": 1780951502.5936692,
+    "ast_hash": "6a6f71f18e717e48d038ea50417d6e12",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/graph.json": {
+    "mtime": 1780951502.5936692,
+    "ast_hash": "d4173d68dee58b6faf373b12dff33f6d",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/manifest.json": {
+    "mtime": 1780951502.5936692,
+    "ast_hash": "99914b932bd37a50b983c5e7c90ae93b",
+    "semantic_hash": ""
+  },
+  "scripts/setup-mac.sh": {
+    "mtime": 1780409403.5010602,
+    "ast_hash": "afac7f48216efcc6b6ec20f089901bd5",
+    "semantic_hash": ""
+  },
+  "scripts/vault-keeper/vault_fitness.js": {
+    "mtime": 1781209802.4882667,
+    "ast_hash": "1595bef32fc7745d0468b7293289ab28",
+    "semantic_hash": ""
+  },
+  "scripts/vault-keeper/vault_keeper.js": {
+    "mtime": 1781212502.504244,
+    "ast_hash": "963aee56ca2f0eb384d20b8d59979ecf",
+    "semantic_hash": ""
+  },
+  "skills-for-mac/install.sh": {
+    "mtime": 1780513259.1679294,
+    "ast_hash": "d0f47cbe04cef7646700e04f6b4b6cd9",
+    "semantic_hash": ""
+  },
+  "sync.sh": {
+    "mtime": 1780866002.4155314,
+    "ast_hash": "91c9ab9163b201f8ace9baa471543fa1",
+    "semantic_hash": ""
+  },
+  ".claude/skills/curate/SKILL.md": {
+    "mtime": 1780860602.1404784,
+    "ast_hash": "3ac338185032d37a09362567768a1745",
+    "semantic_hash": ""
+  },
+  "ACTIVITY.md": {
+    "mtime": 1784462937.473336,
+    "ast_hash": "2a2c1b3562fd1d21cf9e84e1a5728205",
+    "semantic_hash": ""
+  },
+  "AGENT-BOOTSTRAP.md": {
+    "mtime": 1781208902.4999068,
+    "ast_hash": "c8ed894e5c2a33ccfb6736e3b4145ad3",
+    "semantic_hash": ""
+  },
+  "AGENT-CHANNEL.md": {
+    "mtime": 1781188203.2730753,
+    "ast_hash": "56f2d3846d7505bea88827c4ea5a8aae",
+    "semantic_hash": ""
+  },
+  "AGENT-QUICK-START.md": {
+    "mtime": 1781073002.5816054,
+    "ast_hash": "6e862b00332fd8879a36b689c01a0c67",
+    "semantic_hash": ""
+  },
+  "AGENT-SETUP.md": {
+    "mtime": 1781188203.2740753,
+    "ast_hash": "da3cceffa3131e8c83bbf486ec4126e6",
+    "semantic_hash": ""
+  },
+  "Agent Inbox/antigravity.md": {
+    "mtime": 1781069404.0191631,
+    "ast_hash": "267918d8e0528ce3d199231d9283a342",
+    "semantic_hash": ""
+  },
+  "Agent Inbox/claude.md": {
+    "mtime": 1781188203.2740753,
+    "ast_hash": "eb4dac337d39b990d4702f30b685aed7",
+    "semantic_hash": ""
+  },
+  "Agent Inbox/codex.md": {
+    "mtime": 1781069404.0191631,
+    "ast_hash": "347c303d31dfa4f46df105a17cfef6bf",
+    "semantic_hash": ""
+  },
+  "Agent Inbox/cursor.md": {
+    "mtime": 1781069404.020163,
+    "ast_hash": "255471029117af222a1d9383b34fc36b",
+    "semantic_hash": ""
+  },
+  "Agent Inbox/goose.md": {
+    "mtime": 1781204402.8783917,
+    "ast_hash": "ea4b280f9a4d22f589192bd4509651e4",
+    "semantic_hash": ""
+  },
+  "Agent Inbox/hermes-mac.md": {
+    "mtime": 1781361002.602013,
+    "ast_hash": "d56a1b84029b8067c02d4b153525f2e5",
+    "semantic_hash": ""
+  },
+  "Agent Inbox/hermes-vps.md": {
+    "mtime": 1781361002.602013,
+    "ast_hash": "c1a0915e626b4cc24698770f1132cd4a",
+    "semantic_hash": ""
+  },
+  "Agent Inbox/hyperagent.md": {
+    "mtime": 1781188203.2740753,
+    "ast_hash": "c51378c363981fa0f34378748f3eb809",
+    "semantic_hash": ""
+  },
+  "Agents/antigravity.md": {
+    "mtime": 1780866002.4125314,
+    "ast_hash": "a2e3550d7cd2153d3629ec46c158c334",
+    "semantic_hash": ""
+  },
+  "Agents/claude-code.md": {
+    "mtime": 1781092892.3528252,
+    "ast_hash": "98abdc6a3a9f608ecf4537ed8869c32d",
+    "semantic_hash": ""
+  },
+  "Agents/codex.md": {
+    "mtime": 1780866002.4125314,
+    "ast_hash": "51a7d668878f9970fe9fb52628c0500f",
+    "semantic_hash": ""
+  },
+  "Agents/cursor.md": {
+    "mtime": 1781069404.0211632,
+    "ast_hash": "a287cc408027f592828bd6b201123395",
+    "semantic_hash": ""
+  },
+  "Agents/goose.md": {
+    "mtime": 1780866002.4125314,
+    "ast_hash": "6ec969d333822987fe59f8e426e7a14a",
+    "semantic_hash": ""
+  },
+  "Agents/hermes.md": {
+    "mtime": 1784361175.9325082,
+    "ast_hash": "45eb92f523cac00f3a986dbde5dc99c6",
+    "semantic_hash": ""
+  },
+  "Agents/hyperagent.md": {
+    "mtime": 1781188203.2740753,
+    "ast_hash": "8b10576c91d6557092794f3961908995",
+    "semantic_hash": ""
+  },
+  "Agents/kimi.md": {
+    "mtime": 1780866002.4125314,
+    "ast_hash": "2156dc3de3eb4c8f503ab62c446f1248",
+    "semantic_hash": ""
+  },
+  "Agents/kiro.md": {
+    "mtime": 1781069404.0211632,
+    "ast_hash": "f4b3d816a29bae4b09bd0b47841682a4",
+    "semantic_hash": ""
+  },
+  "Agents/mach.md": {
+    "mtime": 1781069404.0211632,
+    "ast_hash": "1410714e6b239f4c402f4b748af7210c",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1781188203.2740753,
+    "ast_hash": "eccc6112f4ab3b1e00e0364607da885c",
+    "semantic_hash": ""
+  },
+  "CONTEXT.md": {
+    "mtime": 1784462973.7590003,
+    "ast_hash": "06a9281860745ba5bee2baa113d59c77",
+    "semantic_hash": ""
+  },
+  "DECISIONS.md": {
+    "mtime": 1781188203.2760754,
+    "ast_hash": "6173f12990910747c77ced329ee33aee",
+    "semantic_hash": ""
+  },
+  "Feedback/session-startup.md": {
+    "mtime": 1779658202.1913898,
+    "ast_hash": "f9040c1e35ff70bd65c31f89e5b0db0b",
+    "semantic_hash": ""
+  },
+  "Feedback/working-style.md": {
+    "mtime": 1779493392.7621226,
+    "ast_hash": "631a382d6bc206a60ac91b98b947fdab",
+    "semantic_hash": ""
+  },
+  "Guides/claude-md-rewrite-guide.md": {
+    "mtime": 1781092892.3608253,
+    "ast_hash": "708129cbb6aed9b70840c3594cf6c075",
+    "semantic_hash": ""
+  },
+  "Guides/claude-md-rewrite-runs/2026-06-10-MacH-schema-AGENTS.md": {
+    "mtime": 1781092892.3538253,
+    "ast_hash": "eda41d9aabbeb152b8245e7419bc0501",
+    "semantic_hash": ""
+  },
+  "Guides/digest-workflow.md": {
+    "mtime": 1781073002.5816054,
+    "ast_hash": "34661c9042f7b2906c738ebd243c5a6c",
+    "semantic_hash": ""
+  },
+  "Guides/ingestion-directions.md": {
+    "mtime": 1781208902.4999068,
+    "ast_hash": "1feb6c908741f7a6b0486c7148e0fb1b",
+    "semantic_hash": ""
+  },
+  "Guides/taste-skill-availability.md": {
+    "mtime": 1781092892.3538253,
+    "ast_hash": "2671f0a64abe02abf54ca8c6f6ed037a",
+    "semantic_hash": ""
+  },
+  "HERMES-SETUP.md": {
+    "mtime": 1780182759.0001676,
+    "ast_hash": "5a30a3e5e80c078bab033def6589d519",
+    "semantic_hash": ""
+  },
+  "MEMORY.md": {
+    "mtime": 1781208902.4999068,
+    "ast_hash": "d71503530e89a16ce30ce41877b69284",
+    "semantic_hash": ""
+  },
+  "NOW.md": {
+    "mtime": 1784462973.4140036,
+    "ast_hash": "7bc1e72fb1f6d5c1cf5211205e5db7e5",
+    "semantic_hash": ""
+  },
+  "PROJECT-MAP.md": {
+    "mtime": 1780951502.5916693,
+    "ast_hash": "b87d2d1fcfaa999f2f606f491a40c71d",
+    "semantic_hash": ""
+  },
+  "Plan/README.md": {
+    "mtime": 1781188203.2760754,
+    "ast_hash": "1fbc8ec2fb6b8a6167735ac336731523",
+    "semantic_hash": ""
+  },
+  "Plan/board.md": {
+    "mtime": 1784462973.4460032,
+    "ast_hash": "d9f7be5f603910511bc05d8cc778ab38",
+    "semantic_hash": ""
+  },
+  "Plan/tasks/T-0001-retire-diverged-mac-tree.md": {
+    "mtime": 1781188203.2760754,
+    "ast_hash": "209f6d2db0bdb5f737934d383b87a254",
+    "semantic_hash": ""
+  },
+  "Plan/tasks/T-0002-verify-vault-sync-launchd.md": {
+    "mtime": 1781361002.6030133,
+    "ast_hash": "7552de2e466189a99a83629774aa9b22",
+    "semantic_hash": ""
+  },
+  "Plan/tasks/T-0003-fix-igcse-concept-pipeline.md": {
+    "mtime": 1781361002.6030133,
+    "ast_hash": "97c84828b2a474d7e7c3707e4a19a2a3",
+    "semantic_hash": ""
+  },
+  "Plan/tasks/T-0004-dream-cleanup-bug.md": {
+    "mtime": 1781251202.898556,
+    "ast_hash": "cad84ca8487c3cdab4b960de9d57628d",
+    "semantic_hash": ""
+  },
+  "Plan/tasks/T-0005-hal-telegram-delivery.md": {
+    "mtime": 1781188203.2760754,
+    "ast_hash": "401257a56bb474f94ebca9fe96109832",
+    "semantic_hash": ""
+  },
+  "Plan/tasks/T-0006-vps-cache-cleanup.md": {
+    "mtime": 1781188203.2760754,
+    "ast_hash": "6cb4cfbadf5d32b4a18c370423e5dfe5",
+    "semantic_hash": ""
+  },
+  "Plan/tasks/T-0007-stamp-archived-raw-files.md": {
+    "mtime": 1781188203.2760754,
+    "ast_hash": "554ec858570e8327144ea5e3e341e377",
+    "semantic_hash": ""
+  },
+  "Plan/tasks/T-0008-wiki-orphans-dead-links.md": {
+    "mtime": 1781188203.2760754,
+    "ast_hash": "bfbbaeaaeec92b7a7841ef6422159254",
+    "semantic_hash": ""
+  },
+  "Plan/tasks/T-0009-wiki-search-page.md": {
+    "mtime": 1781208902.500907,
+    "ast_hash": "d4c9b821cf70405c15fb7c8e09dca184",
+    "semantic_hash": ""
+  },
+  "Plan/tasks/T-0010-session-end-compliance.md": {
+    "mtime": 1781208902.500907,
+    "ast_hash": "b86ae624172800b7f178783d2f587d1e",
+    "semantic_hash": ""
+  },
+  "Plan/tasks/T-0011-resume-coverage-rollout.md": {
+    "mtime": 1781209802.4872668,
+    "ast_hash": "9ece4fa9a1cee9933402fb998211bd97",
+    "semantic_hash": ""
+  },
+  "Plan/tasks/T-0012-claim-nudges.md": {
+    "mtime": 1781210702.4015834,
+    "ast_hash": "1a0c7bfe5c4a8921b3f21ccfa733867d",
+    "semantic_hash": ""
+  },
+  "Plan/tasks/T-0013-keeper-js-native-janitor.md": {
+    "mtime": 1781212502.504244,
+    "ast_hash": "e4bc20a72aedab54d6d6b86b623d29d6",
+    "semantic_hash": ""
+  },
+  "Project/agent-command-center-plan.md": {
+    "mtime": 1781353801.971354,
+    "ast_hash": "a214633b105772ebc8781a43d1d16a7a",
+    "semantic_hash": ""
+  },
+  "Project/agent-memory-coding.md": {
+    "mtime": 1781209802.4872668,
+    "ast_hash": "62cb022e96e072472e5725e98ae8064f",
+    "semantic_hash": ""
+  },
+  "Project/agent-memory.md": {
+    "mtime": 1781188203.2760754,
+    "ast_hash": "7044c7a53af343587a392bcb4751973c",
+    "semantic_hash": ""
+  },
+  "Project/agent-ready-coding-loop.md": {
+    "mtime": 1781069404.0211632,
+    "ast_hash": "db8c879a85b7535b70aa01b25a9cddd6",
+    "semantic_hash": ""
+  },
+  "Project/classroom-mirror.md": {
+    "mtime": 1781245465.7856243,
+    "ast_hash": "84f167bdfeb9f16b557c80e02947ac38",
+    "semantic_hash": ""
+  },
+  "Project/claude-md-rewrite.md": {
+    "mtime": 1781209802.4872668,
+    "ast_hash": "73e38910b534e4903b29b8a7632e746d",
+    "semantic_hash": ""
+  },
+  "Project/dream.md": {
+    "mtime": 1781209802.4872668,
+    "ast_hash": "dba069dfb3a76ccfb69d1b31e0c04a1a",
+    "semantic_hash": ""
+  },
+  "Project/free-claude-code.md": {
+    "mtime": 1781069404.0211632,
+    "ast_hash": "c53a1125dd171f55191d7fbe8e2ebe05",
+    "semantic_hash": ""
+  },
+  "Project/hermes-dashboard.md": {
+    "mtime": 1781209802.4872668,
+    "ast_hash": "516260ca263bbd32d9585d3d977f2ff9",
+    "semantic_hash": ""
+  },
+  "Project/hermes-ecosystem.md": {
+    "mtime": 1781188203.2770753,
+    "ast_hash": "e4f205f0f5b30be1057917416bb096fd",
+    "semantic_hash": ""
+  },
+  "Project/hermes-mac.md": {
+    "mtime": 1781209802.4872668,
+    "ast_hash": "27b4c62fd40a2bd37666720fdb0a7052",
+    "semantic_hash": ""
+  },
+  "Project/hermes-metaclaw.md": {
+    "mtime": 1779493392.7621226,
+    "ast_hash": "b460c8502c6f791285b11e62e4449ef1",
+    "semantic_hash": ""
+  },
+  "Project/humangood-ai-webpage.md": {
+    "mtime": 1781209802.4882667,
+    "ast_hash": "2c2456cfbd3d09f508774c3c3b349342",
+    "semantic_hash": ""
+  },
+  "Project/humanizer.md": {
+    "mtime": 1781209802.4882667,
+    "ast_hash": "094ef392109359563511ebce88db2c75",
+    "semantic_hash": ""
+  },
+  "Project/loop-generator.md": {
+    "mtime": 1781209802.4882667,
+    "ast_hash": "f68140f46d6fedd2e59f3520f3a74a61",
+    "semantic_hash": ""
+  },
+  "Project/multica-dashboard.md": {
+    "mtime": 1779658202.1913898,
+    "ast_hash": "57bf1c8d4bcf7d4c2a8f9cdcd5fe1df4",
+    "semantic_hash": ""
+  },
+  "Project/newsletter-platform.md": {
+    "mtime": 1779658202.1913898,
+    "ast_hash": "1d0874eb5c97e6b00627b934e16ebccb",
+    "semantic_hash": ""
+  },
+  "Project/pyp-migration-unit-2026-06-03.md": {
+    "mtime": 1781069404.0211632,
+    "ast_hash": "27a722ee9c6f35c5c3c9de66ef2847f1",
+    "semantic_hash": ""
+  },
+  "Project/pyp-planner-gen.md": {
+    "mtime": 1781353801.971354,
+    "ast_hash": "6b3a04acf96f38c82988a44dcd16d80a",
+    "semantic_hash": ""
+  },
+  "Project/study-pipeline.md": {
+    "mtime": 1781188203.2770753,
+    "ast_hash": "90b51c7269c790d5f0bef760582caa7a",
+    "semantic_hash": ""
+  },
+  "Project/symphony.md": {
+    "mtime": 1780866002.4135313,
+    "ast_hash": "e0752532f4647147077c6c7a889f6ebe",
+    "semantic_hash": ""
+  },
+  "Project/taste-skill.md": {
+    "mtime": 1781209802.4882667,
+    "ast_hash": "7baee5a203d3fae4f37029b94a381eae",
+    "semantic_hash": ""
+  },
+  "Project/vault-maintenance.md": {
+    "mtime": 1781209802.4882667,
+    "ast_hash": "41ee899fd15d9652911a564287cb764f",
+    "semantic_hash": ""
+  },
+  "Project/vault-purpose.md": {
+    "mtime": 1781188203.2770753,
+    "ast_hash": "fb9db49c94ddd072eb72180b7a0a7f20",
+    "semantic_hash": ""
+  },
+  "Project/wiki-obsidian.md": {
+    "mtime": 1781204402.8783917,
+    "ast_hash": "2699a8b63a5e26cf89e276fb4494b850",
+    "semantic_hash": ""
+  },
+  "Project/wolf-trading-agent.md": {
+    "mtime": 1781209802.4882667,
+    "ast_hash": "c048454d33be9a7e0da8b019641f8dab",
+    "semantic_hash": ""
+  },
+  "Reference/claude-code-glm.md": {
+    "mtime": 1779493392.7621226,
+    "ast_hash": "103ccc737403aa8a69d2e23a7545e69d",
+    "semantic_hash": ""
+  },
+  "Reference/coding-factory-routing.md": {
+    "mtime": 1781069404.0211632,
+    "ast_hash": "567dddc41bd90f6f8a61745cd3d4ea02",
+    "semantic_hash": ""
+  },
+  "Reference/external-systems.md": {
+    "mtime": 1779493431.7889557,
+    "ast_hash": "ddcf3f7b7f81bb01f2e5893017d143e9",
+    "semantic_hash": ""
+  },
+  "Reference/notebooklm-brain.md": {
+    "mtime": 1779658202.1913898,
+    "ast_hash": "0e69fca13bb3a017e2354f24790ef5a0",
+    "semantic_hash": ""
+  },
+  "Reference/vault-fitness.md": {
+    "mtime": 1781210702.4015834,
+    "ast_hash": "f649c9a1a958729a1f26c937627b933e",
+    "semantic_hash": ""
+  },
+  "Reference/zeabur-infrastructure.md": {
+    "mtime": 1779493392.7621226,
+    "ast_hash": "e2213bda8a4296d792426dedc06447a0",
+    "semantic_hash": ""
+  },
+  "STANDING-ORDERS.md": {
+    "mtime": 1781188203.2770753,
+    "ast_hash": "a060187c57fe069b0682e71d9b9ef9ac",
+    "semantic_hash": ""
+  },
+  "User/preferred-language.md": {
+    "mtime": 1779493392.7621226,
+    "ast_hash": "d1acbda70fdb69616e34fdfbcf2a52ce",
+    "semantic_hash": ""
+  },
+  "User/profile.md": {
+    "mtime": 1779493392.7631226,
+    "ast_hash": "73a2f5d34f494b34ecadfb635f79b149",
+    "semantic_hash": ""
+  },
+  "User/reading-list.md": {
+    "mtime": 1783350220.7297902,
+    "ast_hash": "3da8faadf335daac57f365ff75cd0e9b",
+    "semantic_hash": ""
+  },
+  "User/working-directory.md": {
+    "mtime": 1779493392.7631226,
+    "ast_hash": "da461313a6628eba77367060364f6855",
+    "semantic_hash": ""
+  },
+  "VAULT-UPDATE-2026-05-25.md": {
+    "mtime": 1779721202.492105,
+    "ast_hash": "4a4ddda64bc4ee06ae171addce9542d0",
+    "semantic_hash": ""
+  },
+  "channel-archive/2026-06.md": {
+    "mtime": 1781188203.2780752,
+    "ast_hash": "d17366f92c14d2a46453a8323e0f7403",
+    "semantic_hash": ""
+  },
+  "llms.txt": {
+    "mtime": 1781069404.0211632,
+    "ast_hash": "049c9dccca9162d376df005743d7bcb4",
+    "semantic_hash": ""
+  },
+  "mrclean-audit-2026-06-11.md": {
+    "mtime": 1781114775.5461667,
+    "ast_hash": "2d0363ef10f85e2eb5a2d6f31ee0dc49",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/2026-06-08/GRAPH_REPORT.md": {
+    "mtime": 1780951502.5916693,
+    "ast_hash": "e648f34c958990b594ece4d913b2706c",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/GRAPH_REPORT.md": {
+    "mtime": 1780951502.5926692,
+    "ast_hash": "e648f34c958990b594ece4d913b2706c",
+    "semantic_hash": ""
+  },
+  "project-graphs/teacher-toolkit/graph.html": {
+    "mtime": 1780951502.5936692,
+    "ast_hash": "bdf396ee26b866fb4936d9d37291e39d",
+    "semantic_hash": ""
+  },
+  "project-graphs/wiki/README.md": {
+    "mtime": 1781208902.500907,
+    "ast_hash": "8d4c5ce88bf52b4f235cfc852fb812b3",
+    "semantic_hash": ""
+  },
+  "project-graphs/wiki/graph.html": {
+    "mtime": 1781204402.8793917,
+    "ast_hash": "3a452a38d9ccd8d775e9ab0c6d23a4a3",
+    "semantic_hash": ""
+  },
+  "project-graphs/wiki/search.html": {
+    "mtime": 1781208902.5019069,
+    "ast_hash": "58acc88fb7aa3a7eb71bc257b31825a8",
+    "semantic_hash": ""
+  },
+  "raw/processed/articles/Building Effective AI Agents.md": {
+    "mtime": 1781188203.2780752,
+    "ast_hash": "6a6c2393d657da5ed926ba2264bf9801",
+    "semantic_hash": ""
+  },
+  "raw/processed/articles/Getting Started with Market Data API.md": {
+    "mtime": 1781188203.2780752,
+    "ast_hash": "940f72d4a6298cbfe315d3edcbb3bc85",
+    "semantic_hash": ""
+  },
+  "raw/processed/articles/Plan in the cloud with ultraplan.md": {
+    "mtime": 1780860602.1414783,
+    "ast_hash": "35d54f0210611abd959e8e7194cb15b5",
+    "semantic_hash": ""
+  },
+  "raw/processed/docs/jeff-company-brain_compile-raw-SKILL.md": {
+    "mtime": 1780860602.1414783,
+    "ast_hash": "ab8006f53d36a5fc8b0cd4c61aeef149",
+    "semantic_hash": ""
+  },
+  "raw/processed/docs/jeff-company-brain_vault-explainer.md": {
+    "mtime": 1780860602.1414783,
+    "ast_hash": "0448a1bc798b12e5e959a8c3eb59059a",
+    "semantic_hash": ""
+  },
+  "raw/processed/docs/notebooklm-wiki-research-2026-06-10.md": {
+    "mtime": 1781070302.639492,
+    "ast_hash": "2ba5f18efd7efd8f34fa0846f460f118",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2024-11-12 Integrating Guided Reading and Writing with Children's Books.md": {
+    "mtime": 1781188203.2790754,
+    "ast_hash": "cd770838e01a5e6024f6687a0eb3d1b3",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2024-11-13 Planning and Communication Challenges in Special Education Collaboration.md": {
+    "mtime": 1781188203.2790754,
+    "ast_hash": "259cc8c2d884f6eaad52cd248e66e0f4",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2024-11-15 Trying to Be Resilient and Seeking Help.md": {
+    "mtime": 1781188203.2790754,
+    "ast_hash": "045a4de5dec8c333122c5c3eb982037f",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2024-11-19 Building Stronger Parental Connections and Engaging the IB Community.md": {
+    "mtime": 1781188203.2790754,
+    "ast_hash": "b2879e21edf1806430e83b085faab415",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2024-11-19 Exploring Frameworks for Education and Accountability.md": {
+    "mtime": 1781188203.2790754,
+    "ast_hash": "d06da3ae7bbd0b090cdad67ed6d455ce",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2024-11-21 Coordination Challenges and Solutions in a Fragile Situation.md": {
+    "mtime": 1781188203.2790754,
+    "ast_hash": "d61d1ca5b053b7c867b0b9454553d717",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2024-11-21 Meeting with Tato and Collaborative Planning Progress.md": {
+    "mtime": 1781188203.2790754,
+    "ast_hash": "4ae3e86ad65f0c41a5078f11dfd70532",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2024-11-21 Revamping Plans for an Awesome Regio Area.md": {
+    "mtime": 1781188203.2790754,
+    "ast_hash": "784098473a7f4b571fa5998417d1050c",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2024-11-28 Planning and Concerns About Meditation and PD Days.md": {
+    "mtime": 1781188203.2800753,
+    "ast_hash": "3502a7ff0b2b197b79ce60c5fe53020c",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2024-11-28 Preparing for Surveys and Student Council Meeting.md": {
+    "mtime": 1781188203.2800753,
+    "ast_hash": "df160475f9b627196e8dc7088436d731",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2024-11-29 Stompion's Wish for the Library and Canteen.md": {
+    "mtime": 1781188203.2800753,
+    "ast_hash": "3eab97dc9afd63f2f8d33c2f51a13435",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2024-12-12 Meeting Structure Reflection.md": {
+    "mtime": 1781188203.2800753,
+    "ast_hash": "926ecc1dfbaa0c15241336e5592803dc",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2024-12-13 Restorative Meeting Protocol and Racial Bias Concerns.md": {
+    "mtime": 1781188203.2800753,
+    "ast_hash": "578188ffe53ba6e71bbe11a322171ac2",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2024-12-16 Meeting Plans and Reading Progress Discussions.md": {
+    "mtime": 1781188203.2800753,
+    "ast_hash": "3e3998207ca32743b41eba438521663b",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2025-01-08 Math Coach and Planning Structure Discussion.md": {
+    "mtime": 1781188203.2800753,
+    "ast_hash": "a293437c97ca2f2578a96ed5dc115ddb",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2025-01-08 PE teacher and uniform discussions.md": {
+    "mtime": 1781188203.2810752,
+    "ast_hash": "2282b5ff252bcb20f9c95bdffc325614",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2025-01-08 PYP and DP Planning Discussion.md": {
+    "mtime": 1781188203.2810752,
+    "ast_hash": "b363cdd5b6439eb5475f62dd357f55b8",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2025-01-20 Improving School Reading Culture and Communication Strategies.md": {
+    "mtime": 1781188203.2810752,
+    "ast_hash": "34502a7a9cd05d6cd537e562eabf168e",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2025-01-28 Discussion on Attendance and Student Support.md": {
+    "mtime": 1781188203.2810752,
+    "ast_hash": "f11095a343d05c787c7acbd442cb401e",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2025-01-30 Exams and Planning Challenges.md": {
+    "mtime": 1781188203.2810752,
+    "ast_hash": "6096c6fa0e72329834b72e24221f84d8",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2025-03-09 New note.md": {
+    "mtime": 1781188203.2810752,
+    "ast_hash": "eaf2e9c501f26fb98302bfcdb96ec111",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2025-03-09 Trying something new.md": {
+    "mtime": 1781188203.2810752,
+    "ast_hash": "7c6e81c5cd40845f7788675d2d28f580",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2025-03-12 \u8b1d\u8b1d.md": {
+    "mtime": 1781188203.2810752,
+    "ast_hash": "ed8688f4dffcdb311441c9ef0bf0adc8",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2025-04-30 Gweithgareddau ar hawliau a chefnogaeth unigedd plentyn.md": {
+    "mtime": 1781188203.2810752,
+    "ast_hash": "06e32aafb4762c20fc4c14b14b93dab4",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2025-04-30 UN convention on the rights of the child.md": {
+    "mtime": 1781188203.2820752,
+    "ast_hash": "a5aa38668bb89220e899111f385cee84",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2025-04-30 Why is it different for everyone.md": {
+    "mtime": 1781188203.2820752,
+    "ast_hash": "6f2dfaf432e600124567f5948f96da68",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2025-06-03 Thank you.md": {
+    "mtime": 1781188203.2820752,
+    "ast_hash": "d25c69436213c194076736027db39e9b",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2025-08-25 Changing our pricing model and enhancing literacy through exploration.md": {
+    "mtime": 1781188203.2820752,
+    "ast_hash": "c39e77453a9585ea6744c72ce767c829",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2026-05-06 Hiring pitch and AI agents ecosystem gaps at Paris conference.md": {
+    "mtime": 1781188203.2820752,
+    "ast_hash": "553cc6158d1203a677b0445ef8f8daba",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2026-05-12 Being good and kindness repaying kindness through human cooperation.md": {
+    "mtime": 1781188203.2820752,
+    "ast_hash": "31e2673e12a2d4a6add564b671673b25",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2026-05-13 Agent-ready HTML reduces scan cost and attracts more AI visitors.md": {
+    "mtime": 1781188203.2820752,
+    "ast_hash": "e39e51990071f60727f44339ce1189d3",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2026-05-13 Agentic AI is here now \u2014 stop waiting, start drip-feeding your team.md": {
+    "mtime": 1781188203.2820752,
+    "ast_hash": "c24ff9c85c58d376fcbae898956a0888",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2026-05-14 Research gap cycles and historical patterns for next trade.md": {
+    "mtime": 1781188203.2820752,
+    "ast_hash": "31ade09ebbcbdcb8aa2c28f20e7cc6c7",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2026-05-21 Human good AI Agent Ready and AI back office for schoolsnonprofits.md": {
+    "mtime": 1781188203.2830753,
+    "ast_hash": "d2793855415e491e43bc96e4ef6f728a",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2026-05-24 Human-good AI agents to reduce admin work and free time for mission.md": {
+    "mtime": 1781188203.2830753,
+    "ast_hash": "011d953d85f0eff81f2fd047358ef6a8",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2026-06-05 Agent Ready making websites readable and cheaper for AI agents.md": {
+    "mtime": 1781188203.2830753,
+    "ast_hash": "2e43d50d487219c220c32d0a2fc68f89",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2026-06-05 Agentic wiki-based AI assistant for teacher curriculum planning and reminders.md": {
+    "mtime": 1781188203.2830753,
+    "ast_hash": "8691f1c98e6b3b02599ed385ad204490",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2026-06-05 Audio check \u201cCan you hear me\u201d test transcript.md": {
+    "mtime": 1781188203.2830753,
+    "ast_hash": "27cda942a3d4a69da447505265afaba8",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2026-06-09 Idea introduction without details.md": {
+    "mtime": 1781188203.2830753,
+    "ast_hash": "2ea405aabf271c11e547abb679be6206",
+    "semantic_hash": ""
+  },
+  "raw/processed/meetings/2026-06-09 Loop generator app asks AI to define yesno success criteria.md": {
+    "mtime": 1781188203.2830753,
+    "ast_hash": "ca321cc04618dc8d82ad3df6ea3d65f3",
+    "semantic_hash": ""
+  },
+  "schema/AGENTS.md": {
+    "mtime": 1781092892.3558252,
+    "ast_hash": "3d2cb312026a419f0eb0296056f4d1d3",
+    "semantic_hash": ""
+  },
+  "schema/curate-modes.md": {
+    "mtime": 1781073002.5816054,
+    "ast_hash": "0d2dc790e839a8c7c6d27d8cc7ccbd03",
+    "semantic_hash": ""
+  },
+  "schema/specs/2026-06-05-knowledge-curator-design.md": {
+    "mtime": 1780860602.1414783,
+    "ast_hash": "068b87e3f25a36ed91b26c707af96d15",
+    "semantic_hash": ""
+  },
+  "schema/specs/2026-06-05-knowledge-curator-implementation-plan.md": {
+    "mtime": 1780860602.1424782,
+    "ast_hash": "ba7afc6d4932e9c4ded4d10a60492921",
+    "semantic_hash": ""
+  },
+  "scripts/vault-keeper/README.md": {
+    "mtime": 1781206202.1150143,
+    "ast_hash": "b972ba7dabfca2a974b0c6f6851ca838",
+    "semantic_hash": ""
+  },
+  "sdd/README.md": {
+    "mtime": 1780866002.4145312,
+    "ast_hash": "9b100ab4eba334171466da76464c2293",
+    "semantic_hash": ""
+  },
+  "sdd/decisions/0001-adopt-spec-driven-development.md": {
+    "mtime": 1780866002.4145312,
+    "ast_hash": "68c6c79b82efeab3f6ad29296022166c",
+    "semantic_hash": ""
+  },
+  "sdd/decisions/0002-research-driven-wiki-hardening.md": {
+    "mtime": 1781070302.640492,
+    "ast_hash": "35dc7208b6ec71de3ae2cd0f42ed5116",
+    "semantic_hash": ""
+  },
+  "sdd/decisions/0003-agent-ready-wiki.md": {
+    "mtime": 1781071203.2849083,
+    "ast_hash": "60ad0fc5d22a445047d133bfc5c79f11",
+    "semantic_hash": ""
+  },
+  "sdd/decisions/0004-fleet-plan-board.md": {
+    "mtime": 1781188203.2830753,
+    "ast_hash": "1da95cde85c3120a54cdc4be9b9519ff",
+    "semantic_hash": ""
+  },
+  "sdd/specs/2026-06-11-fleet-plan-board/plan.md": {
+    "mtime": 1781188203.2830753,
+    "ast_hash": "f9883372f3e8cf6042feb1c1b0d6551e",
+    "semantic_hash": ""
+  },
+  "sdd/specs/2026-06-11-fleet-plan-board/spec.md": {
+    "mtime": 1781188203.2830753,
+    "ast_hash": "8bbdcdd6c208a515d9eb4c9dde7a88a3",
+    "semantic_hash": ""
+  },
+  "sdd/specs/2026-06-11-fleet-plan-board/tasks.md": {
+    "mtime": 1781188203.2830753,
+    "ast_hash": "182474ce28cd622b4d5abce6a875de41",
+    "semantic_hash": ""
+  },
+  "sdd/specs/2026-06-11-vault-fitness-loop/spec.md": {
+    "mtime": 1781207102.304333,
+    "ast_hash": "96248650a499e2c9f88a560d3c740943",
+    "semantic_hash": ""
+  },
+  "sdd/specs/README.md": {
+    "mtime": 1780866002.4145312,
+    "ast_hash": "cc7316ae51d696f34218f77e03e4c449",
+    "semantic_hash": ""
+  },
+  "sdd/templates/decision.md": {
+    "mtime": 1780866002.4145312,
+    "ast_hash": "bc87f8da7ae7972a36b83d324d826055",
+    "semantic_hash": ""
+  },
+  "sdd/templates/plan.md": {
+    "mtime": 1780866002.4145312,
+    "ast_hash": "6c8d178f8070fefa2add9782cc3976da",
+    "semantic_hash": ""
+  },
+  "sdd/templates/spec.md": {
+    "mtime": 1780866002.4145312,
+    "ast_hash": "5fe3b108a45f033f8cea4e80078a60bc",
+    "semantic_hash": ""
+  },
+  "sdd/templates/tasks.md": {
+    "mtime": 1780866002.4145312,
+    "ast_hash": "c3a6280adf3a466c1f338b618db183f1",
+    "semantic_hash": ""
+  },
+  "skills-for-mac/notebooklm/SKILL.md": {
+    "mtime": 1780513249.3309693,
+    "ast_hash": "84886fa67f7790825f3529ce47a04d1e",
+    "semantic_hash": ""
+  },
+  "skills-for-mac/sherlock-study-boy/SKILL.md": {
+    "mtime": 1780513249.3319695,
+    "ast_hash": "5fb8d72b140906323138800dc0511507",
+    "semantic_hash": ""
+  },
+  "skills-for-mac/sherlock-study-boy/references/nlm-cli-quirks.md": {
+    "mtime": 1780513249.3359694,
+    "ast_hash": "d07d147a220e0282c53bea36ca920645",
+    "semantic_hash": ""
+  },
+  "skills-for-mac/sherlock-study-boy/references/pipeline-v2-patterns.md": {
+    "mtime": 1780513249.3359694,
+    "ast_hash": "14770cc52d191cd5b29548788d8f8f46",
+    "semantic_hash": ""
+  },
+  "wiki/_views/dashboards.md": {
+    "mtime": 1780860602.1424782,
+    "ast_hash": "02f34d09d24f988a7b83750e8319320c",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/Classification-Rules.md": {
+    "mtime": 1781069404.0311632,
+    "ast_hash": "0eafffbb64c6745be1ef0ec77edcfef3",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/Concept-Page-Template.md": {
+    "mtime": 1781069404.0311632,
+    "ast_hash": "01b8c15878c87dc52566e77c307da28a",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/Entity-Page-Template.md": {
+    "mtime": 1781069404.0311632,
+    "ast_hash": "ae9a594ed9518a56fd3fa248b052f5ab",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/Hybrid-Planning-Workflow.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "c088382bca9982e5fb44add6fb3e5df7",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/Naming-Conventions.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "bfac0529935f1a45fa97d4deecc6f0d5",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/Wiki-Schema.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "9413f72cb969afb8450ca18e45f95bb0",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/Wiki-Structure.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "fe5520c4a0790d88008308b53ef2de32",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/agent-friendly-web.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "d5aee7e786bf044c130c0b3fe64257b5",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/agentic-ai.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "21c930e028fe08305773d6eb6ff110af",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/ai-back-office.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "18fbb007ac5a0d65bcceb30650d3fd41",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/atls.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "9e095c3f97a58c237da639c81dd0074b",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/compile-raw.md": {
+    "mtime": 1780860602.1424782,
+    "ast_hash": "5345d8753bf153c67a55d0609fdc67b1",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/deij.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "9455414e495c65d48a170cdcb0f599dc",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/drip-feed-ai-adoption.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "851afeaec040febce69f226402c165e3",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/essential-agreements.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "fb7bbe1d7ab84ccd060d008794c08d59",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/guided-reading.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "26dab8739bb367f8366d87dd7b406b3e",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/human-good-principle.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "9bb5c52575631779b1e1fea92ec4c3c1",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/ib-pyp.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "7d32842d1539e56e18e9ed5235ac29ff",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/knowledge-vault-best-practices.md": {
+    "mtime": 1781070302.640492,
+    "ast_hash": "9d2c4b6d5577e3752d9606651723c5e2",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/llm-curated-wiki.md": {
+    "mtime": 1780860602.1424782,
+    "ast_hash": "5ffd8f78b3a6e4e27014f6deaa2bdcc7",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/page-name.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "32fd7fb9f6e25940b7ac8be312867e7a",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/teacher-ai-assistant.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "301e2fc3ee0ea71203a2881984988b55",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/totl.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "6dc7068c9bb060fda3fd1aec716657f4",
+    "semantic_hash": ""
+  },
+  "wiki/entities/Claude-Code.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "eb76af3d8771ea4376ac665a53411eaf",
+    "semantic_hash": ""
+  },
+  "wiki/entities/agent-ready.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "c5bfc6787c58d994ae1fe6310d92a693",
+    "semantic_hash": ""
+  },
+  "wiki/entities/andrej-karpathy.md": {
+    "mtime": 1780860602.1424782,
+    "ast_hash": "5d966edee1e7ef8c09ac2dae3434dd5d",
+    "semantic_hash": ""
+  },
+  "wiki/entities/angela.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "bc98d64514f7ee300b8b78509250aa71",
+    "semantic_hash": ""
+  },
+  "wiki/entities/canadian-academy.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "e0a824d0e5ffcbce5889cd206d067623",
+    "semantic_hash": ""
+  },
+  "wiki/entities/claudine.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "d34364a15aad82ce93da8ae208b29075",
+    "semantic_hash": ""
+  },
+  "wiki/entities/demis-hassabis.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "0fe1ee380e3b0d2492534f704e5ec9d9",
+    "semantic_hash": ""
+  },
+  "wiki/entities/dwayne-primeau.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "3420d6d08103e9bfe5848e37544c7d53",
+    "semantic_hash": ""
+  },
+  "wiki/entities/gloria.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "4dfdad852f0e046a90707156bb77482d",
+    "semantic_hash": ""
+  },
+  "wiki/entities/grain.md": {
+    "mtime": 1780860602.1424782,
+    "ast_hash": "1c610b8b40ee410709d8548a87eef8bc",
+    "semantic_hash": ""
+  },
+  "wiki/entities/human-good-ai.md": {
+    "mtime": 1781069404.0321631,
+    "ast_hash": "95e0b646c87ed8427c9ce7f9856b75c7",
+    "semantic_hash": ""
+  },
+  "wiki/entities/ics-paris.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "2e50bc3af8c8de2510efde0bd615f4e8",
+    "semantic_hash": ""
+  },
+  "wiki/entities/john-schatzky.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "c5aa01777355ae68a9af0efdd19245a1",
+    "semantic_hash": ""
+  },
+  "wiki/entities/justina.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "efccbe36adcfcd638dfc0fd0a5dc342b",
+    "semantic_hash": ""
+  },
+  "wiki/entities/kit.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "759727dcddee09ee4e5808b9f65ae39d",
+    "semantic_hash": ""
+  },
+  "wiki/entities/lucy.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "da7f1f50ac626dbdf1ace9aa8ffd2968",
+    "semantic_hash": ""
+  },
+  "wiki/entities/malou.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "5058bfd55a229f50445029dd9c6b1bd5",
+    "semantic_hash": ""
+  },
+  "wiki/entities/nicole.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "8cda7e08529db246872f584c26e2b1d9",
+    "semantic_hash": ""
+  },
+  "wiki/entities/paul.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "44a560959b546cd33bd9ac73efb3ff2f",
+    "semantic_hash": ""
+  },
+  "wiki/entities/sebastian.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "efe01a37daa839ee967889a555ddb280",
+    "semantic_hash": ""
+  },
+  "wiki/entities/symposium.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "e4a2dc42b6096c4496ef63c567af4d14",
+    "semantic_hash": ""
+  },
+  "wiki/entities/tato.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "3436db8eda9c7bb1caf48d573f9e6245",
+    "semantic_hash": ""
+  },
+  "wiki/entities/ultraplan.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "a540122abbab56274f61b2ddaf728575",
+    "semantic_hash": ""
+  },
+  "wiki/entities/victoria.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "3200681e1d44ea65503e632e71bcdb7d",
+    "semantic_hash": ""
+  },
+  "wiki/index.md": {
+    "mtime": 1781092892.3558252,
+    "ast_hash": "4116cdea41466af43903df2fe0d3872c",
+    "semantic_hash": ""
+  },
+  "wiki/log.md": {
+    "mtime": 1781092892.3558252,
+    "ast_hash": "19cff99d0162e7384a5573a7b9674bdd",
+    "semantic_hash": ""
+  },
+  "wiki/schema/config.md": {
+    "mtime": 1781070302.640492,
+    "ast_hash": "3fca7305a15b475a13589fe155fec92a",
+    "semantic_hash": ""
+  },
+  "wiki/schema/suggestions.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "6517e2286de9d62fd608223192ec34bb",
+    "semantic_hash": ""
+  },
+  "wiki/sources/Plan-in-the-cloud-with-ultraplan.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "dc7bc6fcb2134752d49417a31e453f69",
+    "semantic_hash": ""
+  },
+  "wiki/sources/agent-ready-html-scan-cost.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "336cbea88636bfb5bccc891957192454",
+    "semantic_hash": ""
+  },
+  "wiki/sources/agent-ready-making-websites-readable.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "84a9d86d47f6177dee463e8ed8a659c0",
+    "semantic_hash": ""
+  },
+  "wiki/sources/agentic-ai-drip-feed.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "fac2cac9185a440863f949f6fa71eab1",
+    "semantic_hash": ""
+  },
+  "wiki/sources/agentic-wiki-teacher-assistant.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "0f7737b5bd865041b0e0a0dcac109645",
+    "semantic_hash": ""
+  },
+  "wiki/sources/arabic-maintenance-transcript.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "d6a92eceee78817dc6ee1338c07f6889",
+    "semantic_hash": ""
+  },
+  "wiki/sources/being-good-kindness.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "58daa8cae79a63a61e70351480339625",
+    "semantic_hash": ""
+  },
+  "wiki/sources/building-effective-ai-agents.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "2b722c91430fe24bba3318c996b5b82e",
+    "semantic_hash": ""
+  },
+  "wiki/sources/config.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "f7538aed323581b789b163a8ee750784",
+    "semantic_hash": ""
+  },
+  "wiki/sources/hiring-pitch-paris-conference.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "685fae0450008d2268d934f0298566b4",
+    "semantic_hash": ""
+  },
+  "wiki/sources/human-good-agent-ready-back-office.md": {
+    "mtime": 1781069404.033163,
+    "ast_hash": "cae56e99250d12cdb7225e1fdebe3411",
+    "semantic_hash": ""
+  },
+  "wiki/sources/human-good-less-admin-more-good.md": {
+    "mtime": 1781069404.034163,
+    "ast_hash": "fe99a1392622c4b843b1ed47778b9594",
+    "semantic_hash": ""
+  },
+  "wiki/sources/human-good-origin-story.md": {
+    "mtime": 1781069404.034163,
+    "ast_hash": "1f94f6a8605d898b345d92661b4955e4",
+    "semantic_hash": ""
+  },
+  "wiki/sources/jeff-company-brain-compile-raw-skill.md": {
+    "mtime": 1780860602.1434784,
+    "ast_hash": "446eca2343ff690b1d9c5e4eded0c4cc",
+    "semantic_hash": ""
+  },
+  "wiki/sources/jeff-company-brain-vault-explainer.md": {
+    "mtime": 1780860602.1434784,
+    "ast_hash": "53852bad55c17c8239435609cff83f17",
+    "semantic_hash": ""
+  },
+  "wiki/sources/knowledge-curator-build-capture.md": {
+    "mtime": 1781069404.034163,
+    "ast_hash": "4d139c862ca7044e22d4469f07c5ab75",
+    "semantic_hash": ""
+  },
+  "wiki/sources/loop-generator-concept.md": {
+    "mtime": 1781069404.034163,
+    "ast_hash": "c5bd96497f029085bbf16cc7b15cd88a",
+    "semantic_hash": ""
+  },
+  "wiki/sources/market-data-api-alpaca.md": {
+    "mtime": 1781069404.034163,
+    "ast_hash": "85bda80ac5e2ecc910cf8c5f60cf65fb",
+    "semantic_hash": ""
+  },
+  "wiki/sources/notebooklm-wiki-research-2026-06-10.md": {
+    "mtime": 1781070302.640492,
+    "ast_hash": "785032fe03182cf5df70b4fed7ee7b36",
+    "semantic_hash": ""
+  },
+  "wiki/sources/school-transcripts-aug-2025.md": {
+    "mtime": 1781069404.034163,
+    "ast_hash": "67ea5a24065c7003f68a57a94cfd7106",
+    "semantic_hash": ""
+  },
+  "wiki/sources/school-transcripts-jan-2025.md": {
+    "mtime": 1781069404.034163,
+    "ast_hash": "928dde0086dcd8759b038474ffff7bea",
+    "semantic_hash": ""
+  },
+  "wiki/sources/school-transcripts-nov-2024.md": {
+    "mtime": 1781069404.034163,
+    "ast_hash": "8791569796afe63d2231dc484f79290b",
+    "semantic_hash": ""
+  },
+  "wiki/sources/symposium-rust-agents.md": {
+    "mtime": 1781069404.034163,
+    "ast_hash": "f510c32a76a8161c31e8ca37f4a50210",
+    "semantic_hash": ""
+  },
+  "wiki/sources/welsh-rights-activity.md": {
+    "mtime": 1781069404.034163,
+    "ast_hash": "5a1ff0831ac5f4387d02d45d7d685478",
+    "semantic_hash": ""
+  }
+}
