@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-07-19T12:09:27Z_
+_Generated: 2026-07-20T12:08:11Z_
 
 ## Active Work
 _(none)_
@@ -35,25 +35,26 @@ _(all fleet agents pairing session-start/end cleanly)_
 _(none)_
 
 ## Blockers
+- **hermes · skillopt-sleep**: SkillOpt-Sleep recurring failure: editable pip install at /tmp/SkillOpt gets cleaned up by system. Fix: move repo to persistent path (e.g. ~/skillopt/SkillOpt/) instead of /tmp/. 5th occurrence since Jul 11. _(2026-07-20T19:17:00Z)_
 - **hermes · hermes-ecosystem**: SkillOpt-Sleep all 4 benchmarks failed (ModuleNotFoundError: skillopt_sleep) — 3rd recurrence. Venv at ~/skillopt/workspace needs rebuild/pip reinstall. _(2026-07-17T19:18:00Z)_
 - **hermes · agent-memory**: Git push failed day 3 — HTTPS auth can't read Username for github.com. Commit 2ed0640 local only. Needs `git remote set-url origin git@github.com:dman1313/agent-memory-coding.git` or `gh auth login`. _(2026-07-17T19:18:00Z)_
 - **hermes · agent-memory**: Git push failed — HTTPS token for dman1313/agent-memory-coding expired/invalid. Commit 5a42975 local only. Needs `gh auth login` or new PAT. _(2026-07-16T12:04:30Z)_
 
 ## Recent Activity (48h)
+- 2026-07-20T19:17:00Z | **hermes** · skillopt-sleep · milestone | SkillOpt-Sleep night 10: ModuleNotFoundError (5th recurrence — /tmp/ cleanup broke editable pip install). Re-cloned microsoft/SkillOpt to /tmp/ and re-ran. All 4 benchmarks flat for 3+ consecutive nights — trading stuck at 0.429, arxiv at 0.000. Plateau: need candidate strategy refresh or new benchmark tasks.
+- 2026-07-20T19:17:00Z | **hermes** · skillopt-sleep · blocker | SkillOpt-Sleep recurring failure: editable pip install at /tmp/SkillOpt gets cleaned up by system. Fix: move repo to persistent path (e.g. ~/skillopt/SkillOpt/) instead of /tmp/. 5th occurrence since Jul 11.
+- 2026-07-20T14:00:00Z | **hermes** · agent-memory-coding · session-start | HAL daily brief: system YELLOW — 4 services down Day 7 (Human Good AI, Agent Ready, WeKnora, FreeLLMAPI). Disk 32%, swap 0% (clean after Jul 17 reboot). DREAM: Firecrawl config debt (13 errors/session). Wolf: all NEUTRAL (15 signals, Twitter 0). Fleet silence Day 38. Git push blocked Day 6. URSSAF Q2 deadline flagged (was Jul 15, no update since).
+- 2026-07-20T14:00:00Z | **hermes** · agent-memory-coding · session-end | Brief delivered. NOW.md stale (26h). Wolf scan 0 Twitter results (recurring xurl failure). Vault log and git attempted (push failed Day 6).
 - 2026-07-19T12:08:00Z | **hermes** · agent-memory · note | No significant Hermes session activity in last 24h. Self-Leadership Manual and icebreaker slideshow still pending (queued Jul 16). Git push still blocked day 5 (HTTPS/GH auth invalid). SkillOpt-Sleep failing night 5 (ModuleNotFoundError: skillopt_sleep — Jul 17-19 consecutive).
-- 2026-07-18T12:07:00Z | **hermes** · agent-memory · note | No significant Hermes session activity since prior update (07:52 UTC). Git push still blocked day 4 (HTTPS/GH auth invalid). Abandoned commits: 9ab3e31, 2ed0640, 2a67ebb, 1745123 (local only).
-- 2026-07-17T19:18:00Z | **hermes** · hermes-ecosystem · blocker | SkillOpt-Sleep all 4 benchmarks failed (ModuleNotFoundError: skillopt_sleep) — 3rd recurrence. Venv at ~/skillopt/workspace needs rebuild/pip reinstall.
-- 2026-07-17T19:18:00Z | **hermes** · agent-memory · blocker | Git push failed day 3 — HTTPS auth can't read Username for github.com. Commit 2ed0640 local only. Needs `git remote set-url origin git@github.com:dman1313/agent-memory-coding.git` or `gh auth login`.
-- 2026-07-17T18:06:00Z | **hermes** · agent-memory · note | Shared memory sync completed successfully. MEMORY.md healthy (56 lines, 3.5KB). No errors.
 
 ## Recent Decisions (7d)
 - 2026-07-16T04:36:00Z | **hermes** · self-leadership | Created "Daily Self-Leadership School Affirmations" cron (8 AM MYT daily) — four positive affirmations + reflection prompts, per Dwayne's late-night request.
 
 ## Recent Milestones (7d)
-_(none)_
+- 2026-07-20T19:17:00Z | **hermes** · skillopt-sleep | SkillOpt-Sleep night 10: ModuleNotFoundError (5th recurrence — /tmp/ cleanup broke editable pip install). Re-cloned microsoft/SkillOpt to /tmp/ and re-ran. All 4 benchmarks flat for 3+ consecutive nights — trading stuck at 0.429, arxiv at 0.000. Plateau: need candidate strategy refresh or new benchmark tasks.
 
 ## Last Seen (fleet)
-- **hermes**: 2026-07-19T12:08:00Z — note: No significant Hermes session activity in last 24h. Self-Leadership Manual and icebreaker slideshow still pending (queued Jul 16). Git push still blocked day 5 (HTTPS/GH auth invalid). SkillOpt-Sleep failing night 5 (ModuleNotFoundError: skillopt_sleep — Jul 17-19 consecutive).
+- **hermes**: 2026-07-20T19:17:00Z — milestone: SkillOpt-Sleep night 10: ModuleNotFoundError (5th recurrence — /tmp/ cleanup broke editable pip install). Re-cloned microsoft/SkillOpt to /tmp/ and re-ran. All 4 benchmarks flat for 3+ consecutive nights — trading stuck at 0.429, arxiv at 0.000. Plateau: need candidate strategy refresh or new benchmark tasks.
 
 ---
 
