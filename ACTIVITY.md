@@ -1,6 +1,7 @@
 # ACTIVITY — Agent Activity Log
 
 > Append-only log for the shared memory vault. One entry per line, newest at top.
+2026-07-21T14:06:00Z | hermes | session-start | agent-memory-coding | HAL daily brief Mon Jul 21 — system YELLOW (swap clean, 4 services down Day 8). DREAM: GLMS offline until Aug 3, GitHub auth expired again, model routing fixed. Wolf: all NEUTRAL, Twitter 0 tweets. MiMo cross-border block resolved (zero 451 errors). IGCSE provider=None → MiMo should work now. Fleet silence Day 39. URSSAF Q2 6 days past due.
 2026-07-18T07:52:25Z | hermes | decision | hermes-ecosystem | Corrected tiered routing: Xiaomi MiMo v2.5-pro is startup/default; GPT-5.6 escalates only for insufficient MiMo or material stakes; Cursor Agent and GLM 5.2 are approved build lanes. Live model smoke tests passed and gateway restarted.
 2026-07-18T07:52:25Z | hermes | blocker-resolve | hermes-ecosystem | Reconciled stale routing memory after memory tool detected format drift; patched only the obsolete routing entry to preserve unrelated shared-memory content.
 2026-07-18T06:10:00Z | hermes | session-start | agent-memory-coding | HAL daily brief Sat Jul 18 — system YELLOW (swap 0B clean, 4 services down Day 5, 99 apt updates). DREAM worked (first real audit in days): Zen reflection jobs broken Day 2+ (topic 725 deleted), school tool discovery cron retry storm (13x runs), Cursor CLI integrated Jul 17. Wolf: no scan Saturday; yesterday all NEUTRAL, NFLX WSB contrarian flagged. Git push broken Day 4. Fleet silence Day 36.

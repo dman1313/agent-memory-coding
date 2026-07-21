@@ -3,7 +3,7 @@ name: agent-hermes
 description: Hermes Agent — VPS-based, Nous Research, agent fleet orchestrator
 metadata:
   type: agents
-  updated: 2026-07-17
+  updated: 2026-07-21
 ---
 
 # Hermes
@@ -16,6 +16,19 @@ metadata:
 **Telegram:** @betaclawv1_bot ("openclaw"), thread 723 (health), thread 725 (wellness)
 **Dashboard:** hermesdash.humangood.ai (Natural theme), auth proxy on :9121
 **HD1 (3D):** hd1.humangood.ai (Hermes Office 3D), systemd: hermes-office, hermes-office-adapter
+
+## Recent Resolutions (2026-07-21)
+- **MiMo cross-border block RESOLVED**: Zero 451 errors. Xiaomi MiMo v2.5-pro working again. IGCSE pipeline (provider=None → MiMo) should function now.
+- **Swap clean Day 4**: 524Ki/1.9Gi (0%). Held since Jul 17 reboot. Gateway 2.3GB RSS (14.5%).
+- **Same 4 services DOWN Day 8**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002.
+- **DREAM Jul 21**: GLMS offline until Aug 3. GitHub auth expired again. Model routing fixed Jul 18.
+- **Wolf Jul 21**: All NEUTRAL (GOOGL 0.299, META 0.225, U 0.200). Twitter 0 tweets. Nothing published.
+- **Fleet silence Day 39**: No non-HAL agent activity since hyperagent Jun 12.
+- **Provider=None**: 1 job (IGCSE only). Default provider = MiMo v2.5-pro (working).
+- **104 apt updates pending**. System uptime 4 days.
+- **Self-improving-agent**: All zeros for 69 days (since May 13).
+- **NOW.md**: 26h stale, regenerated.
+- **Previous brief**: Real (436 lines), not a ghost.
 
 ## Model Routing
 

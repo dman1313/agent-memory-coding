@@ -35,6 +35,7 @@ _(none)_
 - **hermes · agent-memory**: Git push failed — HTTPS token for dman1313/agent-memory-coding expired/invalid. Commit 5a42975 local only. Needs `gh auth login` or new PAT. _(2026-07-16T12:04:30Z)_
 
 ## Recent Activity (48h)
+- 2026-07-21T14:06:00Z | **hermes** · agent-memory-coding · session-start | HAL daily brief Mon Jul 21. System YELLOW — 4 services down Day 8, swap clean. DREAM: GLMS offline until Aug 3, GitHub auth expired again. Wolf: all NEUTRAL (GOOGL 0.299, META 0.225, Unity 0.200). MiMo cross-border block resolved (zero 451 errors). Fleet silence Day 39. URSSAF Q2 6 days past due.
 - 2026-07-20T19:17:00Z | **hermes** · skillopt-sleep · milestone | SkillOpt-Sleep night 10: ModuleNotFoundError (5th recurrence — /tmp/ cleanup broke editable pip install). Re-cloned microsoft/SkillOpt to /tmp/ and re-ran. All 4 benchmarks flat for 3+ consecutive nights — trading stuck at 0.429, arxiv at 0.000. Plateau: need candidate strategy refresh or new benchmark tasks.
 - 2026-07-20T19:17:00Z | **hermes** · skillopt-sleep · blocker | SkillOpt-Sleep recurring failure: editable pip install at /tmp/SkillOpt gets cleaned up by system. Fix: move repo to persistent path (e.g. ~/skillopt/SkillOpt/) instead of /tmp/. 5th occurrence since Jul 11.
 - 2026-07-20T14:00:00Z | **hermes** · agent-memory-coding · session-start | HAL daily brief: system YELLOW — 4 services down Day 7 (Human Good AI, Agent Ready, WeKnora, FreeLLMAPI). Disk 32%, swap 0% (clean after Jul 17 reboot). DREAM: Firecrawl config debt (13 errors/session). Wolf: all NEUTRAL (15 signals, Twitter 0). Fleet silence Day 38. Git push blocked Day 6. URSSAF Q2 deadline flagged (was Jul 15, no update since).
@@ -48,4 +49,4 @@ _(none)_
 - 2026-07-20T19:17:00Z | **hermes** · skillopt-sleep | SkillOpt-Sleep night 10: ModuleNotFoundError (5th recurrence — /tmp/ cleanup broke editable pip install). Re-cloned microsoft/SkillOpt to /tmp/ and re-ran. All 4 benchmarks flat for 3+ consecutive nights — trading stuck at 0.429, arxiv at 0.000. Plateau: need candidate strategy refresh or new benchmark tasks.
 
 ## Last Seen (fleet)
-- **hermes**: 2026-07-20T19:17:00Z — milestone: SkillOpt-Sleep night 10: ModuleNotFoundError (5th recurrence — /tmp/ cleanup broke editable pip install). Re-cloned microsoft/SkillOpt to /tmp/ and re-ran. All 4 benchmarks flat for 3+ consecutive nights — trading stuck at 0.429, arxiv at 0.000. Plateau: need candidate strategy refresh or new benchmark tasks.
+- **hermes**: 2026-07-21T14:06:00Z — session-start: HAL daily brief Mon Jul 21. System YELLOW, swap clean, 4 services down Day 8. Wolf all NEUTRAL. MiMo cross-border resolved.
