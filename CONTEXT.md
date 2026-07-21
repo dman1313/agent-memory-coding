@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-07-20T12:08:11Z_
+_Generated: 2026-07-21T12:08:14Z_
 
 ## Active Work
 _(none)_
@@ -41,20 +41,25 @@ _(none)_
 - **hermes · agent-memory**: Git push failed — HTTPS token for dman1313/agent-memory-coding expired/invalid. Commit 5a42975 local only. Needs `gh auth login` or new PAT. _(2026-07-16T12:04:30Z)_
 
 ## Recent Activity (48h)
+- 2026-07-21T10:01:00Z | **hermes** · hermes-ecosystem · note | System health check: freellmapi.service crash loop (WorkingDirectory /home/ubuntu/freellmapi missing). Low impact — no Hermes component depends on it.
+- 2026-07-21T00:21:00Z | **hermes** · self-coach · milestone | Self-Coach Slice 3 committed (goal dialogue with conversation history, repetition detection, GOAL_READY marker). Slices 1-3 all committed: Next.js 16 + Rust Axum + Supabase schema, auth, DB client, 19 tests. Building continues.
 - 2026-07-20T19:17:00Z | **hermes** · skillopt-sleep · milestone | SkillOpt-Sleep night 10: ModuleNotFoundError (5th recurrence — /tmp/ cleanup broke editable pip install). Re-cloned microsoft/SkillOpt to /tmp/ and re-ran. All 4 benchmarks flat for 3+ consecutive nights — trading stuck at 0.429, arxiv at 0.000. Plateau: need candidate strategy refresh or new benchmark tasks.
 - 2026-07-20T19:17:00Z | **hermes** · skillopt-sleep · blocker | SkillOpt-Sleep recurring failure: editable pip install at /tmp/SkillOpt gets cleaned up by system. Fix: move repo to persistent path (e.g. ~/skillopt/SkillOpt/) instead of /tmp/. 5th occurrence since Jul 11.
+- 2026-07-20T14:54:00Z | **hermes** · self-coach · milestone | Self-Coach contract approved. Dwayne confirmed "Everything. I already did it in the interview." Build started — PLAN.md created, monorepo scaffolded. Next.js 16 + Rust/Axum 0.8 + Supabase (6 tables, RLS).
 - 2026-07-20T14:00:00Z | **hermes** · agent-memory-coding · session-start | HAL daily brief: system YELLOW — 4 services down Day 7 (Human Good AI, Agent Ready, WeKnora, FreeLLMAPI). Disk 32%, swap 0% (clean after Jul 17 reboot). DREAM: Firecrawl config debt (13 errors/session). Wolf: all NEUTRAL (15 signals, Twitter 0). Fleet silence Day 38. Git push blocked Day 6. URSSAF Q2 deadline flagged (was Jul 15, no update since).
 - 2026-07-20T14:00:00Z | **hermes** · agent-memory-coding · session-end | Brief delivered. NOW.md stale (26h). Wolf scan 0 Twitter results (recurring xurl failure). Vault log and git attempted (push failed Day 6).
-- 2026-07-19T12:08:00Z | **hermes** · agent-memory · note | No significant Hermes session activity in last 24h. Self-Leadership Manual and icebreaker slideshow still pending (queued Jul 16). Git push still blocked day 5 (HTTPS/GH auth invalid). SkillOpt-Sleep failing night 5 (ModuleNotFoundError: skillopt_sleep — Jul 17-19 consecutive).
+- 2026-07-19T14:13:00Z | **hermes** · agent-memory · note | Graphify CLI indexed agent-memory vault knowledge graph. Merged with quant-nn graph. Full cross-project graph now available via MCP server at ~/graphify-out/full-merged.json.
 
 ## Recent Decisions (7d)
 - 2026-07-16T04:36:00Z | **hermes** · self-leadership | Created "Daily Self-Leadership School Affirmations" cron (8 AM MYT daily) — four positive affirmations + reflection prompts, per Dwayne's late-night request.
 
 ## Recent Milestones (7d)
+- 2026-07-21T00:21:00Z | **hermes** · self-coach | Self-Coach Slice 3 committed (goal dialogue with conversation history, repetition detection, GOAL_READY marker). Slices 1-3 all committed: Next.js 16 + Rust Axum + Supabase schema, auth, DB client, 19 tests. Building continues.
 - 2026-07-20T19:17:00Z | **hermes** · skillopt-sleep | SkillOpt-Sleep night 10: ModuleNotFoundError (5th recurrence — /tmp/ cleanup broke editable pip install). Re-cloned microsoft/SkillOpt to /tmp/ and re-ran. All 4 benchmarks flat for 3+ consecutive nights — trading stuck at 0.429, arxiv at 0.000. Plateau: need candidate strategy refresh or new benchmark tasks.
+- 2026-07-20T14:54:00Z | **hermes** · self-coach | Self-Coach contract approved. Dwayne confirmed "Everything. I already did it in the interview." Build started — PLAN.md created, monorepo scaffolded. Next.js 16 + Rust/Axum 0.8 + Supabase (6 tables, RLS).
 
 ## Last Seen (fleet)
-- **hermes**: 2026-07-20T19:17:00Z — milestone: SkillOpt-Sleep night 10: ModuleNotFoundError (5th recurrence — /tmp/ cleanup broke editable pip install). Re-cloned microsoft/SkillOpt to /tmp/ and re-ran. All 4 benchmarks flat for 3+ consecutive nights — trading stuck at 0.429, arxiv at 0.000. Plateau: need candidate strategy refresh or new benchmark tasks.
+- **hermes**: 2026-07-21T10:01:00Z — note: System health check: freellmapi.service crash loop (WorkingDirectory /home/ubuntu/freellmapi missing). Low impact — no Hermes component depends on it.
 
 ---
 
@@ -472,6 +477,19 @@ _(running notes I want to remember across sessions)_
 **Telegram:** @betaclawv1_bot ("openclaw"), thread 723 (health), thread 725 (wellness)
 **Dashboard:** hermesdash.humangood.ai (Natural theme), auth proxy on :9121
 **HD1 (3D):** hd1.humangood.ai (Hermes Office 3D), systemd: hermes-office, hermes-office-adapter
+
+## Recent Resolutions (2026-07-21)
+- **MiMo cross-border block RESOLVED**: Zero 451 errors. Xiaomi MiMo v2.5-pro working again. IGCSE pipeline (provider=None → MiMo) should function now.
+- **Swap clean Day 4**: 524Ki/1.9Gi (0%). Held since Jul 17 reboot. Gateway 2.3GB RSS (14.5%).
+- **Same 4 services DOWN Day 8**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002.
+- **DREAM Jul 21**: GLMS offline until Aug 3. GitHub auth expired again. Model routing fixed Jul 18.
+- **Wolf Jul 21**: All NEUTRAL (GOOGL 0.299, META 0.225, U 0.200). Twitter 0 tweets. Nothing published.
+- **Fleet silence Day 39**: No non-HAL agent activity since hyperagent Jun 12.
+- **Provider=None**: 1 job (IGCSE only). Default provider = MiMo v2.5-pro (working).
+- **104 apt updates pending**. System uptime 4 days.
+- **Self-improving-agent**: All zeros for 69 days (since May 13).
+- **NOW.md**: 26h stale, regenerated.
+- **Previous brief**: Real (436 lines), not a ghost.
 
 ## Model Routing
 
