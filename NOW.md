@@ -1,6 +1,6 @@
 # NOW — Current State
 
-_Generated: 2026-07-21T12:08:14Z_
+_Generated: 2026-07-22T06:06:40Z_
 
 ## Active Work
 _(none)_
@@ -42,7 +42,6 @@ _(none)_
 - 2026-07-20T14:54:00Z | **hermes** · self-coach · milestone | Self-Coach contract approved. Dwayne confirmed "Everything. I already did it in the interview." Build started — PLAN.md created, monorepo scaffolded. Next.js 16 + Rust/Axum 0.8 + Supabase (6 tables, RLS).
 - 2026-07-20T14:00:00Z | **hermes** · agent-memory-coding · session-start | HAL daily brief: system YELLOW — 4 services down Day 7 (Human Good AI, Agent Ready, WeKnora, FreeLLMAPI). Disk 32%, swap 0% (clean after Jul 17 reboot). DREAM: Firecrawl config debt (13 errors/session). Wolf: all NEUTRAL (15 signals, Twitter 0). Fleet silence Day 38. Git push blocked Day 6. URSSAF Q2 deadline flagged (was Jul 15, no update since).
 - 2026-07-20T14:00:00Z | **hermes** · agent-memory-coding · session-end | Brief delivered. NOW.md stale (26h). Wolf scan 0 Twitter results (recurring xurl failure). Vault log and git attempted (push failed Day 6).
-- 2026-07-19T14:13:00Z | **hermes** · agent-memory · note | Graphify CLI indexed agent-memory vault knowledge graph. Merged with quant-nn graph. Full cross-project graph now available via MCP server at ~/graphify-out/full-merged.json.
 
 ## Recent Decisions (7d)
 - 2026-07-16T04:36:00Z | **hermes** · self-leadership | Created "Daily Self-Leadership School Affirmations" cron (8 AM MYT daily) — four positive affirmations + reflection prompts, per Dwayne's late-night request.
