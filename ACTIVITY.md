@@ -1,3 +1,4 @@
+2026-07-22T06:06:30Z | hermes | session-start | agent-memory-coding | HAL daily brief Wed Jul 22 — system YELLOW (4 services down Day 9, swap clean Day 5). DREAM: GitHub PAT exposed in chat — rotate immediately. Wolf: all NEUTRAL (Twitter 0). Previous brief GHOST (only 2 lines). Git push blocked Day 8 (root cause: HTTPS remote with expired credential, gh CLI is fine). URSSAF Q2 7 days past. Self-Coach Devpost deadline today. Fleet silence Day 40. Vault local commit followed by push attempt.
 # ACTIVITY — Agent Activity Log
 
 > Append-only log for the shared memory vault. One entry per line, newest at top.
