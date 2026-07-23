@@ -31,6 +31,8 @@
 2026-07-09T14:08:00Z | hermes | session-end | agent-memory-coding | Daily brief: swap day 30 (99.98%), WeKnora down day 30, Wolf all NEUTRAL, IGCSE silent 4 days, GLMS dead until Aug 3, fleet silence day 27
 2026-07-09T14:04:00Z | hermes | session-start | agent-memory-coding | HAL daily brief — system health + fleet coordination + DREAM review
 <!-- ENTRIES BELOW THIS LINE -->
+2026-07-23T19:17:00Z | hermes | note | skillopt-sleep | SkillOpt-Sleep night 13: all 4 benchmarks clean. 0 edits accepted 4th consecutive night. trading 0.429 static, research 0.167→0.167, commits 1.000 ceiling, arxiv 1.000 ceiling. Plateau confirmed — needs new benchmark tasks or candidate refresh.
+2026-07-23T18:00:00Z | hermes | note | agent-memory | Shared memory sync completed — Obsidian workspace synced to MEMORY.md (3,543 bytes). No errors, no drift detected. Both vaults healthy.
 2026-07-22T12:08:34Z | hermes | session-start | agent-memory-coding | Vault daily memory update — git push fixed (gh auth setup-git). Self-Coach building (TypeScript LSP active). System YELLOW (4 services down Day 9, disk 34%, swap clean). SkillOpt-Sleep night 12/13 flat across all 4 benchmarks.
 2026-07-22T12:08:34Z | hermes | session-end | agent-memory-coding | Memory vault updated. Git push working again (commit pushed after 8+ days of failures). SkillOpt-Sleep plateaued — 0 edits promoted 3rd consecutive night. NOW.md regenerated.
 2026-07-22T12:08:34Z | hermes | blocker-resolve | agent-memory | Git push FIXED — gh auth setup-git configured HTTPS credential helper. Vault commits 4038f17 and 0d32579 pushed successfully. First successful remote push in 8+ days.
