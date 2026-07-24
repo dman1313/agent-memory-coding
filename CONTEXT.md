@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-07-23T12:17:15Z_
+_Generated: 2026-07-24T12:09:33Z_
 
 ## Active Work
 _(none)_
@@ -39,12 +39,9 @@ _(none)_
 - **hermes · hermes-ecosystem**: SkillOpt-Sleep all 4 benchmarks failed (ModuleNotFoundError: skillopt_sleep) — 3rd recurrence. Venv at ~/skillopt/workspace needs rebuild/pip reinstall. _(2026-07-17T19:18:00Z)_
 
 ## Recent Activity (48h)
+- 2026-07-24T12:07:26Z | **hermes** · agent-memory · note | No significant Hermes session activity in last 6h since morning brief. System YELLOW unchanged. Fleet silence Day 42 continues.
 - 2026-07-23T19:17:00Z | **hermes** · skillopt-sleep · note | SkillOpt-Sleep night 13: all 4 benchmarks clean. 0 edits accepted 4th consecutive night. trading 0.429 static, research 0.167→0.167, commits 1.000 ceiling, arxiv 1.000 ceiling. Plateau confirmed — needs new benchmark tasks or candidate refresh.
 - 2026-07-23T18:00:00Z | **hermes** · agent-memory · note | Shared memory sync completed — Obsidian workspace synced to MEMORY.md (3,543 bytes). No errors, no drift detected. Both vaults healthy.
-- 2026-07-22T12:08:34Z | **hermes** · agent-memory-coding · session-start | Vault daily memory update — git push fixed (gh auth setup-git). Self-Coach building (TypeScript LSP active). System YELLOW (4 services down Day 9, disk 34%, swap clean). SkillOpt-Sleep night 12/13 flat across all 4 benchmarks.
-- 2026-07-22T12:08:34Z | **hermes** · agent-memory-coding · session-end | Memory vault updated. Git push working again (commit pushed after 8+ days of failures). SkillOpt-Sleep plateaued — 0 edits promoted 3rd consecutive night. NOW.md regenerated.
-- 2026-07-22T12:08:34Z | **hermes** · skillopt-sleep · note | SkillOpt-Sleep night 12/13: all 4 benchmarks clean (no module errors). Zero edits promoted for 3rd consecutive night. Trading 0.429 static, research 0.333, commits/arxiv at 1.000 ceiling. Plateau confirmed — needs new benchmark tasks or candidate refresh.
-- 2026-07-22T12:08:34Z | **hermes** · agent-memory · blocker-resolve | Git push FIXED — gh auth setup-git configured HTTPS credential helper. Vault commits 4038f17 and 0d32579 pushed successfully. First successful remote push in 8+ days.
 
 ## Recent Decisions (7d)
 _(none)_
@@ -55,7 +52,7 @@ _(none)_
 - 2026-07-20T14:54:00Z | **hermes** · self-coach | Self-Coach contract approved. Dwayne confirmed "Everything. I already did it in the interview." Build started — PLAN.md created, monorepo scaffolded. Next.js 16 + Rust/Axum 0.8 + Supabase (6 tables, RLS).
 
 ## Last Seen (fleet)
-- **hermes**: 2026-07-23T19:17:00Z — note: SkillOpt-Sleep night 13: all 4 benchmarks clean. 0 edits accepted 4th consecutive night. trading 0.429 static, research 0.167→0.167, commits 1.000 ceiling, arxiv 1.000 ceiling. Plateau confirmed — needs new benchmark tasks or candidate refresh.
+- **hermes**: 2026-07-24T12:07:26Z — note: No significant Hermes session activity in last 6h since morning brief. System YELLOW unchanged. Fleet silence Day 42 continues.
 
 ---
 
@@ -473,6 +470,21 @@ _(running notes I want to remember across sessions)_
 **Telegram:** @betaclawv1_bot ("openclaw"), thread 723 (health), thread 725 (wellness)
 **Dashboard:** hermesdash.humangood.ai (Natural theme), auth proxy on :9121
 **HD1 (3D):** hd1.humangood.ai (Hermes Office 3D), systemd: hermes-office, hermes-office-adapter
+
+## Recent Resolutions (2026-07-24)
+
+- **Same 4 services DOWN Day 11**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. No auto-restart since Jul 17 reboot.
+- **Swap clean Day 7**: 780Ki/1.9Gi (0%). Gateway 2.47GB RSS (15.3%).
+- **DREAM Jul 24**: Self-improvement loop broken 2 nights (no audit since Jul 21). Telegram topic 725 dead ("Chat not found"). GLMS exhausted until Aug 3.
+- **Wolf Jul 24**: 11 signals all NEUTRAL/WATCH. GOOGL 0.477 WATCH (post-earnings), U 0.461 WATCH, META 0.260 NEUTRAL. 3 published to AI-Trader. Twitter dead (CreditsDepleted).
+- **Previous briefs GHOST Jul 22 AND Jul 23**: Both 1-2 lines, zero health metrics. Two consecutive days unchecked.
+- **Fleet silence Day 42**: No non-HAL agent activity since hyperagent Jun 12.
+- **URSSAF Q2 9 days past**: Deadline Jul 15 — no confirmation.
+- **108 apt updates pending**. System uptime 7 days.
+- **Self-improving-agent**: All zeros Day 71 (since May 13).
+- **Provider=None**: 1 job (IGCSE only). Default provider = MiMo v2.5-pro (working).
+- **NOW.md**: 26h stale, within tolerance. Plan board 0/7/0.
+- **4 stale inboxes**: claude, codex, hermes-mac, hermes-vps all >7d.
 
 ## Recent Resolutions (2026-07-21)
 - **MiMo cross-border block RESOLVED**: Zero 451 errors. Xiaomi MiMo v2.5-pro working again. IGCSE pipeline (provider=None → MiMo) should function now.
