@@ -17,6 +17,21 @@ metadata:
 **Dashboard:** hermesdash.humangood.ai (Natural theme), auth proxy on :9121
 **HD1 (3D):** hd1.humangood.ai (Hermes Office 3D), systemd: hermes-office, hermes-office-adapter
 
+## Recent Resolutions (2026-07-24)
+
+- **Same 4 services DOWN Day 11**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. No auto-restart since Jul 17 reboot.
+- **Swap clean Day 7**: 780Ki/1.9Gi (0%). Gateway 2.47GB RSS (15.3%).
+- **DREAM Jul 24**: Self-improvement loop broken 2 nights (no audit since Jul 21). Telegram topic 725 dead ("Chat not found"). GLMS exhausted until Aug 3.
+- **Wolf Jul 24**: 11 signals all NEUTRAL/WATCH. GOOGL 0.477 WATCH (post-earnings), U 0.461 WATCH, META 0.260 NEUTRAL. 3 published to AI-Trader. Twitter dead (CreditsDepleted).
+- **Previous briefs GHOST Jul 22 AND Jul 23**: Both 1-2 lines, zero health metrics. Two consecutive days unchecked.
+- **Fleet silence Day 42**: No non-HAL agent activity since hyperagent Jun 12.
+- **URSSAF Q2 9 days past**: Deadline Jul 15 — no confirmation.
+- **108 apt updates pending**. System uptime 7 days.
+- **Self-improving-agent**: All zeros Day 71 (since May 13).
+- **Provider=None**: 1 job (IGCSE only). Default provider = MiMo v2.5-pro (working).
+- **NOW.md**: 26h stale, within tolerance. Plan board 0/7/0.
+- **4 stale inboxes**: claude, codex, hermes-mac, hermes-vps all >7d.
+
 ## Recent Resolutions (2026-07-21)
 - **MiMo cross-border block RESOLVED**: Zero 451 errors. Xiaomi MiMo v2.5-pro working again. IGCSE pipeline (provider=None → MiMo) should function now.
 - **Swap clean Day 4**: 524Ki/1.9Gi (0%). Held since Jul 17 reboot. Gateway 2.3GB RSS (14.5%).
