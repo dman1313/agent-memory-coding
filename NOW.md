@@ -1,6 +1,6 @@
 # NOW — Current State
 
-_Generated: 2026-07-24T12:09:33Z_
+_Generated: 2026-07-25T12:07:21Z_
 
 ## Active Work
 _(none)_
@@ -29,11 +29,13 @@ _(all fleet agents pairing session-start/end cleanly)_
 _(none)_
 
 ## Blockers
+- **hermes · hermes-ecosystem**: Hermes session DB corrupted (malformed disk image) — session_search broken. Needs VACUUM or restore from backup. Fleet silence Day 44. _(2026-07-25T12:07:00Z)_
 - **hermes · skillopt-sleep**: SkillOpt-Sleep recurring failure: editable pip install at /tmp/SkillOpt gets cleaned up by system. Fix: move repo to persistent path (e.g. ~/skillopt/SkillOpt/) instead of /tmp/. 5th occurrence since Jul 11. _(2026-07-20T19:17:00Z)_
 - **hermes · hermes-ecosystem**: SkillOpt-Sleep all 4 benchmarks failed (ModuleNotFoundError: skillopt_sleep) — 3rd recurrence. Venv at ~/skillopt/workspace needs rebuild/pip reinstall. _(2026-07-17T19:18:00Z)_
 
 ## Recent Activity (48h)
-- 2026-07-24T12:07:26Z | **hermes** · agent-memory · note | No significant Hermes session activity in last 6h since morning brief. System YELLOW unchanged. Fleet silence Day 42 continues.
+- 2026-07-25T12:07:00Z | **hermes** · agent-memory · note | Memory vault daily update. System: 3.6/15Gi RAM (24%), swap 43Mi (2%), disk 57/178Gi (34%), both office services running. No significant Hermes activity since morning brief. Daily brief committed f645b36.
+- 2026-07-25T12:07:00Z | **hermes** · hermes-ecosystem · blocker | Hermes session DB corrupted (malformed disk image) — session_search broken. Needs VACUUM or restore from backup. Fleet silence Day 44.
 - 2026-07-23T19:17:00Z | **hermes** · skillopt-sleep · note | SkillOpt-Sleep night 13: all 4 benchmarks clean. 0 edits accepted 4th consecutive night. trading 0.429 static, research 0.167→0.167, commits 1.000 ceiling, arxiv 1.000 ceiling. Plateau confirmed — needs new benchmark tasks or candidate refresh.
 - 2026-07-23T18:00:00Z | **hermes** · agent-memory · note | Shared memory sync completed — Obsidian workspace synced to MEMORY.md (3,543 bytes). No errors, no drift detected. Both vaults healthy.
 
@@ -46,4 +48,4 @@ _(none)_
 - 2026-07-20T14:54:00Z | **hermes** · self-coach | Self-Coach contract approved. Dwayne confirmed "Everything. I already did it in the interview." Build started — PLAN.md created, monorepo scaffolded. Next.js 16 + Rust/Axum 0.8 + Supabase (6 tables, RLS).
 
 ## Last Seen (fleet)
-- **hermes**: 2026-07-24T12:07:26Z — note: No significant Hermes session activity in last 6h since morning brief. System YELLOW unchanged. Fleet silence Day 42 continues.
+- **hermes**: 2026-07-25T12:07:00Z — blocker: Hermes session DB corrupted (malformed disk image) — session_search broken. Needs VACUUM or restore from backup. Fleet silence Day 44.

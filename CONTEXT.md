@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-07-24T12:09:33Z_
+_Generated: 2026-07-25T12:07:21Z_
 
 ## Active Work
 _(none)_
@@ -35,11 +35,13 @@ _(all fleet agents pairing session-start/end cleanly)_
 _(none)_
 
 ## Blockers
+- **hermes · hermes-ecosystem**: Hermes session DB corrupted (malformed disk image) — session_search broken. Needs VACUUM or restore from backup. Fleet silence Day 44. _(2026-07-25T12:07:00Z)_
 - **hermes · skillopt-sleep**: SkillOpt-Sleep recurring failure: editable pip install at /tmp/SkillOpt gets cleaned up by system. Fix: move repo to persistent path (e.g. ~/skillopt/SkillOpt/) instead of /tmp/. 5th occurrence since Jul 11. _(2026-07-20T19:17:00Z)_
 - **hermes · hermes-ecosystem**: SkillOpt-Sleep all 4 benchmarks failed (ModuleNotFoundError: skillopt_sleep) — 3rd recurrence. Venv at ~/skillopt/workspace needs rebuild/pip reinstall. _(2026-07-17T19:18:00Z)_
 
 ## Recent Activity (48h)
-- 2026-07-24T12:07:26Z | **hermes** · agent-memory · note | No significant Hermes session activity in last 6h since morning brief. System YELLOW unchanged. Fleet silence Day 42 continues.
+- 2026-07-25T12:07:00Z | **hermes** · agent-memory · note | Memory vault daily update. System: 3.6/15Gi RAM (24%), swap 43Mi (2%), disk 57/178Gi (34%), both office services running. No significant Hermes activity since morning brief. Daily brief committed f645b36.
+- 2026-07-25T12:07:00Z | **hermes** · hermes-ecosystem · blocker | Hermes session DB corrupted (malformed disk image) — session_search broken. Needs VACUUM or restore from backup. Fleet silence Day 44.
 - 2026-07-23T19:17:00Z | **hermes** · skillopt-sleep · note | SkillOpt-Sleep night 13: all 4 benchmarks clean. 0 edits accepted 4th consecutive night. trading 0.429 static, research 0.167→0.167, commits 1.000 ceiling, arxiv 1.000 ceiling. Plateau confirmed — needs new benchmark tasks or candidate refresh.
 - 2026-07-23T18:00:00Z | **hermes** · agent-memory · note | Shared memory sync completed — Obsidian workspace synced to MEMORY.md (3,543 bytes). No errors, no drift detected. Both vaults healthy.
 
@@ -52,7 +54,7 @@ _(none)_
 - 2026-07-20T14:54:00Z | **hermes** · self-coach | Self-Coach contract approved. Dwayne confirmed "Everything. I already did it in the interview." Build started — PLAN.md created, monorepo scaffolded. Next.js 16 + Rust/Axum 0.8 + Supabase (6 tables, RLS).
 
 ## Last Seen (fleet)
-- **hermes**: 2026-07-24T12:07:26Z — note: No significant Hermes session activity in last 6h since morning brief. System YELLOW unchanged. Fleet silence Day 42 continues.
+- **hermes**: 2026-07-25T12:07:00Z — blocker: Hermes session DB corrupted (malformed disk image) — session_search broken. Needs VACUUM or restore from backup. Fleet silence Day 44.
 
 ---
 
@@ -471,20 +473,23 @@ _(running notes I want to remember across sessions)_
 **Dashboard:** hermesdash.humangood.ai (Natural theme), auth proxy on :9121
 **HD1 (3D):** hd1.humangood.ai (Hermes Office 3D), systemd: hermes-office, hermes-office-adapter
 
-## Recent Resolutions (2026-07-24)
+## Recent Resolutions (2026-07-25)
 
-- **Same 4 services DOWN Day 11**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. No auto-restart since Jul 17 reboot.
-- **Swap clean Day 7**: 780Ki/1.9Gi (0%). Gateway 2.47GB RSS (15.3%).
-- **DREAM Jul 24**: Self-improvement loop broken 2 nights (no audit since Jul 21). Telegram topic 725 dead ("Chat not found"). GLMS exhausted until Aug 3.
-- **Wolf Jul 24**: 11 signals all NEUTRAL/WATCH. GOOGL 0.477 WATCH (post-earnings), U 0.461 WATCH, META 0.260 NEUTRAL. 3 published to AI-Trader. Twitter dead (CreditsDepleted).
-- **Previous briefs GHOST Jul 22 AND Jul 23**: Both 1-2 lines, zero health metrics. Two consecutive days unchecked.
-- **Fleet silence Day 42**: No non-HAL agent activity since hyperagent Jun 12.
-- **URSSAF Q2 9 days past**: Deadline Jul 15 — no confirmation.
-- **108 apt updates pending**. System uptime 7 days.
-- **Self-improving-agent**: All zeros Day 71 (since May 13).
+- **GHOST BRIEF EPIDEMIC**: Jul 22, 23, 24 were all ghost briefs (1-line responses, zero health metrics). 3 of the last 4 days unchecked. Model (MiMo v2.5-pro) produces real briefs inconsistently — Jul 21 was 436 lines, Jul 22-24 were hollow. Suggested switching to DeepSeek v4-pro.
+- **Same 4 services DOWN Day 12**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. Never auto-started since Jul 17 reboot.
+- **Swap clean Day 8**: 42Mi/1.9Gi (2%). Gateway 2.48GB RSS (15.4%).
+- **DREAM Jul 25**: Firecrawl broken (844 errors — blocks web_search/web_extract). Telegram topic 725 dead ("Chat not found"). Quiet day otherwise, no user corrections. Self-Coach progressing.
+- **Wolf Jul 24**: 11 signals all NEUTRAL/WATCH. GOOGL 0.477 WATCH, U 0.461 WATCH, META 0.260 NEUTRAL. 3 published. Twitter still dead (CreditsDepleted). No scan Sat.
+- **Fleet silence Day 43**: No non-HAL agent activity since hyperagent Jun 12.
+- **URSSAF Q2 10 days past**: Deadline Jul 15 — no confirmation.
+- **108 apt updates pending**. System uptime 8 days.
+- **Self-improving-agent**: All zeros Day 73 (since May 13). Memory 94%.
 - **Provider=None**: 1 job (IGCSE only). Default provider = MiMo v2.5-pro (working).
-- **NOW.md**: 26h stale, within tolerance. Plan board 0/7/0.
-- **4 stale inboxes**: claude, codex, hermes-mac, hermes-vps all >7d.
+- **NOW.md**: 17h stale, within tolerance. Plan board 0/7/0.
+- **4 stale inboxes**: claude, codex, hermes-mac, hermes-vps all 10+ days.
+
+**Dashboard:** hermesdash.humangood.ai (Natural theme), auth proxy on :9121
+**HD1 (3D):** hd1.humangood.ai (Hermes Office 3D), systemd: hermes-office, hermes-office-adapter
 
 ## Recent Resolutions (2026-07-21)
 - **MiMo cross-border block RESOLVED**: Zero 451 errors. Xiaomi MiMo v2.5-pro working again. IGCSE pipeline (provider=None → MiMo) should function now.
