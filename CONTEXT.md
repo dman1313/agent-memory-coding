@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-07-25T12:07:21Z_
+_Generated: 2026-07-26T12:12:52Z_
 
 ## Active Work
 _(none)_
@@ -40,13 +40,12 @@ _(none)_
 - **hermes · hermes-ecosystem**: SkillOpt-Sleep all 4 benchmarks failed (ModuleNotFoundError: skillopt_sleep) — 3rd recurrence. Venv at ~/skillopt/workspace needs rebuild/pip reinstall. _(2026-07-17T19:18:00Z)_
 
 ## Recent Activity (48h)
+- 2026-07-26T11:30:00Z | **hermes** · hermes-ecosystem · decision | Model routing v5.1: default switched from DeepSeek v4-pro back to Xiaomi MiMo v2.5-pro. DeepSeek added as mid-tier escalation (MiMo -> DeepSeek -> GPT-5.6). Routing tables, skill, and README all updated and verified.
 - 2026-07-25T12:07:00Z | **hermes** · agent-memory · note | Memory vault daily update. System: 3.6/15Gi RAM (24%), swap 43Mi (2%), disk 57/178Gi (34%), both office services running. No significant Hermes activity since morning brief. Daily brief committed f645b36.
 - 2026-07-25T12:07:00Z | **hermes** · hermes-ecosystem · blocker | Hermes session DB corrupted (malformed disk image) — session_search broken. Needs VACUUM or restore from backup. Fleet silence Day 44.
-- 2026-07-23T19:17:00Z | **hermes** · skillopt-sleep · note | SkillOpt-Sleep night 13: all 4 benchmarks clean. 0 edits accepted 4th consecutive night. trading 0.429 static, research 0.167→0.167, commits 1.000 ceiling, arxiv 1.000 ceiling. Plateau confirmed — needs new benchmark tasks or candidate refresh.
-- 2026-07-23T18:00:00Z | **hermes** · agent-memory · note | Shared memory sync completed — Obsidian workspace synced to MEMORY.md (3,543 bytes). No errors, no drift detected. Both vaults healthy.
 
 ## Recent Decisions (7d)
-_(none)_
+- 2026-07-26T11:30:00Z | **hermes** · hermes-ecosystem | Model routing v5.1: default switched from DeepSeek v4-pro back to Xiaomi MiMo v2.5-pro. DeepSeek added as mid-tier escalation (MiMo -> DeepSeek -> GPT-5.6). Routing tables, skill, and README all updated and verified.
 
 ## Recent Milestones (7d)
 - 2026-07-21T00:21:00Z | **hermes** · self-coach | Self-Coach Slice 3 committed (goal dialogue with conversation history, repetition detection, GOAL_READY marker). Slices 1-3 all committed: Next.js 16 + Rust Axum + Supabase schema, auth, DB client, 19 tests. Building continues.
@@ -54,7 +53,7 @@ _(none)_
 - 2026-07-20T14:54:00Z | **hermes** · self-coach | Self-Coach contract approved. Dwayne confirmed "Everything. I already did it in the interview." Build started — PLAN.md created, monorepo scaffolded. Next.js 16 + Rust/Axum 0.8 + Supabase (6 tables, RLS).
 
 ## Last Seen (fleet)
-- **hermes**: 2026-07-25T12:07:00Z — blocker: Hermes session DB corrupted (malformed disk image) — session_search broken. Needs VACUUM or restore from backup. Fleet silence Day 44.
+- **hermes**: 2026-07-26T11:30:00Z — decision: Model routing v5.1: default switched from DeepSeek v4-pro back to Xiaomi MiMo v2.5-pro. DeepSeek added as mid-tier escalation (MiMo -> DeepSeek -> GPT-5.6). Routing tables, skill, and README all updated and verified.
 
 ---
 
@@ -472,6 +471,21 @@ _(running notes I want to remember across sessions)_
 **Telegram:** @betaclawv1_bot ("openclaw"), thread 723 (health), thread 725 (wellness)
 **Dashboard:** hermesdash.humangood.ai (Natural theme), auth proxy on :9121
 **HD1 (3D):** hd1.humangood.ai (Hermes Office 3D), systemd: hermes-office, hermes-office-adapter
+
+## Recent Resolutions (2026-07-26)
+
+- **System GREEN**: Disk 34%, RAM 34%, swap 3% (67Mi/1.9Gi) — clean Day 9. Uptime 9 days. 123 apt updates pending.
+- **Same 4 services DOWN Day 13**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. Never auto-started since Jul 17 reboot. Dashboard :9999, HermesOffice :3001, 9Router :20128, DashboardAuth :9121 all UP.
+- **DREAM Jul 26**: Session DB corrupted (SQLite WAL bug) — session_search broken fleet-wide. All 3 API providers showing 401 in zombie sessions (xiaomi→deepseek→zai chain). GLMS blocked until Aug 3. Firecrawl broken night 2. Telegram topic 725 dead (84 "Chat not found").
+- **Jul 25 brief was REAL (377 lines)** — ghost streak broken. But Jul 22-24 were all ghosts (3 of 4 days unchecked).
+- **Wolf**: No scan Sunday. Market closed.
+- **Fleet silence Day 44**: No non-HAL agent activity since hyperagent Jun 12.
+- **URSSAF Q2 11 days past**: Deadline Jul 15 — no confirmation.
+- **Self-improving-agent**: All zeros Day 74 (since May 13). Memory 94%.
+- **Provider=None**: 1 job (IGCSE only). Default provider = deepseek (working — this cron runs on deepseek-v4-pro).
+- **NOW.md**: 18h stale, within tolerance. Plan board 0/7/0.
+- **4 stale inboxes**: claude, codex, hermes-mac, hermes-vps all 11+ days.
+- **Suggested**: Run `sqlite3 ~/.hermes/sessions.db "PRAGMA wal_checkpoint(TRUNCATE);"` to fix session DB. 2-second fix.
 
 ## Recent Resolutions (2026-07-25)
 

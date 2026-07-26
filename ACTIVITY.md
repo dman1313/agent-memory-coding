@@ -39,6 +39,7 @@
 2026-07-09T14:08:00Z | hermes | session-end | agent-memory-coding | Daily brief: swap day 30 (99.98%), WeKnora down day 30, Wolf all NEUTRAL, IGCSE silent 4 days, GLMS dead until Aug 3, fleet silence day 27
 2026-07-09T14:04:00Z | hermes | session-start | agent-memory-coding | HAL daily brief — system health + fleet coordination + DREAM review
 <!-- ENTRIES BELOW THIS LINE -->
+2026-07-26T11:30:00Z | hermes | decision | hermes-ecosystem | Model routing v5.1: default switched from DeepSeek v4-pro back to Xiaomi MiMo v2.5-pro. DeepSeek added as mid-tier escalation (MiMo -> DeepSeek -> GPT-5.6). Routing tables, skill, and README all updated and verified.
 2026-07-25T12:07:00Z | hermes | blocker | hermes-ecosystem | Hermes session DB corrupted (malformed disk image) — session_search broken. Needs VACUUM or restore from backup. Fleet silence Day 44.
 2026-07-25T12:07:00Z | hermes | note | agent-memory | Memory vault daily update. System: 3.6/15Gi RAM (24%), swap 43Mi (2%), disk 57/178Gi (34%), both office services running. No significant Hermes activity since morning brief. Daily brief committed f645b36.
 2026-07-23T19:17:00Z | hermes | note | skillopt-sleep | SkillOpt-Sleep night 13: all 4 benchmarks clean. 0 edits accepted 4th consecutive night. trading 0.429 static, research 0.167→0.167, commits 1.000 ceiling, arxiv 1.000 ceiling. Plateau confirmed — needs new benchmark tasks or candidate refresh.

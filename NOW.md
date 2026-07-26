@@ -1,6 +1,6 @@
 # NOW — Current State
 
-_Generated: 2026-07-25T12:07:21Z_
+_Generated: 2026-07-26T12:12:52Z_
 
 ## Active Work
 _(none)_
@@ -34,13 +34,12 @@ _(none)_
 - **hermes · hermes-ecosystem**: SkillOpt-Sleep all 4 benchmarks failed (ModuleNotFoundError: skillopt_sleep) — 3rd recurrence. Venv at ~/skillopt/workspace needs rebuild/pip reinstall. _(2026-07-17T19:18:00Z)_
 
 ## Recent Activity (48h)
+- 2026-07-26T11:30:00Z | **hermes** · hermes-ecosystem · decision | Model routing v5.1: default switched from DeepSeek v4-pro back to Xiaomi MiMo v2.5-pro. DeepSeek added as mid-tier escalation (MiMo -> DeepSeek -> GPT-5.6). Routing tables, skill, and README all updated and verified.
 - 2026-07-25T12:07:00Z | **hermes** · agent-memory · note | Memory vault daily update. System: 3.6/15Gi RAM (24%), swap 43Mi (2%), disk 57/178Gi (34%), both office services running. No significant Hermes activity since morning brief. Daily brief committed f645b36.
 - 2026-07-25T12:07:00Z | **hermes** · hermes-ecosystem · blocker | Hermes session DB corrupted (malformed disk image) — session_search broken. Needs VACUUM or restore from backup. Fleet silence Day 44.
-- 2026-07-23T19:17:00Z | **hermes** · skillopt-sleep · note | SkillOpt-Sleep night 13: all 4 benchmarks clean. 0 edits accepted 4th consecutive night. trading 0.429 static, research 0.167→0.167, commits 1.000 ceiling, arxiv 1.000 ceiling. Plateau confirmed — needs new benchmark tasks or candidate refresh.
-- 2026-07-23T18:00:00Z | **hermes** · agent-memory · note | Shared memory sync completed — Obsidian workspace synced to MEMORY.md (3,543 bytes). No errors, no drift detected. Both vaults healthy.
 
 ## Recent Decisions (7d)
-_(none)_
+- 2026-07-26T11:30:00Z | **hermes** · hermes-ecosystem | Model routing v5.1: default switched from DeepSeek v4-pro back to Xiaomi MiMo v2.5-pro. DeepSeek added as mid-tier escalation (MiMo -> DeepSeek -> GPT-5.6). Routing tables, skill, and README all updated and verified.
 
 ## Recent Milestones (7d)
 - 2026-07-21T00:21:00Z | **hermes** · self-coach | Self-Coach Slice 3 committed (goal dialogue with conversation history, repetition detection, GOAL_READY marker). Slices 1-3 all committed: Next.js 16 + Rust Axum + Supabase schema, auth, DB client, 19 tests. Building continues.
@@ -48,4 +47,4 @@ _(none)_
 - 2026-07-20T14:54:00Z | **hermes** · self-coach | Self-Coach contract approved. Dwayne confirmed "Everything. I already did it in the interview." Build started — PLAN.md created, monorepo scaffolded. Next.js 16 + Rust/Axum 0.8 + Supabase (6 tables, RLS).
 
 ## Last Seen (fleet)
-- **hermes**: 2026-07-25T12:07:00Z — blocker: Hermes session DB corrupted (malformed disk image) — session_search broken. Needs VACUUM or restore from backup. Fleet silence Day 44.
+- **hermes**: 2026-07-26T11:30:00Z — decision: Model routing v5.1: default switched from DeepSeek v4-pro back to Xiaomi MiMo v2.5-pro. DeepSeek added as mid-tier escalation (MiMo -> DeepSeek -> GPT-5.6). Routing tables, skill, and README all updated and verified.
