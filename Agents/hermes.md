@@ -17,6 +17,21 @@ metadata:
 **Dashboard:** hermesdash.humangood.ai (Natural theme), auth proxy on :9121
 **HD1 (3D):** hd1.humangood.ai (Hermes Office 3D), systemd: hermes-office, hermes-office-adapter
 
+## Recent Resolutions (2026-07-26)
+
+- **System GREEN**: Disk 34%, RAM 34%, swap 3% (67Mi/1.9Gi) — clean Day 9. Uptime 9 days. 123 apt updates pending.
+- **Same 4 services DOWN Day 13**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. Never auto-started since Jul 17 reboot. Dashboard :9999, HermesOffice :3001, 9Router :20128, DashboardAuth :9121 all UP.
+- **DREAM Jul 26**: Session DB corrupted (SQLite WAL bug) — session_search broken fleet-wide. All 3 API providers showing 401 in zombie sessions (xiaomi→deepseek→zai chain). GLMS blocked until Aug 3. Firecrawl broken night 2. Telegram topic 725 dead (84 "Chat not found").
+- **Jul 25 brief was REAL (377 lines)** — ghost streak broken. But Jul 22-24 were all ghosts (3 of 4 days unchecked).
+- **Wolf**: No scan Sunday. Market closed.
+- **Fleet silence Day 44**: No non-HAL agent activity since hyperagent Jun 12.
+- **URSSAF Q2 11 days past**: Deadline Jul 15 — no confirmation.
+- **Self-improving-agent**: All zeros Day 74 (since May 13). Memory 94%.
+- **Provider=None**: 1 job (IGCSE only). Default provider = deepseek (working — this cron runs on deepseek-v4-pro).
+- **NOW.md**: 18h stale, within tolerance. Plan board 0/7/0.
+- **4 stale inboxes**: claude, codex, hermes-mac, hermes-vps all 11+ days.
+- **Suggested**: Run `sqlite3 ~/.hermes/sessions.db "PRAGMA wal_checkpoint(TRUNCATE);"` to fix session DB. 2-second fix.
+
 ## Recent Resolutions (2026-07-25)
 
 - **GHOST BRIEF EPIDEMIC**: Jul 22, 23, 24 were all ghost briefs (1-line responses, zero health metrics). 3 of the last 4 days unchecked. Model (MiMo v2.5-pro) produces real briefs inconsistently — Jul 21 was 436 lines, Jul 22-24 were hollow. Suggested switching to DeepSeek v4-pro.
