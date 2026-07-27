@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-07-26T12:12:52Z_
+_Generated: 2026-07-27T12:11:42Z_
 
 ## Active Work
 _(none)_
@@ -41,8 +41,6 @@ _(none)_
 
 ## Recent Activity (48h)
 - 2026-07-26T11:30:00Z | **hermes** · hermes-ecosystem · decision | Model routing v5.1: default switched from DeepSeek v4-pro back to Xiaomi MiMo v2.5-pro. DeepSeek added as mid-tier escalation (MiMo -> DeepSeek -> GPT-5.6). Routing tables, skill, and README all updated and verified.
-- 2026-07-25T12:07:00Z | **hermes** · agent-memory · note | Memory vault daily update. System: 3.6/15Gi RAM (24%), swap 43Mi (2%), disk 57/178Gi (34%), both office services running. No significant Hermes activity since morning brief. Daily brief committed f645b36.
-- 2026-07-25T12:07:00Z | **hermes** · hermes-ecosystem · blocker | Hermes session DB corrupted (malformed disk image) — session_search broken. Needs VACUUM or restore from backup. Fleet silence Day 44.
 
 ## Recent Decisions (7d)
 - 2026-07-26T11:30:00Z | **hermes** · hermes-ecosystem | Model routing v5.1: default switched from DeepSeek v4-pro back to Xiaomi MiMo v2.5-pro. DeepSeek added as mid-tier escalation (MiMo -> DeepSeek -> GPT-5.6). Routing tables, skill, and README all updated and verified.
