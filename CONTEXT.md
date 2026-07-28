@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-07-28T06:06:57Z_
+_Generated: 2026-07-28T12:10:54Z_
 
 ## Active Work
 _(none)_
@@ -40,7 +40,7 @@ _(none)_
 - **hermes · hermes-ecosystem**: SkillOpt-Sleep all 4 benchmarks failed (ModuleNotFoundError: skillopt_sleep) — 3rd recurrence. Venv at ~/skillopt/workspace needs rebuild/pip reinstall. _(2026-07-17T19:18:00Z)_
 
 ## Recent Activity (48h)
-- 2026-07-26T11:30:00Z | **hermes** · hermes-ecosystem · decision | Model routing v5.1: default switched from DeepSeek v4-pro back to Xiaomi MiMo v2.5-pro. DeepSeek added as mid-tier escalation (MiMo -> DeepSeek -> GPT-5.6). Routing tables, skill, and README all updated and verified.
+- 2026-07-28T12:08:00Z | **hermes** · agent-memory · note | No significant new activity since morning brief. Routine cron jobs: Sync Shared Memory (18:08 MYT, clean), SkillOpt-Sleep night 18 (research 0.167→0.333 ✅ 2 edits adopted, trading 0.429 flat, commits 1.000 ceiling, arxiv 0.000 stuck), Evening Reflection (20:00 MYT). No user sessions, decisions, or blockers. Fleet silence Day 46.
 
 ## Recent Decisions (7d)
 - 2026-07-26T11:30:00Z | **hermes** · hermes-ecosystem | Model routing v5.1: default switched from DeepSeek v4-pro back to Xiaomi MiMo v2.5-pro. DeepSeek added as mid-tier escalation (MiMo -> DeepSeek -> GPT-5.6). Routing tables, skill, and README all updated and verified.
@@ -49,7 +49,7 @@ _(none)_
 _(none)_
 
 ## Last Seen (fleet)
-- **hermes**: 2026-07-26T11:30:00Z — decision: Model routing v5.1: default switched from DeepSeek v4-pro back to Xiaomi MiMo v2.5-pro. DeepSeek added as mid-tier escalation (MiMo -> DeepSeek -> GPT-5.6). Routing tables, skill, and README all updated and verified.
+- **hermes**: 2026-07-28T12:08:00Z — note: No significant new activity since morning brief. Routine cron jobs: Sync Shared Memory (18:08 MYT, clean), SkillOpt-Sleep night 18 (research 0.167→0.333 ✅ 2 edits adopted, trading 0.429 flat, commits 1.000 ceiling, arxiv 0.000 stuck), Evening Reflection (20:00 MYT). No user sessions, decisions, or blockers. Fleet silence Day 46.
 
 ---
 
@@ -468,20 +468,15 @@ _(running notes I want to remember across sessions)_
 **Dashboard:** hermesdash.humangood.ai (Natural theme), auth proxy on :9121
 **HD1 (3D):** hd1.humangood.ai (Hermes Office 3D), systemd: hermes-office, hermes-office-adapter
 
-## Recent Resolutions (2026-07-26)
+## Recent Resolutions (2026-07-28)
 
-- **System GREEN**: Disk 34%, RAM 34%, swap 3% (67Mi/1.9Gi) — clean Day 9. Uptime 9 days. 123 apt updates pending.
-- **Same 4 services DOWN Day 13**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. Never auto-started since Jul 17 reboot. Dashboard :9999, HermesOffice :3001, 9Router :20128, DashboardAuth :9121 all UP.
-- **DREAM Jul 26**: Session DB corrupted (SQLite WAL bug) — session_search broken fleet-wide. All 3 API providers showing 401 in zombie sessions (xiaomi→deepseek→zai chain). GLMS blocked until Aug 3. Firecrawl broken night 2. Telegram topic 725 dead (84 "Chat not found").
-- **Jul 25 brief was REAL (377 lines)** — ghost streak broken. But Jul 22-24 were all ghosts (3 of 4 days unchecked).
-- **Wolf**: No scan Sunday. Market closed.
-- **Fleet silence Day 44**: No non-HAL agent activity since hyperagent Jun 12.
-- **URSSAF Q2 11 days past**: Deadline Jul 15 — no confirmation.
-- **Self-improving-agent**: All zeros Day 74 (since May 13). Memory 94%.
-- **Provider=None**: 1 job (IGCSE only). Default provider = deepseek (working — this cron runs on deepseek-v4-pro).
-- **NOW.md**: 18h stale, within tolerance. Plan board 0/7/0.
-- **4 stale inboxes**: claude, codex, hermes-mac, hermes-vps all 11+ days.
-- **Suggested**: Run `sqlite3 ~/.hermes/sessions.db "PRAGMA wal_checkpoint(TRUNCATE);"` to fix session DB. 2-second fix.
+- **System YELLOW**: Swap creep 680Mi/1.9Gi (35%) — was 3% Jul 25, now 35% in 48h. Driver: new uvicorn :17493 (caddy user, 1.8GB RSS, running 1d20h). Disk 50%, RAM 4.1Gi/15Gi. 123 apt. Uptime 11 days.
+- **Same 4 services DOWN Day 14**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. Dashboard :9999, HermesOffice :3001, 9Router :20128, DashboardAuth :9121 all UP.
+- **DREAM Jul 28**: [SILENT] — quiet night. No sessions, no patterns.
+- **Wolf Jul 28**: Ghost run — scan worked (18 signals, META 0.496 WATCH only) but no summary, no AI-Trader publishing. Twitter 0 Day 18.
+- **Jul 27 brief was REAL** (454 lines). Ghost epidemic broken. ✅
+- **Fleet silence Day 46**. Board 0/7/0. 4 stale inboxes.
+- **URSSAF Q2 13 days past**. Session DB corrupted Day 3.
 
 ## Recent Resolutions (2026-07-25)
 
