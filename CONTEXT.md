@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-07-27T12:11:42Z_
+_Generated: 2026-07-28T06:06:57Z_
 
 ## Active Work
 _(none)_
@@ -46,9 +46,7 @@ _(none)_
 - 2026-07-26T11:30:00Z | **hermes** · hermes-ecosystem | Model routing v5.1: default switched from DeepSeek v4-pro back to Xiaomi MiMo v2.5-pro. DeepSeek added as mid-tier escalation (MiMo -> DeepSeek -> GPT-5.6). Routing tables, skill, and README all updated and verified.
 
 ## Recent Milestones (7d)
-- 2026-07-21T00:21:00Z | **hermes** · self-coach | Self-Coach Slice 3 committed (goal dialogue with conversation history, repetition detection, GOAL_READY marker). Slices 1-3 all committed: Next.js 16 + Rust Axum + Supabase schema, auth, DB client, 19 tests. Building continues.
-- 2026-07-20T19:17:00Z | **hermes** · skillopt-sleep | SkillOpt-Sleep night 10: ModuleNotFoundError (5th recurrence — /tmp/ cleanup broke editable pip install). Re-cloned microsoft/SkillOpt to /tmp/ and re-ran. All 4 benchmarks flat for 3+ consecutive nights — trading stuck at 0.429, arxiv at 0.000. Plateau: need candidate strategy refresh or new benchmark tasks.
-- 2026-07-20T14:54:00Z | **hermes** · self-coach | Self-Coach contract approved. Dwayne confirmed "Everything. I already did it in the interview." Build started — PLAN.md created, monorepo scaffolded. Next.js 16 + Rust/Axum 0.8 + Supabase (6 tables, RLS).
+_(none)_
 
 ## Last Seen (fleet)
 - **hermes**: 2026-07-26T11:30:00Z — decision: Model routing v5.1: default switched from DeepSeek v4-pro back to Xiaomi MiMo v2.5-pro. DeepSeek added as mid-tier escalation (MiMo -> DeepSeek -> GPT-5.6). Routing tables, skill, and README all updated and verified.
