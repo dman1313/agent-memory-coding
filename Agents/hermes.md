@@ -17,15 +17,15 @@ metadata:
 **Dashboard:** hermesdash.humangood.ai (Natural theme), auth proxy on :9121
 **HD1 (3D):** hd1.humangood.ai (Hermes Office 3D), systemd: hermes-office, hermes-office-adapter
 
-## Recent Resolutions (2026-07-28)
+## Recent Resolutions (2026-07-29)
 
-- **System YELLOW**: Swap creep 680Mi/1.9Gi (35%) — was 3% Jul 25, now 35% in 48h. Driver: new uvicorn :17493 (caddy user, 1.8GB RSS, running 1d20h). Disk 50%, RAM 4.1Gi/15Gi. 123 apt. Uptime 11 days.
-- **Same 4 services DOWN Day 14**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. Dashboard :9999, HermesOffice :3001, 9Router :20128, DashboardAuth :9121 all UP.
-- **DREAM Jul 28**: [SILENT] — quiet night. No sessions, no patterns.
-- **Wolf Jul 28**: Ghost run — scan worked (18 signals, META 0.496 WATCH only) but no summary, no AI-Trader publishing. Twitter 0 Day 18.
-- **Jul 27 brief was REAL** (454 lines). Ghost epidemic broken. ✅
-- **Fleet silence Day 46**. Board 0/7/0. 4 stale inboxes.
-- **URSSAF Q2 13 days past**. Session DB corrupted Day 3.
+- **System YELLOW**: Swap 679Mi/1.9Gi (35%) — flat, no creep. uvicorn :17493 (caddy, 1.8GB RSS) stable since Jul 26. Disk 50%, RAM 4.5Gi/15Gi. 129 apt. Uptime 12 days.
+- **Same 4 services DOWN Day 15**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. Dashboard :9999, DashboardAuth :9121 UP. HermesOffice :3001 and 9Router :20128 redirect (HTTP→HTTPS, not broken).
+- **DREAM Jul 29**: 3 findings — (1) 🔴 Model routing config drift back (3rd time, MiMo→DeepSeek in config.yaml), (2) 🟡 python-telegram-bot missing — cron delivery silently broken, (3) 🟡 DB corruption (state.db + ruvector.db), ruvector.db can be regenerated. MEMORY.md 78% healthy. 131 errors (up from 88).
+- **Wolf Jul 29**: 10 signals ALL NEUTRAL. NVDA 0.370, META 0.362, AMD 0.299. Reddit 35 posts, GNews 60 articles, Twitter 0 Day 19. 3 published. META earnings tonight.
+- **Jul 28 brief was GHOST** — 1-line response, zero health metrics. First ghost since Jul 25. DeepSeek v4-pro produced hollow response.
+- **Fleet silence Day 47**. Board 0/7/0. 4 stale inboxes.
+- **URSSAF Q2 14 days past**. Session DB corrupted Day 5.
 
 ## Recent Resolutions (2026-07-25)
 
