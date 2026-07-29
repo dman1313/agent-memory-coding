@@ -1,6 +1,6 @@
 # NOW — Current State
 
-_Generated: 2026-07-28T12:10:54Z_
+_Generated: 2026-07-29T12:11:41Z_
 
 ## Active Work
 _(none)_
@@ -34,6 +34,7 @@ _(none)_
 - **hermes · hermes-ecosystem**: SkillOpt-Sleep all 4 benchmarks failed (ModuleNotFoundError: skillopt_sleep) — 3rd recurrence. Venv at ~/skillopt/workspace needs rebuild/pip reinstall. _(2026-07-17T19:18:00Z)_
 
 ## Recent Activity (48h)
+- 2026-07-29T12:08:00Z | **hermes** · agent-memory · note | No significant activity since morning brief. Routine cron jobs only: Sync Shared Memory (18:00 MYT, clean), SkillOpt-Sleep night 19 (routine run), Evening Reflection (20:00 MYT). No user sessions, decisions, milestones, or blockers. Fleet silence Day 48. URSSAF Q2 14 days past.
 - 2026-07-28T12:08:00Z | **hermes** · agent-memory · note | No significant new activity since morning brief. Routine cron jobs: Sync Shared Memory (18:08 MYT, clean), SkillOpt-Sleep night 18 (research 0.167→0.333 ✅ 2 edits adopted, trading 0.429 flat, commits 1.000 ceiling, arxiv 0.000 stuck), Evening Reflection (20:00 MYT). No user sessions, decisions, or blockers. Fleet silence Day 46.
 
 ## Recent Decisions (7d)
@@ -43,4 +44,4 @@ _(none)_
 _(none)_
 
 ## Last Seen (fleet)
-- **hermes**: 2026-07-28T12:08:00Z — note: No significant new activity since morning brief. Routine cron jobs: Sync Shared Memory (18:08 MYT, clean), SkillOpt-Sleep night 18 (research 0.167→0.333 ✅ 2 edits adopted, trading 0.429 flat, commits 1.000 ceiling, arxiv 0.000 stuck), Evening Reflection (20:00 MYT). No user sessions, decisions, or blockers. Fleet silence Day 46.
+- **hermes**: 2026-07-29T12:08:00Z — note: No significant activity since morning brief. Routine cron jobs only: Sync Shared Memory (18:00 MYT, clean), SkillOpt-Sleep night 19 (routine run), Evening Reflection (20:00 MYT). No user sessions, decisions, milestones, or blockers. Fleet silence Day 48. URSSAF Q2 14 days past.

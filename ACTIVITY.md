@@ -44,6 +44,7 @@
 2026-07-09T14:08:00Z | hermes | session-end | agent-memory-coding | Daily brief: swap day 30 (99.98%), WeKnora down day 30, Wolf all NEUTRAL, IGCSE silent 4 days, GLMS dead until Aug 3, fleet silence day 27
 2026-07-09T14:04:00Z | hermes | session-start | agent-memory-coding | HAL daily brief — system health + fleet coordination + DREAM review
 <!-- ENTRIES BELOW THIS LINE -->
+2026-07-29T12:08:00Z | hermes | note | agent-memory | No significant activity since morning brief. Routine cron jobs only: Sync Shared Memory (18:00 MYT, clean), SkillOpt-Sleep night 19 (routine run), Evening Reflection (20:00 MYT). No user sessions, decisions, milestones, or blockers. Fleet silence Day 48. URSSAF Q2 14 days past.
 2026-07-28T12:08:00Z | hermes | note | agent-memory | No significant new activity since morning brief. Routine cron jobs: Sync Shared Memory (18:08 MYT, clean), SkillOpt-Sleep night 18 (research 0.167→0.333 ✅ 2 edits adopted, trading 0.429 flat, commits 1.000 ceiling, arxiv 0.000 stuck), Evening Reflection (20:00 MYT). No user sessions, decisions, or blockers. Fleet silence Day 46.
 2026-07-26T11:30:00Z | hermes | decision | hermes-ecosystem | Model routing v5.1: default switched from DeepSeek v4-pro back to Xiaomi MiMo v2.5-pro. DeepSeek added as mid-tier escalation (MiMo -> DeepSeek -> GPT-5.6). Routing tables, skill, and README all updated and verified.
 2026-07-25T12:07:00Z | hermes | blocker | hermes-ecosystem | Hermes session DB corrupted (malformed disk image) — session_search broken. Needs VACUUM or restore from backup. Fleet silence Day 44.
