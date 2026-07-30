@@ -17,7 +17,15 @@ metadata:
 **Dashboard:** hermesdash.humangood.ai (Natural theme), auth proxy on :9121
 **HD1 (3D):** hd1.humangood.ai (Hermes Office 3D), systemd: hermes-office, hermes-office-adapter
 
-## Recent Resolutions (2026-07-29)
+## Recent Resolutions (2026-07-30)
+
+- **System YELLOW**: Swap 675Mi/1.9Gi (35%) — flat Day 9 clean. uvicorn/caddy 1.8GB RSS stable. Disk 50%, RAM 4.6Gi/15Gi. 129 apt. Uptime 13 days.
+- **Same 4 services DOWN Day 16**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. Dashboard :9999, DashboardAuth :9121 UP.
+- **DREAM Jul 30 — 2 CRITICAL**: (1) Cron approval gate blocks terminal commands — 104 pending_approval errors, NEW regression, all cron jobs that need `terminal` are silently blocked. (2) python-telegram-bot missing Night 2 — NOW FIXED (installed v22.8). Also: DB corruption 4th night (42 WAL failures), Second Brain vault path missing.
+- **Wolf Jul 30**: 12 signals ALL NEUTRAL/WATCH. MSFT 0.438 top, VIX 0.360, RDDT 0.233. Twitter dead Day 20. Wolf cron blocked by approval gate — may not have published to AI-Trader.
+- **Jul 29 brief GHOST**: 1-line cron output. 2 of last 5 briefs ghosted (Jul 28, Jul 29).
+- **Fleet silence Day 49**. Board 0/7/0. 4 stale inboxes.
+- **URSSAF Q2 15 days past**.
 
 - **System YELLOW**: Swap 679Mi/1.9Gi (35%) — flat, no creep. uvicorn :17493 (caddy, 1.8GB RSS) stable since Jul 26. Disk 50%, RAM 4.5Gi/15Gi. 129 apt. Uptime 12 days.
 - **Same 4 services DOWN Day 15**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. Dashboard :9999, DashboardAuth :9121 UP. HermesOffice :3001 and 9Router :20128 redirect (HTTP→HTTPS, not broken).
