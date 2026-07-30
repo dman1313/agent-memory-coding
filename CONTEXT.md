@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-07-29T12:11:41Z_
+_Generated: 2026-07-30T12:12:25Z_
 
 ## Active Work
 _(none)_
@@ -40,8 +40,7 @@ _(none)_
 - **hermes · hermes-ecosystem**: SkillOpt-Sleep all 4 benchmarks failed (ModuleNotFoundError: skillopt_sleep) — 3rd recurrence. Venv at ~/skillopt/workspace needs rebuild/pip reinstall. _(2026-07-17T19:18:00Z)_
 
 ## Recent Activity (48h)
-- 2026-07-29T12:08:00Z | **hermes** · agent-memory · note | No significant activity since morning brief. Routine cron jobs only: Sync Shared Memory (18:00 MYT, clean), SkillOpt-Sleep night 19 (routine run), Evening Reflection (20:00 MYT). No user sessions, decisions, milestones, or blockers. Fleet silence Day 48. URSSAF Q2 14 days past.
-- 2026-07-28T12:08:00Z | **hermes** · agent-memory · note | No significant new activity since morning brief. Routine cron jobs: Sync Shared Memory (18:08 MYT, clean), SkillOpt-Sleep night 18 (research 0.167→0.333 ✅ 2 edits adopted, trading 0.429 flat, commits 1.000 ceiling, arxiv 0.000 stuck), Evening Reflection (20:00 MYT). No user sessions, decisions, or blockers. Fleet silence Day 46.
+_(none)_
 
 ## Recent Decisions (7d)
 - 2026-07-26T11:30:00Z | **hermes** · hermes-ecosystem | Model routing v5.1: default switched from DeepSeek v4-pro back to Xiaomi MiMo v2.5-pro. DeepSeek added as mid-tier escalation (MiMo -> DeepSeek -> GPT-5.6). Routing tables, skill, and README all updated and verified.
@@ -50,7 +49,7 @@ _(none)_
 _(none)_
 
 ## Last Seen (fleet)
-- **hermes**: 2026-07-29T12:08:00Z — note: No significant activity since morning brief. Routine cron jobs only: Sync Shared Memory (18:00 MYT, clean), SkillOpt-Sleep night 19 (routine run), Evening Reflection (20:00 MYT). No user sessions, decisions, milestones, or blockers. Fleet silence Day 48. URSSAF Q2 14 days past.
+- **hermes**: 2026-07-28T12:08:00Z — note: No significant new activity since morning brief. Routine cron jobs: Sync Shared Memory (18:08 MYT, clean), SkillOpt-Sleep night 18 (research 0.167→0.333 ✅ 2 edits adopted, trading 0.429 flat, commits 1.000 ceiling, arxiv 0.000 stuck), Evening Reflection (20:00 MYT). No user sessions, decisions, or blockers. Fleet silence Day 46.
 
 ---
 
@@ -469,7 +468,15 @@ _(running notes I want to remember across sessions)_
 **Dashboard:** hermesdash.humangood.ai (Natural theme), auth proxy on :9121
 **HD1 (3D):** hd1.humangood.ai (Hermes Office 3D), systemd: hermes-office, hermes-office-adapter
 
-## Recent Resolutions (2026-07-29)
+## Recent Resolutions (2026-07-30)
+
+- **System YELLOW**: Swap 675Mi/1.9Gi (35%) — flat Day 9 clean. uvicorn/caddy 1.8GB RSS stable. Disk 50%, RAM 4.6Gi/15Gi. 129 apt. Uptime 13 days.
+- **Same 4 services DOWN Day 16**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. Dashboard :9999, DashboardAuth :9121 UP.
+- **DREAM Jul 30 — 2 CRITICAL**: (1) Cron approval gate blocks terminal commands — 104 pending_approval errors, NEW regression, all cron jobs that need `terminal` are silently blocked. (2) python-telegram-bot missing Night 2 — NOW FIXED (installed v22.8). Also: DB corruption 4th night (42 WAL failures), Second Brain vault path missing.
+- **Wolf Jul 30**: 12 signals ALL NEUTRAL/WATCH. MSFT 0.438 top, VIX 0.360, RDDT 0.233. Twitter dead Day 20. Wolf cron blocked by approval gate — may not have published to AI-Trader.
+- **Jul 29 brief GHOST**: 1-line cron output. 2 of last 5 briefs ghosted (Jul 28, Jul 29).
+- **Fleet silence Day 49**. Board 0/7/0. 4 stale inboxes.
+- **URSSAF Q2 15 days past**.
 
 - **System YELLOW**: Swap 679Mi/1.9Gi (35%) — flat, no creep. uvicorn :17493 (caddy, 1.8GB RSS) stable since Jul 26. Disk 50%, RAM 4.5Gi/15Gi. 129 apt. Uptime 12 days.
 - **Same 4 services DOWN Day 15**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. Dashboard :9999, DashboardAuth :9121 UP. HermesOffice :3001 and 9Router :20128 redirect (HTTP→HTTPS, not broken).
