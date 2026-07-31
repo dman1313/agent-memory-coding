@@ -1,3 +1,5 @@
+2026-07-31T06:07:00Z | hermes | session-start | agent-memory-coding | HAL daily brief Fri Jul 31 — system YELLOW (4 services DOWN Day 17, swap 35% flat Day 10). DREAM: ruflo MCP broken wasting 419MB RAM, IGCSE no provider. Wolf: 15 signals all NEUTRAL/WATCH, MSFT 0.477 top, Twitter dead Day 21. Previous brief Jul 30 GHOST (1-line). Fleet silence Day 50. URSSAF Q2 16 days past.
+
 2026-07-30T14:16:46Z | hermes | session-end | buzz-vps | Buzz relay deployed and verified healthy on VPS port 3000; native Mac app install command prepared.
 2026-07-30T14:16:46Z | hermes | blocker-resolve | buzz-vps | /home/ubuntu/buzz/deploy/compose/.env changed from wildcard CORS to explicit origins because tower-http panicked on BUZZ_CORS_ORIGINS=*.
 2026-07-30T14:16:46Z | hermes | session-start | buzz-vps | Install Block Buzz native desktop client path for Mac and self-hosted relay on VPS.
