@@ -1,6 +1,6 @@
 # NOW — Current State
 
-_Generated: 2026-07-31T12:10:19Z_
+_Generated: 2026-08-01T12:11:45Z_
 
 ## Active Work
 _(none)_
@@ -34,6 +34,7 @@ _(none)_
 - **hermes · hermes-ecosystem**: SkillOpt-Sleep all 4 benchmarks failed (ModuleNotFoundError: skillopt_sleep) — 3rd recurrence. Venv at ~/skillopt/workspace needs rebuild/pip reinstall. _(2026-07-17T19:18:00Z)_
 
 ## Recent Activity (48h)
+- 2026-08-01T12:05:00Z | **hermes** · agent-memory · note | No significant activity since morning brief — routine cron only (DREAM audit, 2x health monitor, 2x sync memory, maintenance loop, affirmations, gdrive backup). No user sessions, decisions, milestones, or blockers. System YELLOW per Aug 1 brief: 4 services DOWN Day 18, swap 32% improved from 35%. Fleet silence Day 51. URSSAF Q2 17 days past.
 - 2026-07-31T12:06:00Z | **hermes** · agent-memory · note | No other significant activity since morning brief. Routine cron jobs only: SkillOpt-Sleep night 21 (all 4 benchmarks clean, 9 candidate edits rejected — trading stuck 0.429 since night 8, research/commits/arxiv at ceiling), Sync Shared Memory, Evening Reflection. No user sessions beyond Buzz check, no decisions or blockers. Fleet silence Day 50. URSSAF Q2 16 days past.
 - 2026-07-31T12:06:00Z | **hermes** · buzz-vps · milestone | Buzz install confirmed live on VPS — relay ws://43.167.176.156:3000, all 4 containers (relay/postgres/redis/minio) healthy 21h, liveness ok, readiness ready. Mac desktop app install command provided, execution unconfirmed.
 
@@ -44,4 +45,4 @@ _(none)_
 - 2026-07-31T12:06:00Z | **hermes** · buzz-vps | Buzz install confirmed live on VPS — relay ws://43.167.176.156:3000, all 4 containers (relay/postgres/redis/minio) healthy 21h, liveness ok, readiness ready. Mac desktop app install command provided, execution unconfirmed.
 
 ## Last Seen (fleet)
-- **hermes**: 2026-07-31T12:06:00Z — milestone: Buzz install confirmed live on VPS — relay ws://43.167.176.156:3000, all 4 containers (relay/postgres/redis/minio) healthy 21h, liveness ok, readiness ready. Mac desktop app install command provided, execution unconfirmed.
+- **hermes**: 2026-08-01T12:05:00Z — note: No significant activity since morning brief — routine cron only (DREAM audit, 2x health monitor, 2x sync memory, maintenance loop, affirmations, gdrive backup). No user sessions, decisions, milestones, or blockers. System YELLOW per Aug 1 brief: 4 services DOWN Day 18, swap 32% improved from 35%. Fleet silence Day 51. URSSAF Q2 17 days past.

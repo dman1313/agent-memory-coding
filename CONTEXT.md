@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-07-31T12:10:19Z_
+_Generated: 2026-08-01T12:11:45Z_
 
 ## Active Work
 _(none)_
@@ -40,6 +40,7 @@ _(none)_
 - **hermes · hermes-ecosystem**: SkillOpt-Sleep all 4 benchmarks failed (ModuleNotFoundError: skillopt_sleep) — 3rd recurrence. Venv at ~/skillopt/workspace needs rebuild/pip reinstall. _(2026-07-17T19:18:00Z)_
 
 ## Recent Activity (48h)
+- 2026-08-01T12:05:00Z | **hermes** · agent-memory · note | No significant activity since morning brief — routine cron only (DREAM audit, 2x health monitor, 2x sync memory, maintenance loop, affirmations, gdrive backup). No user sessions, decisions, milestones, or blockers. System YELLOW per Aug 1 brief: 4 services DOWN Day 18, swap 32% improved from 35%. Fleet silence Day 51. URSSAF Q2 17 days past.
 - 2026-07-31T12:06:00Z | **hermes** · agent-memory · note | No other significant activity since morning brief. Routine cron jobs only: SkillOpt-Sleep night 21 (all 4 benchmarks clean, 9 candidate edits rejected — trading stuck 0.429 since night 8, research/commits/arxiv at ceiling), Sync Shared Memory, Evening Reflection. No user sessions beyond Buzz check, no decisions or blockers. Fleet silence Day 50. URSSAF Q2 16 days past.
 - 2026-07-31T12:06:00Z | **hermes** · buzz-vps · milestone | Buzz install confirmed live on VPS — relay ws://43.167.176.156:3000, all 4 containers (relay/postgres/redis/minio) healthy 21h, liveness ok, readiness ready. Mac desktop app install command provided, execution unconfirmed.
 
@@ -50,7 +51,7 @@ _(none)_
 - 2026-07-31T12:06:00Z | **hermes** · buzz-vps | Buzz install confirmed live on VPS — relay ws://43.167.176.156:3000, all 4 containers (relay/postgres/redis/minio) healthy 21h, liveness ok, readiness ready. Mac desktop app install command provided, execution unconfirmed.
 
 ## Last Seen (fleet)
-- **hermes**: 2026-07-31T12:06:00Z — milestone: Buzz install confirmed live on VPS — relay ws://43.167.176.156:3000, all 4 containers (relay/postgres/redis/minio) healthy 21h, liveness ok, readiness ready. Mac desktop app install command provided, execution unconfirmed.
+- **hermes**: 2026-08-01T12:05:00Z — note: No significant activity since morning brief — routine cron only (DREAM audit, 2x health monitor, 2x sync memory, maintenance loop, affirmations, gdrive backup). No user sessions, decisions, milestones, or blockers. System YELLOW per Aug 1 brief: 4 services DOWN Day 18, swap 32% improved from 35%. Fleet silence Day 51. URSSAF Q2 17 days past.
 
 ---
 
@@ -468,6 +469,18 @@ _(running notes I want to remember across sessions)_
 **Telegram:** @betaclawv1_bot ("openclaw"), thread 723 (health), thread 725 (wellness)
 **Dashboard:** hermesdash.humangood.ai (Natural theme), auth proxy on :9121
 **HD1 (3D):** hd1.humangood.ai (Hermes Office 3D), systemd: hermes-office, hermes-office-adapter
+
+## Recent Resolutions (2026-08-01)
+
+- **System YELLOW unchanged Day 18**: Swap 614Mi/1.9Gi (32%) — improved from 35%. uvicorn/caddy 1.8GB RSS stable. Disk 52%, RAM 4.5Gi/15Gi. 134 apt. Uptime 15 days.
+- **Same 4 services DOWN Day 18**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. Dashboard :9999, DashboardAuth :9121 UP.
+- **Ghost streak BROKEN**: Jul 31 brief was REAL (412 lines, full metrics). Jul 28-30 were ghosts. DeepSeek v4-pro inconsistency — went from hollow to real.
+- **DREAM Aug 1**: 3 findings — (1) ruflo MCP still broken 44h+, ~300 errors/day. (2) python-telegram-bot fix holding, zero delivery errors. (3) Cron approval gate down from 104→2 errors. MEMORY.md 78% healthy.
+- **Wolf**: No scan (Saturday). Friday: 15 NEUTRAL/WATCH, MSFT 0.477 top. Twitter dead Day 21.
+- **Jul 31 brief REAL** — 412 lines, broke 3-day ghost epidemic.
+- **Fleet silence Day 51**. Board 0/7/0. 4 stale inboxes.
+- **URSSAF Q2 17 days past**. IGCSE still provider=None.
+- **Self-improving-agent all zeros Day 80** (since May 13).
 
 ## Recent Resolutions (2026-07-31)
 
