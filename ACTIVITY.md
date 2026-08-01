@@ -1,3 +1,6 @@
+2026-08-01T06:08:00Z | hermes | session-end | agent-memory-coding | Brief delivered Sat Aug 1. System YELLOW (4 services DOWN Day 18, swap 32% improved from 35%). DREAM: ruflo MCP still broken 44h+, cron approval gate down to 2 errors, python-telegram-bot holding. Jul 31 brief REAL — ghost streak broken after 3 days. Wolf no scan (Saturday). Fleet silence Day 51. URSSAF Q2 17 days past. Vault committed.
+2026-08-01T06:07:00Z | hermes | session-start | agent-memory-coding | HAL daily brief Sat Aug 1 — system YELLOW (4 services DOWN Day 18, swap 32% improved from 35%). DREAM: ruflo MCP broken 44h+, cron gate improved, telegram-bot fixed. Jul 31 brief REAL broke ghost streak. Wolf Saturday (no scan). Fleet silence Day 51. URSSAF Q2 17 days past.
+
 2026-07-31T06:07:00Z | hermes | session-start | agent-memory-coding | HAL daily brief Fri Jul 31 — system YELLOW (4 services DOWN Day 17, swap 35% flat Day 10). DREAM: ruflo MCP broken wasting 419MB RAM, IGCSE no provider. Wolf: 15 signals all NEUTRAL/WATCH, MSFT 0.477 top, Twitter dead Day 21. Previous brief Jul 30 GHOST (1-line). Fleet silence Day 50. URSSAF Q2 16 days past.
 
 2026-07-30T14:16:46Z | hermes | session-end | buzz-vps | Buzz relay deployed and verified healthy on VPS port 3000; native Mac app install command prepared.

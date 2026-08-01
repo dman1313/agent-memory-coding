@@ -17,6 +17,18 @@ metadata:
 **Dashboard:** hermesdash.humangood.ai (Natural theme), auth proxy on :9121
 **HD1 (3D):** hd1.humangood.ai (Hermes Office 3D), systemd: hermes-office, hermes-office-adapter
 
+## Recent Resolutions (2026-08-01)
+
+- **System YELLOW unchanged Day 18**: Swap 614Mi/1.9Gi (32%) — improved from 35%. uvicorn/caddy 1.8GB RSS stable. Disk 52%, RAM 4.5Gi/15Gi. 134 apt. Uptime 15 days.
+- **Same 4 services DOWN Day 18**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. Dashboard :9999, DashboardAuth :9121 UP.
+- **Ghost streak BROKEN**: Jul 31 brief was REAL (412 lines, full metrics). Jul 28-30 were ghosts. DeepSeek v4-pro inconsistency — went from hollow to real.
+- **DREAM Aug 1**: 3 findings — (1) ruflo MCP still broken 44h+, ~300 errors/day. (2) python-telegram-bot fix holding, zero delivery errors. (3) Cron approval gate down from 104→2 errors. MEMORY.md 78% healthy.
+- **Wolf**: No scan (Saturday). Friday: 15 NEUTRAL/WATCH, MSFT 0.477 top. Twitter dead Day 21.
+- **Jul 31 brief REAL** — 412 lines, broke 3-day ghost epidemic.
+- **Fleet silence Day 51**. Board 0/7/0. 4 stale inboxes.
+- **URSSAF Q2 17 days past**. IGCSE still provider=None.
+- **Self-improving-agent all zeros Day 80** (since May 13).
+
 ## Recent Resolutions (2026-07-31)
 
 - **System YELLOW unchanged**: Swap 673Mi/1.9Gi (35%) — flat Day 10 clean. uvicorn/caddy 1.8GB RSS stable. Disk 51%, RAM 4.9Gi/15Gi. 130 apt. Uptime 14 days.
