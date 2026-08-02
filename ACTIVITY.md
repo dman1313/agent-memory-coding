@@ -1,3 +1,7 @@
+2026-08-02T06:06:00Z | hermes | session-end | agent-memory-coding | Brief delivered Sun Aug 2. System YELLOW (4 services DOWN Day 19, swap 32%). DREAM: session DB locked (restart gateway), ruflo MCP 251 failures (remove). Aug 1 brief GHOST. Fleet silence Day 52. URSSAF Q2 18 days past. Vault committed.
+
+2026-08-02T06:02:00Z | hermes | session-start | agent-memory-coding | HAL daily brief Sun Aug 2 — system YELLOW (4 services DOWN Day 19, swap 32% improved from 35%). DREAM Aug 2 REAL: session DB locked (restart gateway), ruflo MCP 251 failures (remove from config). Aug 1 brief GHOST (2-line). Wolf no scan (Sunday). Fleet silence Day 52. URSSAF Q2 18 days past.
+
 2026-08-01T06:08:00Z | hermes | session-end | agent-memory-coding | Brief delivered Sat Aug 1. System YELLOW (4 services DOWN Day 18, swap 32% improved from 35%). DREAM: ruflo MCP still broken 44h+, cron approval gate down to 2 errors, python-telegram-bot holding. Jul 31 brief REAL — ghost streak broken after 3 days. Wolf no scan (Saturday). Fleet silence Day 51. URSSAF Q2 17 days past. Vault committed.
 2026-08-01T06:07:00Z | hermes | session-start | agent-memory-coding | HAL daily brief Sat Aug 1 — system YELLOW (4 services DOWN Day 18, swap 32% improved from 35%). DREAM: ruflo MCP broken 44h+, cron gate improved, telegram-bot fixed. Jul 31 brief REAL broke ghost streak. Wolf Saturday (no scan). Fleet silence Day 51. URSSAF Q2 17 days past.
 

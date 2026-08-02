@@ -17,6 +17,17 @@ metadata:
 **Dashboard:** hermesdash.humangood.ai (Natural theme), auth proxy on :9121
 **HD1 (3D):** hd1.humangood.ai (Hermes Office 3D), systemd: hermes-office, hermes-office-adapter
 
+## Recent Resolutions (2026-08-02)
+
+- **System YELLOW Day 19**: Swap 613Mi/1.9Gi (32%) — improved from 35%. uvicorn/caddy 1.8GB RSS stable. Disk 52%, RAM 4.9Gi/15Gi. 134 apt. Uptime 16 days.
+- **Same 4 services DOWN Day 19**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. Dashboard :9999, DashboardAuth :9121 UP. HermesOffice :3001, 9Router :20128 redirect (normal).
+- **Aug 1 brief GHOST**: 2-line response, zero health metrics. One day unchecked.
+- **DREAM Aug 2 REAL**: 3 findings — (1) 🔴 Session DB locked since Aug 1 morning — restart gateway to release lock, blocking DREAM audits + async completions + 19 cron jobs unrecorded. (2) 🟡 ruflo MCP permanently dead (251 failures yesterday) — remove from config. (3) 🟢 Xiaomi MiMo zero 451 cross-border errors — Jun 2026 block resolved. MEMORY.md healthy at 3,147 bytes.
+- **Wolf**: No scan (Sunday). Friday Jul 31: 15 NEUTRAL/WATCH, valid JSON. Twitter dead Day 21. Next scan Mon Aug 3.
+- **Fleet silence Day 52**. Board 0/7/0. 4 stale inboxes. No ghost sessions.
+- **URSSAF Q2 18 days past**. IGCSE still provider=None (T-0003).
+- **Self-improving-agent all zeros Day 81** (since May 13).
+
 ## Recent Resolutions (2026-08-01)
 
 - **System YELLOW unchanged Day 18**: Swap 614Mi/1.9Gi (32%) — improved from 35%. uvicorn/caddy 1.8GB RSS stable. Disk 52%, RAM 4.5Gi/15Gi. 134 apt. Uptime 15 days.
