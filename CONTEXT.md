@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-08-01T12:11:45Z_
+_Generated: 2026-08-02T12:09:56Z_
 
 ## Active Work
 _(none)_
@@ -40,18 +40,17 @@ _(none)_
 - **hermes · hermes-ecosystem**: SkillOpt-Sleep all 4 benchmarks failed (ModuleNotFoundError: skillopt_sleep) — 3rd recurrence. Venv at ~/skillopt/workspace needs rebuild/pip reinstall. _(2026-07-17T19:18:00Z)_
 
 ## Recent Activity (48h)
+- 2026-08-02T12:05:00Z | **hermes** · agent-memory · note | No significant activity since Aug 1 update — routine cron only (SkillOpt-Sleep, 2x sync memory, health monitors, daily brief). No user sessions, decisions, milestones, or blockers. System YELLOW per Aug 2 brief: 4 services DOWN Day 19, swap 32%, fleet silence Day 52, URSSAF Q2 18 days past.
 - 2026-08-01T12:05:00Z | **hermes** · agent-memory · note | No significant activity since morning brief — routine cron only (DREAM audit, 2x health monitor, 2x sync memory, maintenance loop, affirmations, gdrive backup). No user sessions, decisions, milestones, or blockers. System YELLOW per Aug 1 brief: 4 services DOWN Day 18, swap 32% improved from 35%. Fleet silence Day 51. URSSAF Q2 17 days past.
-- 2026-07-31T12:06:00Z | **hermes** · agent-memory · note | No other significant activity since morning brief. Routine cron jobs only: SkillOpt-Sleep night 21 (all 4 benchmarks clean, 9 candidate edits rejected — trading stuck 0.429 since night 8, research/commits/arxiv at ceiling), Sync Shared Memory, Evening Reflection. No user sessions beyond Buzz check, no decisions or blockers. Fleet silence Day 50. URSSAF Q2 16 days past.
-- 2026-07-31T12:06:00Z | **hermes** · buzz-vps · milestone | Buzz install confirmed live on VPS — relay ws://43.167.176.156:3000, all 4 containers (relay/postgres/redis/minio) healthy 21h, liveness ok, readiness ready. Mac desktop app install command provided, execution unconfirmed.
 
 ## Recent Decisions (7d)
-- 2026-07-26T11:30:00Z | **hermes** · hermes-ecosystem | Model routing v5.1: default switched from DeepSeek v4-pro back to Xiaomi MiMo v2.5-pro. DeepSeek added as mid-tier escalation (MiMo -> DeepSeek -> GPT-5.6). Routing tables, skill, and README all updated and verified.
+_(none)_
 
 ## Recent Milestones (7d)
 - 2026-07-31T12:06:00Z | **hermes** · buzz-vps | Buzz install confirmed live on VPS — relay ws://43.167.176.156:3000, all 4 containers (relay/postgres/redis/minio) healthy 21h, liveness ok, readiness ready. Mac desktop app install command provided, execution unconfirmed.
 
 ## Last Seen (fleet)
-- **hermes**: 2026-08-01T12:05:00Z — note: No significant activity since morning brief — routine cron only (DREAM audit, 2x health monitor, 2x sync memory, maintenance loop, affirmations, gdrive backup). No user sessions, decisions, milestones, or blockers. System YELLOW per Aug 1 brief: 4 services DOWN Day 18, swap 32% improved from 35%. Fleet silence Day 51. URSSAF Q2 17 days past.
+- **hermes**: 2026-08-02T12:05:00Z — note: No significant activity since Aug 1 update — routine cron only (SkillOpt-Sleep, 2x sync memory, health monitors, daily brief). No user sessions, decisions, milestones, or blockers. System YELLOW per Aug 2 brief: 4 services DOWN Day 19, swap 32%, fleet silence Day 52, URSSAF Q2 18 days past.
 
 ---
 
@@ -469,6 +468,17 @@ _(running notes I want to remember across sessions)_
 **Telegram:** @betaclawv1_bot ("openclaw"), thread 723 (health), thread 725 (wellness)
 **Dashboard:** hermesdash.humangood.ai (Natural theme), auth proxy on :9121
 **HD1 (3D):** hd1.humangood.ai (Hermes Office 3D), systemd: hermes-office, hermes-office-adapter
+
+## Recent Resolutions (2026-08-02)
+
+- **System YELLOW Day 19**: Swap 613Mi/1.9Gi (32%) — improved from 35%. uvicorn/caddy 1.8GB RSS stable. Disk 52%, RAM 4.9Gi/15Gi. 134 apt. Uptime 16 days.
+- **Same 4 services DOWN Day 19**: Human Good AI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002. Dashboard :9999, DashboardAuth :9121 UP. HermesOffice :3001, 9Router :20128 redirect (normal).
+- **Aug 1 brief GHOST**: 2-line response, zero health metrics. One day unchecked.
+- **DREAM Aug 2 REAL**: 3 findings — (1) 🔴 Session DB locked since Aug 1 morning — restart gateway to release lock, blocking DREAM audits + async completions + 19 cron jobs unrecorded. (2) 🟡 ruflo MCP permanently dead (251 failures yesterday) — remove from config. (3) 🟢 Xiaomi MiMo zero 451 cross-border errors — Jun 2026 block resolved. MEMORY.md healthy at 3,147 bytes.
+- **Wolf**: No scan (Sunday). Friday Jul 31: 15 NEUTRAL/WATCH, valid JSON. Twitter dead Day 21. Next scan Mon Aug 3.
+- **Fleet silence Day 52**. Board 0/7/0. 4 stale inboxes. No ghost sessions.
+- **URSSAF Q2 18 days past**. IGCSE still provider=None (T-0003).
+- **Self-improving-agent all zeros Day 81** (since May 13).
 
 ## Recent Resolutions (2026-08-01)
 
