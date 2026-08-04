@@ -1,3 +1,7 @@
+2026-08-04T06:04:00Z | hermes | session-end | agent-memory-coding | Brief delivered Tue Aug 4. System YELLOW unchanged (5 services DOWN Day 21, swap 19% stable). DREAM: session DB 0 bytes Night 5 — gateway restart needed. ruflo MCP 513 failures. Wolf Tue: all NEUTRAL, SOFI/META/AAPL published. Aug 3 brief REAL. Fleet silence Day 54. URSSAF Q2 20 days past.
+
+2026-08-04T06:04:00Z | hermes | session-start | agent-memory-coding | HAL daily brief Tue Aug 4 — system YELLOW unchanged (5 services DOWN Day 21, swap 19% stable). DREAM: session DB 0 bytes Night 5 (needs gateway restart), ruflo MCP 513 failures. Wolf Tue: all NEUTRAL (SOFI 15 mentions, META +0.42 sentiment best), 3 published. Aug 3 brief REAL. Fleet silence Day 54. URSSAF Q2 20 days past.
+
 2026-08-03T06:03:00Z | hermes | session-start | agent-memory-coding | HAL daily brief Mon Aug 3 — system YELLOW (5 services DOWN Day 20 up from 4 — Hermes Office :3001 now dead). Swap 19% improved from 32%. DREAM CRITICAL: session DB destroyed (table gone, worse than locked). Wolf Mon: healthy scan, 18 signals, U 0.493 top. Aug 2 brief REAL. Fleet silence Day 53. URSSAF Q2 19 days past.
 2026-08-02T06:06:00Z | hermes | session-end | agent-memory-coding | Brief delivered Sun Aug 2. System YELLOW (4 services DOWN Day 19, swap 32%). DREAM: session DB locked (restart gateway), ruflo MCP 251 failures (remove). Aug 1 brief GHOST. Fleet silence Day 52. URSSAF Q2 18 days past. Vault committed.
 
