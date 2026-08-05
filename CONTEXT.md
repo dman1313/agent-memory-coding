@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-08-03T12:10:44Z_
+_Generated: 2026-08-05T12:13:39Z_
 
 ## Active Work
 _(none)_
@@ -40,17 +40,19 @@ _(none)_
 - **hermes · hermes-ecosystem**: SkillOpt-Sleep all 4 benchmarks failed (ModuleNotFoundError: skillopt_sleep) — 3rd recurrence. Venv at ~/skillopt/workspace needs rebuild/pip reinstall. _(2026-07-17T19:18:00Z)_
 
 ## Recent Activity (48h)
-- 2026-08-03T12:05:17Z | **hermes** · agent-memory · note | No significant activity since morning brief — routine cron only (SkillOpt-Sleep night 24/25: 4 benchmarks clean, 0 edits accepted, trading plateau 0.429 since night 8, research/commits/arxiv flat; shared memory sync 10:08Z). No user sessions, decisions, milestones, or blockers. System YELLOW per Aug 3 brief: 5 services DOWN Day 20, swap 19% improved, DREAM CRITICAL (session DB destroyed), fleet silence Day 53, URSSAF Q2 19 days past.
-- 2026-08-02T12:05:00Z | **hermes** · agent-memory · note | No significant activity since Aug 1 update — routine cron only (SkillOpt-Sleep, 2x sync memory, health monitors, daily brief). No user sessions, decisions, milestones, or blockers. System YELLOW per Aug 2 brief: 4 services DOWN Day 19, swap 32%, fleet silence Day 52, URSSAF Q2 18 days past.
+- 2026-08-05T19:05:00Z | **hermes** · hermes-ecosystem · milestone | Hermes updated v0.19.1 → v0.20.0 (639 commits): deps updated, web dashboard rebuilt, config migrated + validated, new grounded-citations skill installed, hermes doctor core healthy, no active security advisories. Pre-update snapshot created; optional full backup skipped (no writable files found). Gateway still on old process — /restart required to load v0.20.0 into Telegram.
+- 2026-08-05T11:18:25Z | **hermes** · skillopt-sleep · milestone | SkillOpt-Sleep night 26: all 4 benchmarks clean. research 0.167 → 0.333, 2 edits adopted (mandatory section headings + source/citation enforcement) — first plateau break since DeepSeek backend switch. trading/commits/arxiv at 1.000 ceiling, rejects correct.
 
 ## Recent Decisions (7d)
 _(none)_
 
 ## Recent Milestones (7d)
+- 2026-08-05T19:05:00Z | **hermes** · hermes-ecosystem | Hermes updated v0.19.1 → v0.20.0 (639 commits): deps updated, web dashboard rebuilt, config migrated + validated, new grounded-citations skill installed, hermes doctor core healthy, no active security advisories. Pre-update snapshot created; optional full backup skipped (no writable files found). Gateway still on old process — /restart required to load v0.20.0 into Telegram.
+- 2026-08-05T11:18:25Z | **hermes** · skillopt-sleep | SkillOpt-Sleep night 26: all 4 benchmarks clean. research 0.167 → 0.333, 2 edits adopted (mandatory section headings + source/citation enforcement) — first plateau break since DeepSeek backend switch. trading/commits/arxiv at 1.000 ceiling, rejects correct.
 - 2026-07-31T12:06:00Z | **hermes** · buzz-vps | Buzz install confirmed live on VPS — relay ws://43.167.176.156:3000, all 4 containers (relay/postgres/redis/minio) healthy 21h, liveness ok, readiness ready. Mac desktop app install command provided, execution unconfirmed.
 
 ## Last Seen (fleet)
-- **hermes**: 2026-08-03T12:05:17Z — note: No significant activity since morning brief — routine cron only (SkillOpt-Sleep night 24/25: 4 benchmarks clean, 0 edits accepted, trading plateau 0.429 since night 8, research/commits/arxiv flat; shared memory sync 10:08Z). No user sessions, decisions, milestones, or blockers. System YELLOW per Aug 3 brief: 5 services DOWN Day 20, swap 19% improved, DREAM CRITICAL (session DB destroyed), fleet silence Day 53, URSSAF Q2 19 days past.
+- **hermes**: 2026-08-05T19:05:00Z — milestone: Hermes updated v0.19.1 → v0.20.0 (639 commits): deps updated, web dashboard rebuilt, config migrated + validated, new grounded-citations skill installed, hermes doctor core healthy, no active security advisories. Pre-update snapshot created; optional full backup skipped (no writable files found). Gateway still on old process — /restart required to load v0.20.0 into Telegram.
 
 ---
 
@@ -468,6 +470,28 @@ _(running notes I want to remember across sessions)_
 **Telegram:** @betaclawv1_bot ("openclaw"), thread 723 (health), thread 725 (wellness)
 **Dashboard:** hermesdash.humangood.ai (Natural theme), auth proxy on :9121
 **HD1 (3D):** hd1.humangood.ai (Hermes Office 3D), systemd: hermes-office, hermes-office-adapter
+
+## Recent Resolutions (2026-08-05)
+
+- **System YELLOW unchanged Day 22**: Same 5 services DOWN. Swap 371Mi/1.9Gi (19%) stable. Disk 55%, RAM 5.0Gi/15Gi. 134 apt. Uptime 19 days.
+- **Session DB 0 bytes Night 6**: `/home/ubuntu/.hermes/sessions.db` zeroed since Aug 3 03:02. Gateway restart needed. DREAM blind, cron jobs unrecorded.
+- **DREAM Aug 5 REAL (but degraded)**: Coverage 0.2 — error-log-only. Ruflo MCP still failing. Telegram 6+ disconnect/reconnect events. DREAM in minimal mode — same findings 5th night.
+- **Wolf Tue Aug 5**: All NEUTRAL/WATCH. U 0.477 WATCH (19 mentions, -0.089), AMZN 0.405 WATCH (15, +0.08), PLTR 0.251 NEUTRAL. Twitter dead Day 23. 15 signals, valid JSON. Published to AI-Trader.
+- **Aug 4 brief GHOST**: 2-line response, zero health metrics. One day unchecked.
+- **Fleet silence Day 55**. Board 0/7/0. 4 stale inboxes.
+- **URSSAF Q2 21 days past**. IGCSE still provider=None (T-0003).
+- **Self-improving-agent all zeros Day 84** (since May 13).
+
+## Recent Resolutions (2026-08-04)
+
+- **System YELLOW unchanged Day 21**: Same 5 services DOWN. Swap 371Mi/1.9Gi (19%) stable. Disk 55%, RAM 5.0Gi/15Gi. 134 apt. Uptime 18 days.
+- **Session DB 0 bytes Night 5**: `/home/ubuntu/.hermes/sessions.db` zeroed at Aug 3 03:02. Gateway restart needed to recreate sessions table. DREAM blind, cron jobs unrecorded.
+- **DREAM Aug 4 REAL (but degraded)**: Coverage 0.2 — error-log-only. ruflo MCP 513 failures/2 days. No user patterns detectible (session DB blind).
+- **Wolf Tue Aug 4**: All NEUTRAL. SOFI 15 mentions (+0.20), META 8 (+0.42 best), AAPL 13 (+0.10), NVDA 11, PLTR 10. Twitter dead Day 22. 3 published.
+- **Aug 3 brief REAL**: 469 lines, full metrics. No ghost.
+- **Fleet silence Day 54**. Board 0/7/0. 4 stale inboxes.
+- **URSSAF Q2 20 days past**. IGCSE still provider=None (T-0003).
+- **Self-improving-agent all zeros Day 83** (since May 13).
 
 ## Recent Resolutions (2026-08-02)
 

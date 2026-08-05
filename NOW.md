@@ -1,6 +1,6 @@
 # NOW — Current State
 
-_Generated: 2026-08-03T12:10:44Z_
+_Generated: 2026-08-05T12:13:39Z_
 
 ## Active Work
 _(none)_
@@ -34,14 +34,16 @@ _(none)_
 - **hermes · hermes-ecosystem**: SkillOpt-Sleep all 4 benchmarks failed (ModuleNotFoundError: skillopt_sleep) — 3rd recurrence. Venv at ~/skillopt/workspace needs rebuild/pip reinstall. _(2026-07-17T19:18:00Z)_
 
 ## Recent Activity (48h)
-- 2026-08-03T12:05:17Z | **hermes** · agent-memory · note | No significant activity since morning brief — routine cron only (SkillOpt-Sleep night 24/25: 4 benchmarks clean, 0 edits accepted, trading plateau 0.429 since night 8, research/commits/arxiv flat; shared memory sync 10:08Z). No user sessions, decisions, milestones, or blockers. System YELLOW per Aug 3 brief: 5 services DOWN Day 20, swap 19% improved, DREAM CRITICAL (session DB destroyed), fleet silence Day 53, URSSAF Q2 19 days past.
-- 2026-08-02T12:05:00Z | **hermes** · agent-memory · note | No significant activity since Aug 1 update — routine cron only (SkillOpt-Sleep, 2x sync memory, health monitors, daily brief). No user sessions, decisions, milestones, or blockers. System YELLOW per Aug 2 brief: 4 services DOWN Day 19, swap 32%, fleet silence Day 52, URSSAF Q2 18 days past.
+- 2026-08-05T19:05:00Z | **hermes** · hermes-ecosystem · milestone | Hermes updated v0.19.1 → v0.20.0 (639 commits): deps updated, web dashboard rebuilt, config migrated + validated, new grounded-citations skill installed, hermes doctor core healthy, no active security advisories. Pre-update snapshot created; optional full backup skipped (no writable files found). Gateway still on old process — /restart required to load v0.20.0 into Telegram.
+- 2026-08-05T11:18:25Z | **hermes** · skillopt-sleep · milestone | SkillOpt-Sleep night 26: all 4 benchmarks clean. research 0.167 → 0.333, 2 edits adopted (mandatory section headings + source/citation enforcement) — first plateau break since DeepSeek backend switch. trading/commits/arxiv at 1.000 ceiling, rejects correct.
 
 ## Recent Decisions (7d)
 _(none)_
 
 ## Recent Milestones (7d)
+- 2026-08-05T19:05:00Z | **hermes** · hermes-ecosystem | Hermes updated v0.19.1 → v0.20.0 (639 commits): deps updated, web dashboard rebuilt, config migrated + validated, new grounded-citations skill installed, hermes doctor core healthy, no active security advisories. Pre-update snapshot created; optional full backup skipped (no writable files found). Gateway still on old process — /restart required to load v0.20.0 into Telegram.
+- 2026-08-05T11:18:25Z | **hermes** · skillopt-sleep | SkillOpt-Sleep night 26: all 4 benchmarks clean. research 0.167 → 0.333, 2 edits adopted (mandatory section headings + source/citation enforcement) — first plateau break since DeepSeek backend switch. trading/commits/arxiv at 1.000 ceiling, rejects correct.
 - 2026-07-31T12:06:00Z | **hermes** · buzz-vps | Buzz install confirmed live on VPS — relay ws://43.167.176.156:3000, all 4 containers (relay/postgres/redis/minio) healthy 21h, liveness ok, readiness ready. Mac desktop app install command provided, execution unconfirmed.
 
 ## Last Seen (fleet)
-- **hermes**: 2026-08-03T12:05:17Z — note: No significant activity since morning brief — routine cron only (SkillOpt-Sleep night 24/25: 4 benchmarks clean, 0 edits accepted, trading plateau 0.429 since night 8, research/commits/arxiv flat; shared memory sync 10:08Z). No user sessions, decisions, milestones, or blockers. System YELLOW per Aug 3 brief: 5 services DOWN Day 20, swap 19% improved, DREAM CRITICAL (session DB destroyed), fleet silence Day 53, URSSAF Q2 19 days past.
+- **hermes**: 2026-08-05T19:05:00Z — milestone: Hermes updated v0.19.1 → v0.20.0 (639 commits): deps updated, web dashboard rebuilt, config migrated + validated, new grounded-citations skill installed, hermes doctor core healthy, no active security advisories. Pre-update snapshot created; optional full backup skipped (no writable files found). Gateway still on old process — /restart required to load v0.20.0 into Telegram.
