@@ -1,3 +1,4 @@
+2026-08-05T11:04:04Z | hermes | blocker-resolve | hermes-agent | Staged hermes-agent skill patch documenting that gateway self-restarts are blocked inside gateway-hosted terminal sessions; use chat /restart or an external shell.
 2026-08-05T06:05:00Z | hermes | session-start | agent-memory-coding | HAL daily brief Wed Aug 5 — 5 services DOWN Day 22, swap 19% stable. DREAM: Night 6 session DB 0 bytes. Wolf Tue: all NEUTRAL/WATCH (U 0.477, AMZN 0.405 top). Aug 4 brief GHOST (2-line). Fleet silence Day 55. URSSAF Q2 21 days past. IGCSE provider=None unresolved.
 2026-08-04T06:04:00Z | hermes | session-end | agent-memory-coding | Brief delivered Tue Aug 4. System YELLOW unchanged (5 services DOWN Day 21, swap 19% stable). DREAM: session DB 0 bytes Night 5 — gateway restart needed. ruflo MCP 513 failures. Wolf Tue: all NEUTRAL, SOFI/META/AAPL published. Aug 3 brief REAL. Fleet silence Day 54. URSSAF Q2 20 days past.
 
