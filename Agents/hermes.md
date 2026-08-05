@@ -17,6 +17,17 @@ metadata:
 **Dashboard:** hermesdash.humangood.ai (Natural theme), auth proxy on :9121
 **HD1 (3D):** hd1.humangood.ai (Hermes Office 3D), systemd: hermes-office, hermes-office-adapter
 
+## Recent Resolutions (2026-08-05)
+
+- **System YELLOW unchanged Day 22**: Same 5 services DOWN. Swap 371Mi/1.9Gi (19%) stable. Disk 55%, RAM 5.0Gi/15Gi. 134 apt. Uptime 19 days.
+- **Session DB 0 bytes Night 6**: `/home/ubuntu/.hermes/sessions.db` zeroed since Aug 3 03:02. Gateway restart needed. DREAM blind, cron jobs unrecorded.
+- **DREAM Aug 5 REAL (but degraded)**: Coverage 0.2 — error-log-only. Ruflo MCP still failing. Telegram 6+ disconnect/reconnect events. DREAM in minimal mode — same findings 5th night.
+- **Wolf Tue Aug 5**: All NEUTRAL/WATCH. U 0.477 WATCH (19 mentions, -0.089), AMZN 0.405 WATCH (15, +0.08), PLTR 0.251 NEUTRAL. Twitter dead Day 23. 15 signals, valid JSON. Published to AI-Trader.
+- **Aug 4 brief GHOST**: 2-line response, zero health metrics. One day unchecked.
+- **Fleet silence Day 55**. Board 0/7/0. 4 stale inboxes.
+- **URSSAF Q2 21 days past**. IGCSE still provider=None (T-0003).
+- **Self-improving-agent all zeros Day 84** (since May 13).
+
 ## Recent Resolutions (2026-08-04)
 
 - **System YELLOW unchanged Day 21**: Same 5 services DOWN. Swap 371Mi/1.9Gi (19%) stable. Disk 55%, RAM 5.0Gi/15Gi. 134 apt. Uptime 18 days.
