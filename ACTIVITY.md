@@ -1,3 +1,5 @@
+2026-08-08T06:03:00Z | hermes | session-end | agent-memory-coding | Brief delivered Sat Aug 8. System YELLOW: 5 services DOWN Day 25, swap 52% (creeping). DREAM Night 9: NEW failure class — tool registry degrading, gateway restart 9 nights overdue. Aug 7 brief REAL. Wolf no scan (Saturday). Fleet silence Day 58. URSSAF Q2 24 days past. Vault committed 42238fc.
+
 2026-08-08T06:02:00Z | hermes | session-start | agent-memory-coding | HAL daily brief Sat Aug 8 — 5 services DOWN Day 25, swap 52% (creeping from 50%). DREAM Night 9: NEW failure class — tool registry degrading, gateway restart 9 nights overdue. Wolf no scan (Saturday). Aug 7 brief REAL (462 lines). Fleet silence Day 58. URSSAF Q2 24 days past.
 
 2026-08-06T14:06:00Z | hermes | session-start | agent-memory-coding | HAL daily brief Thu Aug 6 — 5 services DOWN Day 23, swap SURGE 50% (2.6× from 19% yesterday). DREAM Night 7: ruflo MCP dead (238 errors), gateway still on v0.19.1. Wolf Thu: all 14 NEUTRAL (weaker than yesterday). Aug 5 brief REAL (443 lines). Fleet silence Day 56. URSSAF Q2 22 days past.
