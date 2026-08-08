@@ -3,7 +3,7 @@ name: agent-hermes
 description: Hermes Agent — VPS-based, Nous Research, agent fleet orchestrator
 metadata:
   type: agents
-  updated: 2026-07-25
+  updated: 2026-08-08
 ---
 
 # Hermes
@@ -17,7 +17,18 @@ metadata:
 **Dashboard:** hermesdash.humangood.ai (Natural theme), auth proxy on :9121
 **HD1 (3D):** hd1.humangood.ai (Hermes Office 3D), systemd: hermes-office, hermes-office-adapter
 
-## Recent Resolutions (2026-08-05)
+## Recent Resolutions (2026-08-08)
+
+- **System YELLOW Day 25**: Swap 1.0Gi/1.9Gi (52%) — creeping from 50% yesterday, 19% Mon. Top: caddy/uvicorn 812MB, k3s 610MB, gateway 576MB. Disk 55%, RAM 4.9Gi/15Gi. Uptime 22 days. 135 apt.
+- **Same 5 services DOWN Day 25**: :5000, :8766, :8089, :3002, :3001. Dashboard :9999/9121 UP. 9Router :20128 UP.
+- **🔴 DREAM Night 9: NEW failure class** — tool registry degrading. 12+ tool check functions returned False simultaneously at 00:40 UTC. Stale v0.19.1 gateway actively breaking tool availability, not just losing session tracking. Gateway restart now 9 nights overdue, 639 commits idle since Aug 5 upgrade.
+- **Previous brief REAL**: Aug 7 was 462 lines, full metrics. Aug 6 also real. Last ghost Aug 4.
+- **Wolf**: No scan (Saturday). Friday: 1 WATCH (U 0.414), AI-Trader publish FAILED (500 errors). Twitter dead Day 25.
+- **Fleet silence Day 58**. Board 0/7/0. 4 stale inboxes (>50d).
+- **URSSAF Q2 24 days past**. IGCSE provider=None (default openai-codex, key set).
+- **Self-improving-agent all zeros Day 87**.
+
+## Recent Resolutions (2026-08-07)
 
 - **System YELLOW unchanged Day 22**: Same 5 services DOWN. Swap 371Mi/1.9Gi (19%) stable. Disk 55%, RAM 5.0Gi/15Gi. 134 apt. Uptime 19 days.
 - **Session DB 0 bytes Night 6**: `/home/ubuntu/.hermes/sessions.db` zeroed since Aug 3 03:02. Gateway restart needed. DREAM blind, cron jobs unrecorded.
