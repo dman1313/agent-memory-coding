@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-08-10T12:15:00Z_
+_Generated: 2026-08-18T12:49:34Z_
 
 ## Active Work
 _(none)_
@@ -23,8 +23,7 @@ _0 in motion · 7 todo · 0 blocked · 6 done — full board: Plan/board.md · c
 _(none)_
 
 ## Session Hygiene (7d)
-_Unpaired sessions get auto-closed and named here — log your session-end. [L2, vault-fitness]_
-- **hermes**: 6 start(s) / 5 end(s)
+_(all fleet agents pairing session-start/end cleanly)_
 
 ## Pending Inboxes
 - **claude**: Roster check claude: inbox is live. ⚠ pending >7d
@@ -36,29 +35,24 @@ _Unpaired sessions get auto-closed and named here — log your session-end. [L2,
 _(none)_
 
 ## Blockers
+- **hermes · hermes-ecosystem**: DREAM audit Aug 18: web_search completely broken — Firecrawl not configured (no FIRECRAWL_API_KEY/URL, 82 cumulative errors). All web-dependent crons dead (movie-recommender, wolf news scanner, awesome-lists). Fix: set key or wire GLMS MCP search fallback. _(2026-08-18T12:48:00Z)_
 - **hermes · hermes-ecosystem**: Hermes session DB corrupted (malformed disk image) — session_search broken. Needs VACUUM or restore from backup. Fleet silence Day 44. _(2026-07-25T12:07:00Z)_
 - **hermes · skillopt-sleep**: SkillOpt-Sleep recurring failure: editable pip install at /tmp/SkillOpt gets cleaned up by system. Fix: move repo to persistent path (e.g. ~/skillopt/SkillOpt/) instead of /tmp/. 5th occurrence since Jul 11. _(2026-07-20T19:17:00Z)_
 
 ## Recent Activity (48h)
-- 2026-08-10T11:17:57Z | **hermes** · skillopt-sleep · note | Night 31: all 4 benchmarks ran clean, 0 edits accepted/rejected — trading 0.429, research 0.333 plateau, commits/arxiv 1.000 ceiling. Flatline continues from Night 30; needs fresh held-out examples or broader task diversity.
-- 2026-08-10T06:03:00Z | **hermes** · hermes-ecosystem · session-end | Brief delivered Mon Aug 10; vault committed 3c7486f.
-- 2026-08-10T06:02:00Z | **hermes** · hermes-ecosystem · session-start | HAL daily brief Mon Aug 10 — system YELLOW Day 27 (5 services down unchanged, swap 52% flat). DREAM Night 10: ruflo 1,270 cumulative, gateway 8+ days overdue. Wolf Mon: published to AI-Trader (streak broken!), 15 signals all NEUTRAL, PLTR 0.344 top. Aug 9 brief REAL. Fleet silence Day 60. URSSAF Q2 26 days past.
-- 2026-08-09T11:18:00Z | **hermes** · skillopt-sleep · note | Night 30 flatline: all 4 benchmarks ran clean but zero edits accepted — trading/commits/arxiv maxed at 1.000, research plateaued 0.333 since night 27. Optimizer needs fresh held-out examples or broader task diversity.
-- 2026-08-09T06:03:00Z | **hermes** · hermes-ecosystem · session-end | Brief delivered Sun Aug 9. System YELLOW Day 26 (5 services down, swap 52%, disk 55%). DREAM Night 9: ruflo MCP +249 failures (1,021 cumulative), sync-memory cron ~50% fail rate, gateway restart 7+ days overdue (flagged 10 consecutive cycles). AI-Trader publish failed (ai4trade.ai 500s). Fleet silence Day 59. URSSAF Q2 25 days past. Vault pushed.
-- 2026-08-09T06:02:28Z | **hermes** · hermes-ecosystem · session-start | HAL daily brief Sun Aug 9
-- 2026-08-09T04:00:00Z | **hermes** · hermes-ecosystem · note | Health monitor: core infra healthy, but ruflo MCP connection failure persists (loops every ~5 min, parked); npm npx cache corrupted (ENOTEMPTY stale .agentdb — rm to fix); Telegram polling blip 08:39 MYT self-resolved in 16s.
-- 2026-08-08T12:15:00Z | **hermes** · skillopt-sleep · note | SkillOpt-Sleep night 29: all 4 benchmarks ran, 0 failures. research 0.167→0.333 (3 edits accepted — character-limit overrides auto-adopted), trading 0.429 plateau, commits/arxiv at 1.000 ceiling. Fleet silence Day 58 continues.
-- 2026-08-08T12:15:00Z | **hermes** · hermes-ecosystem · note | No user sessions Aug 8 since morning brief — routine cron only. Health monitor 18:00 found ruflo MCP ROOT CAUSE: npm cache corruption (ENOTEMPTY rename fail on .agentdb-vfJcnMSQ) — fix: rm -rf /home/ubuntu/.npm/_npx/9806d7724c607a8d/node_modules/.agentdb-vfJcnMSQ + gateway restart. Gateway still old v0.19.1 process, restart 9+ nights overdue.
+- 2026-08-18T12:49:00Z | **hermes** · agent-memory · note | 8-day vault gap (Aug 11-18): agent-memory-daily cron stopped running Aug 10; gateway restarted today 12:45 UTC (PID 1536) and cron jobs resumed. No user sessions Aug 12-18 — fleet quiet; only cron activity (DREAM, Wolf, reminders, awesome-lists).
+- 2026-08-18T12:48:00Z | **hermes** · hermes-ecosystem · blocker | DREAM audit Aug 18: web_search completely broken — Firecrawl not configured (no FIRECRAWL_API_KEY/URL, 82 cumulative errors). All web-dependent crons dead (movie-recommender, wolf news scanner, awesome-lists). Fix: set key or wire GLMS MCP search fallback.
+- 2026-08-18T12:47:00Z | **hermes** · hermes-ecosystem · milestone | Gateway restarted after 8+ days (v0.20.0 process loaded, PID 1536). HAL brief/DREAM/SkillOpt/Wolf/GDrive/maintenance-loop all missed Aug 11-17 windows; swap recovered 52%→0% after fresh reboot, disk 54%, memory healthy. Maintenance Phase13-ruflo-canary still awaiting approval since Aug 10.
+- 2026-08-18T12:46:00Z | **hermes** · wolf-trading-agent · note | Wolf Mon scan: 12 signals ALL NEUTRAL (U 0.313, RDDT 0.233, HD 0.135 top), top 3 published to AI-Trader. Twitter scanner dead (X credits depleted). NVDA + OpenAI Ohio data center story (105B guarantee) worth watching.
 
 ## Recent Decisions (7d)
 _(none)_
 
 ## Recent Milestones (7d)
-- 2026-08-05T19:05:00Z | **hermes** · hermes-ecosystem | Hermes updated v0.19.1 → v0.20.0 (639 commits): deps updated, web dashboard rebuilt, config migrated + validated, new grounded-citations skill installed, hermes doctor core healthy, no active security advisories. Pre-update snapshot created; optional full backup skipped (no writable files found). Gateway still on old process — /restart required to load v0.20.0 into Telegram.
-- 2026-08-05T11:18:25Z | **hermes** · skillopt-sleep | SkillOpt-Sleep night 26: all 4 benchmarks clean. research 0.167 → 0.333, 2 edits adopted (mandatory section headings + source/citation enforcement) — first plateau break since DeepSeek backend switch. trading/commits/arxiv at 1.000 ceiling, rejects correct.
+- 2026-08-18T12:47:00Z | **hermes** · hermes-ecosystem | Gateway restarted after 8+ days (v0.20.0 process loaded, PID 1536). HAL brief/DREAM/SkillOpt/Wolf/GDrive/maintenance-loop all missed Aug 11-17 windows; swap recovered 52%→0% after fresh reboot, disk 54%, memory healthy. Maintenance Phase13-ruflo-canary still awaiting approval since Aug 10.
 
 ## Last Seen (fleet)
-- **hermes**: 2026-08-10T11:17:57Z — note: Night 31: all 4 benchmarks ran clean, 0 edits accepted/rejected — trading 0.429, research 0.333 plateau, commits/arxiv 1.000 ceiling. Flatline continues from Night 30; needs fresh held-out examples or broader task diversity.
+- **hermes**: 2026-08-18T12:49:00Z — note: 8-day vault gap (Aug 11-18): agent-memory-daily cron stopped running Aug 10; gateway restarted today 12:45 UTC (PID 1536) and cron jobs resumed. No user sessions Aug 12-18 — fleet quiet; only cron activity (DREAM, Wolf, reminders, awesome-lists).
 
 ---
 
@@ -469,16 +463,18 @@ _(running notes I want to remember across sessions)_
 
 **Agent:** HAL (Lead Orchestrator)
 **Vault:** agent-memory
-**Last session:** 2026-08-10T06:02:00Z
+**Last session:** 2026-08-18T12:47:00Z
 
 ## Running Notes
 
-- Gateway restart overdue since Aug 2 — flagged 10+ consecutive DREAM cycles (now Day 10). Fixes ruflo MCP (1,270 cumulative failures), reloads tool registry, picks up v0.20.0 config.
-- 5 services down Day 27: HumanGoodAI (:5000), Agent Ready (:8766), WeKnora (:8089), FreeLLMAPI (:3002), HermesOffice (:3001)
-- AI-Trader publish WORKING again — Wolf Mon Aug 10 published 3 signals successfully. ai4trade.ai 500s resolved (or intermittent).
-- Session DB corrupted — fleet silence Day 60. session_search broken.
-- URSSAF Q2 declaration past due (26 days).
-- Memory at 94% (3,180/4,000) — DREAM prunes SHARED_MEMORY section each night.
+- **VPS was OFFLINE Aug 11–18 (~7 days), rebooted 20:44 local Aug 18.** All cron (DREAM, Wolf, brief) silent since Aug 11. Root cause of the 7-day gap, not a logic failure.
+- **Gateway restart RESOLVED via reboot** — reloaded current build (was overdue 10+ days for v0.20.0). ruflo MCP / tool registry reload should be re-checked post-reboot.
+- 5 services down Day 35: HumanGoodAI (:5000), Agent Ready (:8766), WeKnora (:8089), FreeLLMAPI (:3002), HermesOffice (:3001)
+- RAM now 15Gi (was 7.6G) — VPS appears resized/upgraded. Swap 0B post-reboot.
+- IGCSE Concept Pipeline (6130c2b89680) has provider=None; default provider is also None (default model gpt-5.6-sol via openai-codex). T-0003 still open.
+- Session DB corrupted — fleet silence ~Day 68. session_search broken.
+- URSSAF Q2 declaration past due (~34 days).
+- Memory at 94% (3,199/4,000) — DREAM prunes SHARED_MEMORY section each night.
 - MiMo/xiaomi permanently blocked (HTTP 451 cross-border) — all jobs using xiaomi provider fail.
 - Self-improving-agent metrics frozen at zero since May 13.
 
