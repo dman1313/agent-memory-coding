@@ -1,6 +1,6 @@
 # NOW — Current State
 
-_Generated: 2026-08-18T12:49:34Z_
+_Generated: 2026-08-19T12:10:15Z_
 
 ## Active Work
 _(none)_
@@ -29,11 +29,18 @@ _(all fleet agents pairing session-start/end cleanly)_
 _(none)_
 
 ## Blockers
+- **hermes · skillopt-sleep**: Nightly run Aug 19 FAILED — all 4 benchmarks ModuleNotFoundError: skillopt_sleep (5th recurrence: Jul 11-12, 17-20, Aug 18-19). Last successful run Aug 10. Needs reinstall + dependency check in nightly.sh. _(2026-08-19T12:04:00Z)_
 - **hermes · hermes-ecosystem**: DREAM audit Aug 18: web_search completely broken — Firecrawl not configured (no FIRECRAWL_API_KEY/URL, 82 cumulative errors). All web-dependent crons dead (movie-recommender, wolf news scanner, awesome-lists). Fix: set key or wire GLMS MCP search fallback. _(2026-08-18T12:48:00Z)_
 - **hermes · hermes-ecosystem**: Hermes session DB corrupted (malformed disk image) — session_search broken. Needs VACUUM or restore from backup. Fleet silence Day 44. _(2026-07-25T12:07:00Z)_
 - **hermes · skillopt-sleep**: SkillOpt-Sleep recurring failure: editable pip install at /tmp/SkillOpt gets cleaned up by system. Fix: move repo to persistent path (e.g. ~/skillopt/SkillOpt/) instead of /tmp/. 5th occurrence since Jul 11. _(2026-07-20T19:17:00Z)_
 
 ## Recent Activity (48h)
+- 2026-08-19T12:04:00Z | **hermes** · skillopt-sleep · blocker | Nightly run Aug 19 FAILED — all 4 benchmarks ModuleNotFoundError: skillopt_sleep (5th recurrence: Jul 11-12, 17-20, Aug 18-19). Last successful run Aug 10. Needs reinstall + dependency check in nightly.sh.
+- 2026-08-19T12:03:00Z | **hermes** · agent-memory · note | No user sessions since 06:05Z brief — routine crons only (sync-memory 10:09Z clean, SkillOpt 11:19Z failed, evening reflection 12:03Z). System per Aug 19 brief: post-reboot stable, disk 54%, 5 services down Day 36, ruflo MCP dead, URSSAF Q2 ~35d overdue.
+- 2026-08-19T06:05:00Z | **hermes** · hermes-ecosystem · session-end | Daily brief Wed Aug 19. Post-reboot stability held overnight: disk 54%, RAM 4.3/15Gi, swap 0B. 5 services down Day 36 (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice). ruflo MCP dead (147 errs today, 1657 cum) — recommend removing from config.yaml. Wolf: 13 signals all NEUTRAL (top U 0.3). No user sessions Aug 12-18 (VPS outage). URSSAF Q2 ~35d overdue. Xiaomi 451 block resolved (0 recent). Vault committed.
+- 2026-08-19T06:04:00Z | **hermes** · hermes-ecosystem · session-start | HAL daily brief Wed Aug 19. System GREEN post-reboot. Checking DREAM (ruflo MCP + 3 broken crons), Wolf (13 NEUTRAL), prev brief (not ghost), services, disk/swap. 147 apt upgrades pending.
+- 2026-08-18T12:51:00Z | **hermes** · hermes-ecosystem · session-end | Brief delivered Tue Aug 18 (post-outage recovery). Gateway v0.20.0 loaded via reboot, swap cleared, Wolf→AI-Trader published 3 (all NEUTRAL). New blocker: web_search dead (Firecrawl unconfigured, 82 errors). 5 services down Day 35 unchanged. URSSAF Q2 34d overdue. Vault committed.
+- 2026-08-18T12:50:00Z | **hermes** · hermes-ecosystem · session-start | HAL daily brief Tue Aug 18 — system recovering from 7-day VPS outage (offline Aug 11-18, rebooted 12:45 UTC). Post-reboot: disk 54%, RAM 4.2/15Gi (resized up from 7.6G), swap 0B, gateway on v0.20.0. 5 services down Day 35. IGCSE provider=None + default provider None confirmed. URSSAF Q2 34d past.
 - 2026-08-18T12:49:00Z | **hermes** · agent-memory · note | 8-day vault gap (Aug 11-18): agent-memory-daily cron stopped running Aug 10; gateway restarted today 12:45 UTC (PID 1536) and cron jobs resumed. No user sessions Aug 12-18 — fleet quiet; only cron activity (DREAM, Wolf, reminders, awesome-lists).
 - 2026-08-18T12:48:00Z | **hermes** · hermes-ecosystem · blocker | DREAM audit Aug 18: web_search completely broken — Firecrawl not configured (no FIRECRAWL_API_KEY/URL, 82 cumulative errors). All web-dependent crons dead (movie-recommender, wolf news scanner, awesome-lists). Fix: set key or wire GLMS MCP search fallback.
 - 2026-08-18T12:47:00Z | **hermes** · hermes-ecosystem · milestone | Gateway restarted after 8+ days (v0.20.0 process loaded, PID 1536). HAL brief/DREAM/SkillOpt/Wolf/GDrive/maintenance-loop all missed Aug 11-17 windows; swap recovered 52%→0% after fresh reboot, disk 54%, memory healthy. Maintenance Phase13-ruflo-canary still awaiting approval since Aug 10.
@@ -46,4 +53,4 @@ _(none)_
 - 2026-08-18T12:47:00Z | **hermes** · hermes-ecosystem | Gateway restarted after 8+ days (v0.20.0 process loaded, PID 1536). HAL brief/DREAM/SkillOpt/Wolf/GDrive/maintenance-loop all missed Aug 11-17 windows; swap recovered 52%→0% after fresh reboot, disk 54%, memory healthy. Maintenance Phase13-ruflo-canary still awaiting approval since Aug 10.
 
 ## Last Seen (fleet)
-- **hermes**: 2026-08-18T12:49:00Z — note: 8-day vault gap (Aug 11-18): agent-memory-daily cron stopped running Aug 10; gateway restarted today 12:45 UTC (PID 1536) and cron jobs resumed. No user sessions Aug 12-18 — fleet quiet; only cron activity (DREAM, Wolf, reminders, awesome-lists).
+- **hermes**: 2026-08-19T12:04:00Z — blocker: Nightly run Aug 19 FAILED — all 4 benchmarks ModuleNotFoundError: skillopt_sleep (5th recurrence: Jul 11-12, 17-20, Aug 18-19). Last successful run Aug 10. Needs reinstall + dependency check in nightly.sh.
