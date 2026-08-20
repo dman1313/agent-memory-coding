@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-08-19T12:10:15Z_
+_Generated: 2026-08-20T12:09:57Z_
 
 ## Active Work
 _(none)_
@@ -35,12 +35,16 @@ _(all fleet agents pairing session-start/end cleanly)_
 _(none)_
 
 ## Blockers
+- **hermes · skillopt-sleep**: Nightly Aug 20 FAILED again (2nd consecutive, 6th total) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. ROOT CAUSE confirmed: /tmp/SkillOpt source wiped by reboot (tmpfs), package not on PyPI, venv metadata-only. Fix: re-clone to persistent /home/ubuntu/skillopt/src, pip install -e, update run_cycle.py sys.path. Last successful run Aug 10. _(2026-08-20T12:08:00Z)_
 - **hermes · skillopt-sleep**: Nightly run Aug 19 FAILED — all 4 benchmarks ModuleNotFoundError: skillopt_sleep (5th recurrence: Jul 11-12, 17-20, Aug 18-19). Last successful run Aug 10. Needs reinstall + dependency check in nightly.sh. _(2026-08-19T12:04:00Z)_
 - **hermes · hermes-ecosystem**: DREAM audit Aug 18: web_search completely broken — Firecrawl not configured (no FIRECRAWL_API_KEY/URL, 82 cumulative errors). All web-dependent crons dead (movie-recommender, wolf news scanner, awesome-lists). Fix: set key or wire GLMS MCP search fallback. _(2026-08-18T12:48:00Z)_
 - **hermes · hermes-ecosystem**: Hermes session DB corrupted (malformed disk image) — session_search broken. Needs VACUUM or restore from backup. Fleet silence Day 44. _(2026-07-25T12:07:00Z)_
 - **hermes · skillopt-sleep**: SkillOpt-Sleep recurring failure: editable pip install at /tmp/SkillOpt gets cleaned up by system. Fix: move repo to persistent path (e.g. ~/skillopt/SkillOpt/) instead of /tmp/. 5th occurrence since Jul 11. _(2026-07-20T19:17:00Z)_
 
 ## Recent Activity (48h)
+- 2026-08-20T12:08:00Z | **hermes** · skillopt-sleep · blocker | Nightly Aug 20 FAILED again (2nd consecutive, 6th total) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. ROOT CAUSE confirmed: /tmp/SkillOpt source wiped by reboot (tmpfs), package not on PyPI, venv metadata-only. Fix: re-clone to persistent /home/ubuntu/skillopt/src, pip install -e, update run_cycle.py sys.path. Last successful run Aug 10.
+- 2026-08-20T06:07:00Z | **hermes** · hermes-ecosystem · session-end | Brief delivered Thu Aug 20. System GREEN Day 37. 5 services down unchanged (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice). Disk 54%, RAM 5.0/15Gi, swap 0B. DREAM ran twice (03:00+08:00), found 10 null-byte guard errors (~14min waste). ruflo now 1,908 errs (72% noise) — removal still pending Dwayne approval. Wolf published TSLA/MRNA/RDDT; top MRNA 0.483 WATCH. URSSAF Q2 ~36d overdue. Vault committed.
+- 2026-08-20T06:02:00Z | **hermes** · hermes-ecosystem · session-start | HAL daily brief Thu Aug 20. System GREEN Day 37. Checking DREAM (null-byte guard + ruflo 1,908), Wolf (MRNA WATCH), prev brief (real), services, disk/swap. 147 apt upgrades.
 - 2026-08-19T12:04:00Z | **hermes** · skillopt-sleep · blocker | Nightly run Aug 19 FAILED — all 4 benchmarks ModuleNotFoundError: skillopt_sleep (5th recurrence: Jul 11-12, 17-20, Aug 18-19). Last successful run Aug 10. Needs reinstall + dependency check in nightly.sh.
 - 2026-08-19T12:03:00Z | **hermes** · agent-memory · note | No user sessions since 06:05Z brief — routine crons only (sync-memory 10:09Z clean, SkillOpt 11:19Z failed, evening reflection 12:03Z). System per Aug 19 brief: post-reboot stable, disk 54%, 5 services down Day 36, ruflo MCP dead, URSSAF Q2 ~35d overdue.
 - 2026-08-19T06:05:00Z | **hermes** · hermes-ecosystem · session-end | Daily brief Wed Aug 19. Post-reboot stability held overnight: disk 54%, RAM 4.3/15Gi, swap 0B. 5 services down Day 36 (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice). ruflo MCP dead (147 errs today, 1657 cum) — recommend removing from config.yaml. Wolf: 13 signals all NEUTRAL (top U 0.3). No user sessions Aug 12-18 (VPS outage). URSSAF Q2 ~35d overdue. Xiaomi 451 block resolved (0 recent). Vault committed.
@@ -50,7 +54,6 @@ _(none)_
 - 2026-08-18T12:49:00Z | **hermes** · agent-memory · note | 8-day vault gap (Aug 11-18): agent-memory-daily cron stopped running Aug 10; gateway restarted today 12:45 UTC (PID 1536) and cron jobs resumed. No user sessions Aug 12-18 — fleet quiet; only cron activity (DREAM, Wolf, reminders, awesome-lists).
 - 2026-08-18T12:48:00Z | **hermes** · hermes-ecosystem · blocker | DREAM audit Aug 18: web_search completely broken — Firecrawl not configured (no FIRECRAWL_API_KEY/URL, 82 cumulative errors). All web-dependent crons dead (movie-recommender, wolf news scanner, awesome-lists). Fix: set key or wire GLMS MCP search fallback.
 - 2026-08-18T12:47:00Z | **hermes** · hermes-ecosystem · milestone | Gateway restarted after 8+ days (v0.20.0 process loaded, PID 1536). HAL brief/DREAM/SkillOpt/Wolf/GDrive/maintenance-loop all missed Aug 11-17 windows; swap recovered 52%→0% after fresh reboot, disk 54%, memory healthy. Maintenance Phase13-ruflo-canary still awaiting approval since Aug 10.
-- 2026-08-18T12:46:00Z | **hermes** · wolf-trading-agent · note | Wolf Mon scan: 12 signals ALL NEUTRAL (U 0.313, RDDT 0.233, HD 0.135 top), top 3 published to AI-Trader. Twitter scanner dead (X credits depleted). NVDA + OpenAI Ohio data center story (105B guarantee) worth watching.
 
 ## Recent Decisions (7d)
 _(none)_
@@ -59,7 +62,7 @@ _(none)_
 - 2026-08-18T12:47:00Z | **hermes** · hermes-ecosystem | Gateway restarted after 8+ days (v0.20.0 process loaded, PID 1536). HAL brief/DREAM/SkillOpt/Wolf/GDrive/maintenance-loop all missed Aug 11-17 windows; swap recovered 52%→0% after fresh reboot, disk 54%, memory healthy. Maintenance Phase13-ruflo-canary still awaiting approval since Aug 10.
 
 ## Last Seen (fleet)
-- **hermes**: 2026-08-19T12:04:00Z — blocker: Nightly run Aug 19 FAILED — all 4 benchmarks ModuleNotFoundError: skillopt_sleep (5th recurrence: Jul 11-12, 17-20, Aug 18-19). Last successful run Aug 10. Needs reinstall + dependency check in nightly.sh.
+- **hermes**: 2026-08-20T12:08:00Z — blocker: Nightly Aug 20 FAILED again (2nd consecutive, 6th total) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. ROOT CAUSE confirmed: /tmp/SkillOpt source wiped by reboot (tmpfs), package not on PyPI, venv metadata-only. Fix: re-clone to persistent /home/ubuntu/skillopt/src, pip install -e, update run_cycle.py sys.path. Last successful run Aug 10.
 
 ---
 
@@ -470,22 +473,24 @@ _(running notes I want to remember across sessions)_
 
 **Agent:** HAL (Lead Orchestrator)
 **Vault:** agent-memory
-**Last session:** 2026-08-19T06:04:00Z
+**Last session:** 2026-08-20T06:07:00Z
 
 ## Running Notes
 
 - **VPS was OFFLINE Aug 11–18 (~7 days), rebooted 20:44 local Aug 18.** All cron (DREAM, Wolf, brief) silent since Aug 11. Root cause of the 7-day gap, not a logic failure.
-- **Post-reboot stability held overnight Aug 18→19** — disk 54%, RAM 4.3/15Gi, swap 0B, uptime clean. Gateway on v0.20.0.
-- **ruflo MCP confirmed dead** — 147 connection errors today alone, 1,657 cumulative. Fails every cron cycle with "Connection closed", 3 retries each. REMOVE `ruflo` from config.yaml MCP servers (line ~796) — eliminates ~60% of all error-log noise. Single config change.
-- 5 services down Day 36: HumanGoodAI (:5000), Agent Ready (:8766), WeKnora (:8089), FreeLLMAPI (:3002), HermesOffice (:3001). Up: Dashboard :9999, 9Router :20128, DashAuth :9121.
+- **Post-reboot stability held** — disk 54%, RAM 5.0/15Gi, swap 0B. Gateway on v0.20.0.
+- **ruflo MCP confirmed dead** — now 1,908 cumulative errors (251 on Aug 19 alone, 72% of all error noise). REMOVE `ruflo` from config.yaml MCP servers — single config change eliminates ~72% of logged errors. Still pending Dwayne approval (suggested since Aug 19).
+- **DREAM lifecycle_guard null-byte bug** — 10 "embedded null byte" errors on Aug 19, ~86s timeout each (~14 min wasted per cron run). DREAM also ran TWICE Aug 19/20 (03:00 and 08:00 UTC) — unusual, worth checking schedule. Fix: add binary-file skip to lifecycle_guard.py.
+- 5 services down Day 37: HumanGoodAI (:5000), Agent Ready (:8766), WeKnora (:8089), FreeLLMAPI (:3002), HermesOffice (:3001). Up: Dashboard :9999, 9Router :20128, DashAuth :9121.
 - RAM now 15Gi (was 7.6G) — VPS appears resized/upgraded. Swap 0B post-reboot.
 - **Xiaomi/MiMo 451 block appears RESOLVED** — 0 recent 451/cross-border errors; xiaomi cron jobs (DREAM, Wolf, backups) running again (via fallback deepseek-v4-pro / glm-5.2). Prior "permanently blocked" note is stale.
 - **Default provider = openai-codex** (config.yaml `model.provider`), fallbacks = custom:deepseek (deepseek-v4-pro) + custom:zai (glm-5.2). IGCSE Concept Pipeline (6130c2b89680) has provider=None → inherits openai-codex. T-0003 still open.
 - Session DB corrupted — fleet silence ~Day 68. session_search broken.
-- URSSAF Q2 declaration past due (~35 days) — escalating every brief since mid-July.
-- Memory at 94% (3,199/4,000) — DREAM prunes SHARED_MEMORY section each night. DREAM reported 3,228 bytes (81%) after Aug 19 prune.
+- URSSAF Q2 declaration past due (~36 days) — escalating every brief since mid-July.
+- Memory at 79% (3,182/4,000). DREAM reported MEMORY.md healthy at 3,229 bytes after Aug 19 prune.
 - Self-improving-agent metrics frozen at zero since May 13.
-- X/Twitter $5 top-up still needed (developer.x.com) — Twitter scanner dead, degrading Wolf signal quality.
+- X/Twitter $5 top-up still needed (developer.x.com) — Twitter scanner dead, degrading Wolf signal quality (only Reddit + GNews working).
+- Firecrawl/web_search dead (no FIRECRAWL_API_KEY/URL) — kills Wolf news scanner + movie-recommender + awesome-lists. GLMS MCP search fallback available.
 
 ### Hyperagent
 
