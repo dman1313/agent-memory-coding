@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-08-21T12:08:52Z_
+_Generated: 2026-08-22T12:08:48Z_
 
 ## Active Work
 _(none)_
@@ -35,6 +35,7 @@ _(all fleet agents pairing session-start/end cleanly)_
 _(none)_
 
 ## Blockers
+- **hermes · skillopt-sleep**: Nightly Aug 22 FAILED (4th consecutive) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause re-confirmed: editable install points to /tmp/SkillOpt (deleted), venv has skillopt-0.2.0 dist-info + pth only. Fix (re-clone to persistent path, pip install -e, update run_cycle.py sys.path) still NOT applied. Last successful run Aug 10. _(2026-08-22T12:07:00Z)_
 - **hermes · skillopt-sleep**: Nightly Aug 21 FAILED (3rd consecutive) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep again. Fix identified Aug 20 (re-clone to persistent /home/ubuntu/skillopt/src, pip install -e, update run_cycle.py sys.path) still NOT applied. Last successful run Aug 10. _(2026-08-21T12:07:00Z)_
 - **hermes · skillopt-sleep**: Nightly Aug 20 FAILED again (2nd consecutive, 6th total) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. ROOT CAUSE confirmed: /tmp/SkillOpt source wiped by reboot (tmpfs), package not on PyPI, venv metadata-only. Fix: re-clone to persistent /home/ubuntu/skillopt/src, pip install -e, update run_cycle.py sys.path. Last successful run Aug 10. _(2026-08-20T12:08:00Z)_
 - **hermes · skillopt-sleep**: Nightly run Aug 19 FAILED — all 4 benchmarks ModuleNotFoundError: skillopt_sleep (5th recurrence: Jul 11-12, 17-20, Aug 18-19). Last successful run Aug 10. Needs reinstall + dependency check in nightly.sh. _(2026-08-19T12:04:00Z)_
@@ -43,13 +44,15 @@ _(none)_
 - **hermes · skillopt-sleep**: SkillOpt-Sleep recurring failure: editable pip install at /tmp/SkillOpt gets cleaned up by system. Fix: move repo to persistent path (e.g. ~/skillopt/SkillOpt/) instead of /tmp/. 5th occurrence since Jul 11. _(2026-07-20T19:17:00Z)_
 
 ## Recent Activity (48h)
+- 2026-08-22T12:07:00Z | **hermes** · skillopt-sleep · blocker | Nightly Aug 22 FAILED (4th consecutive) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause re-confirmed: editable install points to /tmp/SkillOpt (deleted), venv has skillopt-0.2.0 dist-info + pth only. Fix (re-clone to persistent path, pip install -e, update run_cycle.py sys.path) still NOT applied. Last successful run Aug 10.
+- 2026-08-22T12:06:00Z | **hermes** · hermes-ecosystem · note | Health monitor 18:00Z: freellmapi.service crash-looping every 5s (WorkingDirectory /home/ubuntu/freellmapi missing, status=200/CHDIR) — journal flooding ~12 err/min, no functional impact. Suggestion: systemctl disable --now freellmapi.service or restore dir. Rest of system healthy.
+- 2026-08-22T12:05:00Z | **hermes** · agent-memory · note | No user sessions Aug 22 — 5th consecutive zero-user day (Aug 18-22). Routine crons only (sync memory 18:00Z clean, health monitor 18:00Z, SkillOpt 19:17Z failed, evening reflection). System per Aug 22 brief: GREEN Day 39, disk 54%, ruflo MCP 2,453 errors, Awesome Lists Monitor dead, URSSAF Q2 ~38d overdue.
+- 2026-08-22T06:05:00Z | **hermes** · hermes-ecosystem · session-end | Brief delivered Sat Aug 22. System GREEN Day 39. Disk 54%, RAM 4.9/15Gi, swap 0B. 5 services down Day 39 unchanged (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice). ruflo MCP 2,453 cumulative errors (294 overnight, 92% noise) — 4th night flagged. Awesome Lists Monitor dead (Firecrawl unconfigured + GLMS quota exhausted until Sep 3). 4th consecutive zero-user day (Aug 18-21). Wolf Sat no run (weekday only). URSSAF Q2 ~38d overdue. Vault committed.
+- 2026-08-22T06:02:00Z | **hermes** · hermes-ecosystem · session-start | HAL daily brief Sat Aug 22. System GREEN Day 39. Checking DREAM (ruflo 2,453, Awesome Lists dead, GLMS quota exhausted), Wolf (Sat — no run), prev brief (real), services, disk/swap. 154 apt upgrades.
 - 2026-08-21T12:07:00Z | **hermes** · skillopt-sleep · blocker | Nightly Aug 21 FAILED (3rd consecutive) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep again. Fix identified Aug 20 (re-clone to persistent /home/ubuntu/skillopt/src, pip install -e, update run_cycle.py sys.path) still NOT applied. Last successful run Aug 10.
 - 2026-08-21T12:06:00Z | **hermes** · agent-memory · note | No user sessions past 24h — routine crons only (sync-memory 10:05Z clean, SkillOpt 11:17Z failed, evening reflection). System per Aug 21 brief: GREEN Day 38, disk 54%, 5 services down unchanged, URSSAF Q2 ~37d overdue.
 - 2026-08-21T06:05:00Z | **hermes** · hermes-ecosystem · session-end | Daily brief Fri Aug 21. System GREEN Day 38. Disk 54%, RAM 4.8/15Gi, swap 0B. 5 services down unchanged (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice). ruflo MCP now 2,159 cumulative errors (251 overnight, 80% log noise). Wolf: MRNA 0.49 WATCH (2nd consecutive day, Moderna/Merck cancer vaccine). 3rd consecutive zero-user day (Aug 18-20). URSSAF Q2 ~37d overdue. Vault committed.
 - 2026-08-21T06:03:00Z | **hermes** · hermes-ecosystem · session-start | HAL daily brief Fri Aug 21. System GREEN Day 38. Checking DREAM (ruflo 2,159), Wolf (MRNA 0.49 WATCH), prev brief (real, not ghost), services, disk/swap. 150 apt upgrades.
-- 2026-08-20T12:08:00Z | **hermes** · skillopt-sleep · blocker | Nightly Aug 20 FAILED again (2nd consecutive, 6th total) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. ROOT CAUSE confirmed: /tmp/SkillOpt source wiped by reboot (tmpfs), package not on PyPI, venv metadata-only. Fix: re-clone to persistent /home/ubuntu/skillopt/src, pip install -e, update run_cycle.py sys.path. Last successful run Aug 10.
-- 2026-08-20T06:07:00Z | **hermes** · hermes-ecosystem · session-end | Brief delivered Thu Aug 20. System GREEN Day 37. 5 services down unchanged (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice). Disk 54%, RAM 5.0/15Gi, swap 0B. DREAM ran twice (03:00+08:00), found 10 null-byte guard errors (~14min waste). ruflo now 1,908 errs (72% noise) — removal still pending Dwayne approval. Wolf published TSLA/MRNA/RDDT; top MRNA 0.483 WATCH. URSSAF Q2 ~36d overdue. Vault committed.
-- 2026-08-20T06:02:00Z | **hermes** · hermes-ecosystem · session-start | HAL daily brief Thu Aug 20. System GREEN Day 37. Checking DREAM (null-byte guard + ruflo 1,908), Wolf (MRNA WATCH), prev brief (real), services, disk/swap. 147 apt upgrades.
 
 ## Recent Decisions (7d)
 _(none)_
@@ -58,7 +61,7 @@ _(none)_
 - 2026-08-18T12:47:00Z | **hermes** · hermes-ecosystem | Gateway restarted after 8+ days (v0.20.0 process loaded, PID 1536). HAL brief/DREAM/SkillOpt/Wolf/GDrive/maintenance-loop all missed Aug 11-17 windows; swap recovered 52%→0% after fresh reboot, disk 54%, memory healthy. Maintenance Phase13-ruflo-canary still awaiting approval since Aug 10.
 
 ## Last Seen (fleet)
-- **hermes**: 2026-08-21T12:07:00Z — blocker: Nightly Aug 21 FAILED (3rd consecutive) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep again. Fix identified Aug 20 (re-clone to persistent /home/ubuntu/skillopt/src, pip install -e, update run_cycle.py sys.path) still NOT applied. Last successful run Aug 10.
+- **hermes**: 2026-08-22T12:07:00Z — blocker: Nightly Aug 22 FAILED (4th consecutive) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause re-confirmed: editable install points to /tmp/SkillOpt (deleted), venv has skillopt-0.2.0 dist-info + pth only. Fix (re-clone to persistent path, pip install -e, update run_cycle.py sys.path) still NOT applied. Last successful run Aug 10.
 
 ---
 
@@ -469,15 +472,15 @@ _(running notes I want to remember across sessions)_
 
 **Agent:** HAL (Lead Orchestrator)
 **Vault:** agent-memory
-**Last session:** 2026-08-21T06:05:00Z
+**Last session:** 2026-08-22T06:05:00Z
 
 ## Running Notes
 
 - **VPS was OFFLINE Aug 11–18 (~7 days), rebooted 20:44 local Aug 18.** All cron (DREAM, Wolf, brief) silent since Aug 11. Root cause of the 7-day gap, not a logic failure.
 - **Post-reboot stability held** — disk 54%, RAM 5.0/15Gi, swap 0B. Gateway on v0.20.0.
-- **ruflo MCP confirmed dead** — now 2,159 cumulative errors (251 more Aug 20, now 80% of all error noise). REMOVE `ruflo` from config.yaml MCP servers — single config change eliminates ~80% of logged errors. Still pending Dwayne approval (suggested since Aug 19, flagged 3 consecutive DREAM cycles).
+- **ruflo MCP confirmed dead** — now 2,453 cumulative errors (294 more Aug 21, now ~92% of all error noise). REMOVE `ruflo` from config.yaml MCP servers — single config change eliminates ~92% of logged errors. Still pending Dwayne approval (flagged 4 consecutive DREAM cycles).
 - **DREAM lifecycle_guard null-byte bug** — 10 "embedded null byte" errors on Aug 19, ~86s timeout each (~14 min wasted per cron run). DREAM also ran TWICE Aug 19/20 (03:00 and 08:00 UTC) — unusual, worth checking schedule. Fix: add binary-file skip to lifecycle_guard.py.
-- 5 services down Day 38: HumanGoodAI (:5000), Agent Ready (:8766), WeKnora (:8089), FreeLLMAPI (:3002), HermesOffice (:3001). Up: Dashboard :9999, 9Router :20128, DashAuth :9121.
+- 5 services down Day 39: HumanGoodAI (:5000), Agent Ready (:8766), WeKnora (:8089), FreeLLMAPI (:3002), HermesOffice (:3001). Up: Dashboard :9999, 9Router :20128, DashAuth :9121.
 - RAM now 15Gi (was 7.6G) — VPS appears resized/upgraded. Swap 0B post-reboot.
 - **Xiaomi/MiMo 451 block appears RESOLVED** — 0 recent 451/cross-border errors; xiaomi cron jobs (DREAM, Wolf, backups) running again (via fallback deepseek-v4-pro / glm-5.2). Prior "permanently blocked" note is stale.
 - **Default provider = openai-codex** (config.yaml `model.provider`), fallbacks = custom:deepseek (deepseek-v4-pro) + custom:zai (glm-5.2). IGCSE Concept Pipeline (6130c2b89680) has provider=None → inherits openai-codex. T-0003 still open.
@@ -486,7 +489,7 @@ _(running notes I want to remember across sessions)_
 - Memory at 79% (3,182/4,000). DREAM reported MEMORY.md healthy at 3,229 bytes after Aug 19 prune.
 - Self-improving-agent metrics frozen at zero since May 13.
 - X/Twitter $5 top-up still needed (developer.x.com) — Twitter scanner dead, degrading Wolf signal quality (only Reddit + GNews working).
-- Firecrawl/web_search dead (no FIRECRAWL_API_KEY/URL) — kills Wolf news scanner + movie-recommender + awesome-lists. GLMS MCP search fallback available.
+- Firecrawl/web_search dead (no FIRECRAWL_API_KEY/URL) — kills Wolf news scanner + movie-recommender + awesome-lists. GLMS MCP search fallback ALSO exhausted until Sep 3 (quota). Awesome Lists Monitor should be paused until a web path returns.
 
 ### Hyperagent
 
