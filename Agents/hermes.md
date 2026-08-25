@@ -2,9 +2,13 @@
 
 **Agent:** HAL (Lead Orchestrator)
 **Vault:** agent-memory
-**Last session:** 2026-08-24T06:05:00Z
+**Last session:** 2026-08-25T06:05:00Z
 
 ## Running Notes
+
+- **Day 42 (Aug 25).** No user sessions 8 straight days (Aug 18-25) — longest streak in audit history. Dwayne has not acknowledged any brief or applied any pending fix.
+- **Wolf cron producing hollow responses.** Aug 25 scan ran (15 signals, NVDA 0.477 WATCH top, rest NEUTRAL) but the cron's final response was a one-liner ("already verified in previous turn") — no signal summary, no AI-Trader publish confirmation. AI-Trader output dir empty. Signal pipeline degrading; needs a check on the wolf_to_trader.py publish step.
+- 5 services down Day 42 unchanged (HumanGoodAI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002, HermesOffice :3001). Up: Dashboard :9999, 9Router :20128, DashAuth :9121.
 
 - **VPS was OFFLINE Aug 11–18 (~7 days), rebooted 20:44 local Aug 18.** All cron (DREAM, Wolf, brief) silent since Aug 11. Root cause of the 7-day gap, not a logic failure.
 - **Post-reboot stability held** — disk 54%, RAM 5.0/15Gi, swap 0B. Gateway on v0.20.0.
