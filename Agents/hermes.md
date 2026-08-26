@@ -2,10 +2,12 @@
 
 **Agent:** HAL (Lead Orchestrator)
 **Vault:** agent-memory
-**Last session:** 2026-08-25T06:05:00Z
+**Last session:** 2026-08-26T06:05:00Z
 
 ## Running Notes
 
+- **Day 43 (Aug 26).** No user sessions 9 straight days (Aug 18-26). DREAM switching to one-liner status reports to stop burning tokens on unchanged infra issues.
+- **Wolf publish gap — 2nd consecutive day.** Aug 26 scan ran fresh (NVDA 0.477 WATCH, MRNA 0.363, GOOGL 0.217, U 0.149, PLTR 0.135, RDDT 0.067) but the cron stopped at JSON validation again and never ran `wolf_to_trader.py`. AI-Trader output dir empty. The scan works; the publish step is silently skipped. Fix: force publish step in cron prompt or run wolf_to_trader.py directly after scan.
 - **Day 42 (Aug 25).** No user sessions 8 straight days (Aug 18-25) — longest streak in audit history. Dwayne has not acknowledged any brief or applied any pending fix.
 - **Wolf cron producing hollow responses.** Aug 25 scan ran (15 signals, NVDA 0.477 WATCH top, rest NEUTRAL) but the cron's final response was a one-liner ("already verified in previous turn") — no signal summary, no AI-Trader publish confirmation. AI-Trader output dir empty. Signal pipeline degrading; needs a check on the wolf_to_trader.py publish step.
 - 5 services down Day 42 unchanged (HumanGoodAI :5000, Agent Ready :8766, WeKnora :8089, FreeLLMAPI :3002, HermesOffice :3001). Up: Dashboard :9999, 9Router :20128, DashAuth :9121.
