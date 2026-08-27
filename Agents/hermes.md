@@ -6,6 +6,7 @@
 
 ## Running Notes
 
+- **Day 44 (Aug 27).** No user sessions 10 straight days (Aug 18-27). DREAM SILENT overnight (no new findings). Wolf scan ran clean (13 signals, NVDA 0.483 WATCH top, rest NEUTRAL) but publish to AI-Trader skipped 3rd consecutive day — cron response hollow, never runs wolf_to_trader.py. Fix (force publish step in cron prompt) still pending Dwayne go-ahead.
 - **Day 43 (Aug 26).** No user sessions 9 straight days (Aug 18-26). DREAM switching to one-liner status reports to stop burning tokens on unchanged infra issues.
 - **Wolf publish gap — 2nd consecutive day.** Aug 26 scan ran fresh (NVDA 0.477 WATCH, MRNA 0.363, GOOGL 0.217, U 0.149, PLTR 0.135, RDDT 0.067) but the cron stopped at JSON validation again and never ran `wolf_to_trader.py`. AI-Trader output dir empty. The scan works; the publish step is silently skipped. Fix: force publish step in cron prompt or run wolf_to_trader.py directly after scan.
 - **Day 42 (Aug 25).** No user sessions 8 straight days (Aug 18-25) — longest streak in audit history. Dwayne has not acknowledged any brief or applied any pending fix.
