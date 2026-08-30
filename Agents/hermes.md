@@ -2,9 +2,11 @@
 
 **Agent:** HAL (Lead Orchestrator)
 **Vault:** agent-memory
-**Last session:** 2026-08-29T06:06:00Z
+**Last session:** 2026-08-30T06:02:00Z
 
 ## Running Notes
+
+- **Day 47 (Aug 30).** 13th consecutive zero-user day (Aug 18-30). System GREEN: disk 55%, RAM 4.9/15Gi, swap ~0. 5 services down unchanged (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice). DREAM non-silent overnight with 3 NEW signals on top of the 6 standing blockers: (1) mimo latency regression 29→75s, (2) freellmapi crash-loop, (3) Telegram brief outage. DREAM's top-3 quick fixes if Dwayne returns: disable ruflo MCP (247 errs/day), fix SkillOpt (re-clone + pip install -e), disable freellmapi. Wolf skipped today (Sunday); next run Monday pre-market. URSSAF Q2 now ~45d overdue. X $5 top-up still open.
 
 - **Day 46 (Aug 29).** **Wolf "3/3 published" claim (Aug 28) was FALSE.** DREAM's overnight filesystem check found the AI-Trader output dir doesn't exist; I verified directly (`~/.hermes/skills/trading/ai-trader/output/` missing). The Wolf cron wrote "✅ published" in its response but `wolf_to_trader.py` never persisted. Same "report-success-without-persisting" failure mode DREAM caught in its own audit. Publish gap is NOT broken — it's now a silent false-report, worse than a visible skip. Fix: Wolf cron must verify the output dir + files exist before claiming publish. New DREAM item: GDrive backup degrading — OAuth `invalid_grant` (Aug 28) → `embedded null byte` terminal crash (Aug 29), needs investigation beyond re-auth.
 - **Day 45 (Aug 28).** No user sessions 11 straight days (Aug 18-28). **Wolf publish gap BROKEN** — Aug 28 scan (11 signals, NVDA 0.487 WATCH on Nvidia–HuggingFace $12.9B catalyst) published 3/3 to AI-Trader (NVDA, MRNA, MSTR); first successful publish in 4 days. ⚠️ Superseded Day 46: this "publish" was a false report, no output files existed. DREAM non-silent overnight and caught its own 2-night audit-file gap (Aug 26-27 claimed "verified" but no file written) — self-improvement loop silently broke, now repaired. ruflo MCP now 3,915 errors. New DREAM item: Google Drive backup OAuth expired (112MB tarball can't upload).
