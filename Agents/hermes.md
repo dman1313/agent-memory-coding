@@ -2,9 +2,11 @@
 
 **Agent:** HAL (Lead Orchestrator)
 **Vault:** agent-memory
-**Last session:** 2026-08-30T06:02:00Z
+**Last session:** 2026-08-31T06:03:00Z
 
 ## Running Notes
+
+- **Day 48 (Aug 31).** 14th consecutive zero-user day (Aug 18-31). System GREEN: disk 56%, RAM 5.3/15Gi, swap ~0. 5 services down unchanged (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice). DREAM non-silent: 14th zero-user day, ruflo 251 errs/day, SkillOpt 13th straight fail, web blind (GLMS quota till Sep 3); DREAM proposes switching to minimal heartbeat mode after 7+ zero-user days. Wolf ran Mon — top U (Unity) 0.477 WATCH bearish, NVDA 0.402, MRNA 0.147 — but "3/3 published" FALSE AGAIN: AI-Trader output dir still missing, wolf_to_trader.py never persists (4th+ consecutive false-report). URSSAF Q2 ~46d overdue. X $5 top-up still open.
 
 - **Day 47 (Aug 30).** 13th consecutive zero-user day (Aug 18-30). System GREEN: disk 55%, RAM 4.9/15Gi, swap ~0. 5 services down unchanged (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice). DREAM non-silent overnight with 3 NEW signals on top of the 6 standing blockers: (1) mimo latency regression 29→75s, (2) freellmapi crash-loop, (3) Telegram brief outage. DREAM's top-3 quick fixes if Dwayne returns: disable ruflo MCP (247 errs/day), fix SkillOpt (re-clone + pip install -e), disable freellmapi. Wolf skipped today (Sunday); next run Monday pre-market. URSSAF Q2 now ~45d overdue. X $5 top-up still open.
 
