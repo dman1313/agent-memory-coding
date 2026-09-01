@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-08-31T12:09:34Z_
+_Generated: 2026-09-01T12:02:14Z_
 
 ## Active Work
 _(none)_
@@ -35,6 +35,7 @@ _(all fleet agents pairing session-start/end cleanly)_
 _(none)_
 
 ## Blockers
+- **hermes · skillopt-sleep**: Nightly Sep 1 FAILED (15th consecutive, Aug 18-Sep 1) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); venv metadata-only, no source anywhere under /home/ubuntu/skillopt. Fix (re-clone to persistent path, pip install -e) still NOT applied. Last successful run Aug 10. _(2026-09-01T12:02:07Z)_
 - **hermes · skillopt-sleep**: Nightly Aug 31 FAILED (14th consecutive, Aug 18-31) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); venv has only __editable__ pth metadata, no source anywhere under /home/ubuntu/skillopt. NEW: SkillOpt session investigated and found no git remote, no pyproject.toml outside venv — self-heal now blocked on Dwayne providing the source repo URL (fix: re-clone to persistent path, pip install -e). Last successful run Aug 10. _(2026-08-31T12:06:00Z)_
 - **hermes · skillopt-sleep**: Nightly Aug 30 FAILED (13th consecutive, Aug 18-30) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); venv gone, package not pip-installed anywhere. Fix (re-clone to persistent path, recreate venv, pip install -e) still NOT applied. Last successful run Aug 10. Escalation-fatigue flag stands — 13 nights, 0 action. _(2026-08-30T12:04:00Z)_
 - **hermes · skillopt-sleep**: Nightly Aug 29 FAILED (12th consecutive, Aug 18-29) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); venv gone, package not pip-installed anywhere. Fix (re-clone to persistent path, recreate venv, pip install -e) still NOT applied. Last successful run Aug 10. Escalation-fatigue flag stands — 12 nights, 0 action. _(2026-08-29T12:03:00Z)_
@@ -53,6 +54,11 @@ _(none)_
 - **hermes · skillopt-sleep**: SkillOpt-Sleep recurring failure: editable pip install at /tmp/SkillOpt gets cleaned up by system. Fix: move repo to persistent path (e.g. ~/skillopt/SkillOpt/) instead of /tmp/. 5th occurrence since Jul 11. _(2026-07-20T19:17:00Z)_
 
 ## Recent Activity (48h)
+- 2026-09-01T12:02:07Z | **hermes** · agent-memory · note | No user sessions Sep 1 — 15th consecutive zero-user day (Aug 18-Sep 1), DREAM recommends minimal heartbeat mode. Routine crons only: sync-memory 18:03Z clean, health monitor 18:00Z (freellmapi crash-loop re-flagged, still no action), SkillOpt 11:17Z failed (15th), Zen evening reflection night 15 without acknowledgment. System per Sep 1 brief: GREEN Day 49, disk 56%, Wolf publish silent-fail 5th day, URSSAF Q2 ~47d overdue, X $5 top-up needed.
+- 2026-09-01T12:02:07Z | **hermes** · skillopt-sleep · blocker | Nightly Sep 1 FAILED (15th consecutive, Aug 18-Sep 1) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); venv metadata-only, no source anywhere under /home/ubuntu/skillopt. Fix (re-clone to persistent path, pip install -e) still NOT applied. Last successful run Aug 10.
+- 2026-09-01T06:01:00Z | **hermes** · hermes-ecosystem · session-start | HAL daily brief Tue Sep 1 (Day 49). System GREEN Day 49. DREAM non-silent (15th zero-user day Aug 18-Sep 1, proposes minimal heartbeat mode; new signal: 4 embedded-null-byte errors ~86s each). Wolf ran Tue: 14 signals, NVDA 0.485 WATCH only (rest NEUTRAL), Twitter 0 tweets (X dead), AI-Trader publish silent-fail 5th day. Services 5 down Day 49, disk 56%, swap ~0. 158 apt upgrades.
+- 2026-09-01T06:01:00Z | **hermes** · hermes-ecosystem · session-end | Brief delivered Tue Sep 1 (Day 49). System GREEN Day 49. Disk 56%, RAM 5.3/15Gi, swap ~0. 5 services down unchanged (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice). Wolf 14 signals (NVDA 0.485 WATCH only, rest NEUTRAL), Twitter 0 tweets, AI-Trader publish silent-fail 5th day. DREAM 15th zero-user day, proposes minimal heartbeat mode. URSSAF Q2 ~47d overdue. X $5 top-up. Vault committed.
+- 2026-09-01T06:01:00Z | **hermes** · hermes-ecosystem · note | Wolf Sep 1 produced 14 signals but cron response was hollow ("ad-hoc verification passed" only, no top-5 summary, no publish confirmation) and AI-Trader output dir STILL missing — 5th consecutive day wolf_to_trader.py fails to persist. Publish step remains fiction.
 - 2026-08-31T12:06:00Z | **hermes** · agent-memory · note | No user sessions Aug 31 — 14th consecutive zero-user day (Aug 18-31). Routine crons only: DREAM 03:03Z (audit file dream_audit_20260830_190203.md written; proposes minimal heartbeat mode after 7+ zero-user days), sync-memory 10:04Z clean, SkillOpt 11:17Z failed (14th), evening reflection 12:02Z (Zen night 14 without acknowledgment). System per Aug 31 brief: GREEN Day 48, disk 56%, Wolf "3/3 published" FALSE (AI-Trader output dir missing), URSSAF Q2 ~46d overdue, X $5 top-up needed.
 - 2026-08-31T12:06:00Z | **hermes** · skillopt-sleep · blocker | Nightly Aug 31 FAILED (14th consecutive, Aug 18-31) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); venv has only __editable__ pth metadata, no source anywhere under /home/ubuntu/skillopt. NEW: SkillOpt session investigated and found no git remote, no pyproject.toml outside venv — self-heal now blocked on Dwayne providing the source repo URL (fix: re-clone to persistent path, pip install -e). Last successful run Aug 10.
 - 2026-08-31T06:03:00Z | **hermes** · hermes-ecosystem · session-start | HAL daily brief Mon Aug 31 (Day 48). System GREEN. DREAM non-silent (14th zero-user day Aug 18-31, ruflo 251 errs/day, SkillOpt 13th fail, web blind GLMS quota till Sep 3; DREAM proposes minimal heartbeat mode after 7+ zero-user days). Wolf ran Mon: top U 0.477 WATCH bearish, NVDA 0.402, MRNA 0.147. Services 5 down Day 48, disk 56%, swap ~0. 158 apt upgrades.
@@ -60,8 +66,6 @@ _(none)_
 - 2026-08-31T06:03:00Z | **hermes** · hermes-ecosystem · note | Wolf Aug 31 scan claims "3/3 published ✅" to AI-Trader but ~/.hermes/skills/trading/ai-trader/output/ STILL MISSING — 4th+ consecutive silent false-report. wolf_to_trader.py never persists files. Same failure mode DREAM flagged Day 46.
 - 2026-08-30T12:04:00Z | **hermes** · agent-memory · note | No user sessions Aug 30 — 13th consecutive zero-user day (Aug 18-30). Routine crons only: sync-memory 10:03Z clean, SkillOpt 11:17Z failed (13th), evening reflection 12:02Z (Zen night 13 without acknowledgment, escalating stardate/Klingon). System per Aug 30 brief: GREEN Day 47, disk 55%, URSSAF Q2 ~45d overdue, X $5 top-up needed.
 - 2026-08-30T12:04:00Z | **hermes** · skillopt-sleep · blocker | Nightly Aug 30 FAILED (13th consecutive, Aug 18-30) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); venv gone, package not pip-installed anywhere. Fix (re-clone to persistent path, recreate venv, pip install -e) still NOT applied. Last successful run Aug 10. Escalation-fatigue flag stands — 13 nights, 0 action.
-- 2026-08-30T06:02:00Z | **hermes** · hermes-ecosystem · session-start | HAL daily brief Sun Aug 30 (Day 47). System GREEN. DREAM non-silent (6 blockers 13 days + new signals: mimo latency 29→75s, freellmapi crash-loop, Telegram brief outage), Wolf skipped (Sunday), services 5 down Day 47, disk/swap clean. 158 apt upgrades.
-- 2026-08-30T06:02:00Z | **hermes** · hermes-ecosystem · session-end | Brief delivered Sun Aug 30 (Day 47). System GREEN Day 47. Disk 55%, RAM 4.9/15Gi, swap ~0. 5 services down Day 47 unchanged (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice). DREAM non-silent — new signals (mimo latency regression 29→75s, freellmapi crash-loop, Telegram brief outage). 13th consecutive zero-user day. URSSAF Q2 ~45d overdue. X $5 top-up. Vault committed.
 
 ## Recent Decisions (7d)
 _(none)_
@@ -70,7 +74,7 @@ _(none)_
 _(none)_
 
 ## Last Seen (fleet)
-- **hermes**: 2026-08-31T12:06:00Z — blocker: Nightly Aug 31 FAILED (14th consecutive, Aug 18-31) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); venv has only __editable__ pth metadata, no source anywhere under /home/ubuntu/skillopt. NEW: SkillOpt session investigated and found no git remote, no pyproject.toml outside venv — self-heal now blocked on Dwayne providing the source repo URL (fix: re-clone to persistent path, pip install -e). Last successful run Aug 10.
+- **hermes**: 2026-09-01T12:02:07Z — blocker: Nightly Sep 1 FAILED (15th consecutive, Aug 18-Sep 1) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); venv metadata-only, no source anywhere under /home/ubuntu/skillopt. Fix (re-clone to persistent path, pip install -e) still NOT applied. Last successful run Aug 10.
 
 ---
 
@@ -481,9 +485,11 @@ _(running notes I want to remember across sessions)_
 
 **Agent:** HAL (Lead Orchestrator)
 **Vault:** agent-memory
-**Last session:** 2026-08-31T06:03:00Z
+**Last session:** 2026-09-01T06:01:00Z
 
 ## Running Notes
+
+- **Day 49 (Sep 1).** 15th consecutive zero-user day (Aug 18–Sep 1). System GREEN: disk 56%, RAM 5.3/15Gi, swap ~0. 5 services down unchanged (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice). DREAM non-silent: 15th zero-user day, proposes switching to minimal heartbeat mode (full audits producing diminishing returns); new signal — 4 "embedded null byte" terminal errors wasting ~86s each. Wolf ran Tue — 14 signals but weak: only NVDA 0.485 WATCH (top), rest NEUTRAL (U dropped to 0.187, no longer WATCH). Twitter 0 tweets (X still CreditsDepleted). AI-Trader publish silent-fail 5th consecutive day (output dir still missing, wolf_to_trader.py never persists). URSSAF Q2 ~47d overdue. X $5 top-up still open. 158 apt upgrades.
 
 - **Day 48 (Aug 31).** 14th consecutive zero-user day (Aug 18-31). System GREEN: disk 56%, RAM 5.3/15Gi, swap ~0. 5 services down unchanged (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice). DREAM non-silent: 14th zero-user day, ruflo 251 errs/day, SkillOpt 13th straight fail, web blind (GLMS quota till Sep 3); DREAM proposes switching to minimal heartbeat mode after 7+ zero-user days. Wolf ran Mon — top U (Unity) 0.477 WATCH bearish, NVDA 0.402, MRNA 0.147 — but "3/3 published" FALSE AGAIN: AI-Trader output dir still missing, wolf_to_trader.py never persists (4th+ consecutive false-report). URSSAF Q2 ~46d overdue. X $5 top-up still open.
 
