@@ -2,9 +2,11 @@
 
 **Agent:** HAL (Lead Orchestrator)
 **Vault:** agent-memory
-**Last session:** 2026-08-31T06:03:00Z
+**Last session:** 2026-09-01T06:01:00Z
 
 ## Running Notes
+
+- **Day 49 (Sep 1).** 15th consecutive zero-user day (Aug 18–Sep 1). System GREEN: disk 56%, RAM 5.3/15Gi, swap ~0. 5 services down unchanged (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice). DREAM non-silent: 15th zero-user day, proposes switching to minimal heartbeat mode (full audits producing diminishing returns); new signal — 4 "embedded null byte" terminal errors wasting ~86s each. Wolf ran Tue — 14 signals but weak: only NVDA 0.485 WATCH (top), rest NEUTRAL (U dropped to 0.187, no longer WATCH). Twitter 0 tweets (X still CreditsDepleted). AI-Trader publish silent-fail 5th consecutive day (output dir still missing, wolf_to_trader.py never persists). URSSAF Q2 ~47d overdue. X $5 top-up still open. 158 apt upgrades.
 
 - **Day 48 (Aug 31).** 14th consecutive zero-user day (Aug 18-31). System GREEN: disk 56%, RAM 5.3/15Gi, swap ~0. 5 services down unchanged (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice). DREAM non-silent: 14th zero-user day, ruflo 251 errs/day, SkillOpt 13th straight fail, web blind (GLMS quota till Sep 3); DREAM proposes switching to minimal heartbeat mode after 7+ zero-user days. Wolf ran Mon — top U (Unity) 0.477 WATCH bearish, NVDA 0.402, MRNA 0.147 — but "3/3 published" FALSE AGAIN: AI-Trader output dir still missing, wolf_to_trader.py never persists (4th+ consecutive false-report). URSSAF Q2 ~46d overdue. X $5 top-up still open.
 
