@@ -2,9 +2,11 @@
 
 **Agent:** HAL (Lead Orchestrator)
 **Vault:** agent-memory
-**Last session:** 2026-09-03T06:01:00Z
+**Last session:** 2026-09-04T06:01:00Z
 
 ## Running Notes
+
+- **Day 52 (Sep 4).** 18th consecutive zero-user day (Aug 18–Sep 4). System GREEN: disk 56%, RAM 5.3/15Gi, swap ~0. 5 services down unchanged (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice); up Dashboard/9Router/DashAuth. DREAM non-silent: 5 standing fixes still 0 applied (ruflo MCP 66% of errors, freellmapi crash-loop, Z.AI token expired, SkillOpt 17th fail, Firecrawl missing). Wolf today: 13 signals all NEUTRAL (top SNOW 0.226, U 0.200, MRNA 0.189), no WATCH/STRONG; AI-Trader publish phantom 8th day (output dir missing). URSSAF Q2 ~50d overdue. X $5 top-up open. 185 apt upgrades. Self-improving loop frozen (metrics zero since May 13).
 
 - **Day 51 (Sep 3).** Recovered from Sep 2 Z.AI 401 brief failure (running deepseek-v4-pro). System GREEN: disk 56%, RAM 5.6/15Gi, swap ~0. 5 services down unchanged (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice); up: Dashboard, 9Router, DashAuth. DREAM non-silent: 17th zero-user day, Z.AI token expired (NEW — killed Sep 2 brief, still needs refresh), ruflo 400+ conn-fails (~66% of errors), freellmapi crash-loop (dir gone → `systemctl disable --now freellmapi.service`), SkillOpt 16th consecutive fail. Wolf 14 signals all NEUTRAL (no WATCH/STRONG), Twitter 0 tweets, AI-Trader publish FALSE 7th day (output dir still missing — wolf_to_trader.py never persists). URSSAF Q2 ~49d overdue. X $5 top-up. 185 apt upgrades.
 
