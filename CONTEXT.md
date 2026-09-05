@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-09-04T12:00:49Z_
+_Generated: 2026-09-05T12:03:09Z_
 
 ## Active Work
 _(none)_
@@ -35,6 +35,7 @@ _(all fleet agents pairing session-start/end cleanly)_
 _(none)_
 
 ## Blockers
+- **hermes · skillopt-sleep**: Nightly Sep 5 FAILED (19th consecutive, Aug 18-Sep 5) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); no source dir under /home/ubuntu/skillopt. Fix (re-clone to persistent path, pip install -e) not applied — blocked on Dwayne providing source repo URL. Last successful run Aug 10. _(2026-09-05T12:01:24Z)_
 - **hermes · skillopt-sleep**: Nightly Sep 4 FAILED (18th consecutive, Aug 18-Sep 4) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); no source dir under /home/ubuntu/skillopt. Fix (re-clone to persistent path, pip install -e) not applied — blocked on Dwayne providing source repo URL. Last successful run Aug 10. _(2026-09-04T12:00:38Z)_
 - **hermes · skillopt-sleep**: Nightly Sep 3 FAILED (17th consecutive, Aug 18-Sep 3) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); no source dir under /home/ubuntu/skillopt. Fix (re-clone, pip install -e) not applied — blocked on Dwayne providing source repo URL. Last successful run Aug 10. _(2026-09-03T12:01:00Z)_
 - **hermes · skillopt-sleep**: Nightly Sep 2 FAILED (16th consecutive, Aug 18-Sep 2) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep; no source dir, no pip install, no pyproject anywhere under /home/ubuntu/skillopt. Fix (re-clone to persistent path, pip install -e) still NOT applied. Last successful run Aug 10. Escalation-fatigue flag stands — 16 nights, 0 action. _(2026-09-02T12:04:16Z)_
@@ -58,17 +59,14 @@ _(none)_
 - **hermes · skillopt-sleep**: SkillOpt-Sleep recurring failure: editable pip install at /tmp/SkillOpt gets cleaned up by system. Fix: move repo to persistent path (e.g. ~/skillopt/SkillOpt/) instead of /tmp/. 5th occurrence since Jul 11. _(2026-07-20T19:17:00Z)_
 
 ## Recent Activity (48h)
+- 2026-09-05T12:01:24Z | **hermes** · agent-memory · note | No user sessions Sep 5 — 19th consecutive zero-user day (Aug 18-Sep 5). Crons only post-brief: health monitor 12:00 MYT re-flagged ruflo MCP (McpError connection closed ~every 6 min, parked; ruflo still in config.yaml), 18:00 MYT clean; SkillOpt 19:17 MYT failed (19th); Zen evening 20:00 MYT ~night 18 no ack (escalation threats continue); maintenance loop iter 36 FINISHED 00:43 MYT. System per Sep 5 brief: GREEN Day 53, disk 56%, URSSAF Q2 ~50d overdue, Z.AI token expired, X $5 top-up needed.
+- 2026-09-05T12:01:24Z | **hermes** · skillopt-sleep · blocker | Nightly Sep 5 FAILED (19th consecutive, Aug 18-Sep 5) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); no source dir under /home/ubuntu/skillopt. Fix (re-clone to persistent path, pip install -e) not applied — blocked on Dwayne providing source repo URL. Last successful run Aug 10.
+- 2026-09-05T06:00:00Z | **hermes** · hermes-ecosystem · session-start | HAL daily brief Sat Sep 5 (Day 53). System GREEN: disk 56%, RAM 5.6/15Gi, swap ~0. 5 services down unchanged (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice); up Dashboard/9Router/DashAuth. DREAM: 19th zero-user day; Ruflo MCP now 83% of errors (248/298, up from 72%). 196 apt upgrades.
+- 2026-09-05T06:00:00Z | **hermes** · hermes-ecosystem · session-end | Brief delivered Sat Sep 5 (Day 53). System GREEN. URSSAF Q2 ~50d overdue. Ruflo MCP 83% of errors (climbing from 72%). Vault committed.
 - 2026-09-04T12:00:38Z | **hermes** · agent-memory · note | No user sessions Sep 4 — 18th consecutive zero-user day (Aug 18-Sep 4). Crons only post-brief: SkillOpt 11:18Z failed (18th), health monitor 18:07Z MYT flagged ruflo MCP parked (McpError connection closed every ~6 min since 17:09Z), rest nominal (gateway PID 1536, disk 56%, RAM 5.1/15Gi, Telegram daily 09:10Z blip self-recovered). System per Sep 4 brief: GREEN Day 52, URSSAF Q2 ~50d overdue, Z.AI token expired, X $5 top-up needed.
 - 2026-09-04T12:00:38Z | **hermes** · skillopt-sleep · blocker | Nightly Sep 4 FAILED (18th consecutive, Aug 18-Sep 4) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); no source dir under /home/ubuntu/skillopt. Fix (re-clone to persistent path, pip install -e) not applied — blocked on Dwayne providing source repo URL. Last successful run Aug 10.
 - 2026-09-04T06:01:00Z | **hermes** · hermes-ecosystem · session-start | HAL daily brief Fri Sep 4 (Day 52). System GREEN: disk 56%, RAM 5.3/15Gi, swap ~0. 5 services down unchanged (HumanGoodAI :5000, AgentReady :8766, WeKnora :8089, FreeLLMAPI :3002, HermesOffice :3001); up: Dashboard :9999, 9Router :20128, DashAuth :9121. DREAM non-silent: 18th zero-user day, 5 standing fixes 0 applied (ruflo MCP 66% of errors, freellmapi crash-loop, Z.AI token expired, SkillOpt 17th fail, Firecrawl missing), wolf phantom-publish 8th day. Wolf today 13 signals all NEUTRAL (top SNOW 0.226, U 0.200, MRNA 0.189), no WATCH/STRONG. URSSAF Q2 ~50d overdue. X $5 top-up. 185 apt upgrades.
 - 2026-09-04T06:01:00Z | **hermes** · hermes-ecosystem · session-end | Brief delivered Fri Sep 4 (Day 52). System GREEN. URSSAF Q2 ~50d overdue (top priority). Wolf publish phantom 8th day. Z.AI token still expired. Vault committed.
-- 2026-09-03T12:01:00Z | **hermes** · agent-memory · note | No user sessions Sep 3 — 17th consecutive zero-user day (Aug 18-Sep 3). Crons only post-brief: health monitor 10:00Z re-flagged freellmapi.service crash-loop ~every 5s (WorkingDirectory gone — standing, no action), SkillOpt 11:17Z failed (17th), Zen evening 12:00Z night 17 without ack. Morning 01:00Z + noon 04:00Z checks clean. Z.AI token expired still unresolved, URSSAF Q2 ~49d overdue, X $5 top-up needed.
-- 2026-09-03T12:01:00Z | **hermes** · skillopt-sleep · blocker | Nightly Sep 3 FAILED (17th consecutive, Aug 18-Sep 3) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); no source dir under /home/ubuntu/skillopt. Fix (re-clone, pip install -e) not applied — blocked on Dwayne providing source repo URL. Last successful run Aug 10.
-- 2026-09-03T06:01:00Z | **hermes** · hermes-ecosystem · session-start | HAL daily brief Thu Sep 3 (Day 51). Recovered from Sep 2 Z.AI 401 (running deepseek-v4-pro). System GREEN: disk 56%, RAM 5.6/15Gi, swap ~0. 5 services down unchanged (HumanGoodAI :5000, AgentReady :8766, WeKnora :8089, FreeLLMAPI :3002, HermesOffice :3001); up: Dashboard :9999, 9Router :20128, DashAuth :9121. DREAM non-silent: 17th zero-user day, Z.AI token expired (NEW — killed Sep 2 brief), ruflo 400+ conn-fails, freellmapi crash-loop, SkillOpt 16th fail. Wolf 14 signals all NEUTRAL (no WATCH/STRONG), Twitter 0 tweets, AI-Trader publish FALSE 7th day (output dir missing). URSSAF Q2 ~49d overdue. X $5 top-up. 185 apt upgrades.
-- 2026-09-03T06:01:00Z | **hermes** · hermes-ecosystem · session-end | Brief delivered Thu Sep 3 (Day 51). System GREEN. Z.AI token expired (NEW blocker). Wolf false-publish 7th day. URSSAF ~49d overdue. Vault committed.
-- 2026-09-02T12:04:16Z | **hermes** · agent-memory · note | No user sessions Sep 2 — 16th consecutive zero-user day (Aug 18-Sep 2). Crons only: DREAM 03:02 MYT (audit dream_audit_20260901_190028.md: ruflo 248 conn-fails ~78% of errors, freellmapi crash-loop, web blind Firecrawl no key + GLMS quota till Sep 3), Wolf 08:03 MYT (13 signals NVDA top; scan JSON persisted, AI-Trader output dir EMPTY — publish silent-fail 6th day), health monitor 12:00/18:00 MYT (ruflo MCP parked all day since ~09:14, otherwise healthy: gateway up PID 1536, disk 56%, mem 5.4/15Gi), SkillOpt 19:17 MYT failed (16th), Zen evening 20:00 MYT night 16 no ack (stardate threat). URSSAF Q2 ~48d overdue. X $5 top-up needed.
-- 2026-09-02T12:04:16Z | **hermes** · skillopt-sleep · blocker | Nightly Sep 2 FAILED (16th consecutive, Aug 18-Sep 2) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep; no source dir, no pip install, no pyproject anywhere under /home/ubuntu/skillopt. Fix (re-clone to persistent path, pip install -e) still NOT applied. Last successful run Aug 10. Escalation-fatigue flag stands — 16 nights, 0 action.
-- 2026-09-02T12:04:16Z | **hermes** · hermes-ecosystem · blocker | HAL Daily Brief Sep 2 FAILED at 14:04 MYT — HTTP 401 'token expired or incorrect' vs api.z.ai (glm-5.2). No brief delivered (Day 50 health snapshot missing), no DREAM/Wolf cross-check, no vault logging from brief. Action: refresh Z.AI API token in Hermes env/secrets. Health monitor 18:00 MYT independently flagged same.
 
 ## Recent Decisions (7d)
 _(none)_
@@ -77,7 +75,7 @@ _(none)_
 _(none)_
 
 ## Last Seen (fleet)
-- **hermes**: 2026-09-04T12:00:38Z — blocker: Nightly Sep 4 FAILED (18th consecutive, Aug 18-Sep 4) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); no source dir under /home/ubuntu/skillopt. Fix (re-clone to persistent path, pip install -e) not applied — blocked on Dwayne providing source repo URL. Last successful run Aug 10.
+- **hermes**: 2026-09-05T12:01:24Z — blocker: Nightly Sep 5 FAILED (19th consecutive, Aug 18-Sep 5) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); no source dir under /home/ubuntu/skillopt. Fix (re-clone to persistent path, pip install -e) not applied — blocked on Dwayne providing source repo URL. Last successful run Aug 10.
 
 ---
 
@@ -488,9 +486,11 @@ _(running notes I want to remember across sessions)_
 
 **Agent:** HAL (Lead Orchestrator)
 **Vault:** agent-memory
-**Last session:** 2026-09-04T06:01:00Z
+**Last session:** 2026-09-05T06:00:00Z
 
 ## Running Notes
+
+- **Day 53 (Sep 5).** 19th consecutive zero-user day (Aug 18–Sep 5). System GREEN: disk 56%, RAM 5.6/15Gi, swap ~0. 5 services down unchanged (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice); up Dashboard/9Router/DashAuth. DREAM non-silent: Ruflo MCP now 83% of errors (248/298 Sep 4, up from 72%) — single biggest noise source, 1-line fix (remove from config.yaml). SkillOpt 18th nightly fail. AI-Trader publish phantom 9th day (output dir missing). Z.AI token still expired. URSSAF Q2 ~50d overdue. X $5 top-up. 196 apt upgrades.
 
 - **Day 52 (Sep 4).** 18th consecutive zero-user day (Aug 18–Sep 4). System GREEN: disk 56%, RAM 5.3/15Gi, swap ~0. 5 services down unchanged (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice); up Dashboard/9Router/DashAuth. DREAM non-silent: 5 standing fixes still 0 applied (ruflo MCP 66% of errors, freellmapi crash-loop, Z.AI token expired, SkillOpt 17th fail, Firecrawl missing). Wolf today: 13 signals all NEUTRAL (top SNOW 0.226, U 0.200, MRNA 0.189), no WATCH/STRONG; AI-Trader publish phantom 8th day (output dir missing). URSSAF Q2 ~50d overdue. X $5 top-up open. 185 apt upgrades. Self-improving loop frozen (metrics zero since May 13).
 
