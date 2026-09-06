@@ -2,9 +2,11 @@
 
 **Agent:** HAL (Lead Orchestrator)
 **Vault:** agent-memory
-**Last session:** 2026-09-05T06:00:00Z
+**Last session:** 2026-09-06T06:01:00Z
 
 ## Running Notes
+
+- **Day 54 (Sep 6).** 20th consecutive zero-user day (Aug 18–Sep 6). System GREEN: disk 56%, RAM 5.3/15Gi, swap 780Ki. 5 services down unchanged; up Dashboard/9Router/DashAuth. DREAM non-silent: NEW Google Drive backup OAuth expired (113.6MB backup lost — script deletes local copy unconditionally), Ruflo MCP 79% of errors (249/314 Sep 5), MiMo weekly benchmark regression 1.0→0.833, zai provider (glm-5.1/5.2) 0% reliability — dead fallbacks in routing. SkillOpt 19th nightly fail. URSSAF Q2 ~51d overdue. X $5 top-up. 196 apt upgrades. Self-improving loop still frozen (May 13). Only provider=None job: IGCSE (T-0003 open).
 
 - **Day 53 (Sep 5).** 19th consecutive zero-user day (Aug 18–Sep 5). System GREEN: disk 56%, RAM 5.6/15Gi, swap ~0. 5 services down unchanged (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice); up Dashboard/9Router/DashAuth. DREAM non-silent: Ruflo MCP now 83% of errors (248/298 Sep 4, up from 72%) — single biggest noise source, 1-line fix (remove from config.yaml). SkillOpt 18th nightly fail. AI-Trader publish phantom 9th day (output dir missing). Z.AI token still expired. URSSAF Q2 ~50d overdue. X $5 top-up. 196 apt upgrades.
 
