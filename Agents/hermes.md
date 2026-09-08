@@ -2,9 +2,11 @@
 
 **Agent:** HAL (Lead Orchestrator)
 **Vault:** agent-memory
-**Last session:** 2026-09-07T06:01:00Z
+**Last session:** 2026-09-08T06:01:00Z
 
 ## Running Notes
+
+- **Day 56 (Sep 8).** 22nd consecutive zero-user day (Aug 18–Sep 8). System GREEN: disk 56%, RAM 5.3/15Gi, swap 780Ki. 5 services down unchanged; up Dashboard/9Router/DashAuth. **CORRECTION — Wolf publish is NOT phantom.** I verified `ai-trader/data/audit.jsonl`: 3/3 strategies POSTed to ai4trade.ai daily (Sep 8: U, MRNA, NVDA). The prior "output dir missing" flag (Days 45–55) was a misdiagnosis — the bridge persists via `publish_strategy()` API POST + audit.jsonl, not an `output/` dir. No `output/` dir ever existed in ai-trader; that's the wolf-trading-agent dir. DREAM overnight: GDrive OAuth expired (113.8MB tarball created, upload fails `invalid_grant` — backups silently broken); lifecycle_guard "embedded null byte" bug (Hermes core); Ruflo MCP 82% of errors. SkillOpt 21st consecutive fail — NEW detail: workspace harness now present at /home/ubuntu/skillopt/workspace/ (nightly.sh, run_cycle.py, openai_backend.py) but `skillopt_sleep` package still not pip-installed anywhere (pip show → not found), no git remote. Wolf scan Tue: 14 signals all NEUTRAL (top NVDA 0.364, MRNA BULLISH +0.34), Twitter 0 credits-depleted. URSSAF Q2 ~53d overdue. X $5 top-up. 196 apt upgrades. Self-improving loop frozen since May 13.
 
 - **Day 55 (Sep 7).** 21st consecutive zero-user day (Aug 18–Sep 7). System GREEN: disk 56%, RAM 5.4/15Gi, swap 780Ki. 5 services down unchanged; up Dashboard/9Router/DashAuth. DREAM non-silent: Ruflo MCP 250 conn-fails (40% of 629 errors), SkillOpt 20th consecutive nightly fail, memory 80% healthy, no new proposals. Wolf ran Mon (17 signals, U 0.477 WATCH bearish top, NVDA/META/MRNA/RDDT NEUTRAL; Twitter 0 credits-depleted). AI-Trader publish phantom AGAIN — verified output dir missing despite Wolf claiming "✅ published" (9th+ consecutive day). URSSAF Q2 ~52d overdue. X $5 top-up. 196 apt upgrades. Self-improving loop frozen since May 13. Only provider=None job: IGCSE (T-0003 open).
 
