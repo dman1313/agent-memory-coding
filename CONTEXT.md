@@ -6,7 +6,7 @@
 
 # NOW — Current State
 
-_Generated: 2026-09-07T12:04:13Z_
+_Generated: 2026-09-08T12:03:42Z_
 
 ## Active Work
 _(none)_
@@ -35,6 +35,7 @@ _(all fleet agents pairing session-start/end cleanly)_
 _(none)_
 
 ## Blockers
+- **hermes · skillopt-sleep**: Nightly Sep 8 FAILED (22nd consecutive, Aug 18-Sep 8) — 19:19 MYT run, all 4 benchmarks (trading/research/commits/arxiv) ModuleNotFoundError: skillopt_sleep. Root cause unchanged: package not pip-installed, nightly.sh doesn't activate correct venv; workspace harness present at /home/ubuntu/skillopt/workspace/ but no git remote. Fix not applied — blocked on Dwayne providing source repo URL. Last successful run Aug 10. _(2026-09-08T11:19:18Z)_
 - **hermes · skillopt-sleep**: Nightly Sep 7 FAILED (21st consecutive, Aug 18-Sep 7) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); no source dir under /home/ubuntu/skillopt. Fix (re-clone to persistent path, pip install -e) not applied — blocked on Dwayne providing source repo URL. Last successful run Aug 10. _(2026-09-07T11:18:01Z)_
 - **hermes · skillopt-sleep**: Nightly Sep 6 FAILED (20th consecutive, Aug 18-Sep 6) — summary JSON run_at 2026-09-06T11:17:46Z shows all 4 benchmarks (trading/research/commits/arxiv) fail: ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); no source dir under /home/ubuntu/skillopt. Fix (re-clone to persistent path, pip install -e) not applied — blocked on Dwayne providing source repo URL. Last successful run Aug 10. _(2026-09-06T12:02:00Z)_
 - **hermes · skillopt-sleep**: Nightly Sep 5 FAILED (19th consecutive, Aug 18-Sep 5) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); no source dir under /home/ubuntu/skillopt. Fix (re-clone to persistent path, pip install -e) not applied — blocked on Dwayne providing source repo URL. Last successful run Aug 10. _(2026-09-05T12:01:24Z)_
@@ -61,15 +62,15 @@ _(none)_
 - **hermes · skillopt-sleep**: SkillOpt-Sleep recurring failure: editable pip install at /tmp/SkillOpt gets cleaned up by system. Fix: move repo to persistent path (e.g. ~/skillopt/SkillOpt/) instead of /tmp/. 5th occurrence since Jul 11. _(2026-07-20T19:17:00Z)_
 
 ## Recent Activity (48h)
+- 2026-09-08T12:01:00Z | **hermes** · agent-memory · note | No user sessions Sep 8 — 22nd consecutive zero-user day (Aug 18-Sep 8). Post-brief crons only: health monitor 18:00 MYT clean (all systems healthy, gateway up; ruflo MCP still failing ~every 6 min since 15:51 UTC — parked, ~500KB log noise), sync-shared-memory success 18:00, SkillOpt 22nd fail 19:19 MYT. HAL Day 56 brief entries above cover system state (GREEN, Wolf publish corrected NOT phantom, GDrive OAuth expired, URSSAF Q2 ~53d overdue).
+- 2026-09-08T11:19:18Z | **hermes** · skillopt-sleep · blocker | Nightly Sep 8 FAILED (22nd consecutive, Aug 18-Sep 8) — 19:19 MYT run, all 4 benchmarks (trading/research/commits/arxiv) ModuleNotFoundError: skillopt_sleep. Root cause unchanged: package not pip-installed, nightly.sh doesn't activate correct venv; workspace harness present at /home/ubuntu/skillopt/workspace/ but no git remote. Fix not applied — blocked on Dwayne providing source repo URL. Last successful run Aug 10.
+- 2026-09-08T06:02:00Z | **hermes** · hermes-ecosystem · session-end | Brief delivered Tue Sep 8 (Day 56). System GREEN. Corrected phantom-publish flag — audit.jsonl confirms API publishes working daily. GDrive backup OAuth expired (re-auth needed). URSSAF Q2 ~53d overdue (top priority). Vault committed.
+- 2026-09-08T06:01:00Z | **hermes** · hermes-ecosystem · session-start | HAL daily brief Tue Sep 8 (Day 56). System GREEN: disk 56%, RAM 5.3/15Gi, swap 780Ki. 5 services down unchanged (HumanGoodAI :5000, AgentReady :8766, WeKnora :8089, FreeLLMAPI :3002, HermesOffice :3001); up Dashboard :9999, 9Router :20128, DashAuth :9121. 22nd zero-user day (Aug 18-Sep 8). CORRECTION: Wolf publish NOT phantom — ai-trader/data/audit.jsonl shows 3/3 strategies POSTed to ai4trade.ai daily. GDrive OAuth expired (backup tarball created, upload fails invalid_grant). SkillOpt 21st fail; workspace harness present but skillopt_sleep pkg missing. 196 apt upgrades. URSSAF Q2 ~53d overdue.
 - 2026-09-07T12:01:46Z | **hermes** · agent-memory · note | No user sessions Sep 7 — 21st consecutive zero-user day (Aug 18-Sep 7). Crons only post-brief: health monitor 18:01 MYT clean (all systems healthy, gateway PID 1536, disk 56%, RAM 5.3/15Gi, swap 0.8Mi, network 0% loss), SkillOpt 19:18 MYT failed (21st). System per Sep 7 brief: GREEN Day 55, URSSAF Q2 ~52d overdue, Wolf phantom-publish 9th+ day.
 - 2026-09-07T11:18:01Z | **hermes** · skillopt-sleep · blocker | Nightly Sep 7 FAILED (21st consecutive, Aug 18-Sep 7) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); no source dir under /home/ubuntu/skillopt. Fix (re-clone to persistent path, pip install -e) not applied — blocked on Dwayne providing source repo URL. Last successful run Aug 10.
 - 2026-09-07T06:02:00Z | **hermes** · hermes-ecosystem · session-end | Brief delivered Mon Sep 7 (Day 55). System GREEN. URSSAF Q2 ~52d overdue (top priority). Wolf phantom-publish 9th+ day (verified output dir missing). Ruflo 40% of errors. Vault committed.
 - 2026-09-07T06:01:00Z | **hermes** · hermes-ecosystem · session-start | HAL daily brief Mon Sep 7 (Day 55). System GREEN: disk 56%, RAM 5.4/15Gi, swap 780Ki. 5 services down unchanged (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice); up Dashboard/9Router/DashAuth. 21st zero-user day (Aug 18-Sep 7). DREAM: Ruflo 250 conn-fails (40% of 629 errs), SkillOpt 20th fail, memory 80% healthy. Wolf Mon: 17 signals, U 0.477 WATCH bearish top, AI-Trader publish phantom again. URSSAF Q2 ~52d overdue. 196 apt upgrades.
 - 2026-09-07T06:01:00Z | **hermes** · hermes-ecosystem · note | Wolf Sep 7 claimed "Published to AI-Trader ✅" but output dir ~/.hermes/skills/trading/ai-trader/output/ is MISSING — verified directly. Phantom publish continues. wolf_to_trader.py exists but never persists.
-- 2026-09-06T12:02:00Z | **hermes** · agent-memory · note | No user sessions Sep 6 — 20th consecutive zero-user day (Aug 18-Sep 6). Crons only post-brief: SkillOpt 19:17 MYT failed (20th), Zen evening 20:00 MYT night 19 no ack (escalation now threatens full Vulcan medical diagnostic), health monitors 12:00/18:00 MYT clean (all systems healthy), sync-memory clean. System per Sep 6 brief: GREEN Day 54, NEW Google Drive backup OAuth expired (113.6MB backup lost, no local fallback), Ruflo MCP 79% of errors (249/314), URSSAF Q2 ~51d overdue, X $5 top-up needed.
-- 2026-09-06T12:02:00Z | **hermes** · skillopt-sleep · blocker | Nightly Sep 6 FAILED (20th consecutive, Aug 18-Sep 6) — summary JSON run_at 2026-09-06T11:17:46Z shows all 4 benchmarks (trading/research/commits/arxiv) fail: ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); no source dir under /home/ubuntu/skillopt. Fix (re-clone to persistent path, pip install -e) not applied — blocked on Dwayne providing source repo URL. Last successful run Aug 10.
-- 2026-09-06T06:02:00Z | **hermes** · hermes-ecosystem · session-end | Brief delivered Sun Sep 6 (Day 54). System GREEN. URSSAF Q2 ~51d overdue (top priority). Google Drive backup OAuth expired (NEW — 113.6MB backup lost). Ruflo 79% of errors. Vault committed.
-- 2026-09-06T06:01:00Z | **hermes** · hermes-ecosystem · session-start | HAL daily brief Sun Sep 6 (Day 54). System GREEN: disk 56%, RAM 5.3/15Gi, swap 780Ki. 5 services down unchanged (HumanGoodAI, AgentReady, WeKnora, FreeLLMAPI, HermesOffice); up Dashboard/9Router/DashAuth. DREAM: 19th zero-user day; NEW Google Drive backup OAuth expired (113.6MB lost); Ruflo MCP 79% of errors (249/314); MiMo benchmark regression 1.0→0.833; zai provider 0% reliability. 196 apt upgrades.
 
 ## Recent Decisions (7d)
 _(none)_
@@ -78,7 +79,7 @@ _(none)_
 _(none)_
 
 ## Last Seen (fleet)
-- **hermes**: 2026-09-07T12:01:46Z — note: No user sessions Sep 7 — 21st consecutive zero-user day (Aug 18-Sep 7). Crons only post-brief: health monitor 18:01 MYT clean (all systems healthy, gateway PID 1536, disk 56%, RAM 5.3/15Gi, swap 0.8Mi, network 0% loss), SkillOpt 19:18 MYT failed (21st). System per Sep 7 brief: GREEN Day 55, URSSAF Q2 ~52d overdue, Wolf phantom-publish 9th+ day.
+- **hermes**: 2026-09-08T12:01:00Z — note: No user sessions Sep 8 — 22nd consecutive zero-user day (Aug 18-Sep 8). Post-brief crons only: health monitor 18:00 MYT clean (all systems healthy, gateway up; ruflo MCP still failing ~every 6 min since 15:51 UTC — parked, ~500KB log noise), sync-shared-memory success 18:00, SkillOpt 22nd fail 19:19 MYT. HAL Day 56 brief entries above cover system state (GREEN, Wolf publish corrected NOT phantom, GDrive OAuth expired, URSSAF Q2 ~53d overdue).
 
 ---
 
@@ -489,9 +490,11 @@ _(running notes I want to remember across sessions)_
 
 **Agent:** HAL (Lead Orchestrator)
 **Vault:** agent-memory
-**Last session:** 2026-09-07T06:01:00Z
+**Last session:** 2026-09-08T06:01:00Z
 
 ## Running Notes
+
+- **Day 56 (Sep 8).** 22nd consecutive zero-user day (Aug 18–Sep 8). System GREEN: disk 56%, RAM 5.3/15Gi, swap 780Ki. 5 services down unchanged; up Dashboard/9Router/DashAuth. **CORRECTION — Wolf publish is NOT phantom.** I verified `ai-trader/data/audit.jsonl`: 3/3 strategies POSTed to ai4trade.ai daily (Sep 8: U, MRNA, NVDA). The prior "output dir missing" flag (Days 45–55) was a misdiagnosis — the bridge persists via `publish_strategy()` API POST + audit.jsonl, not an `output/` dir. No `output/` dir ever existed in ai-trader; that's the wolf-trading-agent dir. DREAM overnight: GDrive OAuth expired (113.8MB tarball created, upload fails `invalid_grant` — backups silently broken); lifecycle_guard "embedded null byte" bug (Hermes core); Ruflo MCP 82% of errors. SkillOpt 21st consecutive fail — NEW detail: workspace harness now present at /home/ubuntu/skillopt/workspace/ (nightly.sh, run_cycle.py, openai_backend.py) but `skillopt_sleep` package still not pip-installed anywhere (pip show → not found), no git remote. Wolf scan Tue: 14 signals all NEUTRAL (top NVDA 0.364, MRNA BULLISH +0.34), Twitter 0 credits-depleted. URSSAF Q2 ~53d overdue. X $5 top-up. 196 apt upgrades. Self-improving loop frozen since May 13.
 
 - **Day 55 (Sep 7).** 21st consecutive zero-user day (Aug 18–Sep 7). System GREEN: disk 56%, RAM 5.4/15Gi, swap 780Ki. 5 services down unchanged; up Dashboard/9Router/DashAuth. DREAM non-silent: Ruflo MCP 250 conn-fails (40% of 629 errors), SkillOpt 20th consecutive nightly fail, memory 80% healthy, no new proposals. Wolf ran Mon (17 signals, U 0.477 WATCH bearish top, NVDA/META/MRNA/RDDT NEUTRAL; Twitter 0 credits-depleted). AI-Trader publish phantom AGAIN — verified output dir missing despite Wolf claiming "✅ published" (9th+ consecutive day). URSSAF Q2 ~52d overdue. X $5 top-up. 196 apt upgrades. Self-improving loop frozen since May 13. Only provider=None job: IGCSE (T-0003 open).
 
