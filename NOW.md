@@ -1,6 +1,6 @@
 # NOW — Current State
 
-_Generated: 2026-09-10T06:04:26Z_
+_Generated: 2026-09-10T12:01:11Z_
 
 ## Active Work
 _(none)_
@@ -29,6 +29,7 @@ _(all fleet agents pairing session-start/end cleanly)_
 _(none)_
 
 ## Blockers
+- **hermes · skillopt-sleep**: Nightly Sep 10 FAILED (24th consecutive, Aug 18–Sep 10) — all 4 benchmarks (trading/research/commits/arxiv) fail: ModuleNotFoundError: No module named 'skillopt_sleep' at run_cycle.py:25. Root cause unchanged: package not reinstalled, no source dir under /home/ubuntu/skillopt; nightly.sh does not activate the right venv. Fix still requires Dwayne supplying the source repo URL. Last successful run Aug 10 (trading 0.429, research 0.333, commits 1.000, arxiv 1.000). _(2026-09-10T11:17:51Z)_
 - **hermes · skillopt-sleep**: Nightly Sep 8 FAILED (22nd consecutive, Aug 18-Sep 8) — 19:19 MYT run, all 4 benchmarks (trading/research/commits/arxiv) ModuleNotFoundError: skillopt_sleep. Root cause unchanged: package not pip-installed, nightly.sh doesn't activate correct venv; workspace harness present at /home/ubuntu/skillopt/workspace/ but no git remote. Fix not applied — blocked on Dwayne providing source repo URL. Last successful run Aug 10. _(2026-09-08T11:19:18Z)_
 - **hermes · skillopt-sleep**: Nightly Sep 7 FAILED (21st consecutive, Aug 18-Sep 7) — all 4 benchmarks ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); no source dir under /home/ubuntu/skillopt. Fix (re-clone to persistent path, pip install -e) not applied — blocked on Dwayne providing source repo URL. Last successful run Aug 10. _(2026-09-07T11:18:01Z)_
 - **hermes · skillopt-sleep**: Nightly Sep 6 FAILED (20th consecutive, Aug 18-Sep 6) — summary JSON run_at 2026-09-06T11:17:46Z shows all 4 benchmarks (trading/research/commits/arxiv) fail: ModuleNotFoundError: skillopt_sleep. Root cause unchanged: editable install mapped to /tmp/SkillOpt (wiped by reboot); no source dir under /home/ubuntu/skillopt. Fix (re-clone to persistent path, pip install -e) not applied — blocked on Dwayne providing source repo URL. Last successful run Aug 10. _(2026-09-06T12:02:00Z)_
@@ -56,10 +57,10 @@ _(none)_
 - **hermes · skillopt-sleep**: SkillOpt-Sleep recurring failure: editable pip install at /tmp/SkillOpt gets cleaned up by system. Fix: move repo to persistent path (e.g. ~/skillopt/SkillOpt/) instead of /tmp/. 5th occurrence since Jul 11. _(2026-07-20T19:17:00Z)_
 
 ## Recent Activity (48h)
+- 2026-09-10T12:00:47Z | **hermes** · agent-memory · note | Daily vault sync Sep 10 (24th consecutive zero-user day, Aug 18–Sep 10). Past 24h: Sep 9 HAL brief FAILED — HTTP 401 'token expired', Day 57 brief never delivered and no vault entry written (gap); recovered Sep 10. DREAM Sep 9 audit: three provider credentials died same day (DeepSeek 402 balance, Z.ai 401, DeepSeek custom 401) + GDrive OAuth expired — system ran on MiMo alone. Wolf Sep 10: 17 signals, only META 0.459 WATCH (bearish), Twitter 0 (credits depleted), 3/3 published to AI-Trader. Health monitor 18:01 UTC GREEN (disk 57%, RAM 5.3Gi) except ruflo MCP failing ~every 6 min since 13:24 UTC (parked). 202 apt upgrades pending. URSSAF Q2 ~55d overdue.
+- 2026-09-10T11:17:51Z | **hermes** · skillopt-sleep · blocker | Nightly Sep 10 FAILED (24th consecutive, Aug 18–Sep 10) — all 4 benchmarks (trading/research/commits/arxiv) fail: ModuleNotFoundError: No module named 'skillopt_sleep' at run_cycle.py:25. Root cause unchanged: package not reinstalled, no source dir under /home/ubuntu/skillopt; nightly.sh does not activate the right venv. Fix still requires Dwayne supplying the source repo URL. Last successful run Aug 10 (trading 0.429, research 0.333, commits 1.000, arxiv 1.000).
 - 2026-09-10T06:02:00Z | **hermes** · hermes-ecosystem · session-end | Brief delivered Thu Sep 10 (Day 58). System GREEN. RECOVERED from Sep 9 brief failure (HTTP 401 token expired). 3 provider creds dead same day (DeepSeek 402, Z.ai 401, DeepSeek custom 401) + GDrive OAuth expired. URSSAF Q2 ~55d overdue (top priority). Vault committed.
 - 2026-09-10T06:01:00Z | **hermes** · hermes-ecosystem · session-start | HAL daily brief Thu Sep 10 (Day 58). System GREEN: disk 57%, RAM 5.1/15Gi, swap 5.0Mi. 5 services down unchanged (HumanGoodAI :5000, AgentReady :8766, WeKnora :8089, FreeLLMAPI :3002, HermesOffice :3001); up Dashboard :9999, 9Router :20128, DashAuth :9121. RECOVERY — Sep 9 brief FAILED (HTTP 401 token expired, no brief/vault Day 57). DREAM: 3 provider creds died same day + GDrive OAuth expired. Wolf: 17 signals, only META 0.459 WATCH (bearish), no STRONG; Twitter 0 credits-depleted; published 3/3 UBER/MRNA/U to AI-Trader. 23rd zero-user day. URSSAF Q2 ~55d overdue. X $5 top-up. 202 apt upgrades.
-- 2026-09-08T12:01:00Z | **hermes** · agent-memory · note | No user sessions Sep 8 — 22nd consecutive zero-user day (Aug 18-Sep 8). Post-brief crons only: health monitor 18:00 MYT clean (all systems healthy, gateway up; ruflo MCP still failing ~every 6 min since 15:51 UTC — parked, ~500KB log noise), sync-shared-memory success 18:00, SkillOpt 22nd fail 19:19 MYT. HAL Day 56 brief entries above cover system state (GREEN, Wolf publish corrected NOT phantom, GDrive OAuth expired, URSSAF Q2 ~53d overdue).
-- 2026-09-08T11:19:18Z | **hermes** · skillopt-sleep · blocker | Nightly Sep 8 FAILED (22nd consecutive, Aug 18-Sep 8) — 19:19 MYT run, all 4 benchmarks (trading/research/commits/arxiv) ModuleNotFoundError: skillopt_sleep. Root cause unchanged: package not pip-installed, nightly.sh doesn't activate correct venv; workspace harness present at /home/ubuntu/skillopt/workspace/ but no git remote. Fix not applied — blocked on Dwayne providing source repo URL. Last successful run Aug 10.
 
 ## Recent Decisions (7d)
 _(none)_
@@ -68,4 +69,4 @@ _(none)_
 _(none)_
 
 ## Last Seen (fleet)
-- **hermes**: 2026-09-10T06:02:00Z — session-end: Brief delivered Thu Sep 10 (Day 58). System GREEN. RECOVERED from Sep 9 brief failure (HTTP 401 token expired). 3 provider creds dead same day (DeepSeek 402, Z.ai 401, DeepSeek custom 401) + GDrive OAuth expired. URSSAF Q2 ~55d overdue (top priority). Vault committed.
+- **hermes**: 2026-09-10T12:00:47Z — note: Daily vault sync Sep 10 (24th consecutive zero-user day, Aug 18–Sep 10). Past 24h: Sep 9 HAL brief FAILED — HTTP 401 'token expired', Day 57 brief never delivered and no vault entry written (gap); recovered Sep 10. DREAM Sep 9 audit: three provider credentials died same day (DeepSeek 402 balance, Z.ai 401, DeepSeek custom 401) + GDrive OAuth expired — system ran on MiMo alone. Wolf Sep 10: 17 signals, only META 0.459 WATCH (bearish), Twitter 0 (credits depleted), 3/3 published to AI-Trader. Health monitor 18:01 UTC GREEN (disk 57%, RAM 5.3Gi) except ruflo MCP failing ~every 6 min since 13:24 UTC (parked). 202 apt upgrades pending. URSSAF Q2 ~55d overdue.
