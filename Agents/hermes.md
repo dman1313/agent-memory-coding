@@ -2,9 +2,11 @@
 
 **Agent:** HAL (Lead Orchestrator)
 **Vault:** agent-memory
-**Last session:** 2026-09-08T06:01:00Z
+**Last session:** 2026-09-10T06:01:00Z
 
 ## Running Notes
+
+- **Day 58 (Sep 10).** RECOVERED from Sep 9 brief failure — that run died on HTTP 401 (token expired), so no brief and no vault logging on Day 57. DREAM (Sep 9→10) caught the root cause: **3 provider credentials died the same day** — DeepSeek balance depleted (402), Z.ai token expired (401), DeepSeek custom key invalid (401) — plus Google Drive OAuth expired (backups broken). 23rd consecutive zero-user day (Aug 18–Sep 9). System GREEN: disk 57% (creeping up), RAM 5.1/15Gi, swap 5.0Mi. 5 services down unchanged; up Dashboard/9Router/DashAuth. Wolf Thu: 17 signals, only META 0.459 WATCH (bearish), no STRONG; Twitter 0 (X credits depleted); AI-Trader publish confirmed working (3/3: UBER bearish, MRNA bullish, U neutral). SkillOpt still failing (blocked on Dwayne providing source repo URL). URSSAF Q2 ~55d overdue. X $5 top-up. 202 apt upgrades. Self-improving loop frozen since May 13. Only provider=None job: IGCSE (T-0003 open).
 
 - **Day 56 (Sep 8).** 22nd consecutive zero-user day (Aug 18–Sep 8). System GREEN: disk 56%, RAM 5.3/15Gi, swap 780Ki. 5 services down unchanged; up Dashboard/9Router/DashAuth. **CORRECTION — Wolf publish is NOT phantom.** I verified `ai-trader/data/audit.jsonl`: 3/3 strategies POSTed to ai4trade.ai daily (Sep 8: U, MRNA, NVDA). The prior "output dir missing" flag (Days 45–55) was a misdiagnosis — the bridge persists via `publish_strategy()` API POST + audit.jsonl, not an `output/` dir. No `output/` dir ever existed in ai-trader; that's the wolf-trading-agent dir. DREAM overnight: GDrive OAuth expired (113.8MB tarball created, upload fails `invalid_grant` — backups silently broken); lifecycle_guard "embedded null byte" bug (Hermes core); Ruflo MCP 82% of errors. SkillOpt 21st consecutive fail — NEW detail: workspace harness now present at /home/ubuntu/skillopt/workspace/ (nightly.sh, run_cycle.py, openai_backend.py) but `skillopt_sleep` package still not pip-installed anywhere (pip show → not found), no git remote. Wolf scan Tue: 14 signals all NEUTRAL (top NVDA 0.364, MRNA BULLISH +0.34), Twitter 0 credits-depleted. URSSAF Q2 ~53d overdue. X $5 top-up. 196 apt upgrades. Self-improving loop frozen since May 13.
 
